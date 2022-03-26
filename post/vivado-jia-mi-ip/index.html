@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Vivado加密IP | lxulxu&#39;s blog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://lxulxu.github.io/favicon.ico?v=1648298354929">
+<link rel="stylesheet" href="https://lxulxu.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="整理 UG1118 Ch6
+权限管理
+
+
+公共权限(Common Rights)：适用于所有EDA工具
+
+
+特定权限(Vendor-Specific Rights)：授予开发者的特定权限（如控制Vivado Logic Analyzer探测..." />
+    <meta name="keywords" content="xlinx,vivado" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://lxulxu.github.io">
+        <img src="https://lxulxu.github.io/images/avatar.png?v=1648298354929" class="site-logo">
+        <h1 class="site-title">lxulxu&#39;s blog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/lxulxu" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      This is the way
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/lxulxu/lxulxu.github.io" target="_blank"> lxulxu</a> | <a class="rss" href="https://lxulxu.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Vivado加密IP</h2>
+            <div class="post-date">2022-03-26</div>
+            
+            <div class="post-content" v-pre>
+              <p>整理 UG1118 Ch6</p>
+<h2 id="权限管理">权限管理</h2>
+<ul>
+<li>
+<p><strong>公共权限(Common Rights)</strong>：适用于所有EDA工具</p>
+</li>
+<li>
+<p><strong>特定权限(Vendor-Specific Rights)</strong>：授予开发者的特定权限（如控制Vivado Logic Analyzer探测器行为），此部分访问权限值覆盖普通权限同名值</p>
+</li>
+<li>
+<p><strong>条件权限(Conditional Rights)</strong>：IEEE-1735-2014 V2 引入，允许不同条件下指定不同访问权限</p>
+</li>
+</ul>
+<hr>
+<h2 id="ieee-1735-结构">IEEE 1735 结构</h2>
+<ul>
+<li>
+<p><strong>定义域(Definition area)</strong>：定义支持的供应商及其访问权限</p>
+</li>
+<li>
+<p><strong>密钥定义(Encrypted Key Definition)</strong></p>
+</li>
+<li>
+<p><strong>加密负载(Encrypted payload)</strong>：加密IP的Verilog、System Verilog、 VHDL源码</p>
+</li>
+<li>
+<p><strong>纯文本负载(Plain-text payload)</strong>：IP源码未加密部分</p>
+</li>
+</ul>
+<p>以一个完整密钥文件内容为例</p>
+<pre><code class="language-python">`pragma protect version = 2
+`pragma protect encrypt_agent = &quot;XILINX&quot;
+`pragma protect encrypt_agent_info = &quot;Xilinx Encryption Tool 2021&quot;
+`pragma protect begin_commonblock
+`pragma protect control error_handling = &quot;delegated&quot;
+`pragma protect control child_visibility = &quot;delegated&quot;
+`pragma protect control decryption = (activity==simulation)? &quot;false&quot; :&quot;true&quot;
+`pragma protect end_commonblock
+`pragma protect begin_toolblock
+`pragma protect rights_digest_method=&quot;sha256&quot;
+`pragma protect key_keyowner = &quot;Xilinx&quot;, key_keyname= &quot;xilinxt_2021_01&quot;, key_method = &quot;rsa&quot;, key_public_key
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApgf7F4kYh0oSFzJBRoRb
+nsrAqn24fVbI7xdNG2t9G8pouFfwIXGGmQgYqYZDSmUu0wrrj3ulLvUnjRtmtziJ
+1RDOYdyko1SuBEyGT1frzUu9xNitAXxp29hOrVPeKO6kGU81XHJCRJ7uWh7rwoyf
+HSUpreifLybt+UT5fyvHu21IxvOR6GHKWaQ4wdL7Txguuyf92XLJIZABEgmuVlPK
+/NjJjVRK3c/vMuQLvbihNapkyCiLIWNwDbo9oWXr7NSo3we8u6IlFmP5V8WcOmXZ
+/PZqp3QOkY2Jlm1yQt3O8PpU/8qzB7zcHjm3+Q+wB8yUYn/IMwN0t09l2AdBR37G
+EwIDAQAB
+`pragma protect control xilinx_configuration_visible = &quot;false&quot;
+`pragma protect control xilinx_enable_modification = &quot;false&quot;
+`pragma protect control xilinx_enable_probing = &quot;false&quot;
+`pragma protect control xilinx_enable_netlist_export = &quot;false&quot;
+`pragma protect control xilinx_enable_bitstream = &quot;true&quot;
+`pragma protect control decryption = (xilinx_activity==simulation)?&quot;false&quot; : &quot;true&quot;
+`pragma protect end_toolblock = &quot;&quot;
+</code></pre>
+<h3 id="版本或其他杂注">版本或其他杂注</h3>
+<pre><code class="language-python">`pragma protect version = 2` #遵从IEEE-1735-2014 V2标准
+
+ #标识加密工具
+`pragma protect encrypt_agent = &quot;XILINX&quot;
+`pragma protect encrypt_agent_info = &quot;Xilinx Encryption Tool 2021&quot;
+</code></pre>
+<h3 id="公共权限common-block-definition">公共权限(Common Block Definition)</h3>
+<pre><code class="language-python">`pragma protect begin_commonblock
+...
+`pragma protect end_commonblock
+</code></pre>
+<p>公共权限列表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">含义</th>
+<th style="text-align:center">默认值</th>
+<th style="text-align:center">有效值</th>
+<th style="text-align:center">Xlinx有效值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">error_handling</td>
+<td style="text-align:center">允许展示的错误信息</td>
+<td style="text-align:center">&quot;delegated&quot;</td>
+<td style="text-align:center">&quot;delegated&quot;<br>&quot;srcrefs&quot;<br>&quot;plaintext&quot;</td>
+<td style="text-align:center">&quot;delegated&quot;</td>
+</tr>
+<tr>
+<td style="text-align:center">runtime_visibility</td>
+<td style="text-align:center">运行、tcl或输出报告允许展示的内容</td>
+<td style="text-align:center">&quot;delegated&quot;</td>
+<td style="text-align:center">&quot;delegated&quot;<br>&quot;interface_names&quot;<br>&quot;all_names&quot;</td>
+<td style="text-align:center">&quot;delegated&quot;</td>
+</tr>
+<tr>
+<td style="text-align:center">child_visibility</td>
+<td style="text-align:center">受保护模块实例化未受保护子模块，子模块如何处理error_handling和runtime_visibility<br>显示消息可能会通过受保护区域公开路径名</td>
+<td style="text-align:center">&quot;delegated&quot;</td>
+<td style="text-align:center">&quot;delegated&quot;<br>&quot;allowed&quot;<br>&quot;denied&quot;</td>
+<td style="text-align:center">&quot;delegated&quot;<br>&quot;allowed&quot;</td>
+</tr>
+<tr>
+<td style="text-align:center">decryption</td>
+<td style="text-align:center">是否允许解密模块，一般用于条件权限</td>
+<td style="text-align:center">&quot;delegated&quot;</td>
+<td style="text-align:center">&quot;delegated&quot;<br>&quot;true&quot;<br>&quot;false&quot;</td>
+<td style="text-align:center">&quot;delegated&quot;<br>&quot;true&quot;<br>&quot;false&quot;<br><strong>Note:</strong>&quot;delegated&quot;=&quot;true&quot;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="特定权限vendor-specific-tool-block-definition">特定权限(Vendor-Specific Tool Block Definition)</h3>
+<pre><code class="language-python">`pragma protect begin_toolblock
+...
+`pragma protect end_toolblock = &quot;&quot;
+</code></pre>
+<p>特定权限列表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">含义</th>
+<th style="text-align:center">Xlinx有效值</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">xilinx_configuration_visible</td>
+<td style="text-align:center">LUT值在Vivado viewers/editors中是否可见</td>
+<td style="text-align:center">&quot;true&quot;, &quot;false&quot;</td>
+<td style="text-align:center">&quot;false&quot;</td>
+</tr>
+<tr>
+<td style="text-align:center">xilinx_enable_modification</td>
+<td style="text-align:center">受保护区域网表信息是否可修改</td>
+<td style="text-align:center">&quot;true&quot;, &quot;false&quot;</td>
+<td style="text-align:center">&quot;false&quot;</td>
+</tr>
+<tr>
+<td style="text-align:center">xilinx_enable_probing</td>
+<td style="text-align:center">用户可否在受保护区域插入或实例化调试探针</td>
+<td style="text-align:center">&quot;true&quot;, &quot;false&quot;</td>
+<td style="text-align:center">&quot;false&quot;</td>
+</tr>
+<tr>
+<td style="text-align:center">xilinx_enable_netlist_export</td>
+<td style="text-align:center">是否允许导出网表信息</td>
+<td style="text-align:center">&quot;true&quot;, &quot;false&quot;</td>
+<td style="text-align:center">&quot;true&quot;</td>
+</tr>
+<tr>
+<td style="text-align:center">xilinx_enable_bitstream</td>
+<td style="text-align:center">是否允许生成比特流</td>
+<td style="text-align:center">&quot;true&quot;, &quot;false&quot;</td>
+<td style="text-align:center">&quot;true&quot;</td>
+</tr>
+<tr>
+<td style="text-align:center">xilinx_schematic_visibility</td>
+<td style="text-align:center">是否允许展示受保护区域模块名称</td>
+<td style="text-align:center">&quot;true&quot;, &quot;false&quot;</td>
+<td style="text-align:center">&quot;false&quot;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="密钥定义和权限摘要key-definition-and-rights-digest-method">密钥定义和权限摘要(Key Definition and Rights Digest Method)</h3>
+<p>强制性定义，包括公钥、密钥相关属性和权限计算方法</p>
+<pre><code class="language-python">`protect key_keyowner = &quot;Xilinx&quot;
+`protect key_method = &quot;rsa&quot;
+`protect key_keyname = &quot;xilinxt_2019_11&quot;
+`protect rights_digest_method = &quot;sha256&quot;
+`protect key_public_key
+...
+</code></pre>
+<ul>
+<li>权限定义：`protect control <right> = &lt;rights_expression&gt;<br>
+e.g. `protect control xilinx_configuration_visible = &quot;false&quot;</li>
+<li>条件权限定义：`protect control <right> = <condition> ? &lt;true_expression&gt; : &lt;false_expression&gt;<br>
+e.g. `protect control decryption = (xilinx_activity==simulation) ? &quot;false&quot; : &quot;true&quot;</li>
+</ul>
+<h2 id="rtl加密示例">RTL加密示例</h2>
+<ul>
+<li><strong>VHDL</strong></li>
+</ul>
+<pre><code class="language-python">`protect version = 2
+`protect begin_commonblock
+`protect control error_handling = &quot;delegated&quot;
+`protect control decryption = (activity==simulation)? &quot;false&quot; : &quot;true&quot;
+`protect end_commonblock
+`protect begin_toolblock
+`protect rights_digest_method=”sha256”
+`protect key_keyowner = “Xilinx”, key_method = &quot;rsa&quot;, key_keyname =
+&quot;xilinxt_2019_11&quot;, key_keyowner
+...
+`protect control xilinx_configuration_visible = &quot;false&quot;
+`protect control xilinx_enable_modification = &quot;false&quot;
+`protect control xilinx_enable_probing = &quot;false&quot;
+`protect control decryption = (xilinx_activity==simulation)? &quot;false&quot; : &quot;true&quot;
+`protect end_toolblock = &quot;&quot;
+`protect begin
+-- Secure Data Block
+-- Protected IP source code is inserted here.
+...
+...
+...
+`protect end
+</code></pre>
+<ul>
+<li><strong>Verilog/SystemVerilog</strong><br>
+`pragma protect代替`protect</li>
+</ul>
+<pre><code class="language-python">`pragma protect version = 2
+`pragma protect begin_commonblock
+`pragma protect control error_handling = &quot;delegated&quot;
+`pragma protect control decryption = (activity==simulation)? &quot;false&quot; : &quot;true&quot;
+`pragma protect end_commonblock
+`pragma protect begin_toolblock
+`pragma protect rights_digest_method=&quot;sha256&quot;
+`pragma protect key_keyowner = &quot;Xilinx&quot;, key_method = &quot;rsa&quot;, key_keyname =
+&quot;xilinxt_2019_11&quot;, key_public_key
+...
+`pragma protect control xilinx_configuration_visible = &quot;false&quot;
+`pragma protect control xilinx_enable_modification = &quot;false&quot;
+`pragma protect control xilinx_enable_probing = &quot;false&quot;
+`pragma protect control decryption = (xilinx_activity==simulation)? &quot;false&quot; : &quot;true&quot;
+`pragma protect end_toolblock = &quot;&quot;
+`pragma protect begin
+// Secure Data Block
+// Protected IP source code is inserted here.
+...
+...
+...
+`pragma protect end
+</code></pre>
+<h2 id="权限对vivado工具影响">权限对vivado工具影响</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">权限/<br>类型</th>
+<th>Simulation</th>
+<th>Synthesis</th>
+<th>Implementation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">error_handling/<br>common</td>
+<td><li>delegated = 加密区域内隐藏错误信息引用</li></td>
+<td><li>delegated = 加密区域内隐藏错误信息引用</li></td>
+<td><li>NA</li></td>
+</tr>
+<tr>
+<td style="text-align:center">runtime_visibility/<br>common</td>
+<td><li>delegated = 遵循当前vivado simulator行为-hierarchy viewer隐藏可见性</li></td>
+<td><li>delegated = 遵循当前vivado默认行为-隐藏可见性</li></td>
+<td><li>delegated = 所有名字/层级可见</li></td>
+</tr>
+<tr>
+<td style="text-align:center">child_visibility/<br>common</td>
+<td><li>delegated = 不改变当前simulator行为</li><li>allowed = 展示子模块层级和错误信息</li></td>
+<td><li>delegated = 不改变当前行为</li><li>allowed = 展示子模块层级和错误信息</li></td>
+<td><li>delegated = allowed = 不改变当前implementation行为</li></td>
+</tr>
+<tr>
+<td style="text-align:center">decryption/<br>common</td>
+<td><li>delegated/true = 读入解密文件</li><li>false = 不读入解密文件、报告并停止处理</li></td>
+<td><li>delegated/true = 读入解密文件</li><li>false = 不读入解密文件、报告并停止处理</li></td>
+<td><li>delegated/true = 读入解密文件</li><li>false = 不读入解密文件、报告并停止处理</li></td>
+</tr>
+<tr>
+<td style="text-align:center">xilinx_enable_netlist_export/<br>xilinx-specific</td>
+<td>NA</td>
+<td><li>true = write_vhdl/write_verilog输出网表</li><li>false = write_vhdl/write_verilog不运行</li></td>
+<td><li>true = write_vhdl/write_verilog输出网表</li><li>false = write_vhdl/write_verilog不运行</li></td>
+</tr>
+<tr>
+<td style="text-align:center">xilinx_configuration_visible/<br>xilinx-specific</td>
+<td>NA</td>
+<td><li>true = LUT内容可见</li><li>false = LUT内容不可见</li></td>
+<td><li>true = LUT内容可见</li><li>false = LUT内容不可见</li></td>
+</tr>
+<tr>
+<td style="text-align:center">xilinx_enable_modification/<br>xilinx-specific</td>
+<td>NA</td>
+<td><li>true = 允许修改网表</li><li>false = 不允许修改网表</li></td>
+<td><li>true = 允许修改网表</li><li>false = 不允许修改网表</li></td>
+</tr>
+<tr>
+<td style="text-align:center">xilinx_enable_probing/<br>xilinx-specific</td>
+<td>NA</td>
+<td><li>true = 允许用户在受保护区域插入调试探针</li><li>false = 无法插入调试探针</li></td>
+<td><li>true = 允许用户在受保护区域插入调试探针</li><li>false = 无法插入调试探针</li></td>
+</tr>
+<tr>
+<td style="text-align:center">xilinx_enable_bitstream/<br>xilinx-specific</td>
+<td>NA</td>
+<td>NA</td>
+<td><li>true = 可生成位流</li><li>false = 无法生成位流</li></td>
+</tr>
+</tbody>
+</table>
+<p>注：NA = 对vivado工具无影响</p>
+<hr>
+<h2 id="vivado加密ip">Vivado加密IP</h2>
+<ul>
+<li>
+<p>tcl命令：<code>encrypt [-key &lt;arg&gt;] -lang &lt;arg&gt; [-quiet] [-verbose] [-ext &lt;arg&gt;] &lt;files&gt;...</code><br>
+e.g. <code>encrypt -lang verilog -ext .vp -key keyfile.txt myip.v</code></p>
+<ul>
+<li><strong>key</strong> - 指定包含Xilinx公钥的RSA密钥文件，如果未指定-key Vivado自动查找密钥。</li>
+<li><strong>lang</strong> - 需加密源文件的HDL语言，支持VHDL或verilog。</li>
+<li><strong>ext</strong> - 输出加密文件的扩展名，如果未指定源文件会被输出文件覆盖。</li>
+<li><strong>&lt;files&gt;</strong> - 加密源文件名称</li>
+</ul>
+</li>
+<li>
+<p>Xilinx公钥位置：<code>&lt;Install_Dir&gt;/Vivado/&lt;version&gt;/data/pubkey/</code></p>
+</li>
+<li>
+<p>三方公钥需分别放置在<code>begin_toolblock/end_toolblock</code></p>
+</li>
+</ul>
+<h2 id="vivado加密checkpoint">Vivado加密Checkpoint</h2>
+<ul>
+<li>tcl命令：<code>write_checkpoint [-key &lt;arg&gt;] -encrypt &lt;file&gt;</code><br>
+e.g. <code>write_checkpoint -key keyfile.txt -encrypt my_ip.dcp</code>
+<ul>
+<li><strong>key</strong> - 指定秘钥文件</li>
+<li><strong>&lt;files&gt;</strong> - 输出dcp文件名称<br>
+<em>-encrypt选项只有在写出完整的设计检查点时才有用，-cell结合-encrypt没有作用</em></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="一些技巧">一些技巧</h2>
+<ul>
+<li>多个IP尽量使用相同的密钥文件来优化结果网表</li>
+<li>使用-ext选项避免无意中覆盖输入文件</li>
+<li>从工具供应商处获取公钥</li>
+<li>在一次调用中加密IP的所有文件</li>
+<li>不要拆分多个加密块/纯文本间的Verilog模块</li>
+<li>在VHDL语言中，将整个实体和体系结构对放入一个加密块</li>
+<li>验证加密代码是否正确加载到Vivado和后续的write_verilog重新加密所有安全设计元素</li>
+<li>验证与三方工具的互操作性</li>
+</ul>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://lxulxu.github.io/tag/MzbqQswvK/" class="tag">
+                    xlinx
+                  </a>
+                
+                  <a href="https://lxulxu.github.io/tag/OBPSB-jAAw/" class="tag">
+                    vivado
+                  </a>
+                
+              </div>
+            
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '18f52d4adb1e8df55124',
+        clientSecret: '7cd75fdb4ea3a192964816547ed498ad6784e04d',
+        repo: 'lxulxu.github.io',
+        owner: 'lxulxu',
+        admin: ['lxulxu'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
