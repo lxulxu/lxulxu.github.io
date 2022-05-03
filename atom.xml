@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lxulxu.github.io</id>
     <title>lxulxu&apos;s blog</title>
-    <updated>2022-03-26T13:08:55.335Z</updated>
+    <updated>2022-05-03T13:27:53.913Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lxulxu.github.io"/>
     <link rel="self" href="https://lxulxu.github.io/atom.xml"/>
@@ -10,6 +10,43 @@
     <logo>https://lxulxu.github.io/images/avatar.png</logo>
     <icon>https://lxulxu.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, lxulxu&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[星球大战万代模型]]></title>
+        <id>https://lxulxu.github.io/post/bandai-models/</id>
+        <link href="https://lxulxu.github.io/post/bandai-models/">
+        </link>
+        <updated>2022-05-03T12:20:35.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220412_172112817.jpg?raw=true" alt="Yoda" loading="lazy"></figure>
+<center>Yoda</center>
+<figure data-type="image" tabindex="2"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220412_172235454.jpg?raw=true" alt="General Grievous" loading="lazy"></figure>
+<center>General Grievous</center>
+<figure data-type="image" tabindex="3"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220412_172314501.jpg?raw=true" alt="C-3PO" loading="lazy"></figure>
+<center>C-3PO</center>
+<figure data-type="image" tabindex="4"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220412_172403614.jpg?raw=true" alt="BB-8 &amp; D-O DIORAMA SET" loading="lazy"></figure>
+<center>BB-8 & D-O DIORAMA SET</center>
+<figure data-type="image" tabindex="5"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220412_172456158.png?raw=true" alt="K-2SO" loading="lazy"></figure>
+<center>K-2SO</center>
+<figure data-type="image" tabindex="6"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220412_172524149.jpg?raw=true" alt="Boba Fett" loading="lazy"></figure>
+<center>Boba Fett</center>
+<figure data-type="image" tabindex="7"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220412_172555163.jpg?raw=true" alt="Darth Vader" loading="lazy"></figure>
+<center>Darth Vader</center>
+<figure data-type="image" tabindex="8"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220412_172700134.png?raw=true" alt="Captain Phasma" loading="lazy"></figure>
+<center>Captain Phasma</center>
+<figure data-type="image" tabindex="9"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220412_172732118.jpg?raw=true" alt="Stormtrooper" loading="lazy"></figure>
+<center>Stormtrooper</center>
+<figure data-type="image" tabindex="10"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220412_172755106.jpg?raw=true" alt="Shoretrooper" loading="lazy"></figure>
+<center>Shoretrooper</center>
+<figure data-type="image" tabindex="11"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220412_172833897.png?raw=true" alt="Shadow Stormtrooper" loading="lazy"></figure>
+<center>Shadow Stormtrooper</center>
+<figure data-type="image" tabindex="12"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220412_172906834.jpg?raw=true" alt="First Order Stormtrooper" loading="lazy"></figure>
+<center>First Order Stormtrooper</center>
+<figure data-type="image" tabindex="13"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220412_173032440.jpg?raw=true" alt="Kylo Ren" loading="lazy"></figure>
+<center>Kylo Ren</center>
+<figure data-type="image" tabindex="14"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220412_173125002.jpg?raw=true" alt="Mandalorian" loading="lazy"></figure>
+<center>Mandalorian</center>
+<figure data-type="image" tabindex="15"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220503_195302785.jpg?raw=true" alt="Razor Crest" loading="lazy"></figure>
+<center>Razor Crest</center>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Vivado加密IP]]></title>
         <id>https://lxulxu.github.io/post/vivado-jia-mi-ip/</id>
