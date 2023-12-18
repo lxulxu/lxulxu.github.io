@@ -1,0 +1,427 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tcl Cheat Sheet | lxulxu&#39;s blog</title>
+<link rel="shortcut icon" href="https://lxulxu.github.io/favicon.ico?v=1702887125545">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://lxulxu.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Tcl Cheat Sheet | lxulxu&#39;s blog - Atom Feed" href="https://lxulxu.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="
+基础语法
+
+puts &quot;Hello World&quot;#输出
+set x [expr 1 == 2 ? 1 : 2]#设置变量；三元运算符
+[exec ls]#调用子进程
+
+#if
+if { $x &lt; 2} { ......" />
+    <meta name="keywords" content="cheat-sheet,tcl" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <!--
+ * @Author: lxulxu
+ * @Date: 2022-03-26 17:36:36
+ * @LastEditors: lxulxu
+ * @LastEditTime: 2022-08-13 13:38:08
+ * @FilePath: \Helperd:\文档\Gridea\themes\notes\templates\includes\header.ejs
+ * @Description: 
+ * 
+ * Copyright (c) 2022 by lxulxu, All Rights Reserved. 
+-->
+<div class="site-header">
+  <a href="https://lxulxu.github.io">
+  <img class="avatar" src="https://lxulxu.github.io/images/avatar.png?v=1702887125545" alt="">
+  </a>
+  <h1 class="site-title">
+    lxulxu&#39;s blog
+  </h1>
+  <p class="site-description">
+    Hello there
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/lxulxu" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <a href="https://space.bilibili.com/7739434/" target="_blank">
+          <i class="ri-bilibili-line"></i>
+        </a>
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Tcl Cheat Sheet
+            </h2>
+            <div class="post-info">
+              <span>
+                2022-08-30
+              </span>
+              <span>
+                5 min read
+              </span>
+              
+                <a href="https://lxulxu.github.io/tag/d16cn5Fj5/" class="post-tag">
+                  # cheat-sheet
+                </a>
+              
+                <a href="https://lxulxu.github.io/tag/B2noXaJMXu/" class="post-tag">
+                  # tcl
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <ul>
+<li>基础语法</li>
+</ul>
+<pre><code class="language-python">puts &quot;Hello World&quot;#输出
+set x [expr 1 == 2 ? 1 : 2]#设置变量；三元运算符
+[exec ls]#调用子进程
+
+#if
+if { $x &lt; 2} { ... }
+elseif { $x == 1 } { ... }
+
+#while
+while { $x &lt; 2 } {
+	incr x
+}
+
+#for
+for { set i 0 } { $i &lt; 5 } { incr i } { ... }
+
+#switch
+switch $x {
+	1 { ... }
+	2 { ... }
+	default { ... }
+}
+</code></pre>
+<ul>
+<li>字符串</li>
+</ul>
+<pre><code class="language-python">set s1 &quot;_Hello_World_&quot;
+set s2 &quot;_&quot;
+
+[string length $s1]
+[string index $s1 0]
+[string range $s1 1 end]
+append s1 &quot;!&quot;
+[string repeat $s1 5]#&quot;_Hello_World_&quot;*5
+
+[string toupper $s1]
+[string tolower $s1]
+
+[string compare $s1 $s2]
+[string equal $s1 $s2]
+
+[string first $s2 $s1]#s1中第一个匹配s2索引
+[string last $s2 $s1]#s1中最后一次匹配s2索引
+
+[string trim $s1 $s2]#-&gt;Hello_World
+[string trimright $s1 $s2]#-&gt;_Hello_World
+[string trimleft $s1 $s2]#-&gt;Hello_World_
+
+set s1 &quot;abc@163.com&quot;
+set s2 &quot;*@*.com&quot;
+[string match $s2 $s1]
+
+[format &quot;%s %x %f&quot; &quot;tcl&quot; 40 43.5]
+scan {planet1 0.330 planet2 4.87} {planet1 %g planet2 %g}#-&gt; 0.330 4.87 
+</code></pre>
+<ul>
+<li>列表</li>
+</ul>
+<pre><code class="language-python">#初始化
+set colors {red green blue}
+set colors [split &quot;red_green_blue&quot; _]
+set colors [list red green blue]
+
+[lindex $colors 1]
+[lrange $colors 0 2]
+[llength $colors]
+lappend colors &quot;orange&quot;#末尾添加元素
+lset colors 3 purple#设置第n个元素
+[linsert $colors 3 black white]
+[lreplace $colors 0 1 black white]
+[lsearch $colors black]
+concat $colors {black {white purple}}#-&gt;$colors black {white purple}
+[join $colors /]#列表元素以特定分隔符组合为字符串
+[lsort $colors]
+foreach item $colors { ... }#遍历
+</code></pre>
+<ul>
+<li>字典</li>
+</ul>
+<pre><code class="language-python">#初始化
+dict set colors c1 red
+set colors [dict create c1 &quot;black&quot; c2 &quot;white&quot;]
+
+[dict size $colors]
+[dict keys $colors]#所有key组合成的列表
+[dict values $colors]#所有value组合成的列表
+[dict exists $colors c1]
+#遍历
+foreach item [dict keys $colors] {
+	set value [dict get $colors item]
+}
+dict for {key value} $colors {
+	puts &quot;$key : $value&quot;
+}
+</code></pre>
+<ul>
+<li>IO</li>
+</ul>
+<pre><code class="language-python">#写入文件
+set fp [open &quot;input.txt&quot; w+]
+puts $fp &quot;Hello world.&quot;
+close $fp
+#读取文件
+set fp [open &quot;input.txt&quot; r]
+set file_data [read $fp]
+close $fp
+
+set fp [open &quot;input.txt&quot; r]
+while { [gets $fp data] &gt;= 0 } {
+  puts $data
+}
+close $fp
+#文件名相关操作
+[file join C:/ {Program Files} Tcl tclsh.exe]#-&gt;C:/Program Files/Tcl/tclsh.exe
+[file split x/y/z]#-&gt;x y z
+[file dirname /a/b/main.c]#-&gt;/a/b
+[file extension src/main.c]#-&gt;.c
+[file rootname src/main.c]#-&gt;src/main
+[file tail /a/b/c.txt]#-&gt;c.txt
+#查找文件
+glob -nocomplain {{src,backup}/*.[ch]}]#-nocomplain:跳过搜索结果为空时报错;{{src,backup}/*.[ch]}:正则匹配搜索文件
+[glob -directory ./ -types f -tails *]#-directory:指定搜索文件夹;-types:指定搜索对象类型
+#文件相关操作
+file mkdir foo
+file delete a.txt b.txt *.tmp
+file delete {*}[glob *]
+file copy a.txt b.txt#a.txt复制到b.txt
+file rename b.txt c.txt#b.txt重命名为c.txt
+</code></pre>
+<ul>
+<li>正则匹配</li>
+</ul>
+<pre><code class="language-python">#匹配
+regexp {([a-z]*).([a-z]*)} &quot;Tcl Command&quot; sm sm1 sm2#sm:full match;sm1:sub match 1;sm2:sub match 2
+regexp -nocase -start 4 -line -- {([a-z]*).([a-z]*)} &quot;Tcl\nCommand&quot; sm sm1 sm2#-nocase：忽视大小写;-start:指定匹配开始位置;-line:跨行匹配
+#替换
+regsub there &quot;They lives there lives&quot; their s#-&gt;s:They lives their lives
+regsub -all a ababa zz s#-&gt;s:zzbzzbzz
+regsub -all -- (a+)(ba*) aabaabxab {z\2} s#-&gt;s:zbaabxzb
+</code></pre>
+<ul>
+<li>数学运算</li>
+</ul>
+<pre><code class="language-python">namespace import ::tcl::mathfunc::*
+
+[rand]
+set x -1.2
+set y 2
+[abs $x]
+[ceil $x]#向上取整
+[floor $x]#向下取整
+[fmod $x $y]#%
+[int $x]
+[pow $x $y]
+[round $x]
+[sqrt $y]
+[max $x $y]
+[min $x $y]
+</code></pre>
+<ul>
+<li>时间</li>
+</ul>
+<pre><code class="language-python">set curr_tm [clock seconds]
+[clock format $curr_tm -format %H:%M:%S]#-&gt;15:34:01
+[clock format $curr_tm -format %D]#08/29/2022
+
+set date &quot;Jun 15, 2014&quot;
+[clock scan $date -format {%b %d, %Y}]#-&gt;1402761600
+
+after 500#休眠n毫秒
+</code></pre>
+<ul>
+<li>函数</li>
+</ul>
+<pre><code class="language-python">proc add {a b} {
+	return [expr $a + $b]
+}
+
+[add 10 30]
+
+#错误与异常
+catch {set fp [open no.txt]} errmsg
+puts &quot;ErrorMsg: $errmsg&quot;
+
+proc div {a b} {
+  if {$b == 0} {
+    error &quot;Error generated by error&quot; &quot;Info String for error&quot; 401
+  } else {
+    return [expr $a / $b]
+  }
+}
+
+if {[catch {puts &quot;Result = [div 10 0]&quot;} errmsg]} {
+  puts &quot;ErrorMsg: $errmsg&quot;
+  puts &quot;ErrorCode: $errorCode&quot;
+  puts &quot;ErrorInfo:\n$errorInfo\n&quot;
+}
+</code></pre>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://lxulxu.github.io/post/xu-ke-guan-li/">
+              <h3 class="post-title">
+                许可管理
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '18f52d4adb1e8df55124',
+    clientSecret: '7cd75fdb4ea3a192964816547ed498ad6784e04d',
+    repo: 'lxulxu.github.io',
+    owner: 'lxulxu',
+    admin: ['lxulxu'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/lxulxu/lxulxu.github.io" target="_blank"> lxulxu </a>
+  <a class="rss" href="https://lxulxu.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

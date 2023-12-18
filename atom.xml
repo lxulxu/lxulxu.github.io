@@ -1,0 +1,3384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://lxulxu.github.io</id>
+    <title>lxulxu&apos;s blog</title>
+    <updated>2023-12-18T08:12:46.524Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://lxulxu.github.io"/>
+    <link rel="self" href="https://lxulxu.github.io/atom.xml"/>
+    <subtitle>Hello there</subtitle>
+    <logo>https://lxulxu.github.io/images/avatar.png</logo>
+    <icon>https://lxulxu.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2023, lxulxu&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[RF Analyzer 简介]]></title>
+        <id>https://lxulxu.github.io/post/rf-analyzer-jian-jie/</id>
+        <link href="https://lxulxu.github.io/post/rf-analyzer-jian-jie/">
+        </link>
+        <updated>2023-02-28T10:54:18.000Z</updated>
+        <content type="html"><![CDATA[<p>参考PG269 Ch1 &amp; Ch2。</p>
+<h1 id="特点">特点</h1>
+<ul>
+<li>多达16个14-bit RF-DAC<br>
+Gen 1/Gen 2:4个14-bit二倍频RF-ADC tile，2/4个14-bit四倍频RF-ADC tile；<br>
+Gen 3:1/2/4个14-bit二倍频RF-ADC tile，2/4个14-bit四倍频RF-ADC tile。</li>
+<li>支持多个转换器之间的对齐(多片同步(MTS))</li>
+<li>支持预编程RF-DAC和RF-ADC，用户可以定义关键参数</li>
+<li>RF-ADC和RF-DAC有多个AX14-Stream数据接口</li>
+<li>单独的AX14-Lite配置接口</li>
+<li>Gen 1/Gen 2:1x(旁路)，2x, 4x, 8x抽取和插值<br>
+Gen 3:1x(旁路)，2x, 3x, 4x, 5x, 6x, 8x, 10x, 12x, 16x, 20x, 24x, 40x抽取和插值后的额外的2x插值</li>
+<li>数字复合混频器和数控振荡器(NCO)</li>
+<li>正交调制校正(QMC)，Gen 3每个RF-ADC有嵌入式数字步进衰减器(DSA)，每个RF-DAC有可变输出功率(VOP)控制</li>
+<li>片上时钟系统包含每个tile的PLL</li>
+<li>Gen 3:片上时钟分配网络；TDD模式支持省电模式和RX/Obs共享模式</li>
+</ul>
+<h1 id="dual-and-quad-rf-adcrf-dac-tiles">Dual and Quad RF-ADC/RF-DAC Tiles</h1>
+<table>
+<thead>
+<tr>
+<th>Tile类型</th>
+<th>转换器数量</th>
+<th>设备类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quad RF-ADC</td>
+<td>4</td>
+<td>Gen 1/Gen 2/Gen 3/DFE</td>
+<td>交错系数为4</td>
+</tr>
+<tr>
+<td>Dual RF-ADC</td>
+<td>2</td>
+<td>Gen 1/Gen 3/DFE</td>
+<td>交错系数为8，采样率为Quad RF-ADC两倍。</td>
+</tr>
+<tr>
+<td>Quad RF-DAC</td>
+<td>4</td>
+<td>Gen 1/Gen 2/Gen 3/DFE</td>
+<td>一个专用DUC</td>
+</tr>
+<tr>
+<td>Dual RF-DAC</td>
+<td>2</td>
+<td>Gen 3/DFE</td>
+<td>两个专用DUC，Gen 3/DFE配备Quad RF-DAC或Quad/Dual RF-DAC组合，所有的tile都有外部时钟输入</td>
+</tr>
+</tbody>
+</table>
+<p>下图为tile结构，虚线表示多个波段的情况。<br>
+<img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230228/img-158.6rfb9iadm1c0.jpg" alt="img-158" loading="lazy"><br>
+<img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230228/img-159.5uupdrk2apo0.jpg" alt="img-159" loading="lazy"><br>
+<img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230228/img-160.ma07k43z6g0.jpg" alt="img-160" loading="lazy"></p>
+<h1 id="rf-adcdac">RF-ADC/DAC</h1>
+<p>RF-ADC/DAC结构如下图所示。</p>
+<center class="half">
+    <img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230228/img-161.2kz79mrpyhq0.jpg" width="50%"><img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230228/img-162.3ilmbd5bf200.jpg" width="50%">
+</center>
+<center class="half">
+    <img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230228/img-163.4ejogkegsdg0.jpg" width="50%"><img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230228/img-164.1063rg051tb4.jpg" width="50%">
+</center>
+<p>RF-ADC/DAC特点如下。</p>
+<table>
+    <tr>
+        <td> </td>
+        <td width="45%">ADC</td> 
+        <td width="45%">DAC</td>
+    </tr>
+    <tr>
+        <td rowspan="3">Tile配置</td> 
+        <td>每个Tile有2/4个RF-ADC和1个PLL</td>
+        <td>Gen 1/Gen 2: 每个Tile有4个RF-DAC和1个PLL<br>Gen 3/DFE: 每个Tile有2/4个RF-DAC和1个PLL</td>
+    </tr>
+    <tr>
+        <td>Gen 1/Gen 2: 具有12位RF-ADC分辨率和16位数字信号处理数据路径；在通过DDC块之前，每个12位数据流都与RF-ADC核心输出的16位样本进行MSB对齐。<br>Gen 3/DFE: 具有14位RF-ADC分辨率和16位数字信号处理数据路径；在通过DDC块之前，每个14位数据流都与RF-ADC核心输出的16位样本进行MSB对齐。</td>
+        <td>具有14位RF-DAC分辨率和16位数字信号处理路径；数据与16位MSB对齐。</td> 
+    </tr>
+    <tr>
+        <td>实现为四通道（Quad）或两通道（Dual）（采样率取决于设备）</td>
+        <td>采样率取决于设备</td> 
+    </tr>
+    <tr>
+    <td rowspan="2">抽取/插值滤波器</td>
+        <td>Gen 1/Gen 2: 1x (旁路滤波器), 2x, 4x, 8x<br>Gen 3/DFE: 1x (旁路滤波器), 2x, 3x, 4x, 5x, 6x, 8x, 10x, 12x, 16x, 20x, 24x, 40x</td>
+        <td>Gen 1/Gen 2: 1x(旁路滤波器), 2x, 4x, 8x<br>Gen 3/DFE: 1x(旁路滤波器), 2x, 3x, 4x, 5x, 6x, 8x, 10x, 12x, 16x, 20x, 24x, 40x<br>IMR模式下还可用额外的2x</td> 
+    </tr>
+    <tr>
+        <td>80%的奈奎斯特带宽，89dB的阻带衰减</td>
+        <td>80%的通带，89dB的阻带衰减</td> 
+    </tr>
+    <tr>
+    <td rowspan="4">数字复数混频器</td>
+        <td colspan="2">全复数混频器支持RF-ADC的实数或I/Q输入</td>
+    </tr>
+    <tr>
+        <td colspan="2">每个RF-ADC/DAC带有48位NCO</td>
+    </tr>
+    <tr>
+        <td colspan="2">固定的Fs/4，Fs/2低功耗频率混合模式</td>
+    </tr>
+    <tr>
+        <td>支持I/Q和实数输入信号</td>
+        <td>支持RF-DAC混合模式功能，可最大化第二Nyquist区域中的RF-DAC功率</td> 
+    </tr>
+    <tr>
+    <td rowspan="2">单/多频带灵活性</td>
+        <td colspan="2">可配置为实数或I/Q输入</td>
+    </tr>
+    <tr>
+        <td>每对RF-ADC可支持2x频带<br>每个Quad RF-ADC Tile可支持4x频带</td>
+        <td>每对RF-DAC可支持2x带宽<br>每个RF-DAC Tile可支持4x带宽</td> 
+    </tr>
+    <tr>
+    <td rowspan="7">其他</td>
+        <td colspan="2">数字校正外部模拟正交调制器：支持I/Q输入对（两个RF-ADC/DAC）的增益、相位和偏移校正</td>
+    </tr>
+    <tr>
+        <td colspan="2">SYSREF输入信号用于多通道同步</td>
+    </tr>
+    <tr>
+        <td>在旁路模式下可以访问全带宽</td>
+        <td>在旁路模式下可以访问全Nyquist带宽</td> 
+    </tr>
+    <tr>
+        <td>每个Tile采用CML时钟输入缓冲器，具有片上校准的100Ω终止电阻<br>提供RF-ADC采样时钟或提供片上PLL的参考时钟</td>
+        <td>每个Tile采用CML时钟输入缓冲器，具有片上校准的100Ω终止电阻<br>提供RF-DAC采样时钟或提供片上PLL参考时钟（不适用于奇数双RF-DAC Tile）</td> 
+    </tr>
+    <tr>
+        <td>DC耦合RF-ADC输入的输出公共模式参考电压</td>
+        <td>Gen 1/Gen 2: 支持20mA或32mA输出功率模式<br>Gen 3/DFE: 可变输出功率（VOP）支持满量程电流汲取，向后兼容Gen 1和Gen 2的20/32 mA模式</td> 
+    </tr>
+    <tr>
+        <td>Gen 3/DFE: 数字步进衰减器（DSA）；在时分双工（TDD）应用中的省电模式；时分复用（TDD）应用中RX和观测通道的不同抽取因子和FIFO数据速率</td>
+        <td>Gen 3/DFE: 在时分复用（TDD）应用中单个功能块的省电模式</td> 
+    </tr>
+        <tr>
+        <td>输入信号幅度阈值：每个RF-ADC有两个可编程阈值标志；<br>灵活的AXI4-Stream接口支持广泛的可编程逻辑时钟频率和转换器采样率；<br>每个RF-ADC专用高速、高性能差分输入缓冲器，具有片上校准的100Ω终止电阻</td>
+        <td>Gen 1/Gen 2: 第一Nyquist区的Sinc校正；<br>Gen 3/DFE: 第一和第二Nyquist区的Sinc校正</td> 
+    </tr>
+</table>
+<br>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[RF Analyzer 功能详解]]></title>
+        <id>https://lxulxu.github.io/post/rf-analyzer-gong-neng-xiang-jie/</id>
+        <link href="https://lxulxu.github.io/post/rf-analyzer-gong-neng-xiang-jie/">
+        </link>
+        <updated>2023-02-27T11:06:33.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="rf-adc">RF-ADC</h1>
+<figure data-type="image" tabindex="1"><img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230222/img-72.uyj3mknshqo.jpg" alt="img-72" loading="lazy"></figure>
+<h2 id="转换器设置converter-settings">转换器设置(Converter Settings)</h2>
+<ul>
+<li>
+<p>校准模式(Calibration Mode)<br>
+<img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-151.4s8e5r0arfa0.jpg" alt="img-151" loading="lazy"><br>
+校准子系统由三个主要模块组成：</p>
+<ul>
+<li>时间交错偏移校准模块(OCB):校正每个子RF-ADC的<strong>DC偏移</strong></li>
+<li>增益校准模块(GCB):校正交错子RF-ADC之间的<strong>增益差异</strong></li>
+<li>时间偏移校准模块(TSCB):校正交错子RF-ADC之间的<strong>时间偏移</strong></li>
+</ul>
+<p>除了自动校准外，所有四个校准模块（OCB1、OCB2、GCB、TSCB）都可用于获取和设置用户系数。 应用程序读回校准解冻时生成的系数，并在需要时恢复它们； 这有助于在输入信号不满足校准要求时保持 RF-ADC 性能。 此功能适用于 IP 向导中的每个 RF-ADC。 启用此功能会增加 IP 的大小。</p>
+<pre><code class="language-c++">//以下示例代码显示了 TSCB 的用户系数设置。
+
+u32 Status = XRFDC_FAILURE;
+XRFdc_Calibration_Coefficients Coeffs;
+//使用下面的样本系数
+Coeffs.Coeff0 = 146;
+Coeffs.Coeff1 = 255;
+Coeffs.Coeff2 = 255;
+Coeffs.Coeff3 = 255;
+Coeffs.Coeff4 = 113;
+Coeffs.Coeff5 = 255;
+Coeffs.Coeff6 = 255
+Coeffs.Coeff7 = 255;
+Status = XRFdc_SetCalCoeffients( RFdcInstPtr, Tile, Block,
+XRFDC_CAL_BLOCK_TSCB, &amp;Coeffs);
+If (Status != XRFDC_SUCCESS) {
+    /*handle error*/
+}  
+</code></pre>
+<p>使用<code>XRFdc_SetCalCoefficients</code> API 恢复校准系数会自动禁用实时校准。 提供 <code>XRFdc_DisableCoefficientsOverride</code> API 以禁用此用户系数覆盖模式并重新启用实时校准。 禁用实时校准时，实时端口校准冻结无效。</p>
+<figure data-type="image" tabindex="2"><img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-74.4auk0q3tcqw0.jpg" alt="img-74" loading="lazy"></figure>
+<ul>
+<li>Mode 1:优化0.4* Fs 到Fs/2范围内信号，对于输入频率Fsamp/2(Nyquist) ± 10%是最佳的。</li>
+<li>Mode 2:优化0 到0.4* Fs范围内信号，适用于其他范围输入频率。</li>
+</ul>
+</li>
+<li>
+<p>奈奎斯特区(Nyquist Zone):每个RF-ADC通道可以在第一或第二奈奎斯特区采样信号。第一奈奎斯特区被定义为信号在0和Fs/2之间，第二奈奎斯特区被定义为信号在Fs/2和Fs之间。为了确保RF-ADC的性能最佳，RF-ADC配置应指示预期的操作区域。只要信号符合RF-ADC输入带宽要求，也可以使用其他奈奎斯特区。第1，3，5 ...区称为奇数区，第2，4 ...区称为偶数区。1 用于奇数区域，2 用于偶数区域。</p>
+</li>
+<li>
+<p>校准冻结(Freeze):用于冻结每个通道的交错校准。当模拟输入电压过高或相关的<code>int_cal_freeze</code>输入被断时，校准将被冻结。绿灯表示冻结状态。冻结按键可冻结或解冻交错校准。</p>
+</li>
+<li>
+<p>禁用引脚(Disable Pin):禁用校准冻结实时端口控制</p>
+</li>
+<li>
+<p>信号衰减(Attenuation):每个ADC通道片内数字步进衰减器(Digital Step Attenuator, DSA)衰减值(以dB为单位)，disable pin功能可以禁用DSA引脚控制。</p>
+</li>
+<li>
+<p>抖动(Dither):除非采样率低于最大采样率0.75倍，否则启用。</p>
+</li>
+<li>
+<p>输入共模电压范围(VCM)</p>
+</li>
+</ul>
+<h2 id="阈值检测threshold-detection">阈值检测(Threshold Detection)</h2>
+<p>每个 RF-ADC 通道有两个实时输出信号，具有过量程(Over Range)和过压(Over Voltage)功能，当模拟输入超过限度的时候会给出中断，同时上报给通信总线，以便直接访问 PL 设计。下图显示了阈值、过量程和过压电平以及随着输入模拟信号的增加这些电平的响应。<br>
+<img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-152.47kp0c0pnvm0.jpg" alt="img-152" loading="lazy"></p>
+<ul>
+<li>
+<p>Mode</p>
+<table>
+<thead>
+<tr>
+<th>模式</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Off</td>
+<td>阈值电路禁用，状态输出为低。</td>
+</tr>
+<tr>
+<td>Sticky over</td>
+<td>当来自RF-ADC的数据超过上限阈值时，阈值状态信号为高电平，状态一直保持到发送清除操作为止。</td>
+</tr>
+<tr>
+<td>Sticky under</td>
+<td>当来自RF-ADC的数据在用户指定的时间或延迟内保持低于下限阈值时，阈值状态信号为高电平，状态一直保持到发送清除操作为止。使用RFdc驱动程序API设置计数器，使用此机制可防止触发阈值事件的短时间偏移。</td>
+</tr>
+<tr>
+<td>Hysteresis</td>
+<td>当超过设定的上限阈值时设置状态输出，当信号在用户指定的延迟值期间保持低于下限阈值时清除。下限阈值的延迟值由32位计数器定义，使用RFdc驱动程序API设置计数器，延迟为阈值检测增加了滞后，以防止触发阈值事件的短时间偏移。</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Under Level:低阈值</p>
+</li>
+<li>
+<p>Over Level:高阈值</p>
+</li>
+<li>
+<p>Delay:延迟值</p>
+</li>
+</ul>
+<p>使用 RFdc 驱动程序 API 配置阈值电平和延迟值示例如下。</p>
+<pre><code class="language-c++">// Initial Setup
+XRFdc_Threshold_Settings Threshold_Settings;
+Threshold_Settings.UpdateThreshold = XRFDC_UPDATE_THRESHOLD_BOTH; // Setup
+values
+for threshold 0 and 1
+Threshold_Settings.ThresholdMode[0] = XRFDC_TRSHD_STICKY_UNDER; // Set
+threshold0
+mode to Sticky Under
+Threshold_Settings.ThresholdUnderVal[0] = 1000; // Measured in 14-bit
+unsigned LSBs
+Threshold_Settings.ThresholdAvgVal[0] = 10; // Data must be below lower
+threshold for 10*8 4 GSPS RF-ADC samples
+// Write threshold values to the selected Tile / RF-ADC
+XRFdc_SetThresholdSettings(ptr, Tile, Block, &amp;Threshold_Settings);
+</code></pre>
+<h2 id="抽取设置decimation-settings">抽取设置(Decimation Settings)</h2>
+<p>降采样滤波器（Decimation Filter）将高采样率信号降采样到较低采样率。通过将输入信号的带宽限制到降采样后的采样率的一半，然后将其下采样来减少数据量。降采样滤波器通常由两部分组成：抗混叠滤波器和下采样器。抗混叠滤波器通过降低输入信号的带宽，以避免在下采样时出现混叠误差，而下采样器则将信号降采样到所需的采样率。</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OFF</td>
+<td>滤波器被禁用，RF-ADC 不可用</td>
+</tr>
+<tr>
+<td>1x</td>
+<td>滤波器被绕过</td>
+</tr>
+<tr>
+<td>2x</td>
+<td>2倍抽取，80% Nyquist 通带</td>
+</tr>
+<tr>
+<td>4x</td>
+<td>4倍抽取，80% Nyquist 通带</td>
+</tr>
+<tr>
+<td>8x</td>
+<td>8倍抽取，80% Nyquist 通带</td>
+</tr>
+</tbody>
+</table>
+<p>RFdc 驱动程序 API 可用于使用以下代码获取 IP 内核中设置的抽取率。</p>
+<pre><code class="language-c++">//获取 Tile0、DDC Block1 的抽取因子
+int Tile = 0;
+u32 Block = 1;
+u32 Decimation_Factor;
+if( XRFdc_GetDecimationFactor (ptr, Tile, Block, &amp;DecimationFactor) == XST_SUCCESS) {
+	xil_printf(&quot;ADC Tile%1d,%1d Decimation Factor is: %d&quot;, Tile, Block,Decimation_Factor);
+}
+</code></pre>
+<h1 id="rf-dac">RF-DAC</h1>
+<figure data-type="image" tabindex="3"><img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-81.7kckidky6ms0.jpg" alt="img-81" loading="lazy"></figure>
+<h2 id="转换器设置converter-settings-2">转换器设置(Converter Settings)</h2>
+<ul>
+<li>数据通路模式(DataPath):四种可用模式</li>
+</ul>
+<table>
+    <tr>
+        <td>Mode</td> 
+        <td colspan="2">Full Nyquist DUC</td> 
+        <td colspan="2">IMR Low-pass</td> 
+        <td colspan="2">IMR High-pass</td>
+        <td colspan="2">DUC-Bypass</td>
+   </tr>
+    <tr>
+        <td>IMR x2</td>
+        <td colspan="2">OFF</td> 
+        <td colspan="2">ON</td> 
+        <td colspan="2">ON</td>
+        <td colspan="2">OFF</td>   
+    </tr>
+    <tr>
+        <td>Mix-Mode</td>
+        <td>OFF</td> 
+        <td>ON</td>
+        <td>OFF</td> 
+        <td>ON</td>
+        <td>OFF</td> 
+        <td>ON</td>
+        <td>OFF</td> 
+        <td>ON</td>
+    </tr>
+    <tr>
+        <td>Usable Bandwidth(Fs)</td>
+        <td>0-0.45</td> 
+        <td>0.55-0.95</td> 
+        <td>0-0.2</td>
+        <td>0.8-0.95</td> 
+        <td>0.3-0.45</td> 
+        <td>0.55-0.7</td>
+        <td>0-0.45</td> 
+        <td>0.55-0.95</td>    
+    </tr>
+    <tr>
+        <td>Reconstruction Filter</td>
+        <td>Low-pass</td> 
+        <td>Band-pass</td>
+        <td>Low-pass</td> 
+        <td>Band-pass</td>
+        <td>Low-pass</td> 
+        <td>Band-pass</td>
+        <td>Low-pass</td> 
+        <td>Band-pass</td>
+    </tr>
+</table>
+<ul>
+<li>解码模式(Decoder Mode):选择要优化的性能：噪声基底或线性。必须为通信应用选择噪声基底优化。宽带调制信号推荐使用低噪声模式。</li>
+<li>奈奎斯特区(Nyquist Zone):选择信号将位于哪个奈奎斯特区域，1正常模式，2混合模式。<br>
+<img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-58.6mswppffpl40.jpg" alt="img-58" loading="lazy">
+<ul>
+<li>正常模式:蓝线表示理想的RF-DAC输出陡峭的sinc响应。在这种模式下，第二奈奎斯特区中的输出图像将被严重衰减。对于此模式，可用反sinc滤波器来补偿第一奈奎斯特区的衰减。</li>
+<li>混合模式:红线表示理想的RF-DAC输出响应。在这种模式下，第二奈奎斯特区中的输出功率显著增加，并且在大多数区域中也具有近似平坦的响应。可以在Vivado IDE中设置奈奎斯特区。由于sinc响应衰减和可能的带宽衰减，通常不会将RF-DAC在高于2的奈奎斯特区操作。</li>
+</ul>
+</li>
+<li>当前值(Current):当前可变输出功率(variable output power, VOP)值</li>
+</ul>
+<h2 id="反sinc补偿inverse-sinc-settings">反Sinc补偿(Inverse Sinc Settings)</h2>
+<p>模拟输出响应特性更接近sin(x)/x (冲击响应)，因此如果后级想取得比较平坦的系统响应需要较大的带宽。而做一个比较宽的平坦的模拟滤波器既不经济也不实惠，因此需要在DAC的输出级之前添加一级反sinc滤波器。可以认为和高速串行总线的预加重类似，通过提高信号高频分量的能量来抵消来自后端滤波器在过渡带增益不足的影响。<br>
+<img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-59.4087xmd6kx40.jpg" alt="img-59" loading="lazy"><br>
+蓝色线代表滤波器本身的频率响应。 可以看出，它随频率增加以补偿输出的 sinc 响应，如红线所示。 复合输出响应由黄色迹线给出，并显示高达 89% 奈奎斯特的平坦通带。<br>
+Enable启用反Sinc补偿高频下的Sinc衰减，第一代此功能仅在信号位于奈奎斯特区1时有效，第三代此功能在信号位于奈奎斯特区1/2时有效。</p>
+<h2 id="插值设置interpolation-settings">插值设置(Interpolation Settings)</h2>
+<p>插值滤波器（Interpolation Filter）将信号从低采样率上采样到高采样率，通过在输入信号中插入零值来扩展输入信号的频谱，然后对其进行低通滤波来移除扩展后信号中的高频分量。</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OFF</td>
+<td>滤波器被禁用，RF-DAC 不可用</td>
+</tr>
+<tr>
+<td>1x</td>
+<td>滤波器被绕过</td>
+</tr>
+<tr>
+<td>2x</td>
+<td>2倍插值，80% Nyquist 通带</td>
+</tr>
+<tr>
+<td>4x</td>
+<td>4倍插值，80% Nyquist 通带</td>
+</tr>
+<tr>
+<td>8x</td>
+<td>8倍插值，80% Nyquist 通带</td>
+</tr>
+</tbody>
+</table>
+<p>RFdc 驱动程序 API 命令如下。</p>
+<pre><code class="language-c++">// Get Interpolation factor for Tile0, DUC Block1
+int Tile = 0;
+u32 Block = 1;
+u32 Interpolation_Factor;
+if( XRFdc_GetInterpolationFactor (ptr, Tile, Block, &amp;Interpolation_Factor) == XST_SUCCESS) {
+	xil_printf(&quot;DAC Tile%1d,%1d Interpolation Factor is: %d&quot;, Tile, Block,Interpolation_Factor);
+}
+</code></pre>
+<h1 id="电源管理power-management">电源管理(Power Management)</h1>
+<ul>
+<li>电源模式(PowerMode):打开/关闭单个通道电源</li>
+<li>DisableIPControl:启用/禁用RTS控制</li>
+</ul>
+<h1 id="混频设置mixer-settings">混频设置(Mixer Settings)</h1>
+<p><img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-155.5wcnvorhro00.jpg" alt="img-155" loading="lazy"><br>
+建议先设置Crossbar页面，然后设置混频器和NCO的其他参数，因为混频器在real-real模式下被旁路。</p>
+<ul>
+<li>模拟/数字输出(Analog/Digital Output):仅在转换器启动时可配置，可选项Real和I/Q。当转换器0设为I/Q时，转换器1也必须启用；当转换器2设为I/Q时，转换器3也必须启用。</li>
+<li>类型(Type):可选项bypassed/coarse/fine，取决于转换器数字输出数据字段的选择。</li>
+<li>模式(Mode):仅转换器启用时可设置，选项取决于混频器类型和数字输出数据格式，real数据对应bypassed，I/Q数据对应Real to I/Q或I/Q to I/Q。</li>
+<li>频率(Frequency):混频器类型为coarse时可选项Fs/2，Fs/4和-Fs/4，混频器类型为fine时可选范围-10GHz到10GHz。</li>
+<li>相位(Phase Init):仅在混频器类型为fine时可用，范围在-180到180。</li>
+<li>刻度(Mixer Scale):无</li>
+</ul>
+<p>混频器RFdc API示例如下。</p>
+<pre><code class="language-c++">XRFdc_Mixer_Settings Mixer_Settings;
+for(tile=0;tile&lt;4; tile++) {
+	// 确保混合器设置更新使用 Tile 事件
+    for(block=0; block&lt;2; block++) {
+        XRFdc_GetMixerSettings (ptr, XRFDC_ADC_TILE, tile, block,&amp;Mixer_Settings);
+        Mixer_Settings.EventSource = XRFDC_EVNT_SRC_TILE; //使用XRFDC_EVNT_SRC_TILE事件更新混频器设置
+        XRFdc_SetMixerSettings (ptr, XRFDC_ADC_TILE, tile, block,&amp;Mixer_Settings);
+    }
+    //重置 Tile0 中两个 DDC 的 NCO 相位（假设两者都处于活动状态）
+    XRFdc_ResetNCOPhase(ptr, XRFDC_ADC_TILE, tile, 0); // DDC Block0
+    XRFdc_ResetNCOPhase(ptr, XRFDC_ADC_TILE, tile, 1); // DDC Block1
+    XRFds_UpdateEvent(ptr, XRFDC_ADC_TILE, tile, 1, XRFDC_EVENT_MIXER); //生成tile事件
+}  
+</code></pre>
+<h1 id="qmc-配置">QMC 配置</h1>
+<p>正交调制校正(quadrature modulator correction, QMC)用于调整输出的幅度和相位，当转换器与外部调制器或解调器接口时，这些用于补偿不匹配的I和Q信号路径。<br>
+<img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-153.56t3vz1k4h00.jpg" alt="img-153" loading="lazy"></p>
+<ul>
+<li>增益调整(Enable Gain/Gain):将信号乘以增益因子来完成的，该因子的范围为0到2.0，可以将各个因子应用于I和Q数据路径，block输出分辨率为16位。</li>
+<li>相位调整(Enable Phase/Phase Mismatch):通过将Q的比例分数添加到I值来实现，范围在+-26度或+-0.5数量级。这种加法的结果会导致增益误差，必须由增益误差校正块来校正，仅在复杂模式下生效。</li>
+<li>DC偏置(Offset):直流偏移调整，仅对直流耦合有效，通过向采样信号添加一个固定的LSB值来完成的，范围是-2048到2047。</li>
+</ul>
+<p>可以使用RFdc驱动程序API设置增益、相位和偏移校正因子值。</p>
+<pre><code class="language-c++">// Initial Setup
+XRFdc_QMC_Settings QMC_Settings_I, QMC_Settings_Q; // RF-ADC block0 is I, RF-ADC block1 is Q
+QMC_Settings_I.EventSource = XRFDC_EVNT_SRC_TILE; // QMC Settings are updated with a tile event
+QMC_Settings_Q.EventSource = XRFDC_EVNT_SRC_TILE; ....
+// Update Gain/Phase/Offset for I/Q RF-DACs in tile0
+QMC_Settings_I.GainCorrectionFactor = 0.9; // Set Gain for I
+QMC_Settings_I.PhaseCorrectionFactor = -5.0; // I/Q imbalance factor applied to I side, approx in degrees.
+QMC_Settings_I.EnableGain = 1;
+QMC_Settings_I.EnablePhase = 1;
+QMC_Settings_Q.GainCorrectionFactor = 0.95;
+QMC_Settings_Q.EnableGain = 1;
+XRFdc_SetQMCSettings(ptr, XRFDC_ADC_TILE, 0, 0, &amp;QMC_Settings_I); // Write settings for ADC0,0 - I ADC
+XRFdc_SetQMCSettings(ptr, XRFDC_ADC_TILE, 0, 1, &amp;QMC_Settings_Q); //Write settings for ADC0,1 - Q ADC
+XRFdc_UpdateEvent(ptr, XRFDC_ADC_TILE, 0, 0, XRFDC_EVENT_QMC); //Generate a Tile Update Event - applies all QMC Settings at once
+</code></pre>
+<p>还可以使用<code>XRFdc_GetQMCSettings RFdc</code>驱动程序API命令从任何转换器读回QMC设置。</p>
+<h1 id="锁相环phase-locked-loop-pll">锁相环(Phase-Locked Loop, PLL)</h1>
+<figure data-type="image" tabindex="4"><img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-27.58oy6tchlwo0.jpg" alt="img-27" loading="lazy"></figure>
+<ul>
+<li>时钟源(Clocking Source)
+<ul>
+<li>外部(External):选择时钟源来自外部，通常为几GHz量级。</li>
+<li>板上(Onboard):选择时钟源来自板上，输入时钟一般小于1GHz。
+<ul>
+<li>参考时钟(Clocking Reference)频率:可以来自外部输入或源tile转发时钟。</li>
+<li>输入时钟 (Tile Clock Input):数值和之前时钟配置的值一致，和采样率有关，因为采样时钟是使用这个时钟经过PLL生成的。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>内部锁相环(Internal PLL)
+<ul>
+<li>Enable:是否启用内部PLL，当片中的至少一个转换器被启用时，它是可配置的。启用PLL时需确保输入频率在Zynq UltraScale+ RFSoC Data Sheet范围内，绕过PLL时转换器的采样时钟作为输入时钟。</li>
+<li>Bypassed</li>
+</ul>
+</li>
+</ul>
+<p>IP向导或专用于配置PLL系统的API函数将参考分频器值设置为整数，将反馈分频器值设置为整数，将输出分频器值设置为整数，以达到最佳性能。PLL频率输出<code>Fs = (Fin/R)*(FBDiv/M)</code>，其中Fin是参考频率，其他参数(RF-ADC Gen 1/Gen 2/Gen 3/DFE and RF-DAC Gen 1/Gen 2)如下表。</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>参考分频器(Reference Divider)(R)</td>
+<td>1 to 4</td>
+</tr>
+<tr>
+<td>反馈分频器(Feedback Divider)(N)</td>
+<td>13 to 160</td>
+</tr>
+<tr>
+<td>输出分频器(Output Divider)(M)</td>
+<td>2, 3, 4 ,6, 8,... (even numbers ≤ 64)</td>
+</tr>
+<tr>
+<td>压控振荡器(VCO)Frequency(GHz)</td>
+<td>8.5 to 13.2</td>
+</tr>
+</tbody>
+</table>
+<h1 id="crossbar和多频段multi-bands">Crossbar和多频段(Multi-Bands)</h1>
+<p><img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-30.1ev1wv9ss1cw.jpg" alt="img-30" loading="lazy"><br>
+Crossbar页面影响混频器的real或complex模式以及multi-bands模式。complex模式激活一对信道以支持同相(I)和正交(Q)信号。由于复数混频器(和NCO)架构，允许实到复(real-to-complex,R2C)或复到复(complex-to-complex,C2C)模式，但不允许复到实(complex-to-real,C2R)模式。这意味着没有可用于RF-ADC的C2R模式和可用于RF-DAC的R2C模式。在complex模式中，偶数信道始终用于I信号，奇数信道用于Q信号。<br>
+Multi-bands允许一个DAC/ADC模拟信道能够共享多个DUC或DDC信道来发送或接收多波段载波信号。对于DAC，多个基带信号可以在单独的DUC链中进行上转换，然后在crossbar上合并再发送到模拟DAC模块。Multi-bands页面影响混频器的real或 complex模式以及multi-bands模式。RF-ADC multi-bands功能支持以下配置。</p>
+<table>
+<thead>
+<tr>
+<th>模式</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Real Dual-Band</td>
+<td>每对2x multi-band实数据，一个RF-ADC模拟输入有效，两个RF-ADC数字DDC通道均已启用。</td>
+</tr>
+<tr>
+<td>I/Q Dual-Band</td>
+<td>每对2x multi-band I/Q数据，两个RF-ADC输入有效，一个用于I，一个用于Q，两个RF-ADC数字DDC通道均已启用。</td>
+</tr>
+<tr>
+<td>Real Quad-Band (Quad ADC tile only)</td>
+<td>每个tile有4x multi-band实数据，一个RF-ADC模拟输入有效，四个RF-ADC数字DDC通道均已启用。</td>
+</tr>
+<tr>
+<td>I/Q Quad-Band (Quad ADC tile only)</td>
+<td>每个tile有4x multi-band I/Q数据，两个RF-ADC输入有效，一个用于I，一个用于Q，四个RF-ADC数字DDC通道均已启用。</td>
+</tr>
+</tbody>
+</table>
+<p>当多频段关闭时，I和Q输入直接通过多频段路由逻辑;当多频段开启时，I和Q输入被路由到tile中的多个DDC 模块。<br>
+<img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master20230227/img-156.1rgyzywlxn28.jpg" alt="img-156" loading="lazy"><br>
+RF-ADC多频段是通过将一个RF-ADC模拟模块的输出路由到多个RF-ADC DDC模块来实现的。每个块处理一个数据带，并且可以从多个载波混合到基带。下图中的Quad ADC块显示了这一点。<br>
+<img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-157.62vhzzi92m00.jpg" alt="img-157" loading="lazy"><br>
+RF-ADC Tile 0 (Tile_224) 配置为实输入到I/Q输出模式。ADC0转换双频信号；ADC1关闭。顶部对可以配置为独立的 RF-ADC。双频输出路由到ADC0和ADC1的DDC模块。DDC模块中的混频器可以配置为从输入数据中提取正确的频带。<br>
+RF-ADC Tile 1 (Tile_225) 配置为4x多频段I/Q输入到I/Q输出模式。这里ADC0承载四波段I信号，ADC1承载Q数据。ADC2和ADC3关闭。RF-ADC的输出被路由到所有四个DDC模块。每个DDC都可以配置为从所需的频带中提取数据。</p>
+<h1 id="fifo深度和时钟clock-distribution">FIFO深度和时钟(Clock Distribution)</h1>
+<figure data-type="image" tabindex="5"><img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-41.1u5d9itfn97k.jpg" alt="img-41" loading="lazy"></figure>
+<ul>
+<li>Fin:输入频率</li>
+<li>MMCM:输入时钟分频器Reference Clock经过分频后变成PLL Reference Clock，在MMCM模块中，MMCM为PL侧的FIFO生成读取或写入时钟，在FIFO数据页面中显示为F(PL)。</li>
+<li>F(PL):MMCM为PL端的FIFO生成的读写时钟，计算公式F(PL)=Fin*M/D/ClkDiv。</li>
+<li>时钟分频(FabClkDiv):在非MTS位流中，转换器采样时钟(Fs，也称为T1)除以8或4，然后除以FabCLKDiv。作为输入参考传输至MMCM模块。</li>
+<li>捕获样本数(Number of Samples)</li>
+<li>F(T1):Tile时钟</li>
+</ul>
+<h1 id="fft频谱分析">FFT频谱分析</h1>
+<p>单击ADC设置页面中的Acquisition按钮或DAC设置页面中的Generation按钮，将打开FFT页面。在DAC FFT页面中，UI中自带单音和双音发生配置选项。要生成复杂的调制信号，用户可以从文件加载测试向量。Fs表示观察到的RF-ADC或RF-DAC的采样频率，Eff.Fs表示抽取后或插值前原始数据流（基带）的采样频率。FFT图的X轴（频率）反映了Eff.Fs。<br>
+<img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-68.6zlmduopqqc0.jpg" alt="img-68" loading="lazy"></p>
+<p>传统ADC规格</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>无杂散动态范围(SFDR)</td>
+<td>衡量数据转换器在杂散分量干扰基本信号或导致基本信号失真之前可用的动态范围,定义是基本正弦波信号均方根(RMS)值与从0Hz(DC)到二分之一数据转换器采样速率(如fs/2)范围内测得的输出峰值杂散信号均方根值之比，单位为dBc。</td>
+</tr>
+<tr>
+<td>信噪比(SNR)</td>
+<td>量化数据转换器内噪声的参数，输入信号功率与噪声功率的比值，单位为dB。</td>
+</tr>
+<tr>
+<td>信噪失真比(SNDR)</td>
+<td>单位为dBc，代表输入信号的质量，SNDR 越大，输入功率中的噪声和杂散比率越小。</td>
+</tr>
+<tr>
+<td>有效位数(ENOB)</td>
+<td>衡量数据转换器相对于输入信号在奈奎斯特带宽上的转换质量（以位为单位）。</td>
+</tr>
+</tbody>
+</table>
+<p>RF采样数据转换器规格</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>噪声频谱密度(NSD)</td>
+<td>RF-ADC满刻度输入下每赫兹频率对应的噪声功率，一般使用 dBFS/Hz 为单位，用于衡量有独特采样率的数据转换器的噪声性能。</td>
+</tr>
+<tr>
+<td>三阶交调(IM3)</td>
+<td>任何复杂信号都同时包含多个频率分量。转换器传输函数的非线性不仅会造成单一频率失真，也会导致两个或更多信号频率相互作用，产生交调产物。</td>
+</tr>
+<tr>
+<td>邻信道泄漏比(ACLR)</td>
+<td>在通过空中接口传输信号时，从被传输信号泄漏到邻近信道的功率会干扰邻近信道中的传输，劣化无线电系统的总体性能。</td>
+</tr>
+</tbody>
+</table>
+<p>其他</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FundA</td>
+<td>fund 信号的 RMS 功率电平，以 dBFS 表示。</td>
+</tr>
+<tr>
+<td>SFDRxH23</td>
+<td>SFDR 不包括以 dBc 为单位的二次和三次谐波失真。谐波失真的位置是可预测的，因此可以在应用中单独处理。因此，列出了单独的 SFDRxH23 供参考。</td>
+</tr>
+<tr>
+<td>Fspur</td>
+<td>第一个奈奎斯特频带中最差 spur 的频率位置，单位为 MHz。</td>
+</tr>
+<tr>
+<td>FspurxH23</td>
+<td>最差杂散的频率位置不包括第一奈奎斯特频带中以 MHz 为单位的二次谐波和三次谐波失真。本参数包括 ADC OIS、GTIS 和 PLL 参考杂散。</td>
+</tr>
+<tr>
+<td>THD</td>
+<td>总谐波失真，单位为 dBc。THD 是 RMS 信号能量与前六次谐波之和的 RMS 值之比。</td>
+</tr>
+<tr>
+<td>频率杂散</td>
+<td>PLL 的输入参考（相位频率检测器的频率）产生的杂散，包括其谐波。当使用外部 PLL 直接计时，必须在 PLL 选项卡中指明此评估工具 GUI 的参考频率，以计算频率杂散。RF-ADC 采用交织技术构建。通过选择交织性能，偏移交织和增益/定时交织的支路列在 RF-ADC FFT 选项卡上。</td>
+</tr>
+<tr>
+<td>交织偏移</td>
+<td>偏移交织杂散的频率位置和振幅。</td>
+</tr>
+<tr>
+<td>交织增益</td>
+<td>增益/定时交织杂散的频率位置和幅度。</td>
+</tr>
+</tbody>
+</table>
+<h1 id="中断功能interrupts">中断功能(Interrupts)</h1>
+<p>在系统异常时，自动回读一些AD/DA寄存器状态。每行开头的复选框启用或禁用(掩码)相应的中断状态。单击Apply按钮应用所选中断状态。Refresh按钮读回当前状态，绿灯显示相应的中断位被设置。Clear按钮尝试清除所有中断位并读回状态。<br>
+<img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-80.xcl67cmg8m8.jpg" alt="img-80" loading="lazy"></p>
+<table>
+<thead>
+<tr>
+<th>中断</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RF-ADC/RF-DAC Datapath Interrupt</td>
+<td>IP寄存器在0x208 0x210 0x218 0x220中断</td>
+</tr>
+<tr>
+<td>Overflow in RF-DAC<br>Interpolation Stage 0/1/2/3 I or Q datapath</td>
+<td>插值阶段溢出/饱和，Flag表示发生溢出阶段和位置。</td>
+</tr>
+<tr>
+<td>Overflow in RF-ADC<br>Decimation Stage 0/1/2/3 I or Q Datapath</td>
+<td>RF-ADC抽取阶段溢出/饱和，Flag表示发生溢出阶段和位置。</td>
+</tr>
+<tr>
+<td>Overflow in RF-DAC/RF-ADC QMC Gain/Phase</td>
+<td>QMC增益/相位校正溢出/饱和，数据幅度或校正系数过大。</td>
+</tr>
+<tr>
+<td>Overflow in RF-DAC/RF-ADC QMC Offset</td>
+<td>QMC偏移校正溢出/饱和，数据幅度或校正系数过大。</td>
+</tr>
+<tr>
+<td>Overflow in RF-DAC Inverse Sinc Filter(2nd Nyq)</td>
+<td>RF-DAC反Sinc补偿滤波器溢出/饱和，数据过大。</td>
+</tr>
+<tr>
+<td>Over/Underflow in RF-DAC Mixer</td>
+<td>混频器溢出</td>
+</tr>
+<tr>
+<td>IMR Overflow</td>
+<td>镜像抑制模块溢出</td>
+</tr>
+<tr>
+<td>Overflow in Inverse Sync Filter</td>
+<td>混频模式中DAC反补偿模块溢出</td>
+</tr>
+<tr>
+<td>Sub RF-ADC 0/1/2/3 Over/Under Range Interrupt</td>
+<td>模拟输入超出Sub-RF-ADC范围，应减小输入信号幅度。</td>
+</tr>
+<tr>
+<td>ADC Over Range</td>
+<td>模拟输入超出RF-ADC范围，应减小输入信号幅度。要清除此中断错误，需清除sub-RF-ADC超范围中断错误。</td>
+</tr>
+<tr>
+<td>ADC Over Voltage</td>
+<td>模拟输入超出RF-ADC缓存区安全输入范围，缓存区关闭，输入信号幅度和共模电压应在范围内。</td>
+</tr>
+<tr>
+<td>ADC Common Mode Over Voltage</td>
+<td>RF-ADC输入共模电压高于指定值</td>
+</tr>
+<tr>
+<td>ADC Common Mode Under Voltage</td>
+<td>RF-ADC输入共模电压低于指定值</td>
+</tr>
+<tr>
+<td>RF-ADC/RF-DAC FIFO Over/Underflow</td>
+<td>IP寄存器中断在0x208, 0x210, 0x218, 0x220之一，要清除此中断错误，需清除所有路径的子中断错误。</td>
+</tr>
+<tr>
+<td>RF-ADC/RF-DAC Overflow<br>RF-ADC/RF-DAC Underflow<br>RF-ADC/RF-DAC Marginal Overflow<br>RF-ADC/RF-DAC Marginal Underflow</td>
+<td>FIFO接口设置不正确，时钟/数据吞入率不匹配。</td>
+</tr>
+</tbody>
+</table>
+<h1 id="多通道同步multi-tile-synchronization">多通道同步(Multi-Tile Synchronization)</h1>
+<p>FIFO为RF-ADC提供灵活的数据和时钟接口。但与所有双时钟FIFO一样，延迟可能会在一个tile和另一个tile之间变化。虽然 tile中的所有通道都具有相同的延迟，但某些应用可能需要使用多个RF-ADC tile，并且需要在所有RF-ADC通道中匹配延迟。这些应用程序可以使用多通道同步(MTS)功能来实现这种块间同步。<br>
+<img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-36.317omq9p5gm0.jpg" alt="img-36" loading="lazy"></p>
+<ol>
+<li>
+<p name = ''>https://docs.xilinx.com/r/en-US/pg269-rf-data-converter</p>
+</li>
+<li>
+<p name = ''>https://docs.xilinx.com/r/en-US/ug1309-rf-data-converter-interface</p>
+</li>
+<li>
+<p name = ''>https://docs.xilinx.com/v/u/zh-CN/wp509-rfsampling-data-converters</p>
+</li>
+<li>
+<p name = ''>https://blog.csdn.net/weixin_41445387/category_11999717.html</p></li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[RFdc 驱动]]></title>
+        <id>https://lxulxu.github.io/post/rfdc-qu-dong/</id>
+        <link href="https://lxulxu.github.io/post/rfdc-qu-dong/">
+        </link>
+        <updated>2023-02-21T06:41:35.000Z</updated>
+        <content type="html"><![CDATA[<p>参考PG269 Appx.C</p>
+<h2 id="数据结构">数据结构</h2>
+<p>数据结构UML图如下：</p>
+<figure data-type="image" tabindex="1"><img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230221/src_v1.22tzp77ow85c.jpg" alt="UML" loading="lazy"></figure>
+<h2 id="api-功能">API 功能</h2>
+<h3 id="系统设置相关函数">系统设置相关函数</h3>
+<table>
+<thead>
+<tr>
+<th>函数原型</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>u32 XRFdc_CfgInitialize(XRFdc *InstancePtr, XRFdc_Config *ConfigPtr)</td>
+<td>通过从配置结构复制相关条目来填充驱动程序实例中的适当条目。与 RFdc 驱动程序 API 的任何软件交互都需要此函数，并且必须在使用任何其他 API 函数之前首先调用此函数。</td>
+</tr>
+<tr>
+<td>XRFdc_Config *XRFdc_LookupConfig(u16 DeviceId)</td>
+<td>根据设备的唯一 ID 查找设备配置</td>
+</tr>
+<tr>
+<td>u32 XRFdc_RegisterMetal(XRFdc *InstancePtr, u16 DeviceId, struct metal_device **DevicePtr)</td>
+<td>使用 Libmetal 注册RFDC</td>
+</tr>
+<tr>
+<td>u32 XRFdc_StartUp(XRFdc *InstancePtr, u32 Type, int Tile_Id)</td>
+<td>根据 Tile_Id 的请求重新启动片。 如果 -1 作为 Tile_Id 传递，该函数将重新启动所有启用的切片。 现有寄存器设置不会在此过程中丢失或更改。</td>
+</tr>
+<tr>
+<td>u32 XRFdc_Shutdown(XRFdc *InstancePtr, u32 Type, int Tile_Id)</td>
+<td>根据 Tile_Id 的请求停止片。 如果 -1 作为 Tile_Id 传递，该函数将停止所有启用的切片。 现有的寄存器设置不会被清除。</td>
+</tr>
+<tr>
+<td>u32 XRFdc_Reset(XRFdc *InstancePtr, u32 Type, int Tile_Id)</td>
+<td>通过 Tile_Id 请求重置图块。 如果 -1 作为 Tile_Id 传递，它将重置所有启用的图块。 所有现有的寄存器设置都将被清除并替换为最初配置的设置。</td>
+</tr>
+<tr>
+<td>u32 XRFdc_CustomStartUp(XRFdc *InstancePtr, u32 Type, int Tile_Id, u32 StartState, u32 EndState)</td>
+<td>按照通过 Tile_Id 的请求，将 IPSM 从 StartState 运行到 EndState。 如果 -1 作为 Tile_Id 传递，则该函数针对所有启用的图块运行。 如果 StartState 为 XRFDC_STATE_OFF，现有寄存器设置将丢失或更改。</td>
+</tr>
+<tr>
+<td>void XRFdc_DumpRegs (XRFdc *InstancePtr, u32 Type, int Tile_Id)</td>
+<td>用于调试，将寄存器中的内容打印到控制台。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="adc-状态指示函数">ADC 状态指示函数</h3>
+<table>
+<thead>
+<tr>
+<th>函数原型</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>u32 XRFdc_Set/GetDecimationFactor(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *DecimationFactorPtr)</td>
+<td>设置/返回 RF-ADC 抽取因子</td>
+</tr>
+<tr>
+<td>u32 XRFdc_Set/GetDecimationFactorObs(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *DecimationFactorPtr)</td>
+<td>设置/返回 RF-ADC 观察通道的抽取因子</td>
+</tr>
+<tr>
+<td>u32 XRFdc_GetFabWrVldWordsObs(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *FabricWrVldWordsPtr)</td>
+<td>返回 RF-ADC 观测通道的写PL数据率</td>
+</tr>
+<tr>
+<td>u32 XRFdc_Set/GetFabRdVldWordsObs(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *FabricRdVldWordsPtr)</td>
+<td>设置/返回 RF-ADC 观测通道的读PL数据率</td>
+</tr>
+<tr>
+<td>u32 XRFdc_Set/GetThresholdSettings(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, XRFdc_Threshold_Settings *ThresholdSettingsPtr)</td>
+<td>设置/读取相应寄存器阈值</td>
+</tr>
+<tr>
+<td>u32 XRFdc_GetFIFOStatusObs(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u8 *EnablePtr)</td>
+<td>获取 RF-ADC 观察FIFO的当前状态</td>
+</tr>
+<tr>
+<td>u32 XRFdc_Set/GetCalibrationMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u8 *CalibrationModePtr</td>
+<td>设置/获取 RF-ADC 的校准模式</td>
+</tr>
+<tr>
+<td>u32 XRFdc_Set/GetCalCoefficients(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 CalibrationBlock, XRFdc_Calibration_Coefficients *CoeffPtr)</td>
+<td>设置/获取通用校准系数</td>
+</tr>
+<tr>
+<td>u32 XRFdc_Set/GetCalFreeze(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, XRFdc_Cal_Freeze_Settings *CalFreezePtr)</td>
+<td>设置/获取通用校准冻结设置</td>
+</tr>
+<tr>
+<td>u32 XRFdc_Set/GetDither(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *ModePtr)</td>
+<td>用抖动模式来填充/获取所提供的指针</td>
+</tr>
+<tr>
+<td>u32 XRFdc_GetLinkCoupling(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id,u32 *ModePtr)</td>
+<td>获取RF-ADC块的链路耦合模式</td>
+</tr>
+<tr>
+<td>u32 XRFdc_Set/GetDSA(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, XRFdc_DSA_Settings *SettingsPtr)</td>
+<td>传递的DSA设置被用来更新/获取相应的块级寄存器，仅适用于 RF-ADC 。</td>
+</tr>
+<tr>
+<td>u32 XRFdc_Set/GetSignalDetector(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, XRFdc_Signal_Detector_Settings *SettingsPtr)</td>
+<td>设置信号检测器/读取信号检测器设置，仅适用于 RF-ADC 。</td>
+</tr>
+<tr>
+<td>u32 XRFdc_GetNoOfADCBlocks(XRFdc *InstancePtr, u32 Tile_Id)</td>
+<td>获取启用的 RF-ADC 的数量</td>
+</tr>
+<tr>
+<td>u32 XRFdc_IsADCBlockEnabled(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id)</td>
+<td>如果请求的RF-ADC被启用，函数返回1；否则返回0。</td>
+</tr>
+<tr>
+<td>u32 XRFdc_IsHighSpeedADC(XRFdc *InstancePtr, int Tile)</td>
+<td>返回该瓦片是否为高速瓦片。</td>
+</tr>
+<tr>
+<td>u32 XRFdc_IsADCDigitalPathEnabled(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id)</td>
+<td>检查ADC数字路径是否被启用或禁用</td>
+</tr>
+</tbody>
+</table>
+<h3 id="adc-设置状态指示函数">ADC 设置状态指示函数</h3>
+<table>
+<thead>
+<tr>
+<th>函数原型</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>u32 XRFdc_ThresholdStickyClear(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 ThresholdToUpdate)</td>
+<td>清除阈值配置寄存器中的sticky位</td>
+</tr>
+<tr>
+<td>u32 XRFdc_SetThresholdClrMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 ThresholdToUpdate, u32 ClrMode)</td>
+<td>设置阈值清除模式</td>
+</tr>
+<tr>
+<td>u32 XRFdc_SetupFIFOObs(XRFdc *InstancePtr, u32 Type, int Tile_Id, u8 Enable)</td>
+<td>启用和禁用RF-ADC的观察通道FIFO</td>
+</tr>
+<tr>
+<td>u32 XRFdc_SetupFIFOBoth(XRFdc *InstancePtr, u32 Type, int Tile_Id, u8 Enable)</td>
+<td>启用和禁用RF-ADC实际和观察通道的FIFO</td>
+</tr>
+<tr>
+<td>u32 XRFdc_DisableCoefficientsOverride(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 CalibrationBlock)</td>
+<td>禁用所选块的系数覆盖</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dac-状态指示函数">DAC 状态指示函数</h3>
+<table>
+<thead>
+<tr>
+<th>函数原型</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>u32 XRFdc_Set/GetInterpolationFactor(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *InterpolationFactorPtr)</td>
+<td>设置/返回 RF-DAC 的插值因子</td>
+</tr>
+<tr>
+<td>u32 XRFdc_Set/GetDecoderMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *DecoderModePtr)</td>
+<td>从相关寄存器中设置/读取解码器模式</td>
+</tr>
+<tr>
+<td>u32 XRFdc_GetOutputCurr(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *OutputCurrPtr)</td>
+<td>获取输出电流</td>
+</tr>
+<tr>
+<td>u32 XRFdc_Set/GetInvSincFIR(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u16 *ModePtr)</td>
+<td>设置/获取InvSinc滤波器的状态</td>
+</tr>
+<tr>
+<td>u32 XRFdc_GetDACDataScaler(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *EnablePtr)</td>
+<td>获取数据缩放器的启用状态</td>
+</tr>
+<tr>
+<td>u32 XRFdc_Set/GetDACCompMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *Enable)</td>
+<td>设置/返回传统的DAC输出模式</td>
+</tr>
+<tr>
+<td>u32 XRFdc_Set/GetDataPathMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *Mode)</td>
+<td>设置/返回数据路径模式</td>
+</tr>
+<tr>
+<td>u32 XRFdc_Set/GetIMRPassMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *Mode)</td>
+<td>设置/返回IMR滤波器模式</td>
+</tr>
+<tr>
+<td>u32 XRFdc_GetNoOfDACBlock(XRFdc *InstancePtr, u32 Tile_Id)</td>
+<td>返回启用的RF-DAC的数量</td>
+</tr>
+<tr>
+<td>u32 XRFdc_IsDACBlockEnabled(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id)</td>
+<td>如果请求的RF-DAC被启用，该函数返回1；否则返回0。</td>
+</tr>
+<tr>
+<td>u32 XRFdc_GetInverseSincFilter(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id)</td>
+<td>如果RF-DAC的反向sinc滤波器被启用，函数返回1；否则返回0。</td>
+</tr>
+<tr>
+<td>u32 XRFdc_GetMixedMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id)</td>
+<td>返回RF-DAC的混频模式设置</td>
+</tr>
+<tr>
+<td>u32 XRFdc_IsDACDigitalPathEnabled(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id)</td>
+<td>检查RF-DAC数字路径是否启用</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dac-设置状态指示函数">DAC 设置状态指示函数</h3>
+<table>
+<thead>
+<tr>
+<th>函数原型</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>u32 XRFdc_SetFabWrVldWords(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 FabricWrVldWords)</td>
+<td>写入要为RF-DAC设置的结构数据速率</td>
+</tr>
+<tr>
+<td>u32 XRFdc_SetDACVOP(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 uACurrent)</td>
+<td>VOP μA电流用于更新相应的块级寄存器</td>
+</tr>
+</tbody>
+</table>
+<h3 id="adcdac-状态指示函数">ADC/DAC 状态指示函数</h3>
+<table>
+<thead>
+<tr>
+<th>函数原型</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>u32 XRFdc_GetIPStatus(XRFdc *InstancePtr, XRFdc_IPStatus *IPStatusPtr)</td>
+<td>返回 IP 状态</td>
+</tr>
+<tr>
+<td>u32 XRFdc_GetBlockStatus(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_BlockStatus *BlockStatusPtr)</td>
+<td>返回请求的块状态</td>
+</tr>
+<tr>
+<td>u32 XRFdc_Set/GetMixerSettings(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_Mixer_Settings *MixerSettingsPtr)</td>
+<td>设置/返回相应寄存器的混频器/NCO 设置</td>
+</tr>
+<tr>
+<td>u32 XRFdc_Set/GetQMCSettings(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_QMC_Settings *QMCSettingsPtr)</td>
+<td>设置/返回相关寄存器的 QMC 设置</td>
+</tr>
+<tr>
+<td>u32 XRFdc_Set/GetCoarseDelaySettings(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_CoarseDelay_Settings *CoarseDelaySettingsPtr)</td>
+<td>设置/返回相关寄存器的粗略延迟设置</td>
+</tr>
+<tr>
+<td>u32 XRFdc_Set/GetFabClkOutDiv(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u16 *FabClkDivPtr)</td>
+<td>设置/获取PL的时钟分频器</td>
+</tr>
+<tr>
+<td>u32 XRFdc_GetFabWrVldWords(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *FabricWrVldWordsPtr)</td>
+<td>返回PL写数据率</td>
+</tr>
+<tr>
+<td>u32 XRFdc_GetFabRdVldWords(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *FabricRdVldWordsPtr)</td>
+<td>返回PL读数据率</td>
+</tr>
+<tr>
+<td>u32 XRFdc_GetFIFOStatus(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u8 *EnablePtr)</td>
+<td>返回FIFO的当前状态</td>
+</tr>
+<tr>
+<td>u32 XRFdc_Set/GetNyquistZone(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *NyquistZonePtr)</td>
+<td>设置/返回奈奎斯特区</td>
+</tr>
+<tr>
+<td>u32 XRFdc_GetClockSource(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 *ClockSourcePtr</td>
+<td>返回时钟源</td>
+</tr>
+<tr>
+<td>u32 XRFdc_GetPLLConfig(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, XRFdc_PLL_Settings *PLLSettings)</td>
+<td>从寄存器中读取PLL设置</td>
+</tr>
+<tr>
+<td>u32 XRFdc_GetPLLLockStatus(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 *LockStatusPtr)</td>
+<td>返回PLL锁定状态</td>
+</tr>
+<tr>
+<td>u32 XRFdc_Set/GetClkDistribution(XRFdc *InstancePtr, XRFdc_Distribution_System_Settings *DistributionArrayPtr)</td>
+<td>设置/返回时钟分布设置</td>
+</tr>
+<tr>
+<td>u32 XRFdc_GetPwrMode(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_Pwr_Mode_Settings *SettingsPtr)</td>
+<td>返回电源模式</td>
+</tr>
+<tr>
+<td>u32 XRFdc_Get_TileBaseAddr(XRFdc *InstancePtr, u32 Type, u32 Tile_Id)</td>
+<td>返回片的基地址</td>
+</tr>
+<tr>
+<td>u32 XRFdc_Get_BlockBaseAddr(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id）</td>
+<td>返回转换器的基地址</td>
+</tr>
+<tr>
+<td>u32 XRFdc_GetDataType(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id）</td>
+<td>如果数据类型为实数，函数返回0；否则，返回1。</td>
+</tr>
+<tr>
+<td>u32 XRFdc_GetDataWidth(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id)</td>
+<td>返回编程数据宽度</td>
+</tr>
+<tr>
+<td>u32 XRFdc_GetMasterTile(XRFdc *InstancePtr, u32 Type)</td>
+<td>返回主瓦片ID</td>
+</tr>
+<tr>
+<td>u32 XRFdc_GetSysRefSource(XRFdc *InstancePtr, u32 Type)</td>
+<td>返回 SYSREF 的来源</td>
+</tr>
+<tr>
+<td>u32 XRFdc_Get_IPBaseAddr(XRFdc *InstancePtr)</td>
+<td>返回IP的基地址</td>
+</tr>
+<tr>
+<td>double XRFdc_GetFabClkFreq(XRFdc *InstancePtr, u32 Type, u32 Tile_Id)</td>
+<td>返回已编程的PL时钟频率</td>
+</tr>
+<tr>
+<td>u32 XRFdc_IsFifoEnabled（XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id)</td>
+<td>如果FIFO被启用，该函数返回1；否则，返回0。</td>
+</tr>
+<tr>
+<td>double XRFdc_GetDriverVersion()</td>
+<td>获取驱动程序的版本</td>
+</tr>
+<tr>
+<td>int XRFdc_GetConnectedIData(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id)</td>
+<td>获取I数字数据路径的转换器</td>
+</tr>
+<tr>
+<td>int XRFdc_GetConnectedQData(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id)</td>
+<td>获取Q数字数据路径连接的转换器</td>
+</tr>
+<tr>
+<td>u16 XRFdc_RDReg(XRFdc *InstancePtr, u32 BaseAddr, u32 RegAddr, u16 Mask)</td>
+<td>对值进行读取和屏蔽</td>
+</tr>
+<tr>
+<td>u32 XRFdc_CheckDigitalPathEnabled(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id)</td>
+<td>检查数字路径是否被激活</td>
+</tr>
+<tr>
+<td>u32 XRFdc_GetMultibandConfig(XRFdc *InstancePtr, u32 Type, u32 Tile_Id)</td>
+<td>获取多频段配置数据</td>
+</tr>
+<tr>
+<td>u32 XRFdc_CheckBlockEnabled(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id)</td>
+<td>检查RF-ADC/RF-DAC块是否被激活或禁用</td>
+</tr>
+<tr>
+<td>u32 XRFdc_CheckTileEnabled(XRFdc *InstancePtr, u32 Type, u32 Tile_Id)</td>
+<td>检查RF-ADC/RF-DAC瓦片是否被启用或禁用</td>
+</tr>
+<tr>
+<td>u32 XRFdc_GetMaxSampleRate(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, double *MaxSampleRatePtr)</td>
+<td>获取瓦片的最大采样率</td>
+</tr>
+<tr>
+<td>u32 XRFdc_GetMinSampleRate(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, double *MinSampleRatePtr)</td>
+<td>获取瓦片的最小采样率</td>
+</tr>
+</tbody>
+</table>
+<h3 id="adcdac-设置状态指示函数">ADC/DAC 设置状态指示函数</h3>
+<table>
+<thead>
+<tr>
+<th>函数原型</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>u32 XRFdc_UpdateEvent(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 Event)</td>
+<td>当事件源为 Slice 或 Tile 时，使用该函数触发事件的更新事件。</td>
+</tr>
+<tr>
+<td>u32 XRFdc_ResetNCOPhase(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id)</td>
+<td>启动当前块相位累加器的NCO相位复位</td>
+</tr>
+<tr>
+<td>u32 XRFdc_SetupFIFO(XRFdc *InstancePtr, u32 Type, int Tile_Id, u8 Enable)</td>
+<td>启用和禁用RF-ADC/RF-DAC的FIFO</td>
+</tr>
+<tr>
+<td>u32 XRFdc_MultiBand(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u8 DigitalDataPathMask, u32 DataType, u32 DataConverterMask)</td>
+<td>设置单频和多频配置</td>
+</tr>
+<tr>
+<td>void XRFdc_MultiConverter_Init(XRFdc_MultiConverter_Sync_Config *ConfigPtr, int *PLL_CodesPtr, int *T1_CodesPtr, u32 RefTile)</td>
+<td>初始化多轨同步配置结构，必须在XRFdc_MultiConverter_Sync之前调用。</td>
+</tr>
+<tr>
+<td>u32 XRFdc_MultiConverter_Sync(XRFdc *InstancePtr, u32 Type, XRFdc_MultiConverter_Sync_Config *ConfigPtr)</td>
+<td>多片同步</td>
+</tr>
+<tr>
+<td>u32 XRFdc_DynamicPLLConfig(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u8 Source, double RefClkFreq, double SamplingRate)</td>
+<td>用于在内部PLL和外部时钟源之间的动态切换，以及为RF-ADC/RF-DAC配置内部PLL。</td>
+</tr>
+<tr>
+<td>u32 XRFdc_MTS_Sysref_Config(XRFdc *InstancePtr, XRFdc_MultiConverter_Sync_Config *DACSyncConfigPtr, XRFdc_MultiConverter_Sync_Config *ADCSyncConfigPtr, u32 SysRefEnable)</td>
+<td>启用和禁用sysref</td>
+</tr>
+<tr>
+<td>u32 XRFdc_ResetInternalFIFOWidth(XRFdc *InstancePtr, u32 Type, u32 Tile_Id,u32 Block_Id)</td>
+<td>重置内部FIFO宽度，以符合RF-ADC/RF-DAC的速率变化和混频器设置。</td>
+</tr>
+<tr>
+<td>u32 XRFdc_SetPwrMode(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_Pwr_Mode_Settings *SettingsPtr)</td>
+<td>设置电源模式</td>
+</tr>
+<tr>
+<td>void XRFdc_ClrSetReg(XRFdc *InstancePtr, u32 BaseAddr, u32 RegAddr, u16 Mask, u16 Data)</td>
+<td>修改写入</td>
+</tr>
+<tr>
+<td>void XRFdc_ClrReg(XRFdc *InstancePtr, u32 BaseAddr, u32 RegAddr, u16 Mask)</td>
+<td>读取和清除</td>
+</tr>
+<tr>
+<td>void XRFdc_SetConnectedIQData(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, int ConnectedIData, int ConnectedQData)</td>
+<td>设置数字数据路径I和Q的连接数据转换器</td>
+</tr>
+</tbody>
+</table>
+<h2 id="中断部分">中断部分</h2>
+<table>
+<thead>
+<tr>
+<th>函数原型</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>u32 XRFdc_IntrEnable(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 IntrMask）</td>
+<td>通过将IntrMask作为输入并写入相应的寄存器位来启用相应转换器的中断</td>
+</tr>
+<tr>
+<td>u32 XRFdc_IntrDisable(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 IntrMask)</td>
+<td>禁用中断</td>
+</tr>
+<tr>
+<td>void XRFdc_SetStatusHandler(XRFdc *InstancePtr, void *CallBackRefPtr, XRFdc_StatusHandler FunctionPtr)</td>
+<td>设置状态回调函数，当驱动程序遇到必须报告给上层软件的情况时，会调用这个函数。</td>
+</tr>
+<tr>
+<td>u32 XRFdc_IntrClr(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 IntrMask)</td>
+<td>清除中断</td>
+</tr>
+<tr>
+<td>u32 XRFdc_GetIntrStatus(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *IntrStsPtr)</td>
+<td>返回中断状态</td>
+</tr>
+<tr>
+<td>u32 XRFdc_IntrHandler(u32 Vector, void *XRFdcPtr)</td>
+<td>清除中断源并打印中断原因</td>
+</tr>
+<tr>
+<td>u32 XRFdc_GetEnabledInterrupts(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *IntrMask)</td>
+<td>启用的中断来填充IntrMask</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[《高质量C++编程指南》笔记]]></title>
+        <id>https://lxulxu.github.io/post/lesslessgao-zhi-liang-cbian-cheng-zhi-nan-greatergreater-bi-ji/</id>
+        <link href="https://lxulxu.github.io/post/lesslessgao-zhi-liang-cbian-cheng-zhi-nan-greatergreater-bi-ji/">
+        </link>
+        <updated>2022-09-04T03:51:33.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="文件结构">文件结构</h2>
+<h3 id="头文件结构">头文件结构</h3>
+<pre><code class="language-c++">//版权和版本声明
+/*
+* Copyright (c) 2001,上海贝尔有限公司网络应用事业部
+* All rights reserved.
+*
+* 文件名称：graphics.h
+* 文件标识：见配置管理计划书
+* 摘   要：简要描述本文件的内容
+*
+* 当前版本：1.1
+* 作   者：输入作者（或修改者）名字
+* 完成日期：2001年7月20日
+*
+* 取代版本：1.0
+* 原作者 ：输入原作者（或修改者）名字
+* 完成日期：2001年5月10日
+*/
+
+#ifndef GRAPHICS_H // 防止 graphics.h 被重复引用
+#define GRAPHICS_H
+#include &lt;math.h&gt; // 引用标准库的头文件
+...
+#include “myheader.h” // 引用非标准库的头文件
+...
+void Function1(...); // 全局函数声明
+...
+class Box // 类结构声明
+{
+...
+};
+#endif
+</code></pre>
+<h4 id="版权和版本的声明">版权和版本的声明</h4>
+<ol>
+<li>版权信息。</li>
+<li>文件名称，标识符，摘要。</li>
+<li>当前版本号，作者/修改者，完成日期。</li>
+<li>版本历史信息。</li>
+</ol>
+<h4 id="预处理块">预处理块</h4>
+<ul>
+<li>
+<p>为了防止头文件被重复引用，应当用 ifndef/define/endif 结构产生预处理块</p>
+</li>
+<li>
+<p>用 #include &lt;filename.h&gt; 格式来引用标准库的头文件（编译器将从标准库目录开始搜索）</p>
+</li>
+<li>
+<p>用 #include “filename.h” 格式来引用非标准库的头文件（编译器将从用户的工作目录开始搜索）</p>
+</li>
+<li>
+<p>【建议】<em>头文件中只存放“声明”而不存放“定义”</em></p>
+</li>
+<li>
+<p>【建议】<em>不提倡使用全局变量，尽量不要在头文件中出现象 extern int value 这类声明</em></p>
+</li>
+</ul>
+<h4 id="函数和类结构声明等">函数和类结构声明等</h4>
+<h3 id="定义文件结构">定义文件结构</h3>
+<p>graphics.cpp</p>
+<pre><code class="language-c++">//版权和版本声明
+/*
+...
+*/
+
+#include “graphics.h” // 引用头文件
+...
+// 全局函数的实现体
+void Function1(...)
+{
+...
+}
+// 类成员函数的实现体
+void Box::Draw(...)
+{
+...
+}
+</code></pre>
+<h2 id="程序版式">程序版式</h2>
+<h3 id="空行">空行</h3>
+<ul>
+<li>在每个类声明之后、每个函数定义结束之后都要加空行</li>
+</ul>
+<pre><code class="language-c++">// 空行
+void Function1(...)
+{
+...
+}
+// 空行
+void Function2(...)
+{
+...
+}
+</code></pre>
+<ul>
+<li>在一个函数体内，逻揖上密切相关的语句之间不加空行，其它地方应加空行分隔</li>
+</ul>
+<pre><code class="language-c++">// 空行
+while (condition)
+{
+	statement1;
+	// 空行
+	if (condition)
+	{
+		statement2;
+	}
+	else
+	{
+		statement3;
+	}
+	// 空行
+	statement4;
+}
+</code></pre>
+<h3 id="代码行">代码行</h3>
+<ul>
+<li>
+<p>一行代码只做一件事情，如只定义一个变量，或只写一条语句</p>
+</li>
+<li>
+<p>if、for、while、do 等语句自占一行，执行语句不得紧跟其后。不论执行语句有多少都要加{}，这样可以防止书写失误</p>
+</li>
+<li>
+<p>【建议】<em>尽可能在定义变量的同时初始化该变量（就近原则）</em></p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>风格良好</th>
+<th>风格不良</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>int width; // 宽度<br/>int height; // 高度<br/>int depth; // 深度</td>
+<td>int width, height, depth; // 宽度高度深度</td>
+</tr>
+<tr>
+<td>for (initialization; condition; update)<br/>{<br/>dosomething();<br/>}<br/>// 空行<br/>other();</td>
+<td>for (initialization; condition; update)<br/>dosomething();<br/>other();</td>
+</tr>
+</tbody>
+</table>
+<h3 id="代码行内空格">代码行内空格</h3>
+<ul>
+<li>关键字之后要留空格。象 const、virtual、inline、case 等关键字之后至少要留一个空格，否则无法辨析关键字。象 if、for、while 等关键字之后应留一个空格再跟左括号‘（’，以突出关键字</li>
+<li>函数名之后不要留空格，紧跟左括号‘（’，以与关键字区别</li>
+<li>‘（’向后紧跟，‘）’、‘，’、‘;’向前紧跟，紧跟处不留空格</li>
+<li>‘，’之后要留空格，如 Function(x, y, z)。如果‘;’不是一行的结束符号，其后要留空格，如 for (initialization; condition; update)</li>
+<li>赋值操作符、比较操作符、算术操作符、逻辑操作符、位域操作符，如“=”、“+=” “&gt;=”、“&lt;=”、“+”、“*”、“%”、“&amp;&amp;”、“||”、“&lt;&lt;”,“^”等二元操作符的前后应当加空格</li>
+<li>一元操作符如“!”、“~”、“++”、“--”、“&amp;”（地址运算符）等前后不加空格</li>
+<li>象“［］”、“.”、“-&gt;”这类操作符前后不加空格</li>
+<li>对于表达式比较长的 for 语句和 if 语句，为了紧凑起见可以适当地去掉一些空格，如 for (i=0; i&lt;10; i++)和 if ((a&lt;=b) &amp;&amp; (c&lt;=d))</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>风格良好</th>
+<th>风格不良</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>void Func1(int x, int y, int z);</td>
+<td>void Func1 (int x,int y,int z);</td>
+</tr>
+<tr>
+<td>if ((a&gt;=b) &amp;&amp; (c&lt;=d))</td>
+<td>if(a&gt;=b&amp;&amp;c&lt;=d)</td>
+</tr>
+<tr>
+<td>for (i=0; i&lt;10; i++)</td>
+<td>for(i=0;i&lt;10;i++)<br/>for (i = 0; I &lt; 10; i ++)</td>
+</tr>
+<tr>
+<td>x = a &lt; b ? a : b;</td>
+<td>x=a&lt;b?a:b;</td>
+</tr>
+<tr>
+<td>int *x = &amp;y;</td>
+<td>int * x = &amp; y;</td>
+</tr>
+<tr>
+<td>array[5] = 0; <br/>a.Function(); <br/>b-&gt;Function();</td>
+<td>array [ 5 ] = 0;<br/>a . Function();<br/>b -&gt; Function();</td>
+</tr>
+</tbody>
+</table>
+<h3 id="对齐">对齐</h3>
+<ul>
+<li>程序的分界符‘{’和‘}’应独占一行并且位于同一列，同时与引用它们的语句左对齐</li>
+<li>{ }之内的代码块在‘{’右边数格处左对齐</li>
+</ul>
+<pre><code class="language-c++">void Function(int x)
+{
+	for (initialization; condition; update)
+	{
+		... // program code
+	}
+}
+</code></pre>
+<h3 id="长行拆分">长行拆分</h3>
+<ul>
+<li>代码行最大长度宜控制在 70 至 80 个字符以内。代码行不要过长，否则眼睛看不过来，也不便于打印</li>
+<li>长表达式要在低优先级操作符处拆分成新行，操作符放在新行之首（以便突出操作符）。拆分出的新行要进行适当的缩进，使排版整齐，语句可读</li>
+</ul>
+<pre><code class="language-c++">if ((very_longer_variable1 &gt;= very_longer_variable12)
+		&amp;&amp; (very_longer_variable3 &lt;= very_longer_variable14)
+		&amp;&amp; (very_longer_variable5 &lt;= very_longer_variable16))
+{
+	dosomething();
+}
+	
+virtual CMatrix CMultiplyMatrix (CMatrix leftMatrix,
+																 CMatrix rightMatrix);
+	
+for (very_longer_initialization;
+		 very_longer_condition;
+		 very_longer_update)
+{
+	dosomething();
+}
+</code></pre>
+<h3 id="修饰符的位置">修饰符的位置</h3>
+<p>修饰符 * 和 ＆ 应该靠近数据类型还是该靠近变量名，是个有争议的活题。若将修饰符 * 靠近数据类型，例如：int* x; 从语义上讲此写法比较直观，即 x 是 int 类型的指针。上述写法的弊端是容易引起误解，例如：int* x, y; 此处 y 容易被误解为指针变量。虽然将 x 和 y 分行定义可以避免误解，但并不是人人都愿意这样做。</p>
+<h3 id="注释">注释</h3>
+<p>C++语言中，程序块的注释常采用“/<em>...</em>/”，行注释一般采用“//...”。注释通常用于版本、版权声明/函数接口说明/重要的代码行或段落提示。</p>
+<ul>
+<li>注释是对代码的“提示”，而不是文档，程序中的注释<strong>不可喧宾夺主</strong>。如果代码本来就是清楚的，则不必加注释。否则多此一举，令人厌烦。例如<code>i++; // i 加 1</code></li>
+<li>边写代码边注释，修改代码同时修改相应的注释</li>
+<li>尽量<strong>避免在注释中使用缩写</strong>，特别是不常用缩写</li>
+<li>注释的位置应与被描述的代码相邻，<strong>可以放在代码的上方或右方</strong>，不可放在下方</li>
+<li>当代码比较长，特别是有<strong>多重嵌套</strong>时，应当在一些段落的结束处加注释，便于阅读</li>
+</ul>
+<pre><code class="language-c++">/*
+* 函数介绍：
+* 输入参数：
+* 输出参数：
+* 返回值 ：
+*/
+
+void Function(float x, float y, float z)
+{
+	if (...)
+	{
+		...
+		while (...)
+		{
+			...
+		} // end of while
+		...
+	} // end of if
+}
+</code></pre>
+<h3 id="类的版式">类的版式</h3>
+<pre><code class="language-c++">//以数据为中心版式
+class A
+{
+	private:
+		int i, j;
+		float x, y;
+		...
+	public:
+		void Func1(void);
+		void Func2(void);
+		...
+}
+
+//以行为为中心的版式
+class A
+{
+	public:
+		void Func1(void);
+		void Func2(void);
+		...
+	private:
+		int i, j;
+		float x, y;
+		...
+}
+</code></pre>
+<h2 id="命名规则">命名规则</h2>
+<h3 id="共性规则">共性规则</h3>
+<ul>
+<li>
+<p>标识符应当直观且可以拼读，可望文知意，不必进行“解码”。标识符最好采用<strong>英文单词</strong>或其组合，便于记忆和阅读。切忌使用汉语拼音来命名。</p>
+</li>
+<li>
+<p>标识符的长度应当符合“min-length &amp;&amp; max-information”原则。例如变量名 maxval 就比 maxValueUntilOverflow 好用。单字符的名字也是有用的，常见的如 i,j,k,m,n,x,y,z 等，它们通常可用作函数内的局部变量。</p>
+</li>
+<li>
+<p>命名规则尽量与所采用的操作系统或开发工具的风格保持一致。例如 Windows 应用程序的标识符通常采用“大小写”混排的方式，如 AddChild。而 Unix 应用程序的标识符通常采用“小写加下划线”的方式，如 add_child。别把这两类风格混在一起用。</p>
+</li>
+<li>
+<p>程序中不要出现仅靠大小写区分的相似的标识符</p>
+</li>
+<li>
+<p>程序中不要出现标识符完全相同的局部变量和全局变量</p>
+</li>
+<li>
+<p>变量的名字应当使用“名词”或者“形容词＋名词”如value、oldValue</p>
+</li>
+<li>
+<p><strong>全局函数</strong>的名字应当使用“动词”或者“<strong>动词＋名词</strong>”（动宾词组）如DrawBox()。<strong>类的成员函数</strong>应当只使用“<strong>动词</strong>”，被省略掉的名词就是对象本身如box-&gt;Draw()。</p>
+</li>
+<li>
+<p>用正确的反义词组命名具有互斥意义的变量或相反动作的函数等如minVaule/maxValue、SetValue/GetValue。</p>
+</li>
+<li>
+<p>【建议】<em>尽量避免名字中出现数字编号，如 Value1,Value2 等，除非逻辑上的确需要编号。</em></p>
+</li>
+</ul>
+<h3 id="windows-命名规则">Windows 命名规则</h3>
+<ul>
+<li>类名和函数名用大写字母开头的单词组合而成</li>
+<li>变量和参数用小写字母开头的单词组合而成</li>
+<li>常量全用大写的字母，用下划线分割单词</li>
+<li>静态变量加前缀 s_（表示 static）</li>
+<li>如果不得已需要全局变量，则使全局变量加前缀 g_（表示 global）</li>
+<li>类的数据成员加前缀 m_（表示 member），这样可以避免数据成员与成员函数的参数同名。</li>
+<li>为了防止某一软件库中的一些标识符和其它软件库中的冲突，可以为各种标识符加上能反映软件性质的前缀。例如三维图形标准 OpenGL 的所有库函数均以 gl 开头，所有常量（或宏定义）均以 GL 开头。</li>
+</ul>
+<h2 id="表达式和基本语句">表达式和基本语句</h2>
+<h3 id="运算符优先级">运算符优先级</h3>
+<p>如果代码行中的运算符比较多，用括号确定表达式的操作顺序，避免使用默认的优先级，例如：word = (high &lt;&lt; 8) | low。</p>
+<h3 id="复合表达式">复合表达式</h3>
+<ul>
+<li>
+<p>不要编写太复杂的复合表达式，如<code>i = a &gt;= b &amp;&amp; c &lt; d &amp;&amp; c + f &lt;= g + h ;</code></p>
+</li>
+<li>
+<p>不要有多用途的复合表达式。如<code>d = (a = b + c) + r ;</code></p>
+</li>
+<li>
+<p>不要把程序中的复合表达式与“真正的数学表达式”混淆，如<code>if (a &lt; b &lt; c)</code></p>
+</li>
+</ul>
+<h3 id="if-语句">if 语句</h3>
+<p>各类型变量与零值比较</p>
+<table>
+<thead>
+<tr>
+<th>风格良好</th>
+<th>风格不良</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>布尔变量<br/>if (flag)<br>if (!flag)</td>
+<td>if (flag == TRUE)<br/>if (flag == 1 )<br/>if (flag == FALSE)<br/>if (flag == 0)</td>
+</tr>
+<tr>
+<td>整形变量<br/>if (value == 0)<br/>if (value != 0)</td>
+<td>if (value)<br/>if (!value)</td>
+</tr>
+<tr>
+<td>浮点变量<br/>if ((x&gt;=-EPSINON) &amp;&amp; (x&lt;=EPSINON))</td>
+<td>if (x == 0.0)</td>
+</tr>
+<tr>
+<td>指针变量<br/>if (p == NULL)<br/>if (p != NULL)</td>
+<td>if (p == 0)<br/>if (p != 0)<br/>if (p)<br/>if (!p)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="循环语句">循环语句</h3>
+<ul>
+<li>【建议】<em>在多重循环中，如果有可能，应当将最长的循环放在最内层，最短的循环放在最外层，以减少 CPU 跨切循环层的次数。</em></li>
+<li>【建议】<em>如果循环体内存在逻辑判断，并且循环次数很大，宜将逻辑判断移到循环体的外面。循环次数N较大时逻辑判断会打断循环“流水线”作业使编译器不能对循环进行优化处理，N较小时则不必移动以保持程序简洁。</em></li>
+<li>不可在 for 循环体内修改循环变量，防止 for 循环失去控制。</li>
+<li>【建议】<em>for 语句的循环控制变量的取值采用“半开半闭区间”写法，如<code>for (int x=0; x&lt;N; x++)</code>而不是<code>for (int x=0; x&lt;=N-1; x++)</code>。</em></li>
+<li>switch 循环每个 case 语句的结尾不要忘了加 break，否则将导致多个分支重叠（除非有意使多个分支重叠）。</li>
+<li>switch 循环不要忘记 default 分支。即使程序真的不需要 default 处理。</li>
+</ul>
+<h2 id="常量">常量</h2>
+<ul>
+<li>
+<p>尽量使用含义直观的常量来表示那些将在程序中多次出现的数字或字符串，如<code>const float PI = 3.14159;</code>。</p>
+</li>
+<li>
+<p>在 C++ 程序中只使用 const 常量而不使用宏常量，即 const 常量完全取代宏常量。</p>
+</li>
+<li>
+<p>需要对外公开的常量放在头文件中，不需要对外公开的常量放在定义文件的头部。为便于管理，可以把不同模块的常量集中存放在一个公共的头文件中。</p>
+</li>
+<li>
+<p>如果某一常量与其它常量密切相关，应在定义中包含这种关系，而不应给出一些孤立的值。如：</p>
+</li>
+</ul>
+<pre><code class="language-c++"> const float RADIUS = 100;
+ const float DIAMETER = RADIUS * 2;
+</code></pre>
+<ul>
+<li>类中常量通过枚举常量而非const实现</li>
+</ul>
+<h2 id="函数设计">函数设计</h2>
+<h3 id="参数规则">参数规则</h3>
+<p>参数的书写要完整，不要贪图省事只写参数的类型而省略参数名字。如果函数没有参数，则用 void 填充。</p>
+<p>参数命名要恰当，顺序要合理。例如编写字符串拷贝函数 StringCopy，它有两个参数。如果把参数名字起为 str1 和str2，例如 void StringCopy(char *str1, char *str2);那么我们很难搞清楚究竟是把 str1 拷贝到 str2 中，还是刚好倒过来。可以把参数名字起得更有意义，如叫 strSource 和 strDestination。这样从名字上就可以看出应该把 strSource 拷贝到 strDestination。还有一个问题，这两个参数那一个该在前那一个该在后？参数的顺序要遵循程序员的习惯。一般地，应将目的参数放在前面，源参数放在后面。</p>
+<p>如果输入参数以值传递的方式传递对象，则宜改用“const &amp;”方式来传递，这样可以省去临时对象的构造和析构过程，从而提高效率。</p>
+<p>【建议】<em>避免函数有太多的参数，参数个数尽量控制在 5 个以内。</em></p>
+<p>【建议】<em>尽量不要使用类型和数目不确定的参数</em></p>
+<h3 id="返回值规则">返回值规则</h3>
+<ul>
+<li>不要省略返回值的类型</li>
+<li>函数名字与返回值类型在语义上不可冲突。违反这条规则的典型代表是 C 标准库函数 getchar，按照 getchar 名字的意思，将变量 c 声明为 char 类型是很自然的事情。但不幸的是 getchar 返回 int 类型。</li>
+<li>不要将正常值和错误标志混在一起返回。正常值用输出参数获得，而错误标志用 return 语句返回。</li>
+<li>【建议】<em>有时候函数原本不需要返回值，但为了增加灵活性如支持链式表达，可以附加返回值。例如字符串拷贝函数 strcpy 的原型：<code>char *strcpy(char *strDest，const char *strSrc);</code>，可以获得如下灵活性</em>：</li>
+</ul>
+<pre><code class="language-c++">char str[20];
+int length = strlen( strcpy(str, “Hello World”) );
+</code></pre>
+<ul>
+<li>【建议】<em>如果函数的返回值是一个对象，有些场合用“引用传递”替换“值传递”可以提高效率。而有些场合只能用“值传递”而不能用“引用传递”，否则会出错。比如</em>：</li>
+</ul>
+<pre><code class="language-c++">class String
+{...
+	// 赋值函数
+	String &amp; operate=(const String &amp;other);
+  // 相加函数，如果没有 friend 修饰则只许有一个右侧参数
+  friend String operate+( const String &amp;s1, const String &amp;s2);
+	private:
+  	char *m_data;
+}
+	
+
+String &amp; String::operate=(const String &amp;other)
+{
+	if (this == &amp;other)
+	return *this;
+	delete m_data;
+	
+	m_data = new char[strlen(other.data)+1];
+	strcpy(m_data, other.data);
+	return *this; // 返回的是 *this 的引用，无需拷贝过程
+}
+	
+String operate+(const String &amp;s1, const String &amp;s2)
+{
+	String temp;
+	delete temp.data; // temp.data 是仅含‘\0’的字符串
+	temp.data = new char[strlen(s1.data) + strlen(s2.data) +1];
+	strcpy(temp.data, s1.data);
+	strcat(temp.data, s2.data);
+	return temp;
+}
+</code></pre>
+<p>对于赋值函数，应当用“引用传递”的方式返回 String 对象。如果用“值传递”的方式，虽然功能仍然正确，但由于 return 语句要把 *this 拷贝到保存返回值的外部存储单元之中，增加了不必要的开销，降低了赋值函数的效率。</p>
+<p>对于相加函数，应当用“值传递”的方式返回 String 对象。如果改用“引用传递”，那么函数返回值是一个指向局部对象 temp 的“引用”。由于 temp 在函数结束时被自动销毁，将导致返回的“引用”无效。</p>
+<h3 id="函数内部实现规则">函数内部实现规则</h3>
+<ul>
+<li>
+<p>在函数体的“入口处”，对参数的有效性进行检查。</p>
+</li>
+<li>
+<p>在函数体的“出口处”，对 return 语句的正确性和效率进行检查。</p>
+</li>
+</ul>
+<ol>
+<li>return 语句不可返回指向“栈内存”的“指针”或者“引用”，因为该内存在函数体结束时被自动销毁。例如</li>
+</ol>
+<pre><code class="language-c++">char * Func(void)
+{
+	char str[] = “hello world”; // str 的内存位于栈上
+	...
+	return str; // 将导致错误
+}
+</code></pre>
+<ol start="2">
+<li>要搞清楚返回的究竟是“值”、“指针”还是“引用”</li>
+<li>如果函数返回值是一个对象，要考虑 return 语句的效率。例如</li>
+</ol>
+<pre><code class="language-c++">return String(s1 + s2);
+</code></pre>
+<p>这是临时对象的语法，表示“创建一个临时对象并返回它”。不要以为它与“先创建一个局部对象 temp 并返回它的结果”是等价的，如</p>
+<pre><code class="language-c++">String temp(s1 + s2);
+return temp;
+</code></pre>
+<p>实质不然，上述代码将发生三件事。首先，temp 对象被创建，同时完成初始化；然后拷贝构造函数把 temp 拷贝到保存返回值的外部存储单元中；最后，temp 在函数结束时被销毁（调用析构函数）。然而“创建一个临时对象并返回它”的过程是不同的，编译器直接把临时对象创建并初始化在外部存储单元中，省去了拷贝和析构的化费，提高了效率。</p>
+<ul>
+<li>
+<p>【建议】<em>函数的功能要单一，不要设计多用途的函数。</em></p>
+</li>
+<li>
+<p>【建议】<em>函数体的规模要小，尽量控制在 50 行代码之内。</em></p>
+</li>
+<li>
+<p>【建议】<em>尽量避免函数带有“记忆”功能。相同的输入应当产生相同的输出。带有“记忆”功能的函数，其行为可能是不可预测的，因为它的行为可能取决于某种“记忆状态”。这样的函数既不易理解又不利于测试和维护。在 C/C++语言中，函数的static 局部变量是函数的“记忆”存储器。建议尽量少用 static 局部变量，除非必需。</em></p>
+</li>
+<li>
+<p>【建议】<em>不仅要检查输入参数的有效性，还要检查通过其它途径进入函数体内的变量的有效性，例如全局变量、文件句柄等。</em></p>
+</li>
+<li>
+<p>【建议】<em>用于出错处理的返回值一定要清楚，让使用者不容易忽视或误解错误情况。</em></p>
+</li>
+</ul>
+<h3 id="使用断言">使用断言</h3>
+<ul>
+<li>使用断言捕捉不应该发生的非法情况。不要混淆非法情况与错误情况之间的区别，后者是必然存在的并且是一定要作出处理的。</li>
+<li>在函数的入口处，使用断言检查参数的有效性（合法性）。</li>
+<li>【建议】<em>一般教科书都鼓励程序员们进行防错设计，但要记住这种编程风格可能会隐瞒错误。当进行防错设计时，如果“不可能发生”的事情的确发生了，则要使用断言进行报警。</em></li>
+</ul>
+<h3 id="引用与指针">引用与指针</h3>
+<table>
+<thead>
+<tr>
+<th>引用</th>
+<th>指针</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>被创建的同时必须被初始化</td>
+<td>可以在任何时候被初始化</td>
+</tr>
+<tr>
+<td>不能有 NULL 引用，引用必须与合法的存储单元关联</td>
+<td>可以是 NULL</td>
+</tr>
+<tr>
+<td>一旦被初始化，就不能改变引用的关系</td>
+<td>可以随时改变所指的对象</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-c++">//指针传递
+void Func1(int *x)
+{
+	(* x) = (* x) + 10;
+}
+...
+int n = 0;
+Func1(&amp;n);
+cout &lt;&lt; “n = ” &lt;&lt; n &lt;&lt; endl; // n = 10
+
+//引用传递
+void Func2(int &amp;x)
+{
+	x = x + 10;
+}
+...
+int n = 0;
+Func2(n);
+cout &lt;&lt; “n = ” &lt;&lt; n &lt;&lt; endl; // n = 10
+</code></pre>
+<p>对比上述两个个示例程序，会发现“引用传递”的性质象“指针传递”，而书写方式象“值传递”。实际上“引用”可以做的任何事情“指针”也都能够做，为什么还要“引用”这东西？答案是“<strong>用适当的工具做恰如其分的工作</strong>”。指针能够毫无约束地操作内存中的如何东西，尽管指针功能强大，但是非常危险。就象一把刀，它可以用来砍树、裁纸、修指甲、理发等等，谁敢这样用？如果的确只需要借用一下某个对象的“别名”，那么就用“引用”，而不要用“指针”，以免发生意外。比如说，某人需要一份证明，本来在文件上盖上公章的印子就行了，如果把取公章的钥匙交给他，那么他就获得了不该有的权利。</p>
+<h2 id="内存管理">内存管理</h2>
+<h3 id="内存分配方式">内存分配方式</h3>
+<p>内存分配方式有三种：</p>
+<ol>
+<li>从<strong>静态存储区域</strong>分配。内存在程序编译的时候就已经分配好，这块内存在<strong>程序的整个运行期间</strong>都存在。例如<strong>全局变量</strong>，<strong>static 变量</strong>。</li>
+<li>在<strong>栈</strong>上创建。在执行函数时，函数内<strong>局部变量</strong>的存储单元都可以在栈上创建，<strong>函数执行</strong>结束时这些存储单元自动被释放。栈内存分配运算内置于处理器的指令集中，效率很高，但是分配的内存容量有限。</li>
+<li>从<strong>堆</strong>上分配，亦称动态内存分配。程序在运行的时候用 <strong>malloc</strong> 或 <strong>new</strong> 申请任意多少的内存，程序员自己负责在何时用 free 或 delete 释放内存。动态内存的生存期<strong>由我们决定</strong>，使用非常灵活，但问题也最多。</li>
+</ol>
+<h3 id="常见内存错误">常见内存错误</h3>
+<ol>
+<li>内存<strong>分配未成功</strong>，却使用了它。在使用内存之前检查指针是否为 NULL。</li>
+<li>内存分配虽然成功，但是<strong>尚未初始化</strong>就引用它。犯这种错误主要有两个起因：一是没有初始化的观念；二是误以为内存的缺省初值全为零，导致引用初值错误（例如数组）。</li>
+<li>内存分配成功并且已经初始化，但<strong>操作越过了内存的边界</strong>。例如在使用数组时经常发生下标“多 1”或者“少 1”的操作。特别是在 for 循环语句中，循环次数很容易搞错，导致数组操作越界。</li>
+<li><strong>忘记释放内存</strong>，造成内存泄露。动态内存的<strong>申请与释放必须配对</strong>，程序中 malloc 与 free 的使用次数一定要相同，否则肯定有错误（ new/delete 同理）。</li>
+<li><strong>释放了内存却继续使用它</strong>。有三种情况：</li>
+</ol>
+<p>​	1）程序中的对象调用关系过于复杂，实在难以搞清楚某个对象究竟是否已经释放了内存，此时应该重新设计数据结构，从根本上解决对象管理的混乱局面。</p>
+<p>​	2）函数的 return 语句写错了，注意<strong>不要返回指向“栈内存”的“指针”或者“引用”</strong>，因为该内存在函数体结束时被自动销毁。</p>
+<p>​	3）使用 free 或 delete 释放了内存后，没有将指针设置为 NULL。导致产生“<strong>野指针</strong>”。</p>
+<p>建议如下：</p>
+<ul>
+<li>
+<p>用 malloc 或 new 申请内存之后，应该立即<strong>检查指针值是否为 NULL</strong>。防止使用指针值为 NULL 的内存。</p>
+</li>
+<li>
+<p>不要忘记<strong>为数组和动态内存赋初值</strong>。防止将未被初始化的内存作为右值使用。</p>
+</li>
+<li>
+<p>避免数组或指针的<strong>下标越界</strong>，特别要当心发生“多 1”或者“少 1”操作。</p>
+</li>
+<li>
+<p>动态内存的<strong>申请与释放必须配对</strong>，防止内存泄漏。</p>
+</li>
+<li>
+<p>用 free 或 delete 释放了内存之后，立即将指针设置为 NULL，防止产生“野指针”。</p>
+</li>
+</ul>
+<h3 id="数组与指针">数组与指针</h3>
+<ul>
+<li>
+<p>数组要么在静态存储区被创建（如全局数组），要么在栈上被创建。数组名对应着（而不是指向）一块内存，其地址与容量在生命期内保持不变，只有数组的内容可以改变。</p>
+</li>
+<li>
+<p>指针可以随时指向任意类型的内存块，它的特征是“可变”，所以我们常用指针来操作动态内存。指针远比数组灵活，但也更危险。</p>
+<p>举几例进行比较：</p>
+</li>
+</ul>
+<pre><code class="language-c++">//修改内容 
+//数组
+char a[] = “hello”;
+a[0] = ‘X’;
+cout &lt;&lt; a &lt;&lt; endl;
+
+//指针
+char *p = “world”; // 注意 p 指向常量字符串（位于静态存储区，内容为 world\0）
+p[0] = ‘X’; // 编译器不能发现该错误，但是该语句企图修改常量字符串的内容而导致运行错误
+cout &lt;&lt; p &lt;&lt; endl;
+
+//复制与比较
+//数组
+char a[] = &quot;hello&quot;;
+char b[10];
+strcpy(b, a); // 不能用 b = a;
+if(strcmp(b, a) == 0) // 不能用 if (b == a)
+
+//指针
+int len = strlen(a);
+char *p = (char *)malloc(sizeof(char)*(len+1));
+strcpy(p,a); // 不要用 p = a;
+if(strcmp(p, a) == 0) // 不要用 if (p == a)
+  
+//内存容量
+char a[] = &quot;hello world&quot;;
+char *p = a;
+cout&lt;&lt; sizeof(a) &lt;&lt; endl; // 12 字节（注意别忘了’\0’）
+cout&lt;&lt; sizeof(p) &lt;&lt; endl; // 4 字节，一个指针变量的字节数
+
+//注意当数组作为函数的参数进行传递时，该数组自动退化为同类型的指针
+void Func(char a[100])
+{
+	cout&lt;&lt; sizeof(a) &lt;&lt; endl; // 4 字节而不是 100 字节
+}
+</code></pre>
+<h3 id="指针参数">指针参数</h3>
+<p>如果函数的参数是一个指针，不要指望用该指针去申请动态内存。</p>
+<pre><code class="language-c++">void GetMemory(char *p, int num)
+{
+	p = (char *)malloc(sizeof(char) * num);
+}
+void Test(void)
+{
+	char *str = NULL;
+	GetMemory(str, 100); // str 仍然为 NULL
+	strcpy(str, &quot;hello&quot;); // 运行错误
+}
+</code></pre>
+<p>毛病出在函数 GetMemory 中。编译器总是要<strong>为函数的每个参数制作临时副本</strong>，指针参数 <code>p</code> 的副本是 <code>_p</code>，编译器使 <code>_p</code> = <code>p</code>。如果函数体内的程序修改了 <code>_p</code> 的内容，就导致参数 <code>p</code> 的内容作相应的修改。这就是指针可以用作输出参数的原因。在本例中，<code>_p</code> 申请了新的内存，只是把 <code>_p</code> 所指的内存地址改变了，但是 <code>p</code> 丝毫未变。所以函数 GetMemory 并不能输出任何东西。事实上，每执行一次 GetMemory 就会泄露一块内存，因为没有用 free 释放内存。解决方法有以下两种：</p>
+<pre><code class="language-c++">//指向指针的指针
+void GetMemory2(char **p, int num)
+{
+	*p = (char *)malloc(sizeof(char) * num);
+}
+void Test2(void)
+{
+	char *str = NULL;
+	GetMemory2(&amp;str, 100); // 注意参数是 &amp;str，而不是 str
+	strcpy(str, &quot;hello&quot;);
+	cout&lt;&lt; str &lt;&lt; endl;
+	free(str);
+}
+
+//函数返回值来传递动态内存
+char *GetMemory3(int num)
+{
+	char *p = (char *)malloc(sizeof(char) * num);
+	return p;
+}
+void Test3(void)
+{
+	char *str = NULL;
+	str = GetMemory3(100);
+	strcpy(str, &quot;hello&quot;);
+	cout&lt;&lt; str &lt;&lt; endl;
+	free(str);
+}
+</code></pre>
+<p>用函数返回值来传递动态内存这种方法虽然好用，但是常常有人把 return 语句用错了。这里强调不要用 return 语句返回指向“栈内存”的指针，因为该内存在函数结束时自动消亡。</p>
+<pre><code class="language-c++">char *GetString(void)
+{
+	char p[] = &quot;hello world&quot;;
+	return p; // 编译器将提出警告
+}
+void Test4(void)
+{
+	char *str = NULL;
+	str = GetString(); // str 的内容是垃圾
+	cout&lt;&lt; str &lt;&lt; endl;
+}
+</code></pre>
+<p>而当 return 语句返回指向静态存储区的指针时，返回的始终是同一个“只读”的内存块。</p>
+<pre><code class="language-c++">char *GetString2(void)
+{
+	char *p = &quot;hello world&quot;;
+	return p;
+}
+void Test5(void)
+{
+	char *str = NULL;
+	str = GetString2();
+	cout&lt;&lt; str &lt;&lt; endl;
+}
+</code></pre>
+<h3 id="其他">其他</h3>
+<ul>
+<li>free 和 delete 只是把指针所指的内存给释放掉，但并没有把指针本身干掉。如果后续不把指针设置为 NULL，会让人误以为是合法的指针。</li>
+<li>指针消亡了，并不表示它所指的内存会被自动释放。内存被释放了，并不表示指针会消亡或者成了 NULL 指针。</li>
+</ul>
+<pre><code class="language-c++">void Func(void)
+{
+	char *p = (char *) malloc(100); // 动态内存会自动释放吗？
+}
+</code></pre>
+<p>如果程序终止了运行，一切指针都会消亡，动态内存会被操作系统回收。既然如此，在程序临终前，就可以不必释放内存、不必将指针设置为 NULL 了。终于可以偷懒而不<br>
+会发生错误了吧？想得美。如果别人把那段程序取出来用到其它地方怎么办？</p>
+<ul>
+<li><strong>野指针</strong>不是 NULL 指针，是指向“垃圾”内存的指针。成因主要有三种：
+<ol>
+<li>指针变量没有被初始化。任何指针变量刚被创建时不会自动成为 NULL 指针，它的缺省值是随机的，它会乱指一气。所以，指针变量在创建的同时应当被初始化，要么将指针设置为 NULL，要么让它指向合法的内存。</li>
+<li>指针被 free 或者 delete 之后，没有置为 NULL，让人误以为它是合法指针。</li>
+<li>指针操作超越了变量的作用范围。示例程序如下，函数 Test 在执行语句 p-&gt;Func()时，对象 a 已经消失，而 p 是指向 a 的，所以 p 就成了“野指针”。</li>
+</ol>
+</li>
+</ul>
+<pre><code class="language-c++">class A
+{
+	public:
+		void Func(void){ cout &lt;&lt; “Func of class A” &lt;&lt; endl; }
+};
+void Test(void)
+{
+	A *p;
+	{
+		A a;
+		p = &amp;a; // 注意 a 的生命期
+	}
+	p-&gt;Func(); // p 是“野指针”
+}
+</code></pre>
+<ul>
+<li>malloc/free 和 new/delete。malloc 与 free 是 C++/C 语言的<strong>标准库函数</strong>，new/delete 是C++的<strong>运算符</strong>。对于非内部数据类型的对象而言，光用 maloc/free 无法满足动态对象的要求。对象在创建的同时要自动执行构造函数，对象在消亡之前要自动执行析构函数。由于 malloc/free 是库函数而不是运算符，不在编译器控制权限之内，不能够把执行构造函数和析构函数的任务强加于 malloc/free。因此C++语言需要一个能完成动态内存分配和初始化工作的运算符 new，以及一个能完成清理与释放内存工作的运算符 delete。</li>
+<li>如果在申请动态内存时找不到足够大的内存块，malloc 和 new 将返回 NULL 指针，宣告内存申请失败。通常有三种方式处理“内存耗尽”问题。
+<ol>
+<li>判断指针是否为 NULL，如果是则马上用 return 语句终止本函数。</li>
+<li>判断指针是否为 NULL，如果是则马上用 exit(1) 终止整个程序的运行。</li>
+<li>为 new 和 malloc 设置异常处理函数。例如Visual C++可以用 _set_new_hander 函数为 new 设置用户自己定义的异常处理函数，也可以让 malloc 享用与 new 相同的异常处理函数。</li>
+</ol>
+</li>
+</ul>
+<h2 id="c函数的高级特性">C++函数的高级特性</h2>
+<h3 id="函数重载">函数重载</h3>
+<ul>
+<li>重载函数通过参数不同来进行区分，编译器根据参数为每个重载函数产生不同的内部标识符。如<code>void foo(int x, int y);</code>C++编译器会产生像<code>_foo_int_int</code>之类的名字用来支持函数重载和类型安全连接，C编译器会产生<code>_foo</code>这样的名字。由于<strong>编译后的名字不同</strong>，C++程序不能直接调用C函数。C++提供了一个C连接交换指定符号 extern“C” 来解决这个问题。</li>
+<li>当心隐式类型转换导致重载函数产生二义性。</li>
+</ul>
+<pre><code class="language-c++"># include &lt;iostream.h&gt;
+void output( int x); // 函数声明
+void output( float x); // 函数声明
+
+void output( int x)
+{
+	cout &lt;&lt; &quot; output int &quot; &lt;&lt; x &lt;&lt; endl ;
+}
+
+void output( float x)
+{
+	cout &lt;&lt; &quot; output float &quot; &lt;&lt; x &lt;&lt; endl ;
+}
+
+void main(void)
+{
+	int x = 1;
+	float y = 1.0;
+	output(x); // output int 1
+	output(y); // output float 1
+	output(1); // output int 1
+	// output(0.5); // error! ambiguous call, 因为自动类型转换
+	output(int(0.5)); // output int 0
+	output(float(0.5)); // output float 0.5
+}
+</code></pre>
+<h3 id="成员函数的重载-覆盖与隐藏">成员函数的重载、覆盖与隐藏</h3>
+<ul>
+<li>重载与覆盖</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>重载</th>
+<th>覆盖</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>相同的范围（在同一个类中）</td>
+<td>不同的范围（分别位于派生类与基类）</td>
+</tr>
+<tr>
+<td>函数名字相同</td>
+<td>函数名字相同</td>
+</tr>
+<tr>
+<td>参数不同</td>
+<td>参数相同</td>
+</tr>
+<tr>
+<td>virtual 关键字可有可无</td>
+<td>基类函数必须有 virtual 关键字</td>
+</tr>
+</tbody>
+</table>
+<p>如下，函数 Base::f(int) 与 Base::f(float) 相互重载，而 Base::g(void) 被 Derived::g(void) 覆盖。</p>
+<pre><code class="language-c++">#include &lt;iostream.h&gt;
+class Base
+{
+	public:
+		void f(int x){ cout &lt;&lt; &quot;Base::f(int) &quot; &lt;&lt; x &lt;&lt; endl; }
+		void f(float x){ cout &lt;&lt; &quot;Base::f(float) &quot; &lt;&lt; x &lt;&lt; endl; }
+		virtual void g(void){ cout &lt;&lt; &quot;Base::g(void)&quot; &lt;&lt; endl; }
+};
+
+class Derived : public Base
+{
+	public:
+		virtual void g(void){ cout &lt;&lt; &quot;Derived::g(void)&quot; &lt;&lt; endl; }
+};
+
+void main(void)
+{
+	Derived d;
+	Base *pb = &amp;d;
+	pb-&gt;f(42); // Base::f(int) 42
+	pb-&gt;f(3.14f); // Base::f(float) 3.14
+	pb-&gt;g(); // Derived::g(void)
+}
+</code></pre>
+<ul>
+<li>隐藏规则</li>
+</ul>
+<p>“隐藏”是指派生类的函数屏蔽了与其同名的基类函数，规则如下：</p>
+<ol>
+<li>如果派生类的函数与基类的函数同名，但是<strong>参数不同</strong>。此时，不论有无 virtual 关键字，基类的函数将被隐藏（注意别与重载混淆）。</li>
+<li>如果派生类的函数与基类的函数同名，并且<strong>参数相同</strong>，但是基类函数没有 virtual 关键字。此时，基类的函数被隐藏（注意别与覆盖混淆）。</li>
+</ol>
+<p>如下,函数 Derived::f(float)覆盖了 Base::f(float)，函数 Derived::g(int) 隐藏了 Base::g(float)，而不是重载，函数 Derived::h(float) 隐藏了 Base::h(float)，而不是覆盖。</p>
+<pre><code class="language-c++">#include &lt;iostream.h&gt;
+class Base
+{
+	public:
+		virtual void f(float x){ cout &lt;&lt; &quot;Base::f(float) &quot; &lt;&lt; x &lt;&lt; endl; }
+		void g(float x){ cout &lt;&lt; &quot;Base::g(float) &quot; &lt;&lt; x &lt;&lt; endl; }
+		void h(float x){ cout &lt;&lt; &quot;Base::h(float) &quot; &lt;&lt; x &lt;&lt; endl; }
+};
+class Derived : public Base
+{
+	public:
+		virtual void f(float x){ cout &lt;&lt; &quot;Derived::f(float) &quot; &lt;&lt; x &lt;&lt; endl; }
+		void g(int x){ cout &lt;&lt; &quot;Derived::g(int) &quot; &lt;&lt; x &lt;&lt; endl; }
+		void h(float x){ cout &lt;&lt; &quot;Derived::h(float) &quot; &lt;&lt; x &lt;&lt; endl; }
+};
+
+void main(void)
+{
+	Derived d;
+	Base *pb = &amp;d;
+	Derived *pd = &amp;d;
+	// Good : behavior depends solely on type of the object
+	pb-&gt;f(3.14f); // Derived::f(float) 3.14
+	pd-&gt;f(3.14f); // Derived::f(float) 3.14
+	// Bad : behavior depends on type of the pointer
+	pb-&gt;g(3.14f); // Base::g(float) 3.14
+	pd-&gt;g(3.14f); // Derived::g(int) 3 (surprise!)
+	// Bad : behavior depends on type of the pointer
+	pb-&gt;h(3.14f); // Base::h(float) 3.14 (surprise!)
+	pd-&gt;h(3.14f); // Derived::h(float) 3.14
+}
+</code></pre>
+<ul>
+<li>
+<p>摆脱隐藏</p>
+<p>如下，语句 pd-&gt;f(10)的本意是想调用函数 Base::f(int)，但是 Base::f(int)不幸被 Derived::f(char *) 隐藏了。由于数字 10 不能被隐式地转化为字符串，所以在编译时出错。</p>
+</li>
+</ul>
+<pre><code class="language-c++">class Base
+{
+	public:
+		void f(int x);
+};
+class Derived : public Base
+{
+	public:
+		void f(char *str);
+};
+void Test(void)
+{
+	Derived *pd = new Derived;
+	pd-&gt;f(10); // error
+}
+</code></pre>
+<p>如果语句 pd-&gt;f(10)一定要调用函数 Base::f(int)，那么将类 Derived 修改为如下即可。</p>
+<pre><code class="language-c++">class Derived : public Base
+{
+	public:
+		void f(char *str);
+		void f(int x) { Base::f(x); }
+};
+</code></pre>
+<h3 id="参数的缺省值">参数的缺省值</h3>
+<ul>
+<li>参数缺省值只能出现在函数的声明中，而不能出现在定义体中。</li>
+</ul>
+<pre><code class="language-c++">void Foo(int x=0, int y=0); // 正确，缺省值出现在函数的声明中
+
+void Foo(int x=0, int y=0) // 错误，缺省值出现在函数的定义体中
+{
+	...
+}
+</code></pre>
+<ul>
+<li>如果函数有多个参数，参数只能从后向前挨个儿缺省，否则将导致函数调用语句怪模怪样。</li>
+</ul>
+<pre><code class="language-c++">void Foo(int x, int y=0, int z=0); // 正确
+
+void Foo(int x=0, int y, int z=0); // 错误
+</code></pre>
+<p>防止不合理地使用参数的缺省值将导致重载函数产生二义性。</p>
+<pre><code class="language-c++">#include &lt;iostream.h&gt;
+void output( int x);
+void output( int x, float y=0.0);
+
+void output( int x)
+{
+	cout &lt;&lt; &quot; output int &quot; &lt;&lt; x &lt;&lt; endl ;
+}
+
+void output( int x, float y)
+{
+	cout &lt;&lt; &quot; output int &quot; &lt;&lt; x &lt;&lt; &quot; and float &quot; &lt;&lt; y &lt;&lt; endl ;
+}
+
+void main(void)
+{
+	int x=1;
+	float y=0.5;
+	// output(x); // error! ambiguous call
+	output(x,y); // output int 1 and float 0.5
+}
+</code></pre>
+<h3 id="运算符重载">运算符重载</h3>
+<p>在 C++语言中，可以用关键字 operator 加上运算符来表示函数，叫做运算符重载。例如两个复数相加函数：<code>Complex Add(const Complex &amp;a, const Complex &amp;b);</code>可以用运算符重载来表示：<code>Complex operator +(const Complex &amp;a, const Complex &amp;b);</code>。运算符与普通函数在调用时的不同之处是：对于普通函数，参数出现在圆括号内；而对于运算符，参数出现在其左、右侧。</p>
+<pre><code class="language-c++">Complex a, b, c;
+...
+c = Add(a, b); // 用普通函数
+c = a + b; // 用运算符 +
+</code></pre>
+<p>运算符定义为函数的规则如下。</p>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>规则</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>所有的一元运算符</td>
+<td>建议重载为成员函数</td>
+</tr>
+<tr>
+<td>= () [] -&gt;</td>
+<td>只能重载为成员函数</td>
+</tr>
+<tr>
+<td>+= -= /= *= &amp;= |= ~= %= &gt;&gt;= &lt;&lt;=</td>
+<td>建议重载为成员函数</td>
+</tr>
+<tr>
+<td>所有其它运算符</td>
+<td>建议重载为全局函数</td>
+</tr>
+</tbody>
+</table>
+<p>在 C++运算符集合中，有一些运算符是不允许被重载的。这种限制是出于安全方面的考虑，可防止错误和混乱。</p>
+<ul>
+<li>不能改变 C++<strong>内部数据类型</strong>（如 int,float 等）的运算符。</li>
+<li>不能重载‘.’，因为‘.’在类中对任何成员都有意义，已经成为标准用法。</li>
+<li>不能重载目前 C++运算符集合中没有的符号，如#,@,$等。原因有两点，一是难以理解，二是难以确定优先级。</li>
+<li>对已经存在的运算符进行重载时，不能改变优先级规则，否则将引起混乱。</li>
+</ul>
+<h3 id="函数内联">函数内联</h3>
+<p>关键字 inline 必须与<strong>函数定义体</strong>放在一起才能使函数成为内联，仅将 inline 放在函数声明前面不起任何作用。</p>
+<pre><code class="language-c++">void Foo(int x, int y);
+inline void Foo(int x, int y) // inline 与函数定义体放在一起
+{
+	...
+}
+</code></pre>
+<p>内联是以代码膨胀（复制）为代价，仅仅省去了函数调用的开销，从而提高函数的执行效率。如果执行函数体内代码的时间，相比于函数调用的开销较大，那么效率的收<br>
+获会很少。另一方面，每一处内联函数的调用都要复制代码，将使程序的总代码量增大，消耗更多的内存空间。以下情况不宜使用内联：</p>
+<ul>
+<li>如果函数体内的<strong>代码比较长</strong>，使用内联将导致内存消耗代价较高。</li>
+<li>如果函数体内<strong>出现循环</strong>，那么执行函数体内代码的时间要比函数调用的开销大。</li>
+</ul>
+<h2 id="类">类</h2>
+<p>对于任意一个类 A，C++编译器将自动为 A 产生四个缺省的函数，如</p>
+<pre><code class="language-c++">A(void); // 缺省的无参数构造函数
+A(const A &amp;a); // 缺省的拷贝构造函数
+~A(void); // 缺省的析构函数
+A &amp; operate =(const A &amp;a); // 缺省的赋值函数
+</code></pre>
+<p>注意“缺省的拷贝构造函数”和“缺省的赋值函数”均采用“位拷贝”而非“值拷贝”的方式来实现，倘若类中含有指针变量，这两个函数注定将出错。</p>
+<h3 id="构造函数的初始化表">构造函数的初始化表</h3>
+<p>构造函数有个特殊的初始化方式叫“初始化表达式表”（简称初始化表）。初始化表位于函数参数表之后，却在函数体 {} 之前。这说明该表里的初始化工作发生在函数体内的任何代码被执行之前。构造函数初始化表的使用规则：</p>
+<ul>
+<li>如果类存在继承关系，派生类必须在其初始化表里<strong>调用基类的构造函数</strong>。</li>
+</ul>
+<pre><code class="language-c++">class A
+{...
+	A(int x); // A 的构造函数
+};
+
+class B : public A
+{...
+	B(int x, int y);// B 的构造函数
+};
+
+B::B(int x, int y)
+	: A(x) // 在初始化表里调用 A 的构造函数
+
+{
+	...
+}
+</code></pre>
+<ul>
+<li>类的 <strong>const 常量</strong>只能在初始化表里被初始化，因为它不能在函数体内用赋值的方式来初始化。</li>
+<li>类的数据成员的初始化可以采用初始化表或函数体内赋值两种方式，这两种方式的效率不完全相同。非内部数据类型的成员对象应当采用第一种方式初始化，以获取更高的效率。对于内部数据类型的数据成员而言，两种初始化方式的效率几乎没有区别，但后者的程序版式似乎更清晰些。</li>
+</ul>
+<pre><code class="language-c++">class A
+{...
+	A(void); // 无参数构造函数
+	A(const A &amp;other); // 拷贝构造函数
+	A &amp; operate =( const A &amp;other); // 赋值函数
+}；
+  
+class B
+{
+	public:
+		B(const A &amp;a); // B 的构造函数
+	private:
+		A m_a; // 成员对象
+};
+
+//第一种
+B::B(const A &amp;a)
+	: m_a(a)
+{
+	...
+}
+
+//第二种
+B::B(const A &amp;a)
+{
+	m_a = a;
+	...
+}
+</code></pre>
+<h3 id="拷贝构造函数与赋值函数">拷贝构造函数与赋值函数</h3>
+<ul>
+<li>如果不主动编写拷贝构造函数和赋值函数，编译器将以“位拷贝”的方式自动生成缺省的函数。倘若类中含有指针变量，那么这两个缺省的函数就隐含了错误。以类 String 的两个对象 a,b 为例，假设 a.m_data 的内容为“hello”，b.m_data的内容为“world”。现将 a 赋给 b，缺省赋值函数的“位拷贝”意味着执行 b.m_data = a.m_data。这将造成三个错误：一是 b.m_data 原有的内存没被释放，造成内存泄露；二是 b.m_data 和 a.m_data 指向同一块内存，a 或 b 任何一方变动都会影响另一方；三是在对象被析构时，m_data 被释放了两次。</li>
+<li>拷贝构造函数是在对象被创建时调用的，而赋值函数只能被已经存在了的对象调用。</li>
+</ul>
+<pre><code class="language-c++">String a(“hello”);
+String b(“world”);
+String c = a; // 调用了拷贝构造函数，风格较差最好写成 c(a);
+c = b; // 调用了赋值函数
+</code></pre>
+<ul>
+<li>如果我们实在不想编写拷贝构造函数和赋值函数，又不允许别人使用编译器生成的缺省函数，偷懒的办法是只需将拷贝构造函数和赋值函数声明为私有函数，不用编写代码。</li>
+</ul>
+<h3 id="类string">类String</h3>
+<pre><code class="language-c++">class String
+{
+	public:
+		String(const char *str = NULL); // 普通构造函数
+		String(const String &amp;other); // 拷贝构造函数
+		~ String(void); // 析构函数
+		String &amp; operate =(const String &amp;other); // 赋值函数
+	private:
+		char *m_data; // 用于保存字符串
+};
+
+// String 的普通构造函数
+String::String(const char *str)
+{
+  if (str == NULL)
+  {
+    m_data = new char[1];
+    *m_data = '\0';
+  }
+  else
+  {
+    int length = strlen(str);
+    m_data = new char[length + 1];
+    strcpy(m_data, str);
+  }
+}
+
+// 拷贝构造函数
+String::String(const String &amp;other)
+{
+  int length = strlen(other.m_data);
+  m_data = new char[length + 1];
+  strcpy(m_data, other.m_data);
+}
+
+// String 的析构函数
+String::~String(void)
+{
+  delete []m_data;// 由于 m_data 是内部数据类型，也可以写成 delete m_data;
+}
+
+// 赋值函数
+String::String&amp; operate =(const String &amp;other)
+{
+  // (1) 检查自赋值
+	if (this == &amp;other)
+    return *this;
+  
+  // (2) 释放原有的内存资源
+  delete []m_data;
+  
+  // （3）分配新的内存资源，并复制内容
+	int length = strlen(other.m_data);
+	m_data = new char[length+1];
+	strcpy(m_data, other.m_data);
+  
+	// （4）返回本对象的引用
+	return *this;
+}
+</code></pre>
+<h3 id="派生类中实现类的基本函数">派生类中实现类的基本函数</h3>
+<ul>
+<li>派生类的构造函数应在其初始化表里调用基类的构造函数。</li>
+<li>基类与派生类的<strong>析构函数应该为虚</strong>（即加 virtual 关键字）。</li>
+<li>在编写派生类的赋值函数时，注意不要忘记对基类的数据成员重新赋值，如下所示：</li>
+</ul>
+<pre><code class="language-c++">class Base
+{
+	public:
+		Base &amp; operate =(const Base &amp;other); // 类 Base 的赋值函数
+	private:
+		int m_i, m_j, m_k;
+};
+
+class Derived : public Base
+{
+	public:
+		Derived &amp; operate =(const Derived &amp;other); // 类 Derived 的赋值函数
+	private:
+		int m_x, m_y, m_z;
+};
+
+Derived &amp; Derived::operate =(const Derived &amp;other)
+{
+	//（1）检查自赋值	
+	if(this == &amp;other)
+	return *this;
+  
+	//（2）对基类的数据成员重新赋值
+	Base::operate =(other); // 因为不能直接操作私有数据成员
+  
+	//（3）对派生类的数据成员赋值
+	m_x = other.m_x;
+	m_y = other.m_y;
+	m_z = other.m_z;
+  
+	//（4）返回本对象的引用
+	return *this;
+}
+</code></pre>
+<h3 id="类的继承">类的继承</h3>
+<p>如果 A 是基类，B 是 A 的派生类，类 A 和类 B 毫不相关，不可以为了使 B 的功能更多些而让 B 继承 A 的功能和属性。若在逻辑上 B 是 A 的“一种”（a kind of ），则允许 B 继承 A 的功能和属性。例如男人（Man）是人（Human）的一种，男孩（Boy）是男人的一种。那么类 Man 可以从类 Human 派生，类 Boy 可以从类 Man 派生。</p>
+<h3 id="类的组合">类的组合</h3>
+<p>若在逻辑上 A 是 B 的“一部分”（a part of），则不允许 B 从 A 派生，而是要用 A 和其它东西组合出 B。例如眼（Eye）、鼻（Nose）、口（Mouth）、耳（Ear）是头（Head）的一部分，所以类 Head 应该由类 Eye、Nose、Mouth、Ear 组合而成，不是派生而成。如下所示。</p>
+<pre><code class="language-c++">class Eye
+{
+	public:
+		void Look(void);
+};
+
+class Nose
+{
+	public:
+		void Smell(void);
+};
+
+class Mouth
+{
+	public:
+		void Eat(void);
+};
+
+class Ear
+{
+	public:
+		void Listen(void);
+};
+
+// 正确的设计，虽然代码冗长。
+class Head
+{
+	public:
+		void Look(void) { m_eye.Look(); }
+		void Smell(void) { m_nose.Smell(); }
+		void Eat(void) { m_mouth.Eat(); }
+		void Listen(void) { m_ear.Listen(); }
+  
+	private:
+		Eye m_eye;
+		Nose m_nose;
+		Mouth m_mouth;
+		Ear m_ear;
+};
+</code></pre>
+<p>如果允许 Head 从 Eye、Nose、Mouth、Ear 派生而成，那么 Head 将自动具有 Look、Smell、Eat、Listen 这些功能，这种设计方法却是不对的。</p>
+<h2 id="其他-2">其他</h2>
+<h3 id="使用-const-提高函数的健壮性">使用 const 提高函数的健壮性</h3>
+<h4 id="修饰输入参数">修饰输入参数</h4>
+<ul>
+<li>如果输入参数采用“指针传递”，那么加 const 修饰可以<strong>防止意外地改动该指针</strong>，起到保护作用。例如 StringCopy 函数<code>void StringCopy(char *strDestination, const char *strSource)</code>，其中 strSource 是输入参数，strDestination 是输出参数。给 strSource 加上 const 修饰后，如果函数体内的语句试图改动 strSource 的内容，编译器将指出错误。</li>
+<li>如果输入参数采用“值传递”，由于函数将自动产生临时变量用于复制该参数，该输入参数本来就无需保护，所以不要加 const 修饰。例如不要将函数<code>void Func1(int x)</code> 写成<code>void Func1(const int x)</code>。同理不要将函数<code>void Func2(A a)</code>写成<code>void Func2(const A a)</code>。其中 A 为用户自定义的数据类型。</li>
+<li>对于非内部数据类型的参数而言，象<code>void Func(A a)</code>这样声明的函数效率较低。因为函数体内将产生 A 类型的临时对象用于复制参数 a，而临时对象的构造、复制、析构过程都将消耗时间。为了提高效率，可以将函数声明改为 <code>void Func(A &amp;a)</code>，因为“引用传递”仅借用一下参数的别名而已，不需要产生临时对象。但是函数<code>void Func(A &amp;a)</code> 存在一个缺点：“引用传递”有可能改变参数 a，这是我们不期望的。解决这个问题很容易，加 const 修饰即可，因此函数最终成为<code>void Func(const A &amp;a)</code>。</li>
+</ul>
+<h4 id="修饰返回值">修饰返回值</h4>
+<ul>
+<li>如果给以“指针传递”方式的函数返回值加 const 修饰，那么函数返回值（即指针）的内容不能被修改，该返回值只能被赋给加 const 修饰的同类型指针。</li>
+</ul>
+<pre><code class="language-c++">const char * GetString(void);
+
+//错误
+char *str = GetString();
+
+//正确
+const char *str = GetString();
+</code></pre>
+<ul>
+<li>如果函数返回值采用“值传递方式”，由于函数会把返回值复制到外部临时的存储单元中，加 const 修饰没有任何价值。例如不要把函数 int GetInt(void) 写成 const int GetInt(void)。</li>
+<li>函数返回值采用“引用传递”的场合并不多，这种方式一般只出现在类的赋值函数中，目的是为了实现链式表达。例如</li>
+</ul>
+<pre><code class="language-c++">class A
+{...
+	A &amp; operate = (const A &amp;other); // 赋值函数
+};
+A a, b, c; // a, b, c 为 A 的对象
+...
+a = b = c; // 正常的链式赋值
+
+(a = b) = c; // 不正常的链式赋值，但合法
+</code></pre>
+<p>如果将赋值函数的返回值加 const 修饰，那么该返回值的内容不允许被改动。上例中，语句 a = b = c 仍然正确，但是语句 (a = b) = c 则是非法的。</p>
+<h4 id="修饰成员函数">修饰成员函数</h4>
+<p>任何不会修改数据成员的函数都应该声明为 const 类型。如果在编写 const 成员函数时，不慎修改了数据成员，或者调用了其它非 const 成员函数，编译器将指出错误，这无疑会提高程序的健壮性。以下程序中，类 stack 的成员函数 GetCount 仅用于计数，从逻辑上讲 GetCount 应当为 const 函数。编译器将指出 GetCount 函数中的错误。</p>
+<pre><code class="language-c++">class Stack
+{
+	public:
+		void Push(int elem);
+		int Pop(void);
+		int GetCount(void) const; // const 成员函数
+	private:
+		int m_num;
+		int m_data[100];
+};
+
+int Stack::GetCount(void) const
+{
+	++ m_num; // 编译错误，企图修改数据成员 m_num
+	Pop(); // 编译错误，企图调用非 const 函数
+	return m_num;
+}
+</code></pre>
+<h3 id="提高程序效率">提高程序效率</h3>
+<p>程序的时间效率是指运行速度，空间效率是指程序占用内存或者外存的状况。全局效率是指站在整个系统的角度上考虑的效率，局部效率是指站在模块或函数角度上考虑的效率。</p>
+<ul>
+<li>不要一味地追求程序的效率，应当在满足正确性、可靠性、健壮性、可读性等质量因素的前提下，设法提高程序的效率。</li>
+<li>以提高程序的全局效率为主，提高局部效率为辅。</li>
+<li>在优化程序的效率时，应当先找出限制效率的“瓶颈”，不要在无关紧要之处优化。</li>
+<li>先优化数据结构和算法，再优化执行代码。</li>
+<li>有时候时间效率和空间效率可能对立，此时应当分析那个更重要，作出适当的折衷。例如多花费一些内存来提高性能。</li>
+<li>不要追求紧凑的代码，因为紧凑的代码并不能产生高效的机器码。</li>
+</ul>
+<h3 id="一些有益的建议">一些有益的建议</h3>
+<ul>
+<li>当心那些视觉上不易分辨的操作符发生书写错误。我们经常会把“＝＝”误写成“＝”，象“||”、“&amp;&amp;”、“&lt;=”、“&gt;=”这类符号也很容易发生“丢 1”失误。然而编译器却不一定能自动指出这类错误。</li>
+<li>变量（指针、数组）被创建之后应当<strong>及时把它们初始化</strong>，以防止把未被初始化的变量当成右值使用。</li>
+<li>当心变量的<strong>初值、缺省值</strong>错误，或者精度不够</li>
+<li>当心数据类型转换发生错误，尽量使用<strong>显式的数据类型转换</strong>。</li>
+<li>当心变量发生上溢或下溢，数组的<strong>下标越界</strong>。</li>
+<li>当心忘记编写错误处理程序，当心错误处理程序本身有误。</li>
+<li>当心文件 I/O 有错误</li>
+<li>避免编写技巧性很高代码</li>
+<li>不要设计面面俱到、非常灵活的数据结构</li>
+<li>如果原有的代码质量比较好，尽量复用它。但是不要修补很差劲的代码，应当重新编写</li>
+<li>尽量使用标准库函数，不要“发明”已经存在的库函数。</li>
+<li>尽量不要使用与具体硬件或软件环境关系密切的变量</li>
+<li>把编译器的选择项设置为最严格状态</li>
+<li>如果可能的话，使用 PC-Lint、LogiScope 等工具进行代码审查。</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Tcl Cheat Sheet]]></title>
+        <id>https://lxulxu.github.io/post/tcl-cheat-sheet/</id>
+        <link href="https://lxulxu.github.io/post/tcl-cheat-sheet/">
+        </link>
+        <updated>2022-08-30T09:51:47.000Z</updated>
+        <content type="html"><![CDATA[<ul>
+<li>基础语法</li>
+</ul>
+<pre><code class="language-python">puts &quot;Hello World&quot;#输出
+set x [expr 1 == 2 ? 1 : 2]#设置变量；三元运算符
+[exec ls]#调用子进程
+
+#if
+if { $x &lt; 2} { ... }
+elseif { $x == 1 } { ... }
+
+#while
+while { $x &lt; 2 } {
+	incr x
+}
+
+#for
+for { set i 0 } { $i &lt; 5 } { incr i } { ... }
+
+#switch
+switch $x {
+	1 { ... }
+	2 { ... }
+	default { ... }
+}
+</code></pre>
+<ul>
+<li>字符串</li>
+</ul>
+<pre><code class="language-python">set s1 &quot;_Hello_World_&quot;
+set s2 &quot;_&quot;
+
+[string length $s1]
+[string index $s1 0]
+[string range $s1 1 end]
+append s1 &quot;!&quot;
+[string repeat $s1 5]#&quot;_Hello_World_&quot;*5
+
+[string toupper $s1]
+[string tolower $s1]
+
+[string compare $s1 $s2]
+[string equal $s1 $s2]
+
+[string first $s2 $s1]#s1中第一个匹配s2索引
+[string last $s2 $s1]#s1中最后一次匹配s2索引
+
+[string trim $s1 $s2]#-&gt;Hello_World
+[string trimright $s1 $s2]#-&gt;_Hello_World
+[string trimleft $s1 $s2]#-&gt;Hello_World_
+
+set s1 &quot;abc@163.com&quot;
+set s2 &quot;*@*.com&quot;
+[string match $s2 $s1]
+
+[format &quot;%s %x %f&quot; &quot;tcl&quot; 40 43.5]
+scan {planet1 0.330 planet2 4.87} {planet1 %g planet2 %g}#-&gt; 0.330 4.87 
+</code></pre>
+<ul>
+<li>列表</li>
+</ul>
+<pre><code class="language-python">#初始化
+set colors {red green blue}
+set colors [split &quot;red_green_blue&quot; _]
+set colors [list red green blue]
+
+[lindex $colors 1]
+[lrange $colors 0 2]
+[llength $colors]
+lappend colors &quot;orange&quot;#末尾添加元素
+lset colors 3 purple#设置第n个元素
+[linsert $colors 3 black white]
+[lreplace $colors 0 1 black white]
+[lsearch $colors black]
+concat $colors {black {white purple}}#-&gt;$colors black {white purple}
+[join $colors /]#列表元素以特定分隔符组合为字符串
+[lsort $colors]
+foreach item $colors { ... }#遍历
+</code></pre>
+<ul>
+<li>字典</li>
+</ul>
+<pre><code class="language-python">#初始化
+dict set colors c1 red
+set colors [dict create c1 &quot;black&quot; c2 &quot;white&quot;]
+
+[dict size $colors]
+[dict keys $colors]#所有key组合成的列表
+[dict values $colors]#所有value组合成的列表
+[dict exists $colors c1]
+#遍历
+foreach item [dict keys $colors] {
+	set value [dict get $colors item]
+}
+dict for {key value} $colors {
+	puts &quot;$key : $value&quot;
+}
+</code></pre>
+<ul>
+<li>IO</li>
+</ul>
+<pre><code class="language-python">#写入文件
+set fp [open &quot;input.txt&quot; w+]
+puts $fp &quot;Hello world.&quot;
+close $fp
+#读取文件
+set fp [open &quot;input.txt&quot; r]
+set file_data [read $fp]
+close $fp
+
+set fp [open &quot;input.txt&quot; r]
+while { [gets $fp data] &gt;= 0 } {
+  puts $data
+}
+close $fp
+#文件名相关操作
+[file join C:/ {Program Files} Tcl tclsh.exe]#-&gt;C:/Program Files/Tcl/tclsh.exe
+[file split x/y/z]#-&gt;x y z
+[file dirname /a/b/main.c]#-&gt;/a/b
+[file extension src/main.c]#-&gt;.c
+[file rootname src/main.c]#-&gt;src/main
+[file tail /a/b/c.txt]#-&gt;c.txt
+#查找文件
+glob -nocomplain {{src,backup}/*.[ch]}]#-nocomplain:跳过搜索结果为空时报错;{{src,backup}/*.[ch]}:正则匹配搜索文件
+[glob -directory ./ -types f -tails *]#-directory:指定搜索文件夹;-types:指定搜索对象类型
+#文件相关操作
+file mkdir foo
+file delete a.txt b.txt *.tmp
+file delete {*}[glob *]
+file copy a.txt b.txt#a.txt复制到b.txt
+file rename b.txt c.txt#b.txt重命名为c.txt
+</code></pre>
+<ul>
+<li>正则匹配</li>
+</ul>
+<pre><code class="language-python">#匹配
+regexp {([a-z]*).([a-z]*)} &quot;Tcl Command&quot; sm sm1 sm2#sm:full match;sm1:sub match 1;sm2:sub match 2
+regexp -nocase -start 4 -line -- {([a-z]*).([a-z]*)} &quot;Tcl\nCommand&quot; sm sm1 sm2#-nocase：忽视大小写;-start:指定匹配开始位置;-line:跨行匹配
+#替换
+regsub there &quot;They lives there lives&quot; their s#-&gt;s:They lives their lives
+regsub -all a ababa zz s#-&gt;s:zzbzzbzz
+regsub -all -- (a+)(ba*) aabaabxab {z\2} s#-&gt;s:zbaabxzb
+</code></pre>
+<ul>
+<li>数学运算</li>
+</ul>
+<pre><code class="language-python">namespace import ::tcl::mathfunc::*
+
+[rand]
+set x -1.2
+set y 2
+[abs $x]
+[ceil $x]#向上取整
+[floor $x]#向下取整
+[fmod $x $y]#%
+[int $x]
+[pow $x $y]
+[round $x]
+[sqrt $y]
+[max $x $y]
+[min $x $y]
+</code></pre>
+<ul>
+<li>时间</li>
+</ul>
+<pre><code class="language-python">set curr_tm [clock seconds]
+[clock format $curr_tm -format %H:%M:%S]#-&gt;15:34:01
+[clock format $curr_tm -format %D]#08/29/2022
+
+set date &quot;Jun 15, 2014&quot;
+[clock scan $date -format {%b %d, %Y}]#-&gt;1402761600
+
+after 500#休眠n毫秒
+</code></pre>
+<ul>
+<li>函数</li>
+</ul>
+<pre><code class="language-python">proc add {a b} {
+	return [expr $a + $b]
+}
+
+[add 10 30]
+
+#错误与异常
+catch {set fp [open no.txt]} errmsg
+puts &quot;ErrorMsg: $errmsg&quot;
+
+proc div {a b} {
+  if {$b == 0} {
+    error &quot;Error generated by error&quot; &quot;Info String for error&quot; 401
+  } else {
+    return [expr $a / $b]
+  }
+}
+
+if {[catch {puts &quot;Result = [div 10 0]&quot;} errmsg]} {
+  puts &quot;ErrorMsg: $errmsg&quot;
+  puts &quot;ErrorCode: $errorCode&quot;
+  puts &quot;ErrorInfo:\n$errorInfo\n&quot;
+}
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[许可管理]]></title>
+        <id>https://lxulxu.github.io/post/xu-ke-guan-li/</id>
+        <link href="https://lxulxu.github.io/post/xu-ke-guan-li/">
+        </link>
+        <updated>2022-08-10T13:50:26.000Z</updated>
+        <content type="html"><![CDATA[<p>IEEE Std 1735-2014 Ch8 一些整理</p>
+<h2 id="简介">简介</h2>
+<h3 id="定义">定义</h3>
+<pre><code>`protect license_proxyname=&quot;acme_proxy&quot;
+`protect license_attributes=&quot;USER,MAC,PROXYINFO=1.2&quot;
+`protect license_symmetric_key_method=&quot;aes128-cbc&quot;
+`protect license_public_key_method=&quot;rsa&quot;
+`protect license_keyowner=&quot;ACME&quot;, license_keyname=&quot;ACME2014&quot;
+`protect license_public_key
+AV6f6JyGUxBpr49EwxN7jfdUQcRqRFDN7Mto2ltk+emrRCQS+bW/Yvu8U3w9kx7g
+rCXFueY/S8lyKUExUP2Yi5C3K9WIFqF7Ov3Hm9/fEumxDzvYkGOGuGu/xv/OYIyb
+whEkaiPmVI8+7S/+8NJeOm3BiVaIH5XLcZvz7EW9bvc=
+</code></pre>
+<ul>
+<li>
+<p><strong>proxyname</strong>：决定代理运行时所需的环境变量名称</p>
+</li>
+<li>
+<p><strong>attributes</strong>：提供给代理的可选属性，代理可根据这些属性授予或拒绝许可</p>
+</li>
+<li>
+<p><strong>symmetric key method</strong>： 工具与代理间传递信息的对称加密算法</p>
+</li>
+<li>
+<p><strong>public key method</strong>：后文密钥加密算法</p>
+</li>
+<li>
+<p><strong>keyowner &amp; keyname</strong>：每个<code>license_keyowner/license_keyname</code>对都与一个<code>public key</code>和一个<code>symmetric method</code>对应，与之相反，每个<code>public key/symmetric method</code>对可以对应多个<code>license_keyowner</code>和<code>license_keyname</code>，加解密信封中的<code>license_keyowner/license_keyname</code>应该是唯一的</p>
+</li>
+<li>
+<p><strong>public key</strong>：用于加密symmetric key，base64编码DER格式，代理可以访问与之匹配的私钥</p>
+</li>
+</ul>
+<p>其中<code>license_proxyname</code>和<code>public key</code>是必要属性。</p>
+<h3 id="使用">使用</h3>
+<ul>
+<li>
+<p><strong>license()</strong></p>
+<p>位于common block，基本语法：</p>
+<p><code>protect control right = license(&quot;feature&quot;) ? &quot;true_value&quot;:&quot;false_value&quot;</code></p>
+<p>e.g. <code>protect control decrypt = license(&quot;IP123&quot;) ? &quot;true&quot; : &quot;false&quot;</code></p>
+<p>license()可以建立与代理间的通信并发出许可请求，如果代理授予许可则返回布尔值TRUE，如果拒绝则返回布尔值FALSE。</p>
+</li>
+<li>
+<p><strong>license_string()</strong></p>
+<p>基本语法：</p>
+<p><code>protect control right = license_string(&quot;feature&quot;)</code></p>
+<p>e.g. <code>protect control myrights = license_string(&quot;IP789&quot;)</code></p>
+<p>如果代理拒绝许可请求license_string()返回空字符串。</p>
+</li>
+</ul>
+<h3 id="多个信封">多个信封</h3>
+<ul>
+<li>
+<p>不同的<strong>license_proxyname</strong></p>
+<p>通常使用不同的代理，license_proxyname用于查找代理socket地址，如果多个license_proxyname指向同个代理则共享代理并建立自己的socket连接。</p>
+</li>
+<li>
+<p>相同的<strong>license_proxyname</strong>和不同的<strong>license_keyowner</strong>/<strong>license_keyname</strong></p>
+<p>使用同个代理，但使用不同的socket连接和symmetric key。</p>
+</li>
+<li>
+<p>相同的<strong>license_proxyname</strong>、<strong>license_keyowner</strong>、<strong>license_keyname</strong>和不同的属性</p>
+<p>使用同个socket连接，工具为每个唯一的属性组合发起许可请求。</p>
+</li>
+<li>
+<p>相同的<strong>license_proxyname</strong>、<strong>license_keyowner</strong>、<strong>license_keyname</strong>和属性</p>
+<p>复用与之相同许可请求的返回结果。</p>
+</li>
+</ul>
+<h2 id="通信步骤">通信步骤</h2>
+<h3 id="连接代理contact-the-proxy">连接代理（Contact the proxy）</h3>
+<p>工具从解密信封中提取proxy name、public key owner、public key name和public key，proxy name和public key（应和整个public key相比较而不仅仅是public key name）都应和现存socket对应proxy name/public key相同，否则新开一个socket。</p>
+<p>工具需要设置代理运行时所需的环境变量名称即<code>license_proxyname + _LICENSE_PROXY</code>，如<code>protect license_proxyname=&quot;acme_proxy&quot;</code>决定环境变量名称为<code>ACME_PROXY_LICENSE_PROXY</code>，其值格式为<code>port@host</code>，如<code>8888@127.0.0.1</code>。检查许可时如果未设环境变量或其值格式错误，那么工具可以发出警告，相关条件权限按照false处理。</p>
+<h3 id="验证初始握手verify-the-initial-handshake">验证初始握手（Verify the initial handshake）</h3>
+<ol>
+<li>IP指定代理的public key owner、key name、public key、代理公钥和对称加密算法，工具生成一个随机的临时对称加密密钥（temporary key ）并使用公钥加密得到加密信息。</li>
+</ol>
+<p>工具-&gt;代理传输信息格式如图所示，<code>2字节L的长度 + 'P'（类型信息） + 2字节tag长度 + tag（license_keyowner, license_keyname）＋ 公钥加密信息</code>。如果代理使用 4096 位密钥那么加密信息长度为 512 字节，keyowner为owner，keyname为key，那么socket传输信息共计 526 字节，<code>2字节长度（0x02和0x0C） + 'P' + 2字节tag长度（0x0和0x9）+ tag（owner,key）＋ 512字节加密信息</code>。</p>
+<figure data-type="image" tabindex="1"><img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/IEEE1735/1.jpg" alt="加密公钥信息" loading="lazy"></figure>
+<ol start="2">
+<li>代理接收信息、确定消息类型、提取key owner和key name并使用其对应的私钥解密，在验证解密信息大小与预期的对称密钥相同后，生成新的随机对称密钥（SessionKey）并与socket关联，而后创建伪随机IV，使用temporary key（代理接收并解密后得到）和新IV加密SessionKey，最后将信息通过对称密钥握手（symmetric key handshake）命令发送给工具。</li>
+</ol>
+<p>代理-&gt;工具传输信息格式如图所示，<code>2字节L的长度 + 'S'（类型信息） + 初始向量IV ＋加密信息ENC</code>（由<code>'K' + 会话密钥SessionKey</code>加密得到）。如果symmetric key method选择 AES256 ，那么socket传输信息共计 67 字节，<code>2字节L的长度 + 'S'（类型信息） + 16字节初始向量IV ＋ 48字节加密信息ENC（'K' ＋ 32字节会话密钥SessionKey，四舍五入到下一个block大小）</code>。</p>
+<figure data-type="image" tabindex="2"><img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/IEEE1735/2.jpg" alt="" loading="lazy"></figure>
+<p>如果代理无法识别tag、解密temporary key失败或temporary key与symmetric key method不符，代理关闭socket。工具检测到过早关闭的socket可将其视为拒绝请求（返回FALSE或空字符串），握手失败可能原因是代理环境变量设置错误、代理未在目标主机上运行或与主机不兼容等，工具可以选择向用户报告这些原因。</p>
+<ol start="3">
+<li>工具接收并使用temporary key解密信息，验证命令类型是否为对称密钥握手，信息是否解密成功，SessionKey是否符合symmetric key method指定算法，最后将其与socket关联。如果无法成功解密信息或SessionKey与symmetric key method不符，可将其视为代理拒绝请求（返回FALSE或空字符串）。</li>
+</ol>
+<h3 id="请求许可request-a-license">请求许可（Request a license）</h3>
+<p>对于每个唯一的代理和代理公钥对，上述连接代理和验证初始握手步骤仅需运行一次，一旦建立安全信道，许可相关请求处理可以开始进行。工具为每个许可请求生成唯一的长度和IV相同的id（即socket中的id都应是唯一的），工具和代理使用它来区分不同的许可。</p>
+<p>工具-&gt;代理传输信息格式如图所示，<code>2字节L的长度 + 'S'（类型信息） + Id ＋加密信息ENC</code>（由SessionKey和Id作为IV加密<code>'N' + request string</code>得到）。</p>
+<figure data-type="image" tabindex="3"><img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/IEEE1735/3.jpg" alt="" loading="lazy"></figure>
+<p>其中request string是一个以逗号分隔<code>name=value</code>的列表，包含许可特性或right block中列出的属性，例如<code>keyname=ACME2014,license=abc,MAC=123456789012</code>。其他可支持的属性有：</p>
+<ul>
+<li>
+<p>HOSTNAME： 符合IEEE Std 1003.1 (POSIX)标准，由工具通过<code>gethostname()</code> API获取</p>
+</li>
+<li>
+<p>MAC：IEEE Std 802指定的48位通用LAN MAC地址，格式为十六进制字符串。对于拥有多个MAC地址主机，可以对其接口排序再选择第一个接口返回的地址。POSIX系统中可以通过指令<code>ifconfig</code>获取</p>
+</li>
+<li>
+<p>USER：POSIX指定进程的实际用户ID用户名，由工具通过<code>getpwuid(getuid())</code>API获取</p>
+</li>
+<li>
+<p>PROXYINFO=value： value主要由数字组成，可以包括<code>_</code>/<code>-</code>/<code>.</code>，不可以包括逗号或双引号，整个字符串不应被工具验证或修改，而应被传输到代理由其解析，一个典型用法是指定代理允许的最低版本</p>
+</li>
+</ul>
+<h3 id="授予许可grant-a-license">授予许可（Grant a license）</h3>
+<p>代理接收信息并解密，验证命令类型为许可请求后解析信息并决定是否授予许可。代理-&gt;工具传输信息格式如图所示，<code>2字节L的长度 + 'S'（类型信息） + Id ＋加密信息ENC</code>。</p>
+<figure data-type="image" tabindex="4"><img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/IEEE1735/4.jpg" alt="" loading="lazy"></figure>
+<p>被加密的具体内容分为以下几种情况：</p>
+<ul>
+<li><strong>license()</strong> + 同意请求：<code>'G' + request string</code></li>
+<li><strong>license()</strong> + 拒绝请求：<code>'D' + request string + &quot;:All licenses are in use&quot;</code></li>
+<li><strong>license_string()</strong> + 同意请求：<code>'G' + request string + &quot;:&quot; + return string</code></li>
+<li><strong>license_string()</strong> + 拒绝请求：<code>'D' + request string + &quot;:All licenses are in use&quot;</code></li>
+</ul>
+<h3 id="检查心跳check-for-heartbeats">检查心跳（Check for heartbeats）</h3>
+<p>基础socket机制允许工具和代理检测socket是否断开连接，代理可以立即收回socket上的任一许可。当检测到socket已断开，工具可以立即停止对处理IP。工具可以尝试重新建立通信、获取许可并恢复处理IP。心跳参数是一个4位整数的时间戳（UNIX时间），工具和代理应保证时间戳的合理性，即当前时间的几百秒以内，每个许可的时间戳升序排列。工具和代理心跳包使用不同的标识符以防止代理发送内容被替换为从工具发送到代理的信息。</p>
+<h3 id="释放许可release-a-license">释放许可（Release a license）</h3>
+<p>工具处理完许可后向代理发送命令释放该许可，断开socket也可以释放许可，但代理可能会保留许可一段时间。工具也可以用socket处理其他许可请求或保持open状态一段时间以避免新请求建立新连接。</p>
+<p><em>代理命令（license proxy commands）</em></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">命令</th>
+<th style="text-align:center">标识符</th>
+<th style="text-align:center">方向</th>
+<th style="text-align:center">参数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">对称密钥握手（symmetric key handshake）</td>
+<td style="text-align:center">'K'</td>
+<td style="text-align:center">代理-&gt;工具</td>
+<td style="text-align:center">共享的对称密钥</td>
+</tr>
+<tr>
+<td style="text-align:center">新的许可请求（new license request）</td>
+<td style="text-align:center">'N'</td>
+<td style="text-align:center">工具-&gt;代理</td>
+<td style="text-align:center">许可参数</td>
+</tr>
+<tr>
+<td style="text-align:center">授予许可（grant license request）</td>
+<td style="text-align:center">'G'</td>
+<td style="text-align:center">代理-&gt;工具</td>
+<td style="text-align:center">许可参数+可选返回</td>
+</tr>
+<tr>
+<td style="text-align:center">拒绝许可请求（deny license request）</td>
+<td style="text-align:center">'D'</td>
+<td style="text-align:center">代理-&gt;工具</td>
+<td style="text-align:center">许可参数+拒绝原因</td>
+</tr>
+<tr>
+<td style="text-align:center">工具心跳包（tool heartbeat）</td>
+<td style="text-align:center">'H'</td>
+<td style="text-align:center">工具-&gt;代理</td>
+<td style="text-align:center">时间戳</td>
+</tr>
+<tr>
+<td style="text-align:center">代理心跳包（proxy heartbeat）</td>
+<td style="text-align:center">'P'</td>
+<td style="text-align:center">代理-&gt;工具</td>
+<td style="text-align:center">时间戳</td>
+</tr>
+<tr>
+<td style="text-align:center">释放许可（license release）</td>
+<td style="text-align:center">'R'</td>
+<td style="text-align:center">工具-&gt;代理</td>
+<td style="text-align:center">N/A</td>
+</tr>
+</tbody>
+</table>
+<p><em>整个传输信息过程如图所示</em></p>
+<figure data-type="image" tabindex="5"><img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/IEEE1735/5.jpg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[星球大战万代模型]]></title>
+        <id>https://lxulxu.github.io/post/bandai-models/</id>
+        <link href="https://lxulxu.github.io/post/bandai-models/">
+        </link>
+        <updated>2022-05-03T12:20:35.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220412_172112817.jpg?raw=true" alt="Yoda" loading="lazy"></figure>
+<center>Yoda</center>
+<figure data-type="image" tabindex="2"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220412_172235454.jpg?raw=true" alt="General Grievous" loading="lazy"></figure>
+<center>General Grievous</center>
+<figure data-type="image" tabindex="3"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220412_172314501.jpg?raw=true" alt="C-3PO" loading="lazy"></figure>
+<center>C-3PO</center>
+<figure data-type="image" tabindex="4"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220412_172403614.jpg?raw=true" alt="BB-8 &amp; D-O DIORAMA SET" loading="lazy"></figure>
+<center>BB-8 & D-O DIORAMA SET</center>
+<figure data-type="image" tabindex="5"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220412_172456158.png?raw=true" alt="K-2SO" loading="lazy"></figure>
+<center>K-2SO</center>
+<figure data-type="image" tabindex="6"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220412_172524149.jpg?raw=true" alt="Boba Fett" loading="lazy"></figure>
+<center>Boba Fett</center>
+<figure data-type="image" tabindex="7"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220412_172555163.jpg?raw=true" alt="Darth Vader" loading="lazy"></figure>
+<center>Darth Vader</center>
+<figure data-type="image" tabindex="8"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220412_172700134.png?raw=true" alt="Captain Phasma" loading="lazy"></figure>
+<center>Captain Phasma</center>
+<figure data-type="image" tabindex="9"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220412_172732118.jpg?raw=true" alt="Stormtrooper" loading="lazy"></figure>
+<center>Stormtrooper</center>
+<figure data-type="image" tabindex="10"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220412_172755106.jpg?raw=true" alt="Shoretrooper" loading="lazy"></figure>
+<center>Shoretrooper</center>
+<figure data-type="image" tabindex="11"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220412_172833897.png?raw=true" alt="Shadow Stormtrooper" loading="lazy"></figure>
+<center>Shadow Stormtrooper</center>
+<figure data-type="image" tabindex="12"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220412_172906834.jpg?raw=true" alt="First Order Stormtrooper" loading="lazy"></figure>
+<center>First Order Stormtrooper</center>
+<figure data-type="image" tabindex="13"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220412_173032440.jpg?raw=true" alt="Kylo Ren" loading="lazy"></figure>
+<center>Kylo Ren</center>
+<figure data-type="image" tabindex="14"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220412_173125002.jpg?raw=true" alt="Mandalorian" loading="lazy"></figure>
+<center>Mandalorian</center>
+<figure data-type="image" tabindex="15"><img src="https://github.com/lxulxu/MarkdownPic/blob/main/Model/Polish_20220503_195302785.jpg?raw=true" alt="Razor Crest" loading="lazy"></figure>
+<center>Razor Crest</center>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Vivado加密IP]]></title>
+        <id>https://lxulxu.github.io/post/vivado-jia-mi-ip/</id>
+        <link href="https://lxulxu.github.io/post/vivado-jia-mi-ip/">
+        </link>
+        <updated>2022-03-26T10:00:52.000Z</updated>
+        <content type="html"><![CDATA[<p>整理 UG1118 Ch6</p>
+<h2 id="权限管理">权限管理</h2>
+<ul>
+<li>
+<p><strong>公共权限(Common Rights)</strong>：适用于所有EDA工具</p>
+</li>
+<li>
+<p><strong>特定权限(Vendor-Specific Rights)</strong>：授予开发者的特定权限（如控制Vivado Logic Analyzer探测器行为），此部分访问权限值覆盖普通权限同名值</p>
+</li>
+<li>
+<p><strong>条件权限(Conditional Rights)</strong>：IEEE-1735-2014 V2 引入，允许不同条件下指定不同访问权限</p>
+</li>
+</ul>
+<hr>
+<h2 id="ieee-1735-结构">IEEE 1735 结构</h2>
+<ul>
+<li>
+<p><strong>定义域(Definition area)</strong>：定义支持的供应商及其访问权限</p>
+</li>
+<li>
+<p><strong>密钥定义(Encrypted Key Definition)</strong></p>
+</li>
+<li>
+<p><strong>加密负载(Encrypted payload)</strong>：加密IP的Verilog、System Verilog、 VHDL源码</p>
+</li>
+<li>
+<p><strong>纯文本负载(Plain-text payload)</strong>：IP源码未加密部分</p>
+</li>
+</ul>
+<p>以一个完整密钥文件内容为例</p>
+<pre><code class="language-python">`pragma protect version = 2
+`pragma protect encrypt_agent = &quot;XILINX&quot;
+`pragma protect encrypt_agent_info = &quot;Xilinx Encryption Tool 2021&quot;
+`pragma protect begin_commonblock
+`pragma protect control error_handling = &quot;delegated&quot;
+`pragma protect control child_visibility = &quot;delegated&quot;
+`pragma protect control decryption = (activity==simulation)? &quot;false&quot; :&quot;true&quot;
+`pragma protect end_commonblock
+`pragma protect begin_toolblock
+`pragma protect rights_digest_method=&quot;sha256&quot;
+`pragma protect key_keyowner = &quot;Xilinx&quot;, key_keyname= &quot;xilinxt_2021_01&quot;, key_method = &quot;rsa&quot;, key_public_key
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApgf7F4kYh0oSFzJBRoRb
+nsrAqn24fVbI7xdNG2t9G8pouFfwIXGGmQgYqYZDSmUu0wrrj3ulLvUnjRtmtziJ
+1RDOYdyko1SuBEyGT1frzUu9xNitAXxp29hOrVPeKO6kGU81XHJCRJ7uWh7rwoyf
+HSUpreifLybt+UT5fyvHu21IxvOR6GHKWaQ4wdL7Txguuyf92XLJIZABEgmuVlPK
+/NjJjVRK3c/vMuQLvbihNapkyCiLIWNwDbo9oWXr7NSo3we8u6IlFmP5V8WcOmXZ
+/PZqp3QOkY2Jlm1yQt3O8PpU/8qzB7zcHjm3+Q+wB8yUYn/IMwN0t09l2AdBR37G
+EwIDAQAB
+`pragma protect control xilinx_configuration_visible = &quot;false&quot;
+`pragma protect control xilinx_enable_modification = &quot;false&quot;
+`pragma protect control xilinx_enable_probing = &quot;false&quot;
+`pragma protect control xilinx_enable_netlist_export = &quot;false&quot;
+`pragma protect control xilinx_enable_bitstream = &quot;true&quot;
+`pragma protect control decryption = (xilinx_activity==simulation)?&quot;false&quot; : &quot;true&quot;
+`pragma protect end_toolblock = &quot;&quot;
+</code></pre>
+<h3 id="版本或其他杂注">版本或其他杂注</h3>
+<pre><code class="language-python">`pragma protect version = 2` #遵从IEEE-1735-2014 V2标准
+
+ #标识加密工具
+`pragma protect encrypt_agent = &quot;XILINX&quot;
+`pragma protect encrypt_agent_info = &quot;Xilinx Encryption Tool 2021&quot;
+</code></pre>
+<h3 id="公共权限common-block-definition">公共权限(Common Block Definition)</h3>
+<pre><code class="language-python">`pragma protect begin_commonblock
+...
+`pragma protect end_commonblock
+</code></pre>
+<p>公共权限列表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">含义</th>
+<th style="text-align:center">默认值</th>
+<th style="text-align:center">有效值</th>
+<th style="text-align:center">Xlinx有效值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">error_handling</td>
+<td style="text-align:center">允许展示的错误信息</td>
+<td style="text-align:center">&quot;delegated&quot;</td>
+<td style="text-align:center">&quot;delegated&quot;<br>&quot;srcrefs&quot;<br>&quot;plaintext&quot;</td>
+<td style="text-align:center">&quot;delegated&quot;</td>
+</tr>
+<tr>
+<td style="text-align:center">runtime_visibility</td>
+<td style="text-align:center">运行、tcl或输出报告允许展示的内容</td>
+<td style="text-align:center">&quot;delegated&quot;</td>
+<td style="text-align:center">&quot;delegated&quot;<br>&quot;interface_names&quot;<br>&quot;all_names&quot;</td>
+<td style="text-align:center">&quot;delegated&quot;</td>
+</tr>
+<tr>
+<td style="text-align:center">child_visibility</td>
+<td style="text-align:center">受保护模块实例化未受保护子模块，子模块如何处理error_handling和runtime_visibility<br>显示消息可能会通过受保护区域公开路径名</td>
+<td style="text-align:center">&quot;delegated&quot;</td>
+<td style="text-align:center">&quot;delegated&quot;<br>&quot;allowed&quot;<br>&quot;denied&quot;</td>
+<td style="text-align:center">&quot;delegated&quot;<br>&quot;allowed&quot;</td>
+</tr>
+<tr>
+<td style="text-align:center">decryption</td>
+<td style="text-align:center">是否允许解密模块，一般用于条件权限</td>
+<td style="text-align:center">&quot;delegated&quot;</td>
+<td style="text-align:center">&quot;delegated&quot;<br>&quot;true&quot;<br>&quot;false&quot;</td>
+<td style="text-align:center">&quot;delegated&quot;<br>&quot;true&quot;<br>&quot;false&quot;<br><strong>Note:</strong>&quot;delegated&quot;=&quot;true&quot;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="特定权限vendor-specific-tool-block-definition">特定权限(Vendor-Specific Tool Block Definition)</h3>
+<pre><code class="language-python">`pragma protect begin_toolblock
+...
+`pragma protect end_toolblock = &quot;&quot;
+</code></pre>
+<p>特定权限列表</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">含义</th>
+<th style="text-align:center">Xlinx有效值</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">xilinx_configuration_visible</td>
+<td style="text-align:center">LUT值在Vivado viewers/editors中是否可见</td>
+<td style="text-align:center">&quot;true&quot;, &quot;false&quot;</td>
+<td style="text-align:center">&quot;false&quot;</td>
+</tr>
+<tr>
+<td style="text-align:center">xilinx_enable_modification</td>
+<td style="text-align:center">受保护区域网表信息是否可修改</td>
+<td style="text-align:center">&quot;true&quot;, &quot;false&quot;</td>
+<td style="text-align:center">&quot;false&quot;</td>
+</tr>
+<tr>
+<td style="text-align:center">xilinx_enable_probing</td>
+<td style="text-align:center">用户可否在受保护区域插入或实例化调试探针</td>
+<td style="text-align:center">&quot;true&quot;, &quot;false&quot;</td>
+<td style="text-align:center">&quot;false&quot;</td>
+</tr>
+<tr>
+<td style="text-align:center">xilinx_enable_netlist_export</td>
+<td style="text-align:center">是否允许导出网表信息</td>
+<td style="text-align:center">&quot;true&quot;, &quot;false&quot;</td>
+<td style="text-align:center">&quot;true&quot;</td>
+</tr>
+<tr>
+<td style="text-align:center">xilinx_enable_bitstream</td>
+<td style="text-align:center">是否允许生成比特流</td>
+<td style="text-align:center">&quot;true&quot;, &quot;false&quot;</td>
+<td style="text-align:center">&quot;true&quot;</td>
+</tr>
+<tr>
+<td style="text-align:center">xilinx_schematic_visibility</td>
+<td style="text-align:center">是否允许展示受保护区域模块名称</td>
+<td style="text-align:center">&quot;true&quot;, &quot;false&quot;</td>
+<td style="text-align:center">&quot;false&quot;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="密钥定义和权限摘要key-definition-and-rights-digest-method">密钥定义和权限摘要(Key Definition and Rights Digest Method)</h3>
+<p>强制性定义，包括公钥、密钥相关属性和权限计算方法</p>
+<pre><code class="language-python">`protect key_keyowner = &quot;Xilinx&quot;
+`protect key_method = &quot;rsa&quot;
+`protect key_keyname = &quot;xilinxt_2019_11&quot;
+`protect rights_digest_method = &quot;sha256&quot;
+`protect key_public_key
+...
+</code></pre>
+<ul>
+<li>权限定义：`protect control <right> = &lt;rights_expression&gt;<br>
+e.g. `protect control xilinx_configuration_visible = &quot;false&quot;</li>
+<li>条件权限定义：`protect control <right> = <condition> ? &lt;true_expression&gt; : &lt;false_expression&gt;<br>
+e.g. `protect control decryption = (xilinx_activity==simulation) ? &quot;false&quot; : &quot;true&quot;</li>
+</ul>
+<h2 id="rtl加密示例">RTL加密示例</h2>
+<ul>
+<li><strong>VHDL</strong></li>
+</ul>
+<pre><code class="language-python">`protect version = 2
+`protect begin_commonblock
+`protect control error_handling = &quot;delegated&quot;
+`protect control decryption = (activity==simulation)? &quot;false&quot; : &quot;true&quot;
+`protect end_commonblock
+`protect begin_toolblock
+`protect rights_digest_method=”sha256”
+`protect key_keyowner = “Xilinx”, key_method = &quot;rsa&quot;, key_keyname =
+&quot;xilinxt_2019_11&quot;, key_keyowner
+...
+`protect control xilinx_configuration_visible = &quot;false&quot;
+`protect control xilinx_enable_modification = &quot;false&quot;
+`protect control xilinx_enable_probing = &quot;false&quot;
+`protect control decryption = (xilinx_activity==simulation)? &quot;false&quot; : &quot;true&quot;
+`protect end_toolblock = &quot;&quot;
+`protect begin
+-- Secure Data Block
+-- Protected IP source code is inserted here.
+...
+...
+...
+`protect end
+</code></pre>
+<ul>
+<li><strong>Verilog/SystemVerilog</strong><br>
+`pragma protect代替`protect</li>
+</ul>
+<pre><code class="language-python">`pragma protect version = 2
+`pragma protect begin_commonblock
+`pragma protect control error_handling = &quot;delegated&quot;
+`pragma protect control decryption = (activity==simulation)? &quot;false&quot; : &quot;true&quot;
+`pragma protect end_commonblock
+`pragma protect begin_toolblock
+`pragma protect rights_digest_method=&quot;sha256&quot;
+`pragma protect key_keyowner = &quot;Xilinx&quot;, key_method = &quot;rsa&quot;, key_keyname =
+&quot;xilinxt_2019_11&quot;, key_public_key
+...
+`pragma protect control xilinx_configuration_visible = &quot;false&quot;
+`pragma protect control xilinx_enable_modification = &quot;false&quot;
+`pragma protect control xilinx_enable_probing = &quot;false&quot;
+`pragma protect control decryption = (xilinx_activity==simulation)? &quot;false&quot; : &quot;true&quot;
+`pragma protect end_toolblock = &quot;&quot;
+`pragma protect begin
+// Secure Data Block
+// Protected IP source code is inserted here.
+...
+...
+...
+`pragma protect end
+</code></pre>
+<h2 id="权限对vivado工具影响">权限对vivado工具影响</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">权限/<br>类型</th>
+<th>Simulation</th>
+<th>Synthesis</th>
+<th>Implementation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">error_handling/<br>common</td>
+<td><li>delegated = 加密区域内隐藏错误信息引用</li></td>
+<td><li>delegated = 加密区域内隐藏错误信息引用</li></td>
+<td><li>NA</li></td>
+</tr>
+<tr>
+<td style="text-align:center">runtime_visibility/<br>common</td>
+<td><li>delegated = 遵循当前vivado simulator行为-hierarchy viewer隐藏可见性</li></td>
+<td><li>delegated = 遵循当前vivado默认行为-隐藏可见性</li></td>
+<td><li>delegated = 所有名字/层级可见</li></td>
+</tr>
+<tr>
+<td style="text-align:center">child_visibility/<br>common</td>
+<td><li>delegated = 不改变当前simulator行为</li><li>allowed = 展示子模块层级和错误信息</li></td>
+<td><li>delegated = 不改变当前行为</li><li>allowed = 展示子模块层级和错误信息</li></td>
+<td><li>delegated = allowed = 不改变当前implementation行为</li></td>
+</tr>
+<tr>
+<td style="text-align:center">decryption/<br>common</td>
+<td><li>delegated/true = 读入解密文件</li><li>false = 不读入解密文件、报告并停止处理</li></td>
+<td><li>delegated/true = 读入解密文件</li><li>false = 不读入解密文件、报告并停止处理</li></td>
+<td><li>delegated/true = 读入解密文件</li><li>false = 不读入解密文件、报告并停止处理</li></td>
+</tr>
+<tr>
+<td style="text-align:center">xilinx_enable_netlist_export/<br>xilinx-specific</td>
+<td>NA</td>
+<td><li>true = write_vhdl/write_verilog输出网表</li><li>false = write_vhdl/write_verilog不运行</li></td>
+<td><li>true = write_vhdl/write_verilog输出网表</li><li>false = write_vhdl/write_verilog不运行</li></td>
+</tr>
+<tr>
+<td style="text-align:center">xilinx_configuration_visible/<br>xilinx-specific</td>
+<td>NA</td>
+<td><li>true = LUT内容可见</li><li>false = LUT内容不可见</li></td>
+<td><li>true = LUT内容可见</li><li>false = LUT内容不可见</li></td>
+</tr>
+<tr>
+<td style="text-align:center">xilinx_enable_modification/<br>xilinx-specific</td>
+<td>NA</td>
+<td><li>true = 允许修改网表</li><li>false = 不允许修改网表</li></td>
+<td><li>true = 允许修改网表</li><li>false = 不允许修改网表</li></td>
+</tr>
+<tr>
+<td style="text-align:center">xilinx_enable_probing/<br>xilinx-specific</td>
+<td>NA</td>
+<td><li>true = 允许用户在受保护区域插入调试探针</li><li>false = 无法插入调试探针</li></td>
+<td><li>true = 允许用户在受保护区域插入调试探针</li><li>false = 无法插入调试探针</li></td>
+</tr>
+<tr>
+<td style="text-align:center">xilinx_enable_bitstream/<br>xilinx-specific</td>
+<td>NA</td>
+<td>NA</td>
+<td><li>true = 可生成位流</li><li>false = 无法生成位流</li></td>
+</tr>
+<tr>
+<td style="text-align:center">注：NA = 对vivado工具无影响</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="vivado加密ip">Vivado加密IP</h2>
+<ul>
+<li>
+<p>tcl命令：<code>encrypt [-key &lt;arg&gt;] -lang &lt;arg&gt; [-quiet] [-verbose] [-ext &lt;arg&gt;] &lt;files&gt;...</code><br>
+e.g. <code>encrypt -lang verilog -ext .vp -key keyfile.txt myip.v</code></p>
+<ul>
+<li><strong>key</strong> - 指定包含Xilinx公钥的RSA密钥文件，如果未指定-key Vivado自动查找密钥。</li>
+<li><strong>lang</strong> - 需加密源文件的HDL语言，支持VHDL或verilog。</li>
+<li><strong>ext</strong> - 输出加密文件的扩展名，如果未指定源文件会被输出文件覆盖。</li>
+<li><strong>&lt;files&gt;</strong> - 加密源文件名称</li>
+</ul>
+</li>
+<li>
+<p>Xilinx公钥位置：<code>&lt;Install_Dir&gt;/Vivado/&lt;version&gt;/data/pubkey/</code></p>
+</li>
+<li>
+<p>三方公钥需分别放置在<code>begin_toolblock/end_toolblock</code></p>
+</li>
+</ul>
+<h2 id="vivado加密checkpoint">Vivado加密Checkpoint</h2>
+<ul>
+<li>tcl命令：<code>write_checkpoint [-key &lt;arg&gt;] -encrypt &lt;file&gt;</code><br>
+e.g. <code>write_checkpoint -key keyfile.txt -encrypt my_ip.dcp</code>
+<ul>
+<li><strong>key</strong> - 指定秘钥文件</li>
+<li><strong>&lt;files&gt;</strong> - 输出dcp文件名称<br>
+<em>-encrypt选项只有在写出完整的设计检查点时才有用，-cell结合-encrypt没有作用</em></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="一些技巧">一些技巧</h2>
+<ul>
+<li>多个IP尽量使用相同的密钥文件来优化结果网表</li>
+<li>使用-ext选项避免无意中覆盖输入文件</li>
+<li>从工具供应商处获取公钥</li>
+<li>在一次调用中加密IP的所有文件</li>
+<li>不要拆分多个加密块/纯文本间的Verilog模块</li>
+<li>在VHDL语言中，将整个实体和体系结构对放入一个加密块</li>
+<li>验证加密代码是否正确加载到Vivado和后续的write_verilog重新加密所有安全设计元素</li>
+<li>验证与三方工具的互操作性</li>
+</ul>
+]]></content>
+    </entry>
+</feed>
