@@ -1,39 +1,40 @@
-name: Jekyll site CI
+name: Jekyll Build and Deploy
 
 on:
   workflow_dispatch:
   push:
     branches:
-      - master
+      - private # 监听 private 分支的 push 事件
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout source
-        uses: actions/checkout@v2
-        with:
-          ref: 'master'
+    - name: Checkout Code
+      uses: actions/checkout@v2
+      with:
+        ref: 'private' # 检出 private 分支
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 2.7
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: head # 使用最新稳定版本的Ruby
 
-      - name: Install dependencies
-        run: |
-          gem install bundler
-          bundle install
+    - name: Install Bundler
+      run: gem install bundler
 
-      - name: Build with Jekyll and Theme
-        run: |
-          bundle exec jekyll build --baseurl ""
+    - name: Install Dependencies
+      run: |
+        bundle config set --local path 'vendor/bundle'
+        bundle install --jobs 4 --retry 3
 
-      - name: Deploy to master branch
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: master
-          publish_dir: ./_site
-          commit_message: 'Deploy updates'
+    - name: Build Site with Jekyll
+      run: bundle exec jekyll build
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: master # 将构建产物推送到 master 分支
+        publish_dir: ./_site # Jekyll构建的输出目录
