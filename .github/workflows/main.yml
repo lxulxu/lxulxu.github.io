@@ -1,31 +1,39 @@
-name: Deploy Hugo Site
+name: Jekyll site CI
 
 on:
+  workflow_dispatch:
   push:
     branches:
-      - private # 当推送到 private 分支时触发
+      - master
 
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-      with:
-        submodules: true # 重要：确保 Hugo 主题的 Git 子模块也被检出
+      - name: Checkout source
+        uses: actions/checkout@v2
+        with:
+          ref: 'master'
 
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2
-      with:
-        hugo-version: 'latest'
-        extended: true
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
 
-    - name: Build
-      run: hugo --minify
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public # Hugo 的默认构建输出目录
-        publish_branch: master # 部署到 master 分支
+      - name: Build with Jekyll and Theme
+        run: |
+          bundle exec jekyll build --baseurl ""
+
+      - name: Deploy to master branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: master
+          publish_dir: ./_site
+          commit_message: 'Deploy updates'
