@@ -122,9 +122,9 @@ set file_data [read $fp]
 close $fp
 
 set fp [open "input.txt" r]
-while { [gets $fp data] >= 0 } {
+while {% [gets $fp data] >= 0 %} {%
   puts $data
-}
+%}
 close $fp
 #文件名相关操作
 [file join C:/ {Program Files} Tcl tclsh.exe]#->C:/Program Files/Tcl/tclsh.exe
