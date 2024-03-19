@@ -1,0 +1,20 @@
+name: GitHub Pages Deploy
+
+on:
+  push:
+    branches:
+      - master # 触发构建的分支
+  workflow_dispatch: # 允许手动触发
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_posts # Jekyll源文件的位置
+        enable_jekyll: true # 告诉GitHub Pages使用其内置的Jekyll处
