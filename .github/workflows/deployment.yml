@@ -16,5 +16,5 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_posts # Jekyll源文件的位置
+        publish_dir: ./_site # Jekyll源文件的位置
         enable_jekyll: true # 告诉GitHub Pages使用其内置的Jekyll处
