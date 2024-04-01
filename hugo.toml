@@ -1,3 +1,40 @@
 baseURL = 'https://lxulxu.github.io/'
 languageCode = 'en-us'
 title = "lxulxu's blog"
+theme = "smol"
+
+# Parameters
+[params]
+    subtitle = "Hello there"
+    dateFmt = "01.04.2024 05:04"
+
+# Header
+[menu]
+  [[menu.main]]
+        identifier = "posts"
+        name = "Posts"
+        url = "/posts/"
+        weight = 1 
+
+  [[menu.main]]
+        identifier = "categories"
+        name = "Categories"
+        url = "/categories/"
+        weight = 2 
+
+  [[menu.main]]
+        identifier = "tags"
+        name = "Tags"
+        url = "/tags/"
+        weight = 3
+
+# Footer
+  [[menu.footer]]
+        name = "Github"
+        url = "https://github.com/lxulxu"
+        weight = 1 
+
+    [[menu.footer]]
+        name = "Bilibili"
+        url = "https://space.bilibili.com/7739434"
+        weight = 2 
