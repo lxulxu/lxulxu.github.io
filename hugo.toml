@@ -1,6 +1,11 @@
 baseURL = 'https://lxulxu.github.io/'
 languageCode = 'en-us'
 title = "lxulxu's blog"
+
+[module]
+  [[module.imports]]
+    path = "github.com/gohugoio/hugoAssets"
+
 theme = "smol"
 
 # Parameters

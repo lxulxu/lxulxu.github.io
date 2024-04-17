@@ -1,0 +1,51 @@
+<!--
+ * @Author: lxulxu
+ * @Date: 2024-04-12 19:04:01
+ * @LastEditors: lxulxu
+ * @LastEditTime: 2024-04-16 19:23:10
+ * @Description: 
+ * 
+ * Copyright (c) 2024 by lxulxu, All Rights Reserved. 
+-->
+{{ $images := resources.Match "images/*.jpg" }}
+{{ $imageMap := dict }}
+
+{{ $counter := 1 }}
+{{ range $images }}
+  {{ $oldPath := .RelPermalink }}
+  {{ $imageYear := now.Format "2006" }}
+  {{ $imageQuarter := div (add (now.Month) 2) 3 }}
+  {{ $newPath := printf "images/%s_Q%d/image_%d.jpg" $imageYear $imageQuarter $counter }}
+
+  {{ $targetDir := printf "images/%s_Q%d" $imageYear $imageQuarter }}
+  {{ with resources.GetMatch $targetDir }}
+    {{ if not . }}
+      {{ $targetDirResource := (printf "%s/index.md" $targetDir) | resources.FromString "" }}
+      {{ $targetDirResource | resources.Write $targetDir }}
+    {{ end }}
+  {{ end }}
+
+  {{ $newPath = resources.GetMatch $newPath }}
+  {{ $existingImage := resources.GetMatch $newPath }}
+  {{ if $existingImage }}
+    {{/* Increment counter until a unique name is found */}}
+    {{ $counter = add $counter 1 }}
+    {{ $newPath = printf "%s/image_%d.jpg" $newDir $counter }}
+    {{ $newPath = resources.GetMatch $newPath }}
+  {{ end }}
+
+  {{ $compressed := . | image.Resize "400x" | resources.Fingerprint "md5" }}
+
+  {{ . | resources.Move $newPath }}
+  {{ $imageMap.Set $oldPath $newPath }}
+{{ end }}
+
+{{ $mdFiles := findRE "content/" "\\.md$" }}
+{{ range $mdFiles }}
+  {{ $mdContent := .Content }}
+  {{ range $oldPath, $newPath := $imageMap }}
+    {{ $absImagePath := printf "https://github.com/lxulxu/lxulxu.github.io/master/%s?raw=true" $newPath }}
+    {{ $mdContent = replaceRE $mdContent (printf "\\!\\[.*\\]\\(../assets/images/%s\\)" $oldPath) (printf "![Image](%s)" $absImagePath) }}
+  {{ end }}
+  {{ $mdContent | writeFile .Path }}
+{{ end }}
