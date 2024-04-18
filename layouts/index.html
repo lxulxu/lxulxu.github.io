@@ -2,7 +2,7 @@
  * @Author: lxulxu
  * @Date: 2024-04-12 19:04:01
  * @LastEditors: lxulxu
- * @LastEditTime: 2024-04-18 18:58:07
+ * @LastEditTime: 2024-04-18 19:00:28
  * @Description: 
  * 
  * Copyright (c) 2024 by lxulxu, All Rights Reserved. 
@@ -35,7 +35,7 @@
   {{ end }}
 
   {{ $image := resources.Get $newPath }}
-  {{ $compressed := . | image.Resize "400x" | resources.Fingerprint "md5" }}
+  {{ $compressed := . | $image.Resize "400x" | resources.Fingerprint "md5" }}
 
   {{ . | resources.Move $newPath }}
   {{ $imageMap.Set $oldPath $newPath }}
