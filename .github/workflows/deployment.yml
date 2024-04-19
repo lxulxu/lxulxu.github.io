@@ -24,17 +24,22 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
-      
-      - name: Cache Hugo modules
-        uses: actions/cache@v2
+
+      - name: Compress Images
+        uses: calibreapp/image-actions@v2.0.8
         with:
-          path: ${{ runner.workspace }}/.cache/go-build
-          key: ${{ runner.os }}-go-modules-${{ hashFiles('go.sum') }}
-          restore-keys: |
-            ${{ runner.os }}-go-modules-
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build
         run: hugo --minify
+
+      - name: Replace Image Paths in Markdown
+        run: |
+          find content -type f -name "*.md" | xargs sed -i 's#(\.\./assets/images/Y2022Q2/\(Y[0-9]*Q[0-9]*\)/\([^)]*\.\(jpg\|jpeg\|png\|gif\)\))#(https://raw.githubusercontent.com/lxulxu/lxulxu/lxulxu.github.io/master/assets/images/Y2022Q2/\1/\2?raw=true)#g'
+          git add content/**/*.md
+          git commit -m "Update image paths in Markdown" || echo "No changes to commit"
+          git push origin master
+
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
