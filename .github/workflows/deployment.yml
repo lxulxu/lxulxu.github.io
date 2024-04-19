@@ -26,7 +26,7 @@ jobs:
           hugo-version: 'latest'
 
       - name: Compress Images
-        uses: calibreapp/image-actions@v2.0.8
+        uses: calibreapp/image-actions@main
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
 
