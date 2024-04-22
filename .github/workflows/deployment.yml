@@ -24,8 +24,12 @@ jobs:
         uses: calibreapp/image-actions@main
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
+          compressOnly: ${{ github.event_name != 'pull_request' }}
   
       - name: Create New Pull Request If Needed
+        if: |
+          github.event_name != 'pull_request' &&
+          steps.calibre.outputs.markdown != ''
         uses: peter-evans/create-pull-request@v4
         with:
           title: Compressed Images Nightly
