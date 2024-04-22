@@ -26,9 +26,11 @@ jobs:
           hugo-version: 'latest'
 
       - name: Compress Images
+        if: github.event.pull_request.head.repo.full_name == github.repository
         uses: calibreapp/image-actions@main
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
+          compressOnly: true
 
       - name: Build
         run: hugo --minify
