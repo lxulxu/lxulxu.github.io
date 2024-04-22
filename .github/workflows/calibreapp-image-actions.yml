@@ -23,11 +23,13 @@ jobs:
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           compressOnly: true
-      - name: Create New Pull Request If Needed
-        if: steps.calibre.outputs.markdown != ''
-        uses: peter-evans/create-pull-request@v4
-        with:
-          title: Compressed Images
-          branch-suffix: timestamp
-          commit-message: Compressed Images
-          body: ${{ steps.calibre.outputs.markdown }}
+      - name: Commit changes direct to master
+        run: |
+          echo "Adding images"
+          git config --global user.email github-actions@github.com
+          git config --global user.name github-actions
+          #change below to whatever path you want to add, or alternatively change further down to "git commit -am"
+          git add .
+          echo "Committing changes"
+          git diff-index --quiet HEAD || git commit -m "Optimised images"
+          git push
