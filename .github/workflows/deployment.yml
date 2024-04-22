@@ -28,8 +28,7 @@ jobs:
   
       - name: Create New Pull Request If Needed
         if: |
-          github.event_name != 'pull_request' &&
-          steps.calibre.outputs.markdown != ''
+          github.event_name != 'pull_request'
         uses: peter-evans/create-pull-request@v4
         with:
           title: Compressed Images Nightly
