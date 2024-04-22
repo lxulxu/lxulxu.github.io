@@ -26,18 +26,27 @@ jobs:
           hugo-version: 'latest'
 
       - name: Compress Images
-        if: github.event.pull_request.head.repo.full_name == github.repository
+        id: calibre
         uses: calibreapp/image-actions@main
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           compressOnly: true
+  
+      - name: Create New Pull Request If Needed
+        if: steps.calibre.outputs.markdown != ''
+        uses: peter-evans/create-pull-request@v4
+        with:
+          title: Compressed Images Nightly
+          branch-suffix: timestamp
+          commit-message: Compressed Images
+          body: ${{ steps.calibre.outputs.markdown }}
 
       - name: Build
         run: hugo --minify
 
       - name: Replace Image Paths in Markdown
         run: |
-          find content -type f -name "*.md" | xargs sed -i 's#(\.\./assets/images/Y2022Q2/\(Y[0-9]*Q[0-9]*\)/\([^)]*\.\(jpg\|jpeg\|png\|gif\)\))#(https://raw.githubusercontent.com/lxulxu/lxulxu/lxulxu.github.io/master/assets/images/Y2022Q2/\1/\2?raw=true)#g'
+          find content -type f -name "*.md" | xargs sed -i 's#(\.\./assets/images/\(Y[0-9]*Q[0-9]*\)/\([^)]*\.\(jpg\|jpeg\|png\|gif\)\))#(https://raw.githubusercontent.com/lxulxu/lxulxu/lxulxu.github.io/master/assets/images/Y2022Q2/\1/\2?raw=true)#g'
           git add content/**/*.md
           git commit -m "Update image paths in Markdown" || echo "No changes to commit"
           git push origin master
