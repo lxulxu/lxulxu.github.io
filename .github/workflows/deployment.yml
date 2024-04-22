@@ -17,7 +17,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Compress Images
@@ -35,6 +34,11 @@ jobs:
           branch-suffix: timestamp
           commit-message: Compressed Images
           body: ${{ steps.calibre.outputs.markdown }}
+
+      - name: Checkout Theme Submodules
+        if: github.ref == 'refs/heads/master'  # Only checkout submodules when pushing to master
+        run: |
+          git submodule update --init --recursive
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
