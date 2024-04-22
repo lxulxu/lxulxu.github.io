@@ -17,29 +17,15 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Compress Images
-        id: calibre
-        uses: calibreapp/image-actions@main
-        with:
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
-          compressOnly: ${{ github.event_name != 'pull_request' }}
-  
-      - name: Create New Pull Request If Needed
-        if: |
-          github.event_name != 'pull_request'
-        uses: peter-evans/create-pull-request@v4
-        with:
-          title: Compressed Images Nightly
-          branch-suffix: timestamp
-          commit-message: Compressed Images
-          body: ${{ steps.calibre.outputs.markdown }}
-
-      - name: Checkout Theme Submodules
-        if: github.ref == 'refs/heads/master'  # Only checkout submodules when pushing to master
+      - name: Replace Image Paths in Markdown
         run: |
-          git submodule update --init --recursive
+          find content -type f -name "*.md" | xargs sed -i 's#(\.\./assets/images/\(Y[0-9]*Q[0-9]*\)/\([^)]*\.\(jpg\|jpeg\|png\|gif\)\))#(https://raw.githubusercontent.com/lxulxu/lxulxu/lxulxu.github.io/master/assets/images/\1/\2?raw=true)#g'
+          git add .
+          git commit -m "Update image paths in Markdown" || echo "No changes to commit"
+          git push origin master
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -48,15 +34,6 @@ jobs:
 
       - name: Build
         run: hugo --minify
-
-      - name: Replace Image Paths in Markdown
-        run: |
-          find content -type f -name "*.md" | xargs sed -i 's#(\.\./assets/images/\(Y[0-9]*Q[0-9]*\)/\([^)]*\.\(jpg\|jpeg\|png\|gif\)\))#(https://raw.githubusercontent.com/lxulxu/lxulxu/lxulxu.github.io/master/assets/images/\1/\2?raw=true)#g'
-          git add content/**/*.md
-          git add assets/images/*
-          git commit -m "Update image paths in Markdown" || echo "No changes to commit"
-          git push origin master
-
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
