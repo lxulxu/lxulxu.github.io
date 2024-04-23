@@ -13,7 +13,7 @@ isTop: false
 
 数据结构UML图如下：
 
-![UML](https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230221/src_v1.22tzp77ow85c.jpg)
+![UML](../assets/images/Y2023Q1/src_v1.22tzp77ow85c.jpg)
 
 ## API 功能
 ### 系统设置相关函数

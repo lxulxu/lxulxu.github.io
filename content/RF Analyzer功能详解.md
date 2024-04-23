@@ -8,11 +8,11 @@ feature:
 isTop: false
 ---
 # RF-ADC
-![img-72](https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230222/img-72.uyj3mknshqo.jpg)
+![img-72](../assets/images/Y2023Q1/img-72.uyj3mknshqo.jpg)
 
 ## 转换器设置(Converter Settings)
 - 校准模式(Calibration Mode)
-  ![img-151](https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-151.4s8e5r0arfa0.jpg)
+  ![img-151](../assets/images/Y2023Q1/img-151.4s8e5r0arfa0.jpg)
   校准子系统由三个主要模块组成：
 
   - 时间交错偏移校准模块(OCB):校正每个子RF-ADC的**DC偏移**
@@ -43,7 +43,7 @@ isTop: false
   ```
   使用`XRFdc_SetCalCoefficients` API 恢复校准系数会自动禁用实时校准。 提供 `XRFdc_DisableCoefficientsOverride` API 以禁用此用户系数覆盖模式并重新启用实时校准。 禁用实时校准时，实时端口校准冻结无效。
 
-  ![img-74](https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-74.4auk0q3tcqw0.jpg)
+  ![img-74](../assets/images/Y2023Q1/img-74.4auk0q3tcqw0.jpg)
 
   - Mode 1:优化0.4* Fs 到Fs/2范围内信号，对于输入频率Fsamp/2(Nyquist) ± 10%是最佳的。
   - Mode 2:优化0 到0.4* Fs范围内信号，适用于其他范围输入频率。
@@ -57,7 +57,7 @@ isTop: false
 
 ## 阈值检测(Threshold Detection)
 每个 RF-ADC 通道有两个实时输出信号，具有过量程(Over Range)和过压(Over Voltage)功能，当模拟输入超过限度的时候会给出中断，同时上报给通信总线，以便直接访问 PL 设计。下图显示了阈值、过量程和过压电平以及随着输入模拟信号的增加这些电平的响应。
-![img-152](https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-152.47kp0c0pnvm0.jpg)
+![img-152](../assets/images/Y2023Q1/img-152.47kp0c0pnvm0.jpg)
 
 - Mode
 
@@ -114,7 +114,7 @@ if( XRFdc_GetDecimationFactor (ptr, Tile, Block, &DecimationFactor) == XST_SUCCE
 
 # RF-DAC
 
-![img-81](https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-81.7kckidky6ms0.jpg)
+![img-81](../assets/images/Y2023Q1/img-81.7kckidky6ms0.jpg)
 
 ## 转换器设置(Converter Settings)
 - 数据通路模式(DataPath):四种可用模式
@@ -171,14 +171,14 @@ if( XRFdc_GetDecimationFactor (ptr, Tile, Block, &DecimationFactor) == XST_SUCCE
 
 - 解码模式(Decoder Mode):选择要优化的性能：噪声基底或线性。必须为通信应用选择噪声基底优化。宽带调制信号推荐使用低噪声模式。
 - 奈奎斯特区(Nyquist Zone):选择信号将位于哪个奈奎斯特区域，1正常模式，2混合模式。
-  ![img-58](https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-58.6mswppffpl40.jpg)
+  ![img-58](../assets/images/Y2023Q1/img-58.6mswppffpl40.jpg)
   - 正常模式:蓝线表示理想的RF-DAC输出陡峭的sinc响应。在这种模式下，第二奈奎斯特区中的输出图像将被严重衰减。对于此模式，可用反sinc滤波器来补偿第一奈奎斯特区的衰减。
   - 混合模式:红线表示理想的RF-DAC输出响应。在这种模式下，第二奈奎斯特区中的输出功率显著增加，并且在大多数区域中也具有近似平坦的响应。可以在Vivado IDE中设置奈奎斯特区。由于sinc响应衰减和可能的带宽衰减，通常不会将RF-DAC在高于2的奈奎斯特区操作。
 - 当前值(Current):当前可变输出功率(variable output power, VOP)值
 
 ## 反Sinc补偿(Inverse Sinc Settings)
 模拟输出响应特性更接近sin(x)/x (冲击响应)，因此如果后级想取得比较平坦的系统响应需要较大的带宽。而做一个比较宽的平坦的模拟滤波器既不经济也不实惠，因此需要在DAC的输出级之前添加一级反sinc滤波器。可以认为和高速串行总线的预加重类似，通过提高信号高频分量的能量来抵消来自后端滤波器在过渡带增益不足的影响。
-![img-59](https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-59.4087xmd6kx40.jpg)
+![img-59](../assets/images/Y2023Q1/img-59.4087xmd6kx40.jpg)
 蓝色线代表滤波器本身的频率响应。 可以看出，它随频率增加以补偿输出的 sinc 响应，如红线所示。 复合输出响应由黄色迹线给出，并显示高达 89% 奈奎斯特的平坦通带。
 Enable启用反Sinc补偿高频下的Sinc衰减，第一代此功能仅在信号位于奈奎斯特区1时有效，第三代此功能在信号位于奈奎斯特区1/2时有效。
 
@@ -209,7 +209,7 @@ if( XRFdc_GetInterpolationFactor (ptr, Tile, Block, &Interpolation_Factor) == XS
 - DisableIPControl:启用/禁用RTS控制
 
 # 混频设置(Mixer Settings)
-![img-155](https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-155.5wcnvorhro00.jpg)
+![img-155](../assets/images/Y2023Q1/img-155.5wcnvorhro00.jpg)
 建议先设置Crossbar页面，然后设置混频器和NCO的其他参数，因为混频器在real-real模式下被旁路。
 
 - 模拟/数字输出(Analog/Digital Output):仅在转换器启动时可配置，可选项Real和I/Q。当转换器0设为I/Q时，转换器1也必须启用；当转换器2设为I/Q时，转换器3也必须启用。
@@ -237,7 +237,7 @@ for(tile=0;tile<4; tile++) {
 ```
 # QMC 配置
 正交调制校正(quadrature modulator correction, QMC)用于调整输出的幅度和相位，当转换器与外部调制器或解调器接口时，这些用于补偿不匹配的I和Q信号路径。
-![img-153](https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-153.56t3vz1k4h00.jpg)
+![img-153](../assets/images/Y2023Q1/img-153.56t3vz1k4h00.jpg)
 
 - 增益调整(Enable Gain/Gain):将信号乘以增益因子来完成的，该因子的范围为0到2.0，可以将各个因子应用于I和Q数据路径，block输出分辨率为16位。
 - 相位调整(Enable Phase/Phase Mismatch):通过将Q的比例分数添加到I值来实现，范围在+-26度或+-0.5数量级。这种加法的结果会导致增益误差，必须由增益误差校正块来校正，仅在复杂模式下生效。
@@ -265,7 +265,7 @@ XRFdc_UpdateEvent(ptr, XRFDC_ADC_TILE, 0, 0, XRFDC_EVENT_QMC); //Generate a Tile
 还可以使用`XRFdc_GetQMCSettings RFdc`驱动程序API命令从任何转换器读回QMC设置。
 
 # 锁相环(Phase-Locked Loop, PLL)
-![img-27](https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-27.58oy6tchlwo0.jpg)
+![img-27](../assets/images/Y2023Q1/img-27.58oy6tchlwo0.jpg)
 
 - 时钟源(Clocking Source)
 	- 外部(External):选择时钟源来自外部，通常为几GHz量级。
@@ -285,7 +285,7 @@ IP向导或专用于配置PLL系统的API函数将参考分频器值设置为整
 |压控振荡器(VCO)Frequency(GHz)|8.5 to 13.2|
 
 # Crossbar和多频段(Multi-Bands)
-![img-30](https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-30.1ev1wv9ss1cw.jpg)
+![img-30](../assets/images/Y2023Q1/img-30.1ev1wv9ss1cw.jpg)
 Crossbar页面影响混频器的real或complex模式以及multi-bands模式。complex模式激活一对信道以支持同相(I)和正交(Q)信号。由于复数混频器(和NCO)架构，允许实到复(real-to-complex,R2C)或复到复(complex-to-complex,C2C)模式，但不允许复到实(complex-to-real,C2R)模式。这意味着没有可用于RF-ADC的C2R模式和可用于RF-DAC的R2C模式。在complex模式中，偶数信道始终用于I信号，奇数信道用于Q信号。
 Multi-bands允许一个DAC/ADC模拟信道能够共享多个DUC或DDC信道来发送或接收多波段载波信号。对于DAC，多个基带信号可以在单独的DUC链中进行上转换，然后在crossbar上合并再发送到模拟DAC模块。Multi-bands页面影响混频器的real或 complex模式以及multi-bands模式。RF-ADC multi-bands功能支持以下配置。
 
@@ -299,12 +299,12 @@ Multi-bands允许一个DAC/ADC模拟信道能够共享多个DUC或DDC信道来�
 当多频段关闭时，I和Q输入直接通过多频段路由逻辑;当多频段开启时，I和Q输入被路由到tile中的多个DDC 模块。
 ![img-156](https://raw.githubusercontent.com/lxulxu/MarkdownPic/master20230227/img-156.1rgyzywlxn28.jpg)
 RF-ADC多频段是通过将一个RF-ADC模拟模块的输出路由到多个RF-ADC DDC模块来实现的。每个块处理一个数据带，并且可以从多个载波混合到基带。下图中的Quad ADC块显示了这一点。
-![img-157](https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-157.62vhzzi92m00.jpg)
+![img-157](../assets/images/Y2023Q1/img-157.62vhzzi92m00.jpg)
 RF-ADC Tile 0 (Tile_224) 配置为实输入到I/Q输出模式。ADC0转换双频信号；ADC1关闭。顶部对可以配置为独立的 RF-ADC。双频输出路由到ADC0和ADC1的DDC模块。DDC模块中的混频器可以配置为从输入数据中提取正确的频带。
 RF-ADC Tile 1 (Tile_225) 配置为4x多频段I/Q输入到I/Q输出模式。这里ADC0承载四波段I信号，ADC1承载Q数据。ADC2和ADC3关闭。RF-ADC的输出被路由到所有四个DDC模块。每个DDC都可以配置为从所需的频带中提取数据。
 
 # FIFO深度和时钟(Clock Distribution)
-![img-41](https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-41.1u5d9itfn97k.jpg)
+![img-41](../assets/images/Y2023Q1/img-41.1u5d9itfn97k.jpg)
 
 - Fin:输入频率
 - MMCM:输入时钟分频器Reference Clock经过分频后变成PLL Reference Clock，在MMCM模块中，MMCM为PL侧的FIFO生成读取或写入时钟，在FIFO数据页面中显示为F(PL)。
@@ -315,7 +315,7 @@ RF-ADC Tile 1 (Tile_225) 配置为4x多频段I/Q输入到I/Q输出模式。这�
 
 # FFT频谱分析
 单击ADC设置页面中的Acquisition按钮或DAC设置页面中的Generation按钮，将打开FFT页面。在DAC FFT页面中，UI中自带单音和双音发生配置选项。要生成复杂的调制信号，用户可以从文件加载测试向量。Fs表示观察到的RF-ADC或RF-DAC的采样频率，Eff.Fs表示抽取后或插值前原始数据流（基带）的采样频率。FFT图的X轴（频率）反映了Eff.Fs。
-![img-68](https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-68.6zlmduopqqc0.jpg)
+![img-68](../assets/images/Y2023Q1/img-68.6zlmduopqqc0.jpg)
 
 传统ADC规格
 |参数|描述|
@@ -346,7 +346,7 @@ RF采样数据转换器规格
 
 # 中断功能(Interrupts)
 在系统异常时，自动回读一些AD/DA寄存器状态。每行开头的复选框启用或禁用(掩码)相应的中断状态。单击Apply按钮应用所选中断状态。Refresh按钮读回当前状态，绿灯显示相应的中断位被设置。Clear按钮尝试清除所有中断位并读回状态。
-![img-80](https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-80.xcl67cmg8m8.jpg)
+![img-80](../assets/images/Y2023Q1/img-80.xcl67cmg8m8.jpg)
 
 | 中断 | 描述 |
 | --- | --- |
@@ -369,7 +369,7 @@ RF采样数据转换器规格
 
 # 多通道同步(Multi-Tile Synchronization)
 FIFO为RF-ADC提供灵活的数据和时钟接口。但与所有双时钟FIFO一样，延迟可能会在一个tile和另一个tile之间变化。虽然 tile中的所有通道都具有相同的延迟，但某些应用可能需要使用多个RF-ADC tile，并且需要在所有RF-ADC通道中匹配延迟。这些应用程序可以使用多通道同步(MTS)功能来实现这种块间同步。
-![img-36](https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230227/img-36.317omq9p5gm0.jpg)
+![img-36](../assets/images/Y2023Q1/img-36.317omq9p5gm0.jpg)
 
 
 1. <p name = ''>https://docs.xilinx.com/r/en-US/pg269-rf-data-converter</p>

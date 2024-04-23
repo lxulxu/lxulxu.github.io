@@ -35,20 +35,20 @@ isTop: false
 |Dual RF-DAC|2|Gen 3/DFE|两个专用DUC，Gen 3/DFE配备Quad RF-DAC或Quad/Dual RF-DAC组合，所有的tile都有外部时钟输入|
 
 下图为tile结构，虚线表示多个波段的情况。
-![img-158](https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230228/img-158.6rfb9iadm1c0.jpg)
-![img-159](https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230228/img-159.5uupdrk2apo0.jpg)
-![img-160](https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230228/img-160.ma07k43z6g0.jpg)
+![img-158](../assets/images/Y2023Q1/img-158.6rfb9iadm1c0.jpg)
+![img-159](../assets/images/Y2023Q1/img-159.5uupdrk2apo0.jpg)
+![img-160](../assets/images/Y2023Q1/img-160.ma07k43z6g0.jpg)
 
 # RF-ADC/DAC
 
 RF-ADC/DAC结构如下图所示。
 
 <center class="half">
-    <img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230228/img-161.2kz79mrpyhq0.jpg" width="50%"><img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230228/img-162.3ilmbd5bf200.jpg" width="50%">
+    <img src="../assets/images/Y2023Q1/img-161.2kz79mrpyhq0.jpg" width="50%"><img src="../assets/images/Y2023Q1/img-162.3ilmbd5bf200.jpg" width="50%">
 </center>
 
 <center class="half">
-    <img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230228/img-163.4ejogkegsdg0.jpg" width="50%"><img src="https://raw.githubusercontent.com/lxulxu/MarkdownPic/master/20230228/img-164.1063rg051tb4.jpg" width="50%">
+    <img src="../assets/images/Y2023Q1/img-163.4ejogkegsdg0.jpg" width="50%"><img src="../assets/images/Y2023Q1/img-164.1063rg051tb4.jpg" width="50%">
 </center>
 
 RF-ADC/DAC特点如下。
