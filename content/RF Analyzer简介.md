@@ -35,9 +35,9 @@ isTop: false
 |Dual RF-DAC|2|Gen 3/DFE|两个专用DUC，Gen 3/DFE配备Quad RF-DAC或Quad/Dual RF-DAC组合，所有的tile都有外部时钟输入|
 
 下图为tile结构，虚线表示多个波段的情况。
-![img-158](../assets/images/Y2023Q1/img-158.6rfb9iadm1c0.jpg)
-![img-159](../assets/images/Y2023Q1/img-159.5uupdrk2apo0.jpg)
-![img-160](../assets/images/Y2023Q1/img-160.ma07k43z6g0.jpg)
+![img-158](https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-158.6rfb9iadm1c0.jpg?raw=true)
+![img-159](https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-159.5uupdrk2apo0.jpg?raw=true)
+![img-160](https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-160.ma07k43z6g0.jpg?raw=true)
 
 # RF-ADC/DAC
 
