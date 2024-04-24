@@ -1,8 +1,9 @@
-<!doctype html><html lang=en-us><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="IE=edge"><style type=text/css>body{font-family:monospace}</style><title></title>
+<!doctype html><html lang=zh-cn><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="IE=edge"><style type=text/css>body{font-family:monospace}</style><title></title>
 <link rel=stylesheet href=/css/style.css></head><body><header>===================<br>== <a href=https://lxulxu.github.io/>lxulxu's blog</a> ==<br>===================<div style=float:right>Hello there</div><br><p><nav><a href=/><b>Start</b></a>.
 <a href=/posts/><b>Posts</b></a>.
 <a href=/categories/><b>Categories</b></a>.
-<a href=/tags/><b>Tags</b></a>.</nav></p></header><main><article><h1></h1><b><time>01.00.1010 00:00</time></b><div><h2 id=编程习惯>编程习惯</h2><ul><li>switch中应有default</li><li>不应在debug或错误信息中提供过多内容</li><li>不应该在客户端代码中硬编码对称加密秘钥</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++><span style=display:flex><span>    <span style=color:#75715e>// Bad
+<a href=/tags/><b>Tags</b></a>.
+<a href=/about/><b>About</b></a>.</nav></p></header><main><article><h1></h1><b><time>01.00.1010 00:00</time></b><div><h2 id=编程习惯>编程习惯</h2><ul><li>switch中应有default</li><li>不应在debug或错误信息中提供过多内容</li><li>不应该在客户端代码中硬编码对称加密秘钥</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++><span style=display:flex><span>    <span style=color:#75715e>// Bad
 </span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#66d9ef>char</span> g_aes_key[] <span style=color:#f92672>=</span> {...};
 </span></span><span style=display:flex><span>    <span style=color:#66d9ef>void</span> <span style=color:#a6e22e>Foo</span>() {
 </span></span><span style=display:flex><span>      ....
