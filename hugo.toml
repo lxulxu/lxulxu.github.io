@@ -1,5 +1,4 @@
 baseURL = 'https://lxulxu.github.io/'
-languageCode = 'zh-cn'
 title = "lxulxu's blog"
 
 theme = "smol"
