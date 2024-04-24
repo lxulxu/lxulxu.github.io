@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IEEE on lxulxu's blog</title><link>https://lxulxu.github.io/tags/ieee/</link><description>Recent content in IEEE on lxulxu's blog</description><generator>Hugo</generator><language>zh-cn</language><lastBuildDate>Wed, 10 Aug 2022 21:50:26 +0000</lastBuildDate><atom:link href="https://lxulxu.github.io/tags/ieee/index.xml" rel="self" type="application/rss+xml"/><item><title>许可管理</title><link>https://lxulxu.github.io/license_management_guide/</link><pubDate>Wed, 10 Aug 2022 21:50:26 +0000</pubDate><guid>https://lxulxu.github.io/license_management_guide/</guid><description>IEEE Std 1735-2014 Ch8 一些整理
+简介 定义 `protect license_proxyname=&amp;#34;acme_proxy&amp;#34; `protect license_attributes=&amp;#34;USER,MAC,PROXYINFO=1.2&amp;#34; `protect license_symmetric_key_method=&amp;#34;aes128-cbc&amp;#34; `protect license_public_key_method=&amp;#34;rsa&amp;#34; `protect license_keyowner=&amp;#34;ACME&amp;#34;, license_keyname=&amp;#34;ACME2014&amp;#34; `protect license_public_key AV6f6JyGUxBpr49EwxN7jfdUQcRqRFDN7Mto2ltk+emrRCQS+bW/Yvu8U3w9kx7g rCXFueY/S8lyKUExUP2Yi5C3K9WIFqF7Ov3Hm9/fEumxDzvYkGOGuGu/xv/OYIyb whEkaiPmVI8+7S/+8NJeOm3BiVaIH5XLcZvz7EW9bvc= proxyname：决定代理运行时所需的环境变量名称
+attributes：提供给代理的可选属性，代理可根据这些属性授予或拒绝许可
+symmetric key method： 工具与代理间传递信息的对称加密算法
+public key method：后文密钥加密算法
+keyowner &amp;amp; keyname：每个license_keyowner/license_keyname对都与一个public key和一个symmetric method对应，与之相反，每个public key/symmetric method对可以对应多个license_keyowner和license_keyname，加解密信封中的license_keyowner/license_keyname应该是唯一的
+public key：用于加密symmetric key，base64编码DER格式，代理可以访问与之匹配的私钥
+其中license_proxyname和public key是必要属性。
+使用 license()
+位于common block，基本语法：
+protect control right = license(&amp;quot;feature&amp;quot;) ? &amp;quot;true_value&amp;quot;:&amp;quot;false_value&amp;quot;
+e.g. protect control decrypt = license(&amp;quot;IP123&amp;quot;) ? &amp;quot;true&amp;quot; : &amp;quot;false&amp;quot;
+license()可以建立与代理间的通信并发出许可请求，如果代理授予许可则返回布尔值TRUE，如果拒绝则返回布尔值FALSE。
+license_string()
+基本语法：
+protect control right = license_string(&amp;quot;feature&amp;quot;)</description></item></channel></rss>
