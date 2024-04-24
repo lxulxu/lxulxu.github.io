@@ -1,5 +1,5 @@
 baseURL = 'https://lxulxu.github.io/'
-languageCode = 'en-us'
+languageCode = 'zh-cn'
 title = "lxulxu's blog"
 
 theme = "smol"
@@ -28,6 +28,12 @@ theme = "smol"
         name = "Tags"
         url = "/tags/"
         weight = 3
+
+  [[menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about/"
+        weight = 4
 
 # Footer
   [[menu.footer]]
