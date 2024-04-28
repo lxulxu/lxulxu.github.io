@@ -1,6 +1,6 @@
 baseURL = 'https://lxulxu.github.io/'
 title = "lxulxu's blog"
-
+languageCode = 'en-us'
 theme = "smol"
 
 # Parameters
