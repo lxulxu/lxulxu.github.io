@@ -2,10 +2,7 @@
 title: 'Tcl Cheat Sheet'
 date: 2022-08-30 17:51:47
 tags: [cheat-sheet,tcl]
-published: true
-hideInList: false
-feature: 
-isTop: false
+categories: [cheat-sheet]
 ---
 - 基础语法
 

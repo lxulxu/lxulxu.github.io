@@ -1,11 +1,8 @@
 ---
 title: 'RF Analyzer 简介'
 date: 2023-02-28 18:54:18
-tags: [xilinx]
-published: true
-hideInList: false
-feature: 
-isTop: false
+tags: [xilinx, RF]
+categories: [xilinx]
 ---
 参考PG269 Ch1 & Ch2。
 

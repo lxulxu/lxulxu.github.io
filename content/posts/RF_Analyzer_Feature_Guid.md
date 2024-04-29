@@ -1,11 +1,8 @@
 ---
 title: 'RF Analyzer 功能详解'
 date: 2023-02-27 19:06:33
-tags: [xilinx]
-published: true
-hideInList: false
-feature: 
-isTop: false
+tags: [xilinx, RF]
+categories: [xilinx]
 ---
 # RF-ADC
 ![img-72](https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-72.uyj3mknshqo.jpg?raw=true)

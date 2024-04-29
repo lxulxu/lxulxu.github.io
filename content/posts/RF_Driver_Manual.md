@@ -1,11 +1,8 @@
 ---
 title: 'RFdc 驱动'
 date: 2023-02-21 14:41:35
-tags: [xilinx]
-published: true
-hideInList: false
-feature: 
-isTop: false
+tags: [xilinx, RF]
+categories: [xilinx]
 ---
 参考PG269 Appx.C
 

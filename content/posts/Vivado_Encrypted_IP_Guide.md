@@ -2,10 +2,7 @@
 title: 'Vivado加密IP'
 date: 2022-03-26 18:00:52
 tags: [xilinx]
-published: true
-hideInList: false
-feature: 
-isTop: false
+categories: [xilinx]
 ---
 整理 UG1118 Ch6
 ## 权限管理

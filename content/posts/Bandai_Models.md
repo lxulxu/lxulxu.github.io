@@ -1,11 +1,8 @@
 ---
 title: '星球大战万代模型'
 date: 2022-05-03 20:20:35
-tags: [生活]
-published: true
-hideInList: false
-feature: 
-isTop: false
+tags: [万代]
+categories: [生活]
 ---
 ![Yoda](https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2022Q2/Polish_20220412_172112817.jpg?raw=true)
 <center>Yoda</center>

@@ -1,3 +1,9 @@
+---
+title: 'C++安全指南'
+date: 2024-04-28 08:20:35
+tags: [c++]
+categories: [笔记]
+---
 ## 编程习惯
 - switch中应有default
 - 不应在debug或错误信息中提供过多内容

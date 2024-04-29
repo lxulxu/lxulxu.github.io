@@ -1,11 +1,8 @@
 ---
 title: '《高质量C++编程指南》笔记'
 date: 2022-09-04 11:51:33
-tags: [c++,笔记]
-published: true
-hideInList: false
-feature: 
-isTop: false
+tags: [c++]
+categories: [笔记]
 ---
 ## 文件结构
 

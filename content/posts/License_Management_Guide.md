@@ -1,11 +1,8 @@
 ---
 title: '许可管理'
 date: 2022-08-10 21:50:26
-tags: [IEEE]
-published: true
-hideInList: false
-feature: 
-isTop: false
+tags: [IEEE, xilinx]
+categories: [xilinx]
 ---
 IEEE Std 1735-2014 Ch8 一些整理
 ## 简介
