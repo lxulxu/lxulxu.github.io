@@ -4,7 +4,11 @@ on:
   push:
     branches:
       - master  # Set a branch name to trigger deployment
+    paths-ignore:
+      - 'archive/**'
   pull_request:
+    paths-ignore:
+      - 'archive/**'
   workflow_dispatch:
 
 jobs:
