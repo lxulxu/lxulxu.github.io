@@ -5,7 +5,7 @@ categories: [生活]
 tags: [生活]
 ---
 
-## MOVIES
+## 🎬MOVIES
 - 2024-04-03. [**又见逍遥**](http://movie.douban.com/subject/35314844/) - rating: ★★☆☆☆
 - 2024-04-03. [**草木人间**](http://movie.douban.com/subject/35240117/) - rating: ★★★★☆
 - 2024-04-17. [**追风者**](http://movie.douban.com/subject/36206860/) - rating: ★★★★☆
@@ -13,9 +13,7 @@ tags: [生活]
 - 2024-04-23. [**城中之城**](http://movie.douban.com/subject/35209732/) - rating: ★★★★☆
 - 2024-04-29. [**哈尔滨一九四四**](http://movie.douban.com/subject/35391108/) - rating: ★★★☆☆
 
-## GAMES
-
-## MUSIC
+## 🎵MUSIC
 - 2024-04-30. [**Fall in Love**](https://open.spotify.com/track/406KPQqXM4AQlT5KSmFcvG) - by *Sophie Chen, Vicky Chen* from the album 'Fall in Love'
 - 2024-04-30. [**Time (Feat. Rado)**](https://open.spotify.com/track/7pGnrIMUs9S0rUnUjWtDbo) - by *Trouble Maker, Rado* from the album 'Trouble Maker'
 - 2024-04-30. [**BLACK**](https://open.spotify.com/track/7BYGfn9F73atTWMdAHVdPk) - by *G-DRAGON, Sky Ferreira* from the album 'COUP D'ETAT'
