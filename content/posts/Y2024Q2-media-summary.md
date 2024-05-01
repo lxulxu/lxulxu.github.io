@@ -58,3 +58,7 @@ tags: [生活]
 - 2024-05-01. [**不能說的秘密**](https://open.spotify.com/track/77jIEebt4z9WzaI6LsntDG) - by *Jay Chou* from the album '不能說的秘密電影原聲帶'
 - 2024-05-01. [**給我一首歌的時間**](https://open.spotify.com/track/1H1Su2z86EDS2KQ1nhMmWA) - by *Jay Chou* from the album '魔杰座'
 - 2024-05-01. [**暗號**](https://open.spotify.com/track/23oXdU0FCaIOeuydbKYmjf) - by *Jay Chou* from the album '八度空間'
+- 2024-05-01. [**Just You and Me**](https://open.spotify.com/track/2rQgwJUT8zzyJzOqpxbzme) - by *Sophie Chen* from the album 'Just You and Me'
+- 2024-05-01. [**Next Level**](https://open.spotify.com/track/2zrhoHlFKxFTRF5aMyxMoQ) - by *aespa* from the album 'Next Level'
+- 2024-05-01. [**Savage**](https://open.spotify.com/track/3dbLT62Cvs46Ju7a8gpr36) - by *aespa* from the album 'Savage - The 1st Mini Album'
+- 2024-05-01. [**Spicy**](https://open.spotify.com/track/3gtlthEgyulDfT8dWdKsnv) - by *aespa* from the album 'iScreaM Vol.26 : Spicy Remix'
