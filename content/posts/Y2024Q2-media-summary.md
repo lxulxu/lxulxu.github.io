@@ -12,6 +12,7 @@ tags: [生活]
 - 2024-04-19. [**年少日记**](http://movie.douban.com/subject/34940879/) - rating: ★★★★★
 - 2024-04-23. [**城中之城**](http://movie.douban.com/subject/35209732/) - rating: ★★★★☆
 - 2024-04-29. [**哈尔滨一九四四**](http://movie.douban.com/subject/35391108/) - rating: ★★★☆☆
+- 2024-05-01. [**宝贝老板**](http://movie.douban.com/subject/25907029/) - rating: ★★★★☆
 
 ## 🎵MUSIC
 - 2024-04-30. [**Fall in Love**](https://open.spotify.com/track/406KPQqXM4AQlT5KSmFcvG) - by *Sophie Chen, Vicky Chen* from the album 'Fall in Love'
