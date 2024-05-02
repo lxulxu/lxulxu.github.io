@@ -13,6 +13,7 @@ tags: [生活]
 - 2024-04-23. [**城中之城**](http://movie.douban.com/subject/35209732/) - rating: ★★★★☆
 - 2024-04-29. [**哈尔滨一九四四**](http://movie.douban.com/subject/35391108/) - rating: ★★★☆☆
 - 2024-05-01. [**宝贝老板**](http://movie.douban.com/subject/25907029/) - rating: ★★★★☆
+- 2024-05-02. [**没有一顿火锅解决不了的事**](http://movie.douban.com/subject/36207371/) - rating: ★★★☆☆
 ## 🎵MUSIC
 - 2024-05-01. [**FXXK IT**](https://open.spotify.com/track/3lYvepDz6yYj29z7e4r5z0) - by *BIGBANG* from the album 'MADE'
 - 2024-05-01. [**Luôn Bên Anh**](https://open.spotify.com/track/0BNfReaAQjFPLpLsXyioLu) - by *MIN, Mr.A* from the album 'Luôn Bên Anh'
