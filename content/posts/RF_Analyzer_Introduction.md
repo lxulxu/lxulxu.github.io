@@ -41,11 +41,11 @@ categories: [xilinx]
 RF-ADC/DAC结构如下图所示。
 
 <center class="half">
-    <img src="../assets/images/Y2023Q1/img-161.2kz79mrpyhq0.jpg" width="50%"><img src="../assets/images/Y2023Q1/img-162.3ilmbd5bf200.jpg" width="50%">
+    <img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-161.2kz79mrpyhq0.jpg?raw=true" width="50%"><img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-162.3ilmbd5bf200.jpg?raw=true" width="50%">
 </center>
 
 <center class="half">
-    <img src="../assets/images/Y2023Q1/img-163.4ejogkegsdg0.jpg" width="50%"><img src="../assets/images/Y2023Q1/img-164.1063rg051tb4.jpg" width="50%">
+    <img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-163.4ejogkegsdg0.jpg?raw=true" width="50%"><img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-164.1063rg051tb4.jpg?raw=true" width="50%">
 </center>
 
 RF-ADC/DAC特点如下。
