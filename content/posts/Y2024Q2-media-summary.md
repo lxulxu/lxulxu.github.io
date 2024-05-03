@@ -17,6 +17,7 @@ tags: [生活]
 - 2024-05-02. [**九龙城寨之围城**](http://movie.douban.com/subject/24284175/) - rating: ★★★★☆
 - 2024-05-02. [**维和防暴队**](http://movie.douban.com/subject/35371629/) - rating: ★★★☆☆
 - 2024-05-02. [**对你的想象**](http://movie.douban.com/subject/35503073/) - rating: ★★★☆☆
+- 2024-05-03. [**新上海滩**](http://movie.douban.com/subject/2248658/) - rating: ★★★★☆
 ## 🎵MUSIC
 - 2024-05-01. [**FXXK IT**](https://open.spotify.com/track/3lYvepDz6yYj29z7e4r5z0) - by *BIGBANG* from the album 'MADE'
 - 2024-05-01. [**Luôn Bên Anh**](https://open.spotify.com/track/0BNfReaAQjFPLpLsXyioLu) - by *MIN, Mr.A* from the album 'Luôn Bên Anh'
