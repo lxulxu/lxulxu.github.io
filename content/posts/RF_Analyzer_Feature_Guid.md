@@ -186,7 +186,7 @@ Enable启用反Sinc补偿高频下的Sinc衰减，第一代此功能仅在信号
 | --- | --- |
 | OFF | 滤波器被禁用，RF-DAC 不可用 |
 | 1x | 滤波器被绕过 |
-| 2x |　2倍插值，80% Nyquist 通带 |
+| 2x | 2倍插值，80% Nyquist 通带 |
 | 4x | 4倍插值，80% Nyquist 通带 |
 | 8x | 8倍插值，80% Nyquist 通带 |
 
@@ -294,7 +294,7 @@ Multi-bands允许一个DAC/ADC模拟信道能够共享多个DUC或DDC信道来�
 |I/Q Quad-Band (Quad ADC tile only)|每个tile有4x multi-band I/Q数据，两个RF-ADC输入有效，一个用于I，一个用于Q，四个RF-ADC数字DDC通道均已启用。|
 
 当多频段关闭时，I和Q输入直接通过多频段路由逻辑;当多频段开启时，I和Q输入被路由到tile中的多个DDC 模块。
-![img-156](https://raw.githubusercontent.com/lxulxu/MarkdownPic/master20230227/img-156.1rgyzywlxn28.jpg)
+![img-156](https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-156.1rgyzywlxn28.jpg)
 RF-ADC多频段是通过将一个RF-ADC模拟模块的输出路由到多个RF-ADC DDC模块来实现的。每个块处理一个数据带，并且可以从多个载波混合到基带。下图中的Quad ADC块显示了这一点。
 ![img-157](https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-157.62vhzzi92m00.jpg?raw=true)
 RF-ADC Tile 0 (Tile_224) 配置为实输入到I/Q输出模式。ADC0转换双频信号；ADC1关闭。顶部对可以配置为独立的 RF-ADC。双频输出路由到ADC0和ADC1的DDC模块。DDC模块中的混频器可以配置为从输入数据中提取正确的频带。
