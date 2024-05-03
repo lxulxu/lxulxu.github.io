@@ -3,6 +3,15 @@ title = "lxulxu's blog"
 languageCode = 'en-us'
 theme = "smol"
 
+[markup.highlight]
+  style = "gruvbox"
+  lineNos = true
+  lineNumbersInTable = false
+  guessSyntax = true
+
+[markup.goldmark.renderer]
+  unsafe = true # Allow HTML in md files
+
 # Parameters
 [params]
     subtitle = "Hello there"

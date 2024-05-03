@@ -39,14 +39,15 @@ categories: [xilinx]
 # RF-ADC/DAC
 
 RF-ADC/DAC结构如下图所示。
+<div class="image-container">
+    <img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-161.2kz79mrpyhq0.jpg?raw=true" alt="Image 1">
+    <img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-162.3ilmbd5bf200.jpg?raw=true" alt="Image 2">
+</div>
 
-<center class="half">
-    <img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-161.2kz79mrpyhq0.jpg?raw=true" width="50%"><img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-162.3ilmbd5bf200.jpg?raw=true" width="50%">
-</center>
-
-<center class="half">
-    <img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-163.4ejogkegsdg0.jpg?raw=true" width="50%"><img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-164.1063rg051tb4.jpg?raw=true" width="50%">
-</center>
+<div class="image-container">
+    <img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-163.4ejogkegsdg0.jpg?raw=true" alt="Image 1">
+    <img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-164.1063rg051tb4.jpg?raw=true" alt="Image 2">
+</div>
 
 RF-ADC/DAC特点如下。
 
@@ -128,4 +129,3 @@ RF-ADC/DAC特点如下。
         <td>Gen 1/Gen 2: 第一Nyquist区的Sinc校正；<br>Gen 3/DFE: 第一和第二Nyquist区的Sinc校正</td> 
     </tr>
 </table>
-<br>
