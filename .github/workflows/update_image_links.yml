@@ -23,7 +23,7 @@ jobs:
         run: |
           find content -name '*.md' | while read file; do
               sed -i 's/\(\!\[.*\]\)([\.\/]+assets\/images\/\(Y[0-9]*Q[0-9]*\)\/\(.*\))/\1(https:\/\/raw.githubusercontent.com\/lxulxu\/lxulxu.github.io\/master\/assets\/images\/\2\/\3?raw=true)/g' "$file"
-              sed -i 's/<img src="[\.\/]+assets\/images\/\(Y[0-9]*Q[0-9]*\)\/\([^"]*\)"/>/<img src="https:\/\/raw.githubusercontent.com\/lxulxu\/lxulxu.github.io\/master\/assets\/images\/\1\/\2?raw=true">/g' "$file"
+              sed -i 's/<img src="[\.\/]+assets\/images\/\(Y[0-9]*Q[0-9]*\)\/\([^"]*\)"/<img src="https:\/\/raw.githubusercontent.com\/lxulxu\/lxulxu.github.io\/master\/assets\/images\/\1\/\2?raw=true"/g' "$file"
           done
 
           git config --global user.email github-actions@github.com
