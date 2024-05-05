@@ -69,3 +69,5 @@ tags: [生活]
 - 2024-05-01. [**Next Level**](https://open.spotify.com/track/2zrhoHlFKxFTRF5aMyxMoQ) - by *aespa* from the album 'Next Level'
 - 2024-05-01. [**Savage**](https://open.spotify.com/track/3dbLT62Cvs46Ju7a8gpr36) - by *aespa* from the album 'Savage - The 1st Mini Album'
 - 2024-05-01. [**Spicy**](https://open.spotify.com/track/3gtlthEgyulDfT8dWdKsnv) - by *aespa* from the album 'iScreaM Vol.26 : Spicy Remix'
+- 2024-05-05. [**Accendio**](https://open.spotify.com/track/1BAtAtx0VgWgAMROWK9WYf) - by *IVE* from the album 'IVE SWITCH'
+- 2024-05-05. [**해야 (HEYA)**](https://open.spotify.com/track/4gOwpU4kMZZNDWkoHYUj1Z) - by *IVE* from the album 'IVE SWITCH'
