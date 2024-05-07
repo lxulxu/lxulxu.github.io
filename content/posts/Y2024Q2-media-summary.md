@@ -81,3 +81,4 @@ tags: [生活]
 - 2024-05-06. [**Ah! (Feat. GEMINI)**](https://open.spotify.com/track/5FBH2lZvXYVTD08ajGCnFV) - by *HyunA, GEMINI* from the album 'Attitude'
 - 2024-05-06. [**Q&A**](https://open.spotify.com/track/4AYpLGpfO28geKxxxZ3ztu) - by *HyunA* from the album 'Attitude'
 - 2024-05-06. [**Attitude**](https://open.spotify.com/track/10wlaX6XHaWVYZRF7HbG8H) - by *HyunA* from the album 'Attitude'
+- 2024-05-06. [**Karma**](https://open.spotify.com/track/2uqxsofWmgRT0ekghgy3ln) - by *JoJo Siwa* from the album 'Karma'
