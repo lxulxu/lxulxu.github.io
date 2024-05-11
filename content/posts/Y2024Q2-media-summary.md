@@ -21,6 +21,7 @@ tags: [生活]
 - 2024-05-04. [**努尔哈赤秘史**](http://movie.douban.com/subject/3003228/) - rating: ★★★★☆
 - 2024-05-04. [**绝对计划**](http://movie.douban.com/subject/2248788/) - rating: ★★★★★
 - 2024-05-07. [**妈妈咪呀**](https://www.douban.com/location/drama/10944605/) - rating: ★★★★☆
+- 2024-05-11. [**猩球崛起：新世界**](http://movie.douban.com/subject/36069854/) - rating: ★★★★☆
 ## 🎵MUSIC
 - 2024-05-01. [**BLACK**](https://open.spotify.com/track/7BYGfn9F73atTWMdAHVdPk) - by *G-DRAGON, Sky Ferreira* from the album 'COUP D'ETAT'
 - 2024-05-01. [**你和我和他之間**](https://open.spotify.com/track/52AQsGTohwUtmEhoV8fAbz) - by *Princess Ai, 竇智孔* from the album '愛情風暴-美麗99'
