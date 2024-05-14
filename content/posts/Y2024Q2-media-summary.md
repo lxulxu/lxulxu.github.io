@@ -101,3 +101,5 @@ tags: [生活]
 - 2024-05-13. [**I stan U**](https://open.spotify.com/track/0NnXG9qhpf0E6elVQdWLE7) - by *IU* from the album 'The Winning'
 - 2024-05-13. [**Love wins all**](https://open.spotify.com/track/53g7ZIvZE47H9pwXPFYMCH) - by *IU* from the album 'The Winning'
 - 2024-05-13. [**Shh.. (Feat. HYEIN, WONSUN JOE & Special Narr. Patti Kim)**](https://open.spotify.com/track/20uUaRkfRJZG15mXfn7LaU) - by *IU, HYEIN, Joe Won Sun, Patti Kim* from the album 'The Winning'
+- 2024-05-14. [**Our Last Summer - From 'Mamma Mia!' Original Motion Picture Soundtrack**](https://open.spotify.com/track/7bFmXanwZQm6BMV9Nka6Hk) - by *Colin Firth, Pierce Brosnan, Stellan Skarsgård, Amanda Seyfried, Meryl Streep* from the album 'Mamma Mia! The Movie Soundtrack'
+- 2024-05-14. [**Money, Money, Money - From 'Mamma Mia!' Original Motion Picture Soundtrack**](https://open.spotify.com/track/5wiSmUpfrWBuAT6DKm2uyD) - by *Meryl Streep, Julie Walters, Christine Baranski* from the album 'Mamma Mia! The Movie Soundtrack'
