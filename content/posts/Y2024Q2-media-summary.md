@@ -22,6 +22,7 @@ tags: [生活]
 - 2024-05-04. [**绝对计划**](http://movie.douban.com/subject/2248788/) - rating: ★★★★★
 - 2024-05-07. [**妈妈咪呀**](https://www.douban.com/location/drama/10944605/) - rating: ★★★★☆
 - 2024-05-11. [**猩球崛起：新世界**](http://movie.douban.com/subject/36069854/) - rating: ★★★★☆
+- 2024-05-17. [**特技狂人**](http://movie.douban.com/subject/35268614/) - rating: ★★★★☆
 ## 🎵MUSIC
 - 2024-05-01. [**Shhh**](https://open.spotify.com/track/76qqDJijAjFph7sjUxNVG8) - by *KISS OF LIFE* from the album 'KISS OF LIFE'
 - 2024-05-01. [**Nobody Knows**](https://open.spotify.com/track/70efTlnBNM8BvfhfPiqOBN) - by *KISS OF LIFE* from the album 'Born to be XX'
@@ -75,7 +76,6 @@ tags: [生活]
 - 2024-05-15. [**Phải Lòng Anh**](https://open.spotify.com/track/0bJFBiF7WQ9rAi6nsCZYBR) - by *MIN* from the album 'not a good time for love'
 - 2024-05-15. [**猜（电影《热辣滚烫》热辣心动曲）**](https://open.spotify.com/track/58OKa3g5rRVpFer06Z1Ahw) - by *希林娜依•高* from the album '猜（电影《热辣滚烫》热辣心动曲）'
 - 2024-05-15. [**藏星（电影《热辣滚烫》热辣绽放曲）**](https://open.spotify.com/track/1oCw1EeqkMIoum1FQUgEaj) - by *Silence Wang* from the album '藏星（电影《热辣滚烫》热辣绽放曲）'
-- 2024-05-15. [**Có Em Chờ**](https://open.spotify.com/track/3z7at2LZwJsg8UvqGw3JAv) - by *MIN, Mr A* from the album 'Có Em Chờ'
 - 2024-05-15. [**Dancing On My Own**](https://open.spotify.com/track/3NJ6kH1NAPICgJKdidV0Gs) - by *Pixie Lott, Marty James* from the album 'Young Foolish Happy (Deluxe Edition)'
 - 2024-05-15. [**Black (Feat. JENNIE of BLACKPINK)**](https://open.spotify.com/track/44f1TNdoQUgf3PUYraCTsH) - by *G-DRAGON, JENNIE* from the album 'COUP D'ETAT (Korean Version)'
 - 2024-05-15. [**Time (Feat. Rado)**](https://open.spotify.com/track/7pGnrIMUs9S0rUnUjWtDbo) - by *Trouble Maker, Rado* from the album 'Trouble Maker'
@@ -91,6 +91,7 @@ tags: [生活]
 - 2024-05-15. [**Supernova**](https://open.spotify.com/track/351KkakA2YtGEXqSEIIasy) - by *aespa* from the album 'Supernova'
 - 2024-05-17. [**FXXK IT**](https://open.spotify.com/track/3lYvepDz6yYj29z7e4r5z0) - by *BIGBANG* from the album 'MADE'
 - 2024-05-17. [**Luôn Bên Anh**](https://open.spotify.com/track/0BNfReaAQjFPLpLsXyioLu) - by *MIN, Mr.A* from the album 'Luôn Bên Anh'
+- 2024-05-17. [**Có Em Chờ**](https://open.spotify.com/track/3z7at2LZwJsg8UvqGw3JAv) - by *MIN, Mr A* from the album 'Có Em Chờ'
 - 2024-05-17. [**Wife**](https://open.spotify.com/track/1j8jqwFpFQ8YqsIJAiYFLZ) - by *(G)I-DLE* from the album '2'
 - 2024-05-17. [**XXL**](https://open.spotify.com/track/05QXjyZgsAq6J84J6SlbyV) - by *YOUNG POSSE* from the album 'XXL EP'
 - 2024-05-17. [**Magnetic**](https://open.spotify.com/track/1aKvZDoLGkNMxoRYgkckZG) - by *ILLIT* from the album 'SUPER REAL ME'
