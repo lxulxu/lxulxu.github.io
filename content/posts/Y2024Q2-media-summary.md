@@ -23,6 +23,7 @@ tags: [生活]
 - 2024-05-07. [**妈妈咪呀**](https://www.douban.com/location/drama/10944605/) - rating: ★★★★☆
 - 2024-05-11. [**猩球崛起：新世界**](http://movie.douban.com/subject/36069854/) - rating: ★★★★☆
 - 2024-05-17. [**特技狂人**](http://movie.douban.com/subject/35268614/) - rating: ★★★★☆
+- 2024-05-18. [**朝云暮雨**](http://movie.douban.com/subject/35359715/) - rating: ★★★☆☆
 ## 🎵MUSIC
 - 2024-05-01. [**Shhh**](https://open.spotify.com/track/76qqDJijAjFph7sjUxNVG8) - by *KISS OF LIFE* from the album 'KISS OF LIFE'
 - 2024-05-01. [**Nobody Knows**](https://open.spotify.com/track/70efTlnBNM8BvfhfPiqOBN) - by *KISS OF LIFE* from the album 'Born to be XX'
