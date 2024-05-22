@@ -84,7 +84,6 @@ tags: [生活]
 - 2024-05-17. [**藏星（电影《热辣滚烫》热辣绽放曲）**](https://open.spotify.com/track/1oCw1EeqkMIoum1FQUgEaj) - by *Silence Wang* from the album '藏星（电影《热辣滚烫》热辣绽放曲）'
 - 2024-05-17. [**Có Em Chờ**](https://open.spotify.com/track/3z7at2LZwJsg8UvqGw3JAv) - by *MIN, Mr A* from the album 'Có Em Chờ'
 - 2024-05-17. [**Wife**](https://open.spotify.com/track/1j8jqwFpFQ8YqsIJAiYFLZ) - by *(G)I-DLE* from the album '2'
-- 2024-05-17. [**XXL**](https://open.spotify.com/track/05QXjyZgsAq6J84J6SlbyV) - by *YOUNG POSSE* from the album 'XXL EP'
 - 2024-05-17. [**Birth**](https://open.spotify.com/track/6aPXjtda2SdTi8rAcFlrOS) - by *ARTMS* from the album '<Pre 1 : Birth>'
 - 2024-05-17. [**Dancing On My Own**](https://open.spotify.com/track/3NJ6kH1NAPICgJKdidV0Gs) - by *Pixie Lott, Marty James* from the album 'Young Foolish Happy (Deluxe Edition)'
 - 2024-05-17. [**Black (Feat. JENNIE of BLACKPINK)**](https://open.spotify.com/track/44f1TNdoQUgf3PUYraCTsH) - by *G-DRAGON, JENNIE* from the album 'COUP D'ETAT (Korean Version)'
@@ -114,4 +113,5 @@ tags: [生活]
 - 2024-05-21. [**Midas Touch**](https://open.spotify.com/track/0vaxYDAuAO1nPolC6bQp7V) - by *KISS OF LIFE* from the album 'Midas Touch'
 - 2024-05-21. [**Supernova**](https://open.spotify.com/track/351KkakA2YtGEXqSEIIasy) - by *aespa* from the album 'Supernova'
 - 2024-05-21. [**Get A Guitar**](https://open.spotify.com/track/3Dah48XTdzVtbIl4dUn6l4) - by *RIIZE* from the album 'Get A Guitar'
+- 2024-05-22. [**XXL**](https://open.spotify.com/track/05QXjyZgsAq6J84J6SlbyV) - by *YOUNG POSSE* from the album 'XXL EP'
 - 2024-05-22. [**Magnetic**](https://open.spotify.com/track/1aKvZDoLGkNMxoRYgkckZG) - by *ILLIT* from the album 'SUPER REAL ME'
