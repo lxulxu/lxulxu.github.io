@@ -25,6 +25,8 @@ tags: [生活]
 - 2024-05-17. [**特技狂人**](http://movie.douban.com/subject/35268614/) - rating: ★★★★☆
 - 2024-05-18. [**朝云暮雨**](http://movie.douban.com/subject/35359715/) - rating: ★★★☆☆
 - 2024-05-18. [**彷徨之刃**](http://movie.douban.com/subject/35095466/) - rating: ★★★☆☆
+- 2024-05-23. [**庆余年 第二季**](http://movie.douban.com/subject/34937650/) - rating: ★★★★☆
+- 2024-05-23. [**狐妖小红娘·月红篇**](http://movie.douban.com/subject/26759937/) - rating: ★★★★☆
 ## 🎵MUSIC
 - 2024-05-01. [**Shhh**](https://open.spotify.com/track/76qqDJijAjFph7sjUxNVG8) - by *KISS OF LIFE* from the album 'KISS OF LIFE'
 - 2024-05-01. [**Nobody Knows**](https://open.spotify.com/track/70efTlnBNM8BvfhfPiqOBN) - by *KISS OF LIFE* from the album 'Born to be XX'
@@ -116,3 +118,4 @@ tags: [生活]
 - 2024-05-23. [**Without You (Feat. ROSE)**](https://open.spotify.com/track/3V375E3xldRPEEcIKiw83l) - by *G-DRAGON, ROSÉ* from the album 'One of a Kind'
 - 2024-05-23. [**Fall in Love**](https://open.spotify.com/track/406KPQqXM4AQlT5KSmFcvG) - by *Sophie Chen, Vicky Chen* from the album 'Fall in Love'
 - 2024-05-23. [**Savage**](https://open.spotify.com/track/3dbLT62Cvs46Ju7a8gpr36) - by *aespa* from the album 'Savage - The 1st Mini Album'
+- 2024-05-23. [**Tonight**](https://open.spotify.com/track/3snBeP8B2ZDmhH9GDWOhAH) - by *SPICA* from the album 'Tonight'
