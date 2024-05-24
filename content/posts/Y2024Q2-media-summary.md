@@ -27,6 +27,7 @@ tags: [生活]
 - 2024-05-18. [**彷徨之刃**](http://movie.douban.com/subject/35095466/) - rating: ★★★☆☆
 - 2024-05-23. [**庆余年 第二季**](http://movie.douban.com/subject/34937650/) - rating: ★★★★☆
 - 2024-05-23. [**狐妖小红娘·月红篇**](http://movie.douban.com/subject/26759937/) - rating: ★★★★☆
+- 2024-05-24. [**盟军敢死队**](http://movie.douban.com/subject/34971728/) - rating: ★★★☆☆
 ## 🎵MUSIC
 - 2024-05-01. [**Shhh**](https://open.spotify.com/track/76qqDJijAjFph7sjUxNVG8) - by *KISS OF LIFE* from the album 'KISS OF LIFE'
 - 2024-05-01. [**Nobody Knows**](https://open.spotify.com/track/70efTlnBNM8BvfhfPiqOBN) - by *KISS OF LIFE* from the album 'Born to be XX'
@@ -101,10 +102,10 @@ tags: [生活]
 - 2024-05-18. [**屋頂**](https://open.spotify.com/track/2edBRoaI2F2ST6WK0jdLUX) - by *Landy Wen, Jay Chou* from the album '有點野'
 - 2024-05-20. [**Angel (feat. Muni Long, JVKE, NLE Choppa) (Anniversary Edition)**](https://open.spotify.com/track/2PMEMxJCxOz0RGT0mQXXZq) - by *Jimin, Mark Ralph, JVKE, Muni Long, NLE Choppa* from the album 'Angel Anniversary Edition (feat. Muni Long, JVKE, NLE Choppa)'
 - 2024-05-21. [**Supernova**](https://open.spotify.com/track/351KkakA2YtGEXqSEIIasy) - by *aespa* from the album 'Supernova'
-- 2024-05-22. [**猜（电影《热辣滚烫》热辣心动曲）**](https://open.spotify.com/track/58OKa3g5rRVpFer06Z1Ahw) - by *希林娜依•高* from the album '猜（电影《热辣滚烫》热辣心动曲）'
 - 2024-05-22. [**Bam Yang Gang**](https://open.spotify.com/track/5juCu4WFTFRZ2XilopAMTy) - by *BIBI* from the album 'Bam Yang Gang'
 - 2024-05-23. [**The 6th Summer**](https://open.spotify.com/track/1lODrFR40rSNAw5cX4j2J2) - by *PLAVE* from the album 'ASTERUM : The Shape of Things to Come'
 - 2024-05-23. [**Phải Lòng Anh**](https://open.spotify.com/track/0bJFBiF7WQ9rAi6nsCZYBR) - by *MIN* from the album 'not a good time for love'
+- 2024-05-23. [**猜（电影《热辣滚烫》热辣心动曲）**](https://open.spotify.com/track/58OKa3g5rRVpFer06Z1Ahw) - by *希林娜依•高* from the album '猜（电影《热辣滚烫》热辣心动曲）'
 - 2024-05-23. [**藏星（电影《热辣滚烫》热辣绽放曲）**](https://open.spotify.com/track/1oCw1EeqkMIoum1FQUgEaj) - by *Silence Wang* from the album '藏星（电影《热辣滚烫》热辣绽放曲）'
 - 2024-05-23. [**Có Em Chờ**](https://open.spotify.com/track/3z7at2LZwJsg8UvqGw3JAv) - by *MIN, Mr A* from the album 'Có Em Chờ'
 - 2024-05-23. [**Wife**](https://open.spotify.com/track/1j8jqwFpFQ8YqsIJAiYFLZ) - by *(G)I-DLE* from the album '2'
