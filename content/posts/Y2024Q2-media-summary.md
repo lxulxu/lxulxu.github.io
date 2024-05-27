@@ -26,7 +26,7 @@ tags: [生活]
 - 2024-05-18. [**朝云暮雨**](http://movie.douban.com/subject/35359715/) - rating: ★★★☆☆
 - 2024-05-18. [**彷徨之刃**](http://movie.douban.com/subject/35095466/) - rating: ★★★☆☆
 - 2024-05-23. [**庆余年 第二季**](http://movie.douban.com/subject/34937650/) - rating: ★★★★☆
-- 2024-05-23. [**狐妖小红娘·月红篇**](http://movie.douban.com/subject/26759937/) - rating: ★★★★☆
+- 2024-05-23. [**狐妖小红娘·月红篇**](http://movie.douban.com/subject/26759937/) - rating: ★★★☆☆
 - 2024-05-24. [**盟军敢死队**](http://movie.douban.com/subject/34971728/) - rating: ★★★☆☆
 ## 🎵MUSIC
 - 2024-05-01. [**Shhh**](https://open.spotify.com/track/76qqDJijAjFph7sjUxNVG8) - by *KISS OF LIFE* from the album 'KISS OF LIFE'
