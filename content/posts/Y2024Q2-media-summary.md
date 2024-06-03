@@ -102,7 +102,6 @@ tags: [生活]
 - 2024-05-31. [**Tìm (Lost)**](https://open.spotify.com/track/24qhDjPwI1z78ZPidMpC6R) - by *MIN, Mr.A* from the album 'Tìm'
 - 2024-05-31. [**Runaway**](https://open.spotify.com/track/6h8oeJ62qCY0aThaKzQZqg) - by *Lost Kings, Destiny Rogers* from the album 'Runaway'
 - 2024-05-31. [**Can't Control Myself**](https://open.spotify.com/track/559f8rcNNZW07wz5Rfxnfh) - by *TAEYEON* from the album 'Can't Control Myself'
-- 2024-05-31. [**Fall in Love**](https://open.spotify.com/track/406KPQqXM4AQlT5KSmFcvG) - by *Sophie Chen, Vicky Chen* from the album 'Fall in Love'
 - 2024-05-31. [**Em Mới Là Người Yêu Anh**](https://open.spotify.com/track/1gIaX9HEGZsWSd5HDJatSr) - by *MIN* from the album 'Em Mới Là Người Yêu Anh'
 - 2024-06-01. [**Magnetic**](https://open.spotify.com/track/1aKvZDoLGkNMxoRYgkckZG) - by *ILLIT* from the album 'SUPER REAL ME'
 - 2024-06-01. [**Midas Touch**](https://open.spotify.com/track/0vaxYDAuAO1nPolC6bQp7V) - by *KISS OF LIFE* from the album 'Midas Touch'
@@ -124,4 +123,5 @@ tags: [生活]
 - 2024-06-03. [**夏天**](https://open.spotify.com/track/5plHkhLqsFla3nUJhtSZ7w) - by *Nicky Lee* from the album '好玖'
 - 2024-06-03. [**Without You (Feat. ROSE)**](https://open.spotify.com/track/3V375E3xldRPEEcIKiw83l) - by *G-DRAGON, ROSÉ* from the album 'One of a Kind'
 - 2024-06-03. [**Drama**](https://open.spotify.com/track/5XWlyfo0kZ8LF7VSyfS4Ew) - by *aespa* from the album 'Drama - The 4th Mini Album'
+- 2024-06-03. [**Fall in Love**](https://open.spotify.com/track/406KPQqXM4AQlT5KSmFcvG) - by *Sophie Chen, Vicky Chen* from the album 'Fall in Love'
 - 2024-06-03. [**Savage**](https://open.spotify.com/track/3dbLT62Cvs46Ju7a8gpr36) - by *aespa* from the album 'Savage - The 1st Mini Album'
