@@ -1,6 +1,6 @@
 ---
 title: "Y2024Q2 影视音总结"
-date: 2024-06-03
+date: 2024-06-04
 categories: [生活]
 tags: [生活]
 ---
@@ -95,7 +95,6 @@ tags: [生活]
 - 2024-05-23. [**Get A Guitar**](https://open.spotify.com/track/3Dah48XTdzVtbIl4dUn6l4) - by *RIIZE* from the album 'Get A Guitar'
 - 2024-05-24. [**Tonight**](https://open.spotify.com/track/3snBeP8B2ZDmhH9GDWOhAH) - by *SPICA* from the album 'Tonight'
 - 2024-05-31. [**Luôn Bên Anh**](https://open.spotify.com/track/0BNfReaAQjFPLpLsXyioLu) - by *MIN, Mr.A* from the album 'Luôn Bên Anh'
-- 2024-05-31. [**Dancing On My Own**](https://open.spotify.com/track/3NJ6kH1NAPICgJKdidV0Gs) - by *Pixie Lott, Marty James* from the album 'Young Foolish Happy (Deluxe Edition)'
 - 2024-05-31. [**Black (Feat. JENNIE of BLACKPINK)**](https://open.spotify.com/track/44f1TNdoQUgf3PUYraCTsH) - by *G-DRAGON, JENNIE* from the album 'COUP D'ETAT (Korean Version)'
 - 2024-05-31. [**LAST DANCE**](https://open.spotify.com/track/7ijWcf4FsoxoyPK4B9WGp6) - by *BIGBANG* from the album 'MADE'
 - 2024-05-31. [**Allergy**](https://open.spotify.com/track/38MKW2tQHtyO8djIOKlEFF) - by *(G)I-DLE* from the album 'I feel'
@@ -105,6 +104,7 @@ tags: [生活]
 - 2024-05-31. [**Em Mới Là Người Yêu Anh**](https://open.spotify.com/track/1gIaX9HEGZsWSd5HDJatSr) - by *MIN* from the album 'Em Mới Là Người Yêu Anh'
 - 2024-06-01. [**Magnetic**](https://open.spotify.com/track/1aKvZDoLGkNMxoRYgkckZG) - by *ILLIT* from the album 'SUPER REAL ME'
 - 2024-06-01. [**Midas Touch**](https://open.spotify.com/track/0vaxYDAuAO1nPolC6bQp7V) - by *KISS OF LIFE* from the album 'Midas Touch'
+- 2024-06-01. [**Dancing On My Own**](https://open.spotify.com/track/3NJ6kH1NAPICgJKdidV0Gs) - by *Pixie Lott, Marty James* from the album 'Young Foolish Happy (Deluxe Edition)'
 - 2024-06-01. [**屋頂**](https://open.spotify.com/track/2edBRoaI2F2ST6WK0jdLUX) - by *Landy Wen, Jay Chou* from the album '有點野'
 - 2024-06-01. [**在加納共和國離婚**](https://open.spotify.com/track/6GyUt7yJ0sOktc5HjvVnFh) - by *Firdhaus, DIOR 大穎* from the album '在加納共和國離婚'
 - 2024-06-01. [**愛人錯過**](https://open.spotify.com/track/27FOde2nUw0pFuj7hlPbaS) - by *告五人* from the album '我肯定在幾百年前就說過愛你'
@@ -125,3 +125,4 @@ tags: [生活]
 - 2024-06-03. [**Drama**](https://open.spotify.com/track/5XWlyfo0kZ8LF7VSyfS4Ew) - by *aespa* from the album 'Drama - The 4th Mini Album'
 - 2024-06-03. [**Fall in Love**](https://open.spotify.com/track/406KPQqXM4AQlT5KSmFcvG) - by *Sophie Chen, Vicky Chen* from the album 'Fall in Love'
 - 2024-06-03. [**Savage**](https://open.spotify.com/track/3dbLT62Cvs46Ju7a8gpr36) - by *aespa* from the album 'Savage - The 1st Mini Album'
+- 2024-06-03. [**大小姐的逃亡生涯**](https://open.spotify.com/track/3pypWm9a8ZQ8NGX9Vw3w8p) - by *洛天依, 言和* from the album '大小姐的逃亡生涯'
