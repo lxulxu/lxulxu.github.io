@@ -1,6 +1,6 @@
 ---
 title: "Y2024Q2 影视音总结"
-date: 2024-06-09
+date: 2024-06-10
 categories: [生活]
 tags: [生活]
 ---
@@ -97,7 +97,6 @@ tags: [生活]
 - 2024-06-01. [**山外小楼夜听雨**](https://open.spotify.com/track/4gTAbKQ04gK8MdOCzANjOu) - by *Ren Ran* from the album '从小到大'
 - 2024-06-01. [**廣島之戀**](https://open.spotify.com/track/1VpHU8KcaoB2WVVV2KDWEn) - by *Karen Mok, 張洪量* from the album '做自己'
 - 2024-06-03. [**大小姐的逃亡生涯**](https://open.spotify.com/track/3pypWm9a8ZQ8NGX9Vw3w8p) - by *洛天依, 言和* from the album '大小姐的逃亡生涯'
-- 2024-06-06. [**LAST DANCE**](https://open.spotify.com/track/7ijWcf4FsoxoyPK4B9WGp6) - by *BIGBANG* from the album 'MADE'
 - 2024-06-07. [**FXXK IT**](https://open.spotify.com/track/3lYvepDz6yYj29z7e4r5z0) - by *BIGBANG* from the album 'MADE'
 - 2024-06-07. [**Luôn Bên Anh**](https://open.spotify.com/track/0BNfReaAQjFPLpLsXyioLu) - by *MIN, Mr.A* from the album 'Luôn Bên Anh'
 - 2024-06-07. [**The 6th Summer**](https://open.spotify.com/track/1lODrFR40rSNAw5cX4j2J2) - by *PLAVE* from the album 'ASTERUM : The Shape of Things to Come'
@@ -114,6 +113,7 @@ tags: [生活]
 - 2024-06-07. [**BLACK**](https://open.spotify.com/track/7BYGfn9F73atTWMdAHVdPk) - by *G-DRAGON, Sky Ferreira* from the album 'COUP D'ETAT'
 - 2024-06-07. [**夏天**](https://open.spotify.com/track/5plHkhLqsFla3nUJhtSZ7w) - by *Nicky Lee* from the album '好玖'
 - 2024-06-07. [**Without You (Feat. ROSE)**](https://open.spotify.com/track/3V375E3xldRPEEcIKiw83l) - by *G-DRAGON, ROSÉ* from the album 'One of a Kind'
+- 2024-06-07. [**LAST DANCE**](https://open.spotify.com/track/7ijWcf4FsoxoyPK4B9WGp6) - by *BIGBANG* from the album 'MADE'
 - 2024-06-07. [**你和我和他之間**](https://open.spotify.com/track/52AQsGTohwUtmEhoV8fAbz) - by *Princess Ai, 竇智孔* from the album '愛情風暴-美麗99'
 - 2024-06-07. [**Allergy**](https://open.spotify.com/track/38MKW2tQHtyO8djIOKlEFF) - by *(G)I-DLE* from the album 'I feel'
 - 2024-06-07. [**Tìm (Lost)**](https://open.spotify.com/track/24qhDjPwI1z78ZPidMpC6R) - by *MIN, Mr.A* from the album 'Tìm'
@@ -126,3 +126,4 @@ tags: [生活]
 - 2024-06-07. [**Em Mới Là Người Yêu Anh**](https://open.spotify.com/track/1gIaX9HEGZsWSd5HDJatSr) - by *MIN* from the album 'Em Mới Là Người Yêu Anh'
 - 2024-06-07. [**Savage**](https://open.spotify.com/track/3dbLT62Cvs46Ju7a8gpr36) - by *aespa* from the album 'Savage - The 1st Mini Album'
 - 2024-06-09. [**Honey, Honey - From 'Mamma Mia!' Original Motion Picture Soundtrack**](https://open.spotify.com/track/6P4XyViJkq9QGEHtzfMIrH) - by *Amanda Seyfried, Ashley Lilley, Rachel McDowall* from the album 'Mamma Mia! The Movie Soundtrack'
+- 2024-06-09. [**借过一下 (《庆余年第二季》影视剧片尾曲)**](https://open.spotify.com/track/5c21VGPrbAlpGdlSY2Bpra) - by *Zhou Shen* from the album '借过一下 (《庆余年第二季》影视剧片尾曲)'
