@@ -28,6 +28,7 @@ tags: [生活]
 - 2024-05-23. [**庆余年 第二季**](http://movie.douban.com/subject/34937650/) - rating: ★★★★☆
 - 2024-05-23. [**狐妖小红娘·月红篇**](http://movie.douban.com/subject/26759937/) - rating: ★★★☆☆
 - 2024-05-24. [**盟军敢死队**](http://movie.douban.com/subject/34971728/) - rating: ★★★☆☆
+- 2024-06-12. [**走走停停**](http://movie.douban.com/subject/35956190/) - rating: ★★★★☆
 ## 🎵MUSIC
 - 2024-05-01. [**Shhh**](https://open.spotify.com/track/76qqDJijAjFph7sjUxNVG8) - by *KISS OF LIFE* from the album 'KISS OF LIFE'
 - 2024-05-01. [**Nobody Knows**](https://open.spotify.com/track/70efTlnBNM8BvfhfPiqOBN) - by *KISS OF LIFE* from the album 'Born to be XX'
@@ -137,3 +138,4 @@ tags: [生活]
 - 2024-06-12. [**Heartbreaker**](https://open.spotify.com/track/4n5GvONt7Niv5In6awXHR7) - by *G-DRAGON* from the album 'Heartbreaker'
 - 2024-06-12. [**Missing You (Feat. Kim Yuna)**](https://open.spotify.com/track/3BqfHyw9cLm6POreivziWN) - by *G-DRAGON, Kim Yuna* from the album 'One of a Kind'
 - 2024-06-12. [**Oh Yeah (Feat. Park Bom)**](https://open.spotify.com/track/2hn0s9jTuO4GqVAZboT7w8) - by *GD&TOP, Park Bom* from the album 'GD&TOP'
+- 2024-06-12. [**COUP D'ETAT**](https://open.spotify.com/track/3q0evJwZohI2FfXkfC5tSR) - by *G-DRAGON, Diplo, Baauer* from the album 'COUP D'ETAT'
