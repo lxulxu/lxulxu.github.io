@@ -29,6 +29,7 @@ tags: [生活]
 - 2024-05-23. [**狐妖小红娘·月红篇**](http://movie.douban.com/subject/26759937/) - rating: ★★★☆☆
 - 2024-05-24. [**盟军敢死队**](http://movie.douban.com/subject/34971728/) - rating: ★★★☆☆
 - 2024-06-12. [**走走停停**](http://movie.douban.com/subject/35956190/) - rating: ★★★★☆
+- 2024-06-13. [**看不见影子的少年**](http://movie.douban.com/subject/36282652/) - rating: ★★★★☆
 ## 🎵MUSIC
 - 2024-05-01. [**Shhh**](https://open.spotify.com/track/76qqDJijAjFph7sjUxNVG8) - by *KISS OF LIFE* from the album 'KISS OF LIFE'
 - 2024-05-01. [**Nobody Knows**](https://open.spotify.com/track/70efTlnBNM8BvfhfPiqOBN) - by *KISS OF LIFE* from the album 'Born to be XX'
