@@ -31,6 +31,7 @@ tags: [生活]
 - 2024-06-12. [**走走停停**](http://movie.douban.com/subject/35956190/) - rating: ★★★★☆
 - 2024-06-13. [**看不见影子的少年**](http://movie.douban.com/subject/36282652/) - rating: ★★★★☆
 - 2024-06-14. [**狗阵**](http://movie.douban.com/subject/35242872/) - rating: ★★☆☆☆
+- 2024-06-17. [**9号秘事 第九季**](http://movie.douban.com/subject/35919997/) - rating: ★★★★★
 ## 🎵MUSIC
 - 2024-05-01. [**Shhh**](https://open.spotify.com/track/76qqDJijAjFph7sjUxNVG8) - by *KISS OF LIFE* from the album 'KISS OF LIFE'
 - 2024-05-01. [**Nobody Knows**](https://open.spotify.com/track/70efTlnBNM8BvfhfPiqOBN) - by *KISS OF LIFE* from the album 'Born to be XX'
