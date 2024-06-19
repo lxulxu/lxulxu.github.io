@@ -189,3 +189,4 @@ tags: [生活]
 - 2024-06-13. [**ガラガラ GO！！**](https://open.spotify.com/track/5brqQm02a7xLvdStXioywi) - by *BIGBANG* from the album 'ガラガラ GO！！'
 - 2024-06-13. [**IF YOU**](https://open.spotify.com/track/4kaY4LbdbomICC25gYGGtn) - by *BIGBANG* from the album 'MADE'
 - 2024-06-13. [**Tonight**](https://open.spotify.com/track/2G8HyURZh9SBNuCzllz8Fu) - by *BIGBANG* from the album 'BIGBANG Special Edition'
+- 2024-06-19. [**ABCD**](https://open.spotify.com/track/0V2passWyAXnON67kfAj7y) - by *NAYEON* from the album 'NA'
