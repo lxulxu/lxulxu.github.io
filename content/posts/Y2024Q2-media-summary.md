@@ -32,6 +32,8 @@ tags: [生活]
 - 2024-06-13. [**看不见影子的少年**](http://movie.douban.com/subject/36282652/) - rating: ★★★★☆
 - 2024-06-14. [**狗阵**](http://movie.douban.com/subject/35242872/) - rating: ★★☆☆☆
 - 2024-06-17. [**9号秘事 第九季**](http://movie.douban.com/subject/35919997/) - rating: ★★★★★
+- 2024-06-19. [**金庸武侠世界**](http://movie.douban.com/subject/36092115/) - rating: ★★★☆☆
+- 2024-06-19. [**机器人之梦**](http://movie.douban.com/subject/35426925/) - rating: ★★★★☆
 ## 🎵MUSIC
 - 2024-05-01. [**Shhh**](https://open.spotify.com/track/76qqDJijAjFph7sjUxNVG8) - by *KISS OF LIFE* from the album 'KISS OF LIFE'
 - 2024-05-01. [**Nobody Knows**](https://open.spotify.com/track/70efTlnBNM8BvfhfPiqOBN) - by *KISS OF LIFE* from the album 'Born to be XX'
@@ -104,7 +106,6 @@ tags: [生活]
 - 2024-06-09. [**Honey, Honey - From 'Mamma Mia!' Original Motion Picture Soundtrack**](https://open.spotify.com/track/6P4XyViJkq9QGEHtzfMIrH) - by *Amanda Seyfried, Ashley Lilley, Rachel McDowall* from the album 'Mamma Mia! The Movie Soundtrack'
 - 2024-06-09. [**借过一下 (《庆余年第二季》影视剧片尾曲)**](https://open.spotify.com/track/5c21VGPrbAlpGdlSY2Bpra) - by *Zhou Shen* from the album '借过一下 (《庆余年第二季》影视剧片尾曲)'
 - 2024-06-12. [**BLACK**](https://open.spotify.com/track/7BYGfn9F73atTWMdAHVdPk) - by *G-DRAGON, Sky Ferreira* from the album 'COUP D'ETAT'
-- 2024-06-12. [**你和我和他之間**](https://open.spotify.com/track/52AQsGTohwUtmEhoV8fAbz) - by *Princess Ai, 竇智孔* from the album '愛情風暴-美麗99'
 - 2024-06-12. [**One Of A Kind**](https://open.spotify.com/track/6CtYW6EWGMbfe96eqwCThq) - by *G-DRAGON* from the album 'One of a Kind'
 - 2024-06-12. [**STAY WITH ME**](https://open.spotify.com/track/4Hznsw4SROqqX8T54Syguv) - by *TAEYANG, G-DRAGON* from the album 'RISE'
 - 2024-06-12. [**INTRO. 권지용 (Middle Fingers-Up)**](https://open.spotify.com/track/0ZzINCbYHNFtlGGjhNqTf3) - by *G-DRAGON* from the album 'KWON JI YONG'
@@ -179,6 +180,7 @@ tags: [生活]
 - 2024-06-19. [**夏天**](https://open.spotify.com/track/5plHkhLqsFla3nUJhtSZ7w) - by *Nicky Lee* from the album '好玖'
 - 2024-06-19. [**Without You (Feat. ROSE)**](https://open.spotify.com/track/3V375E3xldRPEEcIKiw83l) - by *G-DRAGON, ROSÉ* from the album 'One of a Kind'
 - 2024-06-19. [**LAST DANCE**](https://open.spotify.com/track/7ijWcf4FsoxoyPK4B9WGp6) - by *BIGBANG* from the album 'MADE'
+- 2024-06-19. [**你和我和他之間**](https://open.spotify.com/track/52AQsGTohwUtmEhoV8fAbz) - by *Princess Ai, 竇智孔* from the album '愛情風暴-美麗99'
 - 2024-06-19. [**Allergy**](https://open.spotify.com/track/38MKW2tQHtyO8djIOKlEFF) - by *(G)I-DLE* from the album 'I feel'
 - 2024-06-19. [**Tìm (Lost)**](https://open.spotify.com/track/24qhDjPwI1z78ZPidMpC6R) - by *MIN, Mr.A* from the album 'Tìm'
 - 2024-06-19. [**Runaway**](https://open.spotify.com/track/6h8oeJ62qCY0aThaKzQZqg) - by *Lost Kings, Destiny Rogers* from the album 'Runaway'
