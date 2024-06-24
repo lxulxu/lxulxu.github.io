@@ -197,3 +197,4 @@ tags: [生活]
 - 2024-06-21. [**Phải Lòng Anh**](https://open.spotify.com/track/0bJFBiF7WQ9rAi6nsCZYBR) - by *MIN* from the album 'not a good time for love'
 - 2024-06-21. [**猜（电影《热辣滚烫》热辣心动曲）**](https://open.spotify.com/track/58OKa3g5rRVpFer06Z1Ahw) - by *希林娜依•高* from the album '猜（电影《热辣滚烫》热辣心动曲）'
 - 2024-06-22. [**Balloon in Love**](https://open.spotify.com/track/3x6unDluyCL4v5AeGrAVGA) - by *SUNMI* from the album 'Balloon in Love'
+- 2024-06-23. [**黑糖秀主題曲 (feat. 黑澀會美眉)**](https://open.spotify.com/track/3rtXnyZilf2rQcewmvSgKK) - by *Lollipop F, 黑澀會美眉* from the album '黑糖瑪奇朵 偶像劇原聲帶'
