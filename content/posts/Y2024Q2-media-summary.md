@@ -35,6 +35,7 @@ tags: [生活]
 - 2024-06-19. [**金庸武侠世界**](http://movie.douban.com/subject/36092115/) - rating: ★★★☆☆
 - 2024-06-19. [**机器人之梦**](http://movie.douban.com/subject/35426925/) - rating: ★★★★☆
 - 2024-06-21. [**头脑特工队2**](http://movie.douban.com/subject/36090457/) - rating: ★★★★☆
+- 2024-06-25. [**谈判专家**](http://movie.douban.com/subject/36401888/) - rating: ★★★★☆
 ## 🎵MUSIC
 - 2024-05-01. [**Shhh**](https://open.spotify.com/track/76qqDJijAjFph7sjUxNVG8) - by *KISS OF LIFE* from the album 'KISS OF LIFE'
 - 2024-05-01. [**Nobody Knows**](https://open.spotify.com/track/70efTlnBNM8BvfhfPiqOBN) - by *KISS OF LIFE* from the album 'Born to be XX'
