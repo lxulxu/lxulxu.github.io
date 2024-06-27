@@ -195,7 +195,6 @@ tags: [生活]
 - 2024-06-26. [**Can't Control Myself**](https://open.spotify.com/track/559f8rcNNZW07wz5Rfxnfh) - by *TAEYEON* from the album 'Can't Control Myself'
 - 2024-06-26. [**Fall in Love**](https://open.spotify.com/track/406KPQqXM4AQlT5KSmFcvG) - by *Sophie Chen, Vicky Chen* from the album 'Fall in Love'
 - 2024-06-26. [**LALISA**](https://open.spotify.com/track/2KZ3sNqPogEyMUUH6A5HFy) - by *LISA* from the album 'LALISA'
-- 2024-06-26. [**Em Mới Là Người Yêu Anh**](https://open.spotify.com/track/1gIaX9HEGZsWSd5HDJatSr) - by *MIN* from the album 'Em Mới Là Người Yêu Anh'
 - 2024-06-26. [**Honey, Honey - From 'Mamma Mia!' Original Motion Picture Soundtrack**](https://open.spotify.com/track/6P4XyViJkq9QGEHtzfMIrH) - by *Amanda Seyfried, Ashley Lilley, Rachel McDowall* from the album 'Mamma Mia! The Movie Soundtrack'
 - 2024-06-26. [**ABCD**](https://open.spotify.com/track/0V2passWyAXnON67kfAj7y) - by *NAYEON* from the album 'NA'
 - 2024-06-26. [**Sucker**](https://open.spotify.com/track/22vgEDb5hykfaTwLuskFGD) - by *Jonas Brothers* from the album 'Happiness Begins'
@@ -209,3 +208,4 @@ tags: [生活]
 - 2024-06-26. [**Heaven Is A Place On Earth**](https://open.spotify.com/track/4V9BTST4BSkvOL4xIQNHuS) - by *Belinda Carlisle* from the album 'Heaven on Earth (Remastered & Expanded Special Edition)'
 - 2024-06-26. [**điều vô tri nhất**](https://open.spotify.com/track/3NvH1v6NOxlawEoCXjg9sK) - by *Kai Đinh, MIN, Hoàng Dũng* from the album 'điều vô tri nhất'
 - 2024-06-27. [**Dancing On My Own**](https://open.spotify.com/track/3NJ6kH1NAPICgJKdidV0Gs) - by *Pixie Lott, Marty James* from the album 'Young Foolish Happy (Deluxe Edition)'
+- 2024-06-27. [**Em Mới Là Người Yêu Anh**](https://open.spotify.com/track/1gIaX9HEGZsWSd5HDJatSr) - by *MIN* from the album 'Em Mới Là Người Yêu Anh'
