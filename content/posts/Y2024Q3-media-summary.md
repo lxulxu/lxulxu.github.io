@@ -5,3 +5,5 @@ categories: [生活]
 tags: [生活]
 ---
 
+## 🎬MOVIES
+- 2024-07-01. [**孤战迷城**](http://movie.douban.com/subject/35558694/) - rating: ★★★☆☆
