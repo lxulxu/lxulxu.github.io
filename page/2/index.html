@@ -15,8 +15,7 @@ IEEE 1735 结构 定义域(Definition area)：定义支持的供应商及其访�
 纯文本负载(Plain-text payload)：IP源码未加密部分
 以一个完整密钥文件内容为例
 1`pragma protect version = 2 2`pragma protect encrypt_agent = "XILINX" 3`pragma protect …
-<a href=https://lxulxu.github.io/posts/vivado_encrypted_ip_guide/>Read more...</a></div></article><article><h1><a href=https://lxulxu.github.io/posts/c++%E5%AE%89%E5%85%A8%E6%8C%87%E5%8D%97/></a></h1><b><time>01.01.0001 00:00</time></b><div>编程习惯 switch中应有default 不应在debug或错误信息中提供过多内容 不应该在客户端代码中硬编码对称加密秘钥 1 // Bad 2 char g_aes_key[] = {...}; 3 void Foo() { 4 .... 5 AES_func(g_aes_key, input_data, output_data); 6 } 1 // Good 2 char* g_aes_key; 3 void Foo() { 4 .... 5 AES_encrypt(g_aes_key, input_data, output_data); 6 } 7 void Init() { 8 g_aes_key = get_key_from_https(user_id, ...); 9 } 函数不可以返回栈上的变量的地址，而应当使用堆来传递非简单类型变量，强烈建议返回 string、vector 等类型。 1 // Bad 2 char* Foo(char* sz, int len){ 3 char a[300] = {0}; 4 if (len > 100) { 5 …
-<a href=https://lxulxu.github.io/posts/c++%E5%AE%89%E5%85%A8%E6%8C%87%E5%8D%97/>Read more...</a></div></article><div><a href=/>Previous Page</a>
+<a href=https://lxulxu.github.io/posts/vivado_encrypted_ip_guide/>Read more...</a></div></article><div><a href=/>Previous Page</a>
 2 of 2</div></main><footer><p>&copy; 2024 <a href=https://lxulxu.github.io/><b>lxulxu's blog</b></a>.
 <a href=https://github.com/lxulxu><b>Github</b></a>.
 <a href=https://space.bilibili.com/7739434><b>Bilibili</b></a>.</p></footer></body></html>
