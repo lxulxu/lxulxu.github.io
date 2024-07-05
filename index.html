@@ -3,7 +3,17 @@
 <a href=/posts/><b>Posts</b></a>.
 <a href=/categories/><b>Categories</b></a>.
 <a href=/tags/><b>Tags</b></a>.
-<a href=/about/><b>About</b></a>.</nav></p></header><main><article><h1><a href=https://lxulxu.github.io/posts/y2024q3-media-summary/>Y2024Q3 影视音总结</a></h1><b><time>05.07.2024 00:00</time></b>
+<a href=/about/><b>About</b></a>.</nav></p></header><main><article><h1><a href=https://lxulxu.github.io/posts/push_back_emplace_back/>C++中的push_back与emplace_back</a></h1><b><time>05.07.2024 00:00</time></b>
+<a href=/tags/c++>c++</a><div>1. 引言
+C++标准库提供了push_back和emplace_back两种向容器末尾添加元素的方法。本文将深入分析这两个函数的区别、使用场景，以及在实际应用中的性能考虑。
+2. 基本概念
+2.1 push_back push_back有两个重载版本：
+1void push_back(const T& value); 2void push_back(T&& value); 第一个版本复制元素，第二个版本移动元素。
+2.2 emplace_back emplace_back是C++11引入的变参模板函数：
+1template &lt;class... Args> 2void emplace_back(Args&&... args); 它直接在容器中构造对象，参数被完美转发给元素的构造函数。
+3. 主要区别
+构造方式：push_back需要预先构造的对象，emplace_back在容器内构造对象。 参数传递：push_back接受对象，emplace_back接受构造函数参数。 效率：emplace_back可能避免不必要的临时对象创建和复 …
+<a href=https://lxulxu.github.io/posts/push_back_emplace_back/>Read more...</a></div></article><article><h1><a href=https://lxulxu.github.io/posts/y2024q3-media-summary/>Y2024Q3 影视音总结</a></h1><b><time>05.07.2024 00:00</time></b>
 <a href=/tags/%E7%94%9F%E6%B4%BB>生活</a><div>🎬MOVIES 2024-07-01. 孤战迷城 - rating: ★★★☆☆ 2024-07-04. 默杀 - rating: ★★★☆☆ 🎵MUSIC 2024-07-04. Lights Out - by SUNMI, BE&rsquo;O from the album &lsquo;[BILLION MUSIC PROJECT VOL.1]&rsquo;</div></article><article><h1><a href=https://lxulxu.github.io/posts/y2024q2-media-summary/>Y2024Q2 影视音总结</a></h1><b><time>30.06.2024 00:00</time></b>
 <a href=/tags/%E7%94%9F%E6%B4%BB>生活</a><div>🎬MOVIES 2024-04-03. 又见逍遥 - rating: ★★☆☆☆ 2024-04-03. 草木人间 - rating: ★★★★☆ 2024-04-17. 追风者 - rating: ★★★★☆ 2024-04-19. 年少日记 - rating: ★★★★★ 2024-04-23. 城中之城 - rating: ★★★★☆ 2024-04-29. 哈尔滨一九四四 - rating: ★★★☆☆ 2024-05-01. 宝贝老板 - rating: ★★★★☆ 2024-05-02. 没有一顿火锅解决不了的事 - rating: ★★★☆☆ 2024-05-02. 九龙城寨之围城 - rating: ★★★★☆ 2024-05-02. 维和防暴队 - rating: ★★★☆☆ 2024-05-02. 对你的想象 - rating: ★★★☆☆ 2024-05-03. 新上海滩 - rating: ★★★★☆ 2024-05-04. 努尔哈赤秘史 - rating: ★★★★☆ 2024-05-04. 绝对计划 - rating: ★★★★★ 2024-05-07.
 <a href=https://lxulxu.github.io/posts/y2024q2-media-summary/>Read more...</a></div></article><article><h1><a href=https://lxulxu.github.io/posts/cplusplus_security_guide/>C++安全指南</a></h1><b><time>28.04.2024 08:20</time></b>
@@ -28,11 +38,7 @@ API 功能 系统设置相关函数 函数原型 功能 u32 XRFdc_CfgInitialize(
 <a href=https://lxulxu.github.io/posts/high_quality_cpp_programming_notes/>Read more...</a></div></article><article><h1><a href=https://lxulxu.github.io/posts/tcl-cheat-sheet/>Tcl Cheat Sheet</a></h1><b><time>30.08.2022 17:51</time></b>
 <a href=/tags/cheat-sheet>cheat-sheet</a>
 <a href=/tags/tcl>tcl</a><div>基础语法 1puts "Hello World"#输出 2set x [expr 1 == 2 ? 1 : 2]#设置变量；三元运算符 3[exec ls]#调用子进程 4 5#if 6if { $x &lt; 2} { ... } 7elseif { $x == 1 } { ... } 8 9#while 10while { $x &lt; 2 } { 11 incr x 12} 13 14#for 15for { set i 0 } { $i &lt; 5 } { incr i } { ... } 16 17#switch 18switch $x { 19 1 { .
-<a href=https://lxulxu.github.io/posts/tcl-cheat-sheet/>Read more...</a></div></article><article><h1><a href=https://lxulxu.github.io/posts/license_management_guide/>许可管理</a></h1><b><time>10.08.2022 21:50</time></b>
-<a href=/tags/ieee>IEEE</a>
-<a href=/tags/xilinx>xilinx</a><div>IEEE Std 1735-2014 Ch8 一些整理
-简介 定义 1`protect license_proxyname="acme_proxy" 2`protect license_attributes="USER,MAC,PROXYINFO=1.2" 3`protect license_symmetric_key_method="aes128-cbc" 4`protect license_public_key_method="rsa" 5`protect license_keyowner="ACME", license_keyname="ACME2014" 6`protect license_public_key 7AV6f6JyGUxBpr49EwxN7jfdUQcRqRFDN7Mto2ltk+emrRCQS+bW/Yvu8U3w9kx7g 8rCXFueY/S8lyKUExUP2Yi5C3K9WIFqF7Ov3Hm9/fEumxDzvYkGOGuGu/xv/OYIyb …
-<a href=https://lxulxu.github.io/posts/license_management_guide/>Read more...</a></div></article><div>1 of 2
+<a href=https://lxulxu.github.io/posts/tcl-cheat-sheet/>Read more...</a></div></article><div>1 of 2
 <a href=/page/2/>Next Page</a></div></main><footer><p>&copy; 2024 <a href=https://lxulxu.github.io/><b>lxulxu's blog</b></a>.
 <a href=https://github.com/lxulxu><b>Github</b></a>.
 <a href=https://space.bilibili.com/7739434><b>Bilibili</b></a>.</p></footer></body></html>
