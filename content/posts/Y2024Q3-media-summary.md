@@ -12,3 +12,4 @@ tags: [生活]
 - 2024-07-06. [**扫黑·决不放弃**](http://movie.douban.com/subject/35280899/) - rating: ★★★☆☆
 ## 🎵MUSIC
 - 2024-07-04. [**Lights Out**](https://open.spotify.com/track/1z7X7lFkoF2KRoDaxUfN99) - by *SUNMI, BE'O* from the album '[BILLION MUSIC PROJECT VOL.1]'
+- 2024-07-08. [**Hwi hwi**](https://open.spotify.com/track/5SVVoVAcI1kJKdvAqQxjzB) - by *LABOUM* from the album 'MISS THIS KISS'
