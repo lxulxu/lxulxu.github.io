@@ -144,10 +144,11 @@ vec.push_back(std::make_pair(1, std::string("complex")));
 
 选择`push_back`还是`emplace_back`取决于多个因素，包括对象类型、构造复杂度、代码可读性和具体的性能需求。`emplace_back` 经常被误认为比 `push_back` 更好，或者与移动语义相关，但这是错误的。在大多数情况下，选择最清晰、最直观的方法通常是最好的做法。
 
-**建议在日常使用中优先选择`push_back`。**只有在需要`emplace_back`的特定功能时（例如，当处理`deque<mutex>`或其他不可移动的类型时），或者在性能确实成为问题时，才考虑使用`emplace_back`。
+**建议在日常使用中优先选择`push_back`。** 只有在需要`emplace_back`的特定功能时（例如，当处理`deque<mutex>`或其他不可移动的类型时），或者在性能确实成为问题时，才考虑使用`emplace_back`。
 
 **8. 参考链接**
 
-[1] https://stackoverflow.com/questions/4303513/push-back-vs-emplace-back 
+[1] https://stackoverflow.com/questions/4303513/push-back-vs-emplace-back
+
 [2] https://quuxplusone.github.io/blog/2021/03/03/push-back-emplace-back/
 
