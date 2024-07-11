@@ -1,21 +1,21 @@
 /* 修改后的CSS样式 */
 html { overflow-y: scroll; }
 :root { 
-    --bgcolor: white; 
+    --bgcolor: #FFFFFB; 
     --fontcolor: #444;
     --linkcolor: #cb4042; 
     --visitedcolor: #e9a368; 
-    --precolor: #fff; 
-    --prebgcolor: #080808;
+    --precolor: #FFFFFB; 
+    --prebgcolor: #383838;
 }
 
 @media (prefers-color-scheme: dark) { 
     :root { 
-        --bgcolor: #080808; 
-        --fontcolor: white; 
+        --bgcolor: #383838; 
+        --fontcolor: #FFFFFB; 
         --linkcolor: #cb4042; 
         --visitedcolor: #e9a368; 
-        --precolor: #fff; 
+        --precolor: #FFFFFB; 
         --prebgcolor: #383838;
     }
 }
