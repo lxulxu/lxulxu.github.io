@@ -13,6 +13,7 @@ tags: [生活]
 - 2024-07-12. [**神偷奶爸4**](http://movie.douban.com/subject/30170847/) - rating: ★★★☆☆
 - 2024-07-12. [**落凡尘**](http://movie.douban.com/subject/36624248/) - rating: ★★★★☆
 - 2024-07-13. [**抓娃娃**](http://movie.douban.com/subject/36653918/) - rating: ★★★★☆
+- 2024-07-14. [**水中女妖**](http://movie.douban.com/subject/1441473/) - rating: ★★★☆☆
 ## 🎵MUSIC
 - 2024-07-04. [**Lights Out**](https://open.spotify.com/track/1z7X7lFkoF2KRoDaxUfN99) - by *SUNMI, BE'O* from the album '[BILLION MUSIC PROJECT VOL.1]'
 - 2024-07-11. [**猜（电影《热辣滚烫》热辣心动曲）**](https://open.spotify.com/track/58OKa3g5rRVpFer06Z1Ahw) - by *希林娜依•高* from the album '猜（电影《热辣滚烫》热辣心动曲）'
