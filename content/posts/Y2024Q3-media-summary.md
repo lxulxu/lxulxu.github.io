@@ -37,3 +37,6 @@ tags: [生活]
 - 2024-07-11. [**LET′S DANCE**](https://open.spotify.com/track/5OJFA4FvJAML5CgPzTjRM8) - by *LEE CHAE YEON* from the album 'The Move : Street'
 - 2024-07-11. [**HUSH RUSH**](https://open.spotify.com/track/0P2LW3jbuJLpH2mwg0lLzn) - by *LEE CHAE YEON* from the album 'HUSH RUSH'
 - 2024-07-11. [**Don′t**](https://open.spotify.com/track/5ra7GTL5v4TORuJqmJnZZx) - by *LEE CHAE YEON* from the album 'SHOWDOWN'
+- 2024-07-14. [**If I Were a Boy**](https://open.spotify.com/track/1oQZk2bKBLgP1cbuFKvjkq) - by *Beyoncé* from the album 'I AM...SASHA FIERCE - Platinum Edition'
+- 2024-07-14. [**Quand le rideau tombe**](https://open.spotify.com/track/1DtMUu18eX4VMO18LMWmA2) - by *Mozart Opera Rock* from the album 'Mozart l'Opera Rock (standard)'
+- 2024-07-14. [**L'Assasymphonie**](https://open.spotify.com/track/3fAOSZc5hTpnXxSO43ymwu) - by *Mozart Opera Rock* from the album 'Mozart l'Opera Rock (standard)'
