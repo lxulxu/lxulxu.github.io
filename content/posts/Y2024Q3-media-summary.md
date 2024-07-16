@@ -40,3 +40,5 @@ tags: [生活]
 - 2024-07-14. [**If I Were a Boy**](https://open.spotify.com/track/1oQZk2bKBLgP1cbuFKvjkq) - by *Beyoncé* from the album 'I AM...SASHA FIERCE - Platinum Edition'
 - 2024-07-14. [**Quand le rideau tombe**](https://open.spotify.com/track/1DtMUu18eX4VMO18LMWmA2) - by *Mozart Opera Rock* from the album 'Mozart l'Opera Rock (standard)'
 - 2024-07-14. [**L'Assasymphonie**](https://open.spotify.com/track/3fAOSZc5hTpnXxSO43ymwu) - by *Mozart Opera Rock* from the album 'Mozart l'Opera Rock (standard)'
+- 2024-07-16. [**My Favorite Things**](https://open.spotify.com/track/0w8Jpf1PoY44qvb5XSeUDl) - by *Audra McDonald, Carrie Underwood* from the album 'The Sound of Music (Music from the Television Special) (feat. Carrie Underwood)'
+- 2024-07-16. [**Heaven**](https://open.spotify.com/track/1fCKxY62wMnayTNSr3S3GN) - by *TAEYEON* from the album 'Heaven'
