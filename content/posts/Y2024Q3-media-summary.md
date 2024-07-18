@@ -42,3 +42,4 @@ tags: [生活]
 - 2024-07-16. [**Strawberry Rush**](https://open.spotify.com/track/1gq1gf44tZ9cyTdlcyoJd1) - by *CHUU* from the album 'Strawberry Rush'
 - 2024-07-16. [**My Favorite Things**](https://open.spotify.com/track/0w8Jpf1PoY44qvb5XSeUDl) - by *Audra McDonald, Carrie Underwood* from the album 'The Sound of Music (Music from the Television Special) (feat. Carrie Underwood)'
 - 2024-07-16. [**Heaven**](https://open.spotify.com/track/1fCKxY62wMnayTNSr3S3GN) - by *TAEYEON* from the album 'Heaven'
+- 2024-07-18. [**điều vô tri nhất**](https://open.spotify.com/track/3NvH1v6NOxlawEoCXjg9sK) - by *Kai Đinh, MIN, Hoàng Dũng* from the album 'điều vô tri nhất'
