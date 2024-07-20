@@ -1,6 +1,6 @@
 ---
 title: "Y2024Q3 影视音总结"
-date: 2024-07-19
+date: 2024-07-20
 categories: [生活]
 tags: [生活]
 ---
@@ -14,6 +14,7 @@ tags: [生活]
 - 2024-07-12. [**落凡尘**](http://movie.douban.com/subject/36624248/) - rating: ★★★★☆
 - 2024-07-13. [**抓娃娃**](http://movie.douban.com/subject/36653918/) - rating: ★★★★☆
 - 2024-07-14. [**水中女妖**](http://movie.douban.com/subject/1441473/) - rating: ★★★☆☆
+- 2024-07-19. [**从21世纪安全撤离**](http://movie.douban.com/subject/26816104/) - rating: ★★★★★
 ## 🎵MUSIC
 - 2024-07-04. [**Lights Out**](https://open.spotify.com/track/1z7X7lFkoF2KRoDaxUfN99) - by *SUNMI, BE'O* from the album '[BILLION MUSIC PROJECT VOL.1]'
 - 2024-07-11. [**猜（电影《热辣滚烫》热辣心动曲）**](https://open.spotify.com/track/58OKa3g5rRVpFer06Z1Ahw) - by *希林娜依•高* from the album '猜（电影《热辣滚烫》热辣心动曲）'
@@ -37,9 +38,9 @@ tags: [生活]
 - 2024-07-14. [**If I Were a Boy**](https://open.spotify.com/track/1oQZk2bKBLgP1cbuFKvjkq) - by *Beyoncé* from the album 'I AM...SASHA FIERCE - Platinum Edition'
 - 2024-07-14. [**Quand le rideau tombe**](https://open.spotify.com/track/1DtMUu18eX4VMO18LMWmA2) - by *Mozart Opera Rock* from the album 'Mozart l'Opera Rock (standard)'
 - 2024-07-14. [**L'Assasymphonie**](https://open.spotify.com/track/3fAOSZc5hTpnXxSO43ymwu) - by *Mozart Opera Rock* from the album 'Mozart l'Opera Rock (standard)'
-- 2024-07-16. [**Balloon in Love**](https://open.spotify.com/track/3x6unDluyCL4v5AeGrAVGA) - by *SUNMI* from the album 'Balloon in Love'
 - 2024-07-16. [**Hwi hwi**](https://open.spotify.com/track/5SVVoVAcI1kJKdvAqQxjzB) - by *LABOUM* from the album 'MISS THIS KISS'
 - 2024-07-16. [**Strawberry Rush**](https://open.spotify.com/track/1gq1gf44tZ9cyTdlcyoJd1) - by *CHUU* from the album 'Strawberry Rush'
 - 2024-07-16. [**My Favorite Things**](https://open.spotify.com/track/0w8Jpf1PoY44qvb5XSeUDl) - by *Audra McDonald, Carrie Underwood* from the album 'The Sound of Music (Music from the Television Special) (feat. Carrie Underwood)'
 - 2024-07-16. [**Heaven**](https://open.spotify.com/track/1fCKxY62wMnayTNSr3S3GN) - by *TAEYEON* from the album 'Heaven'
 - 2024-07-18. [**điều vô tri nhất**](https://open.spotify.com/track/3NvH1v6NOxlawEoCXjg9sK) - by *Kai Đinh, MIN, Hoàng Dũng* from the album 'điều vô tri nhất'
+- 2024-07-19. [**Balloon in Love**](https://open.spotify.com/track/3x6unDluyCL4v5AeGrAVGA) - by *SUNMI* from the album 'Balloon in Love'
