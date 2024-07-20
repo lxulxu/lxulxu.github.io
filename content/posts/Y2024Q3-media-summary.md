@@ -48,4 +48,5 @@ tags: [生活]
 - 2024-07-16. [**Heaven**](https://open.spotify.com/track/1fCKxY62wMnayTNSr3S3GN) - by *TAEYEON* from the album 'Heaven'
 - 2024-07-18. [**điều vô tri nhất**](https://open.spotify.com/track/3NvH1v6NOxlawEoCXjg9sK) - by *Kai Đinh, MIN, Hoàng Dũng* from the album 'điều vô tri nhất'
 - 2024-07-19. [**Balloon in Love**](https://open.spotify.com/track/3x6unDluyCL4v5AeGrAVGA) - by *SUNMI* from the album 'Balloon in Love'
+- 2024-07-20. [**I Can Do It With a Broken Heart**](https://open.spotify.com/track/4n93SK7dQsQVu9BM5QzvAx) - by *Taylor Swift* from the album 'I Can Do It With a Broken Heart'
 
