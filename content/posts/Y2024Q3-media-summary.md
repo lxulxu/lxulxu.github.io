@@ -15,6 +15,7 @@ tags: [生活]
 - 2024-07-13. [**抓娃娃**](http://movie.douban.com/subject/36653918/) - rating: ★★★★☆
 - 2024-07-14. [**水中女妖**](http://movie.douban.com/subject/1441473/) - rating: ★★★☆☆
 - 2024-07-19. [**从21世纪安全撤离**](http://movie.douban.com/subject/26816104/) - rating: ★★★★★
+- 2024-07-22. [**B+侦探**](http://movie.douban.com/subject/4118060/) - rating: ★★★☆☆
 
 ## 📚BOOKS
 - 2024-07-20. [**置身事内**](https://book.douban.com/subject/35546622/) - rating: ★★★★☆
