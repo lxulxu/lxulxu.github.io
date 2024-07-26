@@ -16,6 +16,7 @@ tags: [生活]
 - 2024-07-14. [**水中女妖**](http://movie.douban.com/subject/1441473/) - rating: ★★★☆☆
 - 2024-07-19. [**从21世纪安全撤离**](http://movie.douban.com/subject/26816104/) - rating: ★★★★★
 - 2024-07-22. [**B+侦探**](http://movie.douban.com/subject/4118060/) - rating: ★★★☆☆
+- 2024-07-26. [**死侍与金刚狼**](http://movie.douban.com/subject/26957900/) - rating: ★★★★☆
 
 ## 📚BOOKS
 - 2024-07-20. [**置身事内**](https://book.douban.com/subject/35546622/) - rating: ★★★★☆
@@ -42,7 +43,6 @@ tags: [生活]
 - 2024-07-23. [**Tìm (Lost)**](https://open.spotify.com/track/24qhDjPwI1z78ZPidMpC6R) - by *MIN, Mr.A* from the album 'Tìm'
 - 2024-07-24. [**The 6th Summer**](https://open.spotify.com/track/1lODrFR40rSNAw5cX4j2J2) - by *PLAVE* from the album 'ASTERUM : The Shape of Things to Come'
 - 2024-07-24. [**Phải Lòng Anh**](https://open.spotify.com/track/0bJFBiF7WQ9rAi6nsCZYBR) - by *MIN* from the album 'not a good time for love'
-- 2024-07-24. [**猜（电影《热辣滚烫》热辣心动曲）**](https://open.spotify.com/track/58OKa3g5rRVpFer06Z1Ahw) - by *希林娜依•高* from the album '猜（电影《热辣滚烫》热辣心动曲）'
 - 2024-07-24. [**藏星（电影《热辣滚烫》热辣绽放曲）**](https://open.spotify.com/track/1oCw1EeqkMIoum1FQUgEaj) - by *Silence Wang* from the album '藏星（电影《热辣滚烫》热辣绽放曲）'
 - 2024-07-24. [**Có Em Chờ**](https://open.spotify.com/track/3z7at2LZwJsg8UvqGw3JAv) - by *MIN, Mr A* from the album 'Có Em Chờ'
 - 2024-07-24. [**Wife**](https://open.spotify.com/track/1j8jqwFpFQ8YqsIJAiYFLZ) - by *(G)I-DLE* from the album '2'
@@ -61,6 +61,7 @@ tags: [生活]
 - 2024-07-24. [**喜歡你(喜歡我)**](https://open.spotify.com/track/2CJzadzgwIKRdsEtAAHhef) - by *Yida Huang* from the album '黃義達 過程 精選'
 - 2024-07-24. [**這樣就很好**](https://open.spotify.com/track/2uXU9BDz57vdTP5TH59WwL) - by *Nicky Lee* from the album '這樣就很好'
 - 2024-07-26. [**Luôn Bên Anh**](https://open.spotify.com/track/0BNfReaAQjFPLpLsXyioLu) - by *MIN, Mr.A* from the album 'Luôn Bên Anh'
+- 2024-07-26. [**猜（电影《热辣滚烫》热辣心动曲）**](https://open.spotify.com/track/58OKa3g5rRVpFer06Z1Ahw) - by *希林娜依•高* from the album '猜（电影《热辣滚烫》热辣心动曲）'
 - 2024-07-26. [**Dancing On My Own**](https://open.spotify.com/track/3NJ6kH1NAPICgJKdidV0Gs) - by *Pixie Lott, Marty James* from the album 'Young Foolish Happy (Deluxe Edition)'
 - 2024-07-26. [**Black (Feat. JENNIE of BLACKPINK)**](https://open.spotify.com/track/44f1TNdoQUgf3PUYraCTsH) - by *G-DRAGON, JENNIE* from the album 'COUP D'ETAT (Korean Version)'
 - 2024-07-26. [**LAST DANCE**](https://open.spotify.com/track/7ijWcf4FsoxoyPK4B9WGp6) - by *BIGBANG* from the album 'MADE'
