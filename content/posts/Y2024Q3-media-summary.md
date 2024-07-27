@@ -17,6 +17,7 @@ tags: [生活]
 - 2024-07-19. [**从21世纪安全撤离**](http://movie.douban.com/subject/26816104/) - rating: ★★★★★
 - 2024-07-22. [**B+侦探**](http://movie.douban.com/subject/4118060/) - rating: ★★★☆☆
 - 2024-07-26. [**死侍与金刚狼**](http://movie.douban.com/subject/26957900/) - rating: ★★★★☆
+- 2024-07-27. [**异人之下**](http://movie.douban.com/subject/35228399/) - rating: ★★★★☆
 
 ## 📚BOOKS
 - 2024-07-20. [**置身事内**](https://book.douban.com/subject/35546622/) - rating: ★★★★☆
