@@ -42,7 +42,6 @@ tags: [生活]
 - 2024-07-22. [**I Can Do It With a Broken Heart**](https://open.spotify.com/track/4n93SK7dQsQVu9BM5QzvAx) - by *Taylor Swift* from the album 'I Can Do It With a Broken Heart'
 - 2024-07-22. [**I Can Do It With a Broken Heart - Instrumental**](https://open.spotify.com/track/0Z8YQJNXTCZqflWehjoJqJ) - by *Taylor Swift* from the album 'I Can Do It With a Broken Heart'
 - 2024-07-23. [**Tìm (Lost)**](https://open.spotify.com/track/24qhDjPwI1z78ZPidMpC6R) - by *MIN, Mr.A* from the album 'Tìm'
-- 2024-07-24. [**想見你想見你想見你(電視劇"想見你"片尾曲)**](https://open.spotify.com/track/69zgyr5HVKdInjeKpq1qHa) - by *831* from the album '想見你想見你想見你(電視劇"想見你"片尾曲)'
 - 2024-07-24. [**九张机**](https://open.spotify.com/track/5HbUBxrnmYigbyZFTSnlFk) - by *叶炫清* from the album '九张机'
 - 2024-07-24. [**一念執著**](https://open.spotify.com/track/5ql8N4h66Hqse2hTameDqH) - by *胡歌, 阿蘭* from the album '步步驚心主題曲原聲EP'
 - 2024-07-24. [**喜歡你(喜歡我)**](https://open.spotify.com/track/2CJzadzgwIKRdsEtAAHhef) - by *Yida Huang* from the album '黃義達 過程 精選'
@@ -72,4 +71,5 @@ tags: [生活]
 - 2024-07-26. [**Hwi hwi**](https://open.spotify.com/track/5SVVoVAcI1kJKdvAqQxjzB) - by *LABOUM* from the album 'MISS THIS KISS'
 - 2024-07-26. [**Strawberry Rush**](https://open.spotify.com/track/1gq1gf44tZ9cyTdlcyoJd1) - by *CHUU* from the album 'Strawberry Rush'
 - 2024-07-29. [**If I Were a Boy**](https://open.spotify.com/track/1oQZk2bKBLgP1cbuFKvjkq) - by *Beyoncé* from the album 'I AM...SASHA FIERCE - Platinum Edition'
+- 2024-08-02. [**想見你想見你想見你(電視劇"想見你"片尾曲)**](https://open.spotify.com/track/69zgyr5HVKdInjeKpq1qHa) - by *831* from the album '想見你想見你想見你(電視劇"想見你"片尾曲)'
 
