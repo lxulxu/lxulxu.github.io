@@ -69,8 +69,8 @@ tags: [生活]
 - 2024-07-26. [**Em Mới Là Người Yêu Anh**](https://open.spotify.com/track/1gIaX9HEGZsWSd5HDJatSr) - by *MIN* from the album 'Em Mới Là Người Yêu Anh'
 - 2024-07-26. [**ABCD**](https://open.spotify.com/track/0V2passWyAXnON67kfAj7y) - by *NAYEON* from the album 'NA'
 - 2024-07-26. [**Balloon in Love**](https://open.spotify.com/track/3x6unDluyCL4v5AeGrAVGA) - by *SUNMI* from the album 'Balloon in Love'
-- 2024-07-26. [**Hwi hwi**](https://open.spotify.com/track/5SVVoVAcI1kJKdvAqQxjzB) - by *LABOUM* from the album 'MISS THIS KISS'
 - 2024-07-26. [**Strawberry Rush**](https://open.spotify.com/track/1gq1gf44tZ9cyTdlcyoJd1) - by *CHUU* from the album 'Strawberry Rush'
 - 2024-07-29. [**If I Were a Boy**](https://open.spotify.com/track/1oQZk2bKBLgP1cbuFKvjkq) - by *Beyoncé* from the album 'I AM...SASHA FIERCE - Platinum Edition'
+- 2024-07-29. [**Hwi hwi**](https://open.spotify.com/track/5SVVoVAcI1kJKdvAqQxjzB) - by *LABOUM* from the album 'MISS THIS KISS'
 - 2024-08-02. [**想見你想見你想見你(電視劇"想見你"片尾曲)**](https://open.spotify.com/track/69zgyr5HVKdInjeKpq1qHa) - by *831* from the album '想見你想見你想見你(電視劇"想見你"片尾曲)'
 
