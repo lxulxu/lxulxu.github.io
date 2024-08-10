@@ -19,6 +19,8 @@ tags: [生活]
 - 2024-07-26. [**死侍与金刚狼**](http://movie.douban.com/subject/26957900/) - rating: ★★★★☆
 - 2024-07-27. [**异人之下**](http://movie.douban.com/subject/35228399/) - rating: ★★★★☆
 - 2024-08-03. [**解密**](http://movie.douban.com/subject/26370387/) - rating: ★★★★☆
+- 2024-08-10. [**逆行人生**](http://movie.douban.com/subject/36774001/) - rating: ★★★★☆
+- 2024-08-10. [**白蛇：浮生**](http://movie.douban.com/subject/36463483/) - rating: ★★★★☆
 
 ## 📚BOOKS
 - 2024-07-20. [**置身事内**](https://book.douban.com/subject/35546622/) - rating: ★★★★☆
