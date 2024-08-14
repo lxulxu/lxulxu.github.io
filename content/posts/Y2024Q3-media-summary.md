@@ -58,9 +58,6 @@ tags: [生活]
 - 2024-08-08. [**Midas Touch**](https://open.spotify.com/track/0vaxYDAuAO1nPolC6bQp7V) - by *KISS OF LIFE* from the album 'Midas Touch'
 - 2024-08-08. [**LALISA**](https://open.spotify.com/track/2KZ3sNqPogEyMUUH6A5HFy) - by *LISA* from the album 'LALISA'
 - 2024-08-08. [**ABCD**](https://open.spotify.com/track/0V2passWyAXnON67kfAj7y) - by *NAYEON* from the album 'NA'
-- 2024-08-08. [**Balloon in Love**](https://open.spotify.com/track/3x6unDluyCL4v5AeGrAVGA) - by *SUNMI* from the album 'Balloon in Love'
-- 2024-08-08. [**Hwi hwi**](https://open.spotify.com/track/5SVVoVAcI1kJKdvAqQxjzB) - by *LABOUM* from the album 'MISS THIS KISS'
-- 2024-08-08. [**Strawberry Rush**](https://open.spotify.com/track/1gq1gf44tZ9cyTdlcyoJd1) - by *CHUU* from the album 'Strawberry Rush'
 - 2024-08-09. [**Get Out!**](https://open.spotify.com/track/5c4jORYQDQs4ZSkKs79MJ3) - by *MIN* from the album 'Stuck'
 - 2024-08-09. [**LoveNote**](https://open.spotify.com/track/7bNHAaXoydvYaWr2sLTZgJ) - by *Binz, MIN* from the album 'LoveNote'
 - 2024-08-09. [**I Heart You**](https://open.spotify.com/track/6WdNqFrLvArBK3P5XuEZAp) - by *MIN, ERIK* from the album 'YÊU'
@@ -119,4 +116,7 @@ tags: [生活]
 - 2024-08-13. [**Stuck (Nhớ)**](https://open.spotify.com/track/73dTh8WY5vzOI3ByjMjxKI) - by *MIN* from the album 'Stuck'
 - 2024-08-13. [**Shine Your Light**](https://open.spotify.com/track/6Qk3MFAGqCqsbsbLy7wIad) - by *MIN, JustaTee* from the album 'Shine Your Light'
 - 2024-08-13. [**M#1 - Intro**](https://open.spotify.com/track/4t6wHqVgY1DoZLWw0bRDzi) - by *MIN* from the album 'Tìm'
+- 2024-08-14. [**Balloon in Love**](https://open.spotify.com/track/3x6unDluyCL4v5AeGrAVGA) - by *SUNMI* from the album 'Balloon in Love'
+- 2024-08-14. [**Hwi hwi**](https://open.spotify.com/track/5SVVoVAcI1kJKdvAqQxjzB) - by *LABOUM* from the album 'MISS THIS KISS'
+- 2024-08-14. [**Strawberry Rush**](https://open.spotify.com/track/1gq1gf44tZ9cyTdlcyoJd1) - by *CHUU* from the album 'Strawberry Rush'
 
