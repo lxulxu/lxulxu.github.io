@@ -16,7 +16,7 @@ proxies:
   name: JMS-924690@c53s3.portablesubmarines.com:7713
   network: tcp
   port: 7713
-  server: 198.181.43.84
+  server: 198.181.40.239
   tls: false
   type: vmess
   uuid: 005b8be6-7cc3-4b45-8a91-7cb3d8da0486
