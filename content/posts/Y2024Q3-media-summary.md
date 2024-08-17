@@ -23,6 +23,7 @@ tags: [生活]
 - 2024-08-10. [**白蛇：浮生**](http://movie.douban.com/subject/36463483/) - rating: ★★★★☆
 - 2024-08-16. [**异形：契约**](http://movie.douban.com/subject/11803087/) - rating: ★★★★☆
 - 2024-08-16. [**异形：夺命舰**](http://movie.douban.com/subject/35792500/) - rating: ★★★★☆
+- 2024-08-17. [**九部的检察官**](http://movie.douban.com/subject/36206859/) - rating: ★★★★☆
 
 ## 📚BOOKS
 - 2024-07-20. [**置身事内**](https://book.douban.com/subject/35546622/) - rating: ★★★★☆
