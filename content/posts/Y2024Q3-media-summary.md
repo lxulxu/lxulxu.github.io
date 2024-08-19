@@ -111,7 +111,6 @@ tags: [生活]
 - 2024-08-16. [**LoveNote**](https://open.spotify.com/track/7bNHAaXoydvYaWr2sLTZgJ) - by *Binz, MIN* from the album 'LoveNote'
 - 2024-08-16. [**If U Have A Dream (feat. R.Tee, Kai Đinh & Tinle)**](https://open.spotify.com/track/6irVy1D9fsv0ZUKxKRrL3P) - by *MIN, Kai Đinh, Rtee, Tinle* from the album 'If U Have A Dream (feat. R.Tee, Kai Đinh & Tinle)'
 - 2024-08-16. [**Hòa Nhịp Giáng Sinh**](https://open.spotify.com/track/7M0u8F97mL9clTqpCluRv4) - by *MIN* from the album 'Hòa Nhịp Giáng Sinh'
-- 2024-08-16. [**If You Have A Dream - 2**](https://open.spotify.com/track/61k187Ygyhw9PUckZc1A3J) - by *Rtee, MIN, TINLE* from the album 'If You Have A Dream 2'
 - 2024-08-16. [**Anh Qua Đây Đi**](https://open.spotify.com/track/6n8jt9dFY0qG5oioNW23wi) - by *MIN* from the album '50/50'
 - 2024-08-16. [**Có Em Chờ - 2**](https://open.spotify.com/track/20qgpSJvtadLyAM2BqBhGs) - by *Kai Đinh, MIN* from the album 'Lâu Phai (lofi) 1'
 - 2024-08-16. [**Tình Yêu Màu Nắng**](https://open.spotify.com/track/2qATLutygByNypdM3Faje5) - by *Forest Studio, Trúc Nhân, MIN* from the album 'Trạm 2: Xuân Hạ Thu Đông, rồi lại Xuân 2'
@@ -127,5 +126,6 @@ tags: [生活]
 - 2024-08-19. [**Get Out!**](https://open.spotify.com/track/5c4jORYQDQs4ZSkKs79MJ3) - by *MIN* from the album 'Stuck'
 - 2024-08-19. [**I Heart You**](https://open.spotify.com/track/6WdNqFrLvArBK3P5XuEZAp) - by *MIN, ERIK* from the album 'YÊU'
 - 2024-08-19. [**Phải Lòng Anh**](https://open.spotify.com/track/0MIg7hUu4Pa90AX7lGO9ei) - by *MIN* from the album '50/50'
+- 2024-08-19. [**If You Have A Dream - 2**](https://open.spotify.com/track/61k187Ygyhw9PUckZc1A3J) - by *Rtee, MIN, TINLE* from the album 'If You Have A Dream 2'
 - 2024-08-19. [**tinhdau tinhdau tinhdau**](https://open.spotify.com/track/1tY6IGfIFwLyNZA8KfoGVs) - by *Kai Đinh, Orange* from the album 'winter warmer'
 
