@@ -102,7 +102,6 @@ tags: [生活]
 - 2024-08-20. [**你和我和他之間**](https://open.spotify.com/track/52AQsGTohwUtmEhoV8fAbz) - by *Princess Ai, 竇智孔* from the album '愛情風暴-美麗99'
 - 2024-08-20. [**G999 (Feat. Mirani)**](https://open.spotify.com/track/5ZOS622xElEIE8VmkwNfcP) - by *Moon Byul, MIRANI* from the album 'G999 (Feat. Mirani)'
 - 2024-08-20. [**Drama**](https://open.spotify.com/track/5XWlyfo0kZ8LF7VSyfS4Ew) - by *aespa* from the album 'Drama - The 4th Mini Album'
-- 2024-08-20. [**LALISA**](https://open.spotify.com/track/2KZ3sNqPogEyMUUH6A5HFy) - by *LISA* from the album 'LALISA'
 - 2024-08-20. [**ABCD**](https://open.spotify.com/track/0V2passWyAXnON67kfAj7y) - by *NAYEON* from the album 'NA'
 - 2024-08-20. [**Balloon in Love**](https://open.spotify.com/track/3x6unDluyCL4v5AeGrAVGA) - by *SUNMI* from the album 'Balloon in Love'
 - 2024-08-20. [**điều vô tri nhất**](https://open.spotify.com/track/3NvH1v6NOxlawEoCXjg9sK) - by *Kai Đinh, MIN, Hoàng Dũng* from the album 'điều vô tri nhất'
@@ -128,5 +127,6 @@ tags: [生活]
 - 2024-08-21. [**Runaway**](https://open.spotify.com/track/6h8oeJ62qCY0aThaKzQZqg) - by *Lost Kings, Destiny Rogers* from the album 'Runaway'
 - 2024-08-21. [**Can't Control Myself**](https://open.spotify.com/track/559f8rcNNZW07wz5Rfxnfh) - by *TAEYEON* from the album 'Can't Control Myself'
 - 2024-08-21. [**Fall in Love**](https://open.spotify.com/track/406KPQqXM4AQlT5KSmFcvG) - by *Sophie Chen, Vicky Chen* from the album 'Fall in Love'
+- 2024-08-21. [**LALISA**](https://open.spotify.com/track/2KZ3sNqPogEyMUUH6A5HFy) - by *LISA* from the album 'LALISA'
 - 2024-08-21. [**Em Mới Là Người Yêu Anh**](https://open.spotify.com/track/1gIaX9HEGZsWSd5HDJatSr) - by *MIN* from the album 'Em Mới Là Người Yêu Anh'
 
