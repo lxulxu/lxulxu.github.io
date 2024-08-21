@@ -24,6 +24,7 @@ tags: [生活]
 - 2024-08-16. [**异形：契约**](http://movie.douban.com/subject/11803087/) - rating: ★★★★☆
 - 2024-08-16. [**异形：夺命舰**](http://movie.douban.com/subject/35792500/) - rating: ★★★★☆
 - 2024-08-17. [**九部的检察官**](http://movie.douban.com/subject/36206859/) - rating: ★★★★☆
+- 2024-08-21. [**孤舟**](http://movie.douban.com/subject/35633856/) - rating: ★★★☆☆
 
 ## 📚BOOKS
 - 2024-07-20. [**置身事内**](https://book.douban.com/subject/35546622/) - rating: ★★★★☆
@@ -89,9 +90,6 @@ tags: [生活]
 - 2024-08-19. [**Hè Phải Bay**](https://open.spotify.com/track/75wMAQuGPogUQSRVH39Zra) - by *MIN, Mr.A* from the album 'Hè Phải Bay'
 - 2024-08-19. [**I Heart You**](https://open.spotify.com/track/6WdNqFrLvArBK3P5XuEZAp) - by *MIN, ERIK* from the album 'YÊU'
 - 2024-08-19. [**If You Have A Dream - 2**](https://open.spotify.com/track/61k187Ygyhw9PUckZc1A3J) - by *Rtee, MIN, TINLE* from the album 'If You Have A Dream 2'
-- 2024-08-20. [**FXXK IT**](https://open.spotify.com/track/3lYvepDz6yYj29z7e4r5z0) - by *BIGBANG* from the album 'MADE'
-- 2024-08-20. [**Luôn Bên Anh**](https://open.spotify.com/track/0BNfReaAQjFPLpLsXyioLu) - by *MIN, Mr.A* from the album 'Luôn Bên Anh'
-- 2024-08-20. [**The 6th Summer**](https://open.spotify.com/track/1lODrFR40rSNAw5cX4j2J2) - by *PLAVE* from the album 'ASTERUM : The Shape of Things to Come'
 - 2024-08-20. [**猜（电影《热辣滚烫》热辣心动曲）**](https://open.spotify.com/track/58OKa3g5rRVpFer06Z1Ahw) - by *希林娜依•高* from the album '猜（电影《热辣滚烫》热辣心动曲）'
 - 2024-08-20. [**藏星（电影《热辣滚烫》热辣绽放曲）**](https://open.spotify.com/track/1oCw1EeqkMIoum1FQUgEaj) - by *Silence Wang* from the album '藏星（电影《热辣滚烫》热辣绽放曲）'
 - 2024-08-20. [**Có Em Chờ**](https://open.spotify.com/track/3z7at2LZwJsg8UvqGw3JAv) - by *MIN, Mr A* from the album 'Có Em Chờ'
@@ -99,22 +97,12 @@ tags: [生活]
 - 2024-08-20. [**XXL**](https://open.spotify.com/track/05QXjyZgsAq6J84J6SlbyV) - by *YOUNG POSSE* from the album 'XXL EP'
 - 2024-08-20. [**Magnetic**](https://open.spotify.com/track/1aKvZDoLGkNMxoRYgkckZG) - by *ILLIT* from the album 'SUPER REAL ME'
 - 2024-08-20. [**Midas Touch**](https://open.spotify.com/track/0vaxYDAuAO1nPolC6bQp7V) - by *KISS OF LIFE* from the album 'Midas Touch'
-- 2024-08-20. [**Dancing On My Own**](https://open.spotify.com/track/3NJ6kH1NAPICgJKdidV0Gs) - by *Pixie Lott, Marty James* from the album 'Young Foolish Happy (Deluxe Edition)'
-- 2024-08-20. [**Black (Feat. JENNIE of BLACKPINK)**](https://open.spotify.com/track/44f1TNdoQUgf3PUYraCTsH) - by *G-DRAGON, JENNIE* from the album 'COUP D'ETAT (Korean Version)'
 - 2024-08-20. [**BLACK**](https://open.spotify.com/track/7BYGfn9F73atTWMdAHVdPk) - by *G-DRAGON, Sky Ferreira* from the album 'COUP D'ETAT'
 - 2024-08-20. [**夏天**](https://open.spotify.com/track/5plHkhLqsFla3nUJhtSZ7w) - by *Nicky Lee* from the album '好玖'
-- 2024-08-20. [**Without You (Feat. ROSE)**](https://open.spotify.com/track/3V375E3xldRPEEcIKiw83l) - by *G-DRAGON, ROSÉ* from the album 'One of a Kind'
-- 2024-08-20. [**LAST DANCE**](https://open.spotify.com/track/7ijWcf4FsoxoyPK4B9WGp6) - by *BIGBANG* from the album 'MADE'
 - 2024-08-20. [**你和我和他之間**](https://open.spotify.com/track/52AQsGTohwUtmEhoV8fAbz) - by *Princess Ai, 竇智孔* from the album '愛情風暴-美麗99'
-- 2024-08-20. [**Allergy**](https://open.spotify.com/track/38MKW2tQHtyO8djIOKlEFF) - by *(G)I-DLE* from the album 'I feel'
-- 2024-08-20. [**Tìm (Lost)**](https://open.spotify.com/track/24qhDjPwI1z78ZPidMpC6R) - by *MIN, Mr.A* from the album 'Tìm'
-- 2024-08-20. [**Runaway**](https://open.spotify.com/track/6h8oeJ62qCY0aThaKzQZqg) - by *Lost Kings, Destiny Rogers* from the album 'Runaway'
 - 2024-08-20. [**G999 (Feat. Mirani)**](https://open.spotify.com/track/5ZOS622xElEIE8VmkwNfcP) - by *Moon Byul, MIRANI* from the album 'G999 (Feat. Mirani)'
 - 2024-08-20. [**Drama**](https://open.spotify.com/track/5XWlyfo0kZ8LF7VSyfS4Ew) - by *aespa* from the album 'Drama - The 4th Mini Album'
-- 2024-08-20. [**Can't Control Myself**](https://open.spotify.com/track/559f8rcNNZW07wz5Rfxnfh) - by *TAEYEON* from the album 'Can't Control Myself'
-- 2024-08-20. [**Fall in Love**](https://open.spotify.com/track/406KPQqXM4AQlT5KSmFcvG) - by *Sophie Chen, Vicky Chen* from the album 'Fall in Love'
 - 2024-08-20. [**LALISA**](https://open.spotify.com/track/2KZ3sNqPogEyMUUH6A5HFy) - by *LISA* from the album 'LALISA'
-- 2024-08-20. [**Em Mới Là Người Yêu Anh**](https://open.spotify.com/track/1gIaX9HEGZsWSd5HDJatSr) - by *MIN* from the album 'Em Mới Là Người Yêu Anh'
 - 2024-08-20. [**ABCD**](https://open.spotify.com/track/0V2passWyAXnON67kfAj7y) - by *NAYEON* from the album 'NA'
 - 2024-08-20. [**Balloon in Love**](https://open.spotify.com/track/3x6unDluyCL4v5AeGrAVGA) - by *SUNMI* from the album 'Balloon in Love'
 - 2024-08-20. [**điều vô tri nhất**](https://open.spotify.com/track/3NvH1v6NOxlawEoCXjg9sK) - by *Kai Đinh, MIN, Hoàng Dũng* from the album 'điều vô tri nhất'
@@ -128,4 +116,17 @@ tags: [生活]
 - 2024-08-20. [**Take Me Away**](https://open.spotify.com/track/7ENyuG8dBrSc540l0LoWes) - by *MIN* from the album 'Take Me Away'
 - 2024-08-20. [**Shine Your Light**](https://open.spotify.com/track/6Qk3MFAGqCqsbsbLy7wIad) - by *MIN, JustaTee* from the album 'Shine Your Light'
 - 2024-08-20. [**tinhdau tinhdau tinhdau**](https://open.spotify.com/track/1tY6IGfIFwLyNZA8KfoGVs) - by *Kai Đinh, Orange* from the album 'winter warmer'
+- 2024-08-21. [**FXXK IT**](https://open.spotify.com/track/3lYvepDz6yYj29z7e4r5z0) - by *BIGBANG* from the album 'MADE'
+- 2024-08-21. [**Luôn Bên Anh**](https://open.spotify.com/track/0BNfReaAQjFPLpLsXyioLu) - by *MIN, Mr.A* from the album 'Luôn Bên Anh'
+- 2024-08-21. [**The 6th Summer**](https://open.spotify.com/track/1lODrFR40rSNAw5cX4j2J2) - by *PLAVE* from the album 'ASTERUM : The Shape of Things to Come'
+- 2024-08-21. [**Dancing On My Own**](https://open.spotify.com/track/3NJ6kH1NAPICgJKdidV0Gs) - by *Pixie Lott, Marty James* from the album 'Young Foolish Happy (Deluxe Edition)'
+- 2024-08-21. [**Black (Feat. JENNIE of BLACKPINK)**](https://open.spotify.com/track/44f1TNdoQUgf3PUYraCTsH) - by *G-DRAGON, JENNIE* from the album 'COUP D'ETAT (Korean Version)'
+- 2024-08-21. [**Without You (Feat. ROSE)**](https://open.spotify.com/track/3V375E3xldRPEEcIKiw83l) - by *G-DRAGON, ROSÉ* from the album 'One of a Kind'
+- 2024-08-21. [**LAST DANCE**](https://open.spotify.com/track/7ijWcf4FsoxoyPK4B9WGp6) - by *BIGBANG* from the album 'MADE'
+- 2024-08-21. [**Allergy**](https://open.spotify.com/track/38MKW2tQHtyO8djIOKlEFF) - by *(G)I-DLE* from the album 'I feel'
+- 2024-08-21. [**Tìm (Lost)**](https://open.spotify.com/track/24qhDjPwI1z78ZPidMpC6R) - by *MIN, Mr.A* from the album 'Tìm'
+- 2024-08-21. [**Runaway**](https://open.spotify.com/track/6h8oeJ62qCY0aThaKzQZqg) - by *Lost Kings, Destiny Rogers* from the album 'Runaway'
+- 2024-08-21. [**Can't Control Myself**](https://open.spotify.com/track/559f8rcNNZW07wz5Rfxnfh) - by *TAEYEON* from the album 'Can't Control Myself'
+- 2024-08-21. [**Fall in Love**](https://open.spotify.com/track/406KPQqXM4AQlT5KSmFcvG) - by *Sophie Chen, Vicky Chen* from the album 'Fall in Love'
+- 2024-08-21. [**Em Mới Là Người Yêu Anh**](https://open.spotify.com/track/1gIaX9HEGZsWSd5HDJatSr) - by *MIN* from the album 'Em Mới Là Người Yêu Anh'
 
