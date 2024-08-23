@@ -25,6 +25,8 @@ tags: [生活]
 - 2024-08-16. [**异形：夺命舰**](http://movie.douban.com/subject/35792500/) - rating: ★★★★☆
 - 2024-08-17. [**九部的检察官**](http://movie.douban.com/subject/36206859/) - rating: ★★★★☆
 - 2024-08-21. [**孤舟**](http://movie.douban.com/subject/35633856/) - rating: ★★★☆☆
+- 2024-08-23. [**刺猬**](http://movie.douban.com/subject/35633904/) - rating: ★★★★☆
+- 2024-08-23. [**前途无量**](http://movie.douban.com/subject/36372330/) - rating: ★★★★☆
 
 ## 📚BOOKS
 - 2024-07-20. [**置身事内**](https://book.douban.com/subject/35546622/) - rating: ★★★★☆
@@ -109,29 +111,29 @@ tags: [生活]
 - 2024-08-21. [**Balloon in Love**](https://open.spotify.com/track/3x6unDluyCL4v5AeGrAVGA) - by *SUNMI* from the album 'Balloon in Love'
 - 2024-08-21. [**Hwi hwi**](https://open.spotify.com/track/5SVVoVAcI1kJKdvAqQxjzB) - by *LABOUM* from the album 'MISS THIS KISS'
 - 2024-08-21. [**Strawberry Rush**](https://open.spotify.com/track/1gq1gf44tZ9cyTdlcyoJd1) - by *CHUU* from the album 'Strawberry Rush'
-- 2024-08-22. [**Luôn Bên Anh**](https://open.spotify.com/track/0BNfReaAQjFPLpLsXyioLu) - by *MIN, Mr.A* from the album 'Luôn Bên Anh'
-- 2024-08-22. [**Có Em Chờ**](https://open.spotify.com/track/3z7at2LZwJsg8UvqGw3JAv) - by *MIN, Mr A* from the album 'Có Em Chờ'
-- 2024-08-22. [**Tìm (Lost)**](https://open.spotify.com/track/24qhDjPwI1z78ZPidMpC6R) - by *MIN, Mr.A* from the album 'Tìm'
-- 2024-08-22. [**Em Mới Là Người Yêu Anh**](https://open.spotify.com/track/1gIaX9HEGZsWSd5HDJatSr) - by *MIN* from the album 'Em Mới Là Người Yêu Anh'
-- 2024-08-22. [**điều vô tri nhất**](https://open.spotify.com/track/3NvH1v6NOxlawEoCXjg9sK) - by *Kai Đinh, MIN, Hoàng Dũng* from the album 'điều vô tri nhất'
-- 2024-08-22. [**YÊU**](https://open.spotify.com/track/1upDvualT1Yw3Keme0HwIj) - by *MIN* from the album 'YÊU'
-- 2024-08-22. [**Ghen**](https://open.spotify.com/track/6jghnZHYAyNlEiWbxDITjy) - by *MIN, ERIK, Khắc Hưng* from the album 'Ghen'
-- 2024-08-22. [**Hít Vào Thở Ra**](https://open.spotify.com/track/5tde5yVjCHtigasaTQ4x02) - by *MIN, HIEUTHUHAI* from the album 'Hít Vào Thở Ra'
-- 2024-08-22. [**Trên Tình Bạn Dưới Tình Yêu**](https://open.spotify.com/track/4zFgUpC8z88A9aEo7dnRPN) - by *MIN* from the album '50/50'
 - 2024-08-22. [**để tôi ôm em bằng giai điệu này**](https://open.spotify.com/track/5qbjUmVV1yOOjcMOInNPYD) - by *Kai Đinh, MIN, GREY D* from the album 'winter warmer'
-- 2024-08-22. [**Steps2fame**](https://open.spotify.com/track/0fMHnEAutqHjDZkd1Z00Qn) - by *MIN* from the album 'Steps2fame'
-- 2024-08-22. [**Get Out!**](https://open.spotify.com/track/5c4jORYQDQs4ZSkKs79MJ3) - by *MIN* from the album 'Stuck'
 - 2024-08-22. [**I Heart You**](https://open.spotify.com/track/6WdNqFrLvArBK3P5XuEZAp) - by *MIN, ERIK* from the album 'YÊU'
-- 2024-08-22. [**Phải Lòng Anh**](https://open.spotify.com/track/0MIg7hUu4Pa90AX7lGO9ei) - by *MIN* from the album '50/50'
-- 2024-08-22. [**Anh Qua Đây Đi**](https://open.spotify.com/track/6n8jt9dFY0qG5oioNW23wi) - by *MIN* from the album '50/50'
-- 2024-08-22. [**Take Me Away**](https://open.spotify.com/track/7ENyuG8dBrSc540l0LoWes) - by *MIN* from the album 'Take Me Away'
-- 2024-08-22. [**Shine Your Light**](https://open.spotify.com/track/6Qk3MFAGqCqsbsbLy7wIad) - by *MIN, JustaTee* from the album 'Shine Your Light'
 - 2024-08-22. [**Is This Love? (Sped Up Ver.)**](https://open.spotify.com/track/5knzVXv8KtFfNeAX4lfmc0) - by *Moon Byul* from the album 'Starlit of Twinkle : REPACKAGE'
 - 2024-08-22. [**TOUCHIN&MOVIN (English Ver.)**](https://open.spotify.com/track/5c4jbUaELmT8pfRTwACZ7j) - by *Moon Byul* from the album 'Starlit of Twinkle : REPACKAGE'
 - 2024-08-22. [**Dear.**](https://open.spotify.com/track/3BUsxN8g6JoNm9NA7TtAJM) - by *Moon Byul* from the album 'Starlit of Twinkle : REPACKAGE'
 - 2024-08-22. [**Is This Love?**](https://open.spotify.com/track/0pi3F910SNsgncUDkX3e8y) - by *Moon Byul* from the album 'Starlit of Twinkle : REPACKAGE'
 - 2024-08-22. [**Backpack**](https://open.spotify.com/track/10X5qEa8YJwhCbLAjPeTxp) - by *Moon Byul* from the album 'Starlit of Twinkle : REPACKAGE'
+- 2024-08-23. [**Luôn Bên Anh**](https://open.spotify.com/track/0BNfReaAQjFPLpLsXyioLu) - by *MIN, Mr.A* from the album 'Luôn Bên Anh'
+- 2024-08-23. [**Có Em Chờ**](https://open.spotify.com/track/3z7at2LZwJsg8UvqGw3JAv) - by *MIN, Mr A* from the album 'Có Em Chờ'
+- 2024-08-23. [**Tìm (Lost)**](https://open.spotify.com/track/24qhDjPwI1z78ZPidMpC6R) - by *MIN, Mr.A* from the album 'Tìm'
+- 2024-08-23. [**Em Mới Là Người Yêu Anh**](https://open.spotify.com/track/1gIaX9HEGZsWSd5HDJatSr) - by *MIN* from the album 'Em Mới Là Người Yêu Anh'
+- 2024-08-23. [**điều vô tri nhất**](https://open.spotify.com/track/3NvH1v6NOxlawEoCXjg9sK) - by *Kai Đinh, MIN, Hoàng Dũng* from the album 'điều vô tri nhất'
+- 2024-08-23. [**YÊU**](https://open.spotify.com/track/1upDvualT1Yw3Keme0HwIj) - by *MIN* from the album 'YÊU'
+- 2024-08-23. [**Ghen**](https://open.spotify.com/track/6jghnZHYAyNlEiWbxDITjy) - by *MIN, ERIK, Khắc Hưng* from the album 'Ghen'
+- 2024-08-23. [**Hít Vào Thở Ra**](https://open.spotify.com/track/5tde5yVjCHtigasaTQ4x02) - by *MIN, HIEUTHUHAI* from the album 'Hít Vào Thở Ra'
+- 2024-08-23. [**Trên Tình Bạn Dưới Tình Yêu**](https://open.spotify.com/track/4zFgUpC8z88A9aEo7dnRPN) - by *MIN* from the album '50/50'
 - 2024-08-23. [**Cà Phê**](https://open.spotify.com/track/5cvW3PYJeQjRTnj9vHP5Va) - by *MIN* from the album '50/50'
 - 2024-08-23. [**Vì Yêu Cứ Đâm Đầu**](https://open.spotify.com/track/02Jf3KszL1FB1kG6CILEWE) - by *MIN, Đen, JustaTee* from the album 'Vì Yêu Cứ Đâm Đầu'
+- 2024-08-23. [**Steps2fame**](https://open.spotify.com/track/0fMHnEAutqHjDZkd1Z00Qn) - by *MIN* from the album 'Steps2fame'
 - 2024-08-23. [**Hè Phải Bay**](https://open.spotify.com/track/75wMAQuGPogUQSRVH39Zra) - by *MIN, Mr.A* from the album 'Hè Phải Bay'
+- 2024-08-23. [**Get Out!**](https://open.spotify.com/track/5c4jORYQDQs4ZSkKs79MJ3) - by *MIN* from the album 'Stuck'
+- 2024-08-23. [**Phải Lòng Anh**](https://open.spotify.com/track/0MIg7hUu4Pa90AX7lGO9ei) - by *MIN* from the album '50/50'
+- 2024-08-23. [**Anh Qua Đây Đi**](https://open.spotify.com/track/6n8jt9dFY0qG5oioNW23wi) - by *MIN* from the album '50/50'
+- 2024-08-23. [**Take Me Away**](https://open.spotify.com/track/7ENyuG8dBrSc540l0LoWes) - by *MIN* from the album 'Take Me Away'
+- 2024-08-23. [**Shine Your Light**](https://open.spotify.com/track/6Qk3MFAGqCqsbsbLy7wIad) - by *MIN, JustaTee* from the album 'Shine Your Light'
 
