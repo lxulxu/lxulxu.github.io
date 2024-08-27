@@ -124,7 +124,6 @@ tags: [生活]
 - 2024-08-23. [**YÊU**](https://open.spotify.com/track/1upDvualT1Yw3Keme0HwIj) - by *MIN* from the album 'YÊU'
 - 2024-08-23. [**Ghen**](https://open.spotify.com/track/6jghnZHYAyNlEiWbxDITjy) - by *MIN, ERIK, Khắc Hưng* from the album 'Ghen'
 - 2024-08-23. [**Hít Vào Thở Ra**](https://open.spotify.com/track/5tde5yVjCHtigasaTQ4x02) - by *MIN, HIEUTHUHAI* from the album 'Hít Vào Thở Ra'
-- 2024-08-23. [**Hè Phải Bay**](https://open.spotify.com/track/75wMAQuGPogUQSRVH39Zra) - by *MIN, Mr.A* from the album 'Hè Phải Bay'
 - 2024-08-23. [**Anh Qua Đây Đi**](https://open.spotify.com/track/6n8jt9dFY0qG5oioNW23wi) - by *MIN* from the album '50/50'
 - 2024-08-24. [**不能說的秘密**](https://open.spotify.com/track/77jIEebt4z9WzaI6LsntDG) - by *Jay Chou* from the album '不能說的秘密電影原聲帶'
 - 2024-08-24. [**最長的電影**](https://open.spotify.com/track/4J1vA4sgG6FJ1j21UugbtH) - by *Jay Chou* from the album '我很忙'
@@ -147,6 +146,7 @@ tags: [生活]
 - 2024-08-26. [**Vì Yêu Cứ Đâm Đầu**](https://open.spotify.com/track/02Jf3KszL1FB1kG6CILEWE) - by *MIN, Đen, JustaTee* from the album 'Vì Yêu Cứ Đâm Đầu'
 - 2024-08-26. [**để tôi ôm em bằng giai điệu này**](https://open.spotify.com/track/5qbjUmVV1yOOjcMOInNPYD) - by *Kai Đinh, MIN, GREY D* from the album 'winter warmer'
 - 2024-08-26. [**Steps2fame**](https://open.spotify.com/track/0fMHnEAutqHjDZkd1Z00Qn) - by *MIN* from the album 'Steps2fame'
+- 2024-08-26. [**Hè Phải Bay**](https://open.spotify.com/track/75wMAQuGPogUQSRVH39Zra) - by *MIN, Mr.A* from the album 'Hè Phải Bay'
 - 2024-08-26. [**Get Out!**](https://open.spotify.com/track/5c4jORYQDQs4ZSkKs79MJ3) - by *MIN* from the album 'Stuck'
 - 2024-08-26. [**I Heart You**](https://open.spotify.com/track/6WdNqFrLvArBK3P5XuEZAp) - by *MIN, ERIK* from the album 'YÊU'
 - 2024-08-26. [**Phải Lòng Anh**](https://open.spotify.com/track/0MIg7hUu4Pa90AX7lGO9ei) - by *MIN* from the album '50/50'
@@ -166,4 +166,5 @@ tags: [生活]
 - 2024-08-26. [**我落淚．情緒零碎**](https://open.spotify.com/track/6X4gGPP7K1ElsNnmc6BYKs) - by *Jay Chou* from the album '跨時代'
 - 2024-08-26. [**粉色海洋**](https://open.spotify.com/track/2PEm4ZfvupUu0zd5gfLqRt) - by *Jay Chou* from the album '最偉大的作品'
 - 2024-08-26. [**聽見下雨的聲音**](https://open.spotify.com/track/41xbDSEbEqCxqA7gVhIKM4) - by *Jay Chou* from the album '哎呦，不錯哦'
+- 2024-08-26. [**煙花易冷**](https://open.spotify.com/track/24beWW0pQCJEF3IVSpIryu) - by *Jay Chou* from the album '跨時代'
 
