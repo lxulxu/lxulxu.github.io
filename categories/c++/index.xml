@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C++ on lxulxu's blog</title><link>https://lxulxu.github.io/categories/c++/</link><description>Recent content in C++ on lxulxu's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 05 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://lxulxu.github.io/categories/c++/index.xml" rel="self" type="application/rss+xml"/><item><title>C++中的push_back与emplace_back</title><link>https://lxulxu.github.io/posts/push_back_emplace_back/</link><pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/push_back_emplace_back/</guid><description>1. 引言
-C++标准库提供了push_back和emplace_back两种向容器末尾添加元素的方法。本文将深入分析这两个函数的区别、使用场景，以及在实际应用中的性能考虑。
-2. 基本概念
-2.1 push_back push_back有两个重载版本：
-1void push_back(const T&amp;amp; value); 2void push_back(T&amp;amp;&amp;amp; value); 第一个版本复制元素，第二个版本移动元素。
-2.2 emplace_back emplace_back是C++11引入的变参模板函数：
-1template &amp;lt;class... Args&amp;gt; 2void emplace_back(Args&amp;amp;&amp;amp;... args); 它直接在容器中构造对象，参数被完美转发给元素的构造函数。
-3. 主要区别
-构造方式：push_back需要预先构造的对象，emplace_back在容器内构造对象。 参数传递：push_back接受对象，emplace_back接受构造函数参数。 效率：emplace_back可能避免不必要的临时对象创建和复制/移动操作。 灵活性：emplace_back可直接传递构造函数参数。 编译复杂度：emplace_back作为变参模板可能增加编译时间和内存使用。 4. 使用示例
-4.1 简单类型
-1std::vector&amp;lt;int&amp;gt; vec; 2vec.push_back(10); // push_back 足够简单高效 4.2 复杂对象构造
-1std::vector&amp;lt;std::pair&amp;lt;int, std::string&amp;gt;&amp;gt; vec; 2// 使用 push_back 3vec.push_back(std::make_pair(1, &amp;#34;one&amp;#34;)); 4// 使用 emplace_back 5vec.emplace_back(1, &amp;#34;one&amp;#34;); // 更简洁，直接传递构造函数参数 4.3 不可移动类型
-1std::vector&amp;lt;std::mutex&amp;gt; mutexes; 2mutexes.emplace_back(); // 可以工作，直接在容器中构造 mutex 3// mutexes.push_back(std::mutex()); // 编译错误，mutex 不可复制或移动 5.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C++ on lxulxu's blog</title><link>https://lxulxu.github.io/categories/c++/</link><description>Recent content in C++ on lxulxu's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 05 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://lxulxu.github.io/categories/c++/index.xml" rel="self" type="application/rss+xml"/><item><title>C++中的push_back与emplace_back</title><link>https://lxulxu.github.io/posts/push_back_emplace_back/</link><pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/push_back_emplace_back/</guid><description>&lt;p>&lt;strong>1. 引言&lt;/strong>&lt;/p>
+&lt;p>C++标准库提供了&lt;code>push_back&lt;/code>和&lt;code>emplace_back&lt;/code>两种向容器末尾添加元素的方法。本文将深入分析这两个函数的区别、使用场景，以及在实际应用中的性能考虑。&lt;/p>
+&lt;p>&lt;strong>2. 基本概念&lt;/strong>&lt;/p>
+&lt;p>2.1 push_back
+&lt;code>push_back&lt;/code>有两个重载版本：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">1&lt;/span>&lt;span>&lt;span style="color:#fabd2f">void&lt;/span> &lt;span style="color:#fabd2f">push_back&lt;/span>(&lt;span style="color:#fe8019">const&lt;/span> T&lt;span style="color:#fe8019">&amp;amp;&lt;/span> value);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">2&lt;/span>&lt;span>&lt;span style="color:#fabd2f">void&lt;/span> &lt;span style="color:#fabd2f">push_back&lt;/span>(T&lt;span style="color:#fe8019">&amp;amp;&amp;amp;&lt;/span> value);
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>第一个版本复制元素，第二个版本移动元素。&lt;/p>
+&lt;p>2.2 emplace_back
+&lt;code>emplace_back&lt;/code>是C++11引入的变参模板函数：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">1&lt;/span>&lt;span>&lt;span style="color:#fe8019">template&lt;/span> &lt;span style="color:#fe8019">&amp;lt;&lt;/span>&lt;span style="color:#fe8019">class&lt;/span>... Args&lt;span style="color:#fe8019">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">2&lt;/span>&lt;span>&lt;span style="color:#fabd2f">void&lt;/span> emplace_back(Args&lt;span style="color:#fe8019">&amp;amp;&amp;amp;&lt;/span>... args);
+&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item></channel></rss>

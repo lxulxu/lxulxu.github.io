@@ -1,30 +1,681 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xilinx on lxulxu's blog</title><link>https://lxulxu.github.io/categories/xilinx/</link><description>Recent content in Xilinx on lxulxu's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 28 Feb 2023 18:54:18 +0000</lastBuildDate><atom:link href="https://lxulxu.github.io/categories/xilinx/index.xml" rel="self" type="application/rss+xml"/><item><title>RF Analyzer 简介</title><link>https://lxulxu.github.io/posts/rf_analyzer_introduction/</link><pubDate>Tue, 28 Feb 2023 18:54:18 +0000</pubDate><guid>https://lxulxu.github.io/posts/rf_analyzer_introduction/</guid><description>参考PG269 Ch1 &amp;amp; Ch2。
-特点 多达16个14-bit RF-DAC Gen 1/Gen 2:4个14-bit二倍频RF-ADC tile，2/4个14-bit四倍频RF-ADC tile； Gen 3:1/2/4个14-bit二倍频RF-ADC tile，2/4个14-bit四倍频RF-ADC tile。 支持多个转换器之间的对齐(多片同步(MTS)) 支持预编程RF-DAC和RF-ADC，用户可以定义关键参数 RF-ADC和RF-DAC有多个AX14-Stream数据接口 单独的AX14-Lite配置接口 Gen 1/Gen 2:1x(旁路)，2x, 4x, 8x抽取和插值 Gen 3:1x(旁路)，2x, 3x, 4x, 5x, 6x, 8x, 10x, 12x, 16x, 20x, 24x, 40x抽取和插值后的额外的2x插值 数字复合混频器和数控振荡器(NCO) 正交调制校正(QMC)，Gen 3每个RF-ADC有嵌入式数字步进衰减器(DSA)，每个RF-DAC有可变输出功率(VOP)控制 片上时钟系统包含每个tile的PLL Gen 3:片上时钟分配网络；TDD模式支持省电模式和RX/Obs共享模式 Dual and Quad RF-ADC/RF-DAC Tiles Tile类型 转换器数量 设备类型 说明 Quad RF-ADC 4 Gen 1/Gen 2/Gen 3/DFE 交错系数为4 Dual RF-ADC 2 Gen 1/Gen 3/DFE 交错系数为8，采样率为Quad RF-ADC两倍。 Quad RF-DAC 4 Gen 1/Gen 2/Gen 3/DFE 一个专用DUC Dual RF-DAC 2 Gen 3/DFE 两个专用DUC，Gen 3/DFE配备Quad RF-DAC或Quad/Dual RF-DAC组合，所有的tile都有外部时钟输入 下图为tile结构，虚线表示多个波段的情况。 RF-ADC/DAC RF-ADC/DAC结构如下图所示。</description></item><item><title>RF Analyzer 功能详解</title><link>https://lxulxu.github.io/posts/rf_analyzer_feature_guid/</link><pubDate>Mon, 27 Feb 2023 19:06:33 +0000</pubDate><guid>https://lxulxu.github.io/posts/rf_analyzer_feature_guid/</guid><description>RF-ADC 转换器设置(Converter Settings) 校准模式(Calibration Mode) 校准子系统由三个主要模块组成：
-时间交错偏移校准模块(OCB):校正每个子RF-ADC的DC偏移 增益校准模块(GCB):校正交错子RF-ADC之间的增益差异 时间偏移校准模块(TSCB):校正交错子RF-ADC之间的时间偏移 除了自动校准外，所有四个校准模块（OCB1、OCB2、GCB、TSCB）都可用于获取和设置用户系数。 应用程序读回校准解冻时生成的系数，并在需要时恢复它们； 这有助于在输入信号不满足校准要求时保持 RF-ADC 性能。 此功能适用于 IP 向导中的每个 RF-ADC。 启用此功能会增加 IP 的大小。
-1//以下示例代码显示了 TSCB 的用户系数设置。 2 3u32 Status = XRFDC_FAILURE; 4XRFdc_Calibration_Coefficients Coeffs; 5//使用下面的样本系数 6Coeffs.Coeff0 = 146; 7Coeffs.Coeff1 = 255; 8Coeffs.Coeff2 = 255; 9Coeffs.Coeff3 = 255; 10Coeffs.Coeff4 = 113; 11Coeffs.Coeff5 = 255; 12Coeffs.Coeff6 = 255 13Coeffs.Coeff7 = 255; 14Status = XRFdc_SetCalCoeffients( RFdcInstPtr, Tile, Block, 15XRFDC_CAL_BLOCK_TSCB, &amp;amp;Coeffs); 16If (Status != XRFDC_SUCCESS) { 17 /*handle error*/ 18} 使用XRFdc_SetCalCoefficients API 恢复校准系数会自动禁用实时校准。 提供 XRFdc_DisableCoefficientsOverride API 以禁用此用户系数覆盖模式并重新启用实时校准。 禁用实时校准时，实时端口校准冻结无效。</description></item><item><title>RFdc 驱动</title><link>https://lxulxu.github.io/posts/rf_driver_manual/</link><pubDate>Tue, 21 Feb 2023 14:41:35 +0000</pubDate><guid>https://lxulxu.github.io/posts/rf_driver_manual/</guid><description>参考PG269 Appx.C
-数据结构 数据结构UML图如下：
-API 功能 系统设置相关函数 函数原型 功能 u32 XRFdc_CfgInitialize(XRFdc *InstancePtr, XRFdc_Config *ConfigPtr) 通过从配置结构复制相关条目来填充驱动程序实例中的适当条目。与 RFdc 驱动程序 API 的任何软件交互都需要此函数，并且必须在使用任何其他 API 函数之前首先调用此函数。 XRFdc_Config *XRFdc_LookupConfig(u16 DeviceId) 根据设备的唯一 ID 查找设备配置 u32 XRFdc_RegisterMetal(XRFdc *InstancePtr, u16 DeviceId, struct metal_device **DevicePtr) 使用 Libmetal 注册RFDC u32 XRFdc_StartUp(XRFdc *InstancePtr, u32 Type, int Tile_Id) 根据 Tile_Id 的请求重新启动片。 如果 -1 作为 Tile_Id 传递，该函数将重新启动所有启用的切片。 现有寄存器设置不会在此过程中丢失或更改。 u32 XRFdc_Shutdown(XRFdc *InstancePtr, u32 Type, int Tile_Id) 根据 Tile_Id 的请求停止片。 如果 -1 作为 Tile_Id 传递，该函数将停止所有启用的切片。 现有的寄存器设置不会被清除。 u32 XRFdc_Reset(XRFdc *InstancePtr, u32 Type, int Tile_Id) 通过 Tile_Id 请求重置图块。 如果 -1 作为 Tile_Id 传递，它将重置所有启用的图块。 所有现有的寄存器设置都将被清除并替换为最初配置的设置。 u32 XRFdc_CustomStartUp(XRFdc *InstancePtr, u32 Type, int Tile_Id, u32 StartState, u32 EndState) 按照通过 Tile_Id 的请求，将 IPSM 从 StartState 运行到 EndState。 如果 -1 作为 Tile_Id 传递，则该函数针对所有启用的图块运行。 如果 StartState 为 XRFDC_STATE_OFF，现有寄存器设置将丢失或更改。 void XRFdc_DumpRegs (XRFdc *InstancePtr, u32 Type, int Tile_Id) 用于调试，将寄存器中的内容打印到控制台。 ADC 状态指示函数 函数原型 功能 u32 XRFdc_Set/GetDecimationFactor(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *DecimationFactorPtr) 设置/返回 RF-ADC 抽取因子 u32 XRFdc_Set/GetDecimationFactorObs(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *DecimationFactorPtr) 设置/返回 RF-ADC 观察通道的抽取因子 u32 XRFdc_GetFabWrVldWordsObs(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *FabricWrVldWordsPtr) 返回 RF-ADC 观测通道的写PL数据率 u32 XRFdc_Set/GetFabRdVldWordsObs(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *FabricRdVldWordsPtr) 设置/返回 RF-ADC 观测通道的读PL数据率 u32 XRFdc_Set/GetThresholdSettings(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, XRFdc_Threshold_Settings *ThresholdSettingsPtr) 设置/读取相应寄存器阈值 u32 XRFdc_GetFIFOStatusObs(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u8 *EnablePtr) 获取 RF-ADC 观察FIFO的当前状态 u32 XRFdc_Set/GetCalibrationMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u8 *CalibrationModePtr 设置/获取 RF-ADC 的校准模式 u32 XRFdc_Set/GetCalCoefficients(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 CalibrationBlock, XRFdc_Calibration_Coefficients *CoeffPtr) 设置/获取通用校准系数 u32 XRFdc_Set/GetCalFreeze(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, XRFdc_Cal_Freeze_Settings *CalFreezePtr) 设置/获取通用校准冻结设置 u32 XRFdc_Set/GetDither(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *ModePtr) 用抖动模式来填充/获取所提供的指针 u32 XRFdc_GetLinkCoupling(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id,u32 *ModePtr) 获取RF-ADC块的链路耦合模式 u32 XRFdc_Set/GetDSA(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, XRFdc_DSA_Settings *SettingsPtr) 传递的DSA设置被用来更新/获取相应的块级寄存器，仅适用于 RF-ADC 。 u32 XRFdc_Set/GetSignalDetector(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, XRFdc_Signal_Detector_Settings *SettingsPtr) 设置信号检测器/读取信号检测器设置，仅适用于 RF-ADC 。 u32 XRFdc_GetNoOfADCBlocks(XRFdc *InstancePtr, u32 Tile_Id) 获取启用的 RF-ADC 的数量 u32 XRFdc_IsADCBlockEnabled(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id) 如果请求的RF-ADC被启用，函数返回1；否则返回0。 u32 XRFdc_IsHighSpeedADC(XRFdc *InstancePtr, int Tile) 返回该瓦片是否为高速瓦片。 u32 XRFdc_IsADCDigitalPathEnabled(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id) 检查ADC数字路径是否被启用或禁用 ADC 设置状态指示函数 函数原型 功能 u32 XRFdc_ThresholdStickyClear(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 ThresholdToUpdate) 清除阈值配置寄存器中的sticky位 u32 XRFdc_SetThresholdClrMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 ThresholdToUpdate, u32 ClrMode) 设置阈值清除模式 u32 XRFdc_SetupFIFOObs(XRFdc *InstancePtr, u32 Type, int Tile_Id, u8 Enable) 启用和禁用RF-ADC的观察通道FIFO u32 XRFdc_SetupFIFOBoth(XRFdc *InstancePtr, u32 Type, int Tile_Id, u8 Enable) 启用和禁用RF-ADC实际和观察通道的FIFO u32 XRFdc_DisableCoefficientsOverride(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 CalibrationBlock) 禁用所选块的系数覆盖 DAC 状态指示函数 函数原型 功能 u32 XRFdc_Set/GetInterpolationFactor(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *InterpolationFactorPtr) 设置/返回 RF-DAC 的插值因子 u32 XRFdc_Set/GetDecoderMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *DecoderModePtr) 从相关寄存器中设置/读取解码器模式 u32 XRFdc_GetOutputCurr(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *OutputCurrPtr) 获取输出电流 u32 XRFdc_Set/GetInvSincFIR(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u16 *ModePtr) 设置/获取InvSinc滤波器的状态 u32 XRFdc_GetDACDataScaler(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *EnablePtr) 获取数据缩放器的启用状态 u32 XRFdc_Set/GetDACCompMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *Enable) 设置/返回传统的DAC输出模式 u32 XRFdc_Set/GetDataPathMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *Mode) 设置/返回数据路径模式 u32 XRFdc_Set/GetIMRPassMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *Mode) 设置/返回IMR滤波器模式 u32 XRFdc_GetNoOfDACBlock(XRFdc *InstancePtr, u32 Tile_Id) 返回启用的RF-DAC的数量 u32 XRFdc_IsDACBlockEnabled(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id) 如果请求的RF-DAC被启用，该函数返回1；否则返回0。 u32 XRFdc_GetInverseSincFilter(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id) 如果RF-DAC的反向sinc滤波器被启用，函数返回1；否则返回0。 u32 XRFdc_GetMixedMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id) 返回RF-DAC的混频模式设置 u32 XRFdc_IsDACDigitalPathEnabled(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id) 检查RF-DAC数字路径是否启用 DAC 设置状态指示函数 函数原型 功能 u32 XRFdc_SetFabWrVldWords(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 FabricWrVldWords) 写入要为RF-DAC设置的结构数据速率 u32 XRFdc_SetDACVOP(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 uACurrent) VOP μA电流用于更新相应的块级寄存器 ADC/DAC 状态指示函数 函数原型 功能 u32 XRFdc_GetIPStatus(XRFdc *InstancePtr, XRFdc_IPStatus *IPStatusPtr) 返回 IP 状态 u32 XRFdc_GetBlockStatus(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_BlockStatus *BlockStatusPtr) 返回请求的块状态 u32 XRFdc_Set/GetMixerSettings(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_Mixer_Settings *MixerSettingsPtr) 设置/返回相应寄存器的混频器/NCO 设置 u32 XRFdc_Set/GetQMCSettings(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_QMC_Settings *QMCSettingsPtr) 设置/返回相关寄存器的 QMC 设置 u32 XRFdc_Set/GetCoarseDelaySettings(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_CoarseDelay_Settings *CoarseDelaySettingsPtr) 设置/返回相关寄存器的粗略延迟设置 u32 XRFdc_Set/GetFabClkOutDiv(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u16 *FabClkDivPtr) 设置/获取PL的时钟分频器 u32 XRFdc_GetFabWrVldWords(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *FabricWrVldWordsPtr) 返回PL写数据率 u32 XRFdc_GetFabRdVldWords(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *FabricRdVldWordsPtr) 返回PL读数据率 u32 XRFdc_GetFIFOStatus(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u8 *EnablePtr) 返回FIFO的当前状态 u32 XRFdc_Set/GetNyquistZone(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *NyquistZonePtr) 设置/返回奈奎斯特区 u32 XRFdc_GetClockSource(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 *ClockSourcePtr 返回时钟源 u32 XRFdc_GetPLLConfig(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, XRFdc_PLL_Settings *PLLSettings) 从寄存器中读取PLL设置 u32 XRFdc_GetPLLLockStatus(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 *LockStatusPtr) 返回PLL锁定状态 u32 XRFdc_Set/GetClkDistribution(XRFdc *InstancePtr, XRFdc_Distribution_System_Settings *DistributionArrayPtr) 设置/返回时钟分布设置 u32 XRFdc_GetPwrMode(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_Pwr_Mode_Settings *SettingsPtr) 返回电源模式 u32 XRFdc_Get_TileBaseAddr(XRFdc *InstancePtr, u32 Type, u32 Tile_Id) 返回片的基地址 u32 XRFdc_Get_BlockBaseAddr(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id） 返回转换器的基地址 u32 XRFdc_GetDataType(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id） 如果数据类型为实数，函数返回0；否则，返回1。 u32 XRFdc_GetDataWidth(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id) 返回编程数据宽度 u32 XRFdc_GetMasterTile(XRFdc *InstancePtr, u32 Type) 返回主瓦片ID u32 XRFdc_GetSysRefSource(XRFdc *InstancePtr, u32 Type) 返回 SYSREF 的来源 u32 XRFdc_Get_IPBaseAddr(XRFdc *InstancePtr) 返回IP的基地址 double XRFdc_GetFabClkFreq(XRFdc *InstancePtr, u32 Type, u32 Tile_Id) 返回已编程的PL时钟频率 u32 XRFdc_IsFifoEnabled（XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id) 如果FIFO被启用，该函数返回1；否则，返回0。 double XRFdc_GetDriverVersion() 获取驱动程序的版本 int XRFdc_GetConnectedIData(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id) 获取I数字数据路径的转换器 int XRFdc_GetConnectedQData(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id) 获取Q数字数据路径连接的转换器 u16 XRFdc_RDReg(XRFdc *InstancePtr, u32 BaseAddr, u32 RegAddr, u16 Mask) 对值进行读取和屏蔽 u32 XRFdc_CheckDigitalPathEnabled(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id) 检查数字路径是否被激活 u32 XRFdc_GetMultibandConfig(XRFdc *InstancePtr, u32 Type, u32 Tile_Id) 获取多频段配置数据 u32 XRFdc_CheckBlockEnabled(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id) 检查RF-ADC/RF-DAC块是否被激活或禁用 u32 XRFdc_CheckTileEnabled(XRFdc *InstancePtr, u32 Type, u32 Tile_Id) 检查RF-ADC/RF-DAC瓦片是否被启用或禁用 u32 XRFdc_GetMaxSampleRate(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, double *MaxSampleRatePtr) 获取瓦片的最大采样率 u32 XRFdc_GetMinSampleRate(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, double *MinSampleRatePtr) 获取瓦片的最小采样率 ADC/DAC 设置状态指示函数 函数原型 功能 u32 XRFdc_UpdateEvent(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 Event) 当事件源为 Slice 或 Tile 时，使用该函数触发事件的更新事件。 u32 XRFdc_ResetNCOPhase(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id) 启动当前块相位累加器的NCO相位复位 u32 XRFdc_SetupFIFO(XRFdc *InstancePtr, u32 Type, int Tile_Id, u8 Enable) 启用和禁用RF-ADC/RF-DAC的FIFO u32 XRFdc_MultiBand(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u8 DigitalDataPathMask, u32 DataType, u32 DataConverterMask) 设置单频和多频配置 void XRFdc_MultiConverter_Init(XRFdc_MultiConverter_Sync_Config *ConfigPtr, int *PLL_CodesPtr, int *T1_CodesPtr, u32 RefTile) 初始化多轨同步配置结构，必须在XRFdc_MultiConverter_Sync之前调用。 u32 XRFdc_MultiConverter_Sync(XRFdc *InstancePtr, u32 Type, XRFdc_MultiConverter_Sync_Config *ConfigPtr) 多片同步 u32 XRFdc_DynamicPLLConfig(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u8 Source, double RefClkFreq, double SamplingRate) 用于在内部PLL和外部时钟源之间的动态切换，以及为RF-ADC/RF-DAC配置内部PLL。 u32 XRFdc_MTS_Sysref_Config(XRFdc *InstancePtr, XRFdc_MultiConverter_Sync_Config *DACSyncConfigPtr, XRFdc_MultiConverter_Sync_Config *ADCSyncConfigPtr, u32 SysRefEnable) 启用和禁用sysref u32 XRFdc_ResetInternalFIFOWidth(XRFdc *InstancePtr, u32 Type, u32 Tile_Id,u32 Block_Id) 重置内部FIFO宽度，以符合RF-ADC/RF-DAC的速率变化和混频器设置。 u32 XRFdc_SetPwrMode(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_Pwr_Mode_Settings *SettingsPtr) 设置电源模式 void XRFdc_ClrSetReg(XRFdc *InstancePtr, u32 BaseAddr, u32 RegAddr, u16 Mask, u16 Data) 修改写入 void XRFdc_ClrReg(XRFdc *InstancePtr, u32 BaseAddr, u32 RegAddr, u16 Mask) 读取和清除 void XRFdc_SetConnectedIQData(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, int ConnectedIData, int ConnectedQData) 设置数字数据路径I和Q的连接数据转换器 中断部分 函数原型 功能 u32 XRFdc_IntrEnable(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 IntrMask） 通过将IntrMask作为输入并写入相应的寄存器位来启用相应转换器的中断 u32 XRFdc_IntrDisable(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 IntrMask) 禁用中断 void XRFdc_SetStatusHandler(XRFdc *InstancePtr, void *CallBackRefPtr, XRFdc_StatusHandler FunctionPtr) 设置状态回调函数，当驱动程序遇到必须报告给上层软件的情况时，会调用这个函数。 u32 XRFdc_IntrClr(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 IntrMask) 清除中断 u32 XRFdc_GetIntrStatus(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *IntrStsPtr) 返回中断状态 u32 XRFdc_IntrHandler(u32 Vector, void *XRFdcPtr) 清除中断源并打印中断原因 u32 XRFdc_GetEnabledInterrupts(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *IntrMask) 启用的中断来填充IntrMask</description></item><item><title>许可管理</title><link>https://lxulxu.github.io/posts/license_management_guide/</link><pubDate>Wed, 10 Aug 2022 21:50:26 +0000</pubDate><guid>https://lxulxu.github.io/posts/license_management_guide/</guid><description>IEEE Std 1735-2014 Ch8 一些整理
-简介 定义 1`protect license_proxyname=&amp;#34;acme_proxy&amp;#34; 2`protect license_attributes=&amp;#34;USER,MAC,PROXYINFO=1.2&amp;#34; 3`protect license_symmetric_key_method=&amp;#34;aes128-cbc&amp;#34; 4`protect license_public_key_method=&amp;#34;rsa&amp;#34; 5`protect license_keyowner=&amp;#34;ACME&amp;#34;, license_keyname=&amp;#34;ACME2014&amp;#34; 6`protect license_public_key 7AV6f6JyGUxBpr49EwxN7jfdUQcRqRFDN7Mto2ltk+emrRCQS+bW/Yvu8U3w9kx7g 8rCXFueY/S8lyKUExUP2Yi5C3K9WIFqF7Ov3Hm9/fEumxDzvYkGOGuGu/xv/OYIyb 9whEkaiPmVI8+7S/+8NJeOm3BiVaIH5XLcZvz7EW9bvc= proxyname：决定代理运行时所需的环境变量名称
-attributes：提供给代理的可选属性，代理可根据这些属性授予或拒绝许可
-symmetric key method： 工具与代理间传递信息的对称加密算法
-public key method：后文密钥加密算法
-keyowner &amp;amp; keyname：每个license_keyowner/license_keyname对都与一个public key和一个symmetric method对应，与之相反，每个public key/symmetric method对可以对应多个license_keyowner和license_keyname，加解密信封中的license_keyowner/license_keyname应该是唯一的
-public key：用于加密symmetric key，base64编码DER格式，代理可以访问与之匹配的私钥
-其中license_proxyname和public key是必要属性。
-使用 license()
-位于common block，基本语法：
-protect control right = license(&amp;quot;feature&amp;quot;) ? &amp;quot;true_value&amp;quot;:&amp;quot;false_value&amp;quot;
-e.g. protect control decrypt = license(&amp;quot;IP123&amp;quot;) ? &amp;quot;true&amp;quot; : &amp;quot;false&amp;quot;
-license()可以建立与代理间的通信并发出许可请求，如果代理授予许可则返回布尔值TRUE，如果拒绝则返回布尔值FALSE。
-license_string()
-基本语法：
-protect control right = license_string(&amp;quot;feature&amp;quot;)</description></item><item><title>Vivado加密IP</title><link>https://lxulxu.github.io/posts/vivado_encrypted_ip_guide/</link><pubDate>Sat, 26 Mar 2022 18:00:52 +0000</pubDate><guid>https://lxulxu.github.io/posts/vivado_encrypted_ip_guide/</guid><description>整理 UG1118 Ch6
-权限管理 公共权限(Common Rights)：适用于所有EDA工具
-特定权限(Vendor-Specific Rights)：授予开发者的特定权限（如控制Vivado Logic Analyzer探测器行为），此部分访问权限值覆盖普通权限同名值
-条件权限(Conditional Rights)：IEEE-1735-2014 V2 引入，允许不同条件下指定不同访问权限
-IEEE 1735 结构 定义域(Definition area)：定义支持的供应商及其访问权限
-密钥定义(Encrypted Key Definition)
-加密负载(Encrypted payload)：加密IP的Verilog、System Verilog、 VHDL源码
-纯文本负载(Plain-text payload)：IP源码未加密部分
-以一个完整密钥文件内容为例
-1`pragma protect version = 2 2`pragma protect encrypt_agent = &amp;#34;XILINX&amp;#34; 3`pragma protect encrypt_agent_info = &amp;#34;Xilinx Encryption Tool 2021&amp;#34; 4`pragma protect begin_commonblock 5`pragma protect control error_handling = &amp;#34;delegated&amp;#34; 6`pragma protect control child_visibility = &amp;#34;delegated&amp;#34; 7`pragma protect control decryption = (activity==simulation)? &amp;#34;false&amp;#34; :&amp;#34;true&amp;#34; 8`pragma protect end_commonblock 9`pragma protect begin_toolblock 10`pragma protect rights_digest_method=&amp;#34;sha256&amp;#34; 11`pragma protect key_keyowner = &amp;#34;Xilinx&amp;#34;, key_keyname= &amp;#34;xilinxt_2021_01&amp;#34;, key_method = &amp;#34;rsa&amp;#34;, key_public_key 12MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApgf7F4kYh0oSFzJBRoRb 13nsrAqn24fVbI7xdNG2t9G8pouFfwIXGGmQgYqYZDSmUu0wrrj3ulLvUnjRtmtziJ 141RDOYdyko1SuBEyGT1frzUu9xNitAXxp29hOrVPeKO6kGU81XHJCRJ7uWh7rwoyf 15HSUpreifLybt+UT5fyvHu21IxvOR6GHKWaQ4wdL7Txguuyf92XLJIZABEgmuVlPK 16/NjJjVRK3c/vMuQLvbihNapkyCiLIWNwDbo9oWXr7NSo3we8u6IlFmP5V8WcOmXZ 17/PZqp3QOkY2Jlm1yQt3O8PpU/8qzB7zcHjm3+Q+wB8yUYn/IMwN0t09l2AdBR37G 18EwIDAQAB 19`pragma protect control xilinx_configuration_visible = &amp;#34;false&amp;#34; 20`pragma protect control xilinx_enable_modification = &amp;#34;false&amp;#34; 21`pragma protect control xilinx_enable_probing = &amp;#34;false&amp;#34; 22`pragma protect control xilinx_enable_netlist_export = &amp;#34;false&amp;#34; 23`pragma protect control xilinx_enable_bitstream = &amp;#34;true&amp;#34; 24`pragma protect control decryption = (xilinx_activity==simulation)?</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xilinx on lxulxu's blog</title><link>https://lxulxu.github.io/categories/xilinx/</link><description>Recent content in Xilinx on lxulxu's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 28 Feb 2023 18:54:18 +0000</lastBuildDate><atom:link href="https://lxulxu.github.io/categories/xilinx/index.xml" rel="self" type="application/rss+xml"/><item><title>RF Analyzer 简介</title><link>https://lxulxu.github.io/posts/rf_analyzer_introduction/</link><pubDate>Tue, 28 Feb 2023 18:54:18 +0000</pubDate><guid>https://lxulxu.github.io/posts/rf_analyzer_introduction/</guid><description>&lt;p>参考PG269 Ch1 &amp;amp; Ch2。&lt;/p>
+&lt;h1 id="特点">特点&lt;/h1>
+&lt;ul>
+&lt;li>多达16个14-bit RF-DAC
+Gen 1/Gen 2:4个14-bit二倍频RF-ADC tile，2/4个14-bit四倍频RF-ADC tile；
+Gen 3:1/2/4个14-bit二倍频RF-ADC tile，2/4个14-bit四倍频RF-ADC tile。&lt;/li>
+&lt;li>支持多个转换器之间的对齐(多片同步(MTS))&lt;/li>
+&lt;li>支持预编程RF-DAC和RF-ADC，用户可以定义关键参数&lt;/li>
+&lt;li>RF-ADC和RF-DAC有多个AX14-Stream数据接口&lt;/li>
+&lt;li>单独的AX14-Lite配置接口&lt;/li>
+&lt;li>Gen 1/Gen 2:1x(旁路)，2x, 4x, 8x抽取和插值
+Gen 3:1x(旁路)，2x, 3x, 4x, 5x, 6x, 8x, 10x, 12x, 16x, 20x, 24x, 40x抽取和插值后的额外的2x插值&lt;/li>
+&lt;li>数字复合混频器和数控振荡器(NCO)&lt;/li>
+&lt;li>正交调制校正(QMC)，Gen 3每个RF-ADC有嵌入式数字步进衰减器(DSA)，每个RF-DAC有可变输出功率(VOP)控制&lt;/li>
+&lt;li>片上时钟系统包含每个tile的PLL&lt;/li>
+&lt;li>Gen 3:片上时钟分配网络；TDD模式支持省电模式和RX/Obs共享模式&lt;/li>
+&lt;/ul>
+&lt;h1 id="dual-and-quad-rf-adcrf-dac-tiles">Dual and Quad RF-ADC/RF-DAC Tiles&lt;/h1>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Tile类型&lt;/th>
+ &lt;th style="text-align: left">转换器数量&lt;/th>
+ &lt;th style="text-align: left">设备类型&lt;/th>
+ &lt;th style="text-align: left">说明&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">Quad RF-ADC&lt;/td>
+ &lt;td style="text-align: left">4&lt;/td>
+ &lt;td style="text-align: left">Gen 1/Gen 2/Gen 3/DFE&lt;/td>
+ &lt;td style="text-align: left">交错系数为4&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Dual RF-ADC&lt;/td>
+ &lt;td style="text-align: left">2&lt;/td>
+ &lt;td style="text-align: left">Gen 1/Gen 3/DFE&lt;/td>
+ &lt;td style="text-align: left">交错系数为8，采样率为Quad RF-ADC两倍。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Quad RF-DAC&lt;/td>
+ &lt;td style="text-align: left">4&lt;/td>
+ &lt;td style="text-align: left">Gen 1/Gen 2/Gen 3/DFE&lt;/td>
+ &lt;td style="text-align: left">一个专用DUC&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Dual RF-DAC&lt;/td>
+ &lt;td style="text-align: left">2&lt;/td>
+ &lt;td style="text-align: left">Gen 3/DFE&lt;/td>
+ &lt;td style="text-align: left">两个专用DUC，Gen 3/DFE配备Quad RF-DAC或Quad/Dual RF-DAC组合，所有的tile都有外部时钟输入&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>下图为tile结构，虚线表示多个波段的情况。
+
+&lt;figure>
+ &lt;img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-158.6rfb9iadm1c0.jpg?raw=true" alt="img-158" />
+&lt;/figure>
+
+
+
+
+&lt;figure>
+ &lt;img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-159.5uupdrk2apo0.jpg?raw=true" alt="img-159" />
+&lt;/figure>
+
+
+
+
+&lt;figure>
+ &lt;img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-160.ma07k43z6g0.jpg?raw=true" alt="img-160" />
+&lt;/figure>
+
+
+&lt;/p></description></item><item><title>RF Analyzer 功能详解</title><link>https://lxulxu.github.io/posts/rf_analyzer_feature_guid/</link><pubDate>Mon, 27 Feb 2023 19:06:33 +0000</pubDate><guid>https://lxulxu.github.io/posts/rf_analyzer_feature_guid/</guid><description>&lt;h1 id="rf-adc">RF-ADC&lt;/h1>
+&lt;p>
+&lt;figure>
+ &lt;img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-72.uyj3mknshqo.jpg?raw=true" alt="img-72" />
+&lt;/figure>
+
+
+&lt;/p>
+&lt;h2 id="转换器设置converter-settings">转换器设置(Converter Settings)&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>校准模式(Calibration Mode)
+
+&lt;figure>
+ &lt;img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-151.4s8e5r0arfa0.jpg?raw=true" alt="img-151" />
+&lt;/figure>
+
+
+
+校准子系统由三个主要模块组成：&lt;/p>
+&lt;ul>
+&lt;li>时间交错偏移校准模块(OCB):校正每个子RF-ADC的&lt;strong>DC偏移&lt;/strong>&lt;/li>
+&lt;li>增益校准模块(GCB):校正交错子RF-ADC之间的&lt;strong>增益差异&lt;/strong>&lt;/li>
+&lt;li>时间偏移校准模块(TSCB):校正交错子RF-ADC之间的&lt;strong>时间偏移&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>除了自动校准外，所有四个校准模块（OCB1、OCB2、GCB、TSCB）都可用于获取和设置用户系数。 应用程序读回校准解冻时生成的系数，并在需要时恢复它们； 这有助于在输入信号不满足校准要求时保持 RF-ADC 性能。 此功能适用于 IP 向导中的每个 RF-ADC。 启用此功能会增加 IP 的大小。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c++" data-lang="c++">&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 1&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">//以下示例代码显示了 TSCB 的用户系数设置。
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 2&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 3&lt;/span>&lt;span>u32 Status &lt;span style="color:#fe8019">=&lt;/span> XRFDC_FAILURE;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 4&lt;/span>&lt;span>XRFdc_Calibration_Coefficients Coeffs;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 5&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">//使用下面的样本系数
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 6&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">&lt;/span>Coeffs.Coeff0 &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#d3869b">146&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 7&lt;/span>&lt;span>Coeffs.Coeff1 &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#d3869b">255&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 8&lt;/span>&lt;span>Coeffs.Coeff2 &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#d3869b">255&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 9&lt;/span>&lt;span>Coeffs.Coeff3 &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#d3869b">255&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">10&lt;/span>&lt;span>Coeffs.Coeff4 &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#d3869b">113&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">11&lt;/span>&lt;span>Coeffs.Coeff5 &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#d3869b">255&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">12&lt;/span>&lt;span>Coeffs.Coeff6 &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#d3869b">255&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">13&lt;/span>&lt;span>Coeffs.Coeff7 &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#d3869b">255&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">14&lt;/span>&lt;span>Status &lt;span style="color:#fe8019">=&lt;/span> XRFdc_SetCalCoeffients( RFdcInstPtr, Tile, Block,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">15&lt;/span>&lt;span>XRFDC_CAL_BLOCK_TSCB, &lt;span style="color:#fe8019">&amp;amp;&lt;/span>Coeffs);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">16&lt;/span>&lt;span>If (Status &lt;span style="color:#fe8019">!=&lt;/span> XRFDC_SUCCESS) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">17&lt;/span>&lt;span> &lt;span style="color:#928374;font-style:italic">/*handle error*/&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">18&lt;/span>&lt;span>} 
+&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item><item><title>RFdc 驱动</title><link>https://lxulxu.github.io/posts/rf_driver_manual/</link><pubDate>Tue, 21 Feb 2023 14:41:35 +0000</pubDate><guid>https://lxulxu.github.io/posts/rf_driver_manual/</guid><description>&lt;p>参考PG269 Appx.C&lt;/p>
+&lt;h2 id="数据结构">数据结构&lt;/h2>
+&lt;p>数据结构UML图如下：&lt;/p>
+&lt;p>
+&lt;figure>
+ &lt;img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/src_v1.22tzp77ow85c.jpg?raw=true" alt="UML" />
+&lt;/figure>
+
+
+&lt;/p>
+&lt;h2 id="api-功能">API 功能&lt;/h2>
+&lt;h3 id="系统设置相关函数">系统设置相关函数&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">函数原型&lt;/th>
+ &lt;th style="text-align: left">功能&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_CfgInitialize(XRFdc *InstancePtr, XRFdc_Config *ConfigPtr)&lt;/td>
+ &lt;td style="text-align: left">通过从配置结构复制相关条目来填充驱动程序实例中的适当条目。与 RFdc 驱动程序 API 的任何软件交互都需要此函数，并且必须在使用任何其他 API 函数之前首先调用此函数。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">XRFdc_Config *XRFdc_LookupConfig(u16 DeviceId)&lt;/td>
+ &lt;td style="text-align: left">根据设备的唯一 ID 查找设备配置&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_RegisterMetal(XRFdc *InstancePtr, u16 DeviceId, struct metal_device **DevicePtr)&lt;/td>
+ &lt;td style="text-align: left">使用 Libmetal 注册RFDC&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_StartUp(XRFdc *InstancePtr, u32 Type, int Tile_Id)&lt;/td>
+ &lt;td style="text-align: left">根据 Tile_Id 的请求重新启动片。 如果 -1 作为 Tile_Id 传递，该函数将重新启动所有启用的切片。 现有寄存器设置不会在此过程中丢失或更改。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Shutdown(XRFdc *InstancePtr, u32 Type, int Tile_Id)&lt;/td>
+ &lt;td style="text-align: left">根据 Tile_Id 的请求停止片。 如果 -1 作为 Tile_Id 传递，该函数将停止所有启用的切片。 现有的寄存器设置不会被清除。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Reset(XRFdc *InstancePtr, u32 Type, int Tile_Id)&lt;/td>
+ &lt;td style="text-align: left">通过 Tile_Id 请求重置图块。 如果 -1 作为 Tile_Id 传递，它将重置所有启用的图块。 所有现有的寄存器设置都将被清除并替换为最初配置的设置。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_CustomStartUp(XRFdc *InstancePtr, u32 Type, int Tile_Id, u32 StartState, u32 EndState)&lt;/td>
+ &lt;td style="text-align: left">按照通过 Tile_Id 的请求，将 IPSM 从 StartState 运行到 EndState。 如果 -1 作为 Tile_Id 传递，则该函数针对所有启用的图块运行。 如果 StartState 为 XRFDC_STATE_OFF，现有寄存器设置将丢失或更改。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">void XRFdc_DumpRegs (XRFdc *InstancePtr, u32 Type, int Tile_Id)&lt;/td>
+ &lt;td style="text-align: left">用于调试，将寄存器中的内容打印到控制台。&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="adc-状态指示函数">ADC 状态指示函数&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">函数原型&lt;/th>
+ &lt;th style="text-align: left">功能&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetDecimationFactor(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *DecimationFactorPtr)&lt;/td>
+ &lt;td style="text-align: left">设置/返回 RF-ADC 抽取因子&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetDecimationFactorObs(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *DecimationFactorPtr)&lt;/td>
+ &lt;td style="text-align: left">设置/返回 RF-ADC 观察通道的抽取因子&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetFabWrVldWordsObs(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *FabricWrVldWordsPtr)&lt;/td>
+ &lt;td style="text-align: left">返回 RF-ADC 观测通道的写PL数据率&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetFabRdVldWordsObs(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *FabricRdVldWordsPtr)&lt;/td>
+ &lt;td style="text-align: left">设置/返回 RF-ADC 观测通道的读PL数据率&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetThresholdSettings(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, XRFdc_Threshold_Settings *ThresholdSettingsPtr)&lt;/td>
+ &lt;td style="text-align: left">设置/读取相应寄存器阈值&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetFIFOStatusObs(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u8 *EnablePtr)&lt;/td>
+ &lt;td style="text-align: left">获取 RF-ADC 观察FIFO的当前状态&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetCalibrationMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u8 *CalibrationModePtr&lt;/td>
+ &lt;td style="text-align: left">设置/获取 RF-ADC 的校准模式&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetCalCoefficients(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 CalibrationBlock, XRFdc_Calibration_Coefficients *CoeffPtr)&lt;/td>
+ &lt;td style="text-align: left">设置/获取通用校准系数&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetCalFreeze(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, XRFdc_Cal_Freeze_Settings *CalFreezePtr)&lt;/td>
+ &lt;td style="text-align: left">设置/获取通用校准冻结设置&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetDither(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *ModePtr)&lt;/td>
+ &lt;td style="text-align: left">用抖动模式来填充/获取所提供的指针&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetLinkCoupling(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id,u32 *ModePtr)&lt;/td>
+ &lt;td style="text-align: left">获取RF-ADC块的链路耦合模式&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetDSA(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, XRFdc_DSA_Settings *SettingsPtr)&lt;/td>
+ &lt;td style="text-align: left">传递的DSA设置被用来更新/获取相应的块级寄存器，仅适用于 RF-ADC 。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetSignalDetector(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, XRFdc_Signal_Detector_Settings *SettingsPtr)&lt;/td>
+ &lt;td style="text-align: left">设置信号检测器/读取信号检测器设置，仅适用于 RF-ADC 。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetNoOfADCBlocks(XRFdc *InstancePtr, u32 Tile_Id)&lt;/td>
+ &lt;td style="text-align: left">获取启用的 RF-ADC 的数量&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_IsADCBlockEnabled(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id)&lt;/td>
+ &lt;td style="text-align: left">如果请求的RF-ADC被启用，函数返回1；否则返回0。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_IsHighSpeedADC(XRFdc *InstancePtr, int Tile)&lt;/td>
+ &lt;td style="text-align: left">返回该瓦片是否为高速瓦片。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_IsADCDigitalPathEnabled(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id)&lt;/td>
+ &lt;td style="text-align: left">检查ADC数字路径是否被启用或禁用&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="adc-设置状态指示函数">ADC 设置状态指示函数&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">函数原型&lt;/th>
+ &lt;th style="text-align: left">功能&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_ThresholdStickyClear(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 ThresholdToUpdate)&lt;/td>
+ &lt;td style="text-align: left">清除阈值配置寄存器中的sticky位&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_SetThresholdClrMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 ThresholdToUpdate, u32 ClrMode)&lt;/td>
+ &lt;td style="text-align: left">设置阈值清除模式&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_SetupFIFOObs(XRFdc *InstancePtr, u32 Type, int Tile_Id, u8 Enable)&lt;/td>
+ &lt;td style="text-align: left">启用和禁用RF-ADC的观察通道FIFO&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_SetupFIFOBoth(XRFdc *InstancePtr, u32 Type, int Tile_Id, u8 Enable)&lt;/td>
+ &lt;td style="text-align: left">启用和禁用RF-ADC实际和观察通道的FIFO&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_DisableCoefficientsOverride(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 CalibrationBlock)&lt;/td>
+ &lt;td style="text-align: left">禁用所选块的系数覆盖&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="dac-状态指示函数">DAC 状态指示函数&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">函数原型&lt;/th>
+ &lt;th style="text-align: left">功能&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetInterpolationFactor(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *InterpolationFactorPtr)&lt;/td>
+ &lt;td style="text-align: left">设置/返回 RF-DAC 的插值因子&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetDecoderMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *DecoderModePtr)&lt;/td>
+ &lt;td style="text-align: left">从相关寄存器中设置/读取解码器模式&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetOutputCurr(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *OutputCurrPtr)&lt;/td>
+ &lt;td style="text-align: left">获取输出电流&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetInvSincFIR(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u16 *ModePtr)&lt;/td>
+ &lt;td style="text-align: left">设置/获取InvSinc滤波器的状态&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetDACDataScaler(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *EnablePtr)&lt;/td>
+ &lt;td style="text-align: left">获取数据缩放器的启用状态&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetDACCompMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *Enable)&lt;/td>
+ &lt;td style="text-align: left">设置/返回传统的DAC输出模式&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetDataPathMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *Mode)&lt;/td>
+ &lt;td style="text-align: left">设置/返回数据路径模式&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetIMRPassMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *Mode)&lt;/td>
+ &lt;td style="text-align: left">设置/返回IMR滤波器模式&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetNoOfDACBlock(XRFdc *InstancePtr, u32 Tile_Id)&lt;/td>
+ &lt;td style="text-align: left">返回启用的RF-DAC的数量&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_IsDACBlockEnabled(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id)&lt;/td>
+ &lt;td style="text-align: left">如果请求的RF-DAC被启用，该函数返回1；否则返回0。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetInverseSincFilter(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id)&lt;/td>
+ &lt;td style="text-align: left">如果RF-DAC的反向sinc滤波器被启用，函数返回1；否则返回0。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetMixedMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id)&lt;/td>
+ &lt;td style="text-align: left">返回RF-DAC的混频模式设置&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_IsDACDigitalPathEnabled(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id)&lt;/td>
+ &lt;td style="text-align: left">检查RF-DAC数字路径是否启用&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="dac-设置状态指示函数">DAC 设置状态指示函数&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">函数原型&lt;/th>
+ &lt;th style="text-align: left">功能&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_SetFabWrVldWords(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 FabricWrVldWords)&lt;/td>
+ &lt;td style="text-align: left">写入要为RF-DAC设置的结构数据速率&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_SetDACVOP(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 uACurrent)&lt;/td>
+ &lt;td style="text-align: left">VOP μA电流用于更新相应的块级寄存器&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="adcdac-状态指示函数">ADC/DAC 状态指示函数&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">函数原型&lt;/th>
+ &lt;th style="text-align: left">功能&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetIPStatus(XRFdc *InstancePtr, XRFdc_IPStatus *IPStatusPtr)&lt;/td>
+ &lt;td style="text-align: left">返回 IP 状态&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetBlockStatus(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_BlockStatus *BlockStatusPtr)&lt;/td>
+ &lt;td style="text-align: left">返回请求的块状态&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetMixerSettings(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_Mixer_Settings *MixerSettingsPtr)&lt;/td>
+ &lt;td style="text-align: left">设置/返回相应寄存器的混频器/NCO 设置&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetQMCSettings(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_QMC_Settings *QMCSettingsPtr)&lt;/td>
+ &lt;td style="text-align: left">设置/返回相关寄存器的 QMC 设置&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetCoarseDelaySettings(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_CoarseDelay_Settings *CoarseDelaySettingsPtr)&lt;/td>
+ &lt;td style="text-align: left">设置/返回相关寄存器的粗略延迟设置&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetFabClkOutDiv(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u16 *FabClkDivPtr)&lt;/td>
+ &lt;td style="text-align: left">设置/获取PL的时钟分频器&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetFabWrVldWords(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *FabricWrVldWordsPtr)&lt;/td>
+ &lt;td style="text-align: left">返回PL写数据率&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetFabRdVldWords(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *FabricRdVldWordsPtr)&lt;/td>
+ &lt;td style="text-align: left">返回PL读数据率&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetFIFOStatus(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u8 *EnablePtr)&lt;/td>
+ &lt;td style="text-align: left">返回FIFO的当前状态&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetNyquistZone(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *NyquistZonePtr)&lt;/td>
+ &lt;td style="text-align: left">设置/返回奈奎斯特区&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetClockSource(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 *ClockSourcePtr&lt;/td>
+ &lt;td style="text-align: left">返回时钟源&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetPLLConfig(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, XRFdc_PLL_Settings *PLLSettings)&lt;/td>
+ &lt;td style="text-align: left">从寄存器中读取PLL设置&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetPLLLockStatus(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 *LockStatusPtr)&lt;/td>
+ &lt;td style="text-align: left">返回PLL锁定状态&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetClkDistribution(XRFdc *InstancePtr, XRFdc_Distribution_System_Settings *DistributionArrayPtr)&lt;/td>
+ &lt;td style="text-align: left">设置/返回时钟分布设置&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetPwrMode(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_Pwr_Mode_Settings *SettingsPtr)&lt;/td>
+ &lt;td style="text-align: left">返回电源模式&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Get_TileBaseAddr(XRFdc *InstancePtr, u32 Type, u32 Tile_Id)&lt;/td>
+ &lt;td style="text-align: left">返回片的基地址&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Get_BlockBaseAddr(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id）&lt;/td>
+ &lt;td style="text-align: left">返回转换器的基地址&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetDataType(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id）&lt;/td>
+ &lt;td style="text-align: left">如果数据类型为实数，函数返回0；否则，返回1。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetDataWidth(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id)&lt;/td>
+ &lt;td style="text-align: left">返回编程数据宽度&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetMasterTile(XRFdc *InstancePtr, u32 Type)&lt;/td>
+ &lt;td style="text-align: left">返回主瓦片ID&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetSysRefSource(XRFdc *InstancePtr, u32 Type)&lt;/td>
+ &lt;td style="text-align: left">返回 SYSREF 的来源&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Get_IPBaseAddr(XRFdc *InstancePtr)&lt;/td>
+ &lt;td style="text-align: left">返回IP的基地址&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">double XRFdc_GetFabClkFreq(XRFdc *InstancePtr, u32 Type, u32 Tile_Id)&lt;/td>
+ &lt;td style="text-align: left">返回已编程的PL时钟频率&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_IsFifoEnabled（XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id)&lt;/td>
+ &lt;td style="text-align: left">如果FIFO被启用，该函数返回1；否则，返回0。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">double XRFdc_GetDriverVersion()&lt;/td>
+ &lt;td style="text-align: left">获取驱动程序的版本&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">int XRFdc_GetConnectedIData(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id)&lt;/td>
+ &lt;td style="text-align: left">获取I数字数据路径的转换器&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">int XRFdc_GetConnectedQData(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id)&lt;/td>
+ &lt;td style="text-align: left">获取Q数字数据路径连接的转换器&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u16 XRFdc_RDReg(XRFdc *InstancePtr, u32 BaseAddr, u32 RegAddr, u16 Mask)&lt;/td>
+ &lt;td style="text-align: left">对值进行读取和屏蔽&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_CheckDigitalPathEnabled(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id)&lt;/td>
+ &lt;td style="text-align: left">检查数字路径是否被激活&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetMultibandConfig(XRFdc *InstancePtr, u32 Type, u32 Tile_Id)&lt;/td>
+ &lt;td style="text-align: left">获取多频段配置数据&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_CheckBlockEnabled(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id)&lt;/td>
+ &lt;td style="text-align: left">检查RF-ADC/RF-DAC块是否被激活或禁用&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_CheckTileEnabled(XRFdc *InstancePtr, u32 Type, u32 Tile_Id)&lt;/td>
+ &lt;td style="text-align: left">检查RF-ADC/RF-DAC瓦片是否被启用或禁用&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetMaxSampleRate(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, double *MaxSampleRatePtr)&lt;/td>
+ &lt;td style="text-align: left">获取瓦片的最大采样率&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetMinSampleRate(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, double *MinSampleRatePtr)&lt;/td>
+ &lt;td style="text-align: left">获取瓦片的最小采样率&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="adcdac-设置状态指示函数">ADC/DAC 设置状态指示函数&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">函数原型&lt;/th>
+ &lt;th style="text-align: left">功能&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_UpdateEvent(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 Event)&lt;/td>
+ &lt;td style="text-align: left">当事件源为 Slice 或 Tile 时，使用该函数触发事件的更新事件。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_ResetNCOPhase(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id)&lt;/td>
+ &lt;td style="text-align: left">启动当前块相位累加器的NCO相位复位&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_SetupFIFO(XRFdc *InstancePtr, u32 Type, int Tile_Id, u8 Enable)&lt;/td>
+ &lt;td style="text-align: left">启用和禁用RF-ADC/RF-DAC的FIFO&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_MultiBand(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u8 DigitalDataPathMask, u32 DataType, u32 DataConverterMask)&lt;/td>
+ &lt;td style="text-align: left">设置单频和多频配置&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">void XRFdc_MultiConverter_Init(XRFdc_MultiConverter_Sync_Config *ConfigPtr, int *PLL_CodesPtr, int *T1_CodesPtr, u32 RefTile)&lt;/td>
+ &lt;td style="text-align: left">初始化多轨同步配置结构，必须在XRFdc_MultiConverter_Sync之前调用。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_MultiConverter_Sync(XRFdc *InstancePtr, u32 Type, XRFdc_MultiConverter_Sync_Config *ConfigPtr)&lt;/td>
+ &lt;td style="text-align: left">多片同步&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_DynamicPLLConfig(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u8 Source, double RefClkFreq, double SamplingRate)&lt;/td>
+ &lt;td style="text-align: left">用于在内部PLL和外部时钟源之间的动态切换，以及为RF-ADC/RF-DAC配置内部PLL。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_MTS_Sysref_Config(XRFdc *InstancePtr, XRFdc_MultiConverter_Sync_Config *DACSyncConfigPtr, XRFdc_MultiConverter_Sync_Config *ADCSyncConfigPtr, u32 SysRefEnable)&lt;/td>
+ &lt;td style="text-align: left">启用和禁用sysref&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_ResetInternalFIFOWidth(XRFdc *InstancePtr, u32 Type, u32 Tile_Id,u32 Block_Id)&lt;/td>
+ &lt;td style="text-align: left">重置内部FIFO宽度，以符合RF-ADC/RF-DAC的速率变化和混频器设置。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_SetPwrMode(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_Pwr_Mode_Settings *SettingsPtr)&lt;/td>
+ &lt;td style="text-align: left">设置电源模式&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">void XRFdc_ClrSetReg(XRFdc *InstancePtr, u32 BaseAddr, u32 RegAddr, u16 Mask, u16 Data)&lt;/td>
+ &lt;td style="text-align: left">修改写入&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">void XRFdc_ClrReg(XRFdc *InstancePtr, u32 BaseAddr, u32 RegAddr, u16 Mask)&lt;/td>
+ &lt;td style="text-align: left">读取和清除&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">void XRFdc_SetConnectedIQData(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, int ConnectedIData, int ConnectedQData)&lt;/td>
+ &lt;td style="text-align: left">设置数字数据路径I和Q的连接数据转换器&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="中断部分">中断部分&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">函数原型&lt;/th>
+ &lt;th style="text-align: left">功能&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_IntrEnable(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 IntrMask）&lt;/td>
+ &lt;td style="text-align: left">通过将IntrMask作为输入并写入相应的寄存器位来启用相应转换器的中断&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_IntrDisable(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 IntrMask)&lt;/td>
+ &lt;td style="text-align: left">禁用中断&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">void XRFdc_SetStatusHandler(XRFdc *InstancePtr, void *CallBackRefPtr, XRFdc_StatusHandler FunctionPtr)&lt;/td>
+ &lt;td style="text-align: left">设置状态回调函数，当驱动程序遇到必须报告给上层软件的情况时，会调用这个函数。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_IntrClr(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 IntrMask)&lt;/td>
+ &lt;td style="text-align: left">清除中断&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetIntrStatus(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *IntrStsPtr)&lt;/td>
+ &lt;td style="text-align: left">返回中断状态&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_IntrHandler(u32 Vector, void *XRFdcPtr)&lt;/td>
+ &lt;td style="text-align: left">清除中断源并打印中断原因&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetEnabledInterrupts(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *IntrMask)&lt;/td>
+ &lt;td style="text-align: left">启用的中断来填充IntrMask&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item><item><title>许可管理</title><link>https://lxulxu.github.io/posts/license_management_guide/</link><pubDate>Wed, 10 Aug 2022 21:50:26 +0000</pubDate><guid>https://lxulxu.github.io/posts/license_management_guide/</guid><description>&lt;p>IEEE Std 1735-2014 Ch8 一些整理&lt;/p>
+&lt;h2 id="简介">简介&lt;/h2>
+&lt;h3 id="定义">定义&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">1&lt;/span>&lt;span>`protect license_proxyname=&amp;#34;acme_proxy&amp;#34;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">2&lt;/span>&lt;span>`protect license_attributes=&amp;#34;USER,MAC,PROXYINFO=1.2&amp;#34;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">3&lt;/span>&lt;span>`protect license_symmetric_key_method=&amp;#34;aes128-cbc&amp;#34;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">4&lt;/span>&lt;span>`protect license_public_key_method=&amp;#34;rsa&amp;#34;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">5&lt;/span>&lt;span>`protect license_keyowner=&amp;#34;ACME&amp;#34;, license_keyname=&amp;#34;ACME2014&amp;#34;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">6&lt;/span>&lt;span>`protect license_public_key
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">7&lt;/span>&lt;span>AV6f6JyGUxBpr49EwxN7jfdUQcRqRFDN7Mto2ltk+emrRCQS+bW/Yvu8U3w9kx7g
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">8&lt;/span>&lt;span>rCXFueY/S8lyKUExUP2Yi5C3K9WIFqF7Ov3Hm9/fEumxDzvYkGOGuGu/xv/OYIyb
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">9&lt;/span>&lt;span>whEkaiPmVI8+7S/+8NJeOm3BiVaIH5XLcZvz7EW9bvc=
+&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item><item><title>Vivado加密IP</title><link>https://lxulxu.github.io/posts/vivado_encrypted_ip_guide/</link><pubDate>Sat, 26 Mar 2022 18:00:52 +0000</pubDate><guid>https://lxulxu.github.io/posts/vivado_encrypted_ip_guide/</guid><description>&lt;p>整理 UG1118 Ch6&lt;/p>
+&lt;h2 id="权限管理">权限管理&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>公共权限(Common Rights)&lt;/strong>：适用于所有EDA工具&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>特定权限(Vendor-Specific Rights)&lt;/strong>：授予开发者的特定权限（如控制Vivado Logic Analyzer探测器行为），此部分访问权限值覆盖普通权限同名值&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>条件权限(Conditional Rights)&lt;/strong>：IEEE-1735-2014 V2 引入，允许不同条件下指定不同访问权限&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="ieee-1735-结构">IEEE 1735 结构&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>定义域(Definition area)&lt;/strong>：定义支持的供应商及其访问权限&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>密钥定义(Encrypted Key Definition)&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>加密负载(Encrypted payload)&lt;/strong>：加密IP的Verilog、System Verilog、 VHDL源码&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>纯文本负载(Plain-text payload)&lt;/strong>：IP源码未加密部分&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>以一个完整密钥文件内容为例&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 1&lt;/span>&lt;span>`pragma protect version &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#d3869b">2&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 2&lt;/span>&lt;span>`pragma protect encrypt_agent &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;XILINX&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 3&lt;/span>&lt;span>`pragma protect encrypt_agent_info &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;Xilinx Encryption Tool 2021&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 4&lt;/span>&lt;span>`pragma protect begin_commonblock
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 5&lt;/span>&lt;span>`pragma protect control error_handling &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;delegated&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 6&lt;/span>&lt;span>`pragma protect control child_visibility &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;delegated&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 7&lt;/span>&lt;span>`pragma protect control decryption &lt;span style="color:#fe8019">=&lt;/span> (activity&lt;span style="color:#fe8019">==&lt;/span>simulation)? &lt;span style="color:#b8bb26">&amp;#34;false&amp;#34;&lt;/span> :&lt;span style="color:#b8bb26">&amp;#34;true&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 8&lt;/span>&lt;span>`pragma protect end_commonblock
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 9&lt;/span>&lt;span>`pragma protect begin_toolblock
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">10&lt;/span>&lt;span>`pragma protect rights_digest_method&lt;span style="color:#fe8019">=&lt;/span>&lt;span style="color:#b8bb26">&amp;#34;sha256&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">11&lt;/span>&lt;span>`pragma protect key_keyowner &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;Xilinx&amp;#34;&lt;/span>, key_keyname&lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;xilinxt_2021_01&amp;#34;&lt;/span>, key_method &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;rsa&amp;#34;&lt;/span>, key_public_key
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">12&lt;/span>&lt;span>MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApgf7F4kYh0oSFzJBRoRb
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">13&lt;/span>&lt;span>nsrAqn24fVbI7xdNG2t9G8pouFfwIXGGmQgYqYZDSmUu0wrrj3ulLvUnjRtmtziJ
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">14&lt;/span>&lt;span>&lt;span style="color:#d3869b">1&lt;/span>RDOYdyko1SuBEyGT1frzUu9xNitAXxp29hOrVPeKO6kGU81XHJCRJ7uWh7rwoyf
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">15&lt;/span>&lt;span>HSUpreifLybt&lt;span style="color:#fe8019">+&lt;/span>UT5fyvHu21IxvOR6GHKWaQ4wdL7Txguuyf92XLJIZABEgmuVlPK
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">16&lt;/span>&lt;span>&lt;span style="color:#fe8019">/&lt;/span>NjJjVRK3c&lt;span style="color:#fe8019">/&lt;/span>vMuQLvbihNapkyCiLIWNwDbo9oWXr7NSo3we8u6IlFmP5V8WcOmXZ
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">17&lt;/span>&lt;span>&lt;span style="color:#fe8019">/&lt;/span>PZqp3QOkY2Jlm1yQt3O8PpU&lt;span style="color:#fe8019">/&lt;/span>&lt;span style="color:#d3869b">8&lt;/span>qzB7zcHjm3&lt;span style="color:#fe8019">+&lt;/span>Q&lt;span style="color:#fe8019">+&lt;/span>wB8yUYn&lt;span style="color:#fe8019">/&lt;/span>IMwN0t09l2AdBR37G
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">18&lt;/span>&lt;span>EwIDAQAB
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">19&lt;/span>&lt;span>`pragma protect control xilinx_configuration_visible &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;false&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">20&lt;/span>&lt;span>`pragma protect control xilinx_enable_modification &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;false&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">21&lt;/span>&lt;span>`pragma protect control xilinx_enable_probing &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;false&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">22&lt;/span>&lt;span>`pragma protect control xilinx_enable_netlist_export &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;false&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">23&lt;/span>&lt;span>`pragma protect control xilinx_enable_bitstream &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;true&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">24&lt;/span>&lt;span>`pragma protect control decryption &lt;span style="color:#fe8019">=&lt;/span> (xilinx_activity&lt;span style="color:#fe8019">==&lt;/span>simulation)?&lt;span style="color:#b8bb26">&amp;#34;false&amp;#34;&lt;/span> : &lt;span style="color:#b8bb26">&amp;#34;true&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">25&lt;/span>&lt;span>`pragma protect end_toolblock &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item></channel></rss>

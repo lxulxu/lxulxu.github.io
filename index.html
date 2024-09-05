@@ -1,45 +1,287 @@
-<!doctype html><html lang=en-us><head><meta name=generator content="Hugo 0.133.1"><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="IE=edge"><style type=text/css>body{font-family:monospace}</style><title>lxulxu's blog</title>
+<!doctype html><html lang=en-us><head><meta name=generator content="Hugo 0.134.0"><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta http-equiv=X-UA-Compatible content="IE=edge"><style type=text/css>body{font-family:monospace}</style><title>lxulxu's blog</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel=stylesheet><link rel=stylesheet href=/css/style.css><link rel=alternate type=application/rss+xml href=/index.xml title="lxulxu's blog"></head><body><header>===================<br>== <a href=https://lxulxu.github.io/>lxulxu's blog</a> ==<br>===================<div style=float:right>Hello there</div><br><p><nav><a href=/><b>Start</b></a>.
 <a href=/posts/><b>Posts</b></a>.
 <a href=/categories/><b>Categories</b></a>.
 <a href=/tags/><b>Tags</b></a>.
 <a href=/about/><b>About</b></a>.</nav></p></header><main><article><h1><a href=https://lxulxu.github.io/posts/push_back_emplace_back/>C++中的push_back与emplace_back</a></h1><b><time>05.07.2024 00:00</time></b>
-<a href=/tags/c++>c++</a><div>1. 引言
-C++标准库提供了push_back和emplace_back两种向容器末尾添加元素的方法。本文将深入分析这两个函数的区别、使用场景，以及在实际应用中的性能考虑。
-2. 基本概念
-2.1 push_back push_back有两个重载版本：
-1void push_back(const T& value); 2void push_back(T&& value); 第一个版本复制元素，第二个版本移动元素。
-2.2 emplace_back emplace_back是C++11引入的变参模板函数：
-1template &lt;class... Args> 2void emplace_back(Args&&... args); 它直接在容器中构造对象，参数被完美转发给元素的构造函数。
-3. 主要区别
-构造方式：push_back需要预先构造的对象，emplace_back在容器内构造对象。 参数传递：push_back接受对象，emplace_back接受构造函数参数。 效率：emplace_back可能避免不必要的临时对象创建和复 …
-<a href=https://lxulxu.github.io/posts/push_back_emplace_back/>Read more...</a></div></article><article><h1><a href=https://lxulxu.github.io/posts/y2024q3-media-summary/>Y2024Q3 影视音总结</a></h1><b><time>01.07.2024 00:00</time></b>
-<a href=/tags/%E7%94%9F%E6%B4%BB>生活</a><div>🎬MOVIES 2024-07-01. 孤战迷城 - rating: ★★★☆☆ 2024-07-06. 泳者之心 - rating: ★★★★☆ 2024-07-06. 扫黑·决不放弃 - rating: ★★★☆☆ 2024-07-09. 默杀 - rating: ★★★☆☆ 2024-07-12. 神偷奶爸4 - rating: ★★★☆☆ 2024-07-12. 落凡尘 - rating: ★★★★☆ 2024-07-13. 抓娃娃 - rating: ★★★★☆ 2024-07-14. 水中女妖 - rating: ★★★☆☆ 2024-07-19. 从21世纪安全撤离 - rating: ★★★★★ 2024-07-22. B+侦探 - rating: ★★★☆☆ 2024-07-26. 死侍与金刚狼 - rating: ★★★★☆ 2024-07-27. 异人之下 - rating: ★★★★☆ 2024-08-03. 解密 - rating: ★★★★☆ 2024-08-10. 逆行人生 - rating: ★★★★☆ 2024-08-10.
-<a href=https://lxulxu.github.io/posts/y2024q3-media-summary/>Read more...</a></div></article><article><h1><a href=https://lxulxu.github.io/posts/y2024q2-media-summary/>Y2024Q2 影视音总结</a></h1><b><time>30.06.2024 00:00</time></b>
-<a href=/tags/%E7%94%9F%E6%B4%BB>生活</a><div>🎬MOVIES 2024-04-03. 又见逍遥 - rating: ★★☆☆☆ 2024-04-03. 草木人间 - rating: ★★★★☆ 2024-04-17. 追风者 - rating: ★★★★☆ 2024-04-19. 年少日记 - rating: ★★★★★ 2024-04-23. 城中之城 - rating: ★★★★☆ 2024-04-29. 哈尔滨一九四四 - rating: ★★★☆☆ 2024-05-01. 宝贝老板 - rating: ★★★★☆ 2024-05-02. 没有一顿火锅解决不了的事 - rating: ★★★☆☆ 2024-05-02. 九龙城寨之围城 - rating: ★★★★☆ 2024-05-02. 维和防暴队 - rating: ★★★☆☆ 2024-05-02. 对你的想象 - rating: ★★★☆☆ 2024-05-03. 新上海滩 - rating: ★★★★☆ 2024-05-04. 努尔哈赤秘史 - rating: ★★★★☆ 2024-05-04. 绝对计划 - rating: ★★★★★ 2024-05-07.
-<a href=https://lxulxu.github.io/posts/y2024q2-media-summary/>Read more...</a></div></article><article><h1><a href=https://lxulxu.github.io/posts/cplusplus_security_guide/>C++安全指南</a></h1><b><time>28.04.2024 08:20</time></b>
-<a href=/tags/c++>c++</a><div>编程习惯 switch中应有default 不应在debug或错误信息中提供过多内容 不应该在客户端代码中硬编码对称加密秘钥 1 // Bad 2 char g_aes_key[] = {...}; 3 void Foo() { 4 .... 5 AES_func(g_aes_key, input_data, output_data); 6 } 1 // Good 2 char* g_aes_key; 3 void Foo() { 4 .... 5 AES_encrypt(g_aes_key, input_data, output_data); 6 } 7 void Init() { 8 g_aes_key = get_key_from_https(user_id, ...); 9 } 函数不可以返回栈上的变量的地址，而应当使用堆来传递非简单类型变量，强烈建议返回 string、vector 等类型。 1 // Bad 2 char* Foo(char* sz, int len){ 3 char a[300] = {0}; 4 if (len > 100) { 5 …
-<a href=https://lxulxu.github.io/posts/cplusplus_security_guide/>Read more...</a></div></article><article><h1><a href=https://lxulxu.github.io/posts/y2024q1-media-summary/>Y2024Q1 影视音总结</a></h1><b><time>31.03.2024 00:00</time></b>
-<a href=/tags/%E7%94%9F%E6%B4%BB>生活</a><div>🎬MOVIES 2024-03-08. 沙丘2 - rating: ★★★★★ 2024-03-11. 一年一度喜剧大赛 第二季 - rating: ★★★★☆ 2024-03-11. 洛城机密 - rating: ★★★★★ 2024-03-11. 阿盖尔：神秘特工 - rating: ★★★☆☆ 2024-03-11. 周处除三害 - rating: ★★★★☆ 2024-03-11. 戏杀 - rating: ★★★☆☆ 2024-03-11. 繁城之下 - rating: ★★★★★ 2024-03-11. 明天，我会成为谁的女友 - rating: ★★★★☆ 2024-03-11. 第二十条 - rating: ★★★★☆ 2024-03-11. 热辣滚烫 - rating: ★★★☆☆ 2024-03-11. 飞驰人生2 - rating: ★★★★☆ 2024-03-11. 黑袍纠察队 第一季 - rating: ★★★★☆ 2024-03-11. 血观音 - rating: ★★★★★ 2024-03-11. 三大队 - rating: ★★★★☆ …
-<a href=https://lxulxu.github.io/posts/y2024q1-media-summary/>Read more...</a></div></article><article><h1><a href=https://lxulxu.github.io/posts/rf_analyzer_introduction/>RF Analyzer 简介</a></h1><b><time>28.02.2023 18:54</time></b>
+<a href=/tags/c++>c++</a><div><p><strong>1. 引言</strong></p><p>C++标准库提供了<code>push_back</code>和<code>emplace_back</code>两种向容器末尾添加元素的方法。本文将深入分析这两个函数的区别、使用场景，以及在实际应用中的性能考虑。</p><p><strong>2. 基本概念</strong></p><p>2.1 push_back
+<code>push_back</code>有两个重载版本：</p><div class=highlight><pre tabindex=0 style=color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">1</span><span><span style=color:#fabd2f>void</span> <span style=color:#fabd2f>push_back</span>(<span style=color:#fe8019>const</span> T<span style=color:#fe8019>&amp;</span> value);
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">2</span><span><span style=color:#fabd2f>void</span> <span style=color:#fabd2f>push_back</span>(T<span style=color:#fe8019>&amp;&amp;</span> value);
+</span></span></code></pre></div><p>第一个版本复制元素，第二个版本移动元素。</p><p>2.2 emplace_back
+<code>emplace_back</code>是C++11引入的变参模板函数：</p><div class=highlight><pre tabindex=0 style=color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">1</span><span><span style=color:#fe8019>template</span> <span style=color:#fe8019>&lt;</span><span style=color:#fe8019>class</span>... Args<span style=color:#fe8019>&gt;</span>
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">2</span><span><span style=color:#fabd2f>void</span> emplace_back(Args<span style=color:#fe8019>&amp;&amp;</span>... args);
+</span></span></code></pr
+		
+			<a href="https://lxulxu.github.io/posts/push_back_emplace_back/">Read more...</a>
+		
+	</div>
+</article>
+
+		
+			<article>
+	<h1><a href=https://lxulxu.github.io/posts/y2024q3-media-summary/>Y2024Q3 影视音总结</a></h1>
+	<b><time>01.07.2024 00:00</time></b>
+	
+	<a href=/tags/%E7%94%9F%E6%B4%BB>生活</a>
+	
+	<div>
+		<h2 id=movies>🎬MOVIES</h2>
+<ul>
+<li>2024-07-01. <a href=http://movie.douban.com/subject/35558694/><strong>孤战迷城</strong></a> - rating: ★★★☆☆</li>
+<li>2024-07-06. <a href=http://movie.douban.com/subject/26656728/><strong>泳者之心</strong></a> - rating: ★★★★☆</li>
+<li>2024-07-06. <a href=http://movie.douban.com/subject/35280899/><strong>扫黑·决不放弃</strong></a> - rating: ★★★☆☆</li>
+<li>2024-07-09. <a href=http://movie.douban.com/subject/36877322/><strong>默杀</strong></a> - rating: ★★★☆☆</li>
+<li>2024-07-12. <a href=http://movie.douban.com/subject/30170847/><strong>神偷奶爸4</strong></a> - rating: ★★★☆☆</li>
+<li>2024-07-12. <a href=http://movie.douban.com/subject/36624248/><strong>落凡尘</strong></a> - rating: ★★★★☆</li>
+<li>2024-07-13. <a href=http://movie.douban.com/subject/36653918/><strong>抓娃娃</strong></a> - rating: ★★★★☆</li>
+<li>2024-07-14. <a href=http://movie.douban.com/subject/1441473/><strong>水中女妖</strong></a> - rating: ★★★☆☆</li>
+<li>2024-07-19. <a href=http://movie.douban.com/subject/26816104/><strong>从21世纪安全撤离</strong></a> - rating: ★★★★★</li>
+<li>2024-07-22. <a href=http://movie.douban.com/subject/4118060/><strong>B+侦探</strong></a> - rating: ★★★☆☆</li>
+<li>2024-07-26. <a href=http://movie.douban.com/subject/26957900/><strong>死侍与金刚狼</strong></a> - rating: ★★★★☆</li>
+<li>2024-07-27. <a href=http://movie.douban.com/subject/35228399/><strong>异人之下</strong></a> - rating: ★★★★☆</li>
+<li>2024-08-03. <a href=http://movie.douban.com/subject/26370387/><strong>解密</strong></a> - rating: ★★★★☆</li>
+<li>2024-08-10. <a href=http://movie.douban.com/subject/36774001/><strong>逆行人生</strong></a> - rating: ★★★★☆</li>
+<li>2024-08-10. <a href=http://movie.douban.com/subject/36463483/><strong>白蛇：浮生</strong></a> - …</li></ul>
+		
+	</div>
+</article>
+
+		
+			<article>
+	<h1><a href=https://lxulxu.github.io/posts/y2024q2-media-summary/>Y2024Q2 影视音总结</a></h1>
+	<b><time>30.06.2024 00:00</time></b>
+	
+	<a href=/tags/%E7%94%9F%E6%B4%BB>生活</a>
+	
+	<div>
+		<h2 id=movies>🎬MOVIES</h2>
+<ul>
+<li>2024-04-03. <a href=http://movie.douban.com/subject/35314844/><strong>又见逍遥</strong></a> - rating: ★★☆☆☆</li>
+<li>2024-04-03. <a href=http://movie.douban.com/subject/35240117/><strong>草木人间</strong></a> - rating: ★★★★☆</li>
+<li>2024-04-17. <a href=http://movie.douban.com/subject/36206860/><strong>追风者</strong></a> - rating: ★★★★☆</li>
+<li>2024-04-19. <a href=http://movie.douban.com/subject/34940879/><strong>年少日记</strong></a> - rating: ★★★★★</li>
+<li>2024-04-23. <a href=http://movie.douban.com/subject/35209732/><strong>城中之城</strong></a> - rating: ★★★★☆</li>
+<li>2024-04-29. <a href=http://movie.douban.com/subject/35391108/><strong>哈尔滨一九四四</strong></a> - rating: ★★★☆☆</li>
+<li>2024-05-01. <a href=http://movie.douban.com/subject/25907029/><strong>宝贝老板</strong></a> - rating: ★★★★☆</li>
+<li>2024-05-02. <a href=http://movie.douban.com/subject/36207371/><strong>没有一顿火锅解决不了的事</strong></a> - rating: ★★★☆☆</li>
+<li>2024-05-02. <a href=http://movie.douban.com/subject/24284175/><strong>九龙城寨之围城</strong></a> - rating: ★★★★☆</li>
+<li>2024-05-02. <a href=http://movie.douban.com/subject/35371629/><strong>维和防暴队</strong></a> - rating: ★★★☆☆</li>
+<li>2024-05-02. <a href=http://movie.douban.com/subject/35503073/><strong>对你的想象</strong></a> - rating: ★★★☆☆</li>
+<li>2024-05-03. <a href=http://movie.douban.com/subject/2248658/><strong>新上海滩</strong></a> - rating: ★★★★☆</li>
+<li>2024-05-04. <a href=http://movie.douban.com/subject/3003228/><strong>努尔哈赤秘史</strong></a> - rating: ★★★★☆</li>
+<li>2024-05-04. <a href=http://movie.douban.com/subject/2248788/><strong>绝对计划</strong></a> - rating: ★★★★★</li>
+<li>2024-05-07. <a href=https://www.douban.com/location/drama/10944605/><strong> …</strong></a></li></ul>
+		
+	</div>
+</article>
+
+		
+			<article>
+	<h1><a href=https://lxulxu.github.io/posts/cplusplus_security_guide/>C&#43;&#43;安全指南</a></h1>
+	<b><time>28.04.2024 08:20</time></b>
+	
+	<a href=/tags/c++>c&#43;&#43;</a>
+	
+	<div>
+		<h2 id=编程习惯>编程习惯</h2>
+<ul>
+<li>switch中应有default</li>
+<li>不应在debug或错误信息中提供过多内容</li>
+<li>不应该在客户端代码中硬编码对称加密秘钥</li>
+</ul>
+<div class=highlight><pre tabindex=0 style=color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">1</span><span>    <span style=color:#928374;font-style:italic>// Bad
+</span></span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">2</span><span><span style=color:#928374;font-style:italic></span>    <span style=color:#fabd2f>char</span> g_aes_key[] <span style=color:#fe8019>=</span> {...};
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">3</span><span>    <span style=color:#fabd2f>void</span> <span style=color:#fabd2f>Foo</span>() {
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">4</span><span>      ....
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">5</span><span>      AES_func(g_aes_key, input_data, output_data);
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">6</span><span>    }
+</span></span></code></pr
+		
+			<a href="https://lxulxu.github.io/posts/cplusplus_security_guide/">Read more...</a>
+		
+	</div>
+</article>
+
+		
+			<article>
+	<h1><a href=https://lxulxu.github.io/posts/y2024q1-media-summary/>Y2024Q1 影视音总结</a></h1>
+	<b><time>31.03.2024 00:00</time></b>
+	
+	<a href=/tags/%E7%94%9F%E6%B4%BB>生活</a>
+	
+	<div>
+		<h2 id=movies>🎬MOVIES</h2>
+<ul>
+<li>2024-03-08. <a href=http://movie.douban.com/subject/35575567/><strong>沙丘2</strong></a> - rating: ★★★★★</li>
+<li>2024-03-11. <a href=http://movie.douban.com/subject/35699688/><strong>一年一度喜剧大赛 第二季</strong></a> - rating: ★★★★☆</li>
+<li>2024-03-11. <a href=http://movie.douban.com/subject/1292348/><strong>洛城机密</strong></a> - rating: ★★★★★</li>
+<li>2024-03-11. <a href=http://movie.douban.com/subject/35520056/><strong>阿盖尔：神秘特工</strong></a> - rating: ★★★☆☆</li>
+<li>2024-03-11. <a href=http://movie.douban.com/subject/36151692/><strong>周处除三害</strong></a> - rating: ★★★★☆</li>
+<li>2024-03-11. <a href=http://movie.douban.com/subject/36493954/><strong>戏杀</strong></a> - rating: ★★★☆☆</li>
+<li>2024-03-11. <a href=http://movie.douban.com/subject/35725842/><strong>繁城之下</strong></a> - rating: ★★★★★</li>
+<li>2024-03-11. <a href=http://movie.douban.com/subject/35791970/><strong>明天，我会成为谁的女友</strong></a> - rating: ★★★★☆</li>
+<li>2024-03-11. <a href=http://movie.douban.com/subject/36208094/><strong>第二十条</strong></a> - rating: ★★★★☆</li>
+<li>2024-03-11. <a href=http://movie.douban.com/subject/36081094/><strong>热辣滚烫</strong></a> - rating: ★★★☆☆</li>
+<li>2024-03-11. <a href=http://movie.douban.com/subject/36369452/><strong>飞驰人生2</strong></a> - rating: ★★★★☆</li>
+<li>2024-03-11. <a href=http://movie.douban.com/subject/3703650/><strong>黑袍纠察队 第一季</strong></a> - rating: ★★★★☆</li>
+<li>2024-03-11. <a href=http://movie.douban.com/subject/27113517/><strong>血观音</strong></a> - rating: ★★★★★</li>
+<li>2024-03-11. <a href=http://movie.douban.com/subject/36178641/><strong>三大队</strong></a> - rating: ★★★★☆ …</li></ul>
+		
+	</div>
+</article>
+
+		
+			<article>
+	<h1><a href=https://lxulxu.github.io/posts/rf_analyzer_introduction/>RF Analyzer 简介</a></h1>
+	<b><time>28.02.2023 18:54</time></b>
+	
+	<a href=/tags/xilinx>xilinx</a>
+	
+	<a href=/tags/rf>RF</a>
+	
+	<div>
+		<p>参考PG269 Ch1 &amp; Ch2。</p>
+<h1 id=特点>特点</h1>
+<ul>
+<li>多达16个14-bit RF-DAC
+Gen 1/Gen 2:4个14-bit二倍频RF-ADC tile，2/4个14-bit四倍频RF-ADC tile；
+Gen 3:1/2/4个14-bit二倍频RF-ADC tile，2/4个14-bit四倍频RF-ADC tile。</li>
+<li>支持多个转换器之间的对齐(多片同步(MTS))</li>
+<li>支持预编程RF-DAC和RF-ADC，用户可以定义关键参数</li>
+<li>RF-ADC和RF-DAC有多个AX14-Stream数据接口</li>
+<li>单独的AX14-Lite配置接口</li>
+<li>Gen 1/Gen 2:1x(旁路)，2x, 4x, 8x抽取和插值
+Gen 3:1x(旁路)，2x, 3x, 4x, 5x, 6x, 8x, 10x, 12x, 16x, 20x, 24x, 40x抽取和插值后的额外的2x插值</li>
+<li>数字复合混频器和数控振荡器(NCO)</li>
+<li>正交调制校正(QMC)，Gen 3每个RF-ADC有嵌入式数字步进衰减器(DSA)，每个RF-DAC有可变输出功率(VOP)控制</li>
+<li>片上时钟系统包含每个tile的PLL</li>
+<li>Gen 3:片上时钟分配网 …</li></ul>
+		
+			<a href=https://lxulxu.github.io/posts/rf_analyzer_introduction/>Read more...</a>
+		
+	</div>
+</article>
+
+		
+			<article>
+	<h1><a href=https://lxulxu.github.io/posts/rf_analyzer_feature_guid/>RF Analyzer 功能详解</a></h1>
+	<b><time>27.02.2023 19:06</time></b>
+	
+	<a href=/tags/xilinx>xilinx</a>
+	
+	<a href=/tags/rf>RF</a>
+	
+	<div>
+		<h1 id=rf-adc>RF-ADC</h1>
+<p>
+<figure>
+  <img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-72.uyj3mknshqo.jpg?raw=true" alt=img-72>
+</figure>
+
+
+</p>
+<h2 id=转换器设置converter-settings>转换器设置(Converter Settings)</h2>
+<ul>
+<li>
+<p>校准模式(Calibration Mode)
+
+<figure>
+  <img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-151.4s8e5r0arfa0.jpg?raw=true" alt=img-151>
+</figure>
+
+
+
+校准子系统由三个主要模块组成：</p>
+<ul>
+<li>时间交错偏移校准模块(OCB):校正每个子RF-ADC的<strong>DC偏移</strong></li>
+<li>增益校准模块(GCB):校正交错子RF-ADC之间的<strong>增益差异</strong></li>
+<li>时间偏移校准模块(TSCB):校正交错子RF-ADC之间的<strong>时间偏移</strong></li>
+</ul>
+<p>除了自动校准外，所有四个校准模块（OCB1、OCB2、GCB、TSCB）都可用于获取和设置用户系数。 应用程序读回校准解冻时生成的系数，并在需要时恢复它们； 这有助于在输入信号不满足校准要求时保持 RF-ADC 性能。 此功能适用于 IP 向导中的每个 RF-ADC。 启用此功能会增加 IP 的大小。</p>
+<div class=highlight><pre tabindex=0 style=color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 1</span><span><span style=color:#928374;font-style:italic>//以下示例代码显示了 TSCB 的用户系数设置。
+</span></span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 2</span><span><span style=color:#928374;font-style:italic></span>
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 3</span><span>u32 Status <span style=color:#fe8019>=</span> XRFDC_FAILURE;
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 4</span><span>XRFdc_Calibration_Coefficients Coeffs;
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 5</span><span><span style=color:#928374;font-style:italic>//使用下面的样本系数
+</span></span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 6</span><span><span style=color:#928374;font-style:italic></span>Coeffs.Coeff0 <span style=color:#fe8019>=</span> <span style=color:#d3869b>146</span>;
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 7</span><span>Coeffs.Coeff1 <span style=color:#fe8019>= …</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></code></pre></div></li></ul><a href=https://lxulxu.github.io/posts/rf_analyzer_feature_guid/>Read more...</a></div></article><article><h1><a href=https://lxulxu.github.io/posts/rf_driver_manual/>RFdc 驱动</a></h1><b><time>21.02.2023 14:41</time></b>
 <a href=/tags/xilinx>xilinx</a>
-<a href=/tags/rf>RF</a><div>参考PG269 Ch1 & Ch2。
-特点 多达16个14-bit RF-DAC Gen 1/Gen 2:4个14-bit二倍频RF-ADC tile，2/4个14-bit四倍频RF-ADC tile； Gen 3:1/2/4个14-bit二倍频RF-ADC tile，2/4个14-bit四倍频RF-ADC tile。 支持多个转换器之间的对齐(多片同步(MTS)) 支持预编程RF-DAC和RF-ADC，用户可以定义关键参数 RF-ADC和RF-DAC有多个AX14-Stream数据接口 单独的AX14-Lite配置接口 Gen 1/Gen 2:1x(旁路)，2x, 4x, 8x抽取和插值 Gen 3:1x(旁路)，2x, 3x, 4x, 5x, 6x, 8x, 10x, 12x, 16x, 20x, 24x, 40x抽取和插值后的额外的2x插值 数字复合混频器和数控振荡器(NCO) 正交调制校正(QMC)，Gen 3每个RF-ADC有嵌入式数字步进衰减器(DSA)，每个RF-DAC有可变输出功率(VOP)控制 片上时钟系统包含每个tile的PLL Gen 3:片上时钟分配网 …
-<a href=https://lxulxu.github.io/posts/rf_analyzer_introduction/>Read more...</a></div></article><article><h1><a href=https://lxulxu.github.io/posts/rf_analyzer_feature_guid/>RF Analyzer 功能详解</a></h1><b><time>27.02.2023 19:06</time></b>
-<a href=/tags/xilinx>xilinx</a>
-<a href=/tags/rf>RF</a><div>RF-ADC 转换器设置(Converter Settings) 校准模式(Calibration Mode) 校准子系统由三个主要模块组成：
-时间交错偏移校准模块(OCB):校正每个子RF-ADC的DC偏移 增益校准模块(GCB):校正交错子RF-ADC之间的增益差异 时间偏移校准模块(TSCB):校正交错子RF-ADC之间的时间偏移 除了自动校准外，所有四个校准模块（OCB1、OCB2、GCB、TSCB）都可用于获取和设置用户系数。 应用程序读回校准解冻时生成的系数，并在需要时恢复它们； 这有助于在输入信号不满足校准要求时保持 RF-ADC 性能。 此功能适用于 IP 向导中的每个 RF-ADC。 启用此功能会增加 IP 的大小。
-1//以下示例代码显示了 TSCB 的用户系数设置。 2 3u32 Status = XRFDC_FAILURE; 4XRFdc_Calibration_Coefficients Coeffs; 5//使用下面的样本系数 6Coeffs.Coeff0 = 146; 7Coeffs.Coeff1 = 255; 8Coeffs.Coeff2 = 255; …
-<a href=https://lxulxu.github.io/posts/rf_analyzer_feature_guid/>Read more...</a></div></article><article><h1><a href=https://lxulxu.github.io/posts/rf_driver_manual/>RFdc 驱动</a></h1><b><time>21.02.2023 14:41</time></b>
-<a href=/tags/xilinx>xilinx</a>
-<a href=/tags/rf>RF</a><div>参考PG269 Appx.C
-数据结构 数据结构UML图如下：
-API 功能 系统设置相关函数 函数原型 功能 u32 XRFdc_CfgInitialize(XRFdc *InstancePtr, XRFdc_Config *ConfigPtr) 通过从配置结构复制相关条目来填充驱动程序实例中的适当条目。与 RFdc 驱动程序 API 的任何软件交互都需要此函数，并且必须在使用任何其他 API 函数之前首先调用此函数。 XRFdc_Config *XRFdc_LookupConfig(u16 DeviceId) 根据设备的唯一 ID 查找设备配置 u32 XRFdc_RegisterMetal(XRFdc *InstancePtr, u16 DeviceId, struct metal_device **DevicePtr) 使用 Libmetal 注册RFDC u32 XRFdc_StartUp(XRFdc *InstancePtr, u32 Type, int Tile_Id) 根据 Tile_Id 的请求重新启动片。 如果 -1 作为 Tile_Id 传递，该函数将重新启动所有 …</div></article><article><h1><a href=https://lxulxu.github.io/posts/high_quality_cpp_programming_notes/>《高质量C++编程指南》笔记</a></h1><b><time>04.09.2022 11:51</time></b>
-<a href=/tags/c++>c++</a><div>文件结构 头文件结构 1//版权和版本声明 2/* 3* Copyright (c) 2001,上海贝尔有限公司网络应用事业部 4* All rights reserved. 5* 6* 文件名称：graphics.h 7* 文件标识：见配置管理计划书 8* 摘 要：简要描述本文件的内容 9* 10* 当前版本：1.1 11* 作 者：输入作者（或修改者）名字 12* 完成日期：2001年7月20日 13* 14* 取代版本：1.0 15* 原作者 ：输入原作者（或修改者）名字 16* 完成日期：2001年5月10日 17*/ 18 19#ifndef GRAPHICS_H // 防止 graphics.h 被重复引用 20#define GRAPHICS_H 21#include &lt;math.h> // 引用标准库的头文件 22... 23#include “myheader.h” // 引用非标准库的头文件 24... 25void Function1(...); // 全局函数声明 26... 27class Box // 类结构声明 28{ 29... 30}; …
-<a href=https://lxulxu.github.io/posts/high_quality_cpp_programming_notes/>Read more...</a></div></article><article><h1><a href=https://lxulxu.github.io/posts/tcl-cheat-sheet/>Tcl Cheat Sheet</a></h1><b><time>30.08.2022 17:51</time></b>
+<a href=/tags/rf>RF</a><div><p>参考PG269 Appx.C</p><h2 id=数据结构>数据结构</h2><p>数据结构UML图如下：</p><p><figure><img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/src_v1.22tzp77ow85c.jpg?raw=true" alt=UML></figure></p><h2 id=api-功能>API 功能</h2><h3 id=系统设置相关函数>系统设置相关函数</h3><table><thead><tr><th style=text-align:left>函数原型</th><th style=text-align:left>功能</th></tr></thead><tbody><tr><td style=text-align:left>u32 XRFdc_CfgInitialize(XRFdc *InstancePtr, XRFdc_Config *ConfigPtr)</td><td style=text-align:left>通过从配置结构复制相关条目来填充驱动程序实例中的适当条目。与 RFdc 驱动程序 API 的任何软件交互都需要此函数，并且必须在使用任何其他 API 函数之前首先调用此函数。</td></tr><tr><td style=text-align:left>XRFdc_Config *XRFdc_LookupConfig(u16 DeviceId)</td><td style=text-align:left>根据设备的唯一 ID 查找设备配置</td></tr><tr><td style=text-align:left>u32 XRFdc_RegisterMetal(XRFdc *InstancePtr, u16 DeviceId, struct metal_device …</td></tr></tbody></table></div></article><article><h1><a href=https://lxulxu.github.io/posts/high_quality_cpp_programming_notes/>《高质量C++编程指南》笔记</a></h1><b><time>04.09.2022 11:51</time></b>
+<a href=/tags/c++>c++</a><div><h2 id=文件结构>文件结构</h2><h3 id=头文件结构>头文件结构</h3><div class=highlight><pre tabindex=0 style=color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c++ data-lang=c++><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 1</span><span><span style=color:#928374;font-style:italic>//版权和版本声明
+</span></span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 2</span><span><span style=color:#928374;font-style:italic></span><span style=color:#928374;font-style:italic>/*
+</span></span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 3</span><span><span style=color:#928374;font-style:italic>* Copyright (c) 2001,上海贝尔有限公司网络应用事业部
+</span></span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 4</span><span><span style=color:#928374;font-style:italic>* All rights reserved.
+</span></span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 5</span><span><span style=color:#928374;font-style:italic>*
+</span></span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 6</span><span><span style=color:#928374;font-style:italic>* 文件名称：graphics.h
+</span></span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 7</span><span><span style=color:#928374;font-style:italic>* 文件标识：见配置管理计划书
+</span></span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 8</span><span><span style=color:#928374;font-style:italic>* 摘   要：简要描述本文件的内容
+</span></span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 9</span><span><span style=color:#928374;font-style:italic>*
+</span></span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">10</span><span><span style=color:#928374;font-style:italic>* 当前版本：1.1
+</span></span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">11</span><span><span style=color:#928374;font-style:italic>* 作   者：输入作者（或修改者）名字
+</span></span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">12</span><span><span style=color:#928374;font-style:italic>* 完成日期：2001年7月20日
+</span></span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">13</span><span><span style=color:#928374;font-style:italic>*
+</span></span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">14</span><span><span style=color:#928374;font-style:italic>* 取代版本：1.0
+</span></span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">15</span><span><span style=color:#928374;font-style:italic>* 原作者 ：输入原作者（或修改者）名字
+</span></span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">16</span><span><span style=color:#928374;font-style:italic>* 完成日期：2001年5月10日
+</span></span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">17</span><span><span style=color:#928374;font-style:italic>*/</span>
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">18</span><span>
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">19</span><span><span style=color:#8ec07c>#ifndef GRAPHICS_H </span><span style=color:#928374;font-style:italic>// 防止 graphics.h 被重复引用
+</span></span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">20</span><span><span style=color:#928374;font-style:italic></span><span style=color:#8ec07c>#define GRAPHICS_H
+</span></span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">21</span><span><span style=color:#8ec07c>#include</span> <span style=color:#8ec07c;font-style:italic>&lt;math.h&gt;</span><span style=color:#8ec07c> </span><span style=color:#928374;font-style:italic>// 引用标准库的头文件
+</span></span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">22</span><span><span style=color:#928374;font-style:italic></span>...
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">23</span><span><span style=color:#8ec07c>#include “myheader.h” </span><span style=color:#928374;font-style:italic>// 引用非标准库的头文件
+</span></span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">24</span><span><span style=color:#928374;font-style:italic></span>...
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">25</span><span><span style=color:#fabd2f>void</span> Function1(...); <span style=color:#928374;font-style:italic>// 全局函数声明
+</span></span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">26</span><span><span style=color:#928374;font-style:italic></span>...
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">27</span><span><span style=color:#fe8019>class</span> Box <span style=color:#928374;font-style:italic>// 类结构声明
+</span></span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">28</span><span><span style=color:#928374;font-style:italic></span>{ …</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></code></pre></div><a href=https://lxulxu.github.io/posts/high_quality_cpp_programming_notes/>Read more...</a></div></article><article><h1><a href=https://lxulxu.github.io/posts/tcl-cheat-sheet/>Tcl Cheat Sheet</a></h1><b><time>30.08.2022 17:51</time></b>
 <a href=/tags/cheat-sheet>cheat-sheet</a>
-<a href=/tags/tcl>tcl</a><div>基础语法 1puts "Hello World"#输出 2set x [expr 1 == 2 ? 1 : 2]#设置变量；三元运算符 3[exec ls]#调用子进程 4 5#if 6if { $x &lt; 2} { ... } 7elseif { $x == 1 } { ... } 8 9#while 10while { $x &lt; 2 } { 11 incr x 12} 13 14#for 15for { set i 0 } { $i &lt; 5 } { incr i } { ... } 16 17#switch 18switch $x { 19 1 { .
-<a href=https://lxulxu.github.io/posts/tcl-cheat-sheet/>Read more...</a></div></article><div>1 of 2
-<a href=/page/2/>Next Page</a></div></main><footer><p>&copy; 2024 <a href=https://lxulxu.github.io/><b>lxulxu's blog</b></a>.
-<a href=https://github.com/lxulxu><b>Github</b></a>.
-<a href=https://space.bilibili.com/7739434><b>Bilibili</b></a>.</p></footer></body></html>
+<a href=/tags/tcl>tcl</a><div><ul><li>基础语法</li></ul><div class=highlight><pre tabindex=0 style=color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 1</span><span>puts <span style=color:#b8bb26>&#34;Hello World&#34;</span><span style=color:#928374;font-style:italic>#输出</span>
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 2</span><span><span style=color:#fabd2f>set</span> x [expr <span style=color:#d3869b>1</span> <span style=color:#fe8019>==</span> <span style=color:#d3869b>2</span> ? <span style=color:#d3869b>1</span> : <span style=color:#d3869b>2</span>]<span style=color:#928374;font-style:italic>#设置变量；三元运算符</span>
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 3</span><span>[exec ls]<span style=color:#928374;font-style:italic>#调用子进程</span>
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 4</span><span>
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 5</span><span><span style=color:#928374;font-style:italic>#if</span>
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 6</span><span><span style=color:#fe8019>if</span> { $x <span style=color:#fe8019>&lt;</span> <span style=color:#d3869b>2</span>} { <span style=color:#fe8019>...</span> }
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 7</span><span>elseif { $x <span style=color:#fe8019>==</span> <span style=color:#d3869b>1</span> } { <span style=color:#fe8019>...</span> }
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 8</span><span>
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59"> 9</span><span><span style=color:#928374;font-style:italic>#while</span>
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">10</span><span><span style=color:#fe8019>while</span> { $x <span style=color:#fe8019>&lt;</span> <span style=color:#d3869b>2</span> } {
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">11</span><span>	incr x
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">12</span><span>}
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">13</span><span>
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">14</span><span><span style=color:#928374;font-style:italic>#for</span>
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">15</span><span><span style=color:#fe8019>for</span> { <span style=color:#fabd2f>set</span> i <span style=color:#d3869b>0</span> } { $i <span style=color:#fe8019>&lt;</span> <span style=color:#d3869b>5</span> } { incr i } { <span style=color:#fe8019>...</span> }
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">16</span><span>
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">17</span><span><span style=color:#928374;font-style:italic>#switch</span>
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">18</span><span>switch $x {
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">19</span><span>	<span style=color:#d3869b>1</span> { <span style=color:#fe8019>...</span> }
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">20</span><span>	<span style=color:#d3869b>2</span> { <span style=color:#fe8019>...</span> }
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">21</span><span>	default { <span style=color:#fe8019>...</span> }
+</span></span><span style=display:flex><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:.4em;padding:0 .4em;color:#756d59">22</span><span>}
+</span></span></code></pr
+		
+			<a href="https://lxulxu.github.io/posts/tcl-cheat-sheet/">Read more...</a>
+		
+	</div>
+</article>
+
+		
+		<div>
+
+1 of 2
+
+	<a href=/page/2/>Next Page</a>
+
+</div>
+
+	</main>
+
+	<footer>
+	<p>&copy; 2024 <a href=https://lxulxu.github.io/><b>lxulxu&#39;s blog</b></a>.
+	<a href=https://github.com/lxulxu><b>Github</b></a>.
+	<a href=https://space.bilibili.com/7739434><b>Bilibili</b></a>.
+	</p>
+</footer>
+
+</body>
+</html>

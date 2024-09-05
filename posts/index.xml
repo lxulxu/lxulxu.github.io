@@ -1,42 +1,1227 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on lxulxu's blog</title><link>https://lxulxu.github.io/posts/</link><description>Recent content in Posts on lxulxu's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 05 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://lxulxu.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>C++中的push_back与emplace_back</title><link>https://lxulxu.github.io/posts/push_back_emplace_back/</link><pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/push_back_emplace_back/</guid><description>1. 引言
-C++标准库提供了push_back和emplace_back两种向容器末尾添加元素的方法。本文将深入分析这两个函数的区别、使用场景，以及在实际应用中的性能考虑。
-2. 基本概念
-2.1 push_back push_back有两个重载版本：
-1void push_back(const T&amp;amp; value); 2void push_back(T&amp;amp;&amp;amp; value); 第一个版本复制元素，第二个版本移动元素。
-2.2 emplace_back emplace_back是C++11引入的变参模板函数：
-1template &amp;lt;class... Args&amp;gt; 2void emplace_back(Args&amp;amp;&amp;amp;... args); 它直接在容器中构造对象，参数被完美转发给元素的构造函数。
-3. 主要区别
-构造方式：push_back需要预先构造的对象，emplace_back在容器内构造对象。 参数传递：push_back接受对象，emplace_back接受构造函数参数。 效率：emplace_back可能避免不必要的临时对象创建和复制/移动操作。 灵活性：emplace_back可直接传递构造函数参数。 编译复杂度：emplace_back作为变参模板可能增加编译时间和内存使用。 4. 使用示例
-4.1 简单类型
-1std::vector&amp;lt;int&amp;gt; vec; 2vec.push_back(10); // push_back 足够简单高效 4.2 复杂对象构造
-1std::vector&amp;lt;std::pair&amp;lt;int, std::string&amp;gt;&amp;gt; vec; 2// 使用 push_back 3vec.push_back(std::make_pair(1, &amp;#34;one&amp;#34;)); 4// 使用 emplace_back 5vec.emplace_back(1, &amp;#34;one&amp;#34;); // 更简洁，直接传递构造函数参数 4.3 不可移动类型
-1std::vector&amp;lt;std::mutex&amp;gt; mutexes; 2mutexes.emplace_back(); // 可以工作，直接在容器中构造 mutex 3// mutexes.push_back(std::mutex()); // 编译错误，mutex 不可复制或移动 5.</description></item><item><title>Y2024Q3 影视音总结</title><link>https://lxulxu.github.io/posts/y2024q3-media-summary/</link><pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/y2024q3-media-summary/</guid><description>🎬MOVIES 2024-07-01. 孤战迷城 - rating: ★★★☆☆ 2024-07-06. 泳者之心 - rating: ★★★★☆ 2024-07-06. 扫黑·决不放弃 - rating: ★★★☆☆ 2024-07-09. 默杀 - rating: ★★★☆☆ 2024-07-12. 神偷奶爸4 - rating: ★★★☆☆ 2024-07-12. 落凡尘 - rating: ★★★★☆ 2024-07-13. 抓娃娃 - rating: ★★★★☆ 2024-07-14. 水中女妖 - rating: ★★★☆☆ 2024-07-19. 从21世纪安全撤离 - rating: ★★★★★ 2024-07-22. B+侦探 - rating: ★★★☆☆ 2024-07-26. 死侍与金刚狼 - rating: ★★★★☆ 2024-07-27. 异人之下 - rating: ★★★★☆ 2024-08-03. 解密 - rating: ★★★★☆ 2024-08-10. 逆行人生 - rating: ★★★★☆ 2024-08-10.</description></item><item><title>Y2024Q2 影视音总结</title><link>https://lxulxu.github.io/posts/y2024q2-media-summary/</link><pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/y2024q2-media-summary/</guid><description>🎬MOVIES 2024-04-03. 又见逍遥 - rating: ★★☆☆☆ 2024-04-03. 草木人间 - rating: ★★★★☆ 2024-04-17. 追风者 - rating: ★★★★☆ 2024-04-19. 年少日记 - rating: ★★★★★ 2024-04-23. 城中之城 - rating: ★★★★☆ 2024-04-29. 哈尔滨一九四四 - rating: ★★★☆☆ 2024-05-01. 宝贝老板 - rating: ★★★★☆ 2024-05-02. 没有一顿火锅解决不了的事 - rating: ★★★☆☆ 2024-05-02. 九龙城寨之围城 - rating: ★★★★☆ 2024-05-02. 维和防暴队 - rating: ★★★☆☆ 2024-05-02. 对你的想象 - rating: ★★★☆☆ 2024-05-03. 新上海滩 - rating: ★★★★☆ 2024-05-04. 努尔哈赤秘史 - rating: ★★★★☆ 2024-05-04. 绝对计划 - rating: ★★★★★ 2024-05-07.</description></item><item><title>C++安全指南</title><link>https://lxulxu.github.io/posts/cplusplus_security_guide/</link><pubDate>Sun, 28 Apr 2024 08:20:35 +0000</pubDate><guid>https://lxulxu.github.io/posts/cplusplus_security_guide/</guid><description>编程习惯 switch中应有default 不应在debug或错误信息中提供过多内容 不应该在客户端代码中硬编码对称加密秘钥 1 // Bad 2 char g_aes_key[] = {...}; 3 void Foo() { 4 .... 5 AES_func(g_aes_key, input_data, output_data); 6 } 1 // Good 2 char* g_aes_key; 3 void Foo() { 4 .... 5 AES_encrypt(g_aes_key, input_data, output_data); 6 } 7 void Init() { 8 g_aes_key = get_key_from_https(user_id, ...); 9 } 函数不可以返回栈上的变量的地址，而应当使用堆来传递非简单类型变量，强烈建议返回 string、vector 等类型。 1 // Bad 2 char* Foo(char* sz, int len){ 3 char a[300] = {0}; 4 if (len &amp;gt; 100) { 5 memcpy(a, sz, 100); 6 } 7 a[len] = &amp;#39;\0&amp;#39;; 8 return a; // WRONG 9 } 1 // Good 2 char* Foo(char* sz, int len) { 3 char* a = new char[300]; 4 if (len &amp;gt; 100) { 5 memcpy(a, sz, 100); 6 } 7 a[len] = &amp;#39;\0&amp;#39;; 8 return a; // OK 9 } 有逻辑联系的数组必须仔细检查 1 // Good 2 const int nWeekdays[] = {1, 2, 3, 4, 5, 6, 7}; 3 const char* sWeekdays[] = {&amp;#34;Mon&amp;#34;, &amp;#34;Tue&amp;#34;, &amp;#34;Wed&amp;#34;, &amp;#34;Thu&amp;#34;, &amp;#34;Fri&amp;#34;, &amp;#34;Sat&amp;#34;, &amp;#34;Sun&amp;#34;}; 4 assert(ARRAY_SIZE(nWeekdays) == ARRAY_SIZE(sWeekdays));//确保有关联的nWeekdays和sWeekdays数据统一 5 for (int x = 0; x &amp;lt; ARRAY_SIZE(sWeekdays); x++) { 6 if (strcmp(sWeekdays[x], input) == 0) { 7 return nWeekdays[x]; 8 } 9 } 在头文件、源代码、文档中列举的函数声明应当一致，不应当出现定义内容错位的情况 错误示例： foo.</description></item><item><title>Y2024Q1 影视音总结</title><link>https://lxulxu.github.io/posts/y2024q1-media-summary/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/y2024q1-media-summary/</guid><description>🎬MOVIES 2024-03-08. 沙丘2 - rating: ★★★★★ 2024-03-11. 一年一度喜剧大赛 第二季 - rating: ★★★★☆ 2024-03-11. 洛城机密 - rating: ★★★★★ 2024-03-11. 阿盖尔：神秘特工 - rating: ★★★☆☆ 2024-03-11. 周处除三害 - rating: ★★★★☆ 2024-03-11. 戏杀 - rating: ★★★☆☆ 2024-03-11. 繁城之下 - rating: ★★★★★ 2024-03-11. 明天，我会成为谁的女友 - rating: ★★★★☆ 2024-03-11. 第二十条 - rating: ★★★★☆ 2024-03-11. 热辣滚烫 - rating: ★★★☆☆ 2024-03-11. 飞驰人生2 - rating: ★★★★☆ 2024-03-11. 黑袍纠察队 第一季 - rating: ★★★★☆ 2024-03-11. 血观音 - rating: ★★★★★ 2024-03-11. 三大队 - rating: ★★★★☆ 2024-03-11.</description></item><item><title>RF Analyzer 简介</title><link>https://lxulxu.github.io/posts/rf_analyzer_introduction/</link><pubDate>Tue, 28 Feb 2023 18:54:18 +0000</pubDate><guid>https://lxulxu.github.io/posts/rf_analyzer_introduction/</guid><description>参考PG269 Ch1 &amp;amp; Ch2。
-特点 多达16个14-bit RF-DAC Gen 1/Gen 2:4个14-bit二倍频RF-ADC tile，2/4个14-bit四倍频RF-ADC tile； Gen 3:1/2/4个14-bit二倍频RF-ADC tile，2/4个14-bit四倍频RF-ADC tile。 支持多个转换器之间的对齐(多片同步(MTS)) 支持预编程RF-DAC和RF-ADC，用户可以定义关键参数 RF-ADC和RF-DAC有多个AX14-Stream数据接口 单独的AX14-Lite配置接口 Gen 1/Gen 2:1x(旁路)，2x, 4x, 8x抽取和插值 Gen 3:1x(旁路)，2x, 3x, 4x, 5x, 6x, 8x, 10x, 12x, 16x, 20x, 24x, 40x抽取和插值后的额外的2x插值 数字复合混频器和数控振荡器(NCO) 正交调制校正(QMC)，Gen 3每个RF-ADC有嵌入式数字步进衰减器(DSA)，每个RF-DAC有可变输出功率(VOP)控制 片上时钟系统包含每个tile的PLL Gen 3:片上时钟分配网络；TDD模式支持省电模式和RX/Obs共享模式 Dual and Quad RF-ADC/RF-DAC Tiles Tile类型 转换器数量 设备类型 说明 Quad RF-ADC 4 Gen 1/Gen 2/Gen 3/DFE 交错系数为4 Dual RF-ADC 2 Gen 1/Gen 3/DFE 交错系数为8，采样率为Quad RF-ADC两倍。 Quad RF-DAC 4 Gen 1/Gen 2/Gen 3/DFE 一个专用DUC Dual RF-DAC 2 Gen 3/DFE 两个专用DUC，Gen 3/DFE配备Quad RF-DAC或Quad/Dual RF-DAC组合，所有的tile都有外部时钟输入 下图为tile结构，虚线表示多个波段的情况。 RF-ADC/DAC RF-ADC/DAC结构如下图所示。</description></item><item><title>RF Analyzer 功能详解</title><link>https://lxulxu.github.io/posts/rf_analyzer_feature_guid/</link><pubDate>Mon, 27 Feb 2023 19:06:33 +0000</pubDate><guid>https://lxulxu.github.io/posts/rf_analyzer_feature_guid/</guid><description>RF-ADC 转换器设置(Converter Settings) 校准模式(Calibration Mode) 校准子系统由三个主要模块组成：
-时间交错偏移校准模块(OCB):校正每个子RF-ADC的DC偏移 增益校准模块(GCB):校正交错子RF-ADC之间的增益差异 时间偏移校准模块(TSCB):校正交错子RF-ADC之间的时间偏移 除了自动校准外，所有四个校准模块（OCB1、OCB2、GCB、TSCB）都可用于获取和设置用户系数。 应用程序读回校准解冻时生成的系数，并在需要时恢复它们； 这有助于在输入信号不满足校准要求时保持 RF-ADC 性能。 此功能适用于 IP 向导中的每个 RF-ADC。 启用此功能会增加 IP 的大小。
-1//以下示例代码显示了 TSCB 的用户系数设置。 2 3u32 Status = XRFDC_FAILURE; 4XRFdc_Calibration_Coefficients Coeffs; 5//使用下面的样本系数 6Coeffs.Coeff0 = 146; 7Coeffs.Coeff1 = 255; 8Coeffs.Coeff2 = 255; 9Coeffs.Coeff3 = 255; 10Coeffs.Coeff4 = 113; 11Coeffs.Coeff5 = 255; 12Coeffs.Coeff6 = 255 13Coeffs.Coeff7 = 255; 14Status = XRFdc_SetCalCoeffients( RFdcInstPtr, Tile, Block, 15XRFDC_CAL_BLOCK_TSCB, &amp;amp;Coeffs); 16If (Status != XRFDC_SUCCESS) { 17 /*handle error*/ 18} 使用XRFdc_SetCalCoefficients API 恢复校准系数会自动禁用实时校准。 提供 XRFdc_DisableCoefficientsOverride API 以禁用此用户系数覆盖模式并重新启用实时校准。 禁用实时校准时，实时端口校准冻结无效。</description></item><item><title>RFdc 驱动</title><link>https://lxulxu.github.io/posts/rf_driver_manual/</link><pubDate>Tue, 21 Feb 2023 14:41:35 +0000</pubDate><guid>https://lxulxu.github.io/posts/rf_driver_manual/</guid><description>参考PG269 Appx.C
-数据结构 数据结构UML图如下：
-API 功能 系统设置相关函数 函数原型 功能 u32 XRFdc_CfgInitialize(XRFdc *InstancePtr, XRFdc_Config *ConfigPtr) 通过从配置结构复制相关条目来填充驱动程序实例中的适当条目。与 RFdc 驱动程序 API 的任何软件交互都需要此函数，并且必须在使用任何其他 API 函数之前首先调用此函数。 XRFdc_Config *XRFdc_LookupConfig(u16 DeviceId) 根据设备的唯一 ID 查找设备配置 u32 XRFdc_RegisterMetal(XRFdc *InstancePtr, u16 DeviceId, struct metal_device **DevicePtr) 使用 Libmetal 注册RFDC u32 XRFdc_StartUp(XRFdc *InstancePtr, u32 Type, int Tile_Id) 根据 Tile_Id 的请求重新启动片。 如果 -1 作为 Tile_Id 传递，该函数将重新启动所有启用的切片。 现有寄存器设置不会在此过程中丢失或更改。 u32 XRFdc_Shutdown(XRFdc *InstancePtr, u32 Type, int Tile_Id) 根据 Tile_Id 的请求停止片。 如果 -1 作为 Tile_Id 传递，该函数将停止所有启用的切片。 现有的寄存器设置不会被清除。 u32 XRFdc_Reset(XRFdc *InstancePtr, u32 Type, int Tile_Id) 通过 Tile_Id 请求重置图块。 如果 -1 作为 Tile_Id 传递，它将重置所有启用的图块。 所有现有的寄存器设置都将被清除并替换为最初配置的设置。 u32 XRFdc_CustomStartUp(XRFdc *InstancePtr, u32 Type, int Tile_Id, u32 StartState, u32 EndState) 按照通过 Tile_Id 的请求，将 IPSM 从 StartState 运行到 EndState。 如果 -1 作为 Tile_Id 传递，则该函数针对所有启用的图块运行。 如果 StartState 为 XRFDC_STATE_OFF，现有寄存器设置将丢失或更改。 void XRFdc_DumpRegs (XRFdc *InstancePtr, u32 Type, int Tile_Id) 用于调试，将寄存器中的内容打印到控制台。 ADC 状态指示函数 函数原型 功能 u32 XRFdc_Set/GetDecimationFactor(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *DecimationFactorPtr) 设置/返回 RF-ADC 抽取因子 u32 XRFdc_Set/GetDecimationFactorObs(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *DecimationFactorPtr) 设置/返回 RF-ADC 观察通道的抽取因子 u32 XRFdc_GetFabWrVldWordsObs(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *FabricWrVldWordsPtr) 返回 RF-ADC 观测通道的写PL数据率 u32 XRFdc_Set/GetFabRdVldWordsObs(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *FabricRdVldWordsPtr) 设置/返回 RF-ADC 观测通道的读PL数据率 u32 XRFdc_Set/GetThresholdSettings(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, XRFdc_Threshold_Settings *ThresholdSettingsPtr) 设置/读取相应寄存器阈值 u32 XRFdc_GetFIFOStatusObs(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u8 *EnablePtr) 获取 RF-ADC 观察FIFO的当前状态 u32 XRFdc_Set/GetCalibrationMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u8 *CalibrationModePtr 设置/获取 RF-ADC 的校准模式 u32 XRFdc_Set/GetCalCoefficients(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 CalibrationBlock, XRFdc_Calibration_Coefficients *CoeffPtr) 设置/获取通用校准系数 u32 XRFdc_Set/GetCalFreeze(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, XRFdc_Cal_Freeze_Settings *CalFreezePtr) 设置/获取通用校准冻结设置 u32 XRFdc_Set/GetDither(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *ModePtr) 用抖动模式来填充/获取所提供的指针 u32 XRFdc_GetLinkCoupling(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id,u32 *ModePtr) 获取RF-ADC块的链路耦合模式 u32 XRFdc_Set/GetDSA(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, XRFdc_DSA_Settings *SettingsPtr) 传递的DSA设置被用来更新/获取相应的块级寄存器，仅适用于 RF-ADC 。 u32 XRFdc_Set/GetSignalDetector(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, XRFdc_Signal_Detector_Settings *SettingsPtr) 设置信号检测器/读取信号检测器设置，仅适用于 RF-ADC 。 u32 XRFdc_GetNoOfADCBlocks(XRFdc *InstancePtr, u32 Tile_Id) 获取启用的 RF-ADC 的数量 u32 XRFdc_IsADCBlockEnabled(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id) 如果请求的RF-ADC被启用，函数返回1；否则返回0。 u32 XRFdc_IsHighSpeedADC(XRFdc *InstancePtr, int Tile) 返回该瓦片是否为高速瓦片。 u32 XRFdc_IsADCDigitalPathEnabled(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id) 检查ADC数字路径是否被启用或禁用 ADC 设置状态指示函数 函数原型 功能 u32 XRFdc_ThresholdStickyClear(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 ThresholdToUpdate) 清除阈值配置寄存器中的sticky位 u32 XRFdc_SetThresholdClrMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 ThresholdToUpdate, u32 ClrMode) 设置阈值清除模式 u32 XRFdc_SetupFIFOObs(XRFdc *InstancePtr, u32 Type, int Tile_Id, u8 Enable) 启用和禁用RF-ADC的观察通道FIFO u32 XRFdc_SetupFIFOBoth(XRFdc *InstancePtr, u32 Type, int Tile_Id, u8 Enable) 启用和禁用RF-ADC实际和观察通道的FIFO u32 XRFdc_DisableCoefficientsOverride(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 CalibrationBlock) 禁用所选块的系数覆盖 DAC 状态指示函数 函数原型 功能 u32 XRFdc_Set/GetInterpolationFactor(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *InterpolationFactorPtr) 设置/返回 RF-DAC 的插值因子 u32 XRFdc_Set/GetDecoderMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *DecoderModePtr) 从相关寄存器中设置/读取解码器模式 u32 XRFdc_GetOutputCurr(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *OutputCurrPtr) 获取输出电流 u32 XRFdc_Set/GetInvSincFIR(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u16 *ModePtr) 设置/获取InvSinc滤波器的状态 u32 XRFdc_GetDACDataScaler(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *EnablePtr) 获取数据缩放器的启用状态 u32 XRFdc_Set/GetDACCompMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *Enable) 设置/返回传统的DAC输出模式 u32 XRFdc_Set/GetDataPathMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *Mode) 设置/返回数据路径模式 u32 XRFdc_Set/GetIMRPassMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *Mode) 设置/返回IMR滤波器模式 u32 XRFdc_GetNoOfDACBlock(XRFdc *InstancePtr, u32 Tile_Id) 返回启用的RF-DAC的数量 u32 XRFdc_IsDACBlockEnabled(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id) 如果请求的RF-DAC被启用，该函数返回1；否则返回0。 u32 XRFdc_GetInverseSincFilter(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id) 如果RF-DAC的反向sinc滤波器被启用，函数返回1；否则返回0。 u32 XRFdc_GetMixedMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id) 返回RF-DAC的混频模式设置 u32 XRFdc_IsDACDigitalPathEnabled(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id) 检查RF-DAC数字路径是否启用 DAC 设置状态指示函数 函数原型 功能 u32 XRFdc_SetFabWrVldWords(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 FabricWrVldWords) 写入要为RF-DAC设置的结构数据速率 u32 XRFdc_SetDACVOP(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 uACurrent) VOP μA电流用于更新相应的块级寄存器 ADC/DAC 状态指示函数 函数原型 功能 u32 XRFdc_GetIPStatus(XRFdc *InstancePtr, XRFdc_IPStatus *IPStatusPtr) 返回 IP 状态 u32 XRFdc_GetBlockStatus(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_BlockStatus *BlockStatusPtr) 返回请求的块状态 u32 XRFdc_Set/GetMixerSettings(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_Mixer_Settings *MixerSettingsPtr) 设置/返回相应寄存器的混频器/NCO 设置 u32 XRFdc_Set/GetQMCSettings(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_QMC_Settings *QMCSettingsPtr) 设置/返回相关寄存器的 QMC 设置 u32 XRFdc_Set/GetCoarseDelaySettings(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_CoarseDelay_Settings *CoarseDelaySettingsPtr) 设置/返回相关寄存器的粗略延迟设置 u32 XRFdc_Set/GetFabClkOutDiv(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u16 *FabClkDivPtr) 设置/获取PL的时钟分频器 u32 XRFdc_GetFabWrVldWords(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *FabricWrVldWordsPtr) 返回PL写数据率 u32 XRFdc_GetFabRdVldWords(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *FabricRdVldWordsPtr) 返回PL读数据率 u32 XRFdc_GetFIFOStatus(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u8 *EnablePtr) 返回FIFO的当前状态 u32 XRFdc_Set/GetNyquistZone(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *NyquistZonePtr) 设置/返回奈奎斯特区 u32 XRFdc_GetClockSource(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 *ClockSourcePtr 返回时钟源 u32 XRFdc_GetPLLConfig(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, XRFdc_PLL_Settings *PLLSettings) 从寄存器中读取PLL设置 u32 XRFdc_GetPLLLockStatus(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 *LockStatusPtr) 返回PLL锁定状态 u32 XRFdc_Set/GetClkDistribution(XRFdc *InstancePtr, XRFdc_Distribution_System_Settings *DistributionArrayPtr) 设置/返回时钟分布设置 u32 XRFdc_GetPwrMode(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_Pwr_Mode_Settings *SettingsPtr) 返回电源模式 u32 XRFdc_Get_TileBaseAddr(XRFdc *InstancePtr, u32 Type, u32 Tile_Id) 返回片的基地址 u32 XRFdc_Get_BlockBaseAddr(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id） 返回转换器的基地址 u32 XRFdc_GetDataType(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id） 如果数据类型为实数，函数返回0；否则，返回1。 u32 XRFdc_GetDataWidth(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id) 返回编程数据宽度 u32 XRFdc_GetMasterTile(XRFdc *InstancePtr, u32 Type) 返回主瓦片ID u32 XRFdc_GetSysRefSource(XRFdc *InstancePtr, u32 Type) 返回 SYSREF 的来源 u32 XRFdc_Get_IPBaseAddr(XRFdc *InstancePtr) 返回IP的基地址 double XRFdc_GetFabClkFreq(XRFdc *InstancePtr, u32 Type, u32 Tile_Id) 返回已编程的PL时钟频率 u32 XRFdc_IsFifoEnabled（XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id) 如果FIFO被启用，该函数返回1；否则，返回0。 double XRFdc_GetDriverVersion() 获取驱动程序的版本 int XRFdc_GetConnectedIData(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id) 获取I数字数据路径的转换器 int XRFdc_GetConnectedQData(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id) 获取Q数字数据路径连接的转换器 u16 XRFdc_RDReg(XRFdc *InstancePtr, u32 BaseAddr, u32 RegAddr, u16 Mask) 对值进行读取和屏蔽 u32 XRFdc_CheckDigitalPathEnabled(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id) 检查数字路径是否被激活 u32 XRFdc_GetMultibandConfig(XRFdc *InstancePtr, u32 Type, u32 Tile_Id) 获取多频段配置数据 u32 XRFdc_CheckBlockEnabled(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id) 检查RF-ADC/RF-DAC块是否被激活或禁用 u32 XRFdc_CheckTileEnabled(XRFdc *InstancePtr, u32 Type, u32 Tile_Id) 检查RF-ADC/RF-DAC瓦片是否被启用或禁用 u32 XRFdc_GetMaxSampleRate(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, double *MaxSampleRatePtr) 获取瓦片的最大采样率 u32 XRFdc_GetMinSampleRate(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, double *MinSampleRatePtr) 获取瓦片的最小采样率 ADC/DAC 设置状态指示函数 函数原型 功能 u32 XRFdc_UpdateEvent(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 Event) 当事件源为 Slice 或 Tile 时，使用该函数触发事件的更新事件。 u32 XRFdc_ResetNCOPhase(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id) 启动当前块相位累加器的NCO相位复位 u32 XRFdc_SetupFIFO(XRFdc *InstancePtr, u32 Type, int Tile_Id, u8 Enable) 启用和禁用RF-ADC/RF-DAC的FIFO u32 XRFdc_MultiBand(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u8 DigitalDataPathMask, u32 DataType, u32 DataConverterMask) 设置单频和多频配置 void XRFdc_MultiConverter_Init(XRFdc_MultiConverter_Sync_Config *ConfigPtr, int *PLL_CodesPtr, int *T1_CodesPtr, u32 RefTile) 初始化多轨同步配置结构，必须在XRFdc_MultiConverter_Sync之前调用。 u32 XRFdc_MultiConverter_Sync(XRFdc *InstancePtr, u32 Type, XRFdc_MultiConverter_Sync_Config *ConfigPtr) 多片同步 u32 XRFdc_DynamicPLLConfig(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u8 Source, double RefClkFreq, double SamplingRate) 用于在内部PLL和外部时钟源之间的动态切换，以及为RF-ADC/RF-DAC配置内部PLL。 u32 XRFdc_MTS_Sysref_Config(XRFdc *InstancePtr, XRFdc_MultiConverter_Sync_Config *DACSyncConfigPtr, XRFdc_MultiConverter_Sync_Config *ADCSyncConfigPtr, u32 SysRefEnable) 启用和禁用sysref u32 XRFdc_ResetInternalFIFOWidth(XRFdc *InstancePtr, u32 Type, u32 Tile_Id,u32 Block_Id) 重置内部FIFO宽度，以符合RF-ADC/RF-DAC的速率变化和混频器设置。 u32 XRFdc_SetPwrMode(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_Pwr_Mode_Settings *SettingsPtr) 设置电源模式 void XRFdc_ClrSetReg(XRFdc *InstancePtr, u32 BaseAddr, u32 RegAddr, u16 Mask, u16 Data) 修改写入 void XRFdc_ClrReg(XRFdc *InstancePtr, u32 BaseAddr, u32 RegAddr, u16 Mask) 读取和清除 void XRFdc_SetConnectedIQData(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, int ConnectedIData, int ConnectedQData) 设置数字数据路径I和Q的连接数据转换器 中断部分 函数原型 功能 u32 XRFdc_IntrEnable(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 IntrMask） 通过将IntrMask作为输入并写入相应的寄存器位来启用相应转换器的中断 u32 XRFdc_IntrDisable(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 IntrMask) 禁用中断 void XRFdc_SetStatusHandler(XRFdc *InstancePtr, void *CallBackRefPtr, XRFdc_StatusHandler FunctionPtr) 设置状态回调函数，当驱动程序遇到必须报告给上层软件的情况时，会调用这个函数。 u32 XRFdc_IntrClr(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 IntrMask) 清除中断 u32 XRFdc_GetIntrStatus(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *IntrStsPtr) 返回中断状态 u32 XRFdc_IntrHandler(u32 Vector, void *XRFdcPtr) 清除中断源并打印中断原因 u32 XRFdc_GetEnabledInterrupts(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *IntrMask) 启用的中断来填充IntrMask</description></item><item><title>《高质量C++编程指南》笔记</title><link>https://lxulxu.github.io/posts/high_quality_cpp_programming_notes/</link><pubDate>Sun, 04 Sep 2022 11:51:33 +0000</pubDate><guid>https://lxulxu.github.io/posts/high_quality_cpp_programming_notes/</guid><description>文件结构 头文件结构 1//版权和版本声明 2/* 3* Copyright (c) 2001,上海贝尔有限公司网络应用事业部 4* All rights reserved. 5* 6* 文件名称：graphics.h 7* 文件标识：见配置管理计划书 8* 摘 要：简要描述本文件的内容 9* 10* 当前版本：1.1 11* 作 者：输入作者（或修改者）名字 12* 完成日期：2001年7月20日 13* 14* 取代版本：1.0 15* 原作者 ：输入原作者（或修改者）名字 16* 完成日期：2001年5月10日 17*/ 18 19#ifndef GRAPHICS_H // 防止 graphics.h 被重复引用 20#define GRAPHICS_H 21#include &amp;lt;math.h&amp;gt; // 引用标准库的头文件 22... 23#include “myheader.h” // 引用非标准库的头文件 24... 25void Function1(...); // 全局函数声明 26... 27class Box // 类结构声明 28{ 29... 30}; 31#endif 版权和版本的声明 版权信息。 文件名称，标识符，摘要。 当前版本号，作者/修改者，完成日期。 版本历史信息。 预处理块 为了防止头文件被重复引用，应当用 ifndef/define/endif 结构产生预处理块</description></item><item><title>Tcl Cheat Sheet</title><link>https://lxulxu.github.io/posts/tcl-cheat-sheet/</link><pubDate>Tue, 30 Aug 2022 17:51:47 +0000</pubDate><guid>https://lxulxu.github.io/posts/tcl-cheat-sheet/</guid><description>基础语法 1puts &amp;#34;Hello World&amp;#34;#输出 2set x [expr 1 == 2 ? 1 : 2]#设置变量；三元运算符 3[exec ls]#调用子进程 4 5#if 6if { $x &amp;lt; 2} { ... } 7elseif { $x == 1 } { ... } 8 9#while 10while { $x &amp;lt; 2 } { 11	incr x 12} 13 14#for 15for { set i 0 } { $i &amp;lt; 5 } { incr i } { ... } 16 17#switch 18switch $x { 19	1 { .</description></item><item><title>许可管理</title><link>https://lxulxu.github.io/posts/license_management_guide/</link><pubDate>Wed, 10 Aug 2022 21:50:26 +0000</pubDate><guid>https://lxulxu.github.io/posts/license_management_guide/</guid><description>IEEE Std 1735-2014 Ch8 一些整理
-简介 定义 1`protect license_proxyname=&amp;#34;acme_proxy&amp;#34; 2`protect license_attributes=&amp;#34;USER,MAC,PROXYINFO=1.2&amp;#34; 3`protect license_symmetric_key_method=&amp;#34;aes128-cbc&amp;#34; 4`protect license_public_key_method=&amp;#34;rsa&amp;#34; 5`protect license_keyowner=&amp;#34;ACME&amp;#34;, license_keyname=&amp;#34;ACME2014&amp;#34; 6`protect license_public_key 7AV6f6JyGUxBpr49EwxN7jfdUQcRqRFDN7Mto2ltk+emrRCQS+bW/Yvu8U3w9kx7g 8rCXFueY/S8lyKUExUP2Yi5C3K9WIFqF7Ov3Hm9/fEumxDzvYkGOGuGu/xv/OYIyb 9whEkaiPmVI8+7S/+8NJeOm3BiVaIH5XLcZvz7EW9bvc= proxyname：决定代理运行时所需的环境变量名称
-attributes：提供给代理的可选属性，代理可根据这些属性授予或拒绝许可
-symmetric key method： 工具与代理间传递信息的对称加密算法
-public key method：后文密钥加密算法
-keyowner &amp;amp; keyname：每个license_keyowner/license_keyname对都与一个public key和一个symmetric method对应，与之相反，每个public key/symmetric method对可以对应多个license_keyowner和license_keyname，加解密信封中的license_keyowner/license_keyname应该是唯一的
-public key：用于加密symmetric key，base64编码DER格式，代理可以访问与之匹配的私钥
-其中license_proxyname和public key是必要属性。
-使用 license()
-位于common block，基本语法：
-protect control right = license(&amp;quot;feature&amp;quot;) ? &amp;quot;true_value&amp;quot;:&amp;quot;false_value&amp;quot;
-e.g. protect control decrypt = license(&amp;quot;IP123&amp;quot;) ? &amp;quot;true&amp;quot; : &amp;quot;false&amp;quot;
-license()可以建立与代理间的通信并发出许可请求，如果代理授予许可则返回布尔值TRUE，如果拒绝则返回布尔值FALSE。
-license_string()
-基本语法：
-protect control right = license_string(&amp;quot;feature&amp;quot;)</description></item><item><title>星球大战万代模型</title><link>https://lxulxu.github.io/posts/bandai_models/</link><pubDate>Tue, 03 May 2022 20:20:35 +0000</pubDate><guid>https://lxulxu.github.io/posts/bandai_models/</guid><description> Yoda General Grievous C-3PO BB-8 &amp; D-O DIORAMA SET K-2SO Boba Fett Darth Vader Captain Phasma Stormtrooper Shoretrooper Shadow Stormtrooper First Order Stormtrooper Kylo Ren Mandalorian Razor Crest</description></item><item><title>Vivado加密IP</title><link>https://lxulxu.github.io/posts/vivado_encrypted_ip_guide/</link><pubDate>Sat, 26 Mar 2022 18:00:52 +0000</pubDate><guid>https://lxulxu.github.io/posts/vivado_encrypted_ip_guide/</guid><description>整理 UG1118 Ch6
-权限管理 公共权限(Common Rights)：适用于所有EDA工具
-特定权限(Vendor-Specific Rights)：授予开发者的特定权限（如控制Vivado Logic Analyzer探测器行为），此部分访问权限值覆盖普通权限同名值
-条件权限(Conditional Rights)：IEEE-1735-2014 V2 引入，允许不同条件下指定不同访问权限
-IEEE 1735 结构 定义域(Definition area)：定义支持的供应商及其访问权限
-密钥定义(Encrypted Key Definition)
-加密负载(Encrypted payload)：加密IP的Verilog、System Verilog、 VHDL源码
-纯文本负载(Plain-text payload)：IP源码未加密部分
-以一个完整密钥文件内容为例
-1`pragma protect version = 2 2`pragma protect encrypt_agent = &amp;#34;XILINX&amp;#34; 3`pragma protect encrypt_agent_info = &amp;#34;Xilinx Encryption Tool 2021&amp;#34; 4`pragma protect begin_commonblock 5`pragma protect control error_handling = &amp;#34;delegated&amp;#34; 6`pragma protect control child_visibility = &amp;#34;delegated&amp;#34; 7`pragma protect control decryption = (activity==simulation)? &amp;#34;false&amp;#34; :&amp;#34;true&amp;#34; 8`pragma protect end_commonblock 9`pragma protect begin_toolblock 10`pragma protect rights_digest_method=&amp;#34;sha256&amp;#34; 11`pragma protect key_keyowner = &amp;#34;Xilinx&amp;#34;, key_keyname= &amp;#34;xilinxt_2021_01&amp;#34;, key_method = &amp;#34;rsa&amp;#34;, key_public_key 12MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApgf7F4kYh0oSFzJBRoRb 13nsrAqn24fVbI7xdNG2t9G8pouFfwIXGGmQgYqYZDSmUu0wrrj3ulLvUnjRtmtziJ 141RDOYdyko1SuBEyGT1frzUu9xNitAXxp29hOrVPeKO6kGU81XHJCRJ7uWh7rwoyf 15HSUpreifLybt+UT5fyvHu21IxvOR6GHKWaQ4wdL7Txguuyf92XLJIZABEgmuVlPK 16/NjJjVRK3c/vMuQLvbihNapkyCiLIWNwDbo9oWXr7NSo3we8u6IlFmP5V8WcOmXZ 17/PZqp3QOkY2Jlm1yQt3O8PpU/8qzB7zcHjm3+Q+wB8yUYn/IMwN0t09l2AdBR37G 18EwIDAQAB 19`pragma protect control xilinx_configuration_visible = &amp;#34;false&amp;#34; 20`pragma protect control xilinx_enable_modification = &amp;#34;false&amp;#34; 21`pragma protect control xilinx_enable_probing = &amp;#34;false&amp;#34; 22`pragma protect control xilinx_enable_netlist_export = &amp;#34;false&amp;#34; 23`pragma protect control xilinx_enable_bitstream = &amp;#34;true&amp;#34; 24`pragma protect control decryption = (xilinx_activity==simulation)?</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on lxulxu's blog</title><link>https://lxulxu.github.io/posts/</link><description>Recent content in Posts on lxulxu's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 05 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://lxulxu.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>C++中的push_back与emplace_back</title><link>https://lxulxu.github.io/posts/push_back_emplace_back/</link><pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/push_back_emplace_back/</guid><description>&lt;p>&lt;strong>1. 引言&lt;/strong>&lt;/p>
+&lt;p>C++标准库提供了&lt;code>push_back&lt;/code>和&lt;code>emplace_back&lt;/code>两种向容器末尾添加元素的方法。本文将深入分析这两个函数的区别、使用场景，以及在实际应用中的性能考虑。&lt;/p>
+&lt;p>&lt;strong>2. 基本概念&lt;/strong>&lt;/p>
+&lt;p>2.1 push_back
+&lt;code>push_back&lt;/code>有两个重载版本：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">1&lt;/span>&lt;span>&lt;span style="color:#fabd2f">void&lt;/span> &lt;span style="color:#fabd2f">push_back&lt;/span>(&lt;span style="color:#fe8019">const&lt;/span> T&lt;span style="color:#fe8019">&amp;amp;&lt;/span> value);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">2&lt;/span>&lt;span>&lt;span style="color:#fabd2f">void&lt;/span> &lt;span style="color:#fabd2f">push_back&lt;/span>(T&lt;span style="color:#fe8019">&amp;amp;&amp;amp;&lt;/span> value);
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>第一个版本复制元素，第二个版本移动元素。&lt;/p>
+&lt;p>2.2 emplace_back
+&lt;code>emplace_back&lt;/code>是C++11引入的变参模板函数：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">1&lt;/span>&lt;span>&lt;span style="color:#fe8019">template&lt;/span> &lt;span style="color:#fe8019">&amp;lt;&lt;/span>&lt;span style="color:#fe8019">class&lt;/span>... Args&lt;span style="color:#fe8019">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">2&lt;/span>&lt;span>&lt;span style="color:#fabd2f">void&lt;/span> emplace_back(Args&lt;span style="color:#fe8019">&amp;amp;&amp;amp;&lt;/span>... args);
+&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item><item><title>Y2024Q3 影视音总结</title><link>https://lxulxu.github.io/posts/y2024q3-media-summary/</link><pubDate>Mon, 01 Jul 2024 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/y2024q3-media-summary/</guid><description>&lt;h2 id="movies">🎬MOVIES&lt;/h2>
+&lt;ul>
+&lt;li>2024-07-01. &lt;a href="http://movie.douban.com/subject/35558694/">&lt;strong>孤战迷城&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
+&lt;li>2024-07-06. &lt;a href="http://movie.douban.com/subject/26656728/">&lt;strong>泳者之心&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-07-06. &lt;a href="http://movie.douban.com/subject/35280899/">&lt;strong>扫黑·决不放弃&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
+&lt;li>2024-07-09. &lt;a href="http://movie.douban.com/subject/36877322/">&lt;strong>默杀&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
+&lt;li>2024-07-12. &lt;a href="http://movie.douban.com/subject/30170847/">&lt;strong>神偷奶爸4&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
+&lt;li>2024-07-12. &lt;a href="http://movie.douban.com/subject/36624248/">&lt;strong>落凡尘&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-07-13. &lt;a href="http://movie.douban.com/subject/36653918/">&lt;strong>抓娃娃&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-07-14. &lt;a href="http://movie.douban.com/subject/1441473/">&lt;strong>水中女妖&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
+&lt;li>2024-07-19. &lt;a href="http://movie.douban.com/subject/26816104/">&lt;strong>从21世纪安全撤离&lt;/strong>&lt;/a> - rating: ★★★★★&lt;/li>
+&lt;li>2024-07-22. &lt;a href="http://movie.douban.com/subject/4118060/">&lt;strong>B+侦探&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
+&lt;li>2024-07-26. &lt;a href="http://movie.douban.com/subject/26957900/">&lt;strong>死侍与金刚狼&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-07-27. &lt;a href="http://movie.douban.com/subject/35228399/">&lt;strong>异人之下&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-08-03. &lt;a href="http://movie.douban.com/subject/26370387/">&lt;strong>解密&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-08-10. &lt;a href="http://movie.douban.com/subject/36774001/">&lt;strong>逆行人生&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-08-10. &lt;a href="http://movie.douban.com/subject/36463483/">&lt;strong>白蛇：浮生&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-08-16. &lt;a href="http://movie.douban.com/subject/11803087/">&lt;strong>异形：契约&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-08-16. &lt;a href="http://movie.douban.com/subject/35792500/">&lt;strong>异形：夺命舰&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-08-17. &lt;a href="http://movie.douban.com/subject/36206859/">&lt;strong>九部的检察官&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-08-21. &lt;a href="http://movie.douban.com/subject/35633856/">&lt;strong>孤舟&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
+&lt;li>2024-08-23. &lt;a href="http://movie.douban.com/subject/35633904/">&lt;strong>刺猬&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-08-23. &lt;a href="http://movie.douban.com/subject/36372330/">&lt;strong>前途无量&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-08-23. &lt;a href="http://movie.douban.com/subject/36328210/">&lt;strong>姥姥的外孙&lt;/strong>&lt;/a> - rating: ★★★★★&lt;/li>
+&lt;li>2024-08-24. &lt;a href="http://movie.douban.com/subject/36847744/">&lt;strong>逆鳞&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
+&lt;/ul>
+&lt;h2 id="books">📚BOOKS&lt;/h2>
+&lt;ul>
+&lt;li>2024-07-20. &lt;a href="https://book.douban.com/subject/35546622/">&lt;strong>置身事内&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;/ul>
+&lt;h2 id="music">🎵MUSIC&lt;/h2>
+&lt;ul>
+&lt;li>2024-07-04. &lt;a href="https://open.spotify.com/track/1z7X7lFkoF2KRoDaxUfN99">&lt;strong>Lights Out&lt;/strong>&lt;/a> - by &lt;em>SUNMI, BE&amp;rsquo;O&lt;/em> from the album &amp;lsquo;[BILLION MUSIC PROJECT VOL.1]&amp;rsquo;&lt;/li>
+&lt;li>2024-07-11. &lt;a href="https://open.spotify.com/track/13YaXVlC0P6FzqGDPHZf5Z">&lt;strong>Honeybee&lt;/strong>&lt;/a> - by &lt;em>CHUU&lt;/em> from the album &amp;lsquo;Strawberry Rush&amp;rsquo;&lt;/li>
+&lt;li>2024-07-11. &lt;a href="https://open.spotify.com/track/218g50oq3A9srwhomKUOnj">&lt;strong>Aquamarine&lt;/strong>&lt;/a> - by &lt;em>LEE CHAE YEON&lt;/em> from the album &amp;lsquo;HUSH RUSH&amp;rsquo;&lt;/li>
+&lt;li>2024-07-11. &lt;a href="https://open.spotify.com/track/1bKo0BOqqQjh4oX5koTsGK">&lt;strong>Dreaming&lt;/strong>&lt;/a> - by &lt;em>LEE CHAE YEON&lt;/em> from the album &amp;lsquo;SHOWDOWN&amp;rsquo;&lt;/li>
+&lt;li>2024-07-11. &lt;a href="https://open.spotify.com/track/0gZ6hv8Am0HBXx4gYqKSOs">&lt;strong>I Don’t Wanna Know&lt;/strong>&lt;/a> - by &lt;em>LEE CHAE YEON&lt;/em> from the album &amp;lsquo;Over The Moon&amp;rsquo;&lt;/li>
+&lt;li>2024-07-11. &lt;a href="https://open.spotify.com/track/2fixtBSOZrKSdybUC3T1V4">&lt;strong>Standing On My Own&lt;/strong>&lt;/a> - by &lt;em>LEE CHAE YEON&lt;/em> from the album &amp;lsquo;SHOWDOWN&amp;rsquo;&lt;/li>
+&lt;li>2024-07-11. &lt;a href="https://open.spotify.com/track/0U4AAJvKGNSKMLv8EFCwkW">&lt;strong>Supernatural&lt;/strong>&lt;/a> - by &lt;em>LEE CHAE YEON&lt;/em> from the album &amp;lsquo;SHOWDOWN&amp;rsquo;&lt;/li>
+&lt;li>2024-07-11. &lt;a href="https://open.spotify.com/track/0olwftyyFUogEKwv2E8S9m">&lt;strong>Summer Heat&lt;/strong>&lt;/a> - by &lt;em>LEE CHAE YEON&lt;/em> from the album &amp;lsquo;SHOWDOWN&amp;rsquo;&lt;/li>
+&lt;li>2024-07-11. &lt;a href="https://open.spotify.com/track/5OJFA4FvJAML5CgPzTjRM8">&lt;strong>LET′S DANCE&lt;/strong>&lt;/a> - by &lt;em>LEE CHAE YEON&lt;/em> from the album &amp;lsquo;The Move : Street&amp;rsquo;&lt;/li>
+&lt;li>2024-07-11. &lt;a href="https://open.spotify.com/track/0P2LW3jbuJLpH2mwg0lLzn">&lt;strong>HUSH RUSH&lt;/strong>&lt;/a> - by &lt;em>LEE CHAE YEON&lt;/em> from the album &amp;lsquo;HUSH RUSH&amp;rsquo;&lt;/li>
+&lt;li>2024-07-11. &lt;a href="https://open.spotify.com/track/5ra7GTL5v4TORuJqmJnZZx">&lt;strong>Don′t&lt;/strong>&lt;/a> - by &lt;em>LEE CHAE YEON&lt;/em> from the album &amp;lsquo;SHOWDOWN&amp;rsquo;&lt;/li>
+&lt;li>2024-07-14. &lt;a href="https://open.spotify.com/track/1DtMUu18eX4VMO18LMWmA2">&lt;strong>Quand le rideau tombe&lt;/strong>&lt;/a> - by &lt;em>Mozart Opera Rock&lt;/em> from the album &amp;lsquo;Mozart l&amp;rsquo;Opera Rock (standard)&amp;rsquo;&lt;/li>
+&lt;li>2024-07-14. &lt;a href="https://open.spotify.com/track/3fAOSZc5hTpnXxSO43ymwu">&lt;strong>L&amp;rsquo;Assasymphonie&lt;/strong>&lt;/a> - by &lt;em>Mozart Opera Rock&lt;/em> from the album &amp;lsquo;Mozart l&amp;rsquo;Opera Rock (standard)&amp;rsquo;&lt;/li>
+&lt;li>2024-07-16. &lt;a href="https://open.spotify.com/track/0w8Jpf1PoY44qvb5XSeUDl">&lt;strong>My Favorite Things&lt;/strong>&lt;/a> - by &lt;em>Audra McDonald, Carrie Underwood&lt;/em> from the album &amp;lsquo;The Sound of Music (Music from the Television Special) (feat. Carrie Underwood)&amp;rsquo;&lt;/li>
+&lt;li>2024-07-16. &lt;a href="https://open.spotify.com/track/1fCKxY62wMnayTNSr3S3GN">&lt;strong>Heaven&lt;/strong>&lt;/a> - by &lt;em>TAEYEON&lt;/em> from the album &amp;lsquo;Heaven&amp;rsquo;&lt;/li>
+&lt;li>2024-07-22. &lt;a href="https://open.spotify.com/track/4n93SK7dQsQVu9BM5QzvAx">&lt;strong>I Can Do It With a Broken Heart&lt;/strong>&lt;/a> - by &lt;em>Taylor Swift&lt;/em> from the album &amp;lsquo;I Can Do It With a Broken Heart&amp;rsquo;&lt;/li>
+&lt;li>2024-07-22. &lt;a href="https://open.spotify.com/track/0Z8YQJNXTCZqflWehjoJqJ">&lt;strong>I Can Do It With a Broken Heart - Instrumental&lt;/strong>&lt;/a> - by &lt;em>Taylor Swift&lt;/em> from the album &amp;lsquo;I Can Do It With a Broken Heart&amp;rsquo;&lt;/li>
+&lt;li>2024-07-24. &lt;a href="https://open.spotify.com/track/5HbUBxrnmYigbyZFTSnlFk">&lt;strong>九张机&lt;/strong>&lt;/a> - by &lt;em>叶炫清&lt;/em> from the album &amp;lsquo;九张机&amp;rsquo;&lt;/li>
+&lt;li>2024-07-24. &lt;a href="https://open.spotify.com/track/5ql8N4h66Hqse2hTameDqH">&lt;strong>一念執著&lt;/strong>&lt;/a> - by &lt;em>胡歌, 阿蘭&lt;/em> from the album &amp;lsquo;步步驚心主題曲原聲EP&amp;rsquo;&lt;/li>
+&lt;li>2024-07-24. &lt;a href="https://open.spotify.com/track/2CJzadzgwIKRdsEtAAHhef">&lt;strong>喜歡你(喜歡我)&lt;/strong>&lt;/a> - by &lt;em>Yida Huang&lt;/em> from the album &amp;lsquo;黃義達 過程 精選&amp;rsquo;&lt;/li>
+&lt;li>2024-07-24. &lt;a href="https://open.spotify.com/track/2uXU9BDz57vdTP5TH59WwL">&lt;strong>這樣就很好&lt;/strong>&lt;/a> - by &lt;em>Nicky Lee&lt;/em> from the album &amp;lsquo;這樣就很好&amp;rsquo;&lt;/li>
+&lt;li>2024-07-25. &lt;a href="https://open.spotify.com/track/0gMW8XpPFPjoApDii5Tj1u">&lt;strong>Waving Through A Window&lt;/strong>&lt;/a> - by &lt;em>Ben Platt, Original Broadway Cast of Dear Evan Hansen&lt;/em> from the album &amp;lsquo;Dear Evan Hansen (Original Broadway Cast Recording)&amp;rsquo;&lt;/li>
+&lt;li>2024-07-29. &lt;a href="https://open.spotify.com/track/1oQZk2bKBLgP1cbuFKvjkq">&lt;strong>If I Were a Boy&lt;/strong>&lt;/a> - by &lt;em>Beyoncé&lt;/em> from the album &amp;lsquo;I AM&amp;hellip;SASHA FIERCE - Platinum Edition&amp;rsquo;&lt;/li>
+&lt;li>2024-08-14. &lt;a href="https://open.spotify.com/track/0bJFBiF7WQ9rAi6nsCZYBR">&lt;strong>Phải Lòng Anh&lt;/strong>&lt;/a> - by &lt;em>MIN&lt;/em> from the album &amp;rsquo;not a good time for love'&lt;/li>
+&lt;li>2024-08-15. &lt;a href="https://open.spotify.com/track/3ae1vbawLG43UHpuLDyX3N">&lt;strong>MLEM MLEM&lt;/strong>&lt;/a> - by &lt;em>MIN, JustaTee, Yuno Bigboi&lt;/em> from the album &amp;lsquo;MLEM MLEM&amp;rsquo;&lt;/li>
+&lt;li>2024-08-15. &lt;a href="https://open.spotify.com/track/23doJkL2RUXPey5ezNqrhr">&lt;strong>Chuyện Nhà Bé Thôi, Con Đừng Về&lt;/strong>&lt;/a> - by &lt;em>Kai Đinh, MIN&lt;/em> from the album &amp;lsquo;Chuyện Nhà Bé Thôi, Con Đừng Về&amp;rsquo;&lt;/li>
+&lt;li>2024-08-16. &lt;a href="https://open.spotify.com/track/3jtwwdfOYDQCVCLBTqPi08">&lt;strong>Giấc Mơ Tình Yêu&lt;/strong>&lt;/a> - by &lt;em>Forest Studio, Ali Hoàng Dương, Anh Tú, Trúc Nhân, MIN, Hứa Kim Tuyền&lt;/em> from the album &amp;lsquo;Trạm 2: Xuân Hạ Thu Đông, rồi lại Xuân 2&amp;rsquo;&lt;/li>
+&lt;li>2024-08-16. &lt;a href="https://open.spotify.com/track/78ByURsaVK39jjwTaerCAk">&lt;strong>girls like me don&amp;rsquo;t cry (remix) ft. MIN&lt;/strong>&lt;/a> - by &lt;em>thủy, MIN&lt;/em> from the album &amp;lsquo;girls like me don&amp;rsquo;t cry (remix) ft. MIN&amp;rsquo;&lt;/li>
+&lt;li>2024-08-16. &lt;a href="https://open.spotify.com/track/76fGNPBCe3ma0czcp8ebBI">&lt;strong>Người Em Tìm Kiếm&lt;/strong>&lt;/a> - by &lt;em>MIN&lt;/em> from the album &amp;lsquo;Người Em Tìm Kiếm&amp;rsquo;&lt;/li>
+&lt;li>2024-08-16. &lt;a href="https://open.spotify.com/track/0IuibTGRJrvneq0taKqewW">&lt;strong>Chưa Bao Giờ Mẹ Kể&lt;/strong>&lt;/a> - by &lt;em>MIN, ERIK&lt;/em> from the album &amp;lsquo;Chưa Bao Giờ Mẹ Kể&amp;rsquo;&lt;/li>
+&lt;li>2024-08-16. &lt;a href="https://open.spotify.com/track/1jGzz56TIOz7KIEK3t3e01">&lt;strong>Đừng Xin Lỗi Nữa&lt;/strong>&lt;/a> - by &lt;em>ERIK, MIN&lt;/em> from the album &amp;lsquo;Đừng Xin Lỗi Nữa&amp;rsquo;&lt;/li>
+&lt;li>2024-08-16. &lt;a href="https://open.spotify.com/track/4RWwqGuoL14BOHik4Gzgpf">&lt;strong>Gọi Tên Em&lt;/strong>&lt;/a> - by &lt;em>MIN&lt;/em> from the album &amp;lsquo;Gọi Tên Em&amp;rsquo;&lt;/li>
+&lt;li>2024-08-16. &lt;a href="https://open.spotify.com/track/4tjWbnuqRtd1VIdPqiSSkn">&lt;strong>Đừng Yêu Nữa, Em Mệt Rồi&lt;/strong>&lt;/a> - by &lt;em>MIN&lt;/em> from the album &amp;lsquo;Đừng Yêu Nữa, Em Mệt Rồi&amp;rsquo;&lt;/li>
+&lt;li>2024-08-16. &lt;a href="https://open.spotify.com/track/06HFK9UCZVOG0mDt5MP0PM">&lt;strong>Ơi Ơi Ơi&lt;/strong>&lt;/a> - by &lt;em>MIN&lt;/em> from the album &amp;lsquo;Ơi Ơi Ơi&amp;rsquo;&lt;/li>
+&lt;li>2024-08-16. &lt;a href="https://open.spotify.com/track/0TUgWXeH3Xts6JZNGoMj4U">&lt;strong>One Day&lt;/strong>&lt;/a> - by &lt;em>MIN, Rhymastic&lt;/em> from the album &amp;lsquo;Take Me Away&amp;rsquo;&lt;/li>
+&lt;li>2024-08-16. &lt;a href="https://open.spotify.com/track/1dcAhNtNsckWBXD3zzgNWT">&lt;strong>Watching The Stars&lt;/strong>&lt;/a> - by &lt;em>MIN&lt;/em> from the album &amp;lsquo;50/50&amp;rsquo;&lt;/li>
+&lt;li>2024-08-16. &lt;a href="https://open.spotify.com/track/7zdJTO4JWFwQSJlkQ87Pk2">&lt;strong>Ghen Co Vy (Vietnamese Version) (feat. Erik &amp;amp; Khắc Hưng)&lt;/strong>&lt;/a> - by &lt;em>MIN, ERIK, Khắc Hưng&lt;/em> from the album &amp;lsquo;Ghen Co Vy (feat. Erik &amp;amp; Khắc Hưng)&amp;rsquo;&lt;/li>
+&lt;li>2024-08-16. &lt;a href="https://open.spotify.com/track/608vNXvyyRmCE0ygEJFcRA">&lt;strong>Up To You&lt;/strong>&lt;/a> - by &lt;em>MIN&lt;/em> from the album &amp;lsquo;Up to You&amp;rsquo;&lt;/li>
+&lt;li>2024-08-16. &lt;a href="https://open.spotify.com/track/30QABnntYDN8fFKXfzAzoP">&lt;strong>Em Muốn Ăn Gì&lt;/strong>&lt;/a> - by &lt;em>Osad, MIN&lt;/em> from the album &amp;lsquo;Em Muốn Ăn Gì&amp;rsquo;&lt;/li>
+&lt;li>2024-08-16. &lt;a href="https://open.spotify.com/track/3kMNAg9NcWTumropWUTj4S">&lt;strong>Ngắm Sao (Dear Miniacs)&lt;/strong>&lt;/a> - by &lt;em>MIN&lt;/em> from the album &amp;lsquo;50/50&amp;rsquo;&lt;/li>
+&lt;li>2024-08-16. &lt;a href="https://open.spotify.com/track/7bNHAaXoydvYaWr2sLTZgJ">&lt;strong>LoveNote&lt;/strong>&lt;/a> - by &lt;em>Binz, MIN&lt;/em> from the album &amp;lsquo;LoveNote&amp;rsquo;&lt;/li>
+&lt;li>2024-08-16. &lt;a href="https://open.spotify.com/track/6irVy1D9fsv0ZUKxKRrL3P">&lt;strong>If U Have A Dream (feat. R.Tee, Kai Đinh &amp;amp; Tinle)&lt;/strong>&lt;/a> - by &lt;em>MIN, Kai Đinh, Rtee, Tinle&lt;/em> from the album &amp;lsquo;If U Have A Dream (feat. R.Tee, Kai Đinh &amp;amp; Tinle)&amp;rsquo;&lt;/li>
+&lt;li>2024-08-16. &lt;a href="https://open.spotify.com/track/7M0u8F97mL9clTqpCluRv4">&lt;strong>Hòa Nhịp Giáng Sinh&lt;/strong>&lt;/a> - by &lt;em>MIN&lt;/em> from the album &amp;lsquo;Hòa Nhịp Giáng Sinh&amp;rsquo;&lt;/li>
+&lt;li>2024-08-16. &lt;a href="https://open.spotify.com/track/20qgpSJvtadLyAM2BqBhGs">&lt;strong>Có Em Chờ - 2&lt;/strong>&lt;/a> - by &lt;em>Kai Đinh, MIN&lt;/em> from the album &amp;lsquo;Lâu Phai (lofi) 1&amp;rsquo;&lt;/li>
+&lt;li>2024-08-16. &lt;a href="https://open.spotify.com/track/2qATLutygByNypdM3Faje5">&lt;strong>Tình Yêu Màu Nắng&lt;/strong>&lt;/a> - by &lt;em>Forest Studio, Trúc Nhân, MIN&lt;/em> from the album &amp;lsquo;Trạm 2: Xuân Hạ Thu Đông, rồi lại Xuân 2&amp;rsquo;&lt;/li>
+&lt;li>2024-08-16. &lt;a href="https://open.spotify.com/track/2nR51wakN5K3AJENqGaNg9">&lt;strong>Bài Này Chill Phết&lt;/strong>&lt;/a> - by &lt;em>Đen, MIN&lt;/em> from the album &amp;lsquo;Bài Này Chill Phết&amp;rsquo;&lt;/li>
+&lt;li>2024-08-16. &lt;a href="https://open.spotify.com/track/59IgHWqRIob3bVeN3LrTES">&lt;strong>Fall Down (Intro)&lt;/strong>&lt;/a> - by &lt;em>MIN&lt;/em> from the album &amp;lsquo;Stuck&amp;rsquo;&lt;/li>
+&lt;li>2024-08-16. &lt;a href="https://open.spotify.com/track/3xarkTPVyOVD71CiOMBZd4">&lt;strong>NGHỈ ĐÓN TẾT?!&lt;/strong>&lt;/a> - by &lt;em>Ricky Star, MIN, Hoaprox&lt;/em> from the album &amp;lsquo;NGHỈ ĐÓN TẾT?!&amp;rsquo;&lt;/li>
+&lt;li>2024-08-16. &lt;a href="https://open.spotify.com/track/73dTh8WY5vzOI3ByjMjxKI">&lt;strong>Stuck (Nhớ)&lt;/strong>&lt;/a> - by &lt;em>MIN&lt;/em> from the album &amp;lsquo;Stuck&amp;rsquo;&lt;/li>
+&lt;li>2024-08-16. &lt;a href="https://open.spotify.com/track/4t6wHqVgY1DoZLWw0bRDzi">&lt;strong>M#1 - Intro&lt;/strong>&lt;/a> - by &lt;em>MIN&lt;/em> from the album &amp;lsquo;Tìm&amp;rsquo;&lt;/li>
+&lt;li>2024-08-19. &lt;a href="https://open.spotify.com/track/61k187Ygyhw9PUckZc1A3J">&lt;strong>If You Have A Dream - 2&lt;/strong>&lt;/a> - by &lt;em>Rtee, MIN, TINLE&lt;/em> from the album &amp;lsquo;If You Have A Dream 2&amp;rsquo;&lt;/li>
+&lt;li>2024-08-20. &lt;a href="https://open.spotify.com/track/1tY6IGfIFwLyNZA8KfoGVs">&lt;strong>tinhdau tinhdau tinhdau&lt;/strong>&lt;/a> - by &lt;em>Kai Đinh, Orange&lt;/em> from the album &amp;lsquo;winter warmer&amp;rsquo;&lt;/li>
+&lt;li>2024-08-22. &lt;a href="https://open.spotify.com/track/5knzVXv8KtFfNeAX4lfmc0">&lt;strong>Is This Love? (Sped Up Ver.)&lt;/strong>&lt;/a> - by &lt;em>Moon Byul&lt;/em> from the album &amp;lsquo;Starlit of Twinkle : REPACKAGE&amp;rsquo;&lt;/li>
+&lt;li>2024-08-22. &lt;a href="https://open.spotify.com/track/5c4jbUaELmT8pfRTwACZ7j">&lt;strong>TOUCHIN&amp;amp;MOVIN (English Ver.)&lt;/strong>&lt;/a> - by &lt;em>Moon Byul&lt;/em> from the album &amp;lsquo;Starlit of Twinkle : REPACKAGE&amp;rsquo;&lt;/li>
+&lt;li>2024-08-22. &lt;a href="https://open.spotify.com/track/3BUsxN8g6JoNm9NA7TtAJM">&lt;strong>Dear.&lt;/strong>&lt;/a> - by &lt;em>Moon Byul&lt;/em> from the album &amp;lsquo;Starlit of Twinkle : REPACKAGE&amp;rsquo;&lt;/li>
+&lt;li>2024-08-22. &lt;a href="https://open.spotify.com/track/0pi3F910SNsgncUDkX3e8y">&lt;strong>Is This Love?&lt;/strong>&lt;/a> - by &lt;em>Moon Byul&lt;/em> from the album &amp;lsquo;Starlit of Twinkle : REPACKAGE&amp;rsquo;&lt;/li>
+&lt;li>2024-08-22. &lt;a href="https://open.spotify.com/track/10X5qEa8YJwhCbLAjPeTxp">&lt;strong>Backpack&lt;/strong>&lt;/a> - by &lt;em>Moon Byul&lt;/em> from the album &amp;lsquo;Starlit of Twinkle : REPACKAGE&amp;rsquo;&lt;/li>
+&lt;li>2024-08-24. &lt;a href="https://open.spotify.com/track/69pyHCoBn4Ki0BzDJ2xPGI">&lt;strong>稻香&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;魔杰座&amp;rsquo;&lt;/li>
+&lt;li>2024-08-24. &lt;a href="https://open.spotify.com/track/4oSqIlKulWts1oRUIem44V">&lt;strong>安靜&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;范特西&amp;rsquo;&lt;/li>
+&lt;li>2024-08-24. &lt;a href="https://open.spotify.com/track/10VuSw48iPN2UK2xX9Y6P0">&lt;strong>青花瓷&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;我很忙&amp;rsquo;&lt;/li>
+&lt;li>2024-08-24. &lt;a href="https://open.spotify.com/track/0TMGJMQJWHhuNY60MEr5jR">&lt;strong>等你下課&lt;/strong>&lt;/a> - by &lt;em>Jay Chou, Gary Yang&lt;/em> from the album &amp;lsquo;最偉大的作品&amp;rsquo;&lt;/li>
+&lt;li>2024-08-24. &lt;a href="https://open.spotify.com/track/3Qj9Fy8BPbWmICTiNkuqB7">&lt;strong>珊瑚海&lt;/strong>&lt;/a> - by &lt;em>Jay Chou, Lara Liang&lt;/em> from the album &amp;lsquo;11月的蕭邦&amp;rsquo;&lt;/li>
+&lt;li>2024-08-24. &lt;a href="https://open.spotify.com/track/1oLmDOpJtIMFdRFBXdnOvj">&lt;strong>夜曲&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;11月的蕭邦&amp;rsquo;&lt;/li>
+&lt;li>2024-08-24. &lt;a href="https://open.spotify.com/track/1pALOIA4ytESmhl7Fxjdic">&lt;strong>楓&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;11月的蕭邦&amp;rsquo;&lt;/li>
+&lt;li>2024-08-24. &lt;a href="https://open.spotify.com/track/4OoExItZJ0jePoCZDbHx4t">&lt;strong>說好的幸福呢&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;魔杰座&amp;rsquo;&lt;/li>
+&lt;li>2024-08-24. &lt;a href="https://open.spotify.com/track/57w29bSwdIZ6gr6xXOqwc1">&lt;strong>七里香&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;七里香&amp;rsquo;&lt;/li>
+&lt;li>2024-08-27. &lt;a href="https://open.spotify.com/track/77jIEebt4z9WzaI6LsntDG">&lt;strong>不能說的秘密&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;不能說的秘密電影原聲帶&amp;rsquo;&lt;/li>
+&lt;li>2024-08-27. &lt;a href="https://open.spotify.com/track/1H1Su2z86EDS2KQ1nhMmWA">&lt;strong>給我一首歌的時間&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;魔杰座&amp;rsquo;&lt;/li>
+&lt;li>2024-08-27. &lt;a href="https://open.spotify.com/track/69zgyr5HVKdInjeKpq1qHa">&lt;strong>想見你想見你想見你(電視劇&amp;quot;想見你&amp;quot;片尾曲)&lt;/strong>&lt;/a> - by &lt;em>831&lt;/em> from the album &amp;lsquo;想見你想見你想見你(電視劇&amp;quot;想見你&amp;quot;片尾曲)&amp;rsquo;&lt;/li>
+&lt;li>2024-08-27. &lt;a href="https://open.spotify.com/track/7ENyuG8dBrSc540l0LoWes">&lt;strong>Take Me Away&lt;/strong>&lt;/a> - by &lt;em>MIN&lt;/em> from the album &amp;lsquo;Take Me Away&amp;rsquo;&lt;/li>
+&lt;li>2024-08-27. &lt;a href="https://open.spotify.com/track/4J1vA4sgG6FJ1j21UugbtH">&lt;strong>最長的電影&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;我很忙&amp;rsquo;&lt;/li>
+&lt;li>2024-08-27. &lt;a href="https://open.spotify.com/track/2zB7NKVnzRh7xSUSPLErFr">&lt;strong>明明就&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;十二新作&amp;rsquo;&lt;/li>
+&lt;li>2024-08-27. &lt;a href="https://open.spotify.com/track/0GvxoZAzrqS7bFEHFHsfd4">&lt;strong>髮如雪&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;11月的蕭邦&amp;rsquo;&lt;/li>
+&lt;li>2024-08-27. &lt;a href="https://open.spotify.com/track/5DRICg8VWNCtIv7lWebAsI">&lt;strong>開不了口&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;范特西&amp;rsquo;&lt;/li>
+&lt;li>2024-08-27. &lt;a href="https://open.spotify.com/track/4IgOhZsCy9W4ZIzI4b1TYN">&lt;strong>龍捲風&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;杰倫&amp;rsquo;&lt;/li>
+&lt;li>2024-08-27. &lt;a href="https://open.spotify.com/track/5pLarojy3gy2T4hPnm8lQh">&lt;strong>彩虹&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;我很忙&amp;rsquo;&lt;/li>
+&lt;li>2024-08-27. &lt;a href="https://open.spotify.com/track/1QtbOpdb7xBC0EpXA5EqkN">&lt;strong>退後&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;依然范特西&amp;rsquo;&lt;/li>
+&lt;li>2024-08-27. &lt;a href="https://open.spotify.com/track/5miH0BWhRVTvHAwmnoeyXH">&lt;strong>不該&lt;/strong>&lt;/a> - by &lt;em>Jay Chou, A-Mei Chang&lt;/em> from the album &amp;lsquo;周杰倫的床邊故事&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/3WTd8qNJhJHAgRG6FhdSPZ">&lt;strong>東風破&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;葉惠美&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/23oXdU0FCaIOeuydbKYmjf">&lt;strong>暗號&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;八度空間&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/3NvH1v6NOxlawEoCXjg9sK">&lt;strong>điều vô tri nhất&lt;/strong>&lt;/a> - by &lt;em>Kai Đinh, MIN, Hoàng Dũng&lt;/em> from the album &amp;lsquo;điều vô tri nhất&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/1upDvualT1Yw3Keme0HwIj">&lt;strong>YÊU&lt;/strong>&lt;/a> - by &lt;em>MIN&lt;/em> from the album &amp;lsquo;YÊU&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/6jghnZHYAyNlEiWbxDITjy">&lt;strong>Ghen&lt;/strong>&lt;/a> - by &lt;em>MIN, ERIK, Khắc Hưng&lt;/em> from the album &amp;lsquo;Ghen&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/5tde5yVjCHtigasaTQ4x02">&lt;strong>Hít Vào Thở Ra&lt;/strong>&lt;/a> - by &lt;em>MIN, HIEUTHUHAI&lt;/em> from the album &amp;lsquo;Hít Vào Thở Ra&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/4zFgUpC8z88A9aEo7dnRPN">&lt;strong>Trên Tình Bạn Dưới Tình Yêu&lt;/strong>&lt;/a> - by &lt;em>MIN&lt;/em> from the album &amp;lsquo;50/50&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/5cvW3PYJeQjRTnj9vHP5Va">&lt;strong>Cà Phê&lt;/strong>&lt;/a> - by &lt;em>MIN&lt;/em> from the album &amp;lsquo;50/50&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/02Jf3KszL1FB1kG6CILEWE">&lt;strong>Vì Yêu Cứ Đâm Đầu&lt;/strong>&lt;/a> - by &lt;em>MIN, Đen, JustaTee&lt;/em> from the album &amp;lsquo;Vì Yêu Cứ Đâm Đầu&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/5qbjUmVV1yOOjcMOInNPYD">&lt;strong>để tôi ôm em bằng giai điệu này&lt;/strong>&lt;/a> - by &lt;em>Kai Đinh, MIN, GREY D&lt;/em> from the album &amp;lsquo;winter warmer&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/0fMHnEAutqHjDZkd1Z00Qn">&lt;strong>Steps2fame&lt;/strong>&lt;/a> - by &lt;em>MIN&lt;/em> from the album &amp;lsquo;Steps2fame&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/75wMAQuGPogUQSRVH39Zra">&lt;strong>Hè Phải Bay&lt;/strong>&lt;/a> - by &lt;em>MIN, Mr.A&lt;/em> from the album &amp;lsquo;Hè Phải Bay&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/5c4jORYQDQs4ZSkKs79MJ3">&lt;strong>Get Out!&lt;/strong>&lt;/a> - by &lt;em>MIN&lt;/em> from the album &amp;lsquo;Stuck&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/6WdNqFrLvArBK3P5XuEZAp">&lt;strong>I Heart You&lt;/strong>&lt;/a> - by &lt;em>MIN, ERIK&lt;/em> from the album &amp;lsquo;YÊU&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/0MIg7hUu4Pa90AX7lGO9ei">&lt;strong>Phải Lòng Anh&lt;/strong>&lt;/a> - by &lt;em>MIN&lt;/em> from the album &amp;lsquo;50/50&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/6Qk3MFAGqCqsbsbLy7wIad">&lt;strong>Shine Your Light&lt;/strong>&lt;/a> - by &lt;em>MIN, JustaTee&lt;/em> from the album &amp;lsquo;Shine Your Light&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/6VqSodZ70QwolYazh1TObB">&lt;strong>菊花台&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;依然范特西&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/5JTTfdqXlksUgNSjRFRPMh">&lt;strong>以父之名&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;葉惠美&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/1IqO5tjlh7uSkstlaFCQke">&lt;strong>夜的第七章&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;依然范特西&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/17r0QOU13yjiEP38skWLjo">&lt;strong>甜甜的&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;我很忙&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/2JnamB6EQVscDH3np6HQvN">&lt;strong>她的睫毛&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;葉惠美&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/7L43l7R1WUX9VROiSHwwvZ">&lt;strong>大笨鐘&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;十二新作&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/3Pjp7lBM20zYzTlRurI6B7">&lt;strong>千里之外&lt;/strong>&lt;/a> - by &lt;em>Jay Chou, Fei Yu-ching&lt;/em> from the album &amp;lsquo;依然范特西&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/3ZsPujeG0eWb4o3VkrHKd5">&lt;strong>妳聽得到&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;葉惠美&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/7a1NvZIvbBkCfstppXTwSr">&lt;strong>算什麼男人&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;哎呦，不錯哦&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/6ua4mNb8k1AyJBTpyhB4PD">&lt;strong>斷了的弦&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;尋找周杰倫&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/1yLMAXDPaiAc99lz1m6KCJ">&lt;strong>浪漫手機&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;11月的蕭邦&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/6X4gGPP7K1ElsNnmc6BYKs">&lt;strong>我落淚．情緒零碎&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;跨時代&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/2PEm4ZfvupUu0zd5gfLqRt">&lt;strong>粉色海洋&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;最偉大的作品&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/41xbDSEbEqCxqA7gVhIKM4">&lt;strong>聽見下雨的聲音&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;哎呦，不錯哦&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/24beWW0pQCJEF3IVSpIryu">&lt;strong>煙花易冷&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;跨時代&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/54DriLwbOZvH7CZXeOs7mt">&lt;strong>愛的飛行日記&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;跨時代&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/4bXZMhpcle6e1PzCUquYEF">&lt;strong>超人不會飛&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;跨時代&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/34DtDWmIUacoop6Md298vE">&lt;strong>Pump Up The Volume!&lt;/strong>&lt;/a> - by &lt;em>PLAVE&lt;/em> from the album &amp;lsquo;Pump Up The Volume!&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/0nFB06940icgftyz7019el">&lt;strong>蘭亭序&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;魔杰座&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/5nfNIDpLLSettH57xEKknm">&lt;strong>黑色毛衣&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;11月的蕭邦&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/7IK4jRsvJETc5T91uEZtN2">&lt;strong>不愛我就拉倒&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;最偉大的作品&amp;rsquo;&lt;/li>
+&lt;li>2024-08-30. &lt;a href="https://open.spotify.com/track/1IuFmoB065q05ePcxknzCG">&lt;strong>愛情廢柴&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;周杰倫的床邊故事&amp;rsquo;&lt;/li>
+&lt;li>2024-09-02. &lt;a href="https://open.spotify.com/track/71kC79VjhOrFpLcPE8JMFw">&lt;strong>Mirror&lt;/strong>&lt;/a> - by &lt;em>FIESTAR&lt;/em> from the album &amp;lsquo;A Delicate Sense&amp;rsquo;&lt;/li>
+&lt;li>2024-09-02. &lt;a href="https://open.spotify.com/track/5rel7L0UVWzW0aUsbzWgR8">&lt;strong>You’re pitiful&lt;/strong>&lt;/a> - by &lt;em>FIESTAR&lt;/em> from the album &amp;lsquo;You’re pitiful - 2024 ver.&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/3lYvepDz6yYj29z7e4r5z0">&lt;strong>FXXK IT&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;MADE&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/0BNfReaAQjFPLpLsXyioLu">&lt;strong>Luôn Bên Anh&lt;/strong>&lt;/a> - by &lt;em>MIN, Mr.A&lt;/em> from the album &amp;lsquo;Luôn Bên Anh&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/1lODrFR40rSNAw5cX4j2J2">&lt;strong>The 6th Summer&lt;/strong>&lt;/a> - by &lt;em>PLAVE&lt;/em> from the album &amp;lsquo;ASTERUM : The Shape of Things to Come&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/58OKa3g5rRVpFer06Z1Ahw">&lt;strong>猜（电影《热辣滚烫》热辣心动曲）&lt;/strong>&lt;/a> - by &lt;em>希林娜依•高&lt;/em> from the album &amp;lsquo;猜（电影《热辣滚烫》热辣心动曲）&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/1oCw1EeqkMIoum1FQUgEaj">&lt;strong>藏星（电影《热辣滚烫》热辣绽放曲）&lt;/strong>&lt;/a> - by &lt;em>Silence Wang&lt;/em> from the album &amp;lsquo;藏星（电影《热辣滚烫》热辣绽放曲）&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/3z7at2LZwJsg8UvqGw3JAv">&lt;strong>Có Em Chờ&lt;/strong>&lt;/a> - by &lt;em>MIN, Mr A&lt;/em> from the album &amp;lsquo;Có Em Chờ&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/1j8jqwFpFQ8YqsIJAiYFLZ">&lt;strong>Wife&lt;/strong>&lt;/a> - by &lt;em>(G)I-DLE&lt;/em> from the album &amp;lsquo;2&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/05QXjyZgsAq6J84J6SlbyV">&lt;strong>XXL&lt;/strong>&lt;/a> - by &lt;em>YOUNG POSSE&lt;/em> from the album &amp;lsquo;XXL EP&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/1aKvZDoLGkNMxoRYgkckZG">&lt;strong>Magnetic&lt;/strong>&lt;/a> - by &lt;em>ILLIT&lt;/em> from the album &amp;lsquo;SUPER REAL ME&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/0vaxYDAuAO1nPolC6bQp7V">&lt;strong>Midas Touch&lt;/strong>&lt;/a> - by &lt;em>KISS OF LIFE&lt;/em> from the album &amp;lsquo;Midas Touch&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/3NJ6kH1NAPICgJKdidV0Gs">&lt;strong>Dancing On My Own&lt;/strong>&lt;/a> - by &lt;em>Pixie Lott, Marty James&lt;/em> from the album &amp;lsquo;Young Foolish Happy (Deluxe Edition)&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/44f1TNdoQUgf3PUYraCTsH">&lt;strong>Black (Feat. JENNIE of BLACKPINK)&lt;/strong>&lt;/a> - by &lt;em>G-DRAGON, JENNIE&lt;/em> from the album &amp;lsquo;COUP D&amp;rsquo;ETAT (Korean Version)&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/7BYGfn9F73atTWMdAHVdPk">&lt;strong>BLACK&lt;/strong>&lt;/a> - by &lt;em>G-DRAGON, Sky Ferreira&lt;/em> from the album &amp;lsquo;COUP D&amp;rsquo;ETAT&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/5plHkhLqsFla3nUJhtSZ7w">&lt;strong>夏天&lt;/strong>&lt;/a> - by &lt;em>Nicky Lee&lt;/em> from the album &amp;lsquo;好玖&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/3V375E3xldRPEEcIKiw83l">&lt;strong>Without You (Feat. ROSE)&lt;/strong>&lt;/a> - by &lt;em>G-DRAGON, ROSÉ&lt;/em> from the album &amp;lsquo;One of a Kind&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/7ijWcf4FsoxoyPK4B9WGp6">&lt;strong>LAST DANCE&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;MADE&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/52AQsGTohwUtmEhoV8fAbz">&lt;strong>你和我和他之間&lt;/strong>&lt;/a> - by &lt;em>Princess Ai, 竇智孔&lt;/em> from the album &amp;lsquo;愛情風暴-美麗99&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/38MKW2tQHtyO8djIOKlEFF">&lt;strong>Allergy&lt;/strong>&lt;/a> - by &lt;em>(G)I-DLE&lt;/em> from the album &amp;lsquo;I feel&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/24qhDjPwI1z78ZPidMpC6R">&lt;strong>Tìm (Lost)&lt;/strong>&lt;/a> - by &lt;em>MIN, Mr.A&lt;/em> from the album &amp;lsquo;Tìm&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/6h8oeJ62qCY0aThaKzQZqg">&lt;strong>Runaway&lt;/strong>&lt;/a> - by &lt;em>Lost Kings, Destiny Rogers&lt;/em> from the album &amp;lsquo;Runaway&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/5ZOS622xElEIE8VmkwNfcP">&lt;strong>G999 (Feat. Mirani)&lt;/strong>&lt;/a> - by &lt;em>Moon Byul, MIRANI&lt;/em> from the album &amp;lsquo;G999 (Feat. Mirani)&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/5XWlyfo0kZ8LF7VSyfS4Ew">&lt;strong>Drama&lt;/strong>&lt;/a> - by &lt;em>aespa&lt;/em> from the album &amp;lsquo;Drama - The 4th Mini Album&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/406KPQqXM4AQlT5KSmFcvG">&lt;strong>Fall in Love&lt;/strong>&lt;/a> - by &lt;em>Sophie Chen, Vicky Chen&lt;/em> from the album &amp;lsquo;Fall in Love&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/2KZ3sNqPogEyMUUH6A5HFy">&lt;strong>LALISA&lt;/strong>&lt;/a> - by &lt;em>LISA&lt;/em> from the album &amp;lsquo;LALISA&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/1gIaX9HEGZsWSd5HDJatSr">&lt;strong>Em Mới Là Người Yêu Anh&lt;/strong>&lt;/a> - by &lt;em>MIN&lt;/em> from the album &amp;lsquo;Em Mới Là Người Yêu Anh&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/0V2passWyAXnON67kfAj7y">&lt;strong>ABCD&lt;/strong>&lt;/a> - by &lt;em>NAYEON&lt;/em> from the album &amp;lsquo;NA&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/3x6unDluyCL4v5AeGrAVGA">&lt;strong>Balloon in Love&lt;/strong>&lt;/a> - by &lt;em>SUNMI&lt;/em> from the album &amp;lsquo;Balloon in Love&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/5SVVoVAcI1kJKdvAqQxjzB">&lt;strong>Hwi hwi&lt;/strong>&lt;/a> - by &lt;em>LABOUM&lt;/em> from the album &amp;lsquo;MISS THIS KISS&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/1gq1gf44tZ9cyTdlcyoJd1">&lt;strong>Strawberry Rush&lt;/strong>&lt;/a> - by &lt;em>CHUU&lt;/em> from the album &amp;lsquo;Strawberry Rush&amp;rsquo;&lt;/li>
+&lt;li>2024-09-03. &lt;a href="https://open.spotify.com/track/6n8jt9dFY0qG5oioNW23wi">&lt;strong>Anh Qua Đây Đi&lt;/strong>&lt;/a> - by &lt;em>MIN&lt;/em> from the album &amp;lsquo;50/50&amp;rsquo;&lt;/li>
+&lt;li>2024-09-05. &lt;a href="https://open.spotify.com/track/559f8rcNNZW07wz5Rfxnfh">&lt;strong>Can&amp;rsquo;t Control Myself&lt;/strong>&lt;/a> - by &lt;em>TAEYEON&lt;/em> from the album &amp;lsquo;Can&amp;rsquo;t Control Myself&amp;rsquo;&lt;/li>
+&lt;/ul></description></item><item><title>Y2024Q2 影视音总结</title><link>https://lxulxu.github.io/posts/y2024q2-media-summary/</link><pubDate>Sun, 30 Jun 2024 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/y2024q2-media-summary/</guid><description>&lt;h2 id="movies">🎬MOVIES&lt;/h2>
+&lt;ul>
+&lt;li>2024-04-03. &lt;a href="http://movie.douban.com/subject/35314844/">&lt;strong>又见逍遥&lt;/strong>&lt;/a> - rating: ★★☆☆☆&lt;/li>
+&lt;li>2024-04-03. &lt;a href="http://movie.douban.com/subject/35240117/">&lt;strong>草木人间&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-04-17. &lt;a href="http://movie.douban.com/subject/36206860/">&lt;strong>追风者&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-04-19. &lt;a href="http://movie.douban.com/subject/34940879/">&lt;strong>年少日记&lt;/strong>&lt;/a> - rating: ★★★★★&lt;/li>
+&lt;li>2024-04-23. &lt;a href="http://movie.douban.com/subject/35209732/">&lt;strong>城中之城&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-04-29. &lt;a href="http://movie.douban.com/subject/35391108/">&lt;strong>哈尔滨一九四四&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
+&lt;li>2024-05-01. &lt;a href="http://movie.douban.com/subject/25907029/">&lt;strong>宝贝老板&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-05-02. &lt;a href="http://movie.douban.com/subject/36207371/">&lt;strong>没有一顿火锅解决不了的事&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
+&lt;li>2024-05-02. &lt;a href="http://movie.douban.com/subject/24284175/">&lt;strong>九龙城寨之围城&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-05-02. &lt;a href="http://movie.douban.com/subject/35371629/">&lt;strong>维和防暴队&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
+&lt;li>2024-05-02. &lt;a href="http://movie.douban.com/subject/35503073/">&lt;strong>对你的想象&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
+&lt;li>2024-05-03. &lt;a href="http://movie.douban.com/subject/2248658/">&lt;strong>新上海滩&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-05-04. &lt;a href="http://movie.douban.com/subject/3003228/">&lt;strong>努尔哈赤秘史&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-05-04. &lt;a href="http://movie.douban.com/subject/2248788/">&lt;strong>绝对计划&lt;/strong>&lt;/a> - rating: ★★★★★&lt;/li>
+&lt;li>2024-05-07. &lt;a href="https://www.douban.com/location/drama/10944605/">&lt;strong>妈妈咪呀&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-05-11. &lt;a href="http://movie.douban.com/subject/36069854/">&lt;strong>猩球崛起：新世界&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-05-17. &lt;a href="http://movie.douban.com/subject/35268614/">&lt;strong>特技狂人&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-05-18. &lt;a href="http://movie.douban.com/subject/35359715/">&lt;strong>朝云暮雨&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
+&lt;li>2024-05-18. &lt;a href="http://movie.douban.com/subject/35095466/">&lt;strong>彷徨之刃&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
+&lt;li>2024-05-23. &lt;a href="http://movie.douban.com/subject/34937650/">&lt;strong>庆余年 第二季&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-05-23. &lt;a href="http://movie.douban.com/subject/26759937/">&lt;strong>狐妖小红娘·月红篇&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
+&lt;li>2024-05-24. &lt;a href="http://movie.douban.com/subject/34971728/">&lt;strong>盟军敢死队&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
+&lt;li>2024-06-12. &lt;a href="http://movie.douban.com/subject/35956190/">&lt;strong>走走停停&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-06-13. &lt;a href="http://movie.douban.com/subject/36282652/">&lt;strong>看不见影子的少年&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-06-14. &lt;a href="http://movie.douban.com/subject/35242872/">&lt;strong>狗阵&lt;/strong>&lt;/a> - rating: ★★☆☆☆&lt;/li>
+&lt;li>2024-06-17. &lt;a href="http://movie.douban.com/subject/35919997/">&lt;strong>9号秘事 第九季&lt;/strong>&lt;/a> - rating: ★★★★★&lt;/li>
+&lt;li>2024-06-19. &lt;a href="http://movie.douban.com/subject/36092115/">&lt;strong>金庸武侠世界&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
+&lt;li>2024-06-19. &lt;a href="http://movie.douban.com/subject/35426925/">&lt;strong>机器人之梦&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-06-21. &lt;a href="http://movie.douban.com/subject/36090457/">&lt;strong>头脑特工队2&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-06-25. &lt;a href="http://movie.douban.com/subject/36401888/">&lt;strong>谈判专家&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-06-28. &lt;a href="http://movie.douban.com/subject/36173819/">&lt;strong>来福大酒店&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
+&lt;li>2024-06-28. &lt;a href="http://movie.douban.com/subject/35725861/">&lt;strong>海关战线&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
+&lt;/ul>
+&lt;h2 id="music">🎵MUSIC&lt;/h2>
+&lt;ul>
+&lt;li>2024-05-01. &lt;a href="https://open.spotify.com/track/76qqDJijAjFph7sjUxNVG8">&lt;strong>Shhh&lt;/strong>&lt;/a> - by &lt;em>KISS OF LIFE&lt;/em> from the album &amp;lsquo;KISS OF LIFE&amp;rsquo;&lt;/li>
+&lt;li>2024-05-01. &lt;a href="https://open.spotify.com/track/70efTlnBNM8BvfhfPiqOBN">&lt;strong>Nobody Knows&lt;/strong>&lt;/a> - by &lt;em>KISS OF LIFE&lt;/em> from the album &amp;lsquo;Born to be XX&amp;rsquo;&lt;/li>
+&lt;li>2024-05-01. &lt;a href="https://open.spotify.com/track/0NoeYUnwpb9R26mpylHcR9">&lt;strong>Sugarcoat (NATTY Solo)&lt;/strong>&lt;/a> - by &lt;em>KISS OF LIFE&lt;/em> from the album &amp;lsquo;KISS OF LIFE&amp;rsquo;&lt;/li>
+&lt;li>2024-05-01. &lt;a href="https://open.spotify.com/track/6y0ZtwYY1kHl0J9YlKsoec">&lt;strong>我們&lt;/strong>&lt;/a> - by &lt;em>Vicky Chen, Evangeline Wong, Sophie Chen, W.M.L&lt;/em> from the album &amp;lsquo;我們&amp;rsquo;&lt;/li>
+&lt;li>2024-05-01. &lt;a href="https://open.spotify.com/track/3tXCpt80T5wTq9QUOBFmOV">&lt;strong>DARK ROMANCE&lt;/strong>&lt;/a> - by &lt;em>Moon Byul&lt;/em> from the album &amp;lsquo;Starlit of Muse&amp;rsquo;&lt;/li>
+&lt;li>2024-05-01. &lt;a href="https://open.spotify.com/track/2EpYA2P46b66ng4y4tmYhB">&lt;strong>TIMELINE&lt;/strong>&lt;/a> - by &lt;em>Moon Byul&lt;/em> from the album &amp;lsquo;Starlit of Muse&amp;rsquo;&lt;/li>
+&lt;li>2024-05-01. &lt;a href="https://open.spotify.com/track/11H2X55y7L2UpoKD5hCCq4">&lt;strong>After Sunset&lt;/strong>&lt;/a> - by &lt;em>Moon Byul&lt;/em> from the album &amp;lsquo;Starlit of Muse&amp;rsquo;&lt;/li>
+&lt;li>2024-05-01. &lt;a href="https://open.spotify.com/track/6iNaH15BySlaaQ3AlK1Zls">&lt;strong>NOLTO (Feat. HANHAE)&lt;/strong>&lt;/a> - by &lt;em>Moon Byul, Hanhae&lt;/em> from the album &amp;lsquo;Starlit of Muse&amp;rsquo;&lt;/li>
+&lt;li>2024-05-01. &lt;a href="https://open.spotify.com/track/3ZYSPwv46EapGeKAW3hB4X">&lt;strong>Attention Seeker&lt;/strong>&lt;/a> - by &lt;em>Moon Byul&lt;/em> from the album &amp;lsquo;Starlit of Muse&amp;rsquo;&lt;/li>
+&lt;li>2024-05-01. &lt;a href="https://open.spotify.com/track/0YDvSpVM6kLX26YVGKZ7Lt">&lt;strong>Like a Fool&lt;/strong>&lt;/a> - by &lt;em>Moon Byul&lt;/em> from the album &amp;lsquo;Starlit of Muse&amp;rsquo;&lt;/li>
+&lt;li>2024-05-01. &lt;a href="https://open.spotify.com/track/2xCc0iWKdkvaOYppt7ElGE">&lt;strong>TOUCHIN&amp;amp;MOVIN&lt;/strong>&lt;/a> - by &lt;em>Moon Byul&lt;/em> from the album &amp;lsquo;Starlit of Muse&amp;rsquo;&lt;/li>
+&lt;li>2024-05-01. &lt;a href="https://open.spotify.com/track/3WTd8qNJhJHAgRG6FhdSPZ">&lt;strong>東風破&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;葉惠美&amp;rsquo;&lt;/li>
+&lt;li>2024-05-01. &lt;a href="https://open.spotify.com/track/2rQgwJUT8zzyJzOqpxbzme">&lt;strong>Just You and Me&lt;/strong>&lt;/a> - by &lt;em>Sophie Chen&lt;/em> from the album &amp;lsquo;Just You and Me&amp;rsquo;&lt;/li>
+&lt;li>2024-05-05. &lt;a href="https://open.spotify.com/track/1BAtAtx0VgWgAMROWK9WYf">&lt;strong>Accendio&lt;/strong>&lt;/a> - by &lt;em>IVE&lt;/em> from the album &amp;lsquo;IVE SWITCH&amp;rsquo;&lt;/li>
+&lt;li>2024-05-05. &lt;a href="https://open.spotify.com/track/4gOwpU4kMZZNDWkoHYUj1Z">&lt;strong>해야 (HEYA)&lt;/strong>&lt;/a> - by &lt;em>IVE&lt;/em> from the album &amp;lsquo;IVE SWITCH&amp;rsquo;&lt;/li>
+&lt;li>2024-05-06. &lt;a href="https://open.spotify.com/track/0Tq7v8YAmwdnAYBwyR1pZ4">&lt;strong>Earth, Wind &amp;amp; Fire&lt;/strong>&lt;/a> - by &lt;em>BOYNEXTDOOR&lt;/em> from the album &amp;lsquo;HOW?&amp;rsquo;&lt;/li>
+&lt;li>2024-05-06. &lt;a href="https://open.spotify.com/track/1Y5D7m2QtyBdvwvY3gAVNQ">&lt;strong>Little Light&lt;/strong>&lt;/a> - by &lt;em>DOYOUNG&lt;/em> from the album &amp;lsquo;YOUTH - The 1st Album&amp;rsquo;&lt;/li>
+&lt;li>2024-05-06. &lt;a href="https://open.spotify.com/track/6ERs9uORCo1MfV0m9ixCuv">&lt;strong>FREAK&lt;/strong>&lt;/a> - by &lt;em>YUQI&lt;/em> from the album &amp;lsquo;YUQ1&amp;rsquo;&lt;/li>
+&lt;li>2024-05-06. &lt;a href="https://open.spotify.com/track/1njlnn8ZKHI77Pe9szIONR">&lt;strong>SHEESH&lt;/strong>&lt;/a> - by &lt;em>BABYMONSTER&lt;/em> from the album &amp;lsquo;BABYMONS7ER&amp;rsquo;&lt;/li>
+&lt;li>2024-05-06. &lt;a href="https://open.spotify.com/track/2MQmaHNnCCuisRHu551ZQq">&lt;strong>BATTER UP (7 ver.)&lt;/strong>&lt;/a> - by &lt;em>BABYMONSTER&lt;/em> from the album &amp;lsquo;BABYMONS7ER&amp;rsquo;&lt;/li>
+&lt;li>2024-05-06. &lt;a href="https://open.spotify.com/track/1IsdrmsH4bxaE9VLjmUGf6">&lt;strong>RSVP (Feat. CHANGMO)&lt;/strong>&lt;/a> - by &lt;em>HyunA, CHANGMO&lt;/em> from the album &amp;lsquo;Attitude&amp;rsquo;&lt;/li>
+&lt;li>2024-05-06. &lt;a href="https://open.spotify.com/track/5FBH2lZvXYVTD08ajGCnFV">&lt;strong>Ah! (Feat. GEMINI)&lt;/strong>&lt;/a> - by &lt;em>HyunA, GEMINI&lt;/em> from the album &amp;lsquo;Attitude&amp;rsquo;&lt;/li>
+&lt;li>2024-05-06. &lt;a href="https://open.spotify.com/track/4AYpLGpfO28geKxxxZ3ztu">&lt;strong>Q&amp;amp;A&lt;/strong>&lt;/a> - by &lt;em>HyunA&lt;/em> from the album &amp;lsquo;Attitude&amp;rsquo;&lt;/li>
+&lt;li>2024-05-06. &lt;a href="https://open.spotify.com/track/10wlaX6XHaWVYZRF7HbG8H">&lt;strong>Attitude&lt;/strong>&lt;/a> - by &lt;em>HyunA&lt;/em> from the album &amp;lsquo;Attitude&amp;rsquo;&lt;/li>
+&lt;li>2024-05-06. &lt;a href="https://open.spotify.com/track/2uqxsofWmgRT0ekghgy3ln">&lt;strong>Karma&lt;/strong>&lt;/a> - by &lt;em>JoJo Siwa&lt;/em> from the album &amp;lsquo;Karma&amp;rsquo;&lt;/li>
+&lt;li>2024-05-08. &lt;a href="https://open.spotify.com/track/1OSSwdPGbRPm6PkugpOQhP">&lt;strong>Bim bam boum&lt;/strong>&lt;/a> - by &lt;em>Mozart Opera Rock&lt;/em> from the album &amp;lsquo;Mozart l&amp;rsquo;Opera Rock (standard)&amp;rsquo;&lt;/li>
+&lt;li>2024-05-08. &lt;a href="https://open.spotify.com/track/22GcWM9GUmWoAMeSLyKdFo">&lt;strong>Les Solos sous les draps&lt;/strong>&lt;/a> - by &lt;em>Mozart Opera Rock&lt;/em> from the album &amp;lsquo;Mozart l&amp;rsquo;Opera Rock (standard)&amp;rsquo;&lt;/li>
+&lt;li>2024-05-08. &lt;a href="https://open.spotify.com/track/7kkKKe0uZpA4JOrvERPust">&lt;strong>Victime de ma victoire&lt;/strong>&lt;/a> - by &lt;em>Mozart Opera Rock&lt;/em> from the album &amp;lsquo;Mozart l&amp;rsquo;Opera Rock (standard)&amp;rsquo;&lt;/li>
+&lt;li>2024-05-08. &lt;a href="https://open.spotify.com/track/4l9fRnSDAn1aeNcMl5N7rE">&lt;strong>Le Bien qui fait mal&lt;/strong>&lt;/a> - by &lt;em>Mozart Opera Rock&lt;/em> from the album &amp;lsquo;Mozart l&amp;rsquo;Opera Rock (standard)&amp;rsquo;&lt;/li>
+&lt;li>2024-05-08. &lt;a href="https://open.spotify.com/track/1QRKeAlaLqJUeCWMBRP20A">&lt;strong>Slipping Through My Fingers - From &amp;lsquo;Mamma Mia!&amp;rsquo; Original Motion Picture Soundtrack&lt;/strong>&lt;/a> - by &lt;em>Meryl Streep, Amanda Seyfried&lt;/em> from the album &amp;lsquo;Mamma Mia! The Movie Soundtrack&amp;rsquo;&lt;/li>
+&lt;li>2024-05-08. &lt;a href="https://open.spotify.com/track/64DxdXTNY58CVu2j5QjCIk">&lt;strong>Does Your Mother Know - From &amp;lsquo;Mamma Mia!&amp;rsquo; Original Motion Picture Soundtrack&lt;/strong>&lt;/a> - by &lt;em>Christine Baranski, Philip Michael&lt;/em> from the album &amp;lsquo;Mamma Mia! The Movie Soundtrack&amp;rsquo;&lt;/li>
+&lt;li>2024-05-08. &lt;a href="https://open.spotify.com/track/26seN94mgiImzDyVRkl3hl">&lt;strong>SOS - From &amp;lsquo;Mamma Mia!&amp;rsquo; Original Motion Picture Soundtrack&lt;/strong>&lt;/a> - by &lt;em>Pierce Brosnan, Meryl Streep&lt;/em> from the album &amp;lsquo;Mamma Mia! The Movie Soundtrack&amp;rsquo;&lt;/li>
+&lt;li>2024-05-08. &lt;a href="https://open.spotify.com/track/4UeDMzA4XjmRpl1RHogDzx">&lt;strong>Voulez-Vous - From &amp;lsquo;Mamma Mia!&amp;rsquo; Original Motion Picture Soundtrack&lt;/strong>&lt;/a> - by &lt;em>Cast of Mamma Mia! The Movie, Philip Michael, Christine Baranski, Julie Walters, Stellan Skarsgård&lt;/em> from the album &amp;lsquo;Mamma Mia! The Movie Soundtrack&amp;rsquo;&lt;/li>
+&lt;li>2024-05-08. &lt;a href="https://open.spotify.com/track/4ySKFsc5k1AgBcMNMsv5h2">&lt;strong>The Name Of The Game - From &amp;lsquo;Mamma Mia!&amp;rsquo; Original Motion Picture Soundtrack&lt;/strong>&lt;/a> - by &lt;em>Amanda Seyfried, Stellan Skarsgård&lt;/em> from the album &amp;lsquo;Mamma Mia! The Movie Soundtrack&amp;rsquo;&lt;/li>
+&lt;li>2024-05-13. &lt;a href="https://open.spotify.com/track/0UTtK6hregIBOsefavRI26">&lt;strong>Holssi&lt;/strong>&lt;/a> - by &lt;em>IU&lt;/em> from the album &amp;lsquo;The Winning&amp;rsquo;&lt;/li>
+&lt;li>2024-05-13. &lt;a href="https://open.spotify.com/track/1c6kkrWnpy68eYDfBdxNtF">&lt;strong>Shopper&lt;/strong>&lt;/a> - by &lt;em>IU&lt;/em> from the album &amp;lsquo;The Winning&amp;rsquo;&lt;/li>
+&lt;li>2024-05-13. &lt;a href="https://open.spotify.com/track/0NnXG9qhpf0E6elVQdWLE7">&lt;strong>I stan U&lt;/strong>&lt;/a> - by &lt;em>IU&lt;/em> from the album &amp;lsquo;The Winning&amp;rsquo;&lt;/li>
+&lt;li>2024-05-13. &lt;a href="https://open.spotify.com/track/53g7ZIvZE47H9pwXPFYMCH">&lt;strong>Love wins all&lt;/strong>&lt;/a> - by &lt;em>IU&lt;/em> from the album &amp;lsquo;The Winning&amp;rsquo;&lt;/li>
+&lt;li>2024-05-13. &lt;a href="https://open.spotify.com/track/20uUaRkfRJZG15mXfn7LaU">&lt;strong>Shh.. (Feat. HYEIN, WONSUN JOE &amp;amp; Special Narr. Patti Kim)&lt;/strong>&lt;/a> - by &lt;em>IU, HYEIN, Joe Won Sun, Patti Kim&lt;/em> from the album &amp;lsquo;The Winning&amp;rsquo;&lt;/li>
+&lt;li>2024-05-14. &lt;a href="https://open.spotify.com/track/33trZRsRCHDPemnACBcLJJ">&lt;strong>Dancing Queen - From &amp;lsquo;Mamma Mia!&amp;rsquo; Original Motion Picture Soundtrack&lt;/strong>&lt;/a> - by &lt;em>Meryl Streep, Julie Walters, Christine Baranski&lt;/em> from the album &amp;lsquo;Mamma Mia! The Movie Soundtrack&amp;rsquo;&lt;/li>
+&lt;li>2024-05-14. &lt;a href="https://open.spotify.com/track/4nI8e3fy1hHvhCvJURv5JI">&lt;strong>Mamma Mia - From &amp;lsquo;Mamma Mia!&amp;rsquo; Original Motion Picture Soundtrack&lt;/strong>&lt;/a> - by &lt;em>Meryl Streep&lt;/em> from the album &amp;lsquo;Mamma Mia! The Movie Soundtrack&amp;rsquo;&lt;/li>
+&lt;li>2024-05-14. &lt;a href="https://open.spotify.com/track/7bFmXanwZQm6BMV9Nka6Hk">&lt;strong>Our Last Summer - From &amp;lsquo;Mamma Mia!&amp;rsquo; Original Motion Picture Soundtrack&lt;/strong>&lt;/a> - by &lt;em>Colin Firth, Pierce Brosnan, Stellan Skarsgård, Amanda Seyfried, Meryl Streep&lt;/em> from the album &amp;lsquo;Mamma Mia! The Movie Soundtrack&amp;rsquo;&lt;/li>
+&lt;li>2024-05-14. &lt;a href="https://open.spotify.com/track/5wiSmUpfrWBuAT6DKm2uyD">&lt;strong>Money, Money, Money - From &amp;lsquo;Mamma Mia!&amp;rsquo; Original Motion Picture Soundtrack&lt;/strong>&lt;/a> - by &lt;em>Meryl Streep, Julie Walters, Christine Baranski&lt;/em> from the album &amp;lsquo;Mamma Mia! The Movie Soundtrack&amp;rsquo;&lt;/li>
+&lt;li>2024-05-14. &lt;a href="https://open.spotify.com/track/74wySERHHxB8Ul9A0CNBla">&lt;strong>Lay All Your Love On Me - From &amp;lsquo;Mamma Mia!&amp;rsquo; Original Motion Picture Soundtrack&lt;/strong>&lt;/a> - by &lt;em>Dominic Cooper, Amanda Seyfried&lt;/em> from the album &amp;lsquo;Mamma Mia! The Movie Soundtrack&amp;rsquo;&lt;/li>
+&lt;li>2024-05-15. &lt;a href="https://open.spotify.com/track/2zrhoHlFKxFTRF5aMyxMoQ">&lt;strong>Next Level&lt;/strong>&lt;/a> - by &lt;em>aespa&lt;/em> from the album &amp;lsquo;Next Level&amp;rsquo;&lt;/li>
+&lt;li>2024-05-15. &lt;a href="https://open.spotify.com/track/3gtlthEgyulDfT8dWdKsnv">&lt;strong>Spicy&lt;/strong>&lt;/a> - by &lt;em>aespa&lt;/em> from the album &amp;lsquo;iScreaM Vol.26 : Spicy Remix&amp;rsquo;&lt;/li>
+&lt;li>2024-05-15. &lt;a href="https://open.spotify.com/track/1o844wI52S3TjXGBwvGcc7">&lt;strong>Hold On Tight&lt;/strong>&lt;/a> - by &lt;em>aespa&lt;/em> from the album &amp;lsquo;Hold On Tight&amp;rsquo;&lt;/li>
+&lt;li>2024-05-15. &lt;a href="https://open.spotify.com/track/6Tj9KfzPp7tmgcDdsaPwGE">&lt;strong>Black Mamba&lt;/strong>&lt;/a> - by &lt;em>aespa&lt;/em> from the album &amp;lsquo;Girls - The 2nd Mini Album&amp;rsquo;&lt;/li>
+&lt;li>2024-05-17. &lt;a href="https://open.spotify.com/track/6aPXjtda2SdTi8rAcFlrOS">&lt;strong>Birth&lt;/strong>&lt;/a> - by &lt;em>ARTMS&lt;/em> from the album &amp;lsquo;&amp;lt;Pre 1 : Birth&amp;gt;&amp;rsquo;&lt;/li>
+&lt;li>2024-05-17. &lt;a href="https://open.spotify.com/track/7pGnrIMUs9S0rUnUjWtDbo">&lt;strong>Time (Feat. Rado)&lt;/strong>&lt;/a> - by &lt;em>Trouble Maker, Rado&lt;/em> from the album &amp;lsquo;Trouble Maker&amp;rsquo;&lt;/li>
+&lt;li>2024-05-17. &lt;a href="https://open.spotify.com/track/1SS0WlKhJewviwEDZ6dWj0">&lt;strong>SPOT!&lt;/strong>&lt;/a> - by &lt;em>ZICO, JENNIE&lt;/em> from the album &amp;lsquo;SPOT!&amp;rsquo;&lt;/li>
+&lt;li>2024-05-18. &lt;a href="https://open.spotify.com/track/77jIEebt4z9WzaI6LsntDG">&lt;strong>不能說的秘密&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;不能說的秘密電影原聲帶&amp;rsquo;&lt;/li>
+&lt;li>2024-05-18. &lt;a href="https://open.spotify.com/track/1H1Su2z86EDS2KQ1nhMmWA">&lt;strong>給我一首歌的時間&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;魔杰座&amp;rsquo;&lt;/li>
+&lt;li>2024-05-18. &lt;a href="https://open.spotify.com/track/23oXdU0FCaIOeuydbKYmjf">&lt;strong>暗號&lt;/strong>&lt;/a> - by &lt;em>Jay Chou&lt;/em> from the album &amp;lsquo;八度空間&amp;rsquo;&lt;/li>
+&lt;li>2024-05-18. &lt;a href="https://open.spotify.com/track/1ZeVIrCWzEmsJexkrgvjFv">&lt;strong>小幸運&lt;/strong>&lt;/a> - by &lt;em>Hebe Tien&lt;/em> from the album &amp;lsquo;小幸運&amp;rsquo;&lt;/li>
+&lt;li>2024-05-18. &lt;a href="https://open.spotify.com/track/53WV5mAY2opmFC0r0LjRdM">&lt;strong>小酒窩&lt;/strong>&lt;/a> - by &lt;em>JJ Lin, Charlene Choi&lt;/em> from the album &amp;lsquo;JJ陸&amp;rsquo;&lt;/li>
+&lt;li>2024-05-20. &lt;a href="https://open.spotify.com/track/2PMEMxJCxOz0RGT0mQXXZq">&lt;strong>Angel (feat. Muni Long, JVKE, NLE Choppa) (Anniversary Edition)&lt;/strong>&lt;/a> - by &lt;em>Jimin, Mark Ralph, JVKE, Muni Long, NLE Choppa&lt;/em> from the album &amp;lsquo;Angel Anniversary Edition (feat. Muni Long, JVKE, NLE Choppa)&amp;rsquo;&lt;/li>
+&lt;li>2024-05-21. &lt;a href="https://open.spotify.com/track/351KkakA2YtGEXqSEIIasy">&lt;strong>Supernova&lt;/strong>&lt;/a> - by &lt;em>aespa&lt;/em> from the album &amp;lsquo;Supernova&amp;rsquo;&lt;/li>
+&lt;li>2024-05-22. &lt;a href="https://open.spotify.com/track/5juCu4WFTFRZ2XilopAMTy">&lt;strong>Bam Yang Gang&lt;/strong>&lt;/a> - by &lt;em>BIBI&lt;/em> from the album &amp;lsquo;Bam Yang Gang&amp;rsquo;&lt;/li>
+&lt;li>2024-05-23. &lt;a href="https://open.spotify.com/track/3Dah48XTdzVtbIl4dUn6l4">&lt;strong>Get A Guitar&lt;/strong>&lt;/a> - by &lt;em>RIIZE&lt;/em> from the album &amp;lsquo;Get A Guitar&amp;rsquo;&lt;/li>
+&lt;li>2024-05-24. &lt;a href="https://open.spotify.com/track/3snBeP8B2ZDmhH9GDWOhAH">&lt;strong>Tonight&lt;/strong>&lt;/a> - by &lt;em>SPICA&lt;/em> from the album &amp;lsquo;Tonight&amp;rsquo;&lt;/li>
+&lt;li>2024-06-01. &lt;a href="https://open.spotify.com/track/2edBRoaI2F2ST6WK0jdLUX">&lt;strong>屋頂&lt;/strong>&lt;/a> - by &lt;em>Landy Wen, Jay Chou&lt;/em> from the album &amp;lsquo;有點野&amp;rsquo;&lt;/li>
+&lt;li>2024-06-01. &lt;a href="https://open.spotify.com/track/6GyUt7yJ0sOktc5HjvVnFh">&lt;strong>在加納共和國離婚&lt;/strong>&lt;/a> - by &lt;em>Firdhaus, DIOR 大穎&lt;/em> from the album &amp;lsquo;在加納共和國離婚&amp;rsquo;&lt;/li>
+&lt;li>2024-06-01. &lt;a href="https://open.spotify.com/track/27FOde2nUw0pFuj7hlPbaS">&lt;strong>愛人錯過&lt;/strong>&lt;/a> - by &lt;em>告五人&lt;/em> from the album &amp;lsquo;我肯定在幾百年前就說過愛你&amp;rsquo;&lt;/li>
+&lt;li>2024-06-01. &lt;a href="https://open.spotify.com/track/69zgyr5HVKdInjeKpq1qHa">&lt;strong>想見你想見你想見你(電視劇&amp;quot;想見你&amp;quot;片尾曲)&lt;/strong>&lt;/a> - by &lt;em>831&lt;/em> from the album &amp;lsquo;想見你想見你想見你(電視劇&amp;quot;想見你&amp;quot;片尾曲)&amp;rsquo;&lt;/li>
+&lt;li>2024-06-01. &lt;a href="https://open.spotify.com/track/4gTAbKQ04gK8MdOCzANjOu">&lt;strong>山外小楼夜听雨&lt;/strong>&lt;/a> - by &lt;em>Ren Ran&lt;/em> from the album &amp;lsquo;从小到大&amp;rsquo;&lt;/li>
+&lt;li>2024-06-01. &lt;a href="https://open.spotify.com/track/1VpHU8KcaoB2WVVV2KDWEn">&lt;strong>廣島之戀&lt;/strong>&lt;/a> - by &lt;em>Karen Mok, 張洪量&lt;/em> from the album &amp;lsquo;做自己&amp;rsquo;&lt;/li>
+&lt;li>2024-06-03. &lt;a href="https://open.spotify.com/track/3pypWm9a8ZQ8NGX9Vw3w8p">&lt;strong>大小姐的逃亡生涯&lt;/strong>&lt;/a> - by &lt;em>洛天依, 言和&lt;/em> from the album &amp;lsquo;大小姐的逃亡生涯&amp;rsquo;&lt;/li>
+&lt;li>2024-06-09. &lt;a href="https://open.spotify.com/track/5c21VGPrbAlpGdlSY2Bpra">&lt;strong>借过一下 (《庆余年第二季》影视剧片尾曲)&lt;/strong>&lt;/a> - by &lt;em>Zhou Shen&lt;/em> from the album &amp;lsquo;借过一下 (《庆余年第二季》影视剧片尾曲)&amp;rsquo;&lt;/li>
+&lt;li>2024-06-12. &lt;a href="https://open.spotify.com/track/6CtYW6EWGMbfe96eqwCThq">&lt;strong>One Of A Kind&lt;/strong>&lt;/a> - by &lt;em>G-DRAGON&lt;/em> from the album &amp;lsquo;One of a Kind&amp;rsquo;&lt;/li>
+&lt;li>2024-06-12. &lt;a href="https://open.spotify.com/track/4Hznsw4SROqqX8T54Syguv">&lt;strong>STAY WITH ME&lt;/strong>&lt;/a> - by &lt;em>TAEYANG, G-DRAGON&lt;/em> from the album &amp;lsquo;RISE&amp;rsquo;&lt;/li>
+&lt;li>2024-06-12. &lt;a href="https://open.spotify.com/track/0ZzINCbYHNFtlGGjhNqTf3">&lt;strong>INTRO. 권지용 (Middle Fingers-Up)&lt;/strong>&lt;/a> - by &lt;em>G-DRAGON&lt;/em> from the album &amp;lsquo;KWON JI YONG&amp;rsquo;&lt;/li>
+&lt;li>2024-06-12. &lt;a href="https://open.spotify.com/track/4zXViIlvKDAjvIG5Keff87">&lt;strong>A Boy&lt;/strong>&lt;/a> - by &lt;em>G-DRAGON&lt;/em> from the album &amp;lsquo;Heartbreaker&amp;rsquo;&lt;/li>
+&lt;li>2024-06-12. &lt;a href="https://open.spotify.com/track/1HMbjnCFGOWd8Sqou4maxM">&lt;strong>Crayon&lt;/strong>&lt;/a> - by &lt;em>G-DRAGON&lt;/em> from the album &amp;lsquo;One of a Kind&amp;rsquo;&lt;/li>
+&lt;li>2024-06-12. &lt;a href="https://open.spotify.com/track/1TmvMsKakEUCtLgkGYEZp4">&lt;strong>R.O.D.&lt;/strong>&lt;/a> - by &lt;em>G-DRAGON, Lydia Paek&lt;/em> from the album &amp;lsquo;COUP D&amp;rsquo;ETAT&amp;rsquo;&lt;/li>
+&lt;li>2024-06-12. &lt;a href="https://open.spotify.com/track/0tnGCQAvjrRkB79fDMqV9z">&lt;strong>개소리 (BULLSHIT)&lt;/strong>&lt;/a> - by &lt;em>G-DRAGON&lt;/em> from the album &amp;lsquo;KWON JI YONG&amp;rsquo;&lt;/li>
+&lt;li>2024-06-12. &lt;a href="https://open.spotify.com/track/4n5GvONt7Niv5In6awXHR7">&lt;strong>Heartbreaker&lt;/strong>&lt;/a> - by &lt;em>G-DRAGON&lt;/em> from the album &amp;lsquo;Heartbreaker&amp;rsquo;&lt;/li>
+&lt;li>2024-06-12. &lt;a href="https://open.spotify.com/track/3BqfHyw9cLm6POreivziWN">&lt;strong>Missing You (Feat. Kim Yuna)&lt;/strong>&lt;/a> - by &lt;em>G-DRAGON, Kim Yuna&lt;/em> from the album &amp;lsquo;One of a Kind&amp;rsquo;&lt;/li>
+&lt;li>2024-06-12. &lt;a href="https://open.spotify.com/track/2hn0s9jTuO4GqVAZboT7w8">&lt;strong>Oh Yeah (Feat. Park Bom)&lt;/strong>&lt;/a> - by &lt;em>GD&amp;amp;TOP, Park Bom&lt;/em> from the album &amp;lsquo;GD&amp;amp;TOP&amp;rsquo;&lt;/li>
+&lt;li>2024-06-12. &lt;a href="https://open.spotify.com/track/3q0evJwZohI2FfXkfC5tSR">&lt;strong>COUP D&amp;rsquo;ETAT&lt;/strong>&lt;/a> - by &lt;em>G-DRAGON, Diplo, Baauer&lt;/em> from the album &amp;lsquo;COUP D&amp;rsquo;ETAT&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/0c7QMo952Ga2qAJMdfEcrb">&lt;strong>Monster&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;Special Edition &amp;lsquo;Still Alive&amp;rsquo;&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/7GLlnuHjYIKy3YR59ziaQe">&lt;strong>Bad Boy&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;ALIVE&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/6UgkB0xM45TR3Zjqm3GQ6T">&lt;strong>LET&amp;rsquo;S NOT FALL IN LOVE&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;MADE&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/54SpjxPioot7g7hVfbrXHh">&lt;strong>Lies&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;Always&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/26eV0R7nbqtlzh316ncU99">&lt;strong>Fantastic Baby&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;ALIVE&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/4LOLvDtzykDC7y9WehFoOi">&lt;strong>Blue&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;ALIVE&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/2rR2h6ApCN1NG8fi4pq85G">&lt;strong>Butterfly (Feat. Jin Jung)&lt;/strong>&lt;/a> - by &lt;em>G-DRAGON, Jin Jung&lt;/em> from the album &amp;lsquo;Heartbreaker&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/7gPF3Mu0DVWj75SXdZaYCY">&lt;strong>GO&lt;/strong>&lt;/a> - by &lt;em>G-DRAGON&lt;/em> from the album &amp;lsquo;COUP D&amp;rsquo;ETAT&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/46D6LQo5pQtkLGa7wTdTnK">&lt;strong>OUTRO. 신곡(神曲) (Divina Commedia)&lt;/strong>&lt;/a> - by &lt;em>G-DRAGON&lt;/em> from the album &amp;lsquo;KWON JI YONG&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/3k8nvicUBXisxer57q4LWc">&lt;strong>The Leaders (Feat. Teddy &amp;amp; CL)&lt;/strong>&lt;/a> - by &lt;em>G-DRAGON, TEDDY, CL&lt;/em> from the album &amp;lsquo;Heartbreaker&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/0tsbMAxGvVrTTufKgcT7Q7">&lt;strong>Today (Feat. Kim Jong Wan)&lt;/strong>&lt;/a> - by &lt;em>G-DRAGON, Kim Jong Wan of NELL&lt;/em> from the album &amp;lsquo;One of a Kind&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/1WbFTVU0fj89qGAtHYSOnJ">&lt;strong>SUPER STAR&lt;/strong>&lt;/a> - by &lt;em>G-DRAGON&lt;/em> from the album &amp;lsquo;KWON JI YONG&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/5tmKSkKHNVrxh4Fctj2TdS">&lt;strong>FLOWER ROAD&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;FLOWER ROAD&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/2vzn8usBcuNL93DnTjEK0z">&lt;strong>LOSER&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;MADE&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/3qHBjPdFZeS0tfXywAxOKq">&lt;strong>Sunset Glow&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;Remember&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/3dI59jLoFMjMAyUAyRZnkE">&lt;strong>BANG BANG BANG&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;MADE&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/1L4d2lafz1odpIMe8va21X">&lt;strong>Haru Haru&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;Stand Up&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/3TSLqZssCoCdDlMhCJ08XW">&lt;strong>Still Life&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;Still Life&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/5nEqDf0voYu56KiHf7cfDe">&lt;strong>Bingle Bingle (빙글빙글)&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;Special Edition &amp;lsquo;Still Alive&amp;rsquo;&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/3zXL187ljM6hMO5PdhmjFk">&lt;strong>Foolish Love&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;Remember&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/1R1wuzQxZhghrjJZvqReyW">&lt;strong>Hands Up&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;Tonight&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/6whEx8LRxGMFj0oqXP0vX3">&lt;strong>Ego&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;Special Edition &amp;lsquo;Still Alive&amp;rsquo;&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/0K1bxe733BFc74jk4g59ED">&lt;strong>Fool&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;Hot Issue&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/4aIgmON0kGOFooTuiIh2KS">&lt;strong>Always&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;Always&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/5NnjXRvnm2xGwBA3dnO8Mq">&lt;strong>Wonderful&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;Remember&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/7lUuLySlWkAAXF2olbxWEV">&lt;strong>What Is Right&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;Tonight&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/4CHpoZ8tK0Xagah6Lcey0C">&lt;strong>A Fool Of Tears&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;BIGBANG Vol.1&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/7czVcA9IUsAy61QdQaX2Tw">&lt;strong>Forever With U (Feat. Park Bom)&lt;/strong>&lt;/a> - by &lt;em>BIGBANG, Park Bom&lt;/em> from the album &amp;lsquo;Bigbang 03&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/4ay2yecNFJtNuPOVojzHEZ">&lt;strong>Ain&amp;rsquo;t No Fun (재미없어)&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;ALIVE&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/62laTbC1RWyE3IhsNEbvE9">&lt;strong>La La La&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;BIGBANG Vol.1&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/4UIKBrkH4ZKI2glKwQFDSV">&lt;strong>Somebody To Love&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;Tonight&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/4G1DVtcCpyzcA3tBjOvF38">&lt;strong>Intro (Alive)&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;ALIVE&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/2BLYXxyrBvCCrzvtVFtPWc">&lt;strong>This Love (G-Dragon Solo)&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;BIGBANG Vol.1&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/7mm0wCVAg6iigOXWEfd4P3">&lt;strong>We belong together&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;BigBang First Single&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/4mm23jt7cimDkeHu1VcS2v">&lt;strong>Cafe&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;Tonight&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/6mTFH5acKqe2fpxuFmiDjr">&lt;strong>Love Dust (사랑 먼지)&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;ALIVE&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/0NRpO3bfCBOPYd04i5CnRs">&lt;strong>Beautiful Hangover&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;Radar de Éxitos: K-Pop&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/7DUl32UdrwpCXgs7vVXJF2">&lt;strong>Still Alive&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;Special Edition &amp;lsquo;Still Alive&amp;rsquo;&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/6M78En84cFYQxdYABC2fZO">&lt;strong>My Heaven&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;Stand Up&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/0ZHfjGYU26P7B0j1MmHeG8">&lt;strong>Stupid Liar&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;BIGBANG Special Edition&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/2eDGx6nbrznlTmf6YMjrRi">&lt;strong>Lollipop&lt;/strong>&lt;/a> - by &lt;em>2NE1, BIGBANG&lt;/em> from the album &amp;lsquo;2NE1 1st Mini Album&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/7KDHGgYt5fF2Lh9FxMbVML">&lt;strong>Last Farewell&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;Hot Issue&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/784qSLhmIjbc37plSfaPzF">&lt;strong>Love Song&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;BIGBANG Special Edition&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/5hFugfSDVfW2ClT3tXlBfe">&lt;strong>Gara Gara Go!!&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;KPOP - JPOP Made In Korea Vol. 2&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/5brqQm02a7xLvdStXioywi">&lt;strong>ガラガラ GO！！&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;ガラガラ GO！！&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/4kaY4LbdbomICC25gYGGtn">&lt;strong>IF YOU&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;MADE&amp;rsquo;&lt;/li>
+&lt;li>2024-06-13. &lt;a href="https://open.spotify.com/track/2G8HyURZh9SBNuCzllz8Fu">&lt;strong>Tonight&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;BIGBANG Special Edition&amp;rsquo;&lt;/li>
+&lt;li>2024-06-19. &lt;a href="https://open.spotify.com/track/5plHkhLqsFla3nUJhtSZ7w">&lt;strong>夏天&lt;/strong>&lt;/a> - by &lt;em>Nicky Lee&lt;/em> from the album &amp;lsquo;好玖&amp;rsquo;&lt;/li>
+&lt;li>2024-06-19. &lt;a href="https://open.spotify.com/track/3dbLT62Cvs46Ju7a8gpr36">&lt;strong>Savage&lt;/strong>&lt;/a> - by &lt;em>aespa&lt;/em> from the album &amp;lsquo;Savage - The 1st Mini Album&amp;rsquo;&lt;/li>
+&lt;li>2024-06-19. &lt;a href="https://open.spotify.com/track/6pLYWcPnBdFJShuUARDIwj">&lt;strong>Magic (Feat. JULIE of KISS OF LIFE)&lt;/strong>&lt;/a> - by &lt;em>NAYEON, JULIE&lt;/em> from the album &amp;lsquo;NA&amp;rsquo;&lt;/li>
+&lt;li>2024-06-19. &lt;a href="https://open.spotify.com/track/0ZpEiNVDCJbZBS8e9DKOUw">&lt;strong>Heaven (Feat. Sam Kim)&lt;/strong>&lt;/a> - by &lt;em>NAYEON, Sam Kim&lt;/em> from the album &amp;lsquo;NA&amp;rsquo;&lt;/li>
+&lt;li>2024-06-19. &lt;a href="https://open.spotify.com/track/07W0lOkOUhVhdJQ9wVepWr">&lt;strong>Butterflies&lt;/strong>&lt;/a> - by &lt;em>NAYEON&lt;/em> from the album &amp;lsquo;NA&amp;rsquo;&lt;/li>
+&lt;li>2024-06-23. &lt;a href="https://open.spotify.com/track/3rtXnyZilf2rQcewmvSgKK">&lt;strong>黑糖秀主題曲 (feat. 黑澀會美眉)&lt;/strong>&lt;/a> - by &lt;em>Lollipop F, 黑澀會美眉&lt;/em> from the album &amp;lsquo;黑糖瑪奇朵 偶像劇原聲帶&amp;rsquo;&lt;/li>
+&lt;li>2024-06-26. &lt;a href="https://open.spotify.com/track/3lYvepDz6yYj29z7e4r5z0">&lt;strong>FXXK IT&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;MADE&amp;rsquo;&lt;/li>
+&lt;li>2024-06-26. &lt;a href="https://open.spotify.com/track/0BNfReaAQjFPLpLsXyioLu">&lt;strong>Luôn Bên Anh&lt;/strong>&lt;/a> - by &lt;em>MIN, Mr.A&lt;/em> from the album &amp;lsquo;Luôn Bên Anh&amp;rsquo;&lt;/li>
+&lt;li>2024-06-26. &lt;a href="https://open.spotify.com/track/1lODrFR40rSNAw5cX4j2J2">&lt;strong>The 6th Summer&lt;/strong>&lt;/a> - by &lt;em>PLAVE&lt;/em> from the album &amp;lsquo;ASTERUM : The Shape of Things to Come&amp;rsquo;&lt;/li>
+&lt;li>2024-06-26. &lt;a href="https://open.spotify.com/track/44f1TNdoQUgf3PUYraCTsH">&lt;strong>Black (Feat. JENNIE of BLACKPINK)&lt;/strong>&lt;/a> - by &lt;em>G-DRAGON, JENNIE&lt;/em> from the album &amp;lsquo;COUP D&amp;rsquo;ETAT (Korean Version)&amp;rsquo;&lt;/li>
+&lt;li>2024-06-26. &lt;a href="https://open.spotify.com/track/7BYGfn9F73atTWMdAHVdPk">&lt;strong>BLACK&lt;/strong>&lt;/a> - by &lt;em>G-DRAGON, Sky Ferreira&lt;/em> from the album &amp;lsquo;COUP D&amp;rsquo;ETAT&amp;rsquo;&lt;/li>
+&lt;li>2024-06-26. &lt;a href="https://open.spotify.com/track/7ijWcf4FsoxoyPK4B9WGp6">&lt;strong>LAST DANCE&lt;/strong>&lt;/a> - by &lt;em>BIGBANG&lt;/em> from the album &amp;lsquo;MADE&amp;rsquo;&lt;/li>
+&lt;li>2024-06-26. &lt;a href="https://open.spotify.com/track/52AQsGTohwUtmEhoV8fAbz">&lt;strong>你和我和他之間&lt;/strong>&lt;/a> - by &lt;em>Princess Ai, 竇智孔&lt;/em> from the album &amp;lsquo;愛情風暴-美麗99&amp;rsquo;&lt;/li>
+&lt;li>2024-06-26. &lt;a href="https://open.spotify.com/track/38MKW2tQHtyO8djIOKlEFF">&lt;strong>Allergy&lt;/strong>&lt;/a> - by &lt;em>(G)I-DLE&lt;/em> from the album &amp;lsquo;I feel&amp;rsquo;&lt;/li>
+&lt;li>2024-06-26. &lt;a href="https://open.spotify.com/track/24qhDjPwI1z78ZPidMpC6R">&lt;strong>Tìm (Lost)&lt;/strong>&lt;/a> - by &lt;em>MIN, Mr.A&lt;/em> from the album &amp;lsquo;Tìm&amp;rsquo;&lt;/li>
+&lt;li>2024-06-26. &lt;a href="https://open.spotify.com/track/6h8oeJ62qCY0aThaKzQZqg">&lt;strong>Runaway&lt;/strong>&lt;/a> - by &lt;em>Lost Kings, Destiny Rogers&lt;/em> from the album &amp;lsquo;Runaway&amp;rsquo;&lt;/li>
+&lt;li>2024-06-26. &lt;a href="https://open.spotify.com/track/5ZOS622xElEIE8VmkwNfcP">&lt;strong>G999 (Feat. Mirani)&lt;/strong>&lt;/a> - by &lt;em>Moon Byul, MIRANI&lt;/em> from the album &amp;lsquo;G999 (Feat. Mirani)&amp;rsquo;&lt;/li>
+&lt;li>2024-06-26. &lt;a href="https://open.spotify.com/track/5XWlyfo0kZ8LF7VSyfS4Ew">&lt;strong>Drama&lt;/strong>&lt;/a> - by &lt;em>aespa&lt;/em> from the album &amp;lsquo;Drama - The 4th Mini Album&amp;rsquo;&lt;/li>
+&lt;li>2024-06-26. &lt;a href="https://open.spotify.com/track/559f8rcNNZW07wz5Rfxnfh">&lt;strong>Can&amp;rsquo;t Control Myself&lt;/strong>&lt;/a> - by &lt;em>TAEYEON&lt;/em> from the album &amp;lsquo;Can&amp;rsquo;t Control Myself&amp;rsquo;&lt;/li>
+&lt;li>2024-06-26. &lt;a href="https://open.spotify.com/track/2KZ3sNqPogEyMUUH6A5HFy">&lt;strong>LALISA&lt;/strong>&lt;/a> - by &lt;em>LISA&lt;/em> from the album &amp;lsquo;LALISA&amp;rsquo;&lt;/li>
+&lt;li>2024-06-26. &lt;a href="https://open.spotify.com/track/6P4XyViJkq9QGEHtzfMIrH">&lt;strong>Honey, Honey - From &amp;lsquo;Mamma Mia!&amp;rsquo; Original Motion Picture Soundtrack&lt;/strong>&lt;/a> - by &lt;em>Amanda Seyfried, Ashley Lilley, Rachel McDowall&lt;/em> from the album &amp;lsquo;Mamma Mia! The Movie Soundtrack&amp;rsquo;&lt;/li>
+&lt;li>2024-06-26. &lt;a href="https://open.spotify.com/track/22vgEDb5hykfaTwLuskFGD">&lt;strong>Sucker&lt;/strong>&lt;/a> - by &lt;em>Jonas Brothers&lt;/em> from the album &amp;lsquo;Happiness Begins&amp;rsquo;&lt;/li>
+&lt;li>2024-06-26. &lt;a href="https://open.spotify.com/track/33JX2be3eKVhl5xk8YQhVc">&lt;strong>Empty&lt;/strong>&lt;/a> - by &lt;em>Ray LaMontagne&lt;/em> from the album &amp;lsquo;Till The Sun Turns Black&amp;rsquo;&lt;/li>
+&lt;li>2024-06-26. &lt;a href="https://open.spotify.com/track/3OrqExOwr13y6UCI1LGhA4">&lt;strong>I Will Always Think of You&lt;/strong>&lt;/a> - by &lt;em>Jane Krakowski, Colman Domingo&lt;/em> from the album &amp;lsquo;BoJack Horseman (Music from the Netflix Original Series)&amp;rsquo;&lt;/li>
+&lt;li>2024-06-26. &lt;a href="https://open.spotify.com/track/2WhhozeEKudvcMQCkDZPf3">&lt;strong>Women Lose Weight (feat. Slick Rick)&lt;/strong>&lt;/a> - by &lt;em>Morcheeba, Slick Rick&lt;/em> from the album &amp;lsquo;Charango&amp;rsquo;&lt;/li>
+&lt;li>2024-06-26. &lt;a href="https://open.spotify.com/track/20PISOo4VbLz4yFH78Zv5R">&lt;strong>Swim&lt;/strong>&lt;/a> - by &lt;em>Fickle Friends&lt;/em> from the album &amp;lsquo;You Are Someone Else&amp;rsquo;&lt;/li>
+&lt;li>2024-06-26. &lt;a href="https://open.spotify.com/track/27tX58NOpv1YKQ0abW7EPy">&lt;strong>Hurt&lt;/strong>&lt;/a> - by &lt;em>Nine Inch Nails&lt;/em> from the album &amp;lsquo;The Downward Spiral&amp;rsquo;&lt;/li>
+&lt;li>2024-06-26. &lt;a href="https://open.spotify.com/track/0IYzTSQj0G21K2ZDSwUZDM">&lt;strong>Eyes Closed&lt;/strong>&lt;/a> - by &lt;em>Halsey&lt;/em> from the album &amp;lsquo;hopeless fountain kingdom (Deluxe Plus)&amp;rsquo;&lt;/li>
+&lt;li>2024-06-26. &lt;a href="https://open.spotify.com/track/77IRyrOkpKBIlNQu59zdvX">&lt;strong>Can&amp;rsquo;t Take My Eyes off of You - From &amp;ldquo;Jersey Boys&amp;rdquo;&lt;/strong>&lt;/a> - by &lt;em>John Lloyd Young&lt;/em> from the album &amp;lsquo;Jersey Boys Original Broadway Cast Recording&amp;rsquo;&lt;/li>
+&lt;li>2024-06-26. &lt;a href="https://open.spotify.com/track/4V9BTST4BSkvOL4xIQNHuS">&lt;strong>Heaven Is A Place On Earth&lt;/strong>&lt;/a> - by &lt;em>Belinda Carlisle&lt;/em> from the album &amp;lsquo;Heaven on Earth (Remastered &amp;amp; Expanded Special Edition)&amp;rsquo;&lt;/li>
+&lt;li>2024-06-26. &lt;a href="https://open.spotify.com/track/3NvH1v6NOxlawEoCXjg9sK">&lt;strong>điều vô tri nhất&lt;/strong>&lt;/a> - by &lt;em>Kai Đinh, MIN, Hoàng Dũng&lt;/em> from the album &amp;lsquo;điều vô tri nhất&amp;rsquo;&lt;/li>
+&lt;li>2024-06-27. &lt;a href="https://open.spotify.com/track/0bJFBiF7WQ9rAi6nsCZYBR">&lt;strong>Phải Lòng Anh&lt;/strong>&lt;/a> - by &lt;em>MIN&lt;/em> from the album &amp;rsquo;not a good time for love&amp;rsquo;&lt;/li>
+&lt;li>2024-06-27. &lt;a href="https://open.spotify.com/track/58OKa3g5rRVpFer06Z1Ahw">&lt;strong>猜（电影《热辣滚烫》热辣心动曲）&lt;/strong>&lt;/a> - by &lt;em>希林娜依•高&lt;/em> from the album &amp;lsquo;猜（电影《热辣滚烫》热辣心动曲）&amp;rsquo;&lt;/li>
+&lt;li>2024-06-27. &lt;a href="https://open.spotify.com/track/1oCw1EeqkMIoum1FQUgEaj">&lt;strong>藏星（电影《热辣滚烫》热辣绽放曲）&lt;/strong>&lt;/a> - by &lt;em>Silence Wang&lt;/em> from the album &amp;lsquo;藏星（电影《热辣滚烫》热辣绽放曲）&amp;rsquo;&lt;/li>
+&lt;li>2024-06-27. &lt;a href="https://open.spotify.com/track/3z7at2LZwJsg8UvqGw3JAv">&lt;strong>Có Em Chờ&lt;/strong>&lt;/a> - by &lt;em>MIN, Mr A&lt;/em> from the album &amp;lsquo;Có Em Chờ&amp;rsquo;&lt;/li>
+&lt;li>2024-06-27. &lt;a href="https://open.spotify.com/track/1j8jqwFpFQ8YqsIJAiYFLZ">&lt;strong>Wife&lt;/strong>&lt;/a> - by &lt;em>(G)I-DLE&lt;/em> from the album &amp;lsquo;2&amp;rsquo;&lt;/li>
+&lt;li>2024-06-27. &lt;a href="https://open.spotify.com/track/05QXjyZgsAq6J84J6SlbyV">&lt;strong>XXL&lt;/strong>&lt;/a> - by &lt;em>YOUNG POSSE&lt;/em> from the album &amp;lsquo;XXL EP&amp;rsquo;&lt;/li>
+&lt;li>2024-06-27. &lt;a href="https://open.spotify.com/track/1aKvZDoLGkNMxoRYgkckZG">&lt;strong>Magnetic&lt;/strong>&lt;/a> - by &lt;em>ILLIT&lt;/em> from the album &amp;lsquo;SUPER REAL ME&amp;rsquo;&lt;/li>
+&lt;li>2024-06-27. &lt;a href="https://open.spotify.com/track/0vaxYDAuAO1nPolC6bQp7V">&lt;strong>Midas Touch&lt;/strong>&lt;/a> - by &lt;em>KISS OF LIFE&lt;/em> from the album &amp;lsquo;Midas Touch&amp;rsquo;&lt;/li>
+&lt;li>2024-06-27. &lt;a href="https://open.spotify.com/track/3NJ6kH1NAPICgJKdidV0Gs">&lt;strong>Dancing On My Own&lt;/strong>&lt;/a> - by &lt;em>Pixie Lott, Marty James&lt;/em> from the album &amp;lsquo;Young Foolish Happy (Deluxe Edition)&amp;rsquo;&lt;/li>
+&lt;li>2024-06-27. &lt;a href="https://open.spotify.com/track/3V375E3xldRPEEcIKiw83l">&lt;strong>Without You (Feat. ROSE)&lt;/strong>&lt;/a> - by &lt;em>G-DRAGON, ROSÉ&lt;/em> from the album &amp;lsquo;One of a Kind&amp;rsquo;&lt;/li>
+&lt;li>2024-06-27. &lt;a href="https://open.spotify.com/track/406KPQqXM4AQlT5KSmFcvG">&lt;strong>Fall in Love&lt;/strong>&lt;/a> - by &lt;em>Sophie Chen, Vicky Chen&lt;/em> from the album &amp;lsquo;Fall in Love&amp;rsquo;&lt;/li>
+&lt;li>2024-06-27. &lt;a href="https://open.spotify.com/track/1gIaX9HEGZsWSd5HDJatSr">&lt;strong>Em Mới Là Người Yêu Anh&lt;/strong>&lt;/a> - by &lt;em>MIN&lt;/em> from the album &amp;lsquo;Em Mới Là Người Yêu Anh&amp;rsquo;&lt;/li>
+&lt;li>2024-06-27. &lt;a href="https://open.spotify.com/track/0V2passWyAXnON67kfAj7y">&lt;strong>ABCD&lt;/strong>&lt;/a> - by &lt;em>NAYEON&lt;/em> from the album &amp;lsquo;NA&amp;rsquo;&lt;/li>
+&lt;li>2024-06-29. &lt;a href="https://open.spotify.com/track/3x6unDluyCL4v5AeGrAVGA">&lt;strong>Balloon in Love&lt;/strong>&lt;/a> - by &lt;em>SUNMI&lt;/em> from the album &amp;lsquo;Balloon in Love&amp;rsquo;&lt;/li>
+&lt;li>2024-06-29. &lt;a href="https://open.spotify.com/track/01prGWjCTxKBxJc400zwvQ">&lt;strong>Rockstar - Extended&lt;/strong>&lt;/a> - by &lt;em>LISA&lt;/em> from the album &amp;lsquo;Rockstar&amp;rsquo;&lt;/li>
+&lt;li>2024-06-29. &lt;a href="https://open.spotify.com/track/6vvPecFTmWxDfEJ6cYT1wa">&lt;strong>Rockstar&lt;/strong>&lt;/a> - by &lt;em>LISA&lt;/em> from the album &amp;lsquo;Rockstar&amp;rsquo;&lt;/li>
+&lt;li>2024-06-29. &lt;a href="https://open.spotify.com/track/1oQZk2bKBLgP1cbuFKvjkq">&lt;strong>If I Were a Boy&lt;/strong>&lt;/a> - by &lt;em>Beyoncé&lt;/em> from the album &amp;lsquo;I AM&amp;hellip;SASHA FIERCE - Platinum Edition&amp;rsquo;&lt;/li>
+&lt;li>2024-06-29. &lt;a href="https://open.spotify.com/track/2nRXFF4FE6NhUo0Sy6uCBS">&lt;strong>On My Scars (feat.Lil Cherry, Dbo)&lt;/strong>&lt;/a> - by &lt;em>YOUNG POSSE, Lil Cherry, Dbo&lt;/em> from the album &amp;lsquo;On My Scars (feat.Lil Cherry, Dbo)&amp;rsquo;&lt;/li>
+&lt;li>2024-06-29. &lt;a href="https://open.spotify.com/track/7y0jebgMdsAEofK2Ye0e6g">&lt;strong>Sunflower&lt;/strong>&lt;/a> - by &lt;em>Red Velvet&lt;/em> from the album &amp;lsquo;Cosmic&amp;rsquo;&lt;/li>
+&lt;li>2024-06-29. &lt;a href="https://open.spotify.com/track/0kE4TRJ0pWoRKzKdtbx8To">&lt;strong>Cosmic&lt;/strong>&lt;/a> - by &lt;em>Red Velvet&lt;/em> from the album &amp;lsquo;Cosmic&amp;rsquo;&lt;/li>
+&lt;/ul></description></item><item><title>C++安全指南</title><link>https://lxulxu.github.io/posts/cplusplus_security_guide/</link><pubDate>Sun, 28 Apr 2024 08:20:35 +0000</pubDate><guid>https://lxulxu.github.io/posts/cplusplus_security_guide/</guid><description>&lt;h2 id="编程习惯">编程习惯&lt;/h2>
+&lt;ul>
+&lt;li>switch中应有default&lt;/li>
+&lt;li>不应在debug或错误信息中提供过多内容&lt;/li>
+&lt;li>不应该在客户端代码中硬编码对称加密秘钥&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c++" data-lang="c++">&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">1&lt;/span>&lt;span> &lt;span style="color:#928374;font-style:italic">// Bad
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">2&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">&lt;/span> &lt;span style="color:#fabd2f">char&lt;/span> g_aes_key[] &lt;span style="color:#fe8019">=&lt;/span> {...};
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">3&lt;/span>&lt;span> &lt;span style="color:#fabd2f">void&lt;/span> &lt;span style="color:#fabd2f">Foo&lt;/span>() {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">4&lt;/span>&lt;span> ....
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">5&lt;/span>&lt;span> AES_func(g_aes_key, input_data, output_data);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">6&lt;/span>&lt;span> }
+&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item><item><title>Y2024Q1 影视音总结</title><link>https://lxulxu.github.io/posts/y2024q1-media-summary/</link><pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/y2024q1-media-summary/</guid><description>&lt;h2 id="movies">🎬MOVIES&lt;/h2>
+&lt;ul>
+&lt;li>2024-03-08. &lt;a href="http://movie.douban.com/subject/35575567/">&lt;strong>沙丘2&lt;/strong>&lt;/a> - rating: ★★★★★&lt;/li>
+&lt;li>2024-03-11. &lt;a href="http://movie.douban.com/subject/35699688/">&lt;strong>一年一度喜剧大赛 第二季&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-03-11. &lt;a href="http://movie.douban.com/subject/1292348/">&lt;strong>洛城机密&lt;/strong>&lt;/a> - rating: ★★★★★&lt;/li>
+&lt;li>2024-03-11. &lt;a href="http://movie.douban.com/subject/35520056/">&lt;strong>阿盖尔：神秘特工&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
+&lt;li>2024-03-11. &lt;a href="http://movie.douban.com/subject/36151692/">&lt;strong>周处除三害&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-03-11. &lt;a href="http://movie.douban.com/subject/36493954/">&lt;strong>戏杀&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
+&lt;li>2024-03-11. &lt;a href="http://movie.douban.com/subject/35725842/">&lt;strong>繁城之下&lt;/strong>&lt;/a> - rating: ★★★★★&lt;/li>
+&lt;li>2024-03-11. &lt;a href="http://movie.douban.com/subject/35791970/">&lt;strong>明天，我会成为谁的女友&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-03-11. &lt;a href="http://movie.douban.com/subject/36208094/">&lt;strong>第二十条&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-03-11. &lt;a href="http://movie.douban.com/subject/36081094/">&lt;strong>热辣滚烫&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
+&lt;li>2024-03-11. &lt;a href="http://movie.douban.com/subject/36369452/">&lt;strong>飞驰人生2&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-03-11. &lt;a href="http://movie.douban.com/subject/3703650/">&lt;strong>黑袍纠察队 第一季&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-03-11. &lt;a href="http://movie.douban.com/subject/27113517/">&lt;strong>血观音&lt;/strong>&lt;/a> - rating: ★★★★★&lt;/li>
+&lt;li>2024-03-11. &lt;a href="http://movie.douban.com/subject/36178641/">&lt;strong>三大队&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-03-11. &lt;a href="http://movie.douban.com/subject/35579652/">&lt;strong>养蜂人&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
+&lt;li>2024-03-11. &lt;a href="http://movie.douban.com/subject/35282433/">&lt;strong>大雨&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-03-11. &lt;a href="http://movie.douban.com/subject/35321446/">&lt;strong>大江大河之岁月如歌&lt;/strong>&lt;/a> - rating: ★★★★★&lt;/li>
+&lt;li>2024-03-12. &lt;a href="http://movie.douban.com/subject/5359940/">&lt;strong>是，首相 第二季&lt;/strong>&lt;/a> - rating: ★★★★★&lt;/li>
+&lt;li>2024-03-15. &lt;a href="http://movie.douban.com/subject/35579911/">&lt;strong>挑战&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-03-16. &lt;a href="http://movie.douban.com/subject/35494829/">&lt;strong>红毯先生&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-03-16. &lt;a href="http://movie.douban.com/subject/30331149/">&lt;strong>白蛇：缘起&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-03-16. &lt;a href="http://movie.douban.com/subject/26715496/">&lt;strong>功夫熊猫4&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-03-22. &lt;a href="http://movie.douban.com/subject/35196946/">&lt;strong>三体 第一季&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-03-23. &lt;a href="http://movie.douban.com/subject/35633650/">&lt;strong>坠落的审判&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-03-23. &lt;a href="http://movie.douban.com/subject/36149032/">&lt;strong>我们一起摇太阳&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-03-30. &lt;a href="http://movie.douban.com/subject/36467351/">&lt;strong>银河写手&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2024-03-30. &lt;a href="http://movie.douban.com/subject/35453251/">&lt;strong>哥斯拉大战金刚2：帝国崛起&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
+&lt;li>2024-03-30. &lt;a href="http://movie.douban.com/subject/36093612/">&lt;strong>白日之下&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;/ul></description></item><item><title>RF Analyzer 简介</title><link>https://lxulxu.github.io/posts/rf_analyzer_introduction/</link><pubDate>Tue, 28 Feb 2023 18:54:18 +0000</pubDate><guid>https://lxulxu.github.io/posts/rf_analyzer_introduction/</guid><description>&lt;p>参考PG269 Ch1 &amp;amp; Ch2。&lt;/p>
+&lt;h1 id="特点">特点&lt;/h1>
+&lt;ul>
+&lt;li>多达16个14-bit RF-DAC
+Gen 1/Gen 2:4个14-bit二倍频RF-ADC tile，2/4个14-bit四倍频RF-ADC tile；
+Gen 3:1/2/4个14-bit二倍频RF-ADC tile，2/4个14-bit四倍频RF-ADC tile。&lt;/li>
+&lt;li>支持多个转换器之间的对齐(多片同步(MTS))&lt;/li>
+&lt;li>支持预编程RF-DAC和RF-ADC，用户可以定义关键参数&lt;/li>
+&lt;li>RF-ADC和RF-DAC有多个AX14-Stream数据接口&lt;/li>
+&lt;li>单独的AX14-Lite配置接口&lt;/li>
+&lt;li>Gen 1/Gen 2:1x(旁路)，2x, 4x, 8x抽取和插值
+Gen 3:1x(旁路)，2x, 3x, 4x, 5x, 6x, 8x, 10x, 12x, 16x, 20x, 24x, 40x抽取和插值后的额外的2x插值&lt;/li>
+&lt;li>数字复合混频器和数控振荡器(NCO)&lt;/li>
+&lt;li>正交调制校正(QMC)，Gen 3每个RF-ADC有嵌入式数字步进衰减器(DSA)，每个RF-DAC有可变输出功率(VOP)控制&lt;/li>
+&lt;li>片上时钟系统包含每个tile的PLL&lt;/li>
+&lt;li>Gen 3:片上时钟分配网络；TDD模式支持省电模式和RX/Obs共享模式&lt;/li>
+&lt;/ul>
+&lt;h1 id="dual-and-quad-rf-adcrf-dac-tiles">Dual and Quad RF-ADC/RF-DAC Tiles&lt;/h1>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">Tile类型&lt;/th>
+ &lt;th style="text-align: left">转换器数量&lt;/th>
+ &lt;th style="text-align: left">设备类型&lt;/th>
+ &lt;th style="text-align: left">说明&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">Quad RF-ADC&lt;/td>
+ &lt;td style="text-align: left">4&lt;/td>
+ &lt;td style="text-align: left">Gen 1/Gen 2/Gen 3/DFE&lt;/td>
+ &lt;td style="text-align: left">交错系数为4&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Dual RF-ADC&lt;/td>
+ &lt;td style="text-align: left">2&lt;/td>
+ &lt;td style="text-align: left">Gen 1/Gen 3/DFE&lt;/td>
+ &lt;td style="text-align: left">交错系数为8，采样率为Quad RF-ADC两倍。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Quad RF-DAC&lt;/td>
+ &lt;td style="text-align: left">4&lt;/td>
+ &lt;td style="text-align: left">Gen 1/Gen 2/Gen 3/DFE&lt;/td>
+ &lt;td style="text-align: left">一个专用DUC&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">Dual RF-DAC&lt;/td>
+ &lt;td style="text-align: left">2&lt;/td>
+ &lt;td style="text-align: left">Gen 3/DFE&lt;/td>
+ &lt;td style="text-align: left">两个专用DUC，Gen 3/DFE配备Quad RF-DAC或Quad/Dual RF-DAC组合，所有的tile都有外部时钟输入&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;p>下图为tile结构，虚线表示多个波段的情况。
+
+&lt;figure>
+ &lt;img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-158.6rfb9iadm1c0.jpg?raw=true" alt="img-158" />
+&lt;/figure>
+
+
+
+
+&lt;figure>
+ &lt;img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-159.5uupdrk2apo0.jpg?raw=true" alt="img-159" />
+&lt;/figure>
+
+
+
+
+&lt;figure>
+ &lt;img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-160.ma07k43z6g0.jpg?raw=true" alt="img-160" />
+&lt;/figure>
+
+
+&lt;/p></description></item><item><title>RF Analyzer 功能详解</title><link>https://lxulxu.github.io/posts/rf_analyzer_feature_guid/</link><pubDate>Mon, 27 Feb 2023 19:06:33 +0000</pubDate><guid>https://lxulxu.github.io/posts/rf_analyzer_feature_guid/</guid><description>&lt;h1 id="rf-adc">RF-ADC&lt;/h1>
+&lt;p>
+&lt;figure>
+ &lt;img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-72.uyj3mknshqo.jpg?raw=true" alt="img-72" />
+&lt;/figure>
+
+
+&lt;/p>
+&lt;h2 id="转换器设置converter-settings">转换器设置(Converter Settings)&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>校准模式(Calibration Mode)
+
+&lt;figure>
+ &lt;img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/img-151.4s8e5r0arfa0.jpg?raw=true" alt="img-151" />
+&lt;/figure>
+
+
+
+校准子系统由三个主要模块组成：&lt;/p>
+&lt;ul>
+&lt;li>时间交错偏移校准模块(OCB):校正每个子RF-ADC的&lt;strong>DC偏移&lt;/strong>&lt;/li>
+&lt;li>增益校准模块(GCB):校正交错子RF-ADC之间的&lt;strong>增益差异&lt;/strong>&lt;/li>
+&lt;li>时间偏移校准模块(TSCB):校正交错子RF-ADC之间的&lt;strong>时间偏移&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>除了自动校准外，所有四个校准模块（OCB1、OCB2、GCB、TSCB）都可用于获取和设置用户系数。 应用程序读回校准解冻时生成的系数，并在需要时恢复它们； 这有助于在输入信号不满足校准要求时保持 RF-ADC 性能。 此功能适用于 IP 向导中的每个 RF-ADC。 启用此功能会增加 IP 的大小。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c++" data-lang="c++">&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 1&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">//以下示例代码显示了 TSCB 的用户系数设置。
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 2&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 3&lt;/span>&lt;span>u32 Status &lt;span style="color:#fe8019">=&lt;/span> XRFDC_FAILURE;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 4&lt;/span>&lt;span>XRFdc_Calibration_Coefficients Coeffs;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 5&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">//使用下面的样本系数
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 6&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">&lt;/span>Coeffs.Coeff0 &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#d3869b">146&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 7&lt;/span>&lt;span>Coeffs.Coeff1 &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#d3869b">255&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 8&lt;/span>&lt;span>Coeffs.Coeff2 &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#d3869b">255&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 9&lt;/span>&lt;span>Coeffs.Coeff3 &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#d3869b">255&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">10&lt;/span>&lt;span>Coeffs.Coeff4 &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#d3869b">113&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">11&lt;/span>&lt;span>Coeffs.Coeff5 &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#d3869b">255&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">12&lt;/span>&lt;span>Coeffs.Coeff6 &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#d3869b">255&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">13&lt;/span>&lt;span>Coeffs.Coeff7 &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#d3869b">255&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">14&lt;/span>&lt;span>Status &lt;span style="color:#fe8019">=&lt;/span> XRFdc_SetCalCoeffients( RFdcInstPtr, Tile, Block,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">15&lt;/span>&lt;span>XRFDC_CAL_BLOCK_TSCB, &lt;span style="color:#fe8019">&amp;amp;&lt;/span>Coeffs);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">16&lt;/span>&lt;span>If (Status &lt;span style="color:#fe8019">!=&lt;/span> XRFDC_SUCCESS) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">17&lt;/span>&lt;span> &lt;span style="color:#928374;font-style:italic">/*handle error*/&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">18&lt;/span>&lt;span>} 
+&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item><item><title>RFdc 驱动</title><link>https://lxulxu.github.io/posts/rf_driver_manual/</link><pubDate>Tue, 21 Feb 2023 14:41:35 +0000</pubDate><guid>https://lxulxu.github.io/posts/rf_driver_manual/</guid><description>&lt;p>参考PG269 Appx.C&lt;/p>
+&lt;h2 id="数据结构">数据结构&lt;/h2>
+&lt;p>数据结构UML图如下：&lt;/p>
+&lt;p>
+&lt;figure>
+ &lt;img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2023Q1/src_v1.22tzp77ow85c.jpg?raw=true" alt="UML" />
+&lt;/figure>
+
+
+&lt;/p>
+&lt;h2 id="api-功能">API 功能&lt;/h2>
+&lt;h3 id="系统设置相关函数">系统设置相关函数&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">函数原型&lt;/th>
+ &lt;th style="text-align: left">功能&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_CfgInitialize(XRFdc *InstancePtr, XRFdc_Config *ConfigPtr)&lt;/td>
+ &lt;td style="text-align: left">通过从配置结构复制相关条目来填充驱动程序实例中的适当条目。与 RFdc 驱动程序 API 的任何软件交互都需要此函数，并且必须在使用任何其他 API 函数之前首先调用此函数。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">XRFdc_Config *XRFdc_LookupConfig(u16 DeviceId)&lt;/td>
+ &lt;td style="text-align: left">根据设备的唯一 ID 查找设备配置&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_RegisterMetal(XRFdc *InstancePtr, u16 DeviceId, struct metal_device **DevicePtr)&lt;/td>
+ &lt;td style="text-align: left">使用 Libmetal 注册RFDC&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_StartUp(XRFdc *InstancePtr, u32 Type, int Tile_Id)&lt;/td>
+ &lt;td style="text-align: left">根据 Tile_Id 的请求重新启动片。 如果 -1 作为 Tile_Id 传递，该函数将重新启动所有启用的切片。 现有寄存器设置不会在此过程中丢失或更改。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Shutdown(XRFdc *InstancePtr, u32 Type, int Tile_Id)&lt;/td>
+ &lt;td style="text-align: left">根据 Tile_Id 的请求停止片。 如果 -1 作为 Tile_Id 传递，该函数将停止所有启用的切片。 现有的寄存器设置不会被清除。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Reset(XRFdc *InstancePtr, u32 Type, int Tile_Id)&lt;/td>
+ &lt;td style="text-align: left">通过 Tile_Id 请求重置图块。 如果 -1 作为 Tile_Id 传递，它将重置所有启用的图块。 所有现有的寄存器设置都将被清除并替换为最初配置的设置。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_CustomStartUp(XRFdc *InstancePtr, u32 Type, int Tile_Id, u32 StartState, u32 EndState)&lt;/td>
+ &lt;td style="text-align: left">按照通过 Tile_Id 的请求，将 IPSM 从 StartState 运行到 EndState。 如果 -1 作为 Tile_Id 传递，则该函数针对所有启用的图块运行。 如果 StartState 为 XRFDC_STATE_OFF，现有寄存器设置将丢失或更改。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">void XRFdc_DumpRegs (XRFdc *InstancePtr, u32 Type, int Tile_Id)&lt;/td>
+ &lt;td style="text-align: left">用于调试，将寄存器中的内容打印到控制台。&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="adc-状态指示函数">ADC 状态指示函数&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">函数原型&lt;/th>
+ &lt;th style="text-align: left">功能&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetDecimationFactor(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *DecimationFactorPtr)&lt;/td>
+ &lt;td style="text-align: left">设置/返回 RF-ADC 抽取因子&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetDecimationFactorObs(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *DecimationFactorPtr)&lt;/td>
+ &lt;td style="text-align: left">设置/返回 RF-ADC 观察通道的抽取因子&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetFabWrVldWordsObs(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *FabricWrVldWordsPtr)&lt;/td>
+ &lt;td style="text-align: left">返回 RF-ADC 观测通道的写PL数据率&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetFabRdVldWordsObs(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *FabricRdVldWordsPtr)&lt;/td>
+ &lt;td style="text-align: left">设置/返回 RF-ADC 观测通道的读PL数据率&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetThresholdSettings(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, XRFdc_Threshold_Settings *ThresholdSettingsPtr)&lt;/td>
+ &lt;td style="text-align: left">设置/读取相应寄存器阈值&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetFIFOStatusObs(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u8 *EnablePtr)&lt;/td>
+ &lt;td style="text-align: left">获取 RF-ADC 观察FIFO的当前状态&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetCalibrationMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u8 *CalibrationModePtr&lt;/td>
+ &lt;td style="text-align: left">设置/获取 RF-ADC 的校准模式&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetCalCoefficients(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 CalibrationBlock, XRFdc_Calibration_Coefficients *CoeffPtr)&lt;/td>
+ &lt;td style="text-align: left">设置/获取通用校准系数&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetCalFreeze(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, XRFdc_Cal_Freeze_Settings *CalFreezePtr)&lt;/td>
+ &lt;td style="text-align: left">设置/获取通用校准冻结设置&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetDither(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *ModePtr)&lt;/td>
+ &lt;td style="text-align: left">用抖动模式来填充/获取所提供的指针&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetLinkCoupling(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id,u32 *ModePtr)&lt;/td>
+ &lt;td style="text-align: left">获取RF-ADC块的链路耦合模式&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetDSA(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, XRFdc_DSA_Settings *SettingsPtr)&lt;/td>
+ &lt;td style="text-align: left">传递的DSA设置被用来更新/获取相应的块级寄存器，仅适用于 RF-ADC 。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetSignalDetector(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, XRFdc_Signal_Detector_Settings *SettingsPtr)&lt;/td>
+ &lt;td style="text-align: left">设置信号检测器/读取信号检测器设置，仅适用于 RF-ADC 。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetNoOfADCBlocks(XRFdc *InstancePtr, u32 Tile_Id)&lt;/td>
+ &lt;td style="text-align: left">获取启用的 RF-ADC 的数量&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_IsADCBlockEnabled(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id)&lt;/td>
+ &lt;td style="text-align: left">如果请求的RF-ADC被启用，函数返回1；否则返回0。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_IsHighSpeedADC(XRFdc *InstancePtr, int Tile)&lt;/td>
+ &lt;td style="text-align: left">返回该瓦片是否为高速瓦片。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_IsADCDigitalPathEnabled(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id)&lt;/td>
+ &lt;td style="text-align: left">检查ADC数字路径是否被启用或禁用&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="adc-设置状态指示函数">ADC 设置状态指示函数&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">函数原型&lt;/th>
+ &lt;th style="text-align: left">功能&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_ThresholdStickyClear(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 ThresholdToUpdate)&lt;/td>
+ &lt;td style="text-align: left">清除阈值配置寄存器中的sticky位&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_SetThresholdClrMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 ThresholdToUpdate, u32 ClrMode)&lt;/td>
+ &lt;td style="text-align: left">设置阈值清除模式&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_SetupFIFOObs(XRFdc *InstancePtr, u32 Type, int Tile_Id, u8 Enable)&lt;/td>
+ &lt;td style="text-align: left">启用和禁用RF-ADC的观察通道FIFO&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_SetupFIFOBoth(XRFdc *InstancePtr, u32 Type, int Tile_Id, u8 Enable)&lt;/td>
+ &lt;td style="text-align: left">启用和禁用RF-ADC实际和观察通道的FIFO&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_DisableCoefficientsOverride(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 CalibrationBlock)&lt;/td>
+ &lt;td style="text-align: left">禁用所选块的系数覆盖&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="dac-状态指示函数">DAC 状态指示函数&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">函数原型&lt;/th>
+ &lt;th style="text-align: left">功能&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetInterpolationFactor(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *InterpolationFactorPtr)&lt;/td>
+ &lt;td style="text-align: left">设置/返回 RF-DAC 的插值因子&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetDecoderMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *DecoderModePtr)&lt;/td>
+ &lt;td style="text-align: left">从相关寄存器中设置/读取解码器模式&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetOutputCurr(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *OutputCurrPtr)&lt;/td>
+ &lt;td style="text-align: left">获取输出电流&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetInvSincFIR(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u16 *ModePtr)&lt;/td>
+ &lt;td style="text-align: left">设置/获取InvSinc滤波器的状态&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetDACDataScaler(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *EnablePtr)&lt;/td>
+ &lt;td style="text-align: left">获取数据缩放器的启用状态&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetDACCompMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *Enable)&lt;/td>
+ &lt;td style="text-align: left">设置/返回传统的DAC输出模式&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetDataPathMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *Mode)&lt;/td>
+ &lt;td style="text-align: left">设置/返回数据路径模式&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetIMRPassMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 *Mode)&lt;/td>
+ &lt;td style="text-align: left">设置/返回IMR滤波器模式&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetNoOfDACBlock(XRFdc *InstancePtr, u32 Tile_Id)&lt;/td>
+ &lt;td style="text-align: left">返回启用的RF-DAC的数量&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_IsDACBlockEnabled(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id)&lt;/td>
+ &lt;td style="text-align: left">如果请求的RF-DAC被启用，该函数返回1；否则返回0。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetInverseSincFilter(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id)&lt;/td>
+ &lt;td style="text-align: left">如果RF-DAC的反向sinc滤波器被启用，函数返回1；否则返回0。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetMixedMode(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id)&lt;/td>
+ &lt;td style="text-align: left">返回RF-DAC的混频模式设置&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_IsDACDigitalPathEnabled(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id)&lt;/td>
+ &lt;td style="text-align: left">检查RF-DAC数字路径是否启用&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="dac-设置状态指示函数">DAC 设置状态指示函数&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">函数原型&lt;/th>
+ &lt;th style="text-align: left">功能&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_SetFabWrVldWords(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 FabricWrVldWords)&lt;/td>
+ &lt;td style="text-align: left">写入要为RF-DAC设置的结构数据速率&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_SetDACVOP(XRFdc *InstancePtr, u32 Tile_Id, u32 Block_Id, u32 uACurrent)&lt;/td>
+ &lt;td style="text-align: left">VOP μA电流用于更新相应的块级寄存器&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="adcdac-状态指示函数">ADC/DAC 状态指示函数&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">函数原型&lt;/th>
+ &lt;th style="text-align: left">功能&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetIPStatus(XRFdc *InstancePtr, XRFdc_IPStatus *IPStatusPtr)&lt;/td>
+ &lt;td style="text-align: left">返回 IP 状态&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetBlockStatus(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_BlockStatus *BlockStatusPtr)&lt;/td>
+ &lt;td style="text-align: left">返回请求的块状态&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetMixerSettings(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_Mixer_Settings *MixerSettingsPtr)&lt;/td>
+ &lt;td style="text-align: left">设置/返回相应寄存器的混频器/NCO 设置&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetQMCSettings(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_QMC_Settings *QMCSettingsPtr)&lt;/td>
+ &lt;td style="text-align: left">设置/返回相关寄存器的 QMC 设置&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetCoarseDelaySettings(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_CoarseDelay_Settings *CoarseDelaySettingsPtr)&lt;/td>
+ &lt;td style="text-align: left">设置/返回相关寄存器的粗略延迟设置&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetFabClkOutDiv(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u16 *FabClkDivPtr)&lt;/td>
+ &lt;td style="text-align: left">设置/获取PL的时钟分频器&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetFabWrVldWords(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *FabricWrVldWordsPtr)&lt;/td>
+ &lt;td style="text-align: left">返回PL写数据率&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetFabRdVldWords(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *FabricRdVldWordsPtr)&lt;/td>
+ &lt;td style="text-align: left">返回PL读数据率&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetFIFOStatus(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u8 *EnablePtr)&lt;/td>
+ &lt;td style="text-align: left">返回FIFO的当前状态&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetNyquistZone(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *NyquistZonePtr)&lt;/td>
+ &lt;td style="text-align: left">设置/返回奈奎斯特区&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetClockSource(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 *ClockSourcePtr&lt;/td>
+ &lt;td style="text-align: left">返回时钟源&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetPLLConfig(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, XRFdc_PLL_Settings *PLLSettings)&lt;/td>
+ &lt;td style="text-align: left">从寄存器中读取PLL设置&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetPLLLockStatus(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 *LockStatusPtr)&lt;/td>
+ &lt;td style="text-align: left">返回PLL锁定状态&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Set/GetClkDistribution(XRFdc *InstancePtr, XRFdc_Distribution_System_Settings *DistributionArrayPtr)&lt;/td>
+ &lt;td style="text-align: left">设置/返回时钟分布设置&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetPwrMode(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_Pwr_Mode_Settings *SettingsPtr)&lt;/td>
+ &lt;td style="text-align: left">返回电源模式&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Get_TileBaseAddr(XRFdc *InstancePtr, u32 Type, u32 Tile_Id)&lt;/td>
+ &lt;td style="text-align: left">返回片的基地址&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Get_BlockBaseAddr(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id）&lt;/td>
+ &lt;td style="text-align: left">返回转换器的基地址&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetDataType(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id）&lt;/td>
+ &lt;td style="text-align: left">如果数据类型为实数，函数返回0；否则，返回1。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetDataWidth(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id)&lt;/td>
+ &lt;td style="text-align: left">返回编程数据宽度&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetMasterTile(XRFdc *InstancePtr, u32 Type)&lt;/td>
+ &lt;td style="text-align: left">返回主瓦片ID&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetSysRefSource(XRFdc *InstancePtr, u32 Type)&lt;/td>
+ &lt;td style="text-align: left">返回 SYSREF 的来源&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_Get_IPBaseAddr(XRFdc *InstancePtr)&lt;/td>
+ &lt;td style="text-align: left">返回IP的基地址&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">double XRFdc_GetFabClkFreq(XRFdc *InstancePtr, u32 Type, u32 Tile_Id)&lt;/td>
+ &lt;td style="text-align: left">返回已编程的PL时钟频率&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_IsFifoEnabled（XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id)&lt;/td>
+ &lt;td style="text-align: left">如果FIFO被启用，该函数返回1；否则，返回0。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">double XRFdc_GetDriverVersion()&lt;/td>
+ &lt;td style="text-align: left">获取驱动程序的版本&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">int XRFdc_GetConnectedIData(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id)&lt;/td>
+ &lt;td style="text-align: left">获取I数字数据路径的转换器&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">int XRFdc_GetConnectedQData(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id)&lt;/td>
+ &lt;td style="text-align: left">获取Q数字数据路径连接的转换器&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u16 XRFdc_RDReg(XRFdc *InstancePtr, u32 BaseAddr, u32 RegAddr, u16 Mask)&lt;/td>
+ &lt;td style="text-align: left">对值进行读取和屏蔽&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_CheckDigitalPathEnabled(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id)&lt;/td>
+ &lt;td style="text-align: left">检查数字路径是否被激活&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetMultibandConfig(XRFdc *InstancePtr, u32 Type, u32 Tile_Id)&lt;/td>
+ &lt;td style="text-align: left">获取多频段配置数据&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_CheckBlockEnabled(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id)&lt;/td>
+ &lt;td style="text-align: left">检查RF-ADC/RF-DAC块是否被激活或禁用&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_CheckTileEnabled(XRFdc *InstancePtr, u32 Type, u32 Tile_Id)&lt;/td>
+ &lt;td style="text-align: left">检查RF-ADC/RF-DAC瓦片是否被启用或禁用&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetMaxSampleRate(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, double *MaxSampleRatePtr)&lt;/td>
+ &lt;td style="text-align: left">获取瓦片的最大采样率&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetMinSampleRate(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, double *MinSampleRatePtr)&lt;/td>
+ &lt;td style="text-align: left">获取瓦片的最小采样率&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h3 id="adcdac-设置状态指示函数">ADC/DAC 设置状态指示函数&lt;/h3>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">函数原型&lt;/th>
+ &lt;th style="text-align: left">功能&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_UpdateEvent(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 Event)&lt;/td>
+ &lt;td style="text-align: left">当事件源为 Slice 或 Tile 时，使用该函数触发事件的更新事件。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_ResetNCOPhase(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id)&lt;/td>
+ &lt;td style="text-align: left">启动当前块相位累加器的NCO相位复位&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_SetupFIFO(XRFdc *InstancePtr, u32 Type, int Tile_Id, u8 Enable)&lt;/td>
+ &lt;td style="text-align: left">启用和禁用RF-ADC/RF-DAC的FIFO&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_MultiBand(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u8 DigitalDataPathMask, u32 DataType, u32 DataConverterMask)&lt;/td>
+ &lt;td style="text-align: left">设置单频和多频配置&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">void XRFdc_MultiConverter_Init(XRFdc_MultiConverter_Sync_Config *ConfigPtr, int *PLL_CodesPtr, int *T1_CodesPtr, u32 RefTile)&lt;/td>
+ &lt;td style="text-align: left">初始化多轨同步配置结构，必须在XRFdc_MultiConverter_Sync之前调用。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_MultiConverter_Sync(XRFdc *InstancePtr, u32 Type, XRFdc_MultiConverter_Sync_Config *ConfigPtr)&lt;/td>
+ &lt;td style="text-align: left">多片同步&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_DynamicPLLConfig(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u8 Source, double RefClkFreq, double SamplingRate)&lt;/td>
+ &lt;td style="text-align: left">用于在内部PLL和外部时钟源之间的动态切换，以及为RF-ADC/RF-DAC配置内部PLL。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_MTS_Sysref_Config(XRFdc *InstancePtr, XRFdc_MultiConverter_Sync_Config *DACSyncConfigPtr, XRFdc_MultiConverter_Sync_Config *ADCSyncConfigPtr, u32 SysRefEnable)&lt;/td>
+ &lt;td style="text-align: left">启用和禁用sysref&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_ResetInternalFIFOWidth(XRFdc *InstancePtr, u32 Type, u32 Tile_Id,u32 Block_Id)&lt;/td>
+ &lt;td style="text-align: left">重置内部FIFO宽度，以符合RF-ADC/RF-DAC的速率变化和混频器设置。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_SetPwrMode(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, XRFdc_Pwr_Mode_Settings *SettingsPtr)&lt;/td>
+ &lt;td style="text-align: left">设置电源模式&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">void XRFdc_ClrSetReg(XRFdc *InstancePtr, u32 BaseAddr, u32 RegAddr, u16 Mask, u16 Data)&lt;/td>
+ &lt;td style="text-align: left">修改写入&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">void XRFdc_ClrReg(XRFdc *InstancePtr, u32 BaseAddr, u32 RegAddr, u16 Mask)&lt;/td>
+ &lt;td style="text-align: left">读取和清除&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">void XRFdc_SetConnectedIQData(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, int ConnectedIData, int ConnectedQData)&lt;/td>
+ &lt;td style="text-align: left">设置数字数据路径I和Q的连接数据转换器&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table>
+&lt;h2 id="中断部分">中断部分&lt;/h2>
+&lt;table>
+ &lt;thead>
+ &lt;tr>
+ &lt;th style="text-align: left">函数原型&lt;/th>
+ &lt;th style="text-align: left">功能&lt;/th>
+ &lt;/tr>
+ &lt;/thead>
+ &lt;tbody>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_IntrEnable(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 IntrMask）&lt;/td>
+ &lt;td style="text-align: left">通过将IntrMask作为输入并写入相应的寄存器位来启用相应转换器的中断&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_IntrDisable(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 IntrMask)&lt;/td>
+ &lt;td style="text-align: left">禁用中断&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">void XRFdc_SetStatusHandler(XRFdc *InstancePtr, void *CallBackRefPtr, XRFdc_StatusHandler FunctionPtr)&lt;/td>
+ &lt;td style="text-align: left">设置状态回调函数，当驱动程序遇到必须报告给上层软件的情况时，会调用这个函数。&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_IntrClr(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 IntrMask)&lt;/td>
+ &lt;td style="text-align: left">清除中断&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetIntrStatus(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *IntrStsPtr)&lt;/td>
+ &lt;td style="text-align: left">返回中断状态&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_IntrHandler(u32 Vector, void *XRFdcPtr)&lt;/td>
+ &lt;td style="text-align: left">清除中断源并打印中断原因&lt;/td>
+ &lt;/tr>
+ &lt;tr>
+ &lt;td style="text-align: left">u32 XRFdc_GetEnabledInterrupts(XRFdc *InstancePtr, u32 Type, u32 Tile_Id, u32 Block_Id, u32 *IntrMask)&lt;/td>
+ &lt;td style="text-align: left">启用的中断来填充IntrMask&lt;/td>
+ &lt;/tr>
+ &lt;/tbody>
+&lt;/table></description></item><item><title>《高质量C++编程指南》笔记</title><link>https://lxulxu.github.io/posts/high_quality_cpp_programming_notes/</link><pubDate>Sun, 04 Sep 2022 11:51:33 +0000</pubDate><guid>https://lxulxu.github.io/posts/high_quality_cpp_programming_notes/</guid><description>&lt;h2 id="文件结构">文件结构&lt;/h2>
+&lt;h3 id="头文件结构">头文件结构&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c++" data-lang="c++">&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 1&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">//版权和版本声明
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 2&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">&lt;/span>&lt;span style="color:#928374;font-style:italic">/*
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 3&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">* Copyright (c) 2001,上海贝尔有限公司网络应用事业部
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 4&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">* All rights reserved.
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 5&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">*
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 6&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">* 文件名称：graphics.h
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 7&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">* 文件标识：见配置管理计划书
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 8&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">* 摘 要：简要描述本文件的内容
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 9&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">*
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">10&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">* 当前版本：1.1
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">11&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">* 作 者：输入作者（或修改者）名字
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">12&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">* 完成日期：2001年7月20日
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">13&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">*
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">14&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">* 取代版本：1.0
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">15&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">* 原作者 ：输入原作者（或修改者）名字
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">16&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">* 完成日期：2001年5月10日
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">17&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">*/&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">18&lt;/span>&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">19&lt;/span>&lt;span>&lt;span style="color:#8ec07c">#ifndef GRAPHICS_H &lt;/span>&lt;span style="color:#928374;font-style:italic">// 防止 graphics.h 被重复引用
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">20&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">&lt;/span>&lt;span style="color:#8ec07c">#define GRAPHICS_H
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">21&lt;/span>&lt;span>&lt;span style="color:#8ec07c">#include&lt;/span> &lt;span style="color:#8ec07c;font-style:italic">&amp;lt;math.h&amp;gt;&lt;/span>&lt;span style="color:#8ec07c"> &lt;/span>&lt;span style="color:#928374;font-style:italic">// 引用标准库的头文件
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">22&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">&lt;/span>...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">23&lt;/span>&lt;span>&lt;span style="color:#8ec07c">#include “myheader.h” &lt;/span>&lt;span style="color:#928374;font-style:italic">// 引用非标准库的头文件
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">24&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">&lt;/span>...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">25&lt;/span>&lt;span>&lt;span style="color:#fabd2f">void&lt;/span> Function1(...); &lt;span style="color:#928374;font-style:italic">// 全局函数声明
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">26&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">&lt;/span>...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">27&lt;/span>&lt;span>&lt;span style="color:#fe8019">class&lt;/span> Box &lt;span style="color:#928374;font-style:italic">// 类结构声明
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">28&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">&lt;/span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">29&lt;/span>&lt;span>...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">30&lt;/span>&lt;span>};
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">31&lt;/span>&lt;span>&lt;span style="color:#8ec07c">#endif
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item><item><title>Tcl Cheat Sheet</title><link>https://lxulxu.github.io/posts/tcl-cheat-sheet/</link><pubDate>Tue, 30 Aug 2022 17:51:47 +0000</pubDate><guid>https://lxulxu.github.io/posts/tcl-cheat-sheet/</guid><description>&lt;ul>
+&lt;li>基础语法&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 1&lt;/span>&lt;span>puts &lt;span style="color:#b8bb26">&amp;#34;Hello World&amp;#34;&lt;/span>&lt;span style="color:#928374;font-style:italic">#输出&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 2&lt;/span>&lt;span>&lt;span style="color:#fabd2f">set&lt;/span> x [expr &lt;span style="color:#d3869b">1&lt;/span> &lt;span style="color:#fe8019">==&lt;/span> &lt;span style="color:#d3869b">2&lt;/span> ? &lt;span style="color:#d3869b">1&lt;/span> : &lt;span style="color:#d3869b">2&lt;/span>]&lt;span style="color:#928374;font-style:italic">#设置变量；三元运算符&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 3&lt;/span>&lt;span>[exec ls]&lt;span style="color:#928374;font-style:italic">#调用子进程&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 4&lt;/span>&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 5&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">#if&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 6&lt;/span>&lt;span>&lt;span style="color:#fe8019">if&lt;/span> { $x &lt;span style="color:#fe8019">&amp;lt;&lt;/span> &lt;span style="color:#d3869b">2&lt;/span>} { &lt;span style="color:#fe8019">...&lt;/span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 7&lt;/span>&lt;span>elseif { $x &lt;span style="color:#fe8019">==&lt;/span> &lt;span style="color:#d3869b">1&lt;/span> } { &lt;span style="color:#fe8019">...&lt;/span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 8&lt;/span>&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 9&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">#while&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">10&lt;/span>&lt;span>&lt;span style="color:#fe8019">while&lt;/span> { $x &lt;span style="color:#fe8019">&amp;lt;&lt;/span> &lt;span style="color:#d3869b">2&lt;/span> } {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">11&lt;/span>&lt;span>	incr x
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">12&lt;/span>&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">13&lt;/span>&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">14&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">#for&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">15&lt;/span>&lt;span>&lt;span style="color:#fe8019">for&lt;/span> { &lt;span style="color:#fabd2f">set&lt;/span> i &lt;span style="color:#d3869b">0&lt;/span> } { $i &lt;span style="color:#fe8019">&amp;lt;&lt;/span> &lt;span style="color:#d3869b">5&lt;/span> } { incr i } { &lt;span style="color:#fe8019">...&lt;/span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">16&lt;/span>&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">17&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">#switch&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">18&lt;/span>&lt;span>switch $x {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">19&lt;/span>&lt;span>	&lt;span style="color:#d3869b">1&lt;/span> { &lt;span style="color:#fe8019">...&lt;/span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">20&lt;/span>&lt;span>	&lt;span style="color:#d3869b">2&lt;/span> { &lt;span style="color:#fe8019">...&lt;/span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">21&lt;/span>&lt;span>	default { &lt;span style="color:#fe8019">...&lt;/span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">22&lt;/span>&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item><item><title>许可管理</title><link>https://lxulxu.github.io/posts/license_management_guide/</link><pubDate>Wed, 10 Aug 2022 21:50:26 +0000</pubDate><guid>https://lxulxu.github.io/posts/license_management_guide/</guid><description>&lt;p>IEEE Std 1735-2014 Ch8 一些整理&lt;/p>
+&lt;h2 id="简介">简介&lt;/h2>
+&lt;h3 id="定义">定义&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">1&lt;/span>&lt;span>`protect license_proxyname=&amp;#34;acme_proxy&amp;#34;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">2&lt;/span>&lt;span>`protect license_attributes=&amp;#34;USER,MAC,PROXYINFO=1.2&amp;#34;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">3&lt;/span>&lt;span>`protect license_symmetric_key_method=&amp;#34;aes128-cbc&amp;#34;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">4&lt;/span>&lt;span>`protect license_public_key_method=&amp;#34;rsa&amp;#34;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">5&lt;/span>&lt;span>`protect license_keyowner=&amp;#34;ACME&amp;#34;, license_keyname=&amp;#34;ACME2014&amp;#34;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">6&lt;/span>&lt;span>`protect license_public_key
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">7&lt;/span>&lt;span>AV6f6JyGUxBpr49EwxN7jfdUQcRqRFDN7Mto2ltk+emrRCQS+bW/Yvu8U3w9kx7g
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">8&lt;/span>&lt;span>rCXFueY/S8lyKUExUP2Yi5C3K9WIFqF7Ov3Hm9/fEumxDzvYkGOGuGu/xv/OYIyb
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">9&lt;/span>&lt;span>whEkaiPmVI8+7S/+8NJeOm3BiVaIH5XLcZvz7EW9bvc=
+&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item><item><title>星球大战万代模型</title><link>https://lxulxu.github.io/posts/bandai_models/</link><pubDate>Tue, 03 May 2022 20:20:35 +0000</pubDate><guid>https://lxulxu.github.io/posts/bandai_models/</guid><description>&lt;p>
+&lt;figure>
+ &lt;img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2022Q2/Polish_20220412_172112817.jpg?raw=true" alt="Yoda" />
+&lt;/figure>
+
+
+&lt;/p>
+&lt;center>Yoda&lt;/center>
+&lt;p>
+&lt;figure>
+ &lt;img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2022Q2/Polish_20220412_172235454.jpg?raw=true" alt="General Grievous" />
+&lt;/figure>
+
+
+&lt;/p>
+&lt;center>General Grievous&lt;/center>
+&lt;p>
+&lt;figure>
+ &lt;img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2022Q2/Polish_20220412_172314501.jpg?raw=true" alt="C-3PO" />
+&lt;/figure>
+
+
+&lt;/p>
+&lt;center>C-3PO&lt;/center>
+&lt;p>
+&lt;figure>
+ &lt;img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2022Q2/Polish_20220412_172403614.jpg?raw=true" alt="BB-8 &amp;amp; D-O DIORAMA SET" />
+&lt;/figure>
+
+
+&lt;/p>
+&lt;center>BB-8 &amp; D-O DIORAMA SET&lt;/center>
+&lt;p>
+&lt;figure>
+ &lt;img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2022Q2/Polish_20220412_172456158.png?raw=true" alt="K-2SO" />
+&lt;/figure>
+
+
+&lt;/p></description></item><item><title>Vivado加密IP</title><link>https://lxulxu.github.io/posts/vivado_encrypted_ip_guide/</link><pubDate>Sat, 26 Mar 2022 18:00:52 +0000</pubDate><guid>https://lxulxu.github.io/posts/vivado_encrypted_ip_guide/</guid><description>&lt;p>整理 UG1118 Ch6&lt;/p>
+&lt;h2 id="权限管理">权限管理&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>公共权限(Common Rights)&lt;/strong>：适用于所有EDA工具&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>特定权限(Vendor-Specific Rights)&lt;/strong>：授予开发者的特定权限（如控制Vivado Logic Analyzer探测器行为），此部分访问权限值覆盖普通权限同名值&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>条件权限(Conditional Rights)&lt;/strong>：IEEE-1735-2014 V2 引入，允许不同条件下指定不同访问权限&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="ieee-1735-结构">IEEE 1735 结构&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>定义域(Definition area)&lt;/strong>：定义支持的供应商及其访问权限&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>密钥定义(Encrypted Key Definition)&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>加密负载(Encrypted payload)&lt;/strong>：加密IP的Verilog、System Verilog、 VHDL源码&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>纯文本负载(Plain-text payload)&lt;/strong>：IP源码未加密部分&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>以一个完整密钥文件内容为例&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 1&lt;/span>&lt;span>`pragma protect version &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#d3869b">2&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 2&lt;/span>&lt;span>`pragma protect encrypt_agent &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;XILINX&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 3&lt;/span>&lt;span>`pragma protect encrypt_agent_info &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;Xilinx Encryption Tool 2021&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 4&lt;/span>&lt;span>`pragma protect begin_commonblock
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 5&lt;/span>&lt;span>`pragma protect control error_handling &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;delegated&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 6&lt;/span>&lt;span>`pragma protect control child_visibility &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;delegated&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 7&lt;/span>&lt;span>`pragma protect control decryption &lt;span style="color:#fe8019">=&lt;/span> (activity&lt;span style="color:#fe8019">==&lt;/span>simulation)? &lt;span style="color:#b8bb26">&amp;#34;false&amp;#34;&lt;/span> :&lt;span style="color:#b8bb26">&amp;#34;true&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 8&lt;/span>&lt;span>`pragma protect end_commonblock
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"> 9&lt;/span>&lt;span>`pragma protect begin_toolblock
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">10&lt;/span>&lt;span>`pragma protect rights_digest_method&lt;span style="color:#fe8019">=&lt;/span>&lt;span style="color:#b8bb26">&amp;#34;sha256&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">11&lt;/span>&lt;span>`pragma protect key_keyowner &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;Xilinx&amp;#34;&lt;/span>, key_keyname&lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;xilinxt_2021_01&amp;#34;&lt;/span>, key_method &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;rsa&amp;#34;&lt;/span>, key_public_key
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">12&lt;/span>&lt;span>MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApgf7F4kYh0oSFzJBRoRb
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">13&lt;/span>&lt;span>nsrAqn24fVbI7xdNG2t9G8pouFfwIXGGmQgYqYZDSmUu0wrrj3ulLvUnjRtmtziJ
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">14&lt;/span>&lt;span>&lt;span style="color:#d3869b">1&lt;/span>RDOYdyko1SuBEyGT1frzUu9xNitAXxp29hOrVPeKO6kGU81XHJCRJ7uWh7rwoyf
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">15&lt;/span>&lt;span>HSUpreifLybt&lt;span style="color:#fe8019">+&lt;/span>UT5fyvHu21IxvOR6GHKWaQ4wdL7Txguuyf92XLJIZABEgmuVlPK
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">16&lt;/span>&lt;span>&lt;span style="color:#fe8019">/&lt;/span>NjJjVRK3c&lt;span style="color:#fe8019">/&lt;/span>vMuQLvbihNapkyCiLIWNwDbo9oWXr7NSo3we8u6IlFmP5V8WcOmXZ
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">17&lt;/span>&lt;span>&lt;span style="color:#fe8019">/&lt;/span>PZqp3QOkY2Jlm1yQt3O8PpU&lt;span style="color:#fe8019">/&lt;/span>&lt;span style="color:#d3869b">8&lt;/span>qzB7zcHjm3&lt;span style="color:#fe8019">+&lt;/span>Q&lt;span style="color:#fe8019">+&lt;/span>wB8yUYn&lt;span style="color:#fe8019">/&lt;/span>IMwN0t09l2AdBR37G
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">18&lt;/span>&lt;span>EwIDAQAB
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">19&lt;/span>&lt;span>`pragma protect control xilinx_configuration_visible &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;false&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">20&lt;/span>&lt;span>`pragma protect control xilinx_enable_modification &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;false&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">21&lt;/span>&lt;span>`pragma protect control xilinx_enable_probing &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;false&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">22&lt;/span>&lt;span>`pragma protect control xilinx_enable_netlist_export &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;false&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">23&lt;/span>&lt;span>`pragma protect control xilinx_enable_bitstream &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;true&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">24&lt;/span>&lt;span>`pragma protect control decryption &lt;span style="color:#fe8019">=&lt;/span> (xilinx_activity&lt;span style="color:#fe8019">==&lt;/span>simulation)?&lt;span style="color:#b8bb26">&amp;#34;false&amp;#34;&lt;/span> : &lt;span style="color:#b8bb26">&amp;#34;true&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">25&lt;/span>&lt;span>`pragma protect end_toolblock &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item></channel></rss>
