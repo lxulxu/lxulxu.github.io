@@ -174,7 +174,6 @@ tags: [生活]
 - 2024-09-03. [**Runaway**](https://open.spotify.com/track/6h8oeJ62qCY0aThaKzQZqg) - by *Lost Kings, Destiny Rogers* from the album 'Runaway'
 - 2024-09-03. [**G999 (Feat. Mirani)**](https://open.spotify.com/track/5ZOS622xElEIE8VmkwNfcP) - by *Moon Byul, MIRANI* from the album 'G999 (Feat. Mirani)'
 - 2024-09-03. [**Drama**](https://open.spotify.com/track/5XWlyfo0kZ8LF7VSyfS4Ew) - by *aespa* from the album 'Drama - The 4th Mini Album'
-- 2024-09-03. [**Can't Control Myself**](https://open.spotify.com/track/559f8rcNNZW07wz5Rfxnfh) - by *TAEYEON* from the album 'Can't Control Myself'
 - 2024-09-03. [**Fall in Love**](https://open.spotify.com/track/406KPQqXM4AQlT5KSmFcvG) - by *Sophie Chen, Vicky Chen* from the album 'Fall in Love'
 - 2024-09-03. [**LALISA**](https://open.spotify.com/track/2KZ3sNqPogEyMUUH6A5HFy) - by *LISA* from the album 'LALISA'
 - 2024-09-03. [**Em Mới Là Người Yêu Anh**](https://open.spotify.com/track/1gIaX9HEGZsWSd5HDJatSr) - by *MIN* from the album 'Em Mới Là Người Yêu Anh'
@@ -183,4 +182,5 @@ tags: [生活]
 - 2024-09-03. [**Hwi hwi**](https://open.spotify.com/track/5SVVoVAcI1kJKdvAqQxjzB) - by *LABOUM* from the album 'MISS THIS KISS'
 - 2024-09-03. [**Strawberry Rush**](https://open.spotify.com/track/1gq1gf44tZ9cyTdlcyoJd1) - by *CHUU* from the album 'Strawberry Rush'
 - 2024-09-03. [**Anh Qua Đây Đi**](https://open.spotify.com/track/6n8jt9dFY0qG5oioNW23wi) - by *MIN* from the album '50/50'
+- 2024-09-05. [**Can't Control Myself**](https://open.spotify.com/track/559f8rcNNZW07wz5Rfxnfh) - by *TAEYEON* from the album 'Can't Control Myself'
 
