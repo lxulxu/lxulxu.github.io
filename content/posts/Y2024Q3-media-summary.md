@@ -29,6 +29,7 @@ tags: [生活]
 - 2024-08-23. [**前途无量**](http://movie.douban.com/subject/36372330/) - rating: ★★★★☆
 - 2024-08-23. [**姥姥的外孙**](http://movie.douban.com/subject/36328210/) - rating: ★★★★★
 - 2024-08-24. [**逆鳞**](http://movie.douban.com/subject/36847744/) - rating: ★★★☆☆
+- 2024-09-07. [**雪迷宫**](http://movie.douban.com/subject/36354084/) - rating: ★★★★☆
 
 ## 📚BOOKS
 - 2024-07-20. [**置身事内**](https://book.douban.com/subject/35546622/) - rating: ★★★★☆
