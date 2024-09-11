@@ -117,7 +117,7 @@ Gen 3:1x(旁路)，2x, 3x, 4x, 5x, 6x, 8x, 10x, 12x, 16x, 20x, 24x, 40x抽取和
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">16&lt;/span>&lt;span>If (Status &lt;span style="color:#fe8019">!=&lt;/span> XRFDC_SUCCESS) {
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">17&lt;/span>&lt;span> &lt;span style="color:#928374;font-style:italic">/*handle error*/&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">18&lt;/span>&lt;span>} 
-&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item><item><title>RFdc 驱动</title><link>https://lxulxu.github.io/posts/rf_driver_manual/</link><pubDate>Tue, 21 Feb 2023 14:41:35 +0000</pubDate><guid>https://lxulxu.github.io/posts/rf_driver_manual/</guid><description>&lt;p>参考PG269 Appx.C&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>使用&lt;code>XRFdc_SetCalCoefficients&lt;/code> API 恢复校准系数会自动禁用实时校准。 提供 &lt;code>XRFdc_DisableCoefficientsOverride&lt;/code> API 以禁用此用户系数覆盖模式并重新启用实时校准。 禁用实时校准时，实时端口校准冻结无效。&lt;/p></description></item><item><title>RFdc 驱动</title><link>https://lxulxu.github.io/posts/rf_driver_manual/</link><pubDate>Tue, 21 Feb 2023 14:41:35 +0000</pubDate><guid>https://lxulxu.github.io/posts/rf_driver_manual/</guid><description>&lt;p>参考PG269 Appx.C&lt;/p>
 &lt;h2 id="数据结构">数据结构&lt;/h2>
 &lt;p>数据结构UML图如下：&lt;/p>
 &lt;p>

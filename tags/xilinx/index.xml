@@ -117,7 +117,7 @@ Gen 3:1x(旁路)，2x, 3x, 4x, 5x, 6x, 8x, 10x, 12x, 16x, 20x, 24x, 40x抽取和
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">16&lt;/span>&lt;span>If (Status &lt;span style="color:#fe8019">!=&lt;/span> XRFDC_SUCCESS) {
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">17&lt;/span>&lt;span> &lt;span style="color:#928374;font-style:italic">/*handle error*/&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">18&lt;/span>&lt;span>} 
-&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item><item><title>RFdc 驱动</title><link>https://lxulxu.github.io/posts/rf_driver_manual/</link><pubDate>Tue, 21 Feb 2023 14:41:35 +0000</pubDate><guid>https://lxulxu.github.io/posts/rf_driver_manual/</guid><description>&lt;p>参考PG269 Appx.C&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>使用&lt;code>XRFdc_SetCalCoefficients&lt;/code> API 恢复校准系数会自动禁用实时校准。 提供 &lt;code>XRFdc_DisableCoefficientsOverride&lt;/code> API 以禁用此用户系数覆盖模式并重新启用实时校准。 禁用实时校准时，实时端口校准冻结无效。&lt;/p></description></item><item><title>RFdc 驱动</title><link>https://lxulxu.github.io/posts/rf_driver_manual/</link><pubDate>Tue, 21 Feb 2023 14:41:35 +0000</pubDate><guid>https://lxulxu.github.io/posts/rf_driver_manual/</guid><description>&lt;p>参考PG269 Appx.C&lt;/p>
 &lt;h2 id="数据结构">数据结构&lt;/h2>
 &lt;p>数据结构UML图如下：&lt;/p>
 &lt;p>
@@ -623,7 +623,24 @@ Gen 3:1x(旁路)，2x, 3x, 4x, 5x, 6x, 8x, 10x, 12x, 16x, 20x, 24x, 40x抽取和
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">7&lt;/span>&lt;span>AV6f6JyGUxBpr49EwxN7jfdUQcRqRFDN7Mto2ltk+emrRCQS+bW/Yvu8U3w9kx7g
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">8&lt;/span>&lt;span>rCXFueY/S8lyKUExUP2Yi5C3K9WIFqF7Ov3Hm9/fEumxDzvYkGOGuGu/xv/OYIyb
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">9&lt;/span>&lt;span>whEkaiPmVI8+7S/+8NJeOm3BiVaIH5XLcZvz7EW9bvc=
-&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item><item><title>Vivado加密IP</title><link>https://lxulxu.github.io/posts/vivado_encrypted_ip_guide/</link><pubDate>Sat, 26 Mar 2022 18:00:52 +0000</pubDate><guid>https://lxulxu.github.io/posts/vivado_encrypted_ip_guide/</guid><description>&lt;p>整理 UG1118 Ch6&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>proxyname&lt;/strong>：决定代理运行时所需的环境变量名称&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>attributes&lt;/strong>：提供给代理的可选属性，代理可根据这些属性授予或拒绝许可&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>symmetric key method&lt;/strong>： 工具与代理间传递信息的对称加密算法&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>public key method&lt;/strong>：后文密钥加密算法&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>keyowner &amp;amp; keyname&lt;/strong>：每个&lt;code>license_keyowner/license_keyname&lt;/code>对都与一个&lt;code>public key&lt;/code>和一个&lt;code>symmetric method&lt;/code>对应，与之相反，每个&lt;code>public key/symmetric method&lt;/code>对可以对应多个&lt;code>license_keyowner&lt;/code>和&lt;code>license_keyname&lt;/code>，加解密信封中的&lt;code>license_keyowner/license_keyname&lt;/code>应该是唯一的&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>public key&lt;/strong>：用于加密symmetric key，base64编码DER格式，代理可以访问与之匹配的私钥&lt;/p></description></item><item><title>Vivado加密IP</title><link>https://lxulxu.github.io/posts/vivado_encrypted_ip_guide/</link><pubDate>Sat, 26 Mar 2022 18:00:52 +0000</pubDate><guid>https://lxulxu.github.io/posts/vivado_encrypted_ip_guide/</guid><description>&lt;p>整理 UG1118 Ch6&lt;/p>
 &lt;h2 id="权限管理">权限管理&lt;/h2>
 &lt;ul>
 &lt;li>
@@ -678,4 +695,14 @@ Gen 3:1x(旁路)，2x, 3x, 4x, 5x, 6x, 8x, 10x, 12x, 16x, 20x, 24x, 40x抽取和
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">23&lt;/span>&lt;span>`pragma protect control xilinx_enable_bitstream &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;true&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">24&lt;/span>&lt;span>`pragma protect control decryption &lt;span style="color:#fe8019">=&lt;/span> (xilinx_activity&lt;span style="color:#fe8019">==&lt;/span>simulation)?&lt;span style="color:#b8bb26">&amp;#34;false&amp;#34;&lt;/span> : &lt;span style="color:#b8bb26">&amp;#34;true&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">25&lt;/span>&lt;span>`pragma protect end_toolblock &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pr</description></item></channel></rss>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="版本或其他杂注">版本或其他杂注&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">1&lt;/span>&lt;span>`pragma protect version &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#d3869b">2&lt;/span>` &lt;span style="color:#928374;font-style:italic">#遵从IEEE-1735-2014 V2标准&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">2&lt;/span>&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">3&lt;/span>&lt;span> &lt;span style="color:#928374;font-style:italic">#标识加密工具&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">4&lt;/span>&lt;span>`pragma protect encrypt_agent &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;XILINX&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">5&lt;/span>&lt;span>`pragma protect encrypt_agent_info &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#b8bb26">&amp;#34;Xilinx Encryption Tool 2021&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="公共权限common-block-definition">公共权限(Common Block Definition)&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-python" data-lang="python">&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">1&lt;/span>&lt;span>`pragma protect begin_commonblock
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">2&lt;/span>&lt;span>&lt;span style="color:#fe8019">...&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">3&lt;/span>&lt;span>`pragma protect end_commonblock
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>公共权限列表&lt;/p></description></item></channel></rss>
