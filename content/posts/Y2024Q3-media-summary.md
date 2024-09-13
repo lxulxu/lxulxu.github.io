@@ -159,7 +159,7 @@ tags: [生活]
 - 2024-09-06. [**BLACK**](https://open.spotify.com/track/7BYGfn9F73atTWMdAHVdPk) - by *G-DRAGON, Sky Ferreira* from the album 'COUP D'ETAT'
 - 2024-09-06. [**夏天**](https://open.spotify.com/track/5plHkhLqsFla3nUJhtSZ7w) - by *Nicky Lee* from the album '好玖'
 - 2024-09-06. [**LAST DANCE**](https://open.spotify.com/track/7ijWcf4FsoxoyPK4B9WGp6) - by *BIGBANG* from the album 'MADE'
-- 2024-09-06. [**你和我和他之間**](https://open.spotify.com/track/52AQsGTohwUtmEhoV8fAbz) - by *Princess Ai, 竇智孔* from the album '愛情風暴-美麗99'
+- 2024-09-06. [**你和我和他之間**](https://open.spotify.com/track/52AQsGTohwUtmEhoV8fAbz) - by *Princess Ai, 竇智孔* from the album '愛情風暴 美麗99 電視原聲帶'
 - 2024-09-06. [**Allergy**](https://open.spotify.com/track/38MKW2tQHtyO8djIOKlEFF) - by *(G)I-DLE* from the album 'I feel'
 - 2024-09-06. [**Tìm (Lost)**](https://open.spotify.com/track/24qhDjPwI1z78ZPidMpC6R) - by *MIN, Mr.A* from the album 'Tìm'
 - 2024-09-06. [**Runaway**](https://open.spotify.com/track/6h8oeJ62qCY0aThaKzQZqg) - by *Lost Kings, Destiny Rogers* from the album 'Runaway'
