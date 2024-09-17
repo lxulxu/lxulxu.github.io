@@ -33,6 +33,7 @@ tags: [生活]
 - 2024-09-15. [**出走的决心**](http://movie.douban.com/subject/36587974/) - rating: ★★★★☆
 - 2024-09-15. [**野孩子**](http://movie.douban.com/subject/36399203/) - rating: ★★★☆☆
 - 2024-09-17. [**前女友们的幽灵**](http://movie.douban.com/subject/3006775/) - rating: ★★★☆☆
+- 2024-09-17. [**深红累之渊**](http://movie.douban.com/subject/27075198/) - rating: ★★★★☆
 
 ## 📚BOOKS
 - 2024-07-20. [**置身事内**](https://book.douban.com/subject/35546622/) - rating: ★★★★☆
