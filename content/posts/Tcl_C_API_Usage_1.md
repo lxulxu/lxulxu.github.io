@@ -1,10 +1,9 @@
 ---
 title: 'Tcl C API 概览(一)'
-date: 2024-09-20 16:05:47
+date: 2024-09-20
 tags: [tcl]
 categories: [笔记]
 ---
-
 ## 解释器管理
 解释器是Tcl的核心概念。这部分API用于创建、删除和管理Tcl解释器。
 ### Tcl_CreateInterp
