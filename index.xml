@@ -1,4 +1,51 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>lxulxu's blog</title><link>https://lxulxu.github.io/</link><description>Recent content on lxulxu's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 05 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://lxulxu.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>C++中的push_back与emplace_back</title><link>https://lxulxu.github.io/posts/push_back_emplace_back/</link><pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/push_back_emplace_back/</guid><description>&lt;p>&lt;strong>1. 引言&lt;/strong>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>lxulxu's blog</title><link>https://lxulxu.github.io/</link><description>Recent content on lxulxu's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 20 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://lxulxu.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Tcl C API 概览(一)</title><link>https://lxulxu.github.io/posts/tcl_c_api_usage_1/</link><pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/tcl_c_api_usage_1/</guid><description>&lt;h2 id="解释器管理">解释器管理&lt;/h2>
+&lt;p>解释器是Tcl的核心概念。这部分API用于创建、删除和管理Tcl解释器。&lt;/p>
+&lt;h3 id="tcl_createinterp">Tcl_CreateInterp&lt;/h3>
+&lt;p>&lt;strong>功能&lt;/strong>: 创建一个新的Tcl解释器&lt;/p>
+&lt;p>&lt;strong>语法&lt;/strong>: &lt;code>Tcl_Interp *Tcl_CreateInterp(void)&lt;/code>&lt;/p>
+&lt;p>&lt;strong>返回值&lt;/strong>: 新创建的解释器的指针&lt;/p>
+&lt;p>&lt;strong>说明&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>创建一个新的Tcl解释器实例&lt;/li>
+&lt;li>必须使用Tcl_DeleteInterp释放&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>示例&lt;/strong>:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c" data-lang="c">&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">1&lt;/span>&lt;span>Tcl_Interp &lt;span style="color:#fe8019">*&lt;/span>interp &lt;span style="color:#fe8019">=&lt;/span> &lt;span style="color:#fabd2f">Tcl_CreateInterp&lt;/span>();
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">2&lt;/span>&lt;span>&lt;span style="color:#fe8019">if&lt;/span> (interp &lt;span style="color:#fe8019">==&lt;/span> &lt;span style="color:#fabd2f">NULL&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">3&lt;/span>&lt;span> &lt;span style="color:#928374;font-style:italic">// 处理错误
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">4&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">&lt;/span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="tcl_deleteinterp">Tcl_DeleteInterp&lt;/h3>
+&lt;p>&lt;strong>功能&lt;/strong>: 删除Tcl解释器&lt;/p>
+&lt;p>&lt;strong>语法&lt;/strong>: &lt;code>void Tcl_DeleteInterp(Tcl_Interp *interp)&lt;/code>&lt;/p>
+&lt;p>&lt;strong>参数&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>interp&lt;/code>: 要删除的解释器&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>说明&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>释放与解释器相关的所有资源&lt;/li>
+&lt;li>调用所有已注册的退出处理程序&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>示例&lt;/strong>:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c" data-lang="c">&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">1&lt;/span>&lt;span>&lt;span style="color:#fabd2f">Tcl_DeleteInterp&lt;/span>(interp);
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="tcl_interpdeleted">Tcl_InterpDeleted&lt;/h3>
+&lt;p>&lt;strong>功能&lt;/strong>: 检查解释器是否已被删除&lt;/p>
+&lt;p>&lt;strong>语法&lt;/strong>: &lt;code>int Tcl_InterpDeleted(Tcl_Interp *interp)&lt;/code>&lt;/p>
+&lt;p>&lt;strong>参数&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>interp&lt;/code>: 要检查的解释器&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>返回值&lt;/strong>: 如果解释器已被删除返回1，否则返回0&lt;/p>
+&lt;p>&lt;strong>说明&lt;/strong>:&lt;/p>
+&lt;ul>
+&lt;li>用于检查解释器的状态，特别是在异步操作中&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>示例&lt;/strong>:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c" data-lang="c">&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">1&lt;/span>&lt;span>&lt;span style="color:#fe8019">if&lt;/span> (&lt;span style="color:#fabd2f">Tcl_InterpDeleted&lt;/span>(interp)) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">2&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">// 解释器已被删除，进行相应处理
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59">3&lt;/span>&lt;span>&lt;span style="color:#928374;font-style:italic">&lt;/span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="tcl_preserve">Tcl_Preserve&lt;/h3>
+&lt;p>&lt;strong>功能&lt;/strong>: 增加对象的引用计数&lt;/p></description></item><item><title>C++中的push_back与emplace_back</title><link>https://lxulxu.github.io/posts/push_back_emplace_back/</link><pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/push_back_emplace_back/</guid><description>&lt;p>&lt;strong>1. 引言&lt;/strong>&lt;/p>
 &lt;p>C++标准库提供了&lt;code>push_back&lt;/code>和&lt;code>emplace_back&lt;/code>两种向容器末尾添加元素的方法。本文将深入分析这两个函数的区别、使用场景，以及在实际应用中的性能考虑。&lt;/p>
 &lt;p>&lt;strong>2. 基本概念&lt;/strong>&lt;/p>
 &lt;p>2.1 push_back
