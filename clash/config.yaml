@@ -3,13 +3,13 @@ proxies:
   name: JMS-924690@c53s1.portablesubmarines.com:7713
   password: cMLV3ySg8rPUDksP
   port: 7713
-  server: 104.194.74.134
+  server: 97.64.27.52
   type: ss
 - cipher: aes-256-gcm
   name: JMS-924690@c53s2.portablesubmarines.com:7713
   password: cMLV3ySg8rPUDksP
   port: 7713
-  server: 104.194.74.50
+  server: 104.194.73.153
   type: ss
 - alterId: 0
   cipher: auto
