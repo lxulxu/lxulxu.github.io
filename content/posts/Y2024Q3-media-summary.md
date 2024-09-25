@@ -173,9 +173,6 @@ tags: [生活]
 - 2024-09-06. [**LALISA**](https://open.spotify.com/track/2KZ3sNqPogEyMUUH6A5HFy) - by *LISA* from the album 'LALISA'
 - 2024-09-06. [**Em Mới Là Người Yêu Anh**](https://open.spotify.com/track/1gIaX9HEGZsWSd5HDJatSr) - by *MIN* from the album 'Em Mới Là Người Yêu Anh'
 - 2024-09-06. [**Balloon in Love**](https://open.spotify.com/track/3x6unDluyCL4v5AeGrAVGA) - by *SUNMI* from the album 'Balloon in Love'
-- 2024-09-06. [**Hwi hwi**](https://open.spotify.com/track/5SVVoVAcI1kJKdvAqQxjzB) - by *LABOUM* from the album 'MISS THIS KISS'
-- 2024-09-06. [**Strawberry Rush**](https://open.spotify.com/track/1gq1gf44tZ9cyTdlcyoJd1) - by *CHUU* from the album 'Strawberry Rush'
-- 2024-09-06. [**Anh Qua Đây Đi**](https://open.spotify.com/track/6n8jt9dFY0qG5oioNW23wi) - by *MIN* from the album '50/50'
 - 2024-09-09. [**The 6th Summer**](https://open.spotify.com/track/1lODrFR40rSNAw5cX4j2J2) - by *PLAVE* from the album 'ASTERUM : The Shape of Things to Come'
 - 2024-09-09. [**猜（电影《热辣滚烫》热辣心动曲）**](https://open.spotify.com/track/58OKa3g5rRVpFer06Z1Ahw) - by *希林娜依•高* from the album '猜（电影《热辣滚烫》热辣心动曲）'
 - 2024-09-09. [**藏星（电影《热辣滚烫》热辣绽放曲）**](https://open.spotify.com/track/1oCw1EeqkMIoum1FQUgEaj) - by *Silence Wang* from the album '藏星（电影《热辣滚烫》热辣绽放曲）'
@@ -226,4 +223,7 @@ tags: [生活]
 - 2024-09-14. [**This Is How We Do It**](https://open.spotify.com/track/6aJ90LBl96bly9zuEH1U2X) - by *Montell Jordan* from the album 'Best Of Montell Jordan'
 - 2024-09-14. [**Like a Prayer - Choir Version From “Deadpool & Wolverine”**](https://open.spotify.com/track/492ceDtqmafb6QD1Xfhpmo) - by *I'll Take You There Choir* from the album 'Deadpool & Wolverine: Madonna's "Like a Prayer" EP'
 - 2024-09-14. [**Only You - Re-Recorded**](https://open.spotify.com/track/2GuTKe67s8VBtdqtRE9nd2) - by *The Platters* from the album 'Only You (Re-Recorded - Acapella)'
+- 2024-09-25. [**Hwi hwi**](https://open.spotify.com/track/5SVVoVAcI1kJKdvAqQxjzB) - by *LABOUM* from the album 'MISS THIS KISS'
+- 2024-09-25. [**Strawberry Rush**](https://open.spotify.com/track/1gq1gf44tZ9cyTdlcyoJd1) - by *CHUU* from the album 'Strawberry Rush'
+- 2024-09-25. [**Anh Qua Đây Đi**](https://open.spotify.com/track/6n8jt9dFY0qG5oioNW23wi) - by *MIN* from the album '50/50'
 
