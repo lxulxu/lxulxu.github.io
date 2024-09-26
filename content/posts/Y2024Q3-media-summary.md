@@ -221,6 +221,7 @@ tags: [生活]
 - 2024-09-14. [**This Is How We Do It**](https://open.spotify.com/track/6aJ90LBl96bly9zuEH1U2X) - by *Montell Jordan* from the album 'Best Of Montell Jordan'
 - 2024-09-14. [**Like a Prayer - Choir Version From “Deadpool & Wolverine”**](https://open.spotify.com/track/492ceDtqmafb6QD1Xfhpmo) - by *I'll Take You There Choir* from the album 'Deadpool & Wolverine: Madonna's "Like a Prayer" EP'
 - 2024-09-14. [**Only You - Re-Recorded**](https://open.spotify.com/track/2GuTKe67s8VBtdqtRE9nd2) - by *The Platters* from the album 'Only You (Re-Recorded - Acapella)'
+- 2024-09-14. [**Double Fantasy (with Future)**](https://open.spotify.com/track/4VMRsbfZzd3SfQtaJ1Wpwi) - by *The Weeknd, Future* from the album 'Double Fantasy'
 - 2024-09-25. [**Balloon in Love**](https://open.spotify.com/track/3x6unDluyCL4v5AeGrAVGA) - by *SUNMI* from the album 'Balloon in Love'
 - 2024-09-25. [**Hwi hwi**](https://open.spotify.com/track/5SVVoVAcI1kJKdvAqQxjzB) - by *LABOUM* from the album 'MISS THIS KISS'
 - 2024-09-25. [**Strawberry Rush**](https://open.spotify.com/track/1gq1gf44tZ9cyTdlcyoJd1) - by *CHUU* from the album 'Strawberry Rush'
