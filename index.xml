@@ -2,6 +2,8 @@
 &lt;ul>
 &lt;li>2024-10-01. &lt;a href="http://movie.douban.com/subject/36296618/">&lt;strong>志愿军：存亡之战&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
 &lt;li>2024-10-01. &lt;a href="http://movie.douban.com/subject/35811225/">&lt;strong>爆款好人&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
+&lt;li>2024-10-01. &lt;a href="http://movie.douban.com/subject/36459360/">&lt;strong>出入平安&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
+&lt;li>2024-10-01. &lt;a href="http://movie.douban.com/subject/36211169/">&lt;strong>浴火之路&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
 &lt;/ul></description></item><item><title>Tcl C API 概览(一)</title><link>https://lxulxu.github.io/posts/tcl_c_api_usage_1/</link><pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/tcl_c_api_usage_1/</guid><description>&lt;h2 id="解释器管理">解释器管理&lt;/h2>
 &lt;p>解释器是Tcl的核心概念。这部分API用于创建、删除和管理Tcl解释器。&lt;/p>
 &lt;h3 id="tcl_createinterp">Tcl_CreateInterp&lt;/h3>
