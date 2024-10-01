@@ -5,3 +5,7 @@ categories: [生活]
 tags: [生活]
 ---
 
+## 🎬MOVIES
+- 2024-10-01. [**志愿军：存亡之战**](http://movie.douban.com/subject/36296618/) - rating: ★★★☆☆
+- 2024-10-01. [**爆款好人**](http://movie.douban.com/subject/35811225/) - rating: ★★★☆☆
+
