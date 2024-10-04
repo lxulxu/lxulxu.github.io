@@ -10,6 +10,7 @@ tags: [生活]
 - 2024-10-01. [**爆款好人**](http://movie.douban.com/subject/35811225/) - rating: ★★★☆☆
 - 2024-10-01. [**出入平安**](http://movie.douban.com/subject/36459360/) - rating: ★★★☆☆
 - 2024-10-01. [**浴火之路**](http://movie.douban.com/subject/36211169/) - rating: ★★★★☆
+- 2024-10-04. [**山花烂漫时**](http://movie.douban.com/subject/35496807/) - rating: ★★★★★
 
 ## 🎵MUSIC
 - 2024-10-02. [**Midas Touch**](https://open.spotify.com/track/0vaxYDAuAO1nPolC6bQp7V) - by *KISS OF LIFE* from the album 'Midas Touch'
