@@ -122,4 +122,5 @@ tags: [生活]
 - 2024-10-10. [**Bye Bye Bye - From Deadpool and Wolverine Soundtrack**](https://open.spotify.com/track/62bOmKYxYg7dhrC6gH9vFn) - by **NSYNC* from the album 'No Strings Attached'
 - 2024-10-10. [**Bring Em Out**](https://open.spotify.com/track/7oAZVxmRCVFanxK7tk16vv) - by *T.I.* from the album 'Urban Legend'
 - 2024-10-10. [**Like a Prayer**](https://open.spotify.com/track/2v7ywbUzCgcVohHaKUcacV) - by *Madonna* from the album 'Like a Prayer'
+- 2024-10-10. [**LOVE ATTACK**](https://open.spotify.com/track/6uosenLUNFZtOIih5T0qfV) - by *RESCENE* from the album 'SCENEDROME'
 
