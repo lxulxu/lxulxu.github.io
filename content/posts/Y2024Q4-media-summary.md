@@ -92,4 +92,5 @@ tags: [生活]
 - 2024-10-02. [**You Can't Stop This Motherf**ker - Choir Only Mix (from "Deadpool 2")**](https://open.spotify.com/track/0lpMr6rPWKnY8VCm0Ubysz) - by *Tyler Bates* from the album 'Deadpool 2 (Original Motion Picture Soundtrack)'
 - 2024-10-02. [**Welcome to the Party (feat. Zhavia)**](https://open.spotify.com/track/0UBafqn0HVWRceDnOv2SZu) - by *Diplo, French Montana, Lil Pump, Zhavia* from the album 'Deadpool 2 (Original Motion Picture Soundtrack)'
 - 2024-10-02. [**Calendar Girl**](https://open.spotify.com/track/7Gpx2fNJiilvrf9Ss8qbit) - by *Neil Sedaka* from the album 'Rock with Sedaka (Expanded Edition)'
+- 2024-10-10. [**Anh Qua Đây Đi**](https://open.spotify.com/track/6n8jt9dFY0qG5oioNW23wi) - by *MIN* from the album '50/50'
 
