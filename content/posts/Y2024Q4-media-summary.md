@@ -13,6 +13,7 @@ tags: [生活]
 - 2024-10-04. [**山花烂漫时**](http://movie.douban.com/subject/35496807/) - rating: ★★★★★
 - 2024-10-09. [**神话**](http://movie.douban.com/subject/3732699/) - rating: ★★★★☆
 - 2024-10-09. [**神话**](http://movie.douban.com/subject/1307023/) - rating: ★★★★☆
+- 2024-10-12. [**绑架游戏**](http://movie.douban.com/subject/35007126/) - rating: ★★★☆☆
 
 ## 🎵MUSIC
 - 2024-10-02. [**If This Is It**](https://open.spotify.com/track/2pAdtQuiEVGr7nOXGiv7t4) - by *Huey Lewis & The News* from the album 'Sports'
@@ -118,9 +119,20 @@ tags: [生活]
 - 2024-10-10. [**Balloon in Love**](https://open.spotify.com/track/3x6unDluyCL4v5AeGrAVGA) - by *SUNMI* from the album 'Balloon in Love'
 - 2024-10-10. [**Hwi hwi**](https://open.spotify.com/track/5SVVoVAcI1kJKdvAqQxjzB) - by *LABOUM* from the album 'MISS THIS KISS'
 - 2024-10-10. [**Strawberry Rush**](https://open.spotify.com/track/1gq1gf44tZ9cyTdlcyoJd1) - by *CHUU* from the album 'Strawberry Rush'
-- 2024-10-10. [**Anh Qua Đây Đi**](https://open.spotify.com/track/6n8jt9dFY0qG5oioNW23wi) - by *MIN* from the album '50/50'
-- 2024-10-10. [**Bye Bye Bye - From Deadpool and Wolverine Soundtrack**](https://open.spotify.com/track/62bOmKYxYg7dhrC6gH9vFn) - by **NSYNC* from the album 'No Strings Attached'
-- 2024-10-10. [**Bring Em Out**](https://open.spotify.com/track/7oAZVxmRCVFanxK7tk16vv) - by *T.I.* from the album 'Urban Legend'
-- 2024-10-10. [**Like a Prayer**](https://open.spotify.com/track/2v7ywbUzCgcVohHaKUcacV) - by *Madonna* from the album 'Like a Prayer'
 - 2024-10-10. [**LOVE ATTACK**](https://open.spotify.com/track/6uosenLUNFZtOIih5T0qfV) - by *RESCENE* from the album 'SCENEDROME'
+- 2024-10-11. [**Anh Qua Đây Đi**](https://open.spotify.com/track/6n8jt9dFY0qG5oioNW23wi) - by *MIN* from the album '50/50'
+- 2024-10-11. [**Bye Bye Bye - From Deadpool and Wolverine Soundtrack**](https://open.spotify.com/track/62bOmKYxYg7dhrC6gH9vFn) - by **NSYNC* from the album 'No Strings Attached'
+- 2024-10-11. [**Bring Em Out**](https://open.spotify.com/track/7oAZVxmRCVFanxK7tk16vv) - by *T.I.* from the album 'Urban Legend'
+- 2024-10-11. [**Like a Prayer**](https://open.spotify.com/track/2v7ywbUzCgcVohHaKUcacV) - by *Madonna* from the album 'Like a Prayer'
+- 2024-10-12. [**Popular (with Playboi Carti & Madonna) - From The Idol Vol. 1 (Music from the HBO Original Series)**](https://open.spotify.com/track/6WzRpISELf3YglGAh7TXcG) - by *The Weeknd, Playboi Carti, Madonna* from the album 'Popular (Music from the HBO Original Series)'
+- 2024-10-12. [**Express Yourself**](https://open.spotify.com/track/6ioBgySxoeQKALvAeLEmId) - by *Madonna* from the album 'Celebration (double disc version)'
+- 2024-10-12. [**You'll See**](https://open.spotify.com/track/0Fb8sdyNluLawg08N1zs48) - by *Madonna* from the album 'Something to Remember'
+- 2024-10-12. [**American Pie**](https://open.spotify.com/track/3afv9TL8ixr4T9VbiKnrwe) - by *Madonna* from the album 'Music'
+- 2024-10-12. [**Give It 2 Me**](https://open.spotify.com/track/59qPP8coY8EWIQ9nQDThui) - by *Madonna* from the album 'Hard Candy'
+- 2024-10-12. [**Open Your Heart**](https://open.spotify.com/track/3kme5Qos8h04yrKxsgur79) - by *Madonna* from the album 'Celebration (double disc version)'
+- 2024-10-12. [**Me Against the Music (feat. Madonna) - LP Version / Video Mix**](https://open.spotify.com/track/7mS8RbJji2UZAaguRGsOCH) - by *Britney Spears, Madonna* from the album 'In The Zone'
+- 2024-10-12. [**Sorry (with Madonna)**](https://open.spotify.com/track/5dW0cgZ9uV1W3PXtuTS5uP) - by *BLOND:ISH, Madonna, Eran Hersh, Darmon* from the album 'Sorry (with Madonna)'
+- 2024-10-12. [**Crazy for You - Edit**](https://open.spotify.com/track/6G7PVlifniapyhDCmWS2VM) - by *Madonna* from the album 'The Immaculate Collection'
+- 2024-10-12. [**Like a Virgin**](https://open.spotify.com/track/1ZPlNanZsJSPK5h9YZZFbZ) - by *Madonna* from the album 'Like a Virgin'
+- 2024-10-12. [**4 Minutes (feat. Justin Timberlake & Timbaland)**](https://open.spotify.com/track/1oHClQEgDmmbcEx12Kc5nZ) - by *Madonna, Justin Timberlake, Timbaland* from the album 'Celebration (double disc version)'
 
