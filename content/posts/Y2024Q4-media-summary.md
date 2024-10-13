@@ -15,6 +15,12 @@ tags: [生活]
 - 2024-10-09. [**神话**](http://movie.douban.com/subject/1307023/) - rating: ★★★★☆
 - 2024-10-12. [**绑架游戏**](http://movie.douban.com/subject/35007126/) - rating: ★★★☆☆
 
+## 🎮Games
+- 2024-10-13. [**黑神话：悟空 Black Myth: Wukong**](http://www.douban.com/game/35184766/) - rating: ★★★★★
+
+## 🎭Dramas
+- 2024-10-13. [**摇滚莫扎特**](https://www.douban.com/location/drama/7047153/) - rating: ★★★★☆
+
 ## 🎵MUSIC
 - 2024-10-02. [**If This Is It**](https://open.spotify.com/track/2pAdtQuiEVGr7nOXGiv7t4) - by *Huey Lewis & The News* from the album 'Sports'
 - 2024-10-02. [**I'm with You**](https://open.spotify.com/track/1jlG3KJ3gdYmhfuySFfpO1) - by *Avril Lavigne* from the album 'Let Go'
@@ -135,4 +141,5 @@ tags: [生活]
 - 2024-10-12. [**Crazy for You - Edit**](https://open.spotify.com/track/6G7PVlifniapyhDCmWS2VM) - by *Madonna* from the album 'The Immaculate Collection'
 - 2024-10-12. [**Like a Virgin**](https://open.spotify.com/track/1ZPlNanZsJSPK5h9YZZFbZ) - by *Madonna* from the album 'Like a Virgin'
 - 2024-10-12. [**4 Minutes (feat. Justin Timberlake & Timbaland)**](https://open.spotify.com/track/1oHClQEgDmmbcEx12Kc5nZ) - by *Madonna, Justin Timberlake, Timbaland* from the album 'Celebration (double disc version)'
+- 2024-10-12. [**Nothing Really Matters**](https://open.spotify.com/track/6bZPQHvekmIFBZZB7nMB5X) - by *Madonna* from the album 'Ray of Light'
 
