@@ -17,9 +17,17 @@ tags: [生活]
 
 ## 🎮Games
 - 2024-10-13. [**黑神话：悟空 Black Myth: Wukong**](http://www.douban.com/game/35184766/) - rating: ★★★★★
+- 2024-10-13. [**冰汽时代2 Frostpunk 2**](http://www.douban.com/game/35562759/) - rating: ★★★★☆
 
 ## 🎭Dramas
+- 2024-10-13. [**妈妈咪呀**](https://www.douban.com/location/drama/10944605/) - rating: ★★★★☆
 - 2024-10-13. [**摇滚莫扎特**](https://www.douban.com/location/drama/7047153/) - rating: ★★★★☆
+- 2024-10-13. [**法语音乐剧版音乐会《悲惨世界》**](https://www.douban.com/location/drama/30342714/) - rating: ★★★★☆
+- 2024-10-13. [**乌龙山伯爵**](https://www.douban.com/location/drama/10863480/) - rating: ★★★☆☆
+- 2024-10-13. [**芝加哥**](https://www.douban.com/location/drama/36664628/) - rating: ★★★★☆
+- 2024-10-13. [**无人生还**](https://www.douban.com/location/drama/36888908/) - rating: ★★★★☆
+- 2024-10-13. [**司卡班的诡计**](https://www.douban.com/location/drama/35573739/) - rating: ★★★★☆
+- 2024-10-13. [**巴黎圣母院**](https://www.douban.com/location/drama/1765426/) - rating: ★★★★☆
 
 ## 🎵MUSIC
 - 2024-10-02. [**If This Is It**](https://open.spotify.com/track/2pAdtQuiEVGr7nOXGiv7t4) - by *Huey Lewis & The News* from the album 'Sports'
