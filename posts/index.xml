@@ -9,6 +9,14 @@
 &lt;li>2024-10-09. &lt;a href="http://movie.douban.com/subject/1307023/">&lt;strong>神话&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
 &lt;li>2024-10-12. &lt;a href="http://movie.douban.com/subject/35007126/">&lt;strong>绑架游戏&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
 &lt;/ul>
+&lt;h2 id="games">🎮Games&lt;/h2>
+&lt;ul>
+&lt;li>2024-10-13. &lt;a href="http://www.douban.com/game/35184766/">&lt;strong>黑神话：悟空 Black Myth: Wukong&lt;/strong>&lt;/a> - rating: ★★★★★&lt;/li>
+&lt;/ul>
+&lt;h2 id="dramas">🎭Dramas&lt;/h2>
+&lt;ul>
+&lt;li>2024-10-13. &lt;a href="https://www.douban.com/location/drama/7047153/">&lt;strong>摇滚莫扎特&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;/ul>
 &lt;h2 id="music">🎵MUSIC&lt;/h2>
 &lt;ul>
 &lt;li>2024-10-02. &lt;a href="https://open.spotify.com/track/2pAdtQuiEVGr7nOXGiv7t4">&lt;strong>If This Is It&lt;/strong>&lt;/a> - by &lt;em>Huey Lewis &amp;amp; The News&lt;/em> from the album &amp;lsquo;Sports&amp;rsquo;&lt;/li>
@@ -130,6 +138,7 @@
 &lt;li>2024-10-12. &lt;a href="https://open.spotify.com/track/6G7PVlifniapyhDCmWS2VM">&lt;strong>Crazy for You - Edit&lt;/strong>&lt;/a> - by &lt;em>Madonna&lt;/em> from the album &amp;lsquo;The Immaculate Collection&amp;rsquo;&lt;/li>
 &lt;li>2024-10-12. &lt;a href="https://open.spotify.com/track/1ZPlNanZsJSPK5h9YZZFbZ">&lt;strong>Like a Virgin&lt;/strong>&lt;/a> - by &lt;em>Madonna&lt;/em> from the album &amp;lsquo;Like a Virgin&amp;rsquo;&lt;/li>
 &lt;li>2024-10-12. &lt;a href="https://open.spotify.com/track/1oHClQEgDmmbcEx12Kc5nZ">&lt;strong>4 Minutes (feat. Justin Timberlake &amp;amp; Timbaland)&lt;/strong>&lt;/a> - by &lt;em>Madonna, Justin Timberlake, Timbaland&lt;/em> from the album &amp;lsquo;Celebration (double disc version)&amp;rsquo;&lt;/li>
+&lt;li>2024-10-12. &lt;a href="https://open.spotify.com/track/6bZPQHvekmIFBZZB7nMB5X">&lt;strong>Nothing Really Matters&lt;/strong>&lt;/a> - by &lt;em>Madonna&lt;/em> from the album &amp;lsquo;Ray of Light&amp;rsquo;&lt;/li>
 &lt;/ul></description></item><item><title>Tcl C API 概览(一)</title><link>https://lxulxu.github.io/posts/tcl_c_api_usage_1/</link><pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/tcl_c_api_usage_1/</guid><description>&lt;h2 id="解释器管理">解释器管理&lt;/h2>
 &lt;p>解释器是Tcl的核心概念。这部分API用于创建、删除和管理Tcl解释器。&lt;/p>
 &lt;h3 id="tcl_createinterp">Tcl_CreateInterp&lt;/h3>
