@@ -123,7 +123,6 @@ tags: [生活]
 - 2024-10-10. [**LALISA**](https://open.spotify.com/track/2KZ3sNqPogEyMUUH6A5HFy) - by *LISA* from the album 'LALISA'
 - 2024-10-10. [**Em Mới Là Người Yêu Anh**](https://open.spotify.com/track/1gIaX9HEGZsWSd5HDJatSr) - by *MIN* from the album 'Em Mới Là Người Yêu Anh'
 - 2024-10-10. [**LOVE ATTACK**](https://open.spotify.com/track/6uosenLUNFZtOIih5T0qfV) - by *RESCENE* from the album 'SCENEDROME'
-- 2024-10-12. [**Anh Qua Đây Đi**](https://open.spotify.com/track/6n8jt9dFY0qG5oioNW23wi) - by *MIN* from the album '50/50'
 - 2024-10-12. [**Bye Bye Bye - From Deadpool and Wolverine Soundtrack**](https://open.spotify.com/track/62bOmKYxYg7dhrC6gH9vFn) - by **NSYNC* from the album 'No Strings Attached'
 - 2024-10-12. [**Popular (with Playboi Carti & Madonna) - From The Idol Vol. 1 (Music from the HBO Original Series)**](https://open.spotify.com/track/6WzRpISELf3YglGAh7TXcG) - by *The Weeknd, Playboi Carti, Madonna* from the album 'Popular (Music from the HBO Original Series)'
 - 2024-10-12. [**Bring Em Out**](https://open.spotify.com/track/7oAZVxmRCVFanxK7tk16vv) - by *T.I.* from the album 'Urban Legend'
@@ -150,4 +149,8 @@ tags: [生活]
 - 2024-10-13. [**Balloon in Love**](https://open.spotify.com/track/3x6unDluyCL4v5AeGrAVGA) - by *SUNMI* from the album 'Balloon in Love'
 - 2024-10-13. [**Hwi hwi**](https://open.spotify.com/track/5SVVoVAcI1kJKdvAqQxjzB) - by *LABOUM* from the album 'MISS THIS KISS'
 - 2024-10-13. [**Strawberry Rush**](https://open.spotify.com/track/1gq1gf44tZ9cyTdlcyoJd1) - by *CHUU* from the album 'Strawberry Rush'
+- 2024-10-13. [**Anh Qua Đây Đi**](https://open.spotify.com/track/6n8jt9dFY0qG5oioNW23wi) - by *MIN* from the album '50/50'
+- 2024-10-14. [**RACER**](https://open.spotify.com/track/1rsf8YilZpVmvjBTHlWDm5) - by *CNBLUE* from the album 'X'
+- 2024-10-14. [**BAD BAD**](https://open.spotify.com/track/1KhFehBwWUFiBBdsgB0P4u) - by *CNBLUE* from the album 'X'
+- 2024-10-14. [**A Sleepless Night**](https://open.spotify.com/track/7wlCdfpxaWQPaxspDIN3wX) - by *CNBLUE* from the album 'X'
 
