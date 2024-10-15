@@ -153,4 +153,10 @@ tags: [生活]
 - 2024-10-14. [**RACER**](https://open.spotify.com/track/1rsf8YilZpVmvjBTHlWDm5) - by *CNBLUE* from the album 'X'
 - 2024-10-14. [**BAD BAD**](https://open.spotify.com/track/1KhFehBwWUFiBBdsgB0P4u) - by *CNBLUE* from the album 'X'
 - 2024-10-14. [**A Sleepless Night**](https://open.spotify.com/track/7wlCdfpxaWQPaxspDIN3wX) - by *CNBLUE* from the album 'X'
+- 2024-10-14. [**To. My Love**](https://open.spotify.com/track/1CjpjVFzfP6xOgGBGCBGkL) - by *CNBLUE* from the album 'X'
+- 2024-10-15. [**Love Light**](https://open.spotify.com/track/0v2Mv5c7skLQ3s3NCmfYbc) - by *CNBLUE* from the album 'Bluelove'
+- 2024-10-15. [**Love Girl**](https://open.spotify.com/track/1C2bTzulOc0kvGoiPnLqc2) - by *CNBLUE* from the album 'FIRST STEP'
+- 2024-10-15. [**Love**](https://open.spotify.com/track/2s92cRmjW0GoGjjpExkAUQ) - by *CNBLUE* from the album 'Bluelove'
+- 2024-10-15. [**Can't Stop**](https://open.spotify.com/track/2sdf2x4YLaHb1k9HtE9cBs) - by *CNBLUE* from the album 'Can't Stop'
+- 2024-10-15. [**Loner**](https://open.spotify.com/track/7wqBDFp7JZfWp3aPaC4gHQ) - by *CNBLUE* from the album 'Bluetory'
 
