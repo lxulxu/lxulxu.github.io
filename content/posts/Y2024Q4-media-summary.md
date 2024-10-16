@@ -159,4 +159,5 @@ tags: [生活]
 - 2024-10-15. [**Love**](https://open.spotify.com/track/2s92cRmjW0GoGjjpExkAUQ) - by *CNBLUE* from the album 'Bluelove'
 - 2024-10-15. [**Can't Stop**](https://open.spotify.com/track/2sdf2x4YLaHb1k9HtE9cBs) - by *CNBLUE* from the album 'Can't Stop'
 - 2024-10-15. [**Loner**](https://open.spotify.com/track/7wqBDFp7JZfWp3aPaC4gHQ) - by *CNBLUE* from the album 'Bluetory'
+- 2024-10-16. [**就說你想說的 (電影《為我辦一場西式的喪禮》主題曲)**](https://open.spotify.com/track/1b5dVCDgYYrf61U1Ff0tmC) - by *告五人* from the album '就說你想說的'
 
