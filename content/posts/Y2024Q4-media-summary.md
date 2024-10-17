@@ -14,7 +14,7 @@ tags: [生活]
 - 2024-10-09. [**神话**](http://movie.douban.com/subject/3732699/) - rating: ★★★★☆
 - 2024-10-09. [**神话**](http://movie.douban.com/subject/1307023/) - rating: ★★★★☆
 - 2024-10-12. [**绑架游戏**](http://movie.douban.com/subject/35007126/) - rating: ★★★☆☆
-- 2024-10-17. [**小丑2：双重妄想**](http://movie.douban.com/subject/34909341/) - rating: ★★★☆☆
+- 2024-10-17. [**小丑2：双重妄想**](http://movie.douban.com/subject/34909341/) - rating: ★★★★☆
 
 ## 🎮Games
 - 2024-10-13. [**黑神话：悟空 Black Myth: Wukong**](http://www.douban.com/game/35184766/) - rating: ★★★★★
