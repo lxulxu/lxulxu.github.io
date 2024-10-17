@@ -154,11 +154,11 @@ tags: [生活]
 - 2024-10-15. [**Bye Bye Bye - From Deadpool and Wolverine Soundtrack**](https://open.spotify.com/track/62bOmKYxYg7dhrC6gH9vFn) - by **NSYNC* from the album 'No Strings Attached'
 - 2024-10-15. [**Bring Em Out**](https://open.spotify.com/track/7oAZVxmRCVFanxK7tk16vv) - by *T.I.* from the album 'Urban Legend'
 - 2024-10-15. [**Like a Prayer**](https://open.spotify.com/track/2v7ywbUzCgcVohHaKUcacV) - by *Madonna* from the album 'Like a Prayer'
-- 2024-10-15. [**A Sleepless Night**](https://open.spotify.com/track/7wlCdfpxaWQPaxspDIN3wX) - by *CNBLUE* from the album 'X'
 - 2024-10-15. [**Love Light**](https://open.spotify.com/track/0v2Mv5c7skLQ3s3NCmfYbc) - by *CNBLUE* from the album 'Bluelove'
 - 2024-10-15. [**Love Girl**](https://open.spotify.com/track/1C2bTzulOc0kvGoiPnLqc2) - by *CNBLUE* from the album 'FIRST STEP'
 - 2024-10-15. [**Love**](https://open.spotify.com/track/2s92cRmjW0GoGjjpExkAUQ) - by *CNBLUE* from the album 'Bluelove'
 - 2024-10-15. [**Can't Stop**](https://open.spotify.com/track/2sdf2x4YLaHb1k9HtE9cBs) - by *CNBLUE* from the album 'Can't Stop'
 - 2024-10-15. [**Loner**](https://open.spotify.com/track/7wqBDFp7JZfWp3aPaC4gHQ) - by *CNBLUE* from the album 'Bluetory'
+- 2024-10-16. [**A Sleepless Night**](https://open.spotify.com/track/7wlCdfpxaWQPaxspDIN3wX) - by *CNBLUE* from the album 'X'
 - 2024-10-16. [**就說你想說的 (電影《為我辦一場西式的喪禮》主題曲)**](https://open.spotify.com/track/1b5dVCDgYYrf61U1Ff0tmC) - by *告五人* from the album '就說你想說的'
 
