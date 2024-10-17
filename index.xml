@@ -151,12 +151,12 @@
 &lt;li>2024-10-15. &lt;a href="https://open.spotify.com/track/62bOmKYxYg7dhrC6gH9vFn">&lt;strong>Bye Bye Bye - From Deadpool and Wolverine Soundtrack&lt;/strong>&lt;/a> - by *&lt;em>NSYNC&lt;/em> from the album &amp;lsquo;No Strings Attached&amp;rsquo;&lt;/li>
 &lt;li>2024-10-15. &lt;a href="https://open.spotify.com/track/7oAZVxmRCVFanxK7tk16vv">&lt;strong>Bring Em Out&lt;/strong>&lt;/a> - by &lt;em>T.I.&lt;/em> from the album &amp;lsquo;Urban Legend&amp;rsquo;&lt;/li>
 &lt;li>2024-10-15. &lt;a href="https://open.spotify.com/track/2v7ywbUzCgcVohHaKUcacV">&lt;strong>Like a Prayer&lt;/strong>&lt;/a> - by &lt;em>Madonna&lt;/em> from the album &amp;lsquo;Like a Prayer&amp;rsquo;&lt;/li>
-&lt;li>2024-10-15. &lt;a href="https://open.spotify.com/track/7wlCdfpxaWQPaxspDIN3wX">&lt;strong>A Sleepless Night&lt;/strong>&lt;/a> - by &lt;em>CNBLUE&lt;/em> from the album &amp;lsquo;X&amp;rsquo;&lt;/li>
 &lt;li>2024-10-15. &lt;a href="https://open.spotify.com/track/0v2Mv5c7skLQ3s3NCmfYbc">&lt;strong>Love Light&lt;/strong>&lt;/a> - by &lt;em>CNBLUE&lt;/em> from the album &amp;lsquo;Bluelove&amp;rsquo;&lt;/li>
 &lt;li>2024-10-15. &lt;a href="https://open.spotify.com/track/1C2bTzulOc0kvGoiPnLqc2">&lt;strong>Love Girl&lt;/strong>&lt;/a> - by &lt;em>CNBLUE&lt;/em> from the album &amp;lsquo;FIRST STEP&amp;rsquo;&lt;/li>
 &lt;li>2024-10-15. &lt;a href="https://open.spotify.com/track/2s92cRmjW0GoGjjpExkAUQ">&lt;strong>Love&lt;/strong>&lt;/a> - by &lt;em>CNBLUE&lt;/em> from the album &amp;lsquo;Bluelove&amp;rsquo;&lt;/li>
 &lt;li>2024-10-15. &lt;a href="https://open.spotify.com/track/2sdf2x4YLaHb1k9HtE9cBs">&lt;strong>Can&amp;rsquo;t Stop&lt;/strong>&lt;/a> - by &lt;em>CNBLUE&lt;/em> from the album &amp;lsquo;Can&amp;rsquo;t Stop&amp;rsquo;&lt;/li>
 &lt;li>2024-10-15. &lt;a href="https://open.spotify.com/track/7wqBDFp7JZfWp3aPaC4gHQ">&lt;strong>Loner&lt;/strong>&lt;/a> - by &lt;em>CNBLUE&lt;/em> from the album &amp;lsquo;Bluetory&amp;rsquo;&lt;/li>
+&lt;li>2024-10-16. &lt;a href="https://open.spotify.com/track/7wlCdfpxaWQPaxspDIN3wX">&lt;strong>A Sleepless Night&lt;/strong>&lt;/a> - by &lt;em>CNBLUE&lt;/em> from the album &amp;lsquo;X&amp;rsquo;&lt;/li>
 &lt;li>2024-10-16. &lt;a href="https://open.spotify.com/track/1b5dVCDgYYrf61U1Ff0tmC">&lt;strong>就說你想說的 (電影《為我辦一場西式的喪禮》主題曲)&lt;/strong>&lt;/a> - by &lt;em>告五人&lt;/em> from the album &amp;lsquo;就說你想說的&amp;rsquo;&lt;/li>
 &lt;/ul></description></item><item><title>Tcl C API 概览(一)</title><link>https://lxulxu.github.io/posts/tcl_c_api_usage_1/</link><pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/tcl_c_api_usage_1/</guid><description>&lt;h2 id="解释器管理">解释器管理&lt;/h2>
 &lt;p>解释器是Tcl的核心概念。这部分API用于创建、删除和管理Tcl解释器。&lt;/p>
