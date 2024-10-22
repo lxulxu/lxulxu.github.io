@@ -166,4 +166,6 @@ tags: [生活]
 - 2024-10-22. [**Magnetic**](https://open.spotify.com/track/1aKvZDoLGkNMxoRYgkckZG) - by *ILLIT* from the album 'SUPER REAL ME'
 - 2024-10-22. [**Midas Touch**](https://open.spotify.com/track/0vaxYDAuAO1nPolC6bQp7V) - by *KISS OF LIFE* from the album 'Midas Touch'
 - 2024-10-22. [**ABCD**](https://open.spotify.com/track/0V2passWyAXnON67kfAj7y) - by *NAYEON* from the album 'NA'
+- 2024-10-22. [**Whiplash**](https://open.spotify.com/track/3coRPMnFg2dJcPu5RMloa9) - by *aespa* from the album 'Whiplash - The 5th Mini Album'
+- 2024-10-22. [**Just Another Girl**](https://open.spotify.com/track/0DWbt2kGzf4s0xeKZcBLfP) - by *aespa* from the album 'Whiplash - The 5th Mini Album'
 
