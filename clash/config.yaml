@@ -1,21 +1,21 @@
 proxies:
 - cipher: aes-256-gcm
-  name: JMS-924690@c53s1.portablesubmarines.com:7713
+  name: JMS-924690@c53s1.portablesubmarines.com:6876
   password: cMLV3ySg8rPUDksP
-  port: 7713
+  port: 6876
   server: 172.96.255.47
   type: ss
 - cipher: aes-256-gcm
-  name: JMS-924690@c53s2.portablesubmarines.com:7713
+  name: JMS-924690@c53s2.portablesubmarines.com:6876
   password: cMLV3ySg8rPUDksP
-  port: 7713
+  port: 6876
   server: 172.96.254.151
   type: ss
 - alterId: 0
   cipher: auto
-  name: JMS-924690@c53s3.portablesubmarines.com:7713
+  name: JMS-924690@c53s3.portablesubmarines.com:6876
   network: tcp
-  port: 7713
+  port: 6876
   server: 198.181.58.180
   tls: false
   type: vmess
@@ -24,9 +24,9 @@ proxies:
   ws-path: ''
 - alterId: 0
   cipher: auto
-  name: JMS-924690@c53s4.portablesubmarines.com:7713
+  name: JMS-924690@c53s4.portablesubmarines.com:6876
   network: tcp
-  port: 7713
+  port: 6876
   server: 212.50.245.239
   tls: false
   type: vmess
@@ -35,9 +35,9 @@ proxies:
   ws-path: ''
 - alterId: 0
   cipher: auto
-  name: JMS-924690@c53s5.portablesubmarines.com:7713
+  name: JMS-924690@c53s5.portablesubmarines.com:6876
   network: tcp
-  port: 7713
+  port: 6876
   server: 104.245.98.203
   tls: false
   type: vmess
@@ -46,9 +46,9 @@ proxies:
   ws-path: ''
 - alterId: 0
   cipher: auto
-  name: JMS-924690@c53s801.portablesubmarines.com:7713
+  name: JMS-924690@c53s801.portablesubmarines.com:6876
   network: tcp
-  port: 7713
+  port: 6876
   server: 23.83.236.160
   tls: false
   type: vmess
@@ -59,11 +59,11 @@ proxy-groups:
 - interval: 300
   name: auto
   proxies:
-  - JMS-924690@c53s1.portablesubmarines.com:7713
-  - JMS-924690@c53s2.portablesubmarines.com:7713
-  - JMS-924690@c53s3.portablesubmarines.com:7713
-  - JMS-924690@c53s4.portablesubmarines.com:7713
-  - JMS-924690@c53s5.portablesubmarines.com:7713
-  - JMS-924690@c53s801.portablesubmarines.com:7713
+  - JMS-924690@c53s1.portablesubmarines.com:6876
+  - JMS-924690@c53s2.portablesubmarines.com:6876
+  - JMS-924690@c53s3.portablesubmarines.com:6876
+  - JMS-924690@c53s4.portablesubmarines.com:6876
+  - JMS-924690@c53s5.portablesubmarines.com:6876
+  - JMS-924690@c53s801.portablesubmarines.com:6876
   type: url-test
   url: http://www.gstatic.com/generate_204
