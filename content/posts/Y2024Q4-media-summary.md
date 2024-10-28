@@ -152,7 +152,6 @@ tags: [生活]
 - 2024-10-18. [**That Girl (Feat. Loco)**](https://open.spotify.com/track/2eXziVXVdsftkKrKOcyVNX) - by *Jung Yong Hwa, Loco* from the album 'JUNG YONG HWA 1ST MINI ALBUM DO DISTURB'
 - 2024-10-19. [**Lost in Time**](https://open.spotify.com/track/2sEFkJ8zkaTjj5nRWPOaJR) - by *Jung Yong Hwa* from the album 'JUNG YONG HWA 1ST MINI ALBUM DO DISTURB'
 - 2024-10-21. [**戒网 - 《黑神话:悟空》游戏插曲**](https://open.spotify.com/track/5YNQbYUzUSydun1KnB99dK) - by *张静峥, 王馨悦* from the album '戒网 (《黑神话:悟空》游戏插曲)'
-- 2024-10-21. [**Espresso**](https://open.spotify.com/track/2qSkIjg1o9h3YT9RAgYN75) - by *Sabrina Carpenter* from the album 'Espresso'
 - 2024-10-22. [**Strawberry Rush**](https://open.spotify.com/track/1gq1gf44tZ9cyTdlcyoJd1) - by *CHUU* from the album 'Strawberry Rush'
 - 2024-10-22. [**Whiplash**](https://open.spotify.com/track/3coRPMnFg2dJcPu5RMloa9) - by *aespa* from the album 'Whiplash - The 5th Mini Album'
 - 2024-10-22. [**Just Another Girl**](https://open.spotify.com/track/0DWbt2kGzf4s0xeKZcBLfP) - by *aespa* from the album 'Whiplash - The 5th Mini Album'
@@ -167,7 +166,8 @@ tags: [生活]
 - 2024-10-23. [**Anh Qua Đây Đi**](https://open.spotify.com/track/6n8jt9dFY0qG5oioNW23wi) - by *MIN* from the album '50/50'
 - 2024-10-23. [**Bye Bye Bye - From Deadpool and Wolverine Soundtrack**](https://open.spotify.com/track/62bOmKYxYg7dhrC6gH9vFn) - by **NSYNC* from the album 'No Strings Attached'
 - 2024-10-23. [**Bring Em Out**](https://open.spotify.com/track/7oAZVxmRCVFanxK7tk16vv) - by *T.I.* from the album 'Urban Legend'
-- 2024-10-23. [**Like a Prayer**](https://open.spotify.com/track/2v7ywbUzCgcVohHaKUcacV) - by *Madonna* from the album 'Like a Prayer'
-- 2024-10-23. [**A Sleepless Night**](https://open.spotify.com/track/7wlCdfpxaWQPaxspDIN3wX) - by *CNBLUE* from the album 'X'
+- 2024-10-28. [**Like a Prayer**](https://open.spotify.com/track/2v7ywbUzCgcVohHaKUcacV) - by *Madonna* from the album 'Like a Prayer'
+- 2024-10-28. [**A Sleepless Night**](https://open.spotify.com/track/7wlCdfpxaWQPaxspDIN3wX) - by *CNBLUE* from the album 'X'
+- 2024-10-28. [**Espresso**](https://open.spotify.com/track/2qSkIjg1o9h3YT9RAgYN75) - by *Sabrina Carpenter* from the album 'Espresso'
 - 2024-10-28. [**APT.**](https://open.spotify.com/track/5vNRhkKd0yEAg8suGBpjeY) - by *ROSÉ, Bruno Mars* from the album 'APT.'
 
