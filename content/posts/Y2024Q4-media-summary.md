@@ -161,7 +161,6 @@ tags: [生活]
 - 2024-10-23. [**Midas Touch**](https://open.spotify.com/track/0vaxYDAuAO1nPolC6bQp7V) - by *KISS OF LIFE* from the album 'Midas Touch'
 - 2024-10-23. [**ABCD**](https://open.spotify.com/track/0V2passWyAXnON67kfAj7y) - by *NAYEON* from the album 'NA'
 - 2024-10-23. [**Balloon in Love**](https://open.spotify.com/track/3x6unDluyCL4v5AeGrAVGA) - by *SUNMI* from the album 'Balloon in Love'
-- 2024-10-23. [**Hwi hwi**](https://open.spotify.com/track/5SVVoVAcI1kJKdvAqQxjzB) - by *LABOUM* from the album 'MISS THIS KISS'
 - 2024-10-28. [**Like a Prayer**](https://open.spotify.com/track/2v7ywbUzCgcVohHaKUcacV) - by *Madonna* from the album 'Like a Prayer'
 - 2024-10-28. [**Espresso**](https://open.spotify.com/track/2qSkIjg1o9h3YT9RAgYN75) - by *Sabrina Carpenter* from the album 'Espresso'
 - 2024-10-28. [**APT.**](https://open.spotify.com/track/5vNRhkKd0yEAg8suGBpjeY) - by *ROSÉ, Bruno Mars* from the album 'APT.'
@@ -170,4 +169,5 @@ tags: [生活]
 - 2024-10-29. [**Bye Bye Bye - From Deadpool and Wolverine Soundtrack**](https://open.spotify.com/track/62bOmKYxYg7dhrC6gH9vFn) - by **NSYNC* from the album 'No Strings Attached'
 - 2024-10-29. [**Bring Em Out**](https://open.spotify.com/track/7oAZVxmRCVFanxK7tk16vv) - by *T.I.* from the album 'Urban Legend'
 - 2024-10-29. [**A Sleepless Night**](https://open.spotify.com/track/7wlCdfpxaWQPaxspDIN3wX) - by *CNBLUE* from the album 'X'
+- 2024-10-30. [**Hwi hwi**](https://open.spotify.com/track/5SVVoVAcI1kJKdvAqQxjzB) - by *LABOUM* from the album 'MISS THIS KISS'
 
