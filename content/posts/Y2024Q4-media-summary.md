@@ -170,4 +170,5 @@ tags: [生活]
 - 2024-10-29. [**Bring Em Out**](https://open.spotify.com/track/7oAZVxmRCVFanxK7tk16vv) - by *T.I.* from the album 'Urban Legend'
 - 2024-10-29. [**A Sleepless Night**](https://open.spotify.com/track/7wlCdfpxaWQPaxspDIN3wX) - by *CNBLUE* from the album 'X'
 - 2024-10-30. [**Hwi hwi**](https://open.spotify.com/track/5SVVoVAcI1kJKdvAqQxjzB) - by *LABOUM* from the album 'MISS THIS KISS'
+- 2024-10-31. [**POWER**](https://open.spotify.com/track/4XsJiRJQAK8TWcZCn0Dxlh) - by *G-DRAGON* from the album 'POWER'
 
