@@ -16,6 +16,7 @@ tags: [生活]
 - 2024-10-12. [**绑架游戏**](http://movie.douban.com/subject/35007126/) - rating: ★★★☆☆
 - 2024-10-17. [**小丑2：双重妄想**](http://movie.douban.com/subject/34909341/) - rating: ★★★★☆
 - 2024-10-23. [**毒液：最后一舞**](http://movie.douban.com/subject/35087675/) - rating: ★★★☆☆
+- 2024-11-02. [**老枪**](http://movie.douban.com/subject/33458979/) - rating: ★★★★☆
 
 ## 🎮Games
 - 2024-10-13. [**黑神话：悟空 Black Myth: Wukong**](http://www.douban.com/game/35184766/) - rating: ★★★★★
