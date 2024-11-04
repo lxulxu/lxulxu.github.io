@@ -178,6 +178,7 @@
 &lt;li>2024-10-31. &lt;a href="https://open.spotify.com/track/5CCQr52OAAbovNfuK0I6Lx">&lt;strong>Intuition&lt;/strong>&lt;/a> - by &lt;em>CNBLUE&lt;/em> from the album &amp;lsquo;FIRST STEP&amp;rsquo;&lt;/li>
 &lt;li>2024-10-31. &lt;a href="https://open.spotify.com/track/7rLvsAO1yb7ElxPhkz60qh">&lt;strong>For You&lt;/strong>&lt;/a> - by &lt;em>CHEN, BAEKHYUN, XIUMIN&lt;/em> from the album &amp;lsquo;Moonlovers - Scarlet Heart Ryeo (Original Television Soundtrack), Pt. 1&amp;rsquo;&lt;/li>
 &lt;li>2024-10-31. &lt;a href="https://open.spotify.com/track/1PsDitrM5j4vM6gySCfCEA">&lt;strong>人生賛歌&lt;/strong>&lt;/a> - by &lt;em>CNBLUE&lt;/em> from the album &amp;lsquo;人生賛歌&amp;rsquo;&lt;/li>
+&lt;li>2024-11-04. &lt;a href="https://open.spotify.com/track/3v4QrvFs2vFAht1MdOiAC8">&lt;strong>POWER [Official Video]&lt;/strong>&lt;/a> - by &lt;em>G-DRAGON&lt;/em> from the album &amp;lsquo;POWER [Official Video]&amp;rsquo;&lt;/li>
 &lt;/ul></description></item><item><title>Tcl C API 概览(一)</title><link>https://lxulxu.github.io/posts/tcl_c_api_usage_1/</link><pubDate>Fri, 20 Sep 2024 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/tcl_c_api_usage_1/</guid><description>&lt;h2 id="解释器管理">解释器管理&lt;/h2>
 &lt;p>解释器是Tcl的核心概念。这部分API用于创建、删除和管理Tcl解释器。&lt;/p>
 &lt;h3 id="tcl_createinterp">Tcl_CreateInterp&lt;/h3>
