@@ -181,4 +181,5 @@ tags: [生活]
 - 2024-10-31. [**Intuition**](https://open.spotify.com/track/5CCQr52OAAbovNfuK0I6Lx) - by *CNBLUE* from the album 'FIRST STEP'
 - 2024-10-31. [**For You**](https://open.spotify.com/track/7rLvsAO1yb7ElxPhkz60qh) - by *CHEN, BAEKHYUN, XIUMIN* from the album 'Moonlovers - Scarlet Heart Ryeo (Original Television Soundtrack), Pt. 1'
 - 2024-10-31. [**人生賛歌**](https://open.spotify.com/track/1PsDitrM5j4vM6gySCfCEA) - by *CNBLUE* from the album '人生賛歌'
+- 2024-11-04. [**POWER [Official Video]**](https://open.spotify.com/track/3v4QrvFs2vFAht1MdOiAC8) - by *G-DRAGON* from the album 'POWER [Official Video]'
 
