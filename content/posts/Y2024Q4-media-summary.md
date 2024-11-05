@@ -17,6 +17,7 @@ tags: [生活]
 - 2024-10-17. [**小丑2：双重妄想**](http://movie.douban.com/subject/34909341/) - rating: ★★★★☆
 - 2024-10-23. [**毒液：最后一舞**](http://movie.douban.com/subject/35087675/) - rating: ★★★☆☆
 - 2024-11-02. [**老枪**](http://movie.douban.com/subject/33458979/) - rating: ★★★★☆
+- 2024-11-05. [**某种物质**](http://movie.douban.com/subject/35882838/) - rating: ★★★★☆
 
 ## 🎮Games
 - 2024-10-13. [**黑神话：悟空 Black Myth: Wukong**](http://www.douban.com/game/35184766/) - rating: ★★★★★
@@ -182,4 +183,6 @@ tags: [生活]
 - 2024-11-04. [**Hwi hwi**](https://open.spotify.com/track/5SVVoVAcI1kJKdvAqQxjzB) - by *LABOUM* from the album 'MISS THIS KISS'
 - 2024-11-04. [**Strawberry Rush**](https://open.spotify.com/track/1gq1gf44tZ9cyTdlcyoJd1) - by *CHUU* from the album 'Strawberry Rush'
 - 2024-11-04. [**POWER [Official Video]**](https://open.spotify.com/track/3v4QrvFs2vFAht1MdOiAC8) - by *G-DRAGON* from the album 'POWER [Official Video]'
+- 2024-11-05. [**The Ghost of You**](https://open.spotify.com/track/1yKAqZoi8xWGLCf5vajroL) - by *My Chemical Romance* from the album 'Three Cheers for Sweet Revenge'
+- 2024-11-05. [**Not One Minute More**](https://open.spotify.com/track/28zBAD35KEZaACuTuzF7Jj) - by *Earl Grant* from the album 'Singin' & Swingin': The Best Of Earl Grant'
 
