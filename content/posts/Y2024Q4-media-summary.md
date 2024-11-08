@@ -35,6 +35,7 @@ tags: [生活]
 - 2024-10-13. [**巴黎圣母院**](https://www.douban.com/location/drama/1765426/) - rating: ★★★★☆
 - 2024-10-16. [**新参者（沉浸式驻演版）**](https://www.douban.com/location/drama/36858525/) - rating: ★★★☆☆
 - 2024-11-02. [**哈姆雷特（奥斯特玛雅版）**](https://www.douban.com/location/drama/26344418/) - rating: ★★★★☆
+- 2024-11-08. [**每一个女人**](https://www.douban.com/location/drama/36984115/) - rating: ★★★★☆
 
 ## 🎵MUSIC
 - 2024-10-02. [**If This Is It**](https://open.spotify.com/track/2pAdtQuiEVGr7nOXGiv7t4) - by *Huey Lewis & The News* from the album 'Sports'
