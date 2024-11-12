@@ -156,10 +156,9 @@ tags: [生活]
 - 2024-11-04. [**Hwi hwi**](https://open.spotify.com/track/5SVVoVAcI1kJKdvAqQxjzB) - by *LABOUM* from the album 'MISS THIS KISS'
 - 2024-11-04. [**Strawberry Rush**](https://open.spotify.com/track/1gq1gf44tZ9cyTdlcyoJd1) - by *CHUU* from the album 'Strawberry Rush'
 - 2024-11-04. [**Anh Qua Đây Đi**](https://open.spotify.com/track/6n8jt9dFY0qG5oioNW23wi) - by *MIN* from the album '50/50'
-- 2024-11-04. [**Bye Bye Bye - From Deadpool and Wolverine Soundtrack**](https://open.spotify.com/track/62bOmKYxYg7dhrC6gH9vFn) - by **NSYNC* from the album 'No Strings Attached'
-- 2024-11-04. [**Like a Prayer**](https://open.spotify.com/track/2v7ywbUzCgcVohHaKUcacV) - by *Madonna* from the album 'Like a Prayer'
 - 2024-11-04. [**POWER [Official Video]**](https://open.spotify.com/track/3v4QrvFs2vFAht1MdOiAC8) - by *G-DRAGON* from the album 'POWER [Official Video]'
 - 2024-11-05. [**Bring Em Out**](https://open.spotify.com/track/7oAZVxmRCVFanxK7tk16vv) - by *T.I.* from the album 'Urban Legend'
+- 2024-11-05. [**Like a Prayer**](https://open.spotify.com/track/2v7ywbUzCgcVohHaKUcacV) - by *Madonna* from the album 'Like a Prayer'
 - 2024-11-05. [**A Sleepless Night**](https://open.spotify.com/track/7wlCdfpxaWQPaxspDIN3wX) - by *CNBLUE* from the album 'X'
 - 2024-11-05. [**The Ghost of You**](https://open.spotify.com/track/1yKAqZoi8xWGLCf5vajroL) - by *My Chemical Romance* from the album 'Three Cheers for Sweet Revenge'
 - 2024-11-05. [**Not One Minute More**](https://open.spotify.com/track/28zBAD35KEZaACuTuzF7Jj) - by *Earl Grant* from the album 'Singin' & Swingin': The Best Of Earl Grant'
@@ -188,5 +187,6 @@ tags: [生活]
 - 2024-11-07. [**LALISA**](https://open.spotify.com/track/2KZ3sNqPogEyMUUH6A5HFy) - by *LISA* from the album 'LALISA'
 - 2024-11-07. [**Em Mới Là Người Yêu Anh**](https://open.spotify.com/track/1gIaX9HEGZsWSd5HDJatSr) - by *MIN* from the album 'Em Mới Là Người Yêu Anh'
 - 2024-11-07. [**ABCD**](https://open.spotify.com/track/0V2passWyAXnON67kfAj7y) - by *NAYEON* from the album 'NA'
+- 2024-11-07. [**Bye Bye Bye - From Deadpool and Wolverine Soundtrack**](https://open.spotify.com/track/62bOmKYxYg7dhrC6gH9vFn) - by **NSYNC* from the album 'No Strings Attached'
 - 2024-11-07. [**APT.**](https://open.spotify.com/track/5vNRhkKd0yEAg8suGBpjeY) - by *ROSÉ, Bruno Mars* from the album 'APT.'
 
