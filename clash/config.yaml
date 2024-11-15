@@ -38,7 +38,7 @@ proxies:
   name: JMS-924690@c53s5.portablesubmarines.com:6876
   network: tcp
   port: 6876
-  server: 162.248.76.36
+  server: 104.193.8.25
   tls: false
   type: vmess
   uuid: 005b8be6-7cc3-4b45-8a91-7cb3d8da0486
