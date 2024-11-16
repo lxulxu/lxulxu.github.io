@@ -1,4 +1,96 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on lxulxu's blog</title><link>https://lxulxu.github.io/posts/</link><description>Recent content in Posts on lxulxu's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 01 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://lxulxu.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Y2024Q4 影视音总结</title><link>https://lxulxu.github.io/posts/y2024q4-media-summary/</link><pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/y2024q4-media-summary/</guid><description>&lt;h2 id="movies">🎬MOVIES&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on lxulxu's blog</title><link>https://lxulxu.github.io/posts/</link><description>Recent content in Posts on lxulxu's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 15 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://lxulxu.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>DFX中的关键概念与规则</title><link>https://lxulxu.github.io/posts/dfx_key_concepts_and_rules/</link><pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/dfx_key_concepts_and_rules/</guid><description>&lt;h2 id="1-基础概念与术语">1. 基础概念与术语&lt;/h2>
+&lt;h3 id="11-动态重配置的定义">1.1 动态重配置的定义&lt;/h3>
+&lt;p>​	Dynamic Function eXchange(DFX，也称为动态部分重配置)是一种在FPGA运行时动态修改其部分功能区域的技术。DFX可以在FPGA继续运行时，让用户更改芯片预定义区域的功能，而不影响其他区域的正常运行。相比传统的全局配置方式，DFX具有以下优势：&lt;/p>
+&lt;ul>
+&lt;li>节省硬件成本：可以通过时分复用的方式在同一个区域切换不同功能&lt;/li>
+&lt;li>支持实时更新：无需停止系统运行即可更新部分功能&lt;/li>
+&lt;li>提升系统灵活性：可以根据需要动态调整功能&lt;/li>
+&lt;li>减少配置时间：部分配置比完整配置速度更快&lt;/li>
+&lt;/ul>
+&lt;p>​	FPGA 设计中的逻辑分为两种不同类型：可重配置逻辑和静态逻辑。静态逻辑在运行期间保持正常工作，不受加载部分比特流的影响。可重配置逻辑则会被部分比特流的内容替换。&lt;/p>
+&lt;p>
+&lt;figure>
+ &lt;img src="../../assets/images/Y2024Q4/1.png" alt="DFX Basic Concept" />
+&lt;/figure>
+
+
+&lt;/p>
+&lt;p>​	如上图所示，通过下载任一部分比特流文件(A1.bit、A2.bit、A3.bit 或A4.bit)即可修改重配置块 A 中实现的功能。标记为&amp;quot;FPGA&amp;quot;的区域表示静态逻辑，标记为&amp;quot;重配置块 A&amp;quot;的区域表示可重配置逻辑。&lt;/p>
+&lt;h3 id="12-核心术语解析">1.2 核心术语解析&lt;/h3>
+&lt;h4 id="121-重配置分区rp-reconfigurable-partition">1.2.1 重配置分区(RP, Reconfigurable Partition)&lt;/h4>
+&lt;p>重配置分区是DFX设计中可以进行动态重新配置的物理区域。它具有以下关键特征：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>逻辑特征&lt;/p>
+&lt;ul>
+&lt;li>是HDL设计中的一个模块实例&lt;/li>
+&lt;li>必须具有稳定的接口定义&lt;/li>
+&lt;li>可以包含多个子模块&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>物理特征&lt;/p>
+&lt;ul>
+&lt;li>由一个或多个Pblock定义的器件区域&lt;/li>
+&lt;li>区域边界必须遵循特定规则&lt;/li>
+&lt;li>资源独占，不能与其他RP重叠&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="122-重配置模块rm-reconfigurable-module">1.2.2 重配置模块(RM, Reconfigurable Module)&lt;/h4>
+&lt;p>重配置模块是可以加载到重配置分区(RP)中的具体功能实现。它具有以下特点：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>实现要求&lt;/p>
+&lt;ul>
+&lt;li>必须与RP定义的接口完全匹配&lt;/li>
+&lt;li>逻辑必须能够完全放入指定的RP区域&lt;/li>
+&lt;li>每个RM都需要独立的部分比特流文件&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>兼容性要求&lt;/p>
+&lt;ul>
+&lt;li>同一个RP的所有RM之间必须接口兼容&lt;/li>
+&lt;li>必须遵循相同的时序和资源约束&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="123-静态逻辑与动态逻辑">1.2.3 静态逻辑与动态逻辑&lt;/h4>
+&lt;p>FPGA的逻辑分为两类：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>静态逻辑：初始配置后保持不变的部分&lt;/p>
+&lt;ul>
+&lt;li>在重配置过程中持续运行&lt;/li>
+&lt;li>包含全局资源（如时钟、配置逻辑等）&lt;/li>
+&lt;li>管理重配置过程和接口&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>动态逻辑：运行时可重新配置的部分&lt;/p>
+&lt;ul>
+&lt;li>位于RP内部&lt;/li>
+&lt;li>可以被不同RM替换&lt;/li>
+&lt;li>重配置过程中状态不可预测&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="124-分区管脚partpin">1.2.4 分区管脚(PartPin)&lt;/h4>
+&lt;p>分区管脚是RP与静态逻辑之间的物理接口点：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>基本特征&lt;/p>
+&lt;ul>
+&lt;li>每个管脚都有一个分区管脚(PartPin)&lt;/li>
+&lt;li>由工具自动布局在RP Pblock范围内&lt;/li>
+&lt;li>必须是单向的，不支持双向端口&lt;/li>
+&lt;li>在所有RM配置中保持固定位置&lt;/li>
+&lt;li>影响布线资源使用和时序性能&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>实现控制&lt;/p></description></item><item><title>Y2024Q4 影视音总结</title><link>https://lxulxu.github.io/posts/y2024q4-media-summary/</link><pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/y2024q4-media-summary/</guid><description>&lt;h2 id="movies">🎬MOVIES&lt;/h2>
 &lt;ul>
 &lt;li>2024-10-01. &lt;a href="http://movie.douban.com/subject/36296618/">&lt;strong>志愿军：存亡之战&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
 &lt;li>2024-10-01. &lt;a href="http://movie.douban.com/subject/35811225/">&lt;strong>爆款好人&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
