@@ -10,7 +10,7 @@
 &lt;p>​	FPGA 设计中的逻辑分为两种不同类型：可重配置逻辑和静态逻辑。静态逻辑在运行期间保持正常工作，不受加载部分比特流的影响。可重配置逻辑则会被部分比特流的内容替换。&lt;/p>
 &lt;p>
 &lt;figure>
- &lt;img src="../../assets/images/Y2024Q4/1.png" alt="DFX Basic Concept" />
+ &lt;img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2024Q4/1.png?raw=true" alt="DFX Basic Concept" />
 &lt;/figure>
 
 
