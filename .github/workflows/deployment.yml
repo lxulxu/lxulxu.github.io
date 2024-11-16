@@ -1,9 +1,9 @@
-name: GitHub Pages
+name: Build and Deploy
 
 on:
   push:
     branches:
-      - master  # Set a branch name to trigger deployment
+      - master
     paths-ignore:
       - 'archive/**'
   pull_request:
@@ -12,17 +12,71 @@ on:
   workflow_dispatch:
 
 jobs:
+  check-changes:
+    runs-on: ubuntu-latest
+    outputs:
+      has_image_changes: ${{ steps.filter.outputs.images }}
+      has_content_changes: ${{ steps.filter.outputs.content }}
+    steps:
+      - uses: actions/checkout@v3
+      
+      - uses: dorny/paths-filter@v2
+        id: filter
+        with:
+          filters: |
+            images:
+              - '**.jpg'
+              - '**.jpeg'
+              - '**.png'
+              - '**.webp'
+            content:
+              - 'content/**'
+              - '**/*.md'
+
+  process-images:
+    needs: check-changes
+    if: needs.check-changes.outputs.has_image_changes == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Compress Images
+        id: calibre
+        uses: calibreapp/image-actions@main
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          compressOnly: true
+
+      - name: Replace Image Paths in Markdown
+        run: |
+          find content -name '*.md' | while read file; do
+              sed -i 's/\(\!\[.*\]\)(\(\.\.\/\)\+assets\/images\/\(Y[0-9]*Q[0-9]*\)\/\(.*\))/\1(https:\/\/raw.githubusercontent.com\/lxulxu\/lxulxu.github.io\/master\/assets\/images\/\3\/\4?raw=true)/g' "$file"
+              sed -i 's/<img src="\(\.\.\/\)\+assets\/images\/\(Y[0-9]*Q[0-9]*\)\/\([^"]*\)"/<img src="https:\/\/raw.githubusercontent.com\/lxulxu\/lxulxu.github.io\/master\/assets\/images\/\2\/\3?raw=true"/g' "$file"
+          done
+
+      - name: Commit changes
+        run: |
+          git config --global user.email github-actions@github.com
+          git config --global user.name github-actions
+          git add .
+          git diff-index --quiet HEAD || git commit -m "Optimize images and update links"
+          git push
+
   deploy:
+    needs: [check-changes, process-images]
+    if: |
+      always() &&
+      needs.check-changes.result == 'success' &&
+      (needs.process-images.result == 'success' || needs.process-images.result == 'skipped') &&
+      github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - uses: actions/checkout@v3
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: true
+          fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -34,6 +88,5 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/master'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
