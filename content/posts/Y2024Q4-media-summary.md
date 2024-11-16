@@ -21,6 +21,7 @@ tags: [生活]
 - 2024-11-07. [**焚城**](http://movie.douban.com/subject/36421884/) - rating: ★★★★☆
 - 2024-11-09. [**最后的里程**](http://movie.douban.com/subject/36680228/) - rating: ★★★★☆
 - 2024-11-09. [**好东西**](http://movie.douban.com/subject/36154853/) - rating: ★★★★☆
+- 2024-11-16. [**胜券在握**](http://movie.douban.com/subject/36354086/) - rating: ★★★★☆
 
 ## 🎮Games
 - 2024-10-13. [**黑神话：悟空 Black Myth: Wukong**](http://www.douban.com/game/35184766/) - rating: ★★★★★
