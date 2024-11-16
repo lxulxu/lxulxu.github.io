@@ -18,7 +18,7 @@ categories: [xilinx]
 
 ​	FPGA 设计中的逻辑分为两种不同类型：可重配置逻辑和静态逻辑。静态逻辑在运行期间保持正常工作，不受加载部分比特流的影响。可重配置逻辑则会被部分比特流的内容替换。
 
-![DFX Basic Concept](../../assets/images/Y2024Q4/1.png)
+![DFX Basic Concept](https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2024Q4/1.png?raw=true)
 
 ​	如上图所示，通过下载任一部分比特流文件(A1.bit、A2.bit、A3.bit 或A4.bit)即可修改重配置块 A 中实现的功能。标记为"FPGA"的区域表示静态逻辑，标记为"重配置块 A"的区域表示可重配置逻辑。
 
@@ -154,7 +154,7 @@ resize_pblock pblock_rp1 -add [get_sites -of_objects [get_tiles -pu -of_objects 
 
 
 
-![屏幕截图 2024-11-15 104006](../../assets/images/Y2024Q4/2.png)
+![屏幕截图 2024-11-15 104006](https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2024Q4/2.png?raw=true)
 
 
 #### 1.3.3 布线占板面积(Routing Footprint)
