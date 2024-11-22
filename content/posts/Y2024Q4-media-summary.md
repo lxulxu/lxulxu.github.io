@@ -193,4 +193,6 @@ tags: [生活]
 - 2024-11-19. [**A Sleepless Night**](https://open.spotify.com/track/7wlCdfpxaWQPaxspDIN3wX) - by *CNBLUE* from the album 'X'
 - 2024-11-19. [**致你**](https://open.spotify.com/track/1BH8aQSiigtTbbqms4XpwR) - by *Yihuik苡慧* from the album '致你'
 - 2024-11-20. [**苦茶 - 心动版**](https://open.spotify.com/track/6DtRTnDhhHgSqkUCvCKOJ4) - by *Yihuik苡慧, Aioz* from the album '苦茶 (心动版)'
+- 2024-11-22. [**APT.**](https://open.spotify.com/track/2ipHkoYux6uY1DwwBb4aFV) - by *ROSÉ, Bruno Mars* from the album 'number one girl'
+- 2024-11-22. [**number one girl**](https://open.spotify.com/track/02CrqOYzrJR8fYOffhvRZZ) - by *ROSÉ* from the album 'number one girl'
 
