@@ -28,6 +28,7 @@ tags: [生活]
 ## 🎮Games
 - 2024-10-13. [**黑神话：悟空 Black Myth: Wukong**](http://www.douban.com/game/35184766/) - rating: ★★★★★
 - 2024-10-13. [**冰汽时代2 Frostpunk 2**](http://www.douban.com/game/35562759/) - rating: ★★★★☆
+- 2024-12-01. [**纪元1800 Anno 1800**](http://www.douban.com/game/27120067/) - rating: ★★★★★
 
 ## 🎭Dramas
 - 2024-10-13. [**妈妈咪呀**](https://www.douban.com/location/drama/10944605/) - rating: ★★★★☆
