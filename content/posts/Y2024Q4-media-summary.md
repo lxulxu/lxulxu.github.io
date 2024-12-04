@@ -24,6 +24,7 @@ tags: [生活]
 - 2024-11-16. [**胜券在握**](http://movie.douban.com/subject/36354086/) - rating: ★★★★☆
 - 2024-11-26. [**角斗士2**](http://movie.douban.com/subject/30368790/) - rating: ★★★★☆
 - 2024-11-29. [**因果报应**](http://movie.douban.com/subject/36934908/) - rating: ★★★★☆
+- 2024-12-04. [**白夜破晓**](http://movie.douban.com/subject/27140256/) - rating: ★★★☆☆
 
 ## 🎮Games
 - 2024-10-13. [**黑神话：悟空 Black Myth: Wukong**](http://www.douban.com/game/35184766/) - rating: ★★★★★
