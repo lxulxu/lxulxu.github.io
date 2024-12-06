@@ -26,6 +26,7 @@ tags: [生活]
 - 2024-11-29. [**因果报应**](http://movie.douban.com/subject/36934908/) - rating: ★★★★☆
 - 2024-12-04. [**白夜破晓**](http://movie.douban.com/subject/27140256/) - rating: ★★★☆☆
 - 2024-12-06. [**小倩**](http://movie.douban.com/subject/35172702/) - rating: ★★★★☆
+- 2024-12-06. [**饥饿站台2**](http://movie.douban.com/subject/36406672/) - rating: ★★★★☆
 
 ## 🎮Games
 - 2024-10-13. [**黑神话：悟空 Black Myth: Wukong**](http://www.douban.com/game/35184766/) - rating: ★★★★★
@@ -136,7 +137,6 @@ tags: [生活]
 - 2024-10-16. [**就說你想說的 (電影《為我辦一場西式的喪禮》主題曲)**](https://open.spotify.com/track/1b5dVCDgYYrf61U1Ff0tmC) - by *告五人* from the album '就說你想說的'
 - 2024-10-18. [**That Girl (Feat. Loco)**](https://open.spotify.com/track/2eXziVXVdsftkKrKOcyVNX) - by *Jung Yong Hwa, Loco* from the album 'JUNG YONG HWA 1ST MINI ALBUM DO DISTURB'
 - 2024-10-19. [**Lost in Time**](https://open.spotify.com/track/2sEFkJ8zkaTjj5nRWPOaJR) - by *Jung Yong Hwa* from the album 'JUNG YONG HWA 1ST MINI ALBUM DO DISTURB'
-- 2024-10-21. [**戒网 - 《黑神话:悟空》游戏插曲**](https://open.spotify.com/track/5YNQbYUzUSydun1KnB99dK) - by *张静峥, 王馨悦* from the album '戒网 (《黑神话:悟空》游戏插曲)'
 - 2024-10-22. [**Whiplash**](https://open.spotify.com/track/3coRPMnFg2dJcPu5RMloa9) - by *aespa* from the album 'Whiplash - The 5th Mini Album'
 - 2024-10-22. [**Just Another Girl**](https://open.spotify.com/track/0DWbt2kGzf4s0xeKZcBLfP) - by *aespa* from the album 'Whiplash - The 5th Mini Album'
 - 2024-10-23. [**Wife**](https://open.spotify.com/track/1j8jqwFpFQ8YqsIJAiYFLZ) - by *(G)I-DLE* from the album '2'
@@ -191,17 +191,21 @@ tags: [生活]
 - 2024-11-07. [**Hwi hwi**](https://open.spotify.com/track/5SVVoVAcI1kJKdvAqQxjzB) - by *LABOUM* from the album 'MISS THIS KISS'
 - 2024-11-07. [**Strawberry Rush**](https://open.spotify.com/track/1gq1gf44tZ9cyTdlcyoJd1) - by *CHUU* from the album 'Strawberry Rush'
 - 2024-11-07. [**Anh Qua Đây Đi**](https://open.spotify.com/track/6n8jt9dFY0qG5oioNW23wi) - by *MIN* from the album '50/50'
-- 2024-11-21. [**苦茶 - 心动版**](https://open.spotify.com/track/6DtRTnDhhHgSqkUCvCKOJ4) - by *Yihuik苡慧, Aioz* from the album '苦茶 (心动版)'
 - 2024-11-22. [**APT.**](https://open.spotify.com/track/2ipHkoYux6uY1DwwBb4aFV) - by *ROSÉ, Bruno Mars* from the album 'number one girl'
 - 2024-11-22. [**number one girl**](https://open.spotify.com/track/02CrqOYzrJR8fYOffhvRZZ) - by *ROSÉ* from the album 'number one girl'
 - 2024-11-26. [**A Sleepless Night**](https://open.spotify.com/track/7wlCdfpxaWQPaxspDIN3wX) - by *CNBLUE* from the album 'X'
+- 2024-11-27. [**苦茶 - 心动版**](https://open.spotify.com/track/6DtRTnDhhHgSqkUCvCKOJ4) - by *Yihuik苡慧, Aioz* from the album '苦茶 (心动版)'
 - 2024-11-28. [**Bye Bye Bye - From Deadpool and Wolverine Soundtrack**](https://open.spotify.com/track/62bOmKYxYg7dhrC6gH9vFn) - by **NSYNC* from the album 'No Strings Attached'
 - 2024-11-28. [**Bring Em Out**](https://open.spotify.com/track/7oAZVxmRCVFanxK7tk16vv) - by *T.I.* from the album 'Urban Legend'
 - 2024-11-28. [**Like a Prayer**](https://open.spotify.com/track/2v7ywbUzCgcVohHaKUcacV) - by *Madonna* from the album 'Like a Prayer'
 - 2024-11-28. [**APT.**](https://open.spotify.com/track/5vNRhkKd0yEAg8suGBpjeY) - by *ROSÉ, Bruno Mars* from the album 'APT.'
 - 2024-11-28. [**致你**](https://open.spotify.com/track/1BH8aQSiigtTbbqms4XpwR) - by *Yihuik苡慧* from the album '致你'
+- 2024-12-06. [**想見你想見你想見你(電視劇"想見你"片尾曲)**](https://open.spotify.com/track/69zgyr5HVKdInjeKpq1qHa) - by *831* from the album '想見你想見你想見你(電視劇"想見你"片尾曲)'
+- 2024-12-06. [**戒网 - 《黑神话：悟空》游戏插曲**](https://open.spotify.com/track/5YNQbYUzUSydun1KnB99dK) - by *张静峥, 王馨悦* from the album '戒网 (《黑神话：悟空》游戏插曲)'
 - 2024-12-06. [**3am**](https://open.spotify.com/track/3y4q6bBdbXsTIaPiwiiUfy) - by *ROSÉ* from the album 'rosie'
 - 2024-12-06. [**You Can Do Anything (MTG DA SIA) (with Jason Derulo)**](https://open.spotify.com/track/6Aa9YyvEYFUaMRFc9obYjP) - by *DJ Lucas Beat, Jason Derulo, Sia* from the album 'You Can Do Anything (MTG DA SIA) (with Jason Derulo)'
 - 2024-12-06. [**toxic till the end**](https://open.spotify.com/track/1z5ebC9238uGoBgzYyvGpQ) - by *ROSÉ* from the album 'rosie'
 - 2024-12-06. [**就算掌聲再大（電影《倒數回擊》插曲）**](https://open.spotify.com/track/5FBH4YWV8kJ4xWSYqRjpMm) - by *Sophie Chen* from the album '就算掌聲再大（電影《倒數回擊》插曲）'
+- 2024-12-06. [**此生如故 - 《小倩》電影主題曲**](https://open.spotify.com/track/1J50jsjw06wU24HCynMoyT) - by *Aska Yang* from the album '此生如故'
+- 2024-12-06. [**two years**](https://open.spotify.com/track/4HxGH28DitgAuuKpEVrLzN) - by *ROSÉ* from the album 'rosie'
 
