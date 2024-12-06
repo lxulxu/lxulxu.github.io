@@ -25,6 +25,7 @@ tags: [生活]
 - 2024-11-26. [**角斗士2**](http://movie.douban.com/subject/30368790/) - rating: ★★★★☆
 - 2024-11-29. [**因果报应**](http://movie.douban.com/subject/36934908/) - rating: ★★★★☆
 - 2024-12-04. [**白夜破晓**](http://movie.douban.com/subject/27140256/) - rating: ★★★☆☆
+- 2024-12-06. [**小倩**](http://movie.douban.com/subject/35172702/) - rating: ★★★★☆
 
 ## 🎮Games
 - 2024-10-13. [**黑神话：悟空 Black Myth: Wukong**](http://www.douban.com/game/35184766/) - rating: ★★★★★
@@ -199,4 +200,8 @@ tags: [生活]
 - 2024-11-28. [**Like a Prayer**](https://open.spotify.com/track/2v7ywbUzCgcVohHaKUcacV) - by *Madonna* from the album 'Like a Prayer'
 - 2024-11-28. [**APT.**](https://open.spotify.com/track/5vNRhkKd0yEAg8suGBpjeY) - by *ROSÉ, Bruno Mars* from the album 'APT.'
 - 2024-11-28. [**致你**](https://open.spotify.com/track/1BH8aQSiigtTbbqms4XpwR) - by *Yihuik苡慧* from the album '致你'
+- 2024-12-06. [**3am**](https://open.spotify.com/track/3y4q6bBdbXsTIaPiwiiUfy) - by *ROSÉ* from the album 'rosie'
+- 2024-12-06. [**You Can Do Anything (MTG DA SIA) (with Jason Derulo)**](https://open.spotify.com/track/6Aa9YyvEYFUaMRFc9obYjP) - by *DJ Lucas Beat, Jason Derulo, Sia* from the album 'You Can Do Anything (MTG DA SIA) (with Jason Derulo)'
+- 2024-12-06. [**toxic till the end**](https://open.spotify.com/track/1z5ebC9238uGoBgzYyvGpQ) - by *ROSÉ* from the album 'rosie'
+- 2024-12-06. [**就算掌聲再大（電影《倒數回擊》插曲）**](https://open.spotify.com/track/5FBH4YWV8kJ4xWSYqRjpMm) - by *Sophie Chen* from the album '就算掌聲再大（電影《倒數回擊》插曲）'
 
