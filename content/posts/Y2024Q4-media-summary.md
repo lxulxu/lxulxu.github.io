@@ -208,4 +208,5 @@ tags: [生活]
 - 2024-12-06. [**就算掌聲再大（電影《倒數回擊》插曲）**](https://open.spotify.com/track/5FBH4YWV8kJ4xWSYqRjpMm) - by *Sophie Chen* from the album '就算掌聲再大（電影《倒數回擊》插曲）'
 - 2024-12-06. [**此生如故 - 《小倩》電影主題曲**](https://open.spotify.com/track/1J50jsjw06wU24HCynMoyT) - by *Aska Yang* from the album '此生如故'
 - 2024-12-06. [**two years**](https://open.spotify.com/track/4HxGH28DitgAuuKpEVrLzN) - by *ROSÉ* from the album 'rosie'
+- 2024-12-06. [**看见（《黑神话：悟空》黑风山片尾曲）（I See）**](https://open.spotify.com/track/0R7GoCEMLLoCtXLGb7MOc4) - by *陈鸿宇, 8082 Audio* from the album '《黑神话：悟空》游戏音乐精选集（Black Myth: Wukong Soundtrack Selection）'
 
