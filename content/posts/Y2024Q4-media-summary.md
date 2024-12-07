@@ -27,6 +27,8 @@ tags: [生活]
 - 2024-12-04. [**白夜破晓**](http://movie.douban.com/subject/27140256/) - rating: ★★★☆☆
 - 2024-12-06. [**小倩**](http://movie.douban.com/subject/35172702/) - rating: ★★★★☆
 - 2024-12-06. [**饥饿站台2**](http://movie.douban.com/subject/36406672/) - rating: ★★★★☆
+- 2024-12-07. [**破·地狱**](http://movie.douban.com/subject/36712987/) - rating: ☆☆☆☆☆
+- 2024-12-07. [**雄狮少年2**](http://movie.douban.com/subject/35883131/) - rating: ★★★★★
 
 ## 🎮Games
 - 2024-10-13. [**黑神话：悟空 Black Myth: Wukong**](http://www.douban.com/game/35184766/) - rating: ★★★★★
