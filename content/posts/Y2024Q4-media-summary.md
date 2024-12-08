@@ -30,6 +30,7 @@ tags: [生活]
 - 2024-12-07. [**破·地狱**](http://movie.douban.com/subject/36712987/) - rating: ★★★★☆
 - 2024-12-07. [**雄狮少年2**](http://movie.douban.com/subject/35883131/) - rating: ★★★★★
 - 2024-12-07. [**我是布莱克**](http://movie.douban.com/subject/26653676/) - rating: ★★★★☆
+- 2024-12-08. [**危机航线**](http://movie.douban.com/subject/35497671/) - rating: ★★★☆☆
 
 ## 🎮Games
 - 2024-10-13. [**黑神话：悟空 Black Myth: Wukong**](http://www.douban.com/game/35184766/) - rating: ★★★★★
