@@ -217,4 +217,5 @@ tags: [生活]
 - 2024-12-09. [**A Sleepless Night**](https://open.spotify.com/track/7wlCdfpxaWQPaxspDIN3wX) - by *CNBLUE* from the album 'X'
 - 2024-12-09. [**APT.**](https://open.spotify.com/track/5vNRhkKd0yEAg8suGBpjeY) - by *ROSÉ, Bruno Mars* from the album 'APT.'
 - 2024-12-09. [**致你**](https://open.spotify.com/track/1BH8aQSiigtTbbqms4XpwR) - by *Yihuik苡慧* from the album '致你'
+- 2024-12-21. [**九张机 - 《双世宠妃》网剧主题曲**](https://open.spotify.com/track/5NDBBmVvAK4zvaEX05mG4B) - by *叶炫清* from the album '九张机 (《双世宠妃》网剧主题曲)'
 
