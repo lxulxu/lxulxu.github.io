@@ -159,7 +159,6 @@ tags: [生活]
 - 2024-10-31. [**Can't Stop**](https://open.spotify.com/track/2sdf2x4YLaHb1k9HtE9cBs) - by *CNBLUE* from the album 'Can't Stop'
 - 2024-10-31. [**Loner**](https://open.spotify.com/track/7wqBDFp7JZfWp3aPaC4gHQ) - by *CNBLUE* from the album 'Bluetory'
 - 2024-10-31. [**To. My Love**](https://open.spotify.com/track/1CjpjVFzfP6xOgGBGCBGkL) - by *CNBLUE* from the album 'X'
-- 2024-10-31. [**Espresso**](https://open.spotify.com/track/2qSkIjg1o9h3YT9RAgYN75) - by *Sabrina Carpenter* from the album 'Espresso'
 - 2024-10-31. [**POWER**](https://open.spotify.com/track/4XsJiRJQAK8TWcZCn0Dxlh) - by *G-DRAGON* from the album 'POWER'
 - 2024-10-31. [**Love Cut**](https://open.spotify.com/track/2q8YdrYy0Qyx1jpkSzXtfC) - by *CNBLUE* from the album 'WANTED'
 - 2024-10-31. [**Then, Now and Forever**](https://open.spotify.com/track/2YLCxfPRnyYxgirjSYcTZZ) - by *CNBLUE* from the album 'RE-CODE'
@@ -219,4 +218,5 @@ tags: [生活]
 - 2024-12-09. [**APT.**](https://open.spotify.com/track/5vNRhkKd0yEAg8suGBpjeY) - by *ROSÉ, Bruno Mars* from the album 'APT.'
 - 2024-12-09. [**致你**](https://open.spotify.com/track/1BH8aQSiigtTbbqms4XpwR) - by *Yihuik苡慧* from the album '致你'
 - 2024-12-21. [**九张机 - 《双世宠妃》网剧主题曲**](https://open.spotify.com/track/5NDBBmVvAK4zvaEX05mG4B) - by *叶炫清* from the album '九张机 (《双世宠妃》网剧主题曲)'
+- 2024-12-31. [**Espresso**](https://open.spotify.com/track/2qSkIjg1o9h3YT9RAgYN75) - by *Sabrina Carpenter* from the album 'Espresso'
 
