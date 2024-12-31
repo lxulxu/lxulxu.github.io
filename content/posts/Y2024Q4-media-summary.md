@@ -36,6 +36,7 @@ tags: [生活]
 - 2024-12-14. [**误判**](http://movie.douban.com/subject/36401937/) - rating: ★★★★☆
 - 2024-12-16. [**暴君 第一季**](http://movie.douban.com/subject/22232279/) - rating: ★★★★☆
 - 2024-12-28. [**误杀3**](http://movie.douban.com/subject/35815771/) - rating: ★★★★☆
+- 2024-12-31. [**“骗骗”喜欢你**](http://movie.douban.com/subject/36838707/) - rating: ★★★☆☆
 
 ## 🎮Games
 - 2024-10-13. [**黑神话：悟空 Black Myth: Wukong**](http://www.douban.com/game/35184766/) - rating: ★★★★★
