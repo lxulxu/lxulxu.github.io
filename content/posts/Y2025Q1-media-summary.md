@@ -7,6 +7,7 @@ tags: [生活]
 
 ## 🎬MOVIES
 - 2025-01-04. [**现在拨打的电话**](http://movie.douban.com/subject/36810718/) - rating: ★★★☆☆
+- 2025-01-11. [**恶行之外**](http://movie.douban.com/subject/30175218/) - rating: ★★☆☆☆
 
 ## 🎵MUSIC
 - 2025-01-07. [**Hold my hand (HAN)**](https://open.spotify.com/track/6U9CTAof4KBnyzDt8OYY75) - by *Stray Kids* from the album 'HOP'
