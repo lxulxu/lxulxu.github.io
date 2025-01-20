@@ -22,6 +22,7 @@
 &lt;li>2025-01-08. &lt;a href="https://open.spotify.com/track/2ADDnfPtnTvYLLW3lO00zj">&lt;strong>I Can&amp;rsquo;t Let You Live&lt;/strong>&lt;/a> - by &lt;em>Junkie XL&lt;/em> from the album &amp;lsquo;Sonic the Hedgehog 3 (Music from the Motion Picture)&amp;rsquo;&lt;/li>
 &lt;li>2025-01-08. &lt;a href="https://open.spotify.com/track/0qjbNZYyuzPh20RksmiJ8C">&lt;strong>過了幾天 - 合唱版&lt;/strong>&lt;/a> - by &lt;em>郭家瑋, DIOR 大穎&lt;/em> from the album &amp;lsquo;過了幾天 (合唱版)&amp;rsquo;&lt;/li>
 &lt;li>2025-01-08. &lt;a href="https://open.spotify.com/track/3Pmtyc4JlC399F4tt19nQp">&lt;strong>Spicy Honey&lt;/strong>&lt;/a> - by &lt;em>Esther Yu&lt;/em> from the album &amp;lsquo;Spicy Honey&amp;rsquo;&lt;/li>
+&lt;li>2025-01-20. &lt;a href="https://open.spotify.com/track/0qdPpfbrgdBs6ie9bTtQ1d">&lt;strong>REBEL HEART&lt;/strong>&lt;/a> - by &lt;em>IVE&lt;/em> from the album &amp;lsquo;REBEL HEART&amp;rsquo;&lt;/li>
 &lt;/ul></description></item><item><title>DFX中的关键概念与规则</title><link>https://lxulxu.github.io/posts/dfx_key_concepts_and_rules/</link><pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/dfx_key_concepts_and_rules/</guid><description>&lt;h2 id="1-基础概念与术语">1. 基础概念与术语&lt;/h2>
 &lt;h3 id="11-动态重配置的定义">1.1 动态重配置的定义&lt;/h3>
 &lt;p>​	Dynamic Function eXchange(DFX，也称为动态部分重配置)是一种在FPGA运行时动态修改其部分功能区域的技术。DFX可以在FPGA继续运行时，让用户更改芯片预定义区域的功能，而不影响其他区域的正常运行。相比传统的全局配置方式，DFX具有以下优势：&lt;/p>
