@@ -27,4 +27,5 @@ tags: [生活]
 - 2025-01-08. [**I Can't Let You Live**](https://open.spotify.com/track/2ADDnfPtnTvYLLW3lO00zj) - by *Junkie XL* from the album 'Sonic the Hedgehog 3 (Music from the Motion Picture)'
 - 2025-01-08. [**過了幾天 - 合唱版**](https://open.spotify.com/track/0qjbNZYyuzPh20RksmiJ8C) - by *郭家瑋, DIOR 大穎* from the album '過了幾天 (合唱版)'
 - 2025-01-08. [**Spicy Honey**](https://open.spotify.com/track/3Pmtyc4JlC399F4tt19nQp) - by *Esther Yu* from the album 'Spicy Honey'
+- 2025-01-20. [**REBEL HEART**](https://open.spotify.com/track/0qdPpfbrgdBs6ie9bTtQ1d) - by *IVE* from the album 'REBEL HEART'
 
