@@ -29,4 +29,7 @@ tags: [生活]
 - 2025-01-08. [**Spicy Honey**](https://open.spotify.com/track/3Pmtyc4JlC399F4tt19nQp) - by *Esther Yu* from the album 'Spicy Honey'
 - 2025-01-20. [**REBEL HEART**](https://open.spotify.com/track/0qdPpfbrgdBs6ie9bTtQ1d) - by *IVE* from the album 'REBEL HEART'
 - 2025-01-20. [**Confessions (feat. HEESEUNG & JAKE of ENHYPEN x Paul Russell)**](https://open.spotify.com/track/4UwTWjL9Twe11zDQTuQ2Lz) - by *Flo Rida, ENHYPEN, Paul Russell* from the album 'Confessions (feat. HEESEUNG & JAKE of ENHYPEN x Paul Russell)'
+- 2025-01-31. [**Paradise**](https://open.spotify.com/track/4vm5bCxVwCryUz9YbaIdSJ) - by *PSYCHIC FEVER from EXILE TRIBE* from the album 'Paradise'
+- 2025-01-31. [**Fat Juicy & Wet**](https://open.spotify.com/track/5M2lX0ZAYSAzCs1xPPi9BX) - by *Sexyy Red, Bruno Mars* from the album 'Fat Juicy & Wet'
+- 2025-01-31. [**每一天**](https://open.spotify.com/track/4taoq0VNUIq6PKNEFgBcZU) - by *Vicky Chen, W.M.L, Evangeline Wong* from the album '每一天'
 
