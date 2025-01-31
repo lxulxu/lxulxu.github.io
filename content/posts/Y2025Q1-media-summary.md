@@ -34,4 +34,5 @@ tags: [生活]
 - 2025-01-31. [**Paradise**](https://open.spotify.com/track/4vm5bCxVwCryUz9YbaIdSJ) - by *PSYCHIC FEVER from EXILE TRIBE* from the album 'Paradise'
 - 2025-01-31. [**Fat Juicy & Wet**](https://open.spotify.com/track/5M2lX0ZAYSAzCs1xPPi9BX) - by *Sexyy Red, Bruno Mars* from the album 'Fat Juicy & Wet'
 - 2025-01-31. [**每一天**](https://open.spotify.com/track/4taoq0VNUIq6PKNEFgBcZU) - by *Vicky Chen, W.M.L, Evangeline Wong* from the album '每一天'
+- 2025-01-31. [**HER**](https://open.spotify.com/track/2MbPhDgeXVipowltFneRH2) - by *MINNIE* from the album 'HER'
 
