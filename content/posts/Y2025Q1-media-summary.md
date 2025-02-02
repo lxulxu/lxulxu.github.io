@@ -10,6 +10,7 @@ tags: [生活]
 - 2025-01-11. [**恶行之外**](http://movie.douban.com/subject/30175218/) - rating: ★★☆☆☆
 - 2025-01-31. [**封神第二部：战火西岐**](http://movie.douban.com/subject/30181250/) - rating: ★★★☆☆
 - 2025-01-31. [**哪吒之魔童闹海**](http://movie.douban.com/subject/34780991/) - rating: ★★★★★
+- 2025-02-02. [**唐探1900**](http://movie.douban.com/subject/36282639/) - rating: ★★★★☆
 
 ## 🎵MUSIC
 - 2025-01-07. [**Hold my hand (HAN)**](https://open.spotify.com/track/6U9CTAof4KBnyzDt8OYY75) - by *Stray Kids* from the album 'HOP'
