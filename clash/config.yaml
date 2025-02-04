@@ -9,7 +9,7 @@ proxies:
   name: JMS-924690@c53s2.portablesubmarines.com:6876
   password: cMLV3ySg8rPUDksP
   port: 6876
-  server: 104.194.75.80
+  server: 97.64.27.218
   type: ss
 - alterId: 0
   cipher: auto
@@ -27,7 +27,7 @@ proxies:
   name: JMS-924690@c53s4.portablesubmarines.com:6876
   network: tcp
   port: 6876
-  server: 212.50.250.112
+  server: 23.106.141.184
   tls: false
   type: vmess
   uuid: 005b8be6-7cc3-4b45-8a91-7cb3d8da0486
