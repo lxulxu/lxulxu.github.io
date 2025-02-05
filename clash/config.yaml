@@ -9,7 +9,7 @@ proxies:
   name: JMS-924690@c53s2.portablesubmarines.com:6876
   password: cMLV3ySg8rPUDksP
   port: 6876
-  server: 97.64.27.218
+  server: 172.96.254.137
   type: ss
 - alterId: 0
   cipher: auto
