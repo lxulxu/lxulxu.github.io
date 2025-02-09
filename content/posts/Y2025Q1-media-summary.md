@@ -11,6 +11,7 @@ tags: [生活]
 - 2025-01-31. [**封神第二部：战火西岐**](http://movie.douban.com/subject/30181250/) - rating: ★★★☆☆
 - 2025-01-31. [**哪吒之魔童闹海**](http://movie.douban.com/subject/34780991/) - rating: ★★★★★
 - 2025-02-02. [**唐探1900**](http://movie.douban.com/subject/36282639/) - rating: ★★★★☆
+- 2025-02-09. [**余烬之上**](http://movie.douban.com/subject/36449287/) - rating: ★★★☆☆
 
 ## 🎵MUSIC
 - 2025-01-07. [**Hold my hand (HAN)**](https://open.spotify.com/track/6U9CTAof4KBnyzDt8OYY75) - by *Stray Kids* from the album 'HOP'
@@ -38,5 +39,6 @@ tags: [生活]
 - 2025-01-31. [**HER**](https://open.spotify.com/track/2MbPhDgeXVipowltFneRH2) - by *MINNIE* from the album 'HER'
 - 2025-02-07. [**Born Again (feat. Doja Cat & RAYE)**](https://open.spotify.com/track/4CPuDVC8jhhK6lA2DIt8Cf) - by *LISA, Doja Cat, RAYE* from the album 'Born Again (feat. Doja Cat & RAYE)'
 - 2025-02-07. [**New Woman (feat. ROSALÍA)**](https://open.spotify.com/track/7ov3TDp5D00Rnu5R1viX4w) - by *LISA, ROSALÍA* from the album 'New Woman (feat. ROSALÍA)'
+- 2025-02-08. [**致你**](https://open.spotify.com/track/1BH8aQSiigtTbbqms4XpwR) - by *Yihuik苡慧* from the album '致你'
 - 2025-02-08. [**Is This Love? - Japanese Ver.**](https://open.spotify.com/track/1tlyaevTrlHjS1nXrXzYBZ) - by *Moon Byul* from the album 'Aurora'
 
