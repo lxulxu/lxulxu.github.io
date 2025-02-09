@@ -37,6 +37,7 @@ tags: [生活]
 - 2025-01-31. [**Fat Juicy & Wet**](https://open.spotify.com/track/5M2lX0ZAYSAzCs1xPPi9BX) - by *Sexyy Red, Bruno Mars* from the album 'Fat Juicy & Wet'
 - 2025-01-31. [**每一天**](https://open.spotify.com/track/4taoq0VNUIq6PKNEFgBcZU) - by *Vicky Chen, W.M.L, Evangeline Wong* from the album '每一天'
 - 2025-01-31. [**HER**](https://open.spotify.com/track/2MbPhDgeXVipowltFneRH2) - by *MINNIE* from the album 'HER'
+- 2025-02-02. [**A Sleepless Night**](https://open.spotify.com/track/7wlCdfpxaWQPaxspDIN3wX) - by *CNBLUE* from the album 'X'
 - 2025-02-07. [**Born Again (feat. Doja Cat & RAYE)**](https://open.spotify.com/track/4CPuDVC8jhhK6lA2DIt8Cf) - by *LISA, Doja Cat, RAYE* from the album 'Born Again (feat. Doja Cat & RAYE)'
 - 2025-02-07. [**New Woman (feat. ROSALÍA)**](https://open.spotify.com/track/7ov3TDp5D00Rnu5R1viX4w) - by *LISA, ROSALÍA* from the album 'New Woman (feat. ROSALÍA)'
 - 2025-02-08. [**致你**](https://open.spotify.com/track/1BH8aQSiigtTbbqms4XpwR) - by *Yihuik苡慧* from the album '致你'
