@@ -15,9 +15,9 @@ tags: [生活]
 
 ## 🎵MUSIC
 - 2025-01-07. [**Hold my hand (HAN)**](https://open.spotify.com/track/6U9CTAof4KBnyzDt8OYY75) - by *Stray Kids* from the album 'HOP'
-- 2025-01-07. [**消散对白**](https://open.spotify.com/track/0mpxYMq79IM415ls1qNni5) - by *丁禹兮* from the album '消散对白'
 - 2025-01-07. [**一起看黃昏 (Teleportation chinese ver.) [OT：テレポーテーション Teleportation]**](https://open.spotify.com/track/2WbJ2gT6rI0pLxjhZ87qnG) - by *DEAN FUJIOKA, 告五人* from the album '一起看黃昏'
 - 2025-01-07. [**亢奋**](https://open.spotify.com/track/3tOkuo0A20r61Twa6cRVTd) - by *嚴浩翔* from the album '亢奋'
+- 2025-01-08. [**消散对白**](https://open.spotify.com/track/0mpxYMq79IM415ls1qNni5) - by *丁禹兮* from the album '消散对白'
 - 2025-01-08. [**Time After Time**](https://open.spotify.com/track/0QlHSWOexU7bZj75QQQJSi) - by *PROJECT 7* from the album 'PROJECT 7 - ORIGINALS MATCH'
 - 2025-01-08. [**Strategy (version 1.0)**](https://open.spotify.com/track/1gsgZeuYOcfl5NF0tZoLLf) - by *TWICE* from the album 'Strategy 2.0'
 - 2025-01-08. [**過期**](https://open.spotify.com/track/4vo5zsdH31KQSYHNYoBpRo) - by *163 braces* from the album '過期'
@@ -37,9 +37,11 @@ tags: [生活]
 - 2025-01-31. [**Fat Juicy & Wet**](https://open.spotify.com/track/5M2lX0ZAYSAzCs1xPPi9BX) - by *Sexyy Red, Bruno Mars* from the album 'Fat Juicy & Wet'
 - 2025-01-31. [**每一天**](https://open.spotify.com/track/4taoq0VNUIq6PKNEFgBcZU) - by *Vicky Chen, W.M.L, Evangeline Wong* from the album '每一天'
 - 2025-01-31. [**HER**](https://open.spotify.com/track/2MbPhDgeXVipowltFneRH2) - by *MINNIE* from the album 'HER'
+- 2025-02-02. [**Bring Em Out**](https://open.spotify.com/track/7oAZVxmRCVFanxK7tk16vv) - by *T.I.* from the album 'Urban Legend'
 - 2025-02-02. [**A Sleepless Night**](https://open.spotify.com/track/7wlCdfpxaWQPaxspDIN3wX) - by *CNBLUE* from the album 'X'
 - 2025-02-07. [**Born Again (feat. Doja Cat & RAYE)**](https://open.spotify.com/track/4CPuDVC8jhhK6lA2DIt8Cf) - by *LISA, Doja Cat, RAYE* from the album 'Born Again (feat. Doja Cat & RAYE)'
 - 2025-02-07. [**New Woman (feat. ROSALÍA)**](https://open.spotify.com/track/7ov3TDp5D00Rnu5R1viX4w) - by *LISA, ROSALÍA* from the album 'New Woman (feat. ROSALÍA)'
 - 2025-02-08. [**致你**](https://open.spotify.com/track/1BH8aQSiigtTbbqms4XpwR) - by *Yihuik苡慧* from the album '致你'
 - 2025-02-08. [**Is This Love? - Japanese Ver.**](https://open.spotify.com/track/1tlyaevTrlHjS1nXrXzYBZ) - by *Moon Byul* from the album 'Aurora'
+- 2025-02-11. [**APT.**](https://open.spotify.com/track/5vNRhkKd0yEAg8suGBpjeY) - by *ROSÉ, Bruno Mars* from the album 'APT.'
 
