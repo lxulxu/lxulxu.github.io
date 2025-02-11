@@ -43,5 +43,12 @@ tags: [生活]
 - 2025-02-07. [**New Woman (feat. ROSALÍA)**](https://open.spotify.com/track/7ov3TDp5D00Rnu5R1viX4w) - by *LISA, ROSALÍA* from the album 'New Woman (feat. ROSALÍA)'
 - 2025-02-08. [**致你**](https://open.spotify.com/track/1BH8aQSiigtTbbqms4XpwR) - by *Yihuik苡慧* from the album '致你'
 - 2025-02-08. [**Is This Love? - Japanese Ver.**](https://open.spotify.com/track/1tlyaevTrlHjS1nXrXzYBZ) - by *Moon Byul* from the album 'Aurora'
+- 2025-02-11. [**ABCD**](https://open.spotify.com/track/0V2passWyAXnON67kfAj7y) - by *NAYEON* from the album 'NA'
+- 2025-02-11. [**Balloon in Love**](https://open.spotify.com/track/3x6unDluyCL4v5AeGrAVGA) - by *SUNMI* from the album 'Balloon in Love'
+- 2025-02-11. [**Hwi hwi**](https://open.spotify.com/track/5SVVoVAcI1kJKdvAqQxjzB) - by *LABOUM* from the album 'MISS THIS KISS'
+- 2025-02-11. [**Strawberry Rush**](https://open.spotify.com/track/1gq1gf44tZ9cyTdlcyoJd1) - by *CHUU* from the album 'Strawberry Rush'
+- 2025-02-11. [**Bye Bye Bye - From Deadpool and Wolverine Soundtrack**](https://open.spotify.com/track/62bOmKYxYg7dhrC6gH9vFn) - by **NSYNC* from the album 'No Strings Attached'
 - 2025-02-11. [**APT.**](https://open.spotify.com/track/5vNRhkKd0yEAg8suGBpjeY) - by *ROSÉ, Bruno Mars* from the album 'APT.'
+- 2025-02-11. [**Anh Qua Đây Đi**](https://open.spotify.com/track/7AvlGv6T7uROunl72hwAlR) - by *MIN* from the album '50/50'
+- 2025-02-11. [**心跳**](https://open.spotify.com/track/740KtWw1r4f5Gd6UXzhYNp) - by *Leehom Wang* from the album '心跳'
 
