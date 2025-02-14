@@ -13,6 +13,9 @@ tags: [生活]
 - 2025-02-02. [**唐探1900**](http://movie.douban.com/subject/36282639/) - rating: ★★★★☆
 - 2025-02-09. [**余烬之上**](http://movie.douban.com/subject/36449287/) - rating: ★★★☆☆
 
+## 🎭Dramas
+- 2025-02-13. [**狂炎奏鸣曲（中文版）**](https://www.douban.com/location/drama/36886851/) - rating: ★★★☆☆
+
 ## 🎵MUSIC
 - 2025-01-07. [**Hold my hand (HAN)**](https://open.spotify.com/track/6U9CTAof4KBnyzDt8OYY75) - by *Stray Kids* from the album 'HOP'
 - 2025-01-07. [**一起看黃昏 (Teleportation chinese ver.) [OT：テレポーテーション Teleportation]**](https://open.spotify.com/track/2WbJ2gT6rI0pLxjhZ87qnG) - by *DEAN FUJIOKA, 告五人* from the album '一起看黃昏'
@@ -51,4 +54,5 @@ tags: [生活]
 - 2025-02-11. [**APT.**](https://open.spotify.com/track/5vNRhkKd0yEAg8suGBpjeY) - by *ROSÉ, Bruno Mars* from the album 'APT.'
 - 2025-02-11. [**Anh Qua Đây Đi**](https://open.spotify.com/track/7AvlGv6T7uROunl72hwAlR) - by *MIN* from the album '50/50'
 - 2025-02-11. [**心跳**](https://open.spotify.com/track/740KtWw1r4f5Gd6UXzhYNp) - by *Leehom Wang* from the album '心跳'
+- 2025-02-13. [**ATTITUDE**](https://open.spotify.com/track/49oOgXKqm6xTavBtekzVHg) - by *IVE* from the album 'IVE EMPATHY'
 
