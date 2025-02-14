@@ -7,6 +7,10 @@
 &lt;li>2025-02-02. &lt;a href="http://movie.douban.com/subject/36282639/">&lt;strong>唐探1900&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
 &lt;li>2025-02-09. &lt;a href="http://movie.douban.com/subject/36449287/">&lt;strong>余烬之上&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
 &lt;/ul>
+&lt;h2 id="dramas">🎭Dramas&lt;/h2>
+&lt;ul>
+&lt;li>2025-02-13. &lt;a href="https://www.douban.com/location/drama/36886851/">&lt;strong>狂炎奏鸣曲（中文版）&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
+&lt;/ul>
 &lt;h2 id="music">🎵MUSIC&lt;/h2>
 &lt;ul>
 &lt;li>2025-01-07. &lt;a href="https://open.spotify.com/track/6U9CTAof4KBnyzDt8OYY75">&lt;strong>Hold my hand (HAN)&lt;/strong>&lt;/a> - by &lt;em>Stray Kids&lt;/em> from the album &amp;lsquo;HOP&amp;rsquo;&lt;/li>
@@ -46,6 +50,7 @@
 &lt;li>2025-02-11. &lt;a href="https://open.spotify.com/track/5vNRhkKd0yEAg8suGBpjeY">&lt;strong>APT.&lt;/strong>&lt;/a> - by &lt;em>ROSÉ, Bruno Mars&lt;/em> from the album &amp;lsquo;APT.&amp;rsquo;&lt;/li>
 &lt;li>2025-02-11. &lt;a href="https://open.spotify.com/track/7AvlGv6T7uROunl72hwAlR">&lt;strong>Anh Qua Đây Đi&lt;/strong>&lt;/a> - by &lt;em>MIN&lt;/em> from the album &amp;lsquo;50/50&amp;rsquo;&lt;/li>
 &lt;li>2025-02-11. &lt;a href="https://open.spotify.com/track/740KtWw1r4f5Gd6UXzhYNp">&lt;strong>心跳&lt;/strong>&lt;/a> - by &lt;em>Leehom Wang&lt;/em> from the album &amp;lsquo;心跳&amp;rsquo;&lt;/li>
+&lt;li>2025-02-13. &lt;a href="https://open.spotify.com/track/49oOgXKqm6xTavBtekzVHg">&lt;strong>ATTITUDE&lt;/strong>&lt;/a> - by &lt;em>IVE&lt;/em> from the album &amp;lsquo;IVE EMPATHY&amp;rsquo;&lt;/li>
 &lt;/ul></description></item><item><title>DFX中的关键概念与规则</title><link>https://lxulxu.github.io/posts/dfx_key_concepts_and_rules/</link><pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/dfx_key_concepts_and_rules/</guid><description>&lt;h2 id="1-基础概念与术语">1. 基础概念与术语&lt;/h2>
 &lt;h3 id="11-动态重配置的定义">1.1 动态重配置的定义&lt;/h3>
 &lt;p>​	Dynamic Function eXchange(DFX，也称为动态部分重配置)是一种在FPGA运行时动态修改其部分功能区域的技术。DFX可以在FPGA继续运行时，让用户更改芯片预定义区域的功能，而不影响其他区域的正常运行。相比传统的全局配置方式，DFX具有以下优势：&lt;/p>
