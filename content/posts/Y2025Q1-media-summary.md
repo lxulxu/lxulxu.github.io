@@ -47,7 +47,6 @@ tags: [生活]
 - 2025-02-19. [**Allergy**](https://open.spotify.com/track/38MKW2tQHtyO8djIOKlEFF) - by *(G)I-DLE* from the album 'I feel'
 - 2025-02-19. [**Runaway**](https://open.spotify.com/track/6h8oeJ62qCY0aThaKzQZqg) - by *Lost Kings, Destiny Rogers* from the album 'Runaway'
 - 2025-02-19. [**Can't Control Myself**](https://open.spotify.com/track/559f8rcNNZW07wz5Rfxnfh) - by *TAEYEON* from the album 'Can't Control Myself'
-- 2025-02-19. [**APT.**](https://open.spotify.com/track/5vNRhkKd0yEAg8suGBpjeY) - by *ROSÉ, Bruno Mars* from the album 'APT.'
 - 2025-02-19. [**Luôn Bên Anh**](https://open.spotify.com/track/0izVL6gCDwcMBdgCcHqD3U) - by *MIN* from the album 'Luôn Bên Anh'
 - 2025-02-21. [**POWER**](https://open.spotify.com/track/4XsJiRJQAK8TWcZCn0Dxlh) - by *G-DRAGON* from the album 'POWER'
 - 2025-02-21. [**HOME SWEET HOME (feat. TAEYANG & DAESUNG)**](https://open.spotify.com/track/0Cu8JdYvV9DdmzLzhxaZLH) - by *G-DRAGON, TAEYANG, DAESUNG* from the album 'HOME SWEET HOME (feat. TAEYANG & DAESUNG)'
@@ -92,4 +91,5 @@ tags: [生活]
 - 2025-02-25. [**TAKE ME**](https://open.spotify.com/track/3vIkVVbhpMvsOJ1BKWT0nT) - by *G-DRAGON* from the album 'Übermensch'
 - 2025-02-25. [**IBELONGIIU**](https://open.spotify.com/track/4C2KCXzqC0kwNyTilyRLUx) - by *G-DRAGON* from the album 'Übermensch'
 - 2025-02-25. [**DRAMA**](https://open.spotify.com/track/5Pixk2d6ey48MKVq5W6HWt) - by *G-DRAGON* from the album 'Übermensch'
+- 2025-02-27. [**APT.**](https://open.spotify.com/track/5vNRhkKd0yEAg8suGBpjeY) - by *ROSÉ, Bruno Mars* from the album 'APT.'
 
