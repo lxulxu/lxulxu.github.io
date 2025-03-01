@@ -16,6 +16,7 @@ tags: [生活]
 
 ## 🎭Dramas
 - 2025-02-13. [**狂炎奏鸣曲（中文版）**](https://www.douban.com/location/drama/36886851/) - rating: ★★★☆☆
+- 2025-03-01. [**沉浸式悬念剧场《9号秘事》**](https://www.douban.com/location/drama/36687869/) - rating: ★★★☆☆
 
 ## 🎵MUSIC
 - 2025-01-07. [**Hold my hand (HAN)**](https://open.spotify.com/track/6U9CTAof4KBnyzDt8OYY75) - by *Stray Kids* from the album 'HOP'
