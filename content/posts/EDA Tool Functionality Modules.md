@@ -51,7 +51,7 @@ set_property strategy "Performance_Explore" [get_runs impl_1]
 
 - **技术映射**：将优化后的逻辑网表转换为目标FPGA架构的基本构建单元，映射到查找表(LUT)、触发器(FF)、数字信号处理块(DSP)、嵌入式存储器(BRAM)等FPGA特定资源上。
 
-![1](./../../assets/images/Y2025Q1/1.png)
+![1](https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2025Q1/1.png?raw=true)
 
 ### 物理设计模块
 
@@ -61,13 +61,13 @@ set_property strategy "Performance_Explore" [get_runs impl_1]
 
 决定逻辑单元在FPGA上的精确位置，根据连接关系、时序要求和物理约束，为每个逻辑单元分配最优位置。
 
-![3](./../../assets/images/Y2025Q1/3.jpg)
+![3](https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2025Q1/3.jpg?raw=true)
 
 #### 布线
 
 将所有逻辑单元按照网表连接起来，决定信号在FPGA内部的实际传输路径。这一阶段需要解决资源竞争、信号延迟和拥塞问题，确保设计满足时序要求。
 
-![3](./../../assets/images/Y2025Q1/2.png)
+![3](https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2025Q1/2.png?raw=true)
 
 ### 分析与验证模块
 
