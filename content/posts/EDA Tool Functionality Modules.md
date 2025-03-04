@@ -92,22 +92,7 @@ set_property strategy "Performance_Explore" [get_runs impl_1]
 
 ### 设计流程中的数据流动
 
-
-
-
-```mermaid
-flowchart TD
-	  A[功能设计] 
-    B[逻辑综合]
-    C[物理实现]
-    D[比特流生成]
-    E[硬件配置和调试]
-    
-    A -- ".v/.vhd/.sv<br>.xdc<br>.xci/.xco<br>.mif/.coe" --> B
-    B -- ".edf/.edif/<br>.xdc<br>.dcp" --> C
-    C -- ".xdef/.dcp" --> D
-    D -- ".bit/.bin" --> E
-```
+![4](C:\Users\lxulx\Documents\我的文档\项目\MyGit\lxulxu.github.io\assets\images\Y2025Q1\4.png)
 
 
 
