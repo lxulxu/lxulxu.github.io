@@ -88,7 +88,6 @@ tags: [生活]
 - 2025-03-02. [**超人不會飛**](https://open.spotify.com/track/4bXZMhpcle6e1PzCUquYEF) - by *Jay Chou* from the album '跨時代'
 - 2025-03-02. [**蘭亭序**](https://open.spotify.com/track/0nFB06940icgftyz7019el) - by *Jay Chou* from the album '魔杰座'
 - 2025-03-02. [**Luôn Bên Anh**](https://open.spotify.com/track/0izVL6gCDwcMBdgCcHqD3U) - by *MIN* from the album 'Luôn Bên Anh'
-- 2025-03-02. [**Em Mới Là Người Yêu Anh**](https://open.spotify.com/track/1zvL2X6HPrLfvtSY4DpopE) - by *MIN* from the album 'Em Mới Là Người Yêu Anh'
 - 2025-03-02. [**驚嘆號**](https://open.spotify.com/track/54vyR089CilGxgoqrHtd1i) - by *Jay Chou* from the album '驚嘆號'
 - 2025-03-02. [**自導自演**](https://open.spotify.com/track/3pUaCxwQnoY7aD0169gQOE) - by *Jay Chou* from the album '跨時代'
 - 2025-03-02. [**嘻哈空姐**](https://open.spotify.com/track/2dSHowKuPSOHFjbhbx0eHv) - by *Jay Chou* from the album '跨時代'
@@ -144,4 +143,9 @@ tags: [生活]
 - 2025-03-03. [**心中的日月**](https://open.spotify.com/track/0C0iUK7N9BIyS78K3qLJ72) - by *Leehom Wang* from the album '心中的日月'
 - 2025-03-03. [**落葉歸根**](https://open.spotify.com/track/6aF2RVTPJSJCM1MpUjne5X) - by *Leehom Wang* from the album '改變自己'
 - 2025-03-03. [**我好想你**](https://open.spotify.com/track/3aQ7k1TkEdannB2soLjtJC) - by *sodagreen* from the album '秋：故事'
+- 2025-03-04. [**Em Mới Là Người Yêu Anh**](https://open.spotify.com/track/1zvL2X6HPrLfvtSY4DpopE) - by *MIN* from the album 'Em Mới Là Người Yêu Anh'
+- 2025-03-04. [**Santa Claus Left Me No Goodz**](https://open.spotify.com/track/1X76E4A6AdNuCgNstqpN9E) - by *YOUNG POSSE* from the album 'COLD'
+- 2025-03-04. [**Daddy Don't Leave Me**](https://open.spotify.com/track/3Mg4yJLDZbVVRwtpzGsKro) - by *YOUNG POSSE* from the album 'COLD'
+- 2025-03-04. [**Blue Dot**](https://open.spotify.com/track/3PcowXtn7A3Lh85fnJqkzg) - by *YOUNG POSSE* from the album 'COLD'
+- 2025-03-04. [**Lovestagram**](https://open.spotify.com/track/0Rt1swuEfiXGUyNIsRKUff) - by *YOUNG POSSE* from the album 'COLD'
 
