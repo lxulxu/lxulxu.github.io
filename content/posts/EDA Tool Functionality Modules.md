@@ -92,7 +92,8 @@ set_property strategy "Performance_Explore" [get_runs impl_1]
 
 ### 设计流程中的数据流动
 
-![4](C:\Users\lxulx\Documents\我的文档\项目\MyGit\lxulxu.github.io\assets\images\Y2025Q1\4.png)
+![4](https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2025Q1/4.png?raw=true)
+
 
 
 
