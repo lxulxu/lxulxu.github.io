@@ -19,6 +19,7 @@ tags: [生活]
 - 2025-02-13. [**狂炎奏鸣曲（中文版）**](https://www.douban.com/location/drama/36886851/) - rating: ★★★☆☆
 - 2025-03-01. [**沉浸式悬念剧场《9号秘事》**](https://www.douban.com/location/drama/36687869/) - rating: ★★★☆☆
 - 2025-03-03. [**音乐剧明星玛雅・哈克福特音乐会**](https://www.douban.com/location/drama/37152543/) - rating: ★★★★★
+- 2025-03-05. [**音乐剧明星凯瑞·艾利斯音乐会**](https://www.douban.com/location/drama/37152544/) - rating: ★★★★★
 
 ## 🎵MUSIC
 - 2025-01-07. [**Hold my hand (HAN)**](https://open.spotify.com/track/6U9CTAof4KBnyzDt8OYY75) - by *Stray Kids* from the album 'HOP'
