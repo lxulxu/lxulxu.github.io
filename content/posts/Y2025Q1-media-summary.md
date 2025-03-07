@@ -14,6 +14,8 @@ tags: [生活]
 - 2025-02-09. [**余烬之上**](http://movie.douban.com/subject/36449287/) - rating: ★★★☆☆
 - 2025-02-24. [**诡才之道**](http://movie.douban.com/subject/35364691/) - rating: ★★★★☆
 - 2025-03-01. [**还有明天**](http://movie.douban.com/subject/36445098/) - rating: ★★★★★
+- 2025-03-07. [**燃烧**](http://movie.douban.com/subject/26842702/) - rating: ★★★★★
+- 2025-03-07. [**编号17**](http://movie.douban.com/subject/34429795/) - rating: ★★★★☆
 
 ## 🎭Dramas
 - 2025-02-13. [**狂炎奏鸣曲（中文版）**](https://www.douban.com/location/drama/36886851/) - rating: ★★★☆☆
