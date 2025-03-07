@@ -136,7 +136,6 @@ tags: [生活]
 - 2025-03-04. [**Strawberry Rush**](https://open.spotify.com/track/1gq1gf44tZ9cyTdlcyoJd1) - by *CHUU* from the album 'Strawberry Rush'
 - 2025-03-04. [**Bye Bye Bye - From Deadpool and Wolverine Soundtrack**](https://open.spotify.com/track/62bOmKYxYg7dhrC6gH9vFn) - by **NSYNC* from the album 'No Strings Attached'
 - 2025-03-04. [**Bring Em Out**](https://open.spotify.com/track/7oAZVxmRCVFanxK7tk16vv) - by *T.I.* from the album 'Urban Legend'
-- 2025-03-04. [**Like a Prayer**](https://open.spotify.com/track/2v7ywbUzCgcVohHaKUcacV) - by *Madonna* from the album 'Like a Prayer'
 - 2025-03-04. [**A Sleepless Night**](https://open.spotify.com/track/7wlCdfpxaWQPaxspDIN3wX) - by *CNBLUE* from the album 'X'
 - 2025-03-04. [**致你**](https://open.spotify.com/track/1BH8aQSiigtTbbqms4XpwR) - by *Yihuik苡慧* from the album '致你'
 - 2025-03-04. [**Born Again (feat. Doja Cat & RAYE)**](https://open.spotify.com/track/4CPuDVC8jhhK6lA2DIt8Cf) - by *LISA, Doja Cat, RAYE* from the album 'Born Again (feat. Doja Cat & RAYE)'
@@ -151,4 +150,9 @@ tags: [生活]
 - 2025-03-04. [**Daddy Don't Leave Me**](https://open.spotify.com/track/3Mg4yJLDZbVVRwtpzGsKro) - by *YOUNG POSSE* from the album 'COLD'
 - 2025-03-04. [**Blue Dot**](https://open.spotify.com/track/3PcowXtn7A3Lh85fnJqkzg) - by *YOUNG POSSE* from the album 'COLD'
 - 2025-03-04. [**Lovestagram**](https://open.spotify.com/track/0Rt1swuEfiXGUyNIsRKUff) - by *YOUNG POSSE* from the album 'COLD'
+- 2025-03-05. [**Like a Prayer**](https://open.spotify.com/track/2v7ywbUzCgcVohHaKUcacV) - by *Madonna* from the album 'Like a Prayer'
+- 2025-03-07. [**Welcome To The Rock**](https://open.spotify.com/track/7pziVpL4r7iua7Zqh42dG1) - by *Joel Hatch, 'Come From Away' Company* from the album 'Come From Away (Original Broadway Cast Recording)'
+- 2025-03-07. [**SIX**](https://open.spotify.com/track/4Ka5eDWv52OTKL0LNZqhWB) - by *SIX* from the album 'SIX: LIVE ON OPENING NIGHT (Original Broadway Cast Recording)'
+- 2025-03-07. [**All You Wanna Do**](https://open.spotify.com/track/7kxdXl2euEptpn41yksdFA) - by *SIX, Samantha Pauly* from the album 'SIX: LIVE ON OPENING NIGHT (Original Broadway Cast Recording)'
+- 2025-03-07. [**Ex-Wives**](https://open.spotify.com/track/0FZ9csVDfNZAvzw3pPBXkG) - by *SIX* from the album 'SIX: LIVE ON OPENING NIGHT (Original Broadway Cast Recording)'
 
