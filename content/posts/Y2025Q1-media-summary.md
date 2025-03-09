@@ -17,12 +17,14 @@ tags: [生活]
 - 2025-03-07. [**燃烧**](http://movie.douban.com/subject/26842702/) - rating: ★★★★★
 - 2025-03-07. [**编号17**](http://movie.douban.com/subject/34429795/) - rating: ★★★★☆
 - 2025-03-08. [**平原上的火焰**](http://movie.douban.com/subject/34879969/) - rating: ★★★☆☆
+- 2025-03-09. [**阁楼里的花：恶之渊源**](http://movie.douban.com/subject/35873125/) - rating: ★★★★☆
 
 ## 🎭Dramas
 - 2025-02-13. [**狂炎奏鸣曲（中文版）**](https://www.douban.com/location/drama/36886851/) - rating: ★★★☆☆
 - 2025-03-01. [**沉浸式悬念剧场《9号秘事》**](https://www.douban.com/location/drama/36687869/) - rating: ★★★☆☆
 - 2025-03-03. [**音乐剧明星玛雅・哈克福特音乐会**](https://www.douban.com/location/drama/37152543/) - rating: ★★★★★
 - 2025-03-05. [**音乐剧明星凯瑞·艾利斯音乐会**](https://www.douban.com/location/drama/37152544/) - rating: ★★★★★
+- 2025-03-09. [**吉安・马可・夏雷提音乐会**](https://www.douban.com/location/drama/37152535/) - rating: ★★★★★
 
 ## 🎵MUSIC
 - 2025-01-07. [**Hold my hand (HAN)**](https://open.spotify.com/track/6U9CTAof4KBnyzDt8OYY75) - by *Stray Kids* from the album 'HOP'
