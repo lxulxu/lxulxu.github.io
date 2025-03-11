@@ -148,11 +148,11 @@ tags: [生活]
 - 2025-03-04. [**Blue Dot**](https://open.spotify.com/track/3PcowXtn7A3Lh85fnJqkzg) - by *YOUNG POSSE* from the album 'COLD'
 - 2025-03-04. [**Lovestagram**](https://open.spotify.com/track/0Rt1swuEfiXGUyNIsRKUff) - by *YOUNG POSSE* from the album 'COLD'
 - 2025-03-08. [**致你**](https://open.spotify.com/track/1BH8aQSiigtTbbqms4XpwR) - by *Yihuik苡慧* from the album '致你'
-- 2025-03-08. [**Born Again (feat. Doja Cat & RAYE)**](https://open.spotify.com/track/4CPuDVC8jhhK6lA2DIt8Cf) - by *LISA, Doja Cat, RAYE* from the album 'Born Again (feat. Doja Cat & RAYE)'
 - 2025-03-09. [**Bye Bye Bye - From Deadpool and Wolverine Soundtrack**](https://open.spotify.com/track/62bOmKYxYg7dhrC6gH9vFn) - by **NSYNC* from the album 'No Strings Attached'
 - 2025-03-09. [**Bring Em Out**](https://open.spotify.com/track/7oAZVxmRCVFanxK7tk16vv) - by *T.I.* from the album 'Urban Legend'
 - 2025-03-09. [**Like a Prayer**](https://open.spotify.com/track/2v7ywbUzCgcVohHaKUcacV) - by *Madonna* from the album 'Like a Prayer'
 - 2025-03-09. [**A Sleepless Night**](https://open.spotify.com/track/7wlCdfpxaWQPaxspDIN3wX) - by *CNBLUE* from the album 'X'
+- 2025-03-09. [**Born Again (feat. Doja Cat & RAYE)**](https://open.spotify.com/track/4CPuDVC8jhhK6lA2DIt8Cf) - by *LISA, Doja Cat, RAYE* from the album 'Born Again (feat. Doja Cat & RAYE)'
 - 2025-03-09. [**TOO BAD**](https://open.spotify.com/track/0GOqhXyouUxqPEw9ypTOLm) - by *G-DRAGON, Anderson .Paak* from the album 'Übermensch'
 - 2025-03-09. [**COLD (feat.10CM)**](https://open.spotify.com/track/4pZUVR0l4sPl8GKPm6FXDa) - by *YOUNG POSSE, 10CM* from the album 'COLD'
 - 2025-03-10. [**Bim bam boum**](https://open.spotify.com/track/1OSSwdPGbRPm6PkugpOQhP) - by *Mozart Opera Rock* from the album 'Mozart l'Opera Rock (standard)'
@@ -192,4 +192,5 @@ tags: [生活]
 - 2025-03-10. [**Helpless**](https://open.spotify.com/track/54Sc7mZQ1RM03STpk4SfaA) - by *Phillipa Soo, Original Broadway Cast of Hamilton* from the album 'Hamilton (Original Broadway Cast Recording)'
 - 2025-03-10. [**You'll Be Back**](https://open.spotify.com/track/6OG1S805gIrH5nAQbEOPY3) - by *Jonathan Groff, Original Broadway Cast of Hamilton* from the album 'Hamilton (Original Broadway Cast Recording)'
 - 2025-03-10. [**Alexander Hamilton**](https://open.spotify.com/track/4TTV7EcfroSLWzXRY6gLv6) - by *Leslie Odom Jr., Daveed Diggs, Okieriete Onaodowan, Lin-Manuel Miranda, Phillipa Soo, Christopher Jackson, Original Broadway Cast of Hamilton, Anthony Ramos* from the album 'Hamilton (Original Broadway Cast Recording)'
+- 2025-03-10. [**start a war**](https://open.spotify.com/track/6SaSFVlIQC1L6Fh1QKLeFi) - by *JENNIE* from the album 'Ruby'
 
