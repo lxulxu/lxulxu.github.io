@@ -3,7 +3,7 @@ proxies:
   name: JMS-924690@c53s1.portablesubmarines.com:6876
   password: cMLV3ySg8rPUDksP
   port: 6876
-  server: 97.64.28.212
+  server: 97.64.31.26
   type: ss
 - cipher: aes-256-gcm
   name: JMS-924690@c53s2.portablesubmarines.com:6876
