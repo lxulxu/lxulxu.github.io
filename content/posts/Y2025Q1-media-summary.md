@@ -195,4 +195,5 @@ tags: [生活]
 - 2025-03-16. [**Tìm (Lost)**](https://open.spotify.com/track/3vOeIwy413hAoRZnf2bnhM) - by *MIN* from the album 'Tìm'
 - 2025-03-16. [**COLD (feat.10CM)**](https://open.spotify.com/track/4pZUVR0l4sPl8GKPm6FXDa) - by *YOUNG POSSE, 10CM* from the album 'COLD'
 - 2025-03-16. [**有話沒說**](https://open.spotify.com/track/5a59iCKJGGzVqZBDLRBD0J) - by *李佳歡, Sherman Zhuo* from the album '有話沒說'
+- 2025-03-16. [**Born Again (feat. Doja Cat & RAYE)**](https://open.spotify.com/track/7KNmIjcmGJIBrhP2s5Vioe) - by *LISA, Doja Cat, RAYE* from the album 'Alter Ego'
 
