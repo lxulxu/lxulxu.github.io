@@ -198,4 +198,5 @@ tags: [生活]
 - 2025-03-16. [**Born Again (feat. Doja Cat & RAYE)**](https://open.spotify.com/track/7KNmIjcmGJIBrhP2s5Vioe) - by *LISA, Doja Cat, RAYE* from the album 'Alter Ego'
 - 2025-03-18. [**Prada**](https://open.spotify.com/track/59NraMJsLaMCVtwXTSia8i) - by *cassö, RAYE, D-Block Europe* from the album 'Prada'
 - 2025-03-18. [**Sunset Blvd**](https://open.spotify.com/track/2kpUNuingcchFIhLrbWxIO) - by *Selena Gomez, benny blanco* from the album 'Sunset Blvd'
+- 2025-03-18. [**Escapism.**](https://open.spotify.com/track/5mHdCZtVyb4DcJw8799hZp) - by *RAYE, 070 Shake* from the album 'My 21st Century Blues'
 
