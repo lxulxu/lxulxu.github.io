@@ -226,6 +226,12 @@
 &lt;li>2025-03-18. &lt;a href="https://open.spotify.com/track/59NraMJsLaMCVtwXTSia8i">&lt;strong>Prada&lt;/strong>&lt;/a> - by &lt;em>cassö, RAYE, D-Block Europe&lt;/em> from the album &amp;lsquo;Prada&amp;rsquo;&lt;/li>
 &lt;li>2025-03-18. &lt;a href="https://open.spotify.com/track/2kpUNuingcchFIhLrbWxIO">&lt;strong>Sunset Blvd&lt;/strong>&lt;/a> - by &lt;em>Selena Gomez, benny blanco&lt;/em> from the album &amp;lsquo;Sunset Blvd&amp;rsquo;&lt;/li>
 &lt;li>2025-03-18. &lt;a href="https://open.spotify.com/track/5mHdCZtVyb4DcJw8799hZp">&lt;strong>Escapism.&lt;/strong>&lt;/a> - by &lt;em>RAYE, 070 Shake&lt;/em> from the album &amp;lsquo;My 21st Century Blues&amp;rsquo;&lt;/li>
+&lt;li>2025-03-24. &lt;a href="https://open.spotify.com/track/2FktPXK8yLMFyx6ZTQtRSm">&lt;strong>Born Fire&lt;/strong>&lt;/a> - by &lt;em>LE SSERAFIM&lt;/em> from the album &amp;lsquo;HOT&amp;rsquo;&lt;/li>
+&lt;li>2025-03-24. &lt;a href="https://open.spotify.com/track/1Hw8WhXlRjfUFDMykf92gA">&lt;strong>So Cynical (Badum)&lt;/strong>&lt;/a> - by &lt;em>LE SSERAFIM&lt;/em> from the album &amp;lsquo;HOT&amp;rsquo;&lt;/li>
+&lt;li>2025-03-24. &lt;a href="https://open.spotify.com/track/5o4U0weUIAXolji4sEAnjI">&lt;strong>Ash&lt;/strong>&lt;/a> - by &lt;em>LE SSERAFIM&lt;/em> from the album &amp;lsquo;HOT&amp;rsquo;&lt;/li>
+&lt;li>2025-03-24. &lt;a href="https://open.spotify.com/track/6efcMTYO2lJ0zcpQEPk8m1">&lt;strong>Come Over&lt;/strong>&lt;/a> - by &lt;em>LE SSERAFIM&lt;/em> from the album &amp;lsquo;HOT&amp;rsquo;&lt;/li>
+&lt;li>2025-03-24. &lt;a href="https://open.spotify.com/track/406IpEtZPvbxApWTGM3twY">&lt;strong>HOT&lt;/strong>&lt;/a> - by &lt;em>LE SSERAFIM&lt;/em> from the album &amp;lsquo;HOT&amp;rsquo;&lt;/li>
+&lt;li>2025-03-24. &lt;a href="https://open.spotify.com/track/68b9QUiyyUMsH9E3zHB1DC">&lt;strong>Cry For You&lt;/strong>&lt;/a> - by &lt;em>Isabel LaRosa&lt;/em> from the album &amp;lsquo;Cry For You&amp;rsquo;&lt;/li>
 &lt;/ul></description></item><item><title>DFX中的关键概念与规则</title><link>https://lxulxu.github.io/posts/dfx_key_concepts_and_rules/</link><pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/dfx_key_concepts_and_rules/</guid><description>&lt;h2 id="1-基础概念与术语">1. 基础概念与术语&lt;/h2>
 &lt;h3 id="11-动态重配置的定义">1.1 动态重配置的定义&lt;/h3>
 &lt;p>​	Dynamic Function eXchange(DFX，也称为动态部分重配置)是一种在FPGA运行时动态修改其部分功能区域的技术。DFX可以在FPGA继续运行时，让用户更改芯片预定义区域的功能，而不影响其他区域的正常运行。相比传统的全局配置方式，DFX具有以下优势：&lt;/p>
