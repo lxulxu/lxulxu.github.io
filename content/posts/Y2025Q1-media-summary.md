@@ -200,4 +200,10 @@ tags: [生活]
 - 2025-03-18. [**Prada**](https://open.spotify.com/track/59NraMJsLaMCVtwXTSia8i) - by *cassö, RAYE, D-Block Europe* from the album 'Prada'
 - 2025-03-18. [**Sunset Blvd**](https://open.spotify.com/track/2kpUNuingcchFIhLrbWxIO) - by *Selena Gomez, benny blanco* from the album 'Sunset Blvd'
 - 2025-03-18. [**Escapism.**](https://open.spotify.com/track/5mHdCZtVyb4DcJw8799hZp) - by *RAYE, 070 Shake* from the album 'My 21st Century Blues'
+- 2025-03-24. [**Born Fire**](https://open.spotify.com/track/2FktPXK8yLMFyx6ZTQtRSm) - by *LE SSERAFIM* from the album 'HOT'
+- 2025-03-24. [**So Cynical (Badum)**](https://open.spotify.com/track/1Hw8WhXlRjfUFDMykf92gA) - by *LE SSERAFIM* from the album 'HOT'
+- 2025-03-24. [**Ash**](https://open.spotify.com/track/5o4U0weUIAXolji4sEAnjI) - by *LE SSERAFIM* from the album 'HOT'
+- 2025-03-24. [**Come Over**](https://open.spotify.com/track/6efcMTYO2lJ0zcpQEPk8m1) - by *LE SSERAFIM* from the album 'HOT'
+- 2025-03-24. [**HOT**](https://open.spotify.com/track/406IpEtZPvbxApWTGM3twY) - by *LE SSERAFIM* from the album 'HOT'
+- 2025-03-24. [**Cry For You**](https://open.spotify.com/track/68b9QUiyyUMsH9E3zHB1DC) - by *Isabel LaRosa* from the album 'Cry For You'
 
