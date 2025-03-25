@@ -186,7 +186,6 @@ tags: [生活]
 - 2025-03-16. [**Bring Em Out**](https://open.spotify.com/track/7oAZVxmRCVFanxK7tk16vv) - by *T.I.* from the album 'Urban Legend'
 - 2025-03-16. [**Like a Prayer**](https://open.spotify.com/track/2v7ywbUzCgcVohHaKUcacV) - by *Madonna* from the album 'Like a Prayer'
 - 2025-03-16. [**A Sleepless Night**](https://open.spotify.com/track/7wlCdfpxaWQPaxspDIN3wX) - by *CNBLUE* from the album 'X'
-- 2025-03-16. [**致你**](https://open.spotify.com/track/1BH8aQSiigtTbbqms4XpwR) - by *Yihuik苡慧* from the album '致你'
 - 2025-03-16. [**Anh Qua Đây Đi**](https://open.spotify.com/track/7AvlGv6T7uROunl72hwAlR) - by *MIN* from the album '50/50'
 - 2025-03-16. [**Luôn Bên Anh**](https://open.spotify.com/track/0izVL6gCDwcMBdgCcHqD3U) - by *MIN* from the album 'Luôn Bên Anh'
 - 2025-03-16. [**Em Mới Là Người Yêu Anh**](https://open.spotify.com/track/1zvL2X6HPrLfvtSY4DpopE) - by *MIN* from the album 'Em Mới Là Người Yêu Anh'
@@ -204,6 +203,7 @@ tags: [生活]
 - 2025-03-24. [**Come Over**](https://open.spotify.com/track/6efcMTYO2lJ0zcpQEPk8m1) - by *LE SSERAFIM* from the album 'HOT'
 - 2025-03-24. [**HOT**](https://open.spotify.com/track/406IpEtZPvbxApWTGM3twY) - by *LE SSERAFIM* from the album 'HOT'
 - 2025-03-24. [**Cry For You**](https://open.spotify.com/track/68b9QUiyyUMsH9E3zHB1DC) - by *Isabel LaRosa* from the album 'Cry For You'
+- 2025-03-25. [**致你**](https://open.spotify.com/track/1BH8aQSiigtTbbqms4XpwR) - by *Yihuik苡慧* from the album '致你'
 - 2025-03-25. [**Born Again (feat. Doja Cat & RAYE)**](https://open.spotify.com/track/4CPuDVC8jhhK6lA2DIt8Cf) - by *LISA, Doja Cat, RAYE* from the album 'Born Again (feat. Doja Cat & RAYE)'
 - 2025-03-25. [**TOO BAD**](https://open.spotify.com/track/0GOqhXyouUxqPEw9ypTOLm) - by *G-DRAGON, Anderson .Paak* from the album 'Übermensch'
 
