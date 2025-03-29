@@ -21,6 +21,7 @@ tags: [生活]
 - 2025-03-09. [**阁楼里的花：恶之渊源**](https://movie.douban.com/subject/35873125/) - rating: ★★★★☆
 - 2025-03-22. [**怒水西流**](http://movie.douban.com/subject/30290253/) - rating: ★★★☆☆
 - 2025-03-22. [**怒水西流**](https://movie.douban.com/subject/30290253/) - rating: ★★★☆☆
+- 2025-03-29. [**制暴：无限杀机**](https://movie.douban.com/subject/33415953/) - rating: ★★★☆☆
 
 ## 🎭Dramas
 - 2025-02-13. [**狂炎奏鸣曲（中文版）**](https://www.douban.com/location/drama/36886851/) - rating: ★★★☆☆
