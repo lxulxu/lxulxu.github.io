@@ -5,3 +5,6 @@ categories: [生活]
 tags: [生活]
 ---
 
+## 🎬MOVIES
+- 2025-04-01. [**不说话的爱**](https://movie.douban.com/subject/35907663/) - rating: ★★★★☆
+
