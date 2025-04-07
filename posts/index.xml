@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on lxulxu's blog</title><link>https://lxulxu.github.io/posts/</link><description>Recent content in Posts on lxulxu's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 01 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://lxulxu.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Y2025Q2 影视音总结</title><link>https://lxulxu.github.io/posts/y2025q2-media-summary/</link><pubDate>Tue, 01 Apr 2025 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/y2025q2-media-summary/</guid><description>&lt;h2 id="movies">🎬MOVIES&lt;/h2>
 &lt;ul>
 &lt;li>2025-04-01. &lt;a href="https://movie.douban.com/subject/35907663/">&lt;strong>不说话的爱&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
+&lt;li>2025-04-07. &lt;a href="https://movie.douban.com/subject/36954004/">&lt;strong>向阳·花&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
+&lt;li>2025-04-07. &lt;a href="https://movie.douban.com/subject/26938697/">&lt;strong>猎狐·行动&lt;/strong>&lt;/a> - rating: ★★★☆☆&lt;/li>
 &lt;/ul></description></item><item><title>FPGA设计流程与EDA工具架构解析——以Vivado为例</title><link>https://lxulxu.github.io/posts/eda-tool-functionality-modules/</link><pubDate>Tue, 04 Mar 2025 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/eda-tool-functionality-modules/</guid><description>&lt;h2 id="fpga设计流程概览">FPGA设计流程概览&lt;/h2>
 &lt;p>FPGA设计遵循一个由上至下的流程，主要包括以下阶段：&lt;/p>
 &lt;ol>
