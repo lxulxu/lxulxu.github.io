@@ -11,5 +11,11 @@ tags: [生活]
 - 2025-04-07. [**猎狐·行动**](https://movie.douban.com/subject/26938697/) - rating: ★★★☆☆
 
 ## 🎵MUSIC
+- 2025-04-11. [**XXL**](https://open.spotify.com/track/05QXjyZgsAq6J84J6SlbyV) - by *YOUNG POSSE* from the album 'XXL EP'
+- 2025-04-11. [**Magnetic**](https://open.spotify.com/track/1aKvZDoLGkNMxoRYgkckZG) - by *ILLIT* from the album 'SUPER REAL ME'
+- 2025-04-11. [**ABCD**](https://open.spotify.com/track/0V2passWyAXnON67kfAj7y) - by *NAYEON* from the album 'NA'
+- 2025-04-11. [**Balloon in Love**](https://open.spotify.com/track/3x6unDluyCL4v5AeGrAVGA) - by *SUNMI* from the album 'Balloon in Love'
+- 2025-04-11. [**Strawberry Rush**](https://open.spotify.com/track/1gq1gf44tZ9cyTdlcyoJd1) - by *CHUU* from the album 'Strawberry Rush'
 - 2025-04-11. [**COLD (feat.10CM)**](https://open.spotify.com/track/4pZUVR0l4sPl8GKPm6FXDa) - by *YOUNG POSSE, 10CM* from the album 'COLD'
+- 2025-04-11. [**Hwi hwi**](https://open.spotify.com/track/7eByzTxKr1MYqYLj8AFsBF) - by *LABOUM* from the album 'MISS THIS KISS'
 
