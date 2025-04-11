@@ -6,7 +6,13 @@
 &lt;/ul>
 &lt;h2 id="music">🎵MUSIC&lt;/h2>
 &lt;ul>
+&lt;li>2025-04-11. &lt;a href="https://open.spotify.com/track/05QXjyZgsAq6J84J6SlbyV">&lt;strong>XXL&lt;/strong>&lt;/a> - by &lt;em>YOUNG POSSE&lt;/em> from the album &amp;lsquo;XXL EP&amp;rsquo;&lt;/li>
+&lt;li>2025-04-11. &lt;a href="https://open.spotify.com/track/1aKvZDoLGkNMxoRYgkckZG">&lt;strong>Magnetic&lt;/strong>&lt;/a> - by &lt;em>ILLIT&lt;/em> from the album &amp;lsquo;SUPER REAL ME&amp;rsquo;&lt;/li>
+&lt;li>2025-04-11. &lt;a href="https://open.spotify.com/track/0V2passWyAXnON67kfAj7y">&lt;strong>ABCD&lt;/strong>&lt;/a> - by &lt;em>NAYEON&lt;/em> from the album &amp;lsquo;NA&amp;rsquo;&lt;/li>
+&lt;li>2025-04-11. &lt;a href="https://open.spotify.com/track/3x6unDluyCL4v5AeGrAVGA">&lt;strong>Balloon in Love&lt;/strong>&lt;/a> - by &lt;em>SUNMI&lt;/em> from the album &amp;lsquo;Balloon in Love&amp;rsquo;&lt;/li>
+&lt;li>2025-04-11. &lt;a href="https://open.spotify.com/track/1gq1gf44tZ9cyTdlcyoJd1">&lt;strong>Strawberry Rush&lt;/strong>&lt;/a> - by &lt;em>CHUU&lt;/em> from the album &amp;lsquo;Strawberry Rush&amp;rsquo;&lt;/li>
 &lt;li>2025-04-11. &lt;a href="https://open.spotify.com/track/4pZUVR0l4sPl8GKPm6FXDa">&lt;strong>COLD (feat.10CM)&lt;/strong>&lt;/a> - by &lt;em>YOUNG POSSE, 10CM&lt;/em> from the album &amp;lsquo;COLD&amp;rsquo;&lt;/li>
+&lt;li>2025-04-11. &lt;a href="https://open.spotify.com/track/7eByzTxKr1MYqYLj8AFsBF">&lt;strong>Hwi hwi&lt;/strong>&lt;/a> - by &lt;em>LABOUM&lt;/em> from the album &amp;lsquo;MISS THIS KISS&amp;rsquo;&lt;/li>
 &lt;/ul></description></item><item><title>FPGA设计流程与EDA工具架构解析——以Vivado为例</title><link>https://lxulxu.github.io/posts/eda-tool-functionality-modules/</link><pubDate>Tue, 04 Mar 2025 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/eda-tool-functionality-modules/</guid><description>&lt;h2 id="fpga设计流程概览">FPGA设计流程概览&lt;/h2>
 &lt;p>FPGA设计遵循一个由上至下的流程，主要包括以下阶段：&lt;/p>
 &lt;ol>
