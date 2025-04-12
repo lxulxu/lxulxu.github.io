@@ -19,6 +19,7 @@ tags: [生活]
 - 2025-04-11. [**ABCD**](https://open.spotify.com/track/0V2passWyAXnON67kfAj7y) - by *NAYEON* from the album 'NA'
 - 2025-04-11. [**Balloon in Love**](https://open.spotify.com/track/3x6unDluyCL4v5AeGrAVGA) - by *SUNMI* from the album 'Balloon in Love'
 - 2025-04-11. [**Strawberry Rush**](https://open.spotify.com/track/1gq1gf44tZ9cyTdlcyoJd1) - by *CHUU* from the album 'Strawberry Rush'
+- 2025-04-11. [**Có Em Chờ**](https://open.spotify.com/track/6KIhgRkprgyJNERRMu7Quh) - by *MIN* from the album 'Có Em Chờ'
 - 2025-04-11. [**COLD (feat.10CM)**](https://open.spotify.com/track/4pZUVR0l4sPl8GKPm6FXDa) - by *YOUNG POSSE, 10CM* from the album 'COLD'
 - 2025-04-11. [**Hwi hwi**](https://open.spotify.com/track/7eByzTxKr1MYqYLj8AFsBF) - by *LABOUM* from the album 'MISS THIS KISS'
 
