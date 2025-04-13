@@ -9,6 +9,7 @@ tags: [生活]
 - 2025-04-01. [**不说话的爱**](https://movie.douban.com/subject/35907663/) - rating: ★★★★☆
 - 2025-04-07. [**向阳·花**](https://movie.douban.com/subject/36954004/) - rating: ★★★☆☆
 - 2025-04-07. [**猎狐·行动**](https://movie.douban.com/subject/26938697/) - rating: ★★★☆☆
+- 2025-04-13. [**夺魄**](https://movie.douban.com/subject/1306458/) - rating: ★★★★☆
 
 ## 🎭Dramas
 - 2025-04-11. [**Thrill Me: The Leopold & Loeb Story**](https://www.douban.com/location/drama/36974119/) - rating: ★★★★☆
