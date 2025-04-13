@@ -12,6 +12,9 @@ tags: [生活]
 - 2025-04-13. [**夺魄**](https://movie.douban.com/subject/1306458/) - rating: ★★★★☆
 - 2025-04-13. [**幸福伽菜子的快乐杀手生活**](https://movie.douban.com/subject/36883141/) - rating: ★★★★☆
 
+## 🎮Games
+- 2025-04-13. [**好莱坞动物 Hollywood Animal**](http://www.douban.com/game/36639414/) - rating: ★★★☆☆
+
 ## 🎭Dramas
 - 2025-04-11. [**Thrill Me: The Leopold & Loeb Story**](https://www.douban.com/location/drama/36974119/) - rating: ★★★★☆
 
