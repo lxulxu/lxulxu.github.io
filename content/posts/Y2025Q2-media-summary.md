@@ -11,6 +11,7 @@ tags: [生活]
 - 2025-04-07. [**猎狐·行动**](https://movie.douban.com/subject/26938697/) - rating: ★★★☆☆
 - 2025-04-13. [**夺魄**](https://movie.douban.com/subject/1306458/) - rating: ★★★★☆
 - 2025-04-13. [**幸福伽菜子的快乐杀手生活**](https://movie.douban.com/subject/36883141/) - rating: ★★★★☆
+- 2025-04-17. [**步步惊心**](https://movie.douban.com/subject/5384548/) - rating: ★★★★☆
 
 ## 🎮Games
 - 2025-04-13. [**好莱坞动物 Hollywood Animal**](http://www.douban.com/game/36639414/) - rating: ★★★☆☆
