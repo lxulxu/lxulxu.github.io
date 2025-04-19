@@ -15,6 +15,7 @@ tags: [生活]
 
 ## 🎮Games
 - 2025-04-13. [**好莱坞动物 Hollywood Animal**](http://www.douban.com/game/36639414/) - rating: ★★★☆☆
+- 2025-04-19. [**苏丹的游戏**](http://www.douban.com/game/37022720/) - rating: ★★★★☆
 
 ## 🎭Dramas
 - 2025-04-11. [**Thrill Me: The Leopold & Loeb Story**](https://www.douban.com/location/drama/36974119/) - rating: ★★★★☆
