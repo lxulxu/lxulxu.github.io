@@ -20,6 +20,7 @@ tags: [生活]
 ## 🎭Dramas
 - 2025-04-11. [**Thrill Me: The Leopold & Loeb Story**](https://www.douban.com/location/drama/36974119/) - rating: ★★★★☆
 - 2025-04-20. [**日落大道**](https://www.douban.com/location/drama/37237012/) - rating: ★★★★★
+- 2025-04-22. [**世界旦夕之间**](https://www.douban.com/location/drama/35619087/) - rating: ★★★★☆
 
 ## 🎵MUSIC
 - 2025-04-11. [**XXL**](https://open.spotify.com/track/05QXjyZgsAq6J84J6SlbyV) - by *YOUNG POSSE* from the album 'XXL EP'
