@@ -72,4 +72,8 @@ tags: [生活]
 - 2025-04-27. [**Rewrite The Stars**](https://open.spotify.com/track/630sXRhIcfwr2e4RdNtjKN) - by *Zac Efron, Zendaya* from the album 'Rewrite The Stars'
 - 2025-04-27. [**The Greatest Show**](https://open.spotify.com/track/43ay9lQZ5rfNcOOHhRF2cM) - by *Hugh Jackman, Keala Settle, Zac Efron, Zendaya, The Greatest Showman Ensemble* from the album 'The Greatest Show'
 - 2025-04-27. [**The Other Side**](https://open.spotify.com/track/2cKovq3l6OJjhVVDbVKOsr) - by *Hugh Jackman, Zac Efron* from the album 'The Greatest Showman (Original Motion Picture Soundtrack)'
+- 2025-04-28. [**Rebecca**](https://open.spotify.com/track/4COmljAiWvNeGXEyDw8EpR) - by *Susan Rigvava-Dumas, Wietske van Tongeren, Schatten* from the album 'Rebecca - Cast Album'
+- 2025-04-28. [**Speechless (Full)**](https://open.spotify.com/track/0XPsOSYzDJZJArevQNm2AR) - by *Naomi Scott* from the album 'Aladdin (Original Motion Picture Soundtrack)'
+- 2025-04-28. [**Les maudits mots d'amour**](https://open.spotify.com/track/1aYN7p7BYwjJ83a6p9arm4) - by *Le rouge et le noir* from the album 'Le rouge et le noir (L'opéra rock)'
+- 2025-04-28. [**Ding dong**](https://open.spotify.com/track/1Wy78lLTaVuDoMgUvaSCoq) - by *Le rouge et le noir* from the album 'Le rouge et le noir (L'opéra rock)'
 
