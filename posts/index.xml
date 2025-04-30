@@ -77,6 +77,7 @@
 &lt;li>2025-04-28. &lt;a href="https://open.spotify.com/track/1aYN7p7BYwjJ83a6p9arm4">&lt;strong>Les maudits mots d&amp;rsquo;amour&lt;/strong>&lt;/a> - by &lt;em>Le rouge et le noir&lt;/em> from the album &amp;lsquo;Le rouge et le noir (L&amp;rsquo;opéra rock)&amp;rsquo;&lt;/li>
 &lt;li>2025-04-28. &lt;a href="https://open.spotify.com/track/1Wy78lLTaVuDoMgUvaSCoq">&lt;strong>Ding dong&lt;/strong>&lt;/a> - by &lt;em>Le rouge et le noir&lt;/em> from the album &amp;lsquo;Le rouge et le noir (L&amp;rsquo;opéra rock)&amp;rsquo;&lt;/li>
 &lt;li>2025-04-28. &lt;a href="https://open.spotify.com/track/65fpYBrI8o2cfrwf2US4gq">&lt;strong>Rewrite The Stars&lt;/strong>&lt;/a> - by &lt;em>Zac Efron, Zendaya&lt;/em> from the album &amp;lsquo;The Greatest Showman (Original Motion Picture Soundtrack)&amp;rsquo;&lt;/li>
+&lt;li>2025-04-29. &lt;a href="https://open.spotify.com/track/0Gl5s8IhMmQE5YQwM8Qx1J">&lt;strong>Never Enough&lt;/strong>&lt;/a> - by &lt;em>Loren Allred&lt;/em> from the album &amp;lsquo;The Greatest Showman (Original Motion Picture Soundtrack)&amp;rsquo;&lt;/li>
 &lt;/ul></description></item><item><title>FPGA设计流程与EDA工具架构解析——以Vivado为例</title><link>https://lxulxu.github.io/posts/eda-tool-functionality-modules/</link><pubDate>Tue, 04 Mar 2025 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/eda-tool-functionality-modules/</guid><description>&lt;h2 id="fpga设计流程概览">FPGA设计流程概览&lt;/h2>
 &lt;p>FPGA设计遵循一个由上至下的流程，主要包括以下阶段：&lt;/p>
 &lt;ol>
