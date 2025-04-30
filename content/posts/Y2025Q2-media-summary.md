@@ -80,4 +80,5 @@ tags: [生活]
 - 2025-04-28. [**Les maudits mots d'amour**](https://open.spotify.com/track/1aYN7p7BYwjJ83a6p9arm4) - by *Le rouge et le noir* from the album 'Le rouge et le noir (L'opéra rock)'
 - 2025-04-28. [**Ding dong**](https://open.spotify.com/track/1Wy78lLTaVuDoMgUvaSCoq) - by *Le rouge et le noir* from the album 'Le rouge et le noir (L'opéra rock)'
 - 2025-04-28. [**Rewrite The Stars**](https://open.spotify.com/track/65fpYBrI8o2cfrwf2US4gq) - by *Zac Efron, Zendaya* from the album 'The Greatest Showman (Original Motion Picture Soundtrack)'
+- 2025-04-29. [**Never Enough**](https://open.spotify.com/track/0Gl5s8IhMmQE5YQwM8Qx1J) - by *Loren Allred* from the album 'The Greatest Showman (Original Motion Picture Soundtrack)'
 
