@@ -16,6 +16,7 @@ tags: [生活]
 - 2025-04-30. [**雷霆特攻队***](https://movie.douban.com/subject/35927475/) - rating: ★★★★☆
 - 2025-05-01. [**大风杀**](https://movie.douban.com/subject/36512371/) - rating: ★★★★☆
 - 2025-05-01. [**淮水竹亭**](https://movie.douban.com/subject/35923772/) - rating: ★★★☆☆
+- 2025-05-01. [**猎金游戏**](https://movie.douban.com/subject/35929258/) - rating: ★★★★☆
 
 ## 🎮Games
 - 2025-04-13. [**好莱坞动物 Hollywood Animal**](http://www.douban.com/game/36639414/) - rating: ★★★☆☆
@@ -26,6 +27,7 @@ tags: [生活]
 - 2025-04-20. [**日落大道**](https://www.douban.com/location/drama/37237012/) - rating: ★★★★★
 - 2025-04-22. [**世界旦夕之间**](https://www.douban.com/location/drama/35619087/) - rating: ★★★★☆
 - 2025-04-25. [**捕鼠器**](https://www.douban.com/location/drama/10863879/) - rating: ★★★★☆
+- 2025-05-01. [**扬名立万**](https://www.douban.com/location/drama/37029494/) - rating: ★★★☆☆
 
 ## 🎵MUSIC
 - 2025-04-26. [**FXXK IT**](https://open.spotify.com/track/3lYvepDz6yYj29z7e4r5z0) - by *BIGBANG* from the album 'MADE'
