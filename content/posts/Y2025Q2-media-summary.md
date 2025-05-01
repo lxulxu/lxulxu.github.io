@@ -15,6 +15,7 @@ tags: [生活]
 - 2025-04-29. [**马戏之王**](https://movie.douban.com/subject/3914513/) - rating: ★★★★★
 - 2025-04-30. [**雷霆特攻队***](https://movie.douban.com/subject/35927475/) - rating: ★★★★☆
 - 2025-05-01. [**大风杀**](https://movie.douban.com/subject/36512371/) - rating: ★★★★☆
+- 2025-05-01. [**淮水竹亭**](https://movie.douban.com/subject/35923772/) - rating: ★★★☆☆
 
 ## 🎮Games
 - 2025-04-13. [**好莱坞动物 Hollywood Animal**](http://www.douban.com/game/36639414/) - rating: ★★★☆☆
