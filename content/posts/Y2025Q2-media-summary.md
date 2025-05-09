@@ -29,6 +29,7 @@ tags: [生活]
 - 2025-04-25. [**捕鼠器**](https://www.douban.com/location/drama/10863879/) - rating: ★★★★☆
 - 2025-05-01. [**扬名立万**](https://www.douban.com/location/drama/37029494/) - rating: ★★★☆☆
 - 2025-05-08. [**雨中**](https://www.douban.com/location/drama/37013107/) - rating: ★★★★☆
+- 2025-05-09. [**朱莉（ITA版）**](https://www.douban.com/location/drama/37125986/) - rating: ★★★★★
 
 ## 🎵MUSIC
 - 2025-04-26. [**FXXK IT**](https://open.spotify.com/track/3lYvepDz6yYj29z7e4r5z0) - by *BIGBANG* from the album 'MADE'
