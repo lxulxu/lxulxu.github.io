@@ -112,6 +112,7 @@
 &lt;li>2025-05-10. &lt;a href="https://open.spotify.com/track/2oik66Y86ds8m8KWh1T0aX">&lt;strong>淪陷&lt;/strong>&lt;/a> - by &lt;em>李嘉格&lt;/em> from the album &amp;lsquo;四格&amp;rsquo;&lt;/li>
 &lt;li>2025-05-10. &lt;a href="https://open.spotify.com/track/0ykCAJXioq4FmG8RfuGvBs">&lt;strong>給我倒杯酒&lt;/strong>&lt;/a> - by &lt;em>Sophie Chen&lt;/em> from the album &amp;lsquo;給我倒杯酒&amp;rsquo;&lt;/li>
 &lt;li>2025-05-12. &lt;a href="https://open.spotify.com/track/54Sc7mZQ1RM03STpk4SfaA">&lt;strong>Helpless&lt;/strong>&lt;/a> - by &lt;em>Phillipa Soo, Original Broadway Cast of Hamilton&lt;/em> from the album &amp;lsquo;Hamilton (Original Broadway Cast Recording)&amp;rsquo;&lt;/li>
+&lt;li>2025-05-12. &lt;a href="https://open.spotify.com/track/0NDMUgq5VLeo7D14NqlfYO">&lt;strong>(từng là) Boyfriend, Girlfriend&lt;/strong>&lt;/a> - by &lt;em>MIN&lt;/em> from the album &amp;lsquo;(từng là) Boyfriend, Girlfriend&amp;rsquo;&lt;/li>
 &lt;/ul></description></item><item><title>FPGA设计流程与EDA工具架构解析——以Vivado为例</title><link>https://lxulxu.github.io/posts/eda-tool-functionality-modules/</link><pubDate>Tue, 04 Mar 2025 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/eda-tool-functionality-modules/</guid><description>&lt;h2 id="fpga设计流程概览">FPGA设计流程概览&lt;/h2>
 &lt;p>FPGA设计遵循一个由上至下的流程，主要包括以下阶段：&lt;/p>
 &lt;ol>
