@@ -116,4 +116,5 @@ tags: [生活]
 - 2025-05-10. [**給我倒杯酒**](https://open.spotify.com/track/0ykCAJXioq4FmG8RfuGvBs) - by *Sophie Chen* from the album '給我倒杯酒'
 - 2025-05-12. [**Helpless**](https://open.spotify.com/track/54Sc7mZQ1RM03STpk4SfaA) - by *Phillipa Soo, Original Broadway Cast of Hamilton* from the album 'Hamilton (Original Broadway Cast Recording)'
 - 2025-05-12. [**(từng là) Boyfriend, Girlfriend**](https://open.spotify.com/track/0NDMUgq5VLeo7D14NqlfYO) - by *MIN* from the album '(từng là) Boyfriend, Girlfriend'
+- 2025-05-13. [**念慈菴**](https://open.spotify.com/track/44cLmCbiSm8uTlQSGRGgU4) - by *攬佬SKAI ISYOURGOD* from the album '八方來財'
 
