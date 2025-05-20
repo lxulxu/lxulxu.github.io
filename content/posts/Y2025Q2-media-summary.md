@@ -74,7 +74,6 @@ tags: [生活]
 - 2025-05-10. [**Then, Now and Forever**](https://open.spotify.com/track/2YLCxfPRnyYxgirjSYcTZZ) - by *CNBLUE* from the album 'RE-CODE'
 - 2025-05-10. [**I`m Sorry**](https://open.spotify.com/track/5j6DtDtZ84kXFrfcBMT11S) - by *CNBLUE* from the album 'Re:BLUE'
 - 2025-05-10. [**Intuition**](https://open.spotify.com/track/5CCQr52OAAbovNfuK0I6Lx) - by *CNBLUE* from the album 'FIRST STEP'
-- 2025-05-10. [**苦茶 - 心动版**](https://open.spotify.com/track/6DtRTnDhhHgSqkUCvCKOJ4) - by *Yihuik苡慧, Aioz* from the album '苦茶 (心动版)'
 - 2025-05-10. [**心跳**](https://open.spotify.com/track/740KtWw1r4f5Gd6UXzhYNp) - by *Leehom Wang* from the album '心跳'
 - 2025-05-10. [**蛇舞**](https://open.spotify.com/track/0wRqXlA2pUVBROZSnL5KFU) - by *Jay Chou, Lara Liang* from the album '魔杰座'
 - 2025-05-10. [**一首簡單的歌**](https://open.spotify.com/track/1934UMDwEOi9XL5cvk3CFu) - by *Leehom Wang* from the album '心中的日月'
@@ -111,6 +110,7 @@ tags: [生活]
 - 2025-05-15. [**Like a Prayer**](https://open.spotify.com/track/2v7ywbUzCgcVohHaKUcacV) - by *Madonna* from the album 'Like a Prayer'
 - 2025-05-15. [**A Sleepless Night**](https://open.spotify.com/track/7wlCdfpxaWQPaxspDIN3wX) - by *CNBLUE* from the album 'X'
 - 2025-05-15. [**致你**](https://open.spotify.com/track/1BH8aQSiigtTbbqms4XpwR) - by *Yihuik苡慧* from the album '致你'
+- 2025-05-15. [**苦茶 - 心动版**](https://open.spotify.com/track/6DtRTnDhhHgSqkUCvCKOJ4) - by *Yihuik苡慧, Aioz* from the album '苦茶 (心动版)'
 - 2025-05-15. [**Born Again (feat. Doja Cat & RAYE)**](https://open.spotify.com/track/4CPuDVC8jhhK6lA2DIt8Cf) - by *LISA, Doja Cat, RAYE* from the album 'Born Again (feat. Doja Cat & RAYE)'
 - 2025-05-15. [**Anh Qua Đây Đi**](https://open.spotify.com/track/7AvlGv6T7uROunl72hwAlR) - by *MIN* from the album '50/50'
 - 2025-05-15. [**Có Em Chờ**](https://open.spotify.com/track/6KIhgRkprgyJNERRMu7Quh) - by *MIN* from the album 'Có Em Chờ'
@@ -121,4 +121,5 @@ tags: [生活]
 - 2025-05-15. [**指紋（《軒轅劍》插曲）**](https://open.spotify.com/track/4ElkRCZ1Ujgdunlt2a82rG) - by *胡歌* from the album '《軒轅劍》影視原聲'
 - 2025-05-15. [**最美的期待**](https://open.spotify.com/track/4kgdHLpUS7S0ADLqG5qfFc) - by *周笔畅* from the album '最美的期待'
 - 2025-05-15. [**捨不得**](https://open.spotify.com/track/0WyXrLof8N6cQvg4zzYJNN) - by *Xian Zi* from the album '不愛最大'
+- 2025-05-20. [**喜歡你(喜歡我)**](https://open.spotify.com/track/2CJzadzgwIKRdsEtAAHhef) - by *Yida Huang* from the album '黃義達 過程 精選'
 
