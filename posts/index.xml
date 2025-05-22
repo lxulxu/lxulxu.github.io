@@ -143,6 +143,7 @@
 &lt;li>2025-05-21. &lt;a href="https://open.spotify.com/track/3adxy9gOQN6hHNc2IMDRKo">&lt;strong>Chain&lt;/strong>&lt;/a> - by &lt;em>i-dle&lt;/em> from the album &amp;lsquo;We are&amp;rsquo;&lt;/li>
 &lt;li>2025-05-21. &lt;a href="https://open.spotify.com/track/6SCiybhUyi8ls3GqenO67F">&lt;strong>Love Tease&lt;/strong>&lt;/a> - by &lt;em>i-dle&lt;/em> from the album &amp;lsquo;We are&amp;rsquo;&lt;/li>
 &lt;li>2025-05-21. &lt;a href="https://open.spotify.com/track/1qgPIJahbLHRWts7l7tJ34">&lt;strong>Girlfriend&lt;/strong>&lt;/a> - by &lt;em>i-dle&lt;/em> from the album &amp;lsquo;We are&amp;rsquo;&lt;/li>
+&lt;li>2025-05-22. &lt;a href="https://open.spotify.com/track/5iXD5rOKV99XGtkaiucHpM">&lt;strong>BEBE&lt;/strong>&lt;/a> - by &lt;em>STAYC&lt;/em> from the album &amp;lsquo;S&amp;rsquo;&lt;/li>
 &lt;/ul></description></item><item><title>FPGA设计流程与EDA工具架构解析——以Vivado为例</title><link>https://lxulxu.github.io/posts/eda-tool-functionality-modules/</link><pubDate>Tue, 04 Mar 2025 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/eda-tool-functionality-modules/</guid><description>&lt;h2 id="fpga设计流程概览">FPGA设计流程概览&lt;/h2>
 &lt;p>FPGA设计遵循一个由上至下的流程，主要包括以下阶段：&lt;/p>
 &lt;ol>
