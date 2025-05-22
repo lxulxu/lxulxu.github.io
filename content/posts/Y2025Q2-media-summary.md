@@ -146,4 +146,5 @@ tags: [生活]
 - 2025-05-21. [**Chain**](https://open.spotify.com/track/3adxy9gOQN6hHNc2IMDRKo) - by *i-dle* from the album 'We are'
 - 2025-05-21. [**Love Tease**](https://open.spotify.com/track/6SCiybhUyi8ls3GqenO67F) - by *i-dle* from the album 'We are'
 - 2025-05-21. [**Girlfriend**](https://open.spotify.com/track/1qgPIJahbLHRWts7l7tJ34) - by *i-dle* from the album 'We are'
+- 2025-05-22. [**BEBE**](https://open.spotify.com/track/5iXD5rOKV99XGtkaiucHpM) - by *STAYC* from the album 'S'
 
