@@ -17,6 +17,7 @@ tags: [生活]
 - 2025-05-01. [**大风杀**](https://movie.douban.com/subject/36512371/) - rating: ★★★★☆
 - 2025-05-01. [**淮水竹亭**](https://movie.douban.com/subject/35923772/) - rating: ★★★☆☆
 - 2025-05-01. [**猎金·游戏**](https://movie.douban.com/subject/35929258/) - rating: ★★★★☆
+- 2025-05-22. [**人生若如初见**](https://movie.douban.com/subject/34930849/) - rating: ★★★★☆
 
 ## 🎮Games
 - 2025-04-13. [**好莱坞动物 Hollywood Animal**](http://www.douban.com/game/36639414/) - rating: ★★★☆☆
