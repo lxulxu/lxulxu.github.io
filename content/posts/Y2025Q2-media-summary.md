@@ -17,7 +17,7 @@ tags: [生活]
 - 2025-05-01. [**大风杀**](https://movie.douban.com/subject/36512371/) - rating: ★★★★☆
 - 2025-05-01. [**淮水竹亭**](https://movie.douban.com/subject/35923772/) - rating: ★★★☆☆
 - 2025-05-01. [**猎金·游戏**](https://movie.douban.com/subject/35929258/) - rating: ★★★★☆
-- 2025-05-22. [**人生若如初见**](https://movie.douban.com/subject/34930849/) - rating: ★★★★☆
+- 2025-05-22. [**人生若如初见**](https://movie.douban.com/subject/34930849/) - rating: ★★★☆☆
 
 ## 🎮Games
 - 2025-04-13. [**好莱坞动物 Hollywood Animal**](http://www.douban.com/game/36639414/) - rating: ★★★☆☆
@@ -148,4 +148,5 @@ tags: [生活]
 - 2025-05-21. [**Love Tease**](https://open.spotify.com/track/6SCiybhUyi8ls3GqenO67F) - by *i-dle* from the album 'We are'
 - 2025-05-21. [**Girlfriend**](https://open.spotify.com/track/1qgPIJahbLHRWts7l7tJ34) - by *i-dle* from the album 'We are'
 - 2025-05-22. [**BEBE**](https://open.spotify.com/track/5iXD5rOKV99XGtkaiucHpM) - by *STAYC* from the album 'S'
+- 2025-05-24. [**Stay With Me**](https://open.spotify.com/track/1HYzRuWjmS9LXCkdVHi25K) - by *CHANYEOL, Punch* from the album 'Guardian (Original Television Soundtrack), Pt. 1'
 
