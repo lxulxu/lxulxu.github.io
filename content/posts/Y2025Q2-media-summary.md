@@ -149,4 +149,5 @@ tags: [生活]
 - 2025-05-21. [**Girlfriend**](https://open.spotify.com/track/1qgPIJahbLHRWts7l7tJ34) - by *i-dle* from the album 'We are'
 - 2025-05-22. [**BEBE**](https://open.spotify.com/track/5iXD5rOKV99XGtkaiucHpM) - by *STAYC* from the album 'S'
 - 2025-05-24. [**Stay With Me**](https://open.spotify.com/track/1HYzRuWjmS9LXCkdVHi25K) - by *CHANYEOL, Punch* from the album 'Guardian (Original Television Soundtrack), Pt. 1'
+- 2025-05-25. [**Swim**](https://open.spotify.com/track/20PISOo4VbLz4yFH78Zv5R) - by *Fickle Friends* from the album 'You Are Someone Else'
 
