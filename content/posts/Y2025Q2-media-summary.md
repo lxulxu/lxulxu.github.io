@@ -18,6 +18,7 @@ tags: [生活]
 - 2025-05-01. [**淮水竹亭**](https://movie.douban.com/subject/35923772/) - rating: ★★★☆☆
 - 2025-05-01. [**猎金·游戏**](https://movie.douban.com/subject/35929258/) - rating: ★★★★☆
 - 2025-05-22. [**人生若如初见**](https://movie.douban.com/subject/34930849/) - rating: ★★★☆☆
+- 2025-05-30. [**碟中谍8：最终清算**](https://movie.douban.com/subject/30433456/) - rating: ★★★★☆
 
 ## 🎮Games
 - 2025-04-13. [**好莱坞动物 Hollywood Animal**](http://www.douban.com/game/36639414/) - rating: ★★★☆☆
@@ -31,6 +32,7 @@ tags: [生活]
 - 2025-05-01. [**扬名立万**](https://www.douban.com/location/drama/37029494/) - rating: ★★★☆☆
 - 2025-05-08. [**雨中**](https://www.douban.com/location/drama/37013107/) - rating: ★★★★☆
 - 2025-05-09. [**朱莉（ITA版）**](https://www.douban.com/location/drama/37125986/) - rating: ★★★★★
+- 2025-05-30. [**少年派的奇幻漂流**](https://www.douban.com/location/drama/34895576/) - rating: ★★★★★
 
 ## 🎵MUSIC
 - 2025-04-26. [**FXXK IT**](https://open.spotify.com/track/3lYvepDz6yYj29z7e4r5z0) - by *BIGBANG* from the album 'MADE'
