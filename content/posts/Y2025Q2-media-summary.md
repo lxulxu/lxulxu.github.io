@@ -33,6 +33,7 @@ tags: [生活]
 - 2025-05-08. [**雨中**](https://www.douban.com/location/drama/37013107/) - rating: ★★★★☆
 - 2025-05-09. [**朱莉（ITA版）**](https://www.douban.com/location/drama/37125986/) - rating: ★★★★★
 - 2025-05-30. [**少年派的奇幻漂流**](https://www.douban.com/location/drama/34895576/) - rating: ★★★★★
+- 2025-06-01. [**SIX**](https://www.douban.com/location/drama/30315598/) - rating: ★★★★★
 
 ## 🎵MUSIC
 - 2025-04-26. [**FXXK IT**](https://open.spotify.com/track/3lYvepDz6yYj29z7e4r5z0) - by *BIGBANG* from the album 'MADE'
@@ -159,4 +160,13 @@ tags: [生活]
 - 2025-05-30. [**From Now On**](https://open.spotify.com/track/3IkWmgGsXbsafrunwPojXO) - by *Hugh Jackman, The Greatest Showman Ensemble* from the album 'The Greatest Showman (Original Motion Picture Soundtrack)'
 - 2025-05-30. [**Never Enough (Reprise)**](https://open.spotify.com/track/6f8b6mxNNDJdE5tC4MCTxt) - by *Loren Allred* from the album 'The Greatest Showman (Original Motion Picture Soundtrack)'
 - 2025-05-30. [**Tightrope**](https://open.spotify.com/track/0GVuLQtPXFaL18ijEOqoAa) - by *Michelle Williams* from the album 'The Greatest Showman (Original Motion Picture Soundtrack)'
+- 2025-06-01. [**No Way**](https://open.spotify.com/track/2ldBp6eNIE4wk8C3j0bz8n) - by *SIX, Renée Lamb* from the album 'Six: The Musical (Studio Cast Recording)'
+- 2025-06-01. [**Six**](https://open.spotify.com/track/3jnntYfllN05QxplcXtpaS) - by *SIX* from the album 'Six: The Musical (Studio Cast Recording)'
+- 2025-06-01. [**Don't Lose Ur Head**](https://open.spotify.com/track/6sUQqRmOcRyAG5M3EWXzr3) - by *SIX, Christina Modestou* from the album 'Six: The Musical (Studio Cast Recording)'
+- 2025-06-01. [**Ex-Wives**](https://open.spotify.com/track/03GBiorLGTk7T4IScIl4jj) - by *SIX* from the album 'Six: The Musical (Studio Cast Recording)'
+- 2025-06-01. [**I Don't Need Your Love**](https://open.spotify.com/track/34TY5bMvFrfPlZ7jqeGxi4) - by *SIX, Izuka Hoyle* from the album 'Six: The Musical (Studio Cast Recording)'
+- 2025-06-01. [**All You Wanna Do**](https://open.spotify.com/track/1U0hiOuodfSsxdcTYXGEdT) - by *SIX, Aimie Atkinson* from the album 'Six: The Musical (Studio Cast Recording)'
+- 2025-06-01. [**Heart of Stone**](https://open.spotify.com/track/3akeuMy9bqJbqDlfYevbwN) - by *SIX, Natalie Paris* from the album 'Six: The Musical (Studio Cast Recording)'
+- 2025-06-01. [**Get Down**](https://open.spotify.com/track/198ZUXC5jCr5DiQNlKBiNV) - by *SIX, Genesis Lynea* from the album 'Six: The Musical (Studio Cast Recording)'
+- 2025-06-01. [**Heart of Stone**](https://open.spotify.com/track/0ezEGdFPYtRHzILpYuDOhE) - by *SIX, Abby Mueller* from the album 'SIX: LIVE ON OPENING NIGHT (Original Broadway Cast Recording)'
 
