@@ -29,6 +29,7 @@
 &lt;li>2025-05-08. &lt;a href="https://www.douban.com/location/drama/37013107/">&lt;strong>雨中&lt;/strong>&lt;/a> - rating: ★★★★☆&lt;/li>
 &lt;li>2025-05-09. &lt;a href="https://www.douban.com/location/drama/37125986/">&lt;strong>朱莉（ITA版）&lt;/strong>&lt;/a> - rating: ★★★★★&lt;/li>
 &lt;li>2025-05-30. &lt;a href="https://www.douban.com/location/drama/34895576/">&lt;strong>少年派的奇幻漂流&lt;/strong>&lt;/a> - rating: ★★★★★&lt;/li>
+&lt;li>2025-06-01. &lt;a href="https://www.douban.com/location/drama/30315598/">&lt;strong>SIX&lt;/strong>&lt;/a> - rating: ★★★★★&lt;/li>
 &lt;/ul>
 &lt;h2 id="music">🎵MUSIC&lt;/h2>
 &lt;ul>
@@ -156,6 +157,15 @@
 &lt;li>2025-05-30. &lt;a href="https://open.spotify.com/track/3IkWmgGsXbsafrunwPojXO">&lt;strong>From Now On&lt;/strong>&lt;/a> - by &lt;em>Hugh Jackman, The Greatest Showman Ensemble&lt;/em> from the album &amp;lsquo;The Greatest Showman (Original Motion Picture Soundtrack)&amp;rsquo;&lt;/li>
 &lt;li>2025-05-30. &lt;a href="https://open.spotify.com/track/6f8b6mxNNDJdE5tC4MCTxt">&lt;strong>Never Enough (Reprise)&lt;/strong>&lt;/a> - by &lt;em>Loren Allred&lt;/em> from the album &amp;lsquo;The Greatest Showman (Original Motion Picture Soundtrack)&amp;rsquo;&lt;/li>
 &lt;li>2025-05-30. &lt;a href="https://open.spotify.com/track/0GVuLQtPXFaL18ijEOqoAa">&lt;strong>Tightrope&lt;/strong>&lt;/a> - by &lt;em>Michelle Williams&lt;/em> from the album &amp;lsquo;The Greatest Showman (Original Motion Picture Soundtrack)&amp;rsquo;&lt;/li>
+&lt;li>2025-06-01. &lt;a href="https://open.spotify.com/track/2ldBp6eNIE4wk8C3j0bz8n">&lt;strong>No Way&lt;/strong>&lt;/a> - by &lt;em>SIX, Renée Lamb&lt;/em> from the album &amp;lsquo;Six: The Musical (Studio Cast Recording)&amp;rsquo;&lt;/li>
+&lt;li>2025-06-01. &lt;a href="https://open.spotify.com/track/3jnntYfllN05QxplcXtpaS">&lt;strong>Six&lt;/strong>&lt;/a> - by &lt;em>SIX&lt;/em> from the album &amp;lsquo;Six: The Musical (Studio Cast Recording)&amp;rsquo;&lt;/li>
+&lt;li>2025-06-01. &lt;a href="https://open.spotify.com/track/6sUQqRmOcRyAG5M3EWXzr3">&lt;strong>Don&amp;rsquo;t Lose Ur Head&lt;/strong>&lt;/a> - by &lt;em>SIX, Christina Modestou&lt;/em> from the album &amp;lsquo;Six: The Musical (Studio Cast Recording)&amp;rsquo;&lt;/li>
+&lt;li>2025-06-01. &lt;a href="https://open.spotify.com/track/03GBiorLGTk7T4IScIl4jj">&lt;strong>Ex-Wives&lt;/strong>&lt;/a> - by &lt;em>SIX&lt;/em> from the album &amp;lsquo;Six: The Musical (Studio Cast Recording)&amp;rsquo;&lt;/li>
+&lt;li>2025-06-01. &lt;a href="https://open.spotify.com/track/34TY5bMvFrfPlZ7jqeGxi4">&lt;strong>I Don&amp;rsquo;t Need Your Love&lt;/strong>&lt;/a> - by &lt;em>SIX, Izuka Hoyle&lt;/em> from the album &amp;lsquo;Six: The Musical (Studio Cast Recording)&amp;rsquo;&lt;/li>
+&lt;li>2025-06-01. &lt;a href="https://open.spotify.com/track/1U0hiOuodfSsxdcTYXGEdT">&lt;strong>All You Wanna Do&lt;/strong>&lt;/a> - by &lt;em>SIX, Aimie Atkinson&lt;/em> from the album &amp;lsquo;Six: The Musical (Studio Cast Recording)&amp;rsquo;&lt;/li>
+&lt;li>2025-06-01. &lt;a href="https://open.spotify.com/track/3akeuMy9bqJbqDlfYevbwN">&lt;strong>Heart of Stone&lt;/strong>&lt;/a> - by &lt;em>SIX, Natalie Paris&lt;/em> from the album &amp;lsquo;Six: The Musical (Studio Cast Recording)&amp;rsquo;&lt;/li>
+&lt;li>2025-06-01. &lt;a href="https://open.spotify.com/track/198ZUXC5jCr5DiQNlKBiNV">&lt;strong>Get Down&lt;/strong>&lt;/a> - by &lt;em>SIX, Genesis Lynea&lt;/em> from the album &amp;lsquo;Six: The Musical (Studio Cast Recording)&amp;rsquo;&lt;/li>
+&lt;li>2025-06-01. &lt;a href="https://open.spotify.com/track/0ezEGdFPYtRHzILpYuDOhE">&lt;strong>Heart of Stone&lt;/strong>&lt;/a> - by &lt;em>SIX, Abby Mueller&lt;/em> from the album &amp;lsquo;SIX: LIVE ON OPENING NIGHT (Original Broadway Cast Recording)&amp;rsquo;&lt;/li>
 &lt;/ul></description></item><item><title>FPGA设计流程与EDA工具架构解析——以Vivado为例</title><link>https://lxulxu.github.io/posts/eda-tool-functionality-modules/</link><pubDate>Tue, 04 Mar 2025 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/eda-tool-functionality-modules/</guid><description>&lt;h2 id="fpga设计流程概览">FPGA设计流程概览&lt;/h2>
 &lt;p>FPGA设计遵循一个由上至下的流程，主要包括以下阶段：&lt;/p>
 &lt;ol>
