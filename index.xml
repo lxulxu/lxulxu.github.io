@@ -166,6 +166,7 @@
 &lt;li>2025-06-01. &lt;a href="https://open.spotify.com/track/3akeuMy9bqJbqDlfYevbwN">&lt;strong>Heart of Stone&lt;/strong>&lt;/a> - by &lt;em>SIX, Natalie Paris&lt;/em> from the album &amp;lsquo;Six: The Musical (Studio Cast Recording)&amp;rsquo;&lt;/li>
 &lt;li>2025-06-01. &lt;a href="https://open.spotify.com/track/198ZUXC5jCr5DiQNlKBiNV">&lt;strong>Get Down&lt;/strong>&lt;/a> - by &lt;em>SIX, Genesis Lynea&lt;/em> from the album &amp;lsquo;Six: The Musical (Studio Cast Recording)&amp;rsquo;&lt;/li>
 &lt;li>2025-06-01. &lt;a href="https://open.spotify.com/track/0ezEGdFPYtRHzILpYuDOhE">&lt;strong>Heart of Stone&lt;/strong>&lt;/a> - by &lt;em>SIX, Abby Mueller&lt;/em> from the album &amp;lsquo;SIX: LIVE ON OPENING NIGHT (Original Broadway Cast Recording)&amp;rsquo;&lt;/li>
+&lt;li>2025-06-02. &lt;a href="https://open.spotify.com/track/6bo3wF9Gfmr7iFlIaGfo1g">&lt;strong>Haus of Holbein&lt;/strong>&lt;/a> - by &lt;em>SIX&lt;/em> from the album &amp;lsquo;Six: The Musical (Studio Cast Recording)&amp;rsquo;&lt;/li>
 &lt;/ul></description></item><item><title>FPGA设计流程与EDA工具架构解析——以Vivado为例</title><link>https://lxulxu.github.io/posts/eda-tool-functionality-modules/</link><pubDate>Tue, 04 Mar 2025 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/eda-tool-functionality-modules/</guid><description>&lt;h2 id="fpga设计流程概览">FPGA设计流程概览&lt;/h2>
 &lt;p>FPGA设计遵循一个由上至下的流程，主要包括以下阶段：&lt;/p>
 &lt;ol>
