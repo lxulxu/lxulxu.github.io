@@ -169,4 +169,5 @@ tags: [生活]
 - 2025-06-01. [**Heart of Stone**](https://open.spotify.com/track/3akeuMy9bqJbqDlfYevbwN) - by *SIX, Natalie Paris* from the album 'Six: The Musical (Studio Cast Recording)'
 - 2025-06-01. [**Get Down**](https://open.spotify.com/track/198ZUXC5jCr5DiQNlKBiNV) - by *SIX, Genesis Lynea* from the album 'Six: The Musical (Studio Cast Recording)'
 - 2025-06-01. [**Heart of Stone**](https://open.spotify.com/track/0ezEGdFPYtRHzILpYuDOhE) - by *SIX, Abby Mueller* from the album 'SIX: LIVE ON OPENING NIGHT (Original Broadway Cast Recording)'
+- 2025-06-02. [**Haus of Holbein**](https://open.spotify.com/track/6bo3wF9Gfmr7iFlIaGfo1g) - by *SIX* from the album 'Six: The Musical (Studio Cast Recording)'
 
