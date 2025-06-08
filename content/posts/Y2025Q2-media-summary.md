@@ -152,7 +152,6 @@ tags: [生活]
 - 2025-06-02. [**Six**](https://open.spotify.com/track/3jnntYfllN05QxplcXtpaS) - by *SIX* from the album 'Six: The Musical (Studio Cast Recording)'
 - 2025-06-02. [**Ex-Wives**](https://open.spotify.com/track/03GBiorLGTk7T4IScIl4jj) - by *SIX* from the album 'Six: The Musical (Studio Cast Recording)'
 - 2025-06-02. [**I Don't Need Your Love**](https://open.spotify.com/track/34TY5bMvFrfPlZ7jqeGxi4) - by *SIX, Izuka Hoyle* from the album 'Six: The Musical (Studio Cast Recording)'
-- 2025-06-02. [**All You Wanna Do**](https://open.spotify.com/track/1U0hiOuodfSsxdcTYXGEdT) - by *SIX, Aimie Atkinson* from the album 'Six: The Musical (Studio Cast Recording)'
 - 2025-06-02. [**Get Down**](https://open.spotify.com/track/198ZUXC5jCr5DiQNlKBiNV) - by *SIX, Genesis Lynea* from the album 'Six: The Musical (Studio Cast Recording)'
 - 2025-06-02. [**Haus of Holbein**](https://open.spotify.com/track/6bo3wF9Gfmr7iFlIaGfo1g) - by *SIX* from the album 'Six: The Musical (Studio Cast Recording)'
 - 2025-06-03. [**Le Bien qui fait mal**](https://open.spotify.com/track/4l9fRnSDAn1aeNcMl5N7rE) - by *Mozart Opera Rock* from the album 'Mozart l'Opera Rock (standard)'
@@ -171,5 +170,9 @@ tags: [生活]
 - 2025-06-03. [**Rewrite The Stars**](https://open.spotify.com/track/65fpYBrI8o2cfrwf2US4gq) - by *Zac Efron, Zendaya* from the album 'The Greatest Showman (Original Motion Picture Soundtrack)'
 - 2025-06-03. [**Never Enough**](https://open.spotify.com/track/0Gl5s8IhMmQE5YQwM8Qx1J) - by *Loren Allred* from the album 'The Greatest Showman (Original Motion Picture Soundtrack)'
 - 2025-06-03. [**Don't Lose Ur Head**](https://open.spotify.com/track/6sUQqRmOcRyAG5M3EWXzr3) - by *SIX, Christina Modestou* from the album 'Six: The Musical (Studio Cast Recording)'
+- 2025-06-03. [**All You Wanna Do**](https://open.spotify.com/track/1U0hiOuodfSsxdcTYXGEdT) - by *SIX, Aimie Atkinson* from the album 'Six: The Musical (Studio Cast Recording)'
 - 2025-06-03. [**Heart of Stone**](https://open.spotify.com/track/3akeuMy9bqJbqDlfYevbwN) - by *SIX, Natalie Paris* from the album 'Six: The Musical (Studio Cast Recording)'
+- 2025-06-08. [**Janji**](https://open.spotify.com/track/1WldpQtR5vqJXj1fjx5hPx) - by *Sunset* from the album 'Janji'
+- 2025-06-08. [**And I Hope**](https://open.spotify.com/track/7EwzVsQ7CvERq37qeUQGaz) - by *Sunset* from the album 'And I Hope'
+- 2025-06-08. [**笼 - 电影《消失的她》片尾主题曲**](https://open.spotify.com/track/5qApmIZ9kN7RZibf1dhkbe) - by *Zhang Bichen* from the album '笼 (电影《消失的她》片尾主题曲)'
 
