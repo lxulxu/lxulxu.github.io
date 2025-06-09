@@ -21,6 +21,7 @@ tags: [生活]
 - 2025-05-30. [**碟中谍8：最终清算**](https://movie.douban.com/subject/30433456/) - rating: ★★★★☆
 - 2025-06-06. [**藏海传**](https://movie.douban.com/subject/27181010/) - rating: ★☆☆☆☆
 - 2025-06-06. [**疾速追杀：芭蕾杀姬**](https://movie.douban.com/subject/34807062/) - rating: ★★★★☆
+- 2025-06-09. [**长安的荔枝**](https://movie.douban.com/subject/35651341/) - rating: ★★★★★
 
 ## 🎮Games
 - 2025-04-13. [**好莱坞动物 Hollywood Animal**](http://www.douban.com/game/36639414/) - rating: ★★★☆☆
