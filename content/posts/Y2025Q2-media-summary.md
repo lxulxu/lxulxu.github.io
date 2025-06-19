@@ -197,7 +197,6 @@ tags: [生活]
 - 2025-06-17. [**L'assasymphonie**](https://open.spotify.com/track/3fAOSZc5hTpnXxSO43ymwu) - by *Mozart Opera Rock* from the album 'Mozart l'Opera Rock (standard)'
 - 2025-06-17. [**Satisfied**](https://open.spotify.com/track/3dP0pLbg9OfVwssDjp9aT0) - by *Renée Elise Goldsberry, Original Broadway Cast of Hamilton* from the album 'Hamilton (Original Broadway Cast Recording)'
 - 2025-06-17. [**Seasons of Love**](https://open.spotify.com/track/5gw8HNcrqliEw0X6pPrPvG) - by *Rosario Dawson, Taye Diggs, Idina Menzel, Jesse L. Martin, Adam Pascal, Tracie Thoms, Anthony Rapp, Wilson Jermaine Heredia* from the album 'RENT (Original Motion Picture Soundtrack)'
-- 2025-06-17. [**Helpless**](https://open.spotify.com/track/54Sc7mZQ1RM03STpk4SfaA) - by *Phillipa Soo, Original Broadway Cast of Hamilton* from the album 'Hamilton (Original Broadway Cast Recording)'
 - 2025-06-17. [**Il aurait suffit**](https://open.spotify.com/track/0Q6zg9sFTYmSe4sMznOJPg) - by *Le rouge et le noir* from the album 'Le rouge et le noir (L'opéra rock)'
 - 2025-06-17. [**La gloire à mes genoux**](https://open.spotify.com/track/1WGg9ErHahP21BboFD26C9) - by *Le rouge et le noir* from the album 'Le rouge et le noir (L'opéra rock)'
 - 2025-06-17. [**This Is Me**](https://open.spotify.com/track/45aBsnKRWUzhwbcqOJLwfe) - by *Keala Settle, The Greatest Showman Ensemble* from the album 'The Greatest Showman (Original Motion Picture Soundtrack)'
@@ -229,4 +228,5 @@ tags: [生活]
 - 2025-06-18. [**I Heart You**](https://open.spotify.com/track/0UMGgcfpcW9U2ohKbF6fDn) - by *MIN* from the album 'YÊU'
 - 2025-06-18. [**Trên Tình Bạn Dưới Tình Yêu**](https://open.spotify.com/track/46DiCDUqxQMUU6fSpBvSRG) - by *MIN* from the album '50/50'
 - 2025-06-18. [**Phải Lòng Anh**](https://open.spotify.com/track/0jO5H5vCoXKmOAchp2Lwbu) - by *MIN* from the album '50/50'
+- 2025-06-19. [**Helpless**](https://open.spotify.com/track/54Sc7mZQ1RM03STpk4SfaA) - by *Phillipa Soo, Original Broadway Cast of Hamilton* from the album 'Hamilton (Original Broadway Cast Recording)'
 
