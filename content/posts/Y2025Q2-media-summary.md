@@ -229,4 +229,5 @@ tags: [生活]
 - 2025-06-19. [**Il aurait suffit**](https://open.spotify.com/track/0Q6zg9sFTYmSe4sMznOJPg) - by *Le rouge et le noir* from the album 'Le rouge et le noir (L'opéra rock)'
 - 2025-06-19. [**This Is Me**](https://open.spotify.com/track/45aBsnKRWUzhwbcqOJLwfe) - by *Keala Settle, The Greatest Showman Ensemble* from the album 'The Greatest Showman (Original Motion Picture Soundtrack)'
 - 2025-06-19. [**The Greatest Show**](https://open.spotify.com/track/43ay9lQZ5rfNcOOHhRF2cM) - by *Hugh Jackman, Keala Settle, Zac Efron, Zendaya, The Greatest Showman Ensemble* from the album 'The Greatest Show'
+- 2025-06-19. [**沒有我妳怎麼辦**](https://open.spotify.com/track/2EvwpvbcwU5qRYFbvgWh8p) - by *何潤東* from the album '沒有我妳怎麼辦'
 
