@@ -209,7 +209,6 @@ tags: [生活]
 - 2025-06-18. [**I Heart You**](https://open.spotify.com/track/0UMGgcfpcW9U2ohKbF6fDn) - by *MIN* from the album 'YÊU'
 - 2025-06-18. [**Trên Tình Bạn Dưới Tình Yêu**](https://open.spotify.com/track/46DiCDUqxQMUU6fSpBvSRG) - by *MIN* from the album '50/50'
 - 2025-06-18. [**Phải Lòng Anh**](https://open.spotify.com/track/0jO5H5vCoXKmOAchp2Lwbu) - by *MIN* from the album '50/50'
-- 2025-06-19. [**Satisfied**](https://open.spotify.com/track/3dP0pLbg9OfVwssDjp9aT0) - by *Renée Elise Goldsberry, Original Broadway Cast of Hamilton* from the album 'Hamilton (Original Broadway Cast Recording)'
 - 2025-06-19. [**Seasons of Love**](https://open.spotify.com/track/5gw8HNcrqliEw0X6pPrPvG) - by *Rosario Dawson, Taye Diggs, Idina Menzel, Jesse L. Martin, Adam Pascal, Tracie Thoms, Anthony Rapp, Wilson Jermaine Heredia* from the album 'RENT (Original Motion Picture Soundtrack)'
 - 2025-06-19. [**Helpless**](https://open.spotify.com/track/54Sc7mZQ1RM03STpk4SfaA) - by *Phillipa Soo, Original Broadway Cast of Hamilton* from the album 'Hamilton (Original Broadway Cast Recording)'
 - 2025-06-19. [**La gloire à mes genoux**](https://open.spotify.com/track/1WGg9ErHahP21BboFD26C9) - by *Le rouge et le noir* from the album 'Le rouge et le noir (L'opéra rock)'
@@ -226,6 +225,7 @@ tags: [生活]
 - 2025-06-20. [**Can't Stop**](https://open.spotify.com/track/2sdf2x4YLaHb1k9HtE9cBs) - by *CNBLUE* from the album 'Can't Stop'
 - 2025-06-20. [**TOO BAD**](https://open.spotify.com/track/0GOqhXyouUxqPEw9ypTOLm) - by *G-DRAGON, Anderson .Paak* from the album 'Übermensch'
 - 2025-06-20. [**COLD (feat.10CM)**](https://open.spotify.com/track/4pZUVR0l4sPl8GKPm6FXDa) - by *YOUNG POSSE, 10CM* from the album 'COLD'
+- 2025-06-20. [**Satisfied**](https://open.spotify.com/track/3dP0pLbg9OfVwssDjp9aT0) - by *Renée Elise Goldsberry, Original Broadway Cast of Hamilton* from the album 'Hamilton (Original Broadway Cast Recording)'
 - 2025-06-20. [**Il aurait suffit**](https://open.spotify.com/track/0Q6zg9sFTYmSe4sMznOJPg) - by *Le rouge et le noir* from the album 'Le rouge et le noir (L'opéra rock)'
 - 2025-06-20. [**Rewrite The Stars**](https://open.spotify.com/track/65fpYBrI8o2cfrwf2US4gq) - by *Zac Efron, Zendaya* from the album 'The Greatest Showman (Original Motion Picture Soundtrack)'
 - 2025-06-20. [**Never Enough**](https://open.spotify.com/track/0Gl5s8IhMmQE5YQwM8Qx1J) - by *Loren Allred* from the album 'The Greatest Showman (Original Motion Picture Soundtrack)'
@@ -236,4 +236,5 @@ tags: [生活]
 - 2025-06-23. [**想見你想見你想見你(電視劇"想見你"片尾曲)**](https://open.spotify.com/track/69zgyr5HVKdInjeKpq1qHa) - by *831* from the album '想見你想見你想見你(電視劇"想見你"片尾曲)'
 - 2025-06-23. [**胡蘿蔔須**](https://open.spotify.com/track/6YoAwPScwVozp5A7E4vjj8) - by *許嵩* from the album '夢游計'
 - 2025-06-23. [**雙人舞 - Live**](https://open.spotify.com/track/5rNtZVVxGBYd7ivL18pCLs) - by *Will Pan* from the album '創使者世界巡迴演唱會 LIVE'
+- 2025-06-24. [**Jumping Machine (跳楼机)**](https://open.spotify.com/track/1XZE0InCx3SdCnLpVsPpZl) - by *LBI利比* from the album 'Jumping Machine (跳楼机)'
 
