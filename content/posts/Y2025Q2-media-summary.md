@@ -26,6 +26,7 @@ tags: [生活]
 - 2025-06-20. [**新·驯龙高手**](https://movie.douban.com/subject/36247731/) - rating: ★★★★☆
 - 2025-06-26. [**宫锁沉香**](https://movie.douban.com/subject/20378811/) - rating: ★★☆☆☆
 - 2025-06-27. [**以法之名**](https://movie.douban.com/subject/36657787/) - rating: ★★★★☆
+- 2025-06-27. [**F1：狂飙飞车**](https://movie.douban.com/subject/35689244/) - rating: ★★★★★
 
 ## 🎮Games
 - 2025-04-13. [**好莱坞动物 Hollywood Animal**](http://www.douban.com/game/36639414/) - rating: ★★★☆☆
