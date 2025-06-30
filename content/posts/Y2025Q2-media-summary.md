@@ -29,6 +29,7 @@ tags: [生活]
 - 2025-06-27. [**F1：狂飙飞车**](https://movie.douban.com/subject/35689244/) - rating: ★★★★★
 - 2025-06-28. [**无名之辈：否极泰来**](https://movie.douban.com/subject/37155318/) - rating: ★★★★☆
 - 2025-06-28. [**恶意**](https://movie.douban.com/subject/36809947/) - rating: ★★★☆☆
+- 2025-06-30. [**橘祥如意**](https://movie.douban.com/subject/36807682/) - rating: ★☆☆☆☆
 
 ## 🎮Games
 - 2025-04-13. [**好莱坞动物 Hollywood Animal**](http://www.douban.com/game/36639414/) - rating: ★★★☆☆
