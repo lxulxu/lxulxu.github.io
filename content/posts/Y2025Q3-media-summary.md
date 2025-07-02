@@ -5,6 +5,9 @@ categories: [生活]
 tags: [生活]
 ---
 
+## 🎬MOVIES
+- 2025-07-02. [**侏罗纪世界：重生**](https://movie.douban.com/subject/36743767/) - rating: ★★★☆☆
+
 ## 🎵MUSIC
 - 2025-07-01. [**猜（电影《热辣滚烫》热辣心动曲）**](https://open.spotify.com/track/58OKa3g5rRVpFer06Z1Ahw) - by *希林娜依•高* from the album '猜（电影《热辣滚烫》热辣心动曲）'
 - 2025-07-01. [**藏星（电影《热辣滚烫》热辣绽放曲）**](https://open.spotify.com/track/1oCw1EeqkMIoum1FQUgEaj) - by *Silence Wang* from the album '藏星（电影《热辣滚烫》热辣绽放曲）'
