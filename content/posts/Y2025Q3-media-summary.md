@@ -7,6 +7,7 @@ tags: [生活]
 
 ## 🎬MOVIES
 - 2025-07-02. [**侏罗纪世界：重生**](https://movie.douban.com/subject/36743767/) - rating: ★★★☆☆
+- 2025-07-05. [**书卷一梦**](https://movie.douban.com/subject/36744438/) - rating: ★★★☆☆
 
 ## 🎵MUSIC
 - 2025-07-01. [**你和我和他之間**](https://open.spotify.com/track/52AQsGTohwUtmEhoV8fAbz) - by *Princess Ai, 竇智孔* from the album '愛情風暴 美麗99 電視原聲帶'
@@ -25,7 +26,6 @@ tags: [生活]
 - 2025-07-02. [**喜歡你(喜歡我)**](https://open.spotify.com/track/2CJzadzgwIKRdsEtAAHhef) - by *Yida Huang* from the album '黃義達 過程 精選'
 - 2025-07-02. [**好心分手 (feat. Leehom Wang)**](https://open.spotify.com/track/7DQOE8yIchm7bPPvJ0w6Bf) - by *Candy Lo, Leehom Wang* from the album '不能不愛…盧巧音精選'
 - 2025-07-02. [**壁虎漫步**](https://open.spotify.com/track/58T97zYGBi59x0MVfLkAPK) - by *Will Pan* from the album '壁虎漫步'
-- 2025-07-03. [**Rewrite The Stars**](https://open.spotify.com/track/65fpYBrI8o2cfrwf2US4gq) - by *Zac Efron, Zendaya* from the album 'The Greatest Showman (Original Motion Picture Soundtrack)'
 - 2025-07-03. [**Never Enough**](https://open.spotify.com/track/0Gl5s8IhMmQE5YQwM8Qx1J) - by *Loren Allred* from the album 'The Greatest Showman (Original Motion Picture Soundtrack)'
 - 2025-07-03. [**All You Wanna Do**](https://open.spotify.com/track/1U0hiOuodfSsxdcTYXGEdT) - by *SIX, Aimie Atkinson* from the album 'Six: The Musical (Studio Cast Recording)'
 - 2025-07-03. [**Heart of Stone**](https://open.spotify.com/track/3akeuMy9bqJbqDlfYevbwN) - by *SIX, Natalie Paris* from the album 'Six: The Musical (Studio Cast Recording)'
@@ -46,8 +46,10 @@ tags: [生活]
 - 2025-07-04. [**Speechless (Full)**](https://open.spotify.com/track/0XPsOSYzDJZJArevQNm2AR) - by *Naomi Scott* from the album 'Aladdin (Original Motion Picture Soundtrack)'
 - 2025-07-04. [**Les maudits mots d'amour**](https://open.spotify.com/track/1aYN7p7BYwjJ83a6p9arm4) - by *Le rouge et le noir* from the album 'Le rouge et le noir (L'opéra rock)'
 - 2025-07-04. [**Ding dong**](https://open.spotify.com/track/1Wy78lLTaVuDoMgUvaSCoq) - by *Le rouge et le noir* from the album 'Le rouge et le noir (L'opéra rock)'
+- 2025-07-04. [**Rewrite The Stars**](https://open.spotify.com/track/65fpYBrI8o2cfrwf2US4gq) - by *Zac Efron, Zendaya* from the album 'The Greatest Showman (Original Motion Picture Soundtrack)'
 - 2025-07-04. [**我想更懂你**](https://open.spotify.com/track/2KOPdJkJnZnoKrsSk2XvCS) - by *Will Pan, Julie Sue* from the album '反轉地球'
 - 2025-07-04. [**背對背擁抱**](https://open.spotify.com/track/5OZeRuBBRpEY13BagcAOLJ) - by *JJ Lin* from the album 'JJ林俊傑100天'
 - 2025-07-04. [**Marvin Gaye (feat. Wale) - Remix**](https://open.spotify.com/track/4LfkoDOt4mhrbo8Ndk37sQ) - by *Charlie Puth, Wale* from the album 'Nine Track Mind (Special Edition)'
 - 2025-07-04. [**See You Again (feat. Charlie Puth)**](https://open.spotify.com/track/66CFbqJScx6zRieGllITcs) - by *Wiz Khalifa, Charlie Puth* from the album 'Nine Track Mind'
+- 2025-07-05. [**烂片剧情**](https://open.spotify.com/track/488IBZgAqHQmUDjg9kTQYG) - by *LBI利比* from the album '烂片剧情'
 
