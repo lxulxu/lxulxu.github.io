@@ -9,6 +9,9 @@ tags: [生活]
 - 2025-07-02. [**侏罗纪世界：重生**](https://movie.douban.com/subject/36743767/) - rating: ★★★☆☆
 - 2025-07-05. [**书卷一梦**](https://movie.douban.com/subject/36744438/) - rating: ★★★☆☆
 
+## 🎭Dramas
+- 2025-07-06. [**对称性破缺**](https://www.douban.com/location/drama/36012304/) - rating: ★★★★☆
+
 ## 🎵MUSIC
 - 2025-07-01. [**你和我和他之間**](https://open.spotify.com/track/52AQsGTohwUtmEhoV8fAbz) - by *Princess Ai, 竇智孔* from the album '愛情風暴 美麗99 電視原聲帶'
 - 2025-07-01. [**Bye Bye Bye**](https://open.spotify.com/track/62bOmKYxYg7dhrC6gH9vFn) - by **NSYNC* from the album 'No Strings Attached'
