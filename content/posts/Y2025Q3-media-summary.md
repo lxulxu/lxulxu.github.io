@@ -55,4 +55,6 @@ tags: [生活]
 - 2025-07-08. [**不得不愛**](https://open.spotify.com/track/3TYzES2lL8BTPE4uudj0Hj) - by *Will Pan, Xian Zi* from the album '高手'
 - 2025-07-08. [**雙人舞**](https://open.spotify.com/track/4LPhJ4cm8hlFCNMJExSlb6) - by *Will Pan* from the album '零零七'
 - 2025-07-08. [**我想更懂你**](https://open.spotify.com/track/2KOPdJkJnZnoKrsSk2XvCS) - by *Will Pan, Julie Sue* from the album '反轉地球'
+- 2025-07-09. [**想見你想見你想見你**](https://open.spotify.com/track/7HNUZMyUPNhwdnaiVVY9Th) - by *JJ Lin* from the album 'JJ的咖啡調調, Vol.1'
+- 2025-07-09. [**美**](https://open.spotify.com/track/3iXuaKfNbtZkmDyhUfD5TD) - by *Leehom Wang* from the album '十八般武藝'
 
