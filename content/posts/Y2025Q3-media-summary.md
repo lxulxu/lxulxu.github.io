@@ -33,7 +33,6 @@ tags: [生活]
 - 2025-07-04. [**See You Again (feat. Charlie Puth)**](https://open.spotify.com/track/66CFbqJScx6zRieGllITcs) - by *Wiz Khalifa, Charlie Puth* from the album 'Nine Track Mind'
 - 2025-07-05. [**烂片剧情**](https://open.spotify.com/track/488IBZgAqHQmUDjg9kTQYG) - by *LBI利比* from the album '烂片剧情'
 - 2025-07-07. [**壁虎漫步**](https://open.spotify.com/track/58T97zYGBi59x0MVfLkAPK) - by *Will Pan* from the album '壁虎漫步'
-- 2025-07-08. [**夏天**](https://open.spotify.com/track/5plHkhLqsFla3nUJhtSZ7w) - by *Nicky Lee* from the album '好玖'
 - 2025-07-08. [**你和我和他之間**](https://open.spotify.com/track/52AQsGTohwUtmEhoV8fAbz) - by *Princess Ai, 竇智孔* from the album '愛情風暴 美麗99 電視原聲帶'
 - 2025-07-08. [**Le bien qui fait mal**](https://open.spotify.com/track/4l9fRnSDAn1aeNcMl5N7rE) - by *Mozart Opera Rock* from the album 'Mozart l'Opera Rock (standard)'
 - 2025-07-08. [**L'assasymphonie**](https://open.spotify.com/track/3fAOSZc5hTpnXxSO43ymwu) - by *Mozart Opera Rock* from the album 'Mozart l'Opera Rock (standard)'
@@ -55,6 +54,7 @@ tags: [生活]
 - 2025-07-08. [**不得不愛**](https://open.spotify.com/track/3TYzES2lL8BTPE4uudj0Hj) - by *Will Pan, Xian Zi* from the album '高手'
 - 2025-07-08. [**雙人舞**](https://open.spotify.com/track/4LPhJ4cm8hlFCNMJExSlb6) - by *Will Pan* from the album '零零七'
 - 2025-07-08. [**我想更懂你**](https://open.spotify.com/track/2KOPdJkJnZnoKrsSk2XvCS) - by *Will Pan, Julie Sue* from the album '反轉地球'
+- 2025-07-09. [**夏天**](https://open.spotify.com/track/5plHkhLqsFla3nUJhtSZ7w) - by *Nicky Lee* from the album '好玖'
 - 2025-07-09. [**想見你想見你想見你**](https://open.spotify.com/track/7HNUZMyUPNhwdnaiVVY9Th) - by *JJ Lin* from the album 'JJ的咖啡調調, Vol.1'
 - 2025-07-09. [**美**](https://open.spotify.com/track/3iXuaKfNbtZkmDyhUfD5TD) - by *Leehom Wang* from the album '十八般武藝'
 
