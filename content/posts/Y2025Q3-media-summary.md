@@ -8,6 +8,7 @@ tags: [生活]
 ## 🎬MOVIES
 - 2025-07-02. [**侏罗纪世界：重生**](https://movie.douban.com/subject/36743767/) - rating: ★★★☆☆
 - 2025-07-05. [**书卷一梦**](https://movie.douban.com/subject/36744438/) - rating: ★★★☆☆
+- 2025-07-11. [**超人**](https://movie.douban.com/subject/36188176/) - rating: ★★★★★
 
 ## 🎭Dramas
 - 2025-07-06. [**对称性破缺**](https://www.douban.com/location/drama/36012304/) - rating: ★★★★☆
@@ -50,12 +51,13 @@ tags: [生活]
 - 2025-07-08. [**All You Wanna Do**](https://open.spotify.com/track/1U0hiOuodfSsxdcTYXGEdT) - by *SIX, Aimie Atkinson* from the album 'Six: The Musical (Studio Cast Recording)'
 - 2025-07-08. [**Heart of Stone**](https://open.spotify.com/track/3akeuMy9bqJbqDlfYevbwN) - by *SIX, Natalie Paris* from the album 'Six: The Musical (Studio Cast Recording)'
 - 2025-07-08. [**我想更懂你**](https://open.spotify.com/track/2KOPdJkJnZnoKrsSk2XvCS) - by *Will Pan, Julie Sue* from the album '反轉地球'
-- 2025-07-09. [**夏天**](https://open.spotify.com/track/5plHkhLqsFla3nUJhtSZ7w) - by *Nicky Lee* from the album '好玖'
-- 2025-07-09. [**你和我和他之間**](https://open.spotify.com/track/52AQsGTohwUtmEhoV8fAbz) - by *Princess Ai, 竇智孔* from the album '愛情風暴 美麗99 電視原聲帶'
-- 2025-07-09. [**Tell Me**](https://open.spotify.com/track/3Ll7zVo1ZCuyxHs9ATaQUh) - by *Will Pan* from the album '壁虎漫步'
-- 2025-07-09. [**不得不愛**](https://open.spotify.com/track/3TYzES2lL8BTPE4uudj0Hj) - by *Will Pan, Xian Zi* from the album '高手'
-- 2025-07-09. [**雙人舞**](https://open.spotify.com/track/4LPhJ4cm8hlFCNMJExSlb6) - by *Will Pan* from the album '零零七'
 - 2025-07-09. [**想見你想見你想見你**](https://open.spotify.com/track/7HNUZMyUPNhwdnaiVVY9Th) - by *JJ Lin* from the album 'JJ的咖啡調調, Vol.1'
 - 2025-07-09. [**美**](https://open.spotify.com/track/3iXuaKfNbtZkmDyhUfD5TD) - by *Leehom Wang* from the album '十八般武藝'
+- 2025-07-10. [**夏天**](https://open.spotify.com/track/5plHkhLqsFla3nUJhtSZ7w) - by *Nicky Lee* from the album '好玖'
+- 2025-07-10. [**你和我和他之間**](https://open.spotify.com/track/52AQsGTohwUtmEhoV8fAbz) - by *Princess Ai, 竇智孔* from the album '愛情風暴 美麗99 電視原聲帶'
+- 2025-07-10. [**Tell Me**](https://open.spotify.com/track/3Ll7zVo1ZCuyxHs9ATaQUh) - by *Will Pan* from the album '壁虎漫步'
+- 2025-07-10. [**不得不愛**](https://open.spotify.com/track/3TYzES2lL8BTPE4uudj0Hj) - by *Will Pan, Xian Zi* from the album '高手'
+- 2025-07-10. [**雙人舞**](https://open.spotify.com/track/4LPhJ4cm8hlFCNMJExSlb6) - by *Will Pan* from the album '零零七'
 - 2025-07-10. [**Relaxation Rain Fall (Loopable no fade)**](https://open.spotify.com/track/6FPIhFmg1CgyHAsxyBVW3y) - by *Dream Supplier, Calming Nature Sounds, Baby Sleeps* from the album 'Best Cozy Rain For Sleeping (Loopable)'
+- 2025-07-11. [**Stay With Me**](https://open.spotify.com/track/1HYzRuWjmS9LXCkdVHi25K) - by *CHANYEOL, Punch* from the album 'Guardian (Original Television Soundtrack), Pt. 1'
 
