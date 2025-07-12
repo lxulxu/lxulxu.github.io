@@ -10,6 +10,8 @@ tags: [生活]
 - 2025-07-05. [**书卷一梦**](https://movie.douban.com/subject/36744438/) - rating: ★★★☆☆
 - 2025-07-11. [**超人**](https://movie.douban.com/subject/36188176/) - rating: ★★★★☆
 - 2025-07-11. [**孽扣**](https://movie.douban.com/subject/1293297/) - rating: ★★★★★
+- 2025-07-12. [**聊斋奇女子**](https://movie.douban.com/subject/3032443/) - rating: ★★★★☆
+- 2025-07-12. [**聊斋：兰若寺**](https://movie.douban.com/subject/36289419/) - rating: ★★★★☆
 
 ## 🎭Dramas
 - 2025-07-06. [**对称性破缺**](https://www.douban.com/location/drama/36012304/) - rating: ★★★★☆
