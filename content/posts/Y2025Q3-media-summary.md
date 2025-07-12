@@ -12,6 +12,7 @@ tags: [生活]
 - 2025-07-11. [**孽扣**](https://movie.douban.com/subject/1293297/) - rating: ★★★★★
 - 2025-07-12. [**聊斋奇女子**](https://movie.douban.com/subject/3032443/) - rating: ★★★★☆
 - 2025-07-12. [**聊斋：兰若寺**](https://movie.douban.com/subject/36289419/) - rating: ★★★★☆
+- 2025-07-12. [**戏台**](https://movie.douban.com/subject/35483395/) - rating: ★★★★☆
 
 ## 🎭Dramas
 - 2025-07-06. [**对称性破缺**](https://www.douban.com/location/drama/36012304/) - rating: ★★★★☆
