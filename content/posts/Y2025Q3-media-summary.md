@@ -61,9 +61,9 @@ tags: [生活]
 - 2025-07-10. [**你和我和他之間**](https://open.spotify.com/track/52AQsGTohwUtmEhoV8fAbz) - by *Princess Ai, 竇智孔* from the album '愛情風暴 美麗99 電視原聲帶'
 - 2025-07-10. [**Tell Me**](https://open.spotify.com/track/3Ll7zVo1ZCuyxHs9ATaQUh) - by *Will Pan* from the album '壁虎漫步'
 - 2025-07-10. [**不得不愛**](https://open.spotify.com/track/3TYzES2lL8BTPE4uudj0Hj) - by *Will Pan, Xian Zi* from the album '高手'
-- 2025-07-10. [**雙人舞**](https://open.spotify.com/track/4LPhJ4cm8hlFCNMJExSlb6) - by *Will Pan* from the album '零零七'
 - 2025-07-10. [**Relaxation Rain Fall (Loopable no fade)**](https://open.spotify.com/track/6FPIhFmg1CgyHAsxyBVW3y) - by *Dream Supplier, Calming Nature Sounds, Baby Sleeps* from the album 'Best Cozy Rain For Sleeping (Loopable)'
 - 2025-07-11. [**Stay With Me**](https://open.spotify.com/track/1HYzRuWjmS9LXCkdVHi25K) - by *CHANYEOL, Punch* from the album 'Guardian (Original Television Soundtrack), Pt. 1'
+- 2025-07-11. [**雙人舞**](https://open.spotify.com/track/4LPhJ4cm8hlFCNMJExSlb6) - by *Will Pan* from the album '零零七'
 - 2025-07-11. [**想見你想見你想見你**](https://open.spotify.com/track/7HNUZMyUPNhwdnaiVVY9Th) - by *JJ Lin* from the album 'JJ的咖啡調調, Vol.1'
 - 2025-07-11. [**心動**](https://open.spotify.com/track/6c6bGcH9CWUJOHQKCGLX0j) - by *Kit Chan* from the album '重譯 陳潔儀'
 
