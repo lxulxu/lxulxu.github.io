@@ -64,6 +64,7 @@ tags: [生活]
 - 2025-07-11. [**雙人舞**](https://open.spotify.com/track/4LPhJ4cm8hlFCNMJExSlb6) - by *Will Pan* from the album '零零七'
 - 2025-07-11. [**想見你想見你想見你**](https://open.spotify.com/track/7HNUZMyUPNhwdnaiVVY9Th) - by *JJ Lin* from the album 'JJ的咖啡調調, Vol.1'
 - 2025-07-11. [**心動**](https://open.spotify.com/track/6c6bGcH9CWUJOHQKCGLX0j) - by *Kit Chan* from the album '重譯 陳潔儀'
+- 2025-07-15. [**The 6th Summer**](https://open.spotify.com/track/1lODrFR40rSNAw5cX4j2J2) - by *PLAVE* from the album 'ASTERUM : The Shape of Things to Come'
 - 2025-07-15. [**XXL**](https://open.spotify.com/track/05QXjyZgsAq6J84J6SlbyV) - by *YOUNG POSSE* from the album 'XXL EP'
 - 2025-07-15. [**Magnetic**](https://open.spotify.com/track/1aKvZDoLGkNMxoRYgkckZG) - by *ILLIT* from the album 'SUPER REAL ME'
 - 2025-07-15. [**ABCD**](https://open.spotify.com/track/0V2passWyAXnON67kfAj7y) - by *NAYEON* from the album 'NA'
