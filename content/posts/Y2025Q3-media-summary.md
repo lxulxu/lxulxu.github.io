@@ -19,8 +19,6 @@ tags: [生活]
 - 2025-07-06. [**对称性破缺**](https://www.douban.com/location/drama/36012304/) - rating: ★★★★☆
 
 ## 🎵MUSIC
-- 2025-07-01. [**Bye Bye Bye**](https://open.spotify.com/track/62bOmKYxYg7dhrC6gH9vFn) - by **NSYNC* from the album 'No Strings Attached'
-- 2025-07-01. [**Like a Prayer**](https://open.spotify.com/track/2v7ywbUzCgcVohHaKUcacV) - by *Madonna* from the album 'Like a Prayer'
 - 2025-07-01. [**TOO BAD**](https://open.spotify.com/track/0GOqhXyouUxqPEw9ypTOLm) - by *G-DRAGON, Anderson .Paak* from the album 'Übermensch'
 - 2025-07-01. [**COLD (feat.10CM)**](https://open.spotify.com/track/4pZUVR0l4sPl8GKPm6FXDa) - by *YOUNG POSSE, 10CM* from the album 'COLD'
 - 2025-07-01. [**Moonlight (feat. 袁婭維)**](https://open.spotify.com/track/5noC8HGZaLiXNdvGmjemGP) - by *Will Pan, TIA RAY* from the album '節奏先生'
@@ -59,11 +57,22 @@ tags: [生活]
 - 2025-07-09. [**美**](https://open.spotify.com/track/3iXuaKfNbtZkmDyhUfD5TD) - by *Leehom Wang* from the album '十八般武藝'
 - 2025-07-10. [**夏天**](https://open.spotify.com/track/5plHkhLqsFla3nUJhtSZ7w) - by *Nicky Lee* from the album '好玖'
 - 2025-07-10. [**你和我和他之間**](https://open.spotify.com/track/52AQsGTohwUtmEhoV8fAbz) - by *Princess Ai, 竇智孔* from the album '愛情風暴 美麗99 電視原聲帶'
-- 2025-07-10. [**Tell Me**](https://open.spotify.com/track/3Ll7zVo1ZCuyxHs9ATaQUh) - by *Will Pan* from the album '壁虎漫步'
-- 2025-07-10. [**不得不愛**](https://open.spotify.com/track/3TYzES2lL8BTPE4uudj0Hj) - by *Will Pan, Xian Zi* from the album '高手'
 - 2025-07-10. [**Relaxation Rain Fall (Loopable no fade)**](https://open.spotify.com/track/6FPIhFmg1CgyHAsxyBVW3y) - by *Dream Supplier, Calming Nature Sounds, Baby Sleeps* from the album 'Best Cozy Rain For Sleeping (Loopable)'
 - 2025-07-11. [**Stay With Me**](https://open.spotify.com/track/1HYzRuWjmS9LXCkdVHi25K) - by *CHANYEOL, Punch* from the album 'Guardian (Original Television Soundtrack), Pt. 1'
+- 2025-07-11. [**Tell Me**](https://open.spotify.com/track/3Ll7zVo1ZCuyxHs9ATaQUh) - by *Will Pan* from the album '壁虎漫步'
+- 2025-07-11. [**不得不愛**](https://open.spotify.com/track/3TYzES2lL8BTPE4uudj0Hj) - by *Will Pan, Xian Zi* from the album '高手'
 - 2025-07-11. [**雙人舞**](https://open.spotify.com/track/4LPhJ4cm8hlFCNMJExSlb6) - by *Will Pan* from the album '零零七'
 - 2025-07-11. [**想見你想見你想見你**](https://open.spotify.com/track/7HNUZMyUPNhwdnaiVVY9Th) - by *JJ Lin* from the album 'JJ的咖啡調調, Vol.1'
 - 2025-07-11. [**心動**](https://open.spotify.com/track/6c6bGcH9CWUJOHQKCGLX0j) - by *Kit Chan* from the album '重譯 陳潔儀'
+- 2025-07-15. [**XXL**](https://open.spotify.com/track/05QXjyZgsAq6J84J6SlbyV) - by *YOUNG POSSE* from the album 'XXL EP'
+- 2025-07-15. [**Magnetic**](https://open.spotify.com/track/1aKvZDoLGkNMxoRYgkckZG) - by *ILLIT* from the album 'SUPER REAL ME'
+- 2025-07-15. [**ABCD**](https://open.spotify.com/track/0V2passWyAXnON67kfAj7y) - by *NAYEON* from the album 'NA'
+- 2025-07-15. [**Strawberry Rush**](https://open.spotify.com/track/1gq1gf44tZ9cyTdlcyoJd1) - by *CHUU* from the album 'Strawberry Rush'
+- 2025-07-15. [**Bye Bye Bye**](https://open.spotify.com/track/62bOmKYxYg7dhrC6gH9vFn) - by **NSYNC* from the album 'No Strings Attached'
+- 2025-07-15. [**Bring Em Out**](https://open.spotify.com/track/7oAZVxmRCVFanxK7tk16vv) - by *T.I.* from the album 'Urban Legend'
+- 2025-07-15. [**Like a Prayer**](https://open.spotify.com/track/2v7ywbUzCgcVohHaKUcacV) - by *Madonna* from the album 'Like a Prayer'
+- 2025-07-15. [**A Sleepless Night**](https://open.spotify.com/track/7wlCdfpxaWQPaxspDIN3wX) - by *CNBLUE* from the album 'X'
+- 2025-07-15. [**Có Em Chờ**](https://open.spotify.com/track/6KIhgRkprgyJNERRMu7Quh) - by *MIN* from the album 'Có Em Chờ'
+- 2025-07-15. [**Hwi hwi**](https://open.spotify.com/track/7eByzTxKr1MYqYLj8AFsBF) - by *LABOUM* from the album 'MISS THIS KISS'
+- 2025-07-15. [**Balloon in Love**](https://open.spotify.com/track/0VeNNzlIwfJZERTSepu9NQ) - by *SUNMI* from the album 'Balloon in Love'
 
