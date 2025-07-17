@@ -88,4 +88,5 @@ tags: [生活]
 - 2025-07-17. [**THIS IS FOR**](https://open.spotify.com/track/3598iBWrS4JhJqP5tHlpVK) - by *TWICE* from the album 'THIS IS FOR'
 - 2025-07-17. [**Your Idol**](https://open.spotify.com/track/1I37Zz2g3hk9eWxaNkj031) - by *Saja Boys, Andrew Choi, Neckwav, Danny Chung, KEVIN WOO, samUIL Lee, KPop Demon Hunters Cast* from the album 'KPop Demon Hunters (Soundtrack from the Netflix Film)'
 - 2025-07-17. [**Dirty Work (feat. Flo Milli)**](https://open.spotify.com/track/6kBtuFVssWq2rORvq2ssXS) - by *aespa, Flo Milli* from the album 'Dirty Work'
+- 2025-07-17. [**FLOWER**](https://open.spotify.com/track/0bC7GKnxh9W9JIvJ6HVWxc) - by *JISOO* from the album 'ME'
 
