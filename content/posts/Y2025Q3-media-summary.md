@@ -14,6 +14,7 @@ tags: [生活]
 - 2025-07-12. [**聊斋：兰若寺**](https://movie.douban.com/subject/36289419/) - rating: ★★★★☆
 - 2025-07-12. [**戏台**](https://movie.douban.com/subject/35483395/) - rating: ★★★★☆
 - 2025-07-12. [**长安的荔枝**](https://movie.douban.com/subject/36185502/) - rating: ★★★★☆
+- 2025-07-18. [**雪之断章**](https://movie.douban.com/subject/2222981/) - rating: ★★★★☆
 
 ## 🎭Dramas
 - 2025-07-06. [**对称性破缺**](https://www.douban.com/location/drama/36012304/) - rating: ★★★★☆
@@ -60,7 +61,6 @@ tags: [生活]
 - 2025-07-10. [**Relaxation Rain Fall (Loopable no fade)**](https://open.spotify.com/track/6FPIhFmg1CgyHAsxyBVW3y) - by *Dream Supplier, Calming Nature Sounds, Baby Sleeps* from the album 'Best Cozy Rain For Sleeping (Loopable)'
 - 2025-07-11. [**想見你想見你想見你**](https://open.spotify.com/track/7HNUZMyUPNhwdnaiVVY9Th) - by *JJ Lin* from the album 'JJ的咖啡調調, Vol.1'
 - 2025-07-11. [**心動**](https://open.spotify.com/track/6c6bGcH9CWUJOHQKCGLX0j) - by *Kit Chan* from the album '重譯 陳潔儀'
-- 2025-07-14. [**Tell Me**](https://open.spotify.com/track/3Ll7zVo1ZCuyxHs9ATaQUh) - by *Will Pan* from the album '壁虎漫步'
 - 2025-07-14. [**不得不愛**](https://open.spotify.com/track/3TYzES2lL8BTPE4uudj0Hj) - by *Will Pan, Xian Zi* from the album '高手'
 - 2025-07-15. [**The 6th Summer**](https://open.spotify.com/track/1lODrFR40rSNAw5cX4j2J2) - by *PLAVE* from the album 'ASTERUM : The Shape of Things to Come'
 - 2025-07-15. [**XXL**](https://open.spotify.com/track/05QXjyZgsAq6J84J6SlbyV) - by *YOUNG POSSE* from the album 'XXL EP'
@@ -77,6 +77,7 @@ tags: [生活]
 - 2025-07-16. [**Stay With Me**](https://open.spotify.com/track/1HYzRuWjmS9LXCkdVHi25K) - by *CHANYEOL, Punch* from the album 'Guardian (Original Television Soundtrack), Pt. 1'
 - 2025-07-16. [**雙人舞**](https://open.spotify.com/track/4LPhJ4cm8hlFCNMJExSlb6) - by *Will Pan* from the album '零零七'
 - 2025-07-17. [**HOME SWEET HOME (feat. TAEYANG & DAESUNG)**](https://open.spotify.com/track/0Cu8JdYvV9DdmzLzhxaZLH) - by *G-DRAGON, TAEYANG, DAESUNG* from the album 'HOME SWEET HOME (feat. TAEYANG & DAESUNG)'
+- 2025-07-17. [**Tell Me**](https://open.spotify.com/track/3Ll7zVo1ZCuyxHs9ATaQUh) - by *Will Pan* from the album '壁虎漫步'
 - 2025-07-17. [**FOREVER**](https://open.spotify.com/track/0Md02V4hwKO5Vu5B7GD8tQ) - by *BABYMONSTER* from the album 'FOREVER'
 - 2025-07-17. [**Way Back Home**](https://open.spotify.com/track/3NxuezMdSLgt4OwHzBoUhL) - by *SHAUN* from the album 'Take'
 - 2025-07-17. [**WICKED**](https://open.spotify.com/track/2NOMOpss7BmEXTL9f1koqn) - by *ALLDAY PROJECT* from the album 'FAMOUS'
@@ -93,4 +94,5 @@ tags: [生活]
 - 2025-07-18. [**Queencard**](https://open.spotify.com/track/3xtPQCHJQ3o70PeVAaZSG2) - by *i-dle* from the album 'I feel'
 - 2025-07-18. [**VIBE (feat. Jimin of BTS)**](https://open.spotify.com/track/14XLUySagFhP9KoqOTg5ka) - by *TAEYANG, Jimin* from the album 'VIBE (feat. Jimin of BTS)'
 - 2025-07-18. [**DUMB DUMB**](https://open.spotify.com/track/6HAbPNraOVHwShFFtRVTik) - by *JEON SOMI* from the album 'XOXO'
+- 2025-07-18. [**FOREVER 1**](https://open.spotify.com/track/1oen3GpTcA486fTHaT7neg) - by *Girls' Generation* from the album 'FOREVER 1 - The 7th Album'
 
