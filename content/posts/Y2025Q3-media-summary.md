@@ -15,6 +15,7 @@ tags: [生活]
 - 2025-07-12. [**戏台**](https://movie.douban.com/subject/35483395/) - rating: ★★★★☆
 - 2025-07-12. [**长安的荔枝**](https://movie.douban.com/subject/36185502/) - rating: ★★★★☆
 - 2025-07-18. [**雪之断章**](https://movie.douban.com/subject/2222981/) - rating: ★★★★☆
+- 2025-07-19. [**南京照相馆**](https://movie.douban.com/subject/36809864/) - rating: ★★★★☆
 
 ## 🎭Dramas
 - 2025-07-06. [**对称性破缺**](https://www.douban.com/location/drama/36012304/) - rating: ★★★★☆
