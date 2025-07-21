@@ -108,4 +108,5 @@ tags: [生活]
 - 2025-07-20. [**City ASMR White Noise Driving Cars For Sleep (Loopable no fade)**](https://open.spotify.com/track/7b3ay2AnuHrhbkF6XxSIwu) - by *Dream Supplier, Baby Sleeps, Background White Noise* from the album 'Best City Sounds For Sleeping (Loopable)'
 - 2025-07-20. [**Relaxing Rain Fall on Roof (Loopable)**](https://open.spotify.com/track/3GiGgmXh2gRtL6DzEpVlDM) - by *Dream Supplier, Baby Sleeps, Granular Noise* from the album 'Rain Sounds For Sleeping'
 - 2025-07-20. [**Cozy Rain and distant Thunder (Loopable no fade)**](https://open.spotify.com/track/0ITGcxqTUn7HrqMeH7bwTB) - by *Dream Supplier, Calming Nature Sounds, Baby Sleeps* from the album 'Best Cozy Rain For Sleeping (Loopable)'
+- 2025-07-20. [**Birds and Breeze Soothing Nature Sound (Loopable no fade)**](https://open.spotify.com/track/4kSHnQsbUlymSyeFHpknRX) - by *Dream Supplier, Baby Sleeps, Calming Nature Sounds* from the album 'Nature Sounds - Calm Forest For Sleeping (Loopable)'
 
