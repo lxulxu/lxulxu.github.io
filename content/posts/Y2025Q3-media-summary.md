@@ -109,4 +109,5 @@ tags: [生活]
 - 2025-07-20. [**Relaxing Rain Fall on Roof (Loopable)**](https://open.spotify.com/track/3GiGgmXh2gRtL6DzEpVlDM) - by *Dream Supplier, Baby Sleeps, Granular Noise* from the album 'Rain Sounds For Sleeping'
 - 2025-07-20. [**Cozy Rain and distant Thunder (Loopable no fade)**](https://open.spotify.com/track/0ITGcxqTUn7HrqMeH7bwTB) - by *Dream Supplier, Calming Nature Sounds, Baby Sleeps* from the album 'Best Cozy Rain For Sleeping (Loopable)'
 - 2025-07-20. [**Birds and Breeze Soothing Nature Sound (Loopable no fade)**](https://open.spotify.com/track/4kSHnQsbUlymSyeFHpknRX) - by *Dream Supplier, Baby Sleeps, Calming Nature Sounds* from the album 'Nature Sounds - Calm Forest For Sleeping (Loopable)'
+- 2025-07-24. [**Lose My Mind (feat. Doja Cat)**](https://open.spotify.com/track/34irl1fwZjGeArDmY9anKm) - by *Don Toliver, Doja Cat* from the album 'F1 The Album'
 
