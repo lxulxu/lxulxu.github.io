@@ -17,6 +17,7 @@ tags: [生活]
 - 2025-07-18. [**雪之断章**](https://movie.douban.com/subject/2222981/) - rating: ★★★★☆
 - 2025-07-19. [**南京照相馆**](https://movie.douban.com/subject/36809864/) - rating: ★★★★☆
 - 2025-07-19. [**你行！你上！**](https://movie.douban.com/subject/36767956/) - rating: ★★★★☆
+- 2025-07-25. [**神奇4侠：初露锋芒**](https://movie.douban.com/subject/34825559/) - rating: ★★★★☆
 
 ## 🎭Dramas
 - 2025-07-06. [**对称性破缺**](https://www.douban.com/location/drama/36012304/) - rating: ★★★★☆
