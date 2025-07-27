@@ -17,7 +17,7 @@ tags: [生活]
 - 2025-07-18. [**雪之断章**](https://movie.douban.com/subject/2222981/) - rating: ★★★★☆
 - 2025-07-19. [**南京照相馆**](https://movie.douban.com/subject/36809864/) - rating: ★★★★☆
 - 2025-07-19. [**你行！你上！**](https://movie.douban.com/subject/36767956/) - rating: ★★★★☆
-- 2025-07-25. [**神奇4侠：初露锋芒**](https://movie.douban.com/subject/34825559/) - rating: ★★★★☆
+- 2025-07-25. [**神奇4侠：初露锋芒**](https://movie.douban.com/subject/34825559/) - rating: ★★★☆☆
 - 2025-07-26. [**浪浪山小妖怪**](https://movie.douban.com/subject/36438475/) - rating: ★★★★★
 
 ## 🎭Dramas
@@ -128,4 +128,5 @@ tags: [生活]
 - 2025-07-25. [**Just Keep Watching**](https://open.spotify.com/track/2HbCo1YJTZyF8hD3eyFKPN) - by *Tate McRae* from the album 'F1 The Album'
 - 2025-07-25. [**Drive**](https://open.spotify.com/track/0mLumCawWeaMSL5LAHFIo4) - by *Ed Sheeran* from the album 'F1 The Album'
 - 2025-07-25. [**No Room For A Saint (feat. Nathan Nicholson)**](https://open.spotify.com/track/4hInycWYf8bThOgkIHkLPg) - by *Dom Dolla, Nathan Nicholson* from the album 'F1 The Album'
+- 2025-07-27. [**全城熱戀**](https://open.spotify.com/track/24tR0oePzWIECYz7zAn6pg) - by *Silence Wang* from the album '21世紀羅曼史'
 
