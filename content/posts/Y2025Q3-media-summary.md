@@ -22,6 +22,7 @@ tags: [生活]
 
 ## 🎭Dramas
 - 2025-07-06. [**对称性破缺**](https://www.douban.com/location/drama/36012304/) - rating: ★★★★☆
+- 2025-07-26. [**双枰记**](https://www.douban.com/location/drama/35520219/) - rating: ★★★★☆
 
 ## 🎵MUSIC
 - 2025-07-01. [**TOO BAD**](https://open.spotify.com/track/0GOqhXyouUxqPEw9ypTOLm) - by *G-DRAGON, Anderson .Paak* from the album 'Übermensch'
