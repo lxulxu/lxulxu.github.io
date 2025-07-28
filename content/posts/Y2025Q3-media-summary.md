@@ -129,4 +129,6 @@ tags: [生活]
 - 2025-07-25. [**Drive**](https://open.spotify.com/track/0mLumCawWeaMSL5LAHFIo4) - by *Ed Sheeran* from the album 'F1 The Album'
 - 2025-07-25. [**No Room For A Saint (feat. Nathan Nicholson)**](https://open.spotify.com/track/4hInycWYf8bThOgkIHkLPg) - by *Dom Dolla, Nathan Nicholson* from the album 'F1 The Album'
 - 2025-07-27. [**全城熱戀**](https://open.spotify.com/track/24tR0oePzWIECYz7zAn6pg) - by *Silence Wang* from the album '21世紀羅曼史'
+- 2025-07-28. [**如果爱忘了 - Live**](https://open.spotify.com/track/4OGJgmLfgtLCpWVLg4fvPl) - by *Silence Wang, 單依純* from the album '声生不息.家年华 (第十二期 Live)'
+- 2025-07-28. [**像晴天像雨天（电视剧《难哄》心动曲）**](https://open.spotify.com/track/298LjjcBvuQCAlwUWb9dKb) - by *Silence Wang* from the album '电视剧《难哄》影视原声带·只喜欢你Love Moments'
 
