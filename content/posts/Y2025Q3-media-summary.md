@@ -134,4 +134,5 @@ tags: [生活]
 - 2025-07-29. [**沒有我妳怎麼辦**](https://open.spotify.com/track/2EvwpvbcwU5qRYFbvgWh8p) - by *何潤東* from the album '沒有我妳怎麼辦'
 - 2025-07-29. [**像晴天像雨天（电视剧《难哄》心动曲）**](https://open.spotify.com/track/298LjjcBvuQCAlwUWb9dKb) - by *Silence Wang* from the album '电视剧《难哄》影视原声带·只喜欢你Love Moments'
 - 2025-07-29. [**年轮**](https://open.spotify.com/track/7pSHVmCVBw8QJyH8tK89lx) - by *Silence Wang* from the album '年轮'
+- 2025-07-30. [**一千年以後**](https://open.spotify.com/track/1J59cbPdIwiUMtX1ee7NwM) - by *JJ Lin* from the album '林俊傑2003年-2010年作品精選集'
 
