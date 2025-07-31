@@ -19,6 +19,8 @@ tags: [生活]
 - 2025-07-19. [**你行！你上！**](https://movie.douban.com/subject/36767956/) - rating: ★★★★☆
 - 2025-07-25. [**神奇4侠：初露锋芒**](https://movie.douban.com/subject/34825559/) - rating: ★★★☆☆
 - 2025-07-26. [**浪浪山小妖怪**](https://movie.douban.com/subject/36438475/) - rating: ★★★★★
+- 2025-07-31. [**脱口秀和Ta的朋友们 第二季**](https://movie.douban.com/subject/37296943/) - rating: ★★★☆☆
+- 2025-07-31. [**喜剧之王单口季 第二季**](https://movie.douban.com/subject/37315781/) - rating: ★★★☆☆
 
 ## 🎭Dramas
 - 2025-07-06. [**对称性破缺**](https://www.douban.com/location/drama/36012304/) - rating: ★★★★☆
