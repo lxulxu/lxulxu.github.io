@@ -21,6 +21,7 @@ tags: [生活]
 - 2025-07-26. [**浪浪山小妖怪**](https://movie.douban.com/subject/36438475/) - rating: ★★★★★
 - 2025-07-31. [**脱口秀和Ta的朋友们 第二季**](https://movie.douban.com/subject/37296943/) - rating: ★★★☆☆
 - 2025-07-31. [**喜剧之王单口季 第二季**](https://movie.douban.com/subject/37315781/) - rating: ★★★☆☆
+- 2025-08-01. [**花漾少女杀人事件**](https://movie.douban.com/subject/35183324/) - rating: ★★★★☆
 
 ## 🎭Dramas
 - 2025-07-06. [**对称性破缺**](https://www.douban.com/location/drama/36012304/) - rating: ★★★★☆
@@ -122,7 +123,6 @@ tags: [生活]
 - 2025-07-25. [**All At Once**](https://open.spotify.com/track/01oPwjIUEAtNdDPI1H09eh) - by *Madison Beer* from the album 'F1 The Album'
 - 2025-07-25. [**OMG!**](https://open.spotify.com/track/3zAKFFUsZQsQxtE7FNSUoe) - by *Tiësto, Sexyy Red* from the album 'F1 The Album'
 - 2025-07-25. [**Bad As I Used To Be**](https://open.spotify.com/track/11AfHdYnWqd8ez0u3VHw6E) - by *Chris Stapleton* from the album 'F1 The Album'
-- 2025-07-28. [**Lose My Mind (feat. Doja Cat)**](https://open.spotify.com/track/34irl1fwZjGeArDmY9anKm) - by *Don Toliver, Doja Cat* from the album 'F1 The Album'
 - 2025-07-28. [**Grandma Calls The Boy Bad News**](https://open.spotify.com/track/6joRiv1DoamZ0AyBvQg8T6) - by *RAYE* from the album 'F1 The Album'
 - 2025-07-28. [**Underdog**](https://open.spotify.com/track/65yeENgVx7lU0VR3PxGTyZ) - by *Roddy Ricch* from the album 'F1 The Album'
 - 2025-07-28. [**Don't Let Me Drown**](https://open.spotify.com/track/51VUNKCTKQSqs76NoVbdPI) - by *Burna Boy* from the album 'F1 The Album'
@@ -131,10 +131,11 @@ tags: [生活]
 - 2025-07-28. [**Drive**](https://open.spotify.com/track/0mLumCawWeaMSL5LAHFIo4) - by *Ed Sheeran* from the album 'F1 The Album'
 - 2025-07-28. [**No Room For A Saint (feat. Nathan Nicholson)**](https://open.spotify.com/track/4hInycWYf8bThOgkIHkLPg) - by *Dom Dolla, Nathan Nicholson* from the album 'F1 The Album'
 - 2025-07-28. [**如果爱忘了 - Live**](https://open.spotify.com/track/4OGJgmLfgtLCpWVLg4fvPl) - by *Silence Wang, 單依純* from the album '声生不息.家年华 (第十二期 Live)'
-- 2025-07-28. [**총맞은것처럼**](https://open.spotify.com/track/1TnykJShAmwjk8y1WZSD3W) - by *Baek Z Young* from the album 'Sensibility'
 - 2025-07-29. [**沒有我妳怎麼辦**](https://open.spotify.com/track/2EvwpvbcwU5qRYFbvgWh8p) - by *何潤東* from the album '沒有我妳怎麼辦'
 - 2025-07-29. [**像晴天像雨天（电视剧《难哄》心动曲）**](https://open.spotify.com/track/298LjjcBvuQCAlwUWb9dKb) - by *Silence Wang* from the album '电视剧《难哄》影视原声带·只喜欢你Love Moments'
+- 2025-07-29. [**총맞은것처럼**](https://open.spotify.com/track/1TnykJShAmwjk8y1WZSD3W) - by *Baek Z Young* from the album 'Sensibility'
 - 2025-07-29. [**年轮**](https://open.spotify.com/track/7pSHVmCVBw8QJyH8tK89lx) - by *Silence Wang* from the album '年轮'
 - 2025-07-30. [**全城熱戀**](https://open.spotify.com/track/24tR0oePzWIECYz7zAn6pg) - by *Silence Wang* from the album '21世紀羅曼史'
 - 2025-07-30. [**一千年以後**](https://open.spotify.com/track/1J59cbPdIwiUMtX1ee7NwM) - by *JJ Lin* from the album '林俊傑2003年-2010年作品精選集'
+- 2025-08-01. [**Lose My Mind (feat. Doja Cat)**](https://open.spotify.com/track/34irl1fwZjGeArDmY9anKm) - by *Don Toliver, Doja Cat* from the album 'F1 The Album'
 
