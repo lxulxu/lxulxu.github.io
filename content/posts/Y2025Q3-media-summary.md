@@ -23,6 +23,9 @@ tags: [生活]
 - 2025-07-31. [**喜剧之王单口季 第二季**](https://movie.douban.com/subject/37315781/) - rating: ★★★☆☆
 - 2025-08-01. [**花漾少女杀人事件**](https://movie.douban.com/subject/35183324/) - rating: ★★★★☆
 
+## 🎮Games
+- 2025-08-02. [**多重人生 The Alters**](http://www.douban.com/game/35928518/) - rating: ★★★★★
+
 ## 🎭Dramas
 - 2025-07-06. [**对称性破缺**](https://www.douban.com/location/drama/36012304/) - rating: ★★★★☆
 - 2025-07-26. [**双枰记**](https://www.douban.com/location/drama/35520219/) - rating: ★★★★☆
@@ -138,4 +141,5 @@ tags: [生活]
 - 2025-07-30. [**全城熱戀**](https://open.spotify.com/track/24tR0oePzWIECYz7zAn6pg) - by *Silence Wang* from the album '21世紀羅曼史'
 - 2025-07-30. [**一千年以後**](https://open.spotify.com/track/1J59cbPdIwiUMtX1ee7NwM) - by *JJ Lin* from the album '林俊傑2003年-2010年作品精選集'
 - 2025-08-01. [**Lose My Mind (feat. Doja Cat)**](https://open.spotify.com/track/34irl1fwZjGeArDmY9anKm) - by *Don Toliver, Doja Cat* from the album 'F1 The Album'
+- 2025-08-02. [**Papillon**](https://open.spotify.com/track/7EFmA3zysrOPJNRqhYCOVd) - by *Jackson Wang, BOYTOY* from the album 'Papillon'
 
