@@ -70,7 +70,6 @@ tags: [生活]
 - 2025-07-10. [**夏天**](https://open.spotify.com/track/5plHkhLqsFla3nUJhtSZ7w) - by *Nicky Lee* from the album '好玖'
 - 2025-07-10. [**你和我和他之間**](https://open.spotify.com/track/52AQsGTohwUtmEhoV8fAbz) - by *Princess Ai, 竇智孔* from the album '愛情風暴 美麗99 電視原聲帶'
 - 2025-07-10. [**Relaxation Rain Fall (Loopable no fade)**](https://open.spotify.com/track/6FPIhFmg1CgyHAsxyBVW3y) - by *Dream Supplier, Calming Nature Sounds, Baby Sleeps* from the album 'Best Cozy Rain For Sleeping (Loopable)'
-- 2025-07-11. [**想見你想見你想見你**](https://open.spotify.com/track/7HNUZMyUPNhwdnaiVVY9Th) - by *JJ Lin* from the album 'JJ的咖啡調調, Vol.1'
 - 2025-07-15. [**The 6th Summer**](https://open.spotify.com/track/1lODrFR40rSNAw5cX4j2J2) - by *PLAVE* from the album 'ASTERUM : The Shape of Things to Come'
 - 2025-07-15. [**XXL**](https://open.spotify.com/track/05QXjyZgsAq6J84J6SlbyV) - by *YOUNG POSSE* from the album 'XXL EP'
 - 2025-07-15. [**Magnetic**](https://open.spotify.com/track/1aKvZDoLGkNMxoRYgkckZG) - by *ILLIT* from the album 'SUPER REAL ME'
@@ -141,6 +140,7 @@ tags: [生活]
 - 2025-07-30. [**一千年以後**](https://open.spotify.com/track/1J59cbPdIwiUMtX1ee7NwM) - by *JJ Lin* from the album '林俊傑2003年-2010年作品精選集'
 - 2025-08-01. [**Lose My Mind (feat. Doja Cat)**](https://open.spotify.com/track/34irl1fwZjGeArDmY9anKm) - by *Don Toliver, Doja Cat* from the album 'F1 The Album'
 - 2025-08-02. [**Papillon**](https://open.spotify.com/track/7EFmA3zysrOPJNRqhYCOVd) - by *Jackson Wang, BOYTOY* from the album 'Papillon'
+- 2025-08-03. [**想見你想見你想見你**](https://open.spotify.com/track/7HNUZMyUPNhwdnaiVVY9Th) - by *JJ Lin* from the album 'JJ的咖啡調調, Vol.1'
 - 2025-08-03. [**心動**](https://open.spotify.com/track/6c6bGcH9CWUJOHQKCGLX0j) - by *Kit Chan* from the album '重譯 陳潔儀'
 - 2025-08-03. [**黑眼圈**](https://open.spotify.com/track/0BbDMqCtljeH9hLGVnwKex) - by *Silence Wang* from the album '傳世樂章'
 
