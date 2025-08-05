@@ -22,6 +22,7 @@ tags: [生活]
 - 2025-07-31. [**脱口秀和Ta的朋友们 第二季**](https://movie.douban.com/subject/37296943/) - rating: ★★★☆☆
 - 2025-07-31. [**喜剧之王单口季 第二季**](https://movie.douban.com/subject/37315781/) - rating: ★★★☆☆
 - 2025-08-01. [**花漾少女杀人事件**](https://movie.douban.com/subject/35183324/) - rating: ★★★★☆
+- 2025-08-05. [**华山论剑**](https://movie.douban.com/subject/37346623/) - rating: ★★★☆☆
 
 ## 🎮Games
 - 2025-08-02. [**多重人生 The Alters**](http://www.douban.com/game/35928518/) - rating: ★★★★★
