@@ -33,7 +33,6 @@ tags: [生活]
 - 2025-07-26. [**双枰记**](https://www.douban.com/location/drama/35520219/) - rating: ★★★★☆
 
 ## 🎵MUSIC
-- 2025-07-01. [**TOO BAD**](https://open.spotify.com/track/0GOqhXyouUxqPEw9ypTOLm) - by *G-DRAGON, Anderson .Paak* from the album 'Übermensch'
 - 2025-07-01. [**Moonlight (feat. 袁婭維)**](https://open.spotify.com/track/5noC8HGZaLiXNdvGmjemGP) - by *Will Pan, TIA RAY* from the album '節奏先生'
 - 2025-07-01. [**路太彎**](https://open.spotify.com/track/1i7KVp7DLd83PzgSxYP4BA) - by *Will Pan* from the album '玩酷'
 - 2025-07-01. [**愛你 3000 (feat. 黃旭 & 肖恩恩)**](https://open.spotify.com/track/3mDXKCNevloygtXPcE1UZP) - by *Will Pan, 黃旭, SeanT肖恩恩* from the album '節奏先生'
@@ -79,7 +78,6 @@ tags: [生活]
 - 2025-07-15. [**Bye Bye Bye**](https://open.spotify.com/track/62bOmKYxYg7dhrC6gH9vFn) - by **NSYNC* from the album 'No Strings Attached'
 - 2025-07-15. [**Bring Em Out**](https://open.spotify.com/track/7oAZVxmRCVFanxK7tk16vv) - by *T.I.* from the album 'Urban Legend'
 - 2025-07-15. [**Like a Prayer**](https://open.spotify.com/track/2v7ywbUzCgcVohHaKUcacV) - by *Madonna* from the album 'Like a Prayer'
-- 2025-07-15. [**A Sleepless Night**](https://open.spotify.com/track/7wlCdfpxaWQPaxspDIN3wX) - by *CNBLUE* from the album 'X'
 - 2025-07-15. [**Có Em Chờ**](https://open.spotify.com/track/6KIhgRkprgyJNERRMu7Quh) - by *MIN* from the album 'Có Em Chờ'
 - 2025-07-15. [**Hwi hwi**](https://open.spotify.com/track/7eByzTxKr1MYqYLj8AFsBF) - by *LABOUM* from the album 'MISS THIS KISS'
 - 2025-07-15. [**Balloon in Love**](https://open.spotify.com/track/0VeNNzlIwfJZERTSepu9NQ) - by *SUNMI* from the album 'Balloon in Love'
@@ -140,7 +138,6 @@ tags: [生活]
 - 2025-08-03. [**想見你想見你想見你**](https://open.spotify.com/track/7HNUZMyUPNhwdnaiVVY9Th) - by *JJ Lin* from the album 'JJ的咖啡調調, Vol.1'
 - 2025-08-03. [**心動**](https://open.spotify.com/track/6c6bGcH9CWUJOHQKCGLX0j) - by *Kit Chan* from the album '重譯 陳潔儀'
 - 2025-08-03. [**黑眼圈**](https://open.spotify.com/track/0BbDMqCtljeH9hLGVnwKex) - by *Silence Wang* from the album '傳世樂章'
-- 2025-08-04. [**Drive**](https://open.spotify.com/track/0mLumCawWeaMSL5LAHFIo4) - by *Ed Sheeran* from the album 'F1 The Album'
 - 2025-08-04. [**全城熱戀**](https://open.spotify.com/track/24tR0oePzWIECYz7zAn6pg) - by *Silence Wang* from the album '21世紀羅曼史'
 - 2025-08-05. [**Lose My Mind (feat. Doja Cat)**](https://open.spotify.com/track/34irl1fwZjGeArDmY9anKm) - by *Don Toliver, Doja Cat* from the album 'F1 The Album'
 - 2025-08-06. [**총맞은것처럼**](https://open.spotify.com/track/1TnykJShAmwjk8y1WZSD3W) - by *Baek Z Young* from the album 'Sensibility'
@@ -165,4 +162,10 @@ tags: [生活]
 - 2025-08-07. [**No Broke Boys**](https://open.spotify.com/track/3cZajhyr8LmtPfHZ9296tj) - by *Disco Lines, Tinashe* from the album 'No Broke Boys'
 - 2025-08-07. [**Amina**](https://open.spotify.com/track/3g4j9Q0F4WX1Fdqo5nE2Tl) - by *Tasha & Tracie* from the album 'Amina'
 - 2025-08-07. [**Free**](https://open.spotify.com/track/5DxDLsW6PsLz5gkwC7Mk5S) - by *Rumi, Jinu, EJAE, Andrew Choi, KPop Demon Hunters Cast* from the album 'KPop Demon Hunters (Soundtrack from the Netflix Film)'
+- 2025-08-08. [**A Sleepless Night**](https://open.spotify.com/track/7wlCdfpxaWQPaxspDIN3wX) - by *CNBLUE* from the album 'X'
+- 2025-08-08. [**致你**](https://open.spotify.com/track/1BH8aQSiigtTbbqms4XpwR) - by *Yihuik苡慧* from the album '致你'
+- 2025-08-08. [**Born Again (feat. Doja Cat & RAYE)**](https://open.spotify.com/track/4CPuDVC8jhhK6lA2DIt8Cf) - by *LISA, Doja Cat, RAYE* from the album 'Born Again (feat. Doja Cat & RAYE)'
+- 2025-08-08. [**TOO BAD**](https://open.spotify.com/track/0GOqhXyouUxqPEw9ypTOLm) - by *G-DRAGON, Anderson .Paak* from the album 'Übermensch'
+- 2025-08-08. [**Drive**](https://open.spotify.com/track/0mLumCawWeaMSL5LAHFIo4) - by *Ed Sheeran* from the album 'F1 The Album'
+- 2025-08-08. [**My Spotify: Zion.T**](https://open.spotify.com/track/38vyw4o4UlxMuhtHB08IS8) - by *My Spotify* from the album 'My Spotify: Zion.T'
 
