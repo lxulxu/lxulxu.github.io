@@ -25,6 +25,7 @@ tags: [生活]
 - 2025-08-05. [**华山论剑**](https://movie.douban.com/subject/37346623/) - rating: ★★★☆☆
 - 2025-08-07. [**老男孩**](https://movie.douban.com/subject/3279054/) - rating: ★★★★☆
 - 2025-08-09. [**东极岛**](https://movie.douban.com/subject/26660874/) - rating: ★★★☆☆
+- 2025-08-09. [**里斯本丸沉没**](https://movie.douban.com/subject/30412658/) - rating: ★★★★☆
 
 ## 🎮Games
 - 2025-08-02. [**多重人生 The Alters**](http://www.douban.com/game/35928518/) - rating: ★★★★★
@@ -45,7 +46,6 @@ tags: [生活]
 - 2025-07-02. [**好心分手 (feat. Leehom Wang)**](https://open.spotify.com/track/7DQOE8yIchm7bPPvJ0w6Bf) - by *Candy Lo, Leehom Wang* from the album '不能不愛…盧巧音精選'
 - 2025-07-04. [**Rebecca**](https://open.spotify.com/track/4COmljAiWvNeGXEyDw8EpR) - by *Susan Rigvava-Dumas, Wietske van Tongeren, Schatten* from the album 'Rebecca - Cast Album'
 - 2025-07-04. [**反轉地球**](https://open.spotify.com/track/4PKjASE3CAq3L4ts7Je7a2) - by *Will Pan* from the album '反轉地球'
-- 2025-07-04. [**背對背擁抱**](https://open.spotify.com/track/5OZeRuBBRpEY13BagcAOLJ) - by *JJ Lin* from the album 'JJ林俊傑100天'
 - 2025-07-04. [**Marvin Gaye (feat. Wale) - Remix**](https://open.spotify.com/track/4LfkoDOt4mhrbo8Ndk37sQ) - by *Charlie Puth, Wale* from the album 'Nine Track Mind (Special Edition)'
 - 2025-07-04. [**See You Again (feat. Charlie Puth)**](https://open.spotify.com/track/66CFbqJScx6zRieGllITcs) - by *Wiz Khalifa, Charlie Puth* from the album 'Nine Track Mind'
 - 2025-07-05. [**烂片剧情**](https://open.spotify.com/track/488IBZgAqHQmUDjg9kTQYG) - by *LBI利比* from the album '烂片剧情'
@@ -135,7 +135,6 @@ tags: [生活]
 - 2025-07-30. [**一千年以後**](https://open.spotify.com/track/1J59cbPdIwiUMtX1ee7NwM) - by *JJ Lin* from the album '林俊傑2003年-2010年作品精選集'
 - 2025-07-31. [**像晴天像雨天（电视剧《难哄》心动曲）**](https://open.spotify.com/track/298LjjcBvuQCAlwUWb9dKb) - by *Silence Wang* from the album '电视剧《难哄》影视原声带·只喜欢你Love Moments'
 - 2025-08-02. [**Papillon**](https://open.spotify.com/track/7EFmA3zysrOPJNRqhYCOVd) - by *Jackson Wang, BOYTOY* from the album 'Papillon'
-- 2025-08-03. [**想見你想見你想見你**](https://open.spotify.com/track/7HNUZMyUPNhwdnaiVVY9Th) - by *JJ Lin* from the album 'JJ的咖啡調調, Vol.1'
 - 2025-08-03. [**黑眼圈**](https://open.spotify.com/track/0BbDMqCtljeH9hLGVnwKex) - by *Silence Wang* from the album '傳世樂章'
 - 2025-08-04. [**全城熱戀**](https://open.spotify.com/track/24tR0oePzWIECYz7zAn6pg) - by *Silence Wang* from the album '21世紀羅曼史'
 - 2025-08-06. [**Lose My Mind (feat. Doja Cat)**](https://open.spotify.com/track/34irl1fwZjGeArDmY9anKm) - by *Don Toliver, Doja Cat* from the album 'F1 The Album'
@@ -168,6 +167,10 @@ tags: [生活]
 - 2025-08-08. [**Drive**](https://open.spotify.com/track/0mLumCawWeaMSL5LAHFIo4) - by *Ed Sheeran* from the album 'F1 The Album'
 - 2025-08-08. [**My Spotify: Zion.T**](https://open.spotify.com/track/38vyw4o4UlxMuhtHB08IS8) - by *My Spotify* from the album 'My Spotify: Zion.T'
 - 2025-08-09. [**Bring Em Out**](https://open.spotify.com/track/7oAZVxmRCVFanxK7tk16vv) - by *T.I.* from the album 'Urban Legend'
+- 2025-08-09. [**背對背擁抱**](https://open.spotify.com/track/5OZeRuBBRpEY13BagcAOLJ) - by *JJ Lin* from the album 'JJ林俊傑100天'
+- 2025-08-09. [**想見你想見你想見你**](https://open.spotify.com/track/7HNUZMyUPNhwdnaiVVY9Th) - by *JJ Lin* from the album 'JJ的咖啡調調, Vol.1'
 - 2025-08-09. [**心動**](https://open.spotify.com/track/6c6bGcH9CWUJOHQKCGLX0j) - by *Kit Chan* from the album '重譯 陳潔儀'
 - 2025-08-09. [**一念執著 - 《步步驚心》電視劇主題曲**](https://open.spotify.com/track/2Btp6HJ39moK7pLPwsV6pY) - by *嚴藝丹* from the album '無·果'
+- 2025-08-09. [**我很快乐**](https://open.spotify.com/track/6UbLrgfnJYaUvY1hqlGyjj) - by *劉惜君* from the album '爱情花园'
+- 2025-08-09. [**情有獨鍾**](https://open.spotify.com/track/5Zc7LbyCHbmc1fPzz2pEg2) - by *Phil Chang* from the album '情有獨鍾'
 
