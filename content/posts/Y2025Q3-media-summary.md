@@ -24,6 +24,7 @@ tags: [生活]
 - 2025-08-01. [**花漾少女杀人事件**](https://movie.douban.com/subject/35183324/) - rating: ★★★★☆
 - 2025-08-05. [**华山论剑**](https://movie.douban.com/subject/37346623/) - rating: ★★★☆☆
 - 2025-08-07. [**老男孩**](https://movie.douban.com/subject/3279054/) - rating: ★★★★☆
+- 2025-08-09. [**东极岛**](https://movie.douban.com/subject/26660874/) - rating: ★★★☆☆
 
 ## 🎮Games
 - 2025-08-02. [**多重人生 The Alters**](http://www.douban.com/game/35928518/) - rating: ★★★★★
@@ -76,7 +77,6 @@ tags: [生活]
 - 2025-07-15. [**ABCD**](https://open.spotify.com/track/0V2passWyAXnON67kfAj7y) - by *NAYEON* from the album 'NA'
 - 2025-07-15. [**Strawberry Rush**](https://open.spotify.com/track/1gq1gf44tZ9cyTdlcyoJd1) - by *CHUU* from the album 'Strawberry Rush'
 - 2025-07-15. [**Bye Bye Bye**](https://open.spotify.com/track/62bOmKYxYg7dhrC6gH9vFn) - by **NSYNC* from the album 'No Strings Attached'
-- 2025-07-15. [**Bring Em Out**](https://open.spotify.com/track/7oAZVxmRCVFanxK7tk16vv) - by *T.I.* from the album 'Urban Legend'
 - 2025-07-15. [**Like a Prayer**](https://open.spotify.com/track/2v7ywbUzCgcVohHaKUcacV) - by *Madonna* from the album 'Like a Prayer'
 - 2025-07-15. [**Có Em Chờ**](https://open.spotify.com/track/6KIhgRkprgyJNERRMu7Quh) - by *MIN* from the album 'Có Em Chờ'
 - 2025-07-15. [**Hwi hwi**](https://open.spotify.com/track/7eByzTxKr1MYqYLj8AFsBF) - by *LABOUM* from the album 'MISS THIS KISS'
@@ -136,10 +136,9 @@ tags: [生活]
 - 2025-07-31. [**像晴天像雨天（电视剧《难哄》心动曲）**](https://open.spotify.com/track/298LjjcBvuQCAlwUWb9dKb) - by *Silence Wang* from the album '电视剧《难哄》影视原声带·只喜欢你Love Moments'
 - 2025-08-02. [**Papillon**](https://open.spotify.com/track/7EFmA3zysrOPJNRqhYCOVd) - by *Jackson Wang, BOYTOY* from the album 'Papillon'
 - 2025-08-03. [**想見你想見你想見你**](https://open.spotify.com/track/7HNUZMyUPNhwdnaiVVY9Th) - by *JJ Lin* from the album 'JJ的咖啡調調, Vol.1'
-- 2025-08-03. [**心動**](https://open.spotify.com/track/6c6bGcH9CWUJOHQKCGLX0j) - by *Kit Chan* from the album '重譯 陳潔儀'
 - 2025-08-03. [**黑眼圈**](https://open.spotify.com/track/0BbDMqCtljeH9hLGVnwKex) - by *Silence Wang* from the album '傳世樂章'
 - 2025-08-04. [**全城熱戀**](https://open.spotify.com/track/24tR0oePzWIECYz7zAn6pg) - by *Silence Wang* from the album '21世紀羅曼史'
-- 2025-08-05. [**Lose My Mind (feat. Doja Cat)**](https://open.spotify.com/track/34irl1fwZjGeArDmY9anKm) - by *Don Toliver, Doja Cat* from the album 'F1 The Album'
+- 2025-08-06. [**Lose My Mind (feat. Doja Cat)**](https://open.spotify.com/track/34irl1fwZjGeArDmY9anKm) - by *Don Toliver, Doja Cat* from the album 'F1 The Album'
 - 2025-08-06. [**총맞은것처럼**](https://open.spotify.com/track/1TnykJShAmwjk8y1WZSD3W) - by *Baek Z Young* from the album 'Sensibility'
 - 2025-08-07. [**ATE THAT**](https://open.spotify.com/track/6spCL6M22BQACNDd70Gov3) - by *YOUNG POSSE* from the album 'ATE THAT EP'
 - 2025-08-07. [**COLD (feat.10CM)**](https://open.spotify.com/track/4pZUVR0l4sPl8GKPm6FXDa) - by *YOUNG POSSE, 10CM* from the album 'COLD'
@@ -168,4 +167,7 @@ tags: [生活]
 - 2025-08-08. [**TOO BAD**](https://open.spotify.com/track/0GOqhXyouUxqPEw9ypTOLm) - by *G-DRAGON, Anderson .Paak* from the album 'Übermensch'
 - 2025-08-08. [**Drive**](https://open.spotify.com/track/0mLumCawWeaMSL5LAHFIo4) - by *Ed Sheeran* from the album 'F1 The Album'
 - 2025-08-08. [**My Spotify: Zion.T**](https://open.spotify.com/track/38vyw4o4UlxMuhtHB08IS8) - by *My Spotify* from the album 'My Spotify: Zion.T'
+- 2025-08-09. [**Bring Em Out**](https://open.spotify.com/track/7oAZVxmRCVFanxK7tk16vv) - by *T.I.* from the album 'Urban Legend'
+- 2025-08-09. [**心動**](https://open.spotify.com/track/6c6bGcH9CWUJOHQKCGLX0j) - by *Kit Chan* from the album '重譯 陳潔儀'
+- 2025-08-09. [**一念執著 - 《步步驚心》電視劇主題曲**](https://open.spotify.com/track/2Btp6HJ39moK7pLPwsV6pY) - by *嚴藝丹* from the album '無·果'
 
