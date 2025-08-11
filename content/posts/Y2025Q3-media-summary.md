@@ -26,6 +26,7 @@ tags: [生活]
 - 2025-08-07. [**老男孩**](https://movie.douban.com/subject/3279054/) - rating: ★★★★☆
 - 2025-08-09. [**东极岛**](https://movie.douban.com/subject/26660874/) - rating: ★★★☆☆
 - 2025-08-09. [**里斯本丸沉没**](https://movie.douban.com/subject/30412658/) - rating: ★★★★☆
+- 2025-08-11. [**绑架毛乎乎**](https://movie.douban.com/subject/26715452/) - rating: ★★★★☆
 
 ## 🎮Games
 - 2025-08-02. [**多重人生 The Alters**](http://www.douban.com/game/35928518/) - rating: ★★★★★
