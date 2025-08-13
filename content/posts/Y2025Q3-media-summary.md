@@ -136,7 +136,6 @@ tags: [生活]
 - 2025-07-29. [**年轮**](https://open.spotify.com/track/7pSHVmCVBw8QJyH8tK89lx) - by *Silence Wang* from the album '年轮'
 - 2025-07-30. [**一千年以後**](https://open.spotify.com/track/1J59cbPdIwiUMtX1ee7NwM) - by *JJ Lin* from the album '林俊傑2003年-2010年作品精選集'
 - 2025-07-31. [**像晴天像雨天（电视剧《难哄》心动曲）**](https://open.spotify.com/track/298LjjcBvuQCAlwUWb9dKb) - by *Silence Wang* from the album '电视剧《难哄》影视原声带·只喜欢你Love Moments'
-- 2025-08-02. [**Papillon**](https://open.spotify.com/track/7EFmA3zysrOPJNRqhYCOVd) - by *Jackson Wang, BOYTOY* from the album 'Papillon'
 - 2025-08-03. [**黑眼圈**](https://open.spotify.com/track/0BbDMqCtljeH9hLGVnwKex) - by *Silence Wang* from the album '傳世樂章'
 - 2025-08-04. [**全城熱戀**](https://open.spotify.com/track/24tR0oePzWIECYz7zAn6pg) - by *Silence Wang* from the album '21世紀羅曼史'
 - 2025-08-06. [**Lose My Mind (feat. Doja Cat)**](https://open.spotify.com/track/34irl1fwZjGeArDmY9anKm) - by *Don Toliver, Doja Cat* from the album 'F1 The Album'
@@ -175,4 +174,6 @@ tags: [生活]
 - 2025-08-09. [**一念執著 - 《步步驚心》電視劇主題曲**](https://open.spotify.com/track/2Btp6HJ39moK7pLPwsV6pY) - by *嚴藝丹* from the album '無·果'
 - 2025-08-09. [**我很快乐**](https://open.spotify.com/track/6UbLrgfnJYaUvY1hqlGyjj) - by *劉惜君* from the album '爱情花园'
 - 2025-08-09. [**情有獨鍾**](https://open.spotify.com/track/5Zc7LbyCHbmc1fPzz2pEg2) - by *Phil Chang* from the album '情有獨鍾'
+- 2025-08-13. [**Papillon**](https://open.spotify.com/track/7EFmA3zysrOPJNRqhYCOVd) - by *Jackson Wang, BOYTOY* from the album 'Papillon'
+- 2025-08-13. [**過 (Should've Let Go)**](https://open.spotify.com/track/1lrafepXruMZB5qHCNqy88) - by *Jackson Wang, JJ Lin* from the album '過 (Should've Let Go)'
 
