@@ -28,6 +28,7 @@ tags: [生活]
 - 2025-08-09. [**里斯本丸沉没**](https://movie.douban.com/subject/30412658/) - rating: ★★★★☆
 - 2025-08-11. [**绑架毛乎乎**](https://movie.douban.com/subject/26715452/) - rating: ★★★★☆
 - 2025-08-11. [**捕风追影**](https://movie.douban.com/subject/36600459/) - rating: ★★★★☆
+- 2025-08-16. [**生万物**](https://movie.douban.com/subject/36689591/) - rating: ★★★★☆
 
 ## 🎮Games
 - 2025-08-02. [**多重人生 The Alters**](http://www.douban.com/game/35928518/) - rating: ★★★★★
@@ -139,7 +140,6 @@ tags: [生活]
 - 2025-08-03. [**黑眼圈**](https://open.spotify.com/track/0BbDMqCtljeH9hLGVnwKex) - by *Silence Wang* from the album '傳世樂章'
 - 2025-08-04. [**全城熱戀**](https://open.spotify.com/track/24tR0oePzWIECYz7zAn6pg) - by *Silence Wang* from the album '21世紀羅曼史'
 - 2025-08-07. [**ATE THAT**](https://open.spotify.com/track/6spCL6M22BQACNDd70Gov3) - by *YOUNG POSSE* from the album 'ATE THAT EP'
-- 2025-08-07. [**COLD (feat.10CM)**](https://open.spotify.com/track/4pZUVR0l4sPl8GKPm6FXDa) - by *YOUNG POSSE, 10CM* from the album 'COLD'
 - 2025-08-07. [**Santa Claus Left Me No Goodz**](https://open.spotify.com/track/1X76E4A6AdNuCgNstqpN9E) - by *YOUNG POSSE* from the album 'COLD'
 - 2025-08-07. [**Blue Dot**](https://open.spotify.com/track/3PcowXtn7A3Lh85fnJqkzg) - by *YOUNG POSSE* from the album 'COLD'
 - 2025-08-07. [**Umbrella**](https://open.spotify.com/track/2Jb2iYxndLzBH101agZbjT) - by *YOUNG POSSE* from the album 'ATE THAT EP'
@@ -163,6 +163,7 @@ tags: [生活]
 - 2025-08-08. [**致你**](https://open.spotify.com/track/1BH8aQSiigtTbbqms4XpwR) - by *Yihuik苡慧* from the album '致你'
 - 2025-08-08. [**Born Again (feat. Doja Cat & RAYE)**](https://open.spotify.com/track/4CPuDVC8jhhK6lA2DIt8Cf) - by *LISA, Doja Cat, RAYE* from the album 'Born Again (feat. Doja Cat & RAYE)'
 - 2025-08-08. [**TOO BAD**](https://open.spotify.com/track/0GOqhXyouUxqPEw9ypTOLm) - by *G-DRAGON, Anderson .Paak* from the album 'Übermensch'
+- 2025-08-08. [**COLD (feat.10CM)**](https://open.spotify.com/track/4pZUVR0l4sPl8GKPm6FXDa) - by *YOUNG POSSE, 10CM* from the album 'COLD'
 - 2025-08-08. [**Lose My Mind (feat. Doja Cat)**](https://open.spotify.com/track/34irl1fwZjGeArDmY9anKm) - by *Don Toliver, Doja Cat* from the album 'F1 The Album'
 - 2025-08-08. [**Drive**](https://open.spotify.com/track/0mLumCawWeaMSL5LAHFIo4) - by *Ed Sheeran* from the album 'F1 The Album'
 - 2025-08-08. [**총맞은것처럼**](https://open.spotify.com/track/1TnykJShAmwjk8y1WZSD3W) - by *Baek Z Young* from the album 'Sensibility'
@@ -176,4 +177,5 @@ tags: [生活]
 - 2025-08-09. [**情有獨鍾**](https://open.spotify.com/track/5Zc7LbyCHbmc1fPzz2pEg2) - by *Phil Chang* from the album '情有獨鍾'
 - 2025-08-13. [**Papillon**](https://open.spotify.com/track/7EFmA3zysrOPJNRqhYCOVd) - by *Jackson Wang, BOYTOY* from the album 'Papillon'
 - 2025-08-13. [**過 (Should've Let Go)**](https://open.spotify.com/track/1lrafepXruMZB5qHCNqy88) - by *Jackson Wang, JJ Lin* from the album '過 (Should've Let Go)'
+- 2025-08-16. [**Burn**](https://open.spotify.com/track/4B3qvzOMzLQXLeYgPsG3KA) - by *Phillipa Soo* from the album 'Hamilton (Original Broadway Cast Recording)'
 
