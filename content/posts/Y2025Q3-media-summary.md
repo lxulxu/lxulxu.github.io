@@ -28,7 +28,7 @@ tags: [生活]
 - 2025-08-09. [**里斯本丸沉没**](https://movie.douban.com/subject/30412658/) - rating: ★★★★☆
 - 2025-08-11. [**绑架毛乎乎**](https://movie.douban.com/subject/26715452/) - rating: ★★★★☆
 - 2025-08-11. [**捕风追影**](https://movie.douban.com/subject/36600459/) - rating: ★★★★☆
-- 2025-08-16. [**生万物**](https://movie.douban.com/subject/36689591/) - rating: ★★★★☆
+- 2025-08-16. [**生万物**](https://movie.douban.com/subject/36689591/) - rating: ★★★☆☆
 
 ## 🎮Games
 - 2025-08-02. [**多重人生 The Alters**](http://www.douban.com/game/35928518/) - rating: ★★★★★
