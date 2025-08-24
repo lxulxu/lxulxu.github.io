@@ -30,6 +30,7 @@ tags: [生活]
 - 2025-08-11. [**捕风追影**](https://movie.douban.com/subject/36600459/) - rating: ★★★★☆
 - 2025-08-16. [**生万物**](https://movie.douban.com/subject/36689591/) - rating: ★★★☆☆
 - 2025-08-23. [**脱缰者也**](https://movie.douban.com/subject/36453173/) - rating: ★★★☆☆
+- 2025-08-24. [**爱的学校。**](https://movie.douban.com/subject/37366153/) - rating: ★★★★☆
 
 ## 🎮Games
 - 2025-08-02. [**多重人生 The Alters**](http://www.douban.com/game/35928518/) - rating: ★★★★★
@@ -180,4 +181,5 @@ tags: [生活]
 - 2025-08-20. [**Papillon**](https://open.spotify.com/track/7EFmA3zysrOPJNRqhYCOVd) - by *Jackson Wang, BOYTOY* from the album 'Papillon'
 - 2025-08-20. [**過 (Should've Let Go)**](https://open.spotify.com/track/1lrafepXruMZB5qHCNqy88) - by *Jackson Wang, JJ Lin* from the album '過 (Should've Let Go)'
 - 2025-08-21. [**Born Again (feat. Doja Cat & RAYE)**](https://open.spotify.com/track/4CPuDVC8jhhK6lA2DIt8Cf) - by *LISA, Doja Cat, RAYE* from the album 'Born Again (feat. Doja Cat & RAYE)'
+- 2025-08-24. [**Spiral**](https://open.spotify.com/track/42DzOJiUtkmCBLkLv21dCb) - by *レイニ, Yura* from the album 'Spiral'
 
