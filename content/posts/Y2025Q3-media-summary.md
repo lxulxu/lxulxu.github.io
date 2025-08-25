@@ -186,4 +186,5 @@ tags: [生活]
 - 2025-08-25. [**もし君を許せたら**](https://open.spotify.com/track/44RS7mk1YdSSA09lkH6sN8) - by *Leo Ieiri* from the album 'DUO'
 - 2025-08-25. [**Together We Fly**](https://open.spotify.com/track/2eB1rQ2ky34thXcfNCwAaG) - by *Salvatore Roma* from the album 'Together We Fly'
 - 2025-08-25. [**Diamonds**](https://open.spotify.com/track/30erO2wyRHDPDrDsNFlwjq) - by *Tony K* from the album 'Diamonds'
+- 2025-08-25. [**ミライ**](https://open.spotify.com/track/2HgZ6EXrSoNiFoOJ6WndR6) - by *JUJU* from the album 'ミライ'
 
