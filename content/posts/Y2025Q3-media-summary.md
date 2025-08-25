@@ -179,8 +179,8 @@ tags: [生活]
 - 2025-08-20. [**Drive**](https://open.spotify.com/track/0mLumCawWeaMSL5LAHFIo4) - by *Ed Sheeran* from the album 'F1 The Album'
 - 2025-08-20. [**총맞은것처럼**](https://open.spotify.com/track/1TnykJShAmwjk8y1WZSD3W) - by *Baek Z Young* from the album 'Sensibility'
 - 2025-08-20. [**Papillon**](https://open.spotify.com/track/7EFmA3zysrOPJNRqhYCOVd) - by *Jackson Wang, BOYTOY* from the album 'Papillon'
-- 2025-08-20. [**過 (Should've Let Go)**](https://open.spotify.com/track/1lrafepXruMZB5qHCNqy88) - by *Jackson Wang, JJ Lin* from the album '過 (Should've Let Go)'
 - 2025-08-21. [**Born Again (feat. Doja Cat & RAYE)**](https://open.spotify.com/track/4CPuDVC8jhhK6lA2DIt8Cf) - by *LISA, Doja Cat, RAYE* from the album 'Born Again (feat. Doja Cat & RAYE)'
+- 2025-08-21. [**過 (Should've Let Go)**](https://open.spotify.com/track/1lrafepXruMZB5qHCNqy88) - by *Jackson Wang, JJ Lin* from the album '過 (Should've Let Go)'
 - 2025-08-24. [**Fall in Love**](https://open.spotify.com/track/406KPQqXM4AQlT5KSmFcvG) - by *Sophie Chen, Vicky Chen* from the album 'Fall in Love'
 - 2025-08-24. [**Spiral**](https://open.spotify.com/track/42DzOJiUtkmCBLkLv21dCb) - by *レイニ, Yura* from the album 'Spiral'
 
