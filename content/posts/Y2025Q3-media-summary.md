@@ -188,4 +188,5 @@ tags: [生活]
 - 2025-08-26. [**Spiral**](https://open.spotify.com/track/42DzOJiUtkmCBLkLv21dCb) - by *レイニ, Yura* from the album 'Spiral'
 - 2025-08-26. [**escalate**](https://open.spotify.com/track/5GYltgYEZu2dKnBjSTrCA3) - by *Aimer* from the album 'escalate'
 - 2025-08-27. [**過 (Should've Let Go)**](https://open.spotify.com/track/1lrafepXruMZB5qHCNqy88) - by *Jackson Wang, JJ Lin* from the album '過 (Should've Let Go)'
+- 2025-08-28. [**很久很久**](https://open.spotify.com/track/0lW7c3F3SksQAhAxtQ6o8G) - by *楊和蘇KeyNG* from the album '辯護人'
 
