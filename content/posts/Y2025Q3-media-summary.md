@@ -38,6 +38,7 @@ tags: [生活]
 ## 🎭Dramas
 - 2025-07-06. [**对称性破缺**](https://www.douban.com/location/drama/36012304/) - rating: ★★★★☆
 - 2025-07-26. [**双枰记**](https://www.douban.com/location/drama/35520219/) - rating: ★★★★☆
+- 2025-08-29. [**晚花**](https://www.douban.com/location/drama/37147004/) - rating: ★★★☆☆
 
 ## 🎵MUSIC
 - 2025-07-01. [**Moonlight (feat. 袁婭維)**](https://open.spotify.com/track/5noC8HGZaLiXNdvGmjemGP) - by *Will Pan, TIA RAY* from the album '節奏先生'
