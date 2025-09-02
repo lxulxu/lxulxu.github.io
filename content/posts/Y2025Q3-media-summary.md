@@ -178,8 +178,6 @@ tags: [生活]
 - 2025-08-25. [**ミライ**](https://open.spotify.com/track/2HgZ6EXrSoNiFoOJ6WndR6) - by *JUJU* from the album 'ミライ'
 - 2025-08-26. [**escalate**](https://open.spotify.com/track/5GYltgYEZu2dKnBjSTrCA3) - by *Aimer* from the album 'escalate'
 - 2025-08-28. [**很久很久**](https://open.spotify.com/track/0lW7c3F3SksQAhAxtQ6o8G) - by *楊和蘇KeyNG* from the album '辯護人'
-- 2025-08-29. [**Spiral**](https://open.spotify.com/track/42DzOJiUtkmCBLkLv21dCb) - by *レイニ, Yura* from the album 'Spiral'
-- 2025-08-30. [**過 (Should've Let Go)**](https://open.spotify.com/track/1lrafepXruMZB5qHCNqy88) - by *Jackson Wang, JJ Lin* from the album '過 (Should've Let Go)'
 - 2025-09-01. [**Bring Em Out**](https://open.spotify.com/track/7oAZVxmRCVFanxK7tk16vv) - by *T.I.* from the album 'Urban Legend'
 - 2025-09-01. [**A Sleepless Night**](https://open.spotify.com/track/7wlCdfpxaWQPaxspDIN3wX) - by *CNBLUE* from the album 'X'
 - 2025-09-01. [**致你**](https://open.spotify.com/track/1BH8aQSiigtTbbqms4XpwR) - by *Yihuik苡慧* from the album '致你'
@@ -190,4 +188,6 @@ tags: [生活]
 - 2025-09-01. [**Drive**](https://open.spotify.com/track/0mLumCawWeaMSL5LAHFIo4) - by *Ed Sheeran* from the album 'F1 The Album'
 - 2025-09-01. [**총맞은것처럼**](https://open.spotify.com/track/1TnykJShAmwjk8y1WZSD3W) - by *Baek Z Young* from the album 'Sensibility'
 - 2025-09-01. [**Papillon**](https://open.spotify.com/track/7EFmA3zysrOPJNRqhYCOVd) - by *Jackson Wang, BOYTOY* from the album 'Papillon'
+- 2025-09-01. [**過 (Should've Let Go)**](https://open.spotify.com/track/1lrafepXruMZB5qHCNqy88) - by *Jackson Wang, JJ Lin* from the album '過 (Should've Let Go)'
+- 2025-09-01. [**Spiral**](https://open.spotify.com/track/42DzOJiUtkmCBLkLv21dCb) - by *レイニ, Yura* from the album 'Spiral'
 
