@@ -173,7 +173,6 @@ tags: [生活]
 - 2025-08-19. [**一念執著 - 《步步驚心》電視劇主題曲**](https://open.spotify.com/track/2Btp6HJ39moK7pLPwsV6pY) - by *嚴藝丹* from the album '無·果'
 - 2025-08-19. [**愛的初體驗**](https://open.spotify.com/track/3B09wBKxbV64nVu7GtVr2C) - by *Zhang Zhen Yue* from the album '阿嶽正傳'
 - 2025-08-20. [**Burn**](https://open.spotify.com/track/4B3qvzOMzLQXLeYgPsG3KA) - by *Phillipa Soo* from the album 'Hamilton (Original Broadway Cast Recording)'
-- 2025-08-24. [**Fall in Love**](https://open.spotify.com/track/406KPQqXM4AQlT5KSmFcvG) - by *Sophie Chen, Vicky Chen* from the album 'Fall in Love'
 - 2025-08-25. [**もし君を許せたら**](https://open.spotify.com/track/44RS7mk1YdSSA09lkH6sN8) - by *Leo Ieiri* from the album 'DUO'
 - 2025-08-25. [**Together We Fly**](https://open.spotify.com/track/2eB1rQ2ky34thXcfNCwAaG) - by *Salvatore Roma* from the album 'Together We Fly'
 - 2025-08-25. [**Diamonds**](https://open.spotify.com/track/30erO2wyRHDPDrDsNFlwjq) - by *Tony K* from the album 'Diamonds'
@@ -194,4 +193,5 @@ tags: [生活]
 - 2025-09-03. [**過 (Should've Let Go)**](https://open.spotify.com/track/1lrafepXruMZB5qHCNqy88) - by *Jackson Wang, JJ Lin* from the album '過 (Should've Let Go)'
 - 2025-09-04. [**孤高之人の小曲（賽馬娘孤高曼波）**](https://open.spotify.com/track/5Vho7YrgOYy7p59BUFylJ2) - by *HB花斑* from the album '孤高之人の小曲（賽馬娘孤高曼波）'
 - 2025-09-05. [**你好你好你好你好 - 曼波版**](https://open.spotify.com/track/4czJE5NKFXMMsfzWkQ2Lcu) - by *赛马娘~, 一根华仔* from the album '你好你好你好你好 (曼波版)'
+- 2025-09-07. [**Fall in Love**](https://open.spotify.com/track/406KPQqXM4AQlT5KSmFcvG) - by *Sophie Chen, Vicky Chen* from the album 'Fall in Love'
 
