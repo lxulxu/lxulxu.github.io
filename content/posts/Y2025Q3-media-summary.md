@@ -39,6 +39,8 @@ tags: [生活]
 - 2025-07-06. [**对称性破缺**](https://www.douban.com/location/drama/36012304/) - rating: ★★★★☆
 - 2025-07-26. [**双枰记**](https://www.douban.com/location/drama/35520219/) - rating: ★★★★☆
 - 2025-08-29. [**晚花**](https://www.douban.com/location/drama/37147004/) - rating: ★★★☆☆
+- 2025-09-05. [**西尔维斯特·里维和他的朋友们 德语音乐剧明星音乐会**](https://www.douban.com/location/drama/37407925/) - rating: ★★★★☆
+- 2025-09-06. [**翻山海**](https://www.douban.com/location/drama/36929994/) - rating: ★★★★★
 
 ## 🎵MUSIC
 - 2025-07-01. [**Moonlight (feat. 袁婭維)**](https://open.spotify.com/track/5noC8HGZaLiXNdvGmjemGP) - by *Will Pan, TIA RAY* from the album '節奏先生'
@@ -179,15 +181,17 @@ tags: [生活]
 - 2025-08-26. [**escalate**](https://open.spotify.com/track/5GYltgYEZu2dKnBjSTrCA3) - by *Aimer* from the album 'escalate'
 - 2025-08-28. [**很久很久**](https://open.spotify.com/track/0lW7c3F3SksQAhAxtQ6o8G) - by *楊和蘇KeyNG* from the album '辯護人'
 - 2025-09-01. [**Bring Em Out**](https://open.spotify.com/track/7oAZVxmRCVFanxK7tk16vv) - by *T.I.* from the album 'Urban Legend'
-- 2025-09-01. [**A Sleepless Night**](https://open.spotify.com/track/7wlCdfpxaWQPaxspDIN3wX) - by *CNBLUE* from the album 'X'
-- 2025-09-01. [**致你**](https://open.spotify.com/track/1BH8aQSiigtTbbqms4XpwR) - by *Yihuik苡慧* from the album '致你'
-- 2025-09-01. [**Born Again (feat. Doja Cat & RAYE)**](https://open.spotify.com/track/4CPuDVC8jhhK6lA2DIt8Cf) - by *LISA, Doja Cat, RAYE* from the album 'Born Again (feat. Doja Cat & RAYE)'
-- 2025-09-01. [**TOO BAD**](https://open.spotify.com/track/0GOqhXyouUxqPEw9ypTOLm) - by *G-DRAGON, Anderson .Paak* from the album 'Übermensch'
-- 2025-09-01. [**COLD (feat.10CM)**](https://open.spotify.com/track/4pZUVR0l4sPl8GKPm6FXDa) - by *YOUNG POSSE, 10CM* from the album 'COLD'
-- 2025-09-01. [**Lose My Mind (feat. Doja Cat)**](https://open.spotify.com/track/34irl1fwZjGeArDmY9anKm) - by *Don Toliver, Doja Cat* from the album 'F1 The Album'
-- 2025-09-01. [**Drive**](https://open.spotify.com/track/0mLumCawWeaMSL5LAHFIo4) - by *Ed Sheeran* from the album 'F1 The Album'
-- 2025-09-01. [**총맞은것처럼**](https://open.spotify.com/track/1TnykJShAmwjk8y1WZSD3W) - by *Baek Z Young* from the album 'Sensibility'
-- 2025-09-01. [**Papillon**](https://open.spotify.com/track/7EFmA3zysrOPJNRqhYCOVd) - by *Jackson Wang, BOYTOY* from the album 'Papillon'
-- 2025-09-01. [**過 (Should've Let Go)**](https://open.spotify.com/track/1lrafepXruMZB5qHCNqy88) - by *Jackson Wang, JJ Lin* from the album '過 (Should've Let Go)'
-- 2025-09-01. [**Spiral**](https://open.spotify.com/track/42DzOJiUtkmCBLkLv21dCb) - by *レイニ, Yura* from the album 'Spiral'
+- 2025-09-02. [**Spiral**](https://open.spotify.com/track/42DzOJiUtkmCBLkLv21dCb) - by *レイニ, Yura* from the album 'Spiral'
+- 2025-09-03. [**A Sleepless Night**](https://open.spotify.com/track/7wlCdfpxaWQPaxspDIN3wX) - by *CNBLUE* from the album 'X'
+- 2025-09-03. [**致你**](https://open.spotify.com/track/1BH8aQSiigtTbbqms4XpwR) - by *Yihuik苡慧* from the album '致你'
+- 2025-09-03. [**Born Again (feat. Doja Cat & RAYE)**](https://open.spotify.com/track/4CPuDVC8jhhK6lA2DIt8Cf) - by *LISA, Doja Cat, RAYE* from the album 'Born Again (feat. Doja Cat & RAYE)'
+- 2025-09-03. [**TOO BAD**](https://open.spotify.com/track/0GOqhXyouUxqPEw9ypTOLm) - by *G-DRAGON, Anderson .Paak* from the album 'Übermensch'
+- 2025-09-03. [**COLD (feat.10CM)**](https://open.spotify.com/track/4pZUVR0l4sPl8GKPm6FXDa) - by *YOUNG POSSE, 10CM* from the album 'COLD'
+- 2025-09-03. [**Lose My Mind (feat. Doja Cat)**](https://open.spotify.com/track/34irl1fwZjGeArDmY9anKm) - by *Don Toliver, Doja Cat* from the album 'F1 The Album'
+- 2025-09-03. [**Drive**](https://open.spotify.com/track/0mLumCawWeaMSL5LAHFIo4) - by *Ed Sheeran* from the album 'F1 The Album'
+- 2025-09-03. [**총맞은것처럼**](https://open.spotify.com/track/1TnykJShAmwjk8y1WZSD3W) - by *Baek Z Young* from the album 'Sensibility'
+- 2025-09-03. [**Papillon**](https://open.spotify.com/track/7EFmA3zysrOPJNRqhYCOVd) - by *Jackson Wang, BOYTOY* from the album 'Papillon'
+- 2025-09-03. [**過 (Should've Let Go)**](https://open.spotify.com/track/1lrafepXruMZB5qHCNqy88) - by *Jackson Wang, JJ Lin* from the album '過 (Should've Let Go)'
+- 2025-09-04. [**孤高之人の小曲（賽馬娘孤高曼波）**](https://open.spotify.com/track/5Vho7YrgOYy7p59BUFylJ2) - by *HB花斑* from the album '孤高之人の小曲（賽馬娘孤高曼波）'
+- 2025-09-05. [**你好你好你好你好 - 曼波版**](https://open.spotify.com/track/4czJE5NKFXMMsfzWkQ2Lcu) - by *赛马娘~, 一根华仔* from the album '你好你好你好你好 (曼波版)'
 
