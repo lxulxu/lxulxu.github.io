@@ -30,7 +30,7 @@ tags: [生活]
 - 2025-08-11. [**捕风追影**](https://movie.douban.com/subject/36600459/) - rating: ★★★★☆
 - 2025-08-16. [**生万物**](https://movie.douban.com/subject/36689591/) - rating: ★★★☆☆
 - 2025-08-23. [**脱缰者也**](https://movie.douban.com/subject/36453173/) - rating: ★★★☆☆
-- 2025-08-24. [**爱的学校。**](https://movie.douban.com/subject/37366153/) - rating: ★★★★☆
+- 2025-08-24. [**爱的，学校。**](https://movie.douban.com/subject/37366153/) - rating: ★★★★☆
 
 ## 🎮Games
 - 2025-08-02. [**多重人生 The Alters**](http://www.douban.com/game/35928518/) - rating: ★★★★★
@@ -180,7 +180,6 @@ tags: [生活]
 - 2025-08-26. [**escalate**](https://open.spotify.com/track/5GYltgYEZu2dKnBjSTrCA3) - by *Aimer* from the album 'escalate'
 - 2025-08-28. [**很久很久**](https://open.spotify.com/track/0lW7c3F3SksQAhAxtQ6o8G) - by *楊和蘇KeyNG* from the album '辯護人'
 - 2025-09-01. [**Bring Em Out**](https://open.spotify.com/track/7oAZVxmRCVFanxK7tk16vv) - by *T.I.* from the album 'Urban Legend'
-- 2025-09-02. [**Spiral**](https://open.spotify.com/track/42DzOJiUtkmCBLkLv21dCb) - by *レイニ, Yura* from the album 'Spiral'
 - 2025-09-03. [**A Sleepless Night**](https://open.spotify.com/track/7wlCdfpxaWQPaxspDIN3wX) - by *CNBLUE* from the album 'X'
 - 2025-09-03. [**致你**](https://open.spotify.com/track/1BH8aQSiigtTbbqms4XpwR) - by *Yihuik苡慧* from the album '致你'
 - 2025-09-03. [**Born Again (feat. Doja Cat & RAYE)**](https://open.spotify.com/track/4CPuDVC8jhhK6lA2DIt8Cf) - by *LISA, Doja Cat, RAYE* from the album 'Born Again (feat. Doja Cat & RAYE)'
@@ -191,7 +190,24 @@ tags: [生活]
 - 2025-09-03. [**총맞은것처럼**](https://open.spotify.com/track/1TnykJShAmwjk8y1WZSD3W) - by *Baek Z Young* from the album 'Sensibility'
 - 2025-09-03. [**Papillon**](https://open.spotify.com/track/7EFmA3zysrOPJNRqhYCOVd) - by *Jackson Wang, BOYTOY* from the album 'Papillon'
 - 2025-09-03. [**過 (Should've Let Go)**](https://open.spotify.com/track/1lrafepXruMZB5qHCNqy88) - by *Jackson Wang, JJ Lin* from the album '過 (Should've Let Go)'
+- 2025-09-03. [**Spiral**](https://open.spotify.com/track/42DzOJiUtkmCBLkLv21dCb) - by *レイニ, Yura* from the album 'Spiral'
 - 2025-09-04. [**孤高之人の小曲（賽馬娘孤高曼波）**](https://open.spotify.com/track/5Vho7YrgOYy7p59BUFylJ2) - by *HB花斑* from the album '孤高之人の小曲（賽馬娘孤高曼波）'
 - 2025-09-05. [**你好你好你好你好 - 曼波版**](https://open.spotify.com/track/4czJE5NKFXMMsfzWkQ2Lcu) - by *赛马娘~, 一根华仔* from the album '你好你好你好你好 (曼波版)'
 - 2025-09-07. [**Fall in Love**](https://open.spotify.com/track/406KPQqXM4AQlT5KSmFcvG) - by *Sophie Chen, Vicky Chen* from the album 'Fall in Love'
+- 2025-09-09. [**Die Wunder sind vorüber**](https://open.spotify.com/track/0QLUIqpuJlptCHlZ716Ucn) - by *Sylvester LeVay, Oedo Kuipers, Jon Geoffrey Goldsworthy, Thomas Borchert, Ensemble* from the album 'Mozart! - Das Musical - Gesamtaufnahme Live'
+- 2025-09-09. [**Was für ein Kind!**](https://open.spotify.com/track/2x2HWRn8UMtTLtX3ywnWTT) - by *Sylvester LeVay, Thomas Borchert, Ana Milva Gomes, Ensemble* from the album 'Mozart! - Das Musical - Gesamtaufnahme Live'
+- 2025-09-09. [**Prolog**](https://open.spotify.com/track/50YQOjkUagoR8VUfhDSrIa) - by *Sylvester LeVay, Thorsten Tinney, Franziska Schuster* from the album 'Mozart! - Das Musical - Gesamtaufnahme Live'
+- 2025-09-09. [**Love Never Dies**](https://open.spotify.com/track/7f9sIY3767A6NyJulVXbEv) - by *Andrew Lloyd Webber* from the album 'Love Never Dies'
+- 2025-09-09. [**The Beauty Underneath**](https://open.spotify.com/track/4EPjbDPYgWCzbeTH5cqlaZ) - by *Andrew Lloyd Webber, Ben Lewis, Casey Lyons* from the album 'Love Never Dies'
+- 2025-09-09. [**'Til I Hear You Sing**](https://open.spotify.com/track/4kH3BIr7xD2N8Mp5BsB7zt) - by *Andrew Lloyd Webber* from the album 'Love Never Dies'
+- 2025-09-09. [**The Lusty Month of May**](https://open.spotify.com/track/24HEn0c2i2jgcGQAmdLuf2) - by *Phillipa Soo, Camelot on Broadway Company* from the album 'Camelot (The 2023 Broadway Cast Recording)'
+- 2025-09-09. [**For Good**](https://open.spotify.com/track/7HZvTYEdNPiPdweW1868Vm) - by *Stephen Schwartz, LeAnn Rimes, Delta Goodrem* from the album 'Wicked (Original Broadway Cast Recording / Deluxe Edition)'
+- 2025-09-09. [**不会成真的梦 - Live**](https://open.spotify.com/track/7qlv0RyVeFc4O7s0oh7HYI) - by *何亮辰* from the album '声入人心·第二季 (第一期 Live)'
+- 2025-09-09. [**The Impossible Dream (The Quest)**](https://open.spotify.com/track/2eq6jnxjrlWdDanqvQsDMU) - by *Brian Stokes Mitchell* from the album 'Man of La Mancha (New Broadway Cast Recording (2002))'
+- 2025-09-09. [**Man of La Mancha (I, Don Quixote)**](https://open.spotify.com/track/4ZBfYzUcqQHIWGSsN1eQy2) - by *Brian Stokes Mitchell, Ernie Sabella* from the album 'Man of La Mancha (New Broadway Cast Recording (2002))'
+- 2025-09-09. [**Etre à la hauteur**](https://open.spotify.com/track/5Eq570LfLc4vLGcZnNEWIk) - by *Emmanuel Moire* from the album 'Le Roi Soleil (Le spectacle original) [L'intégrale]'
+- 2025-09-09. [**Je fais de toi mon essentiel (avec Anne-Laure Girbal)**](https://open.spotify.com/track/2Y55FHBCP694amFab0RHGs) - by *Emmanuel Moire, Anne-Laure Girbal* from the album 'Le Roi Soleil (Le spectacle original) [L'intégrale]'
+- 2025-09-09. [**Ça marche**](https://open.spotify.com/track/2pca2tuyC7UEupxia3eZpl) - by *Christophe Maé* from the album 'Le Roi Soleil (Le spectacle original) [L'intégrale]'
+- 2025-09-09. [**Regardez-moi**](https://open.spotify.com/track/1lc4c1UEzP9OI1wknZQDra) - by *Molière l'opéra urbain, Abi Bernadoth* from the album 'Regardez-moi'
+- 2025-09-09. [**Rêver j'en ai l'habitude**](https://open.spotify.com/track/0NdMo8e9qtwhMsmrkUURHd) - by *Dove Attia, Molière l'opéra urbain, Lou, PETiTOM, Morgan, Shaïna Pronzola, Vike, Abi Bernadoth* from the album 'Rêver j'en ai l'habitude'
 
