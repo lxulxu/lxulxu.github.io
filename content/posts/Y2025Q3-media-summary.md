@@ -229,4 +229,5 @@ tags: [生活]
 - 2025-09-09. [**Niemand liebt dich so wie ich**](https://open.spotify.com/track/4G0NEWE5XBotQj1rBBbpQt) - by *Sylvester LeVay, Oedo Kuipers, Thomas Borchert* from the album 'Mozart! - Das Musical - Gesamtaufnahme Live'
 - 2025-09-09. [**Wo bleibt Mozart?**](https://open.spotify.com/track/1mGNPUURXw3EQcFMMbUq9c) - by *Sylvester LeVay, Jon Geoffrey Goldsworthy, Mark Seibert, Thomas Borchert, Oedo Kuipers* from the album 'Mozart! - Das Musical - Gesamtaufnahme Live'
 - 2025-09-09. [**Ich bin, ich bin Musik**](https://open.spotify.com/track/5pNwTZqILMr4iD3ZHCmyok) - by *Sylvester LeVay, Oedo Kuipers* from the album 'Mozart! - Das Musical - Gesamtaufnahme Live'
+- 2025-09-10. [**Goosebumps**](https://open.spotify.com/track/4rQoLdu5ZW52wcZmeffNuh) - by *ZEROBASEONE* from the album 'NEVER SAY NEVER'
 
