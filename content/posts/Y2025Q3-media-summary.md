@@ -189,10 +189,9 @@ tags: [生活]
 - 2025-09-03. [**Lose My Mind (feat. Doja Cat)**](https://open.spotify.com/track/34irl1fwZjGeArDmY9anKm) - by *Don Toliver, Doja Cat* from the album 'F1 The Album'
 - 2025-09-03. [**Drive**](https://open.spotify.com/track/0mLumCawWeaMSL5LAHFIo4) - by *Ed Sheeran* from the album 'F1 The Album'
 - 2025-09-03. [**Papillon**](https://open.spotify.com/track/7EFmA3zysrOPJNRqhYCOVd) - by *Jackson Wang, BOYTOY* from the album 'Papillon'
-- 2025-09-03. [**過 (Should've Let Go)**](https://open.spotify.com/track/1lrafepXruMZB5qHCNqy88) - by *Jackson Wang, JJ Lin* from the album '過 (Should've Let Go)'
-- 2025-09-04. [**Spiral**](https://open.spotify.com/track/42DzOJiUtkmCBLkLv21dCb) - by *レイニ, Yura* from the album 'Spiral'
 - 2025-09-04. [**孤高之人の小曲（賽馬娘孤高曼波）**](https://open.spotify.com/track/5Vho7YrgOYy7p59BUFylJ2) - by *HB花斑* from the album '孤高之人の小曲（賽馬娘孤高曼波）'
 - 2025-09-05. [**총맞은것처럼**](https://open.spotify.com/track/1TnykJShAmwjk8y1WZSD3W) - by *Baek Z Young* from the album 'Sensibility'
+- 2025-09-05. [**Spiral**](https://open.spotify.com/track/42DzOJiUtkmCBLkLv21dCb) - by *レイニ, Yura* from the album 'Spiral'
 - 2025-09-05. [**你好你好你好你好 - 曼波版**](https://open.spotify.com/track/4czJE5NKFXMMsfzWkQ2Lcu) - by *赛马娘~, 一根华仔* from the album '你好你好你好你好 (曼波版)'
 - 2025-09-07. [**Fall in Love**](https://open.spotify.com/track/406KPQqXM4AQlT5KSmFcvG) - by *Sophie Chen, Vicky Chen* from the album 'Fall in Love'
 - 2025-09-09. [**Die Wunder sind vorüber**](https://open.spotify.com/track/0QLUIqpuJlptCHlZ716Ucn) - by *Sylvester LeVay, Oedo Kuipers, Jon Geoffrey Goldsworthy, Thomas Borchert, Ensemble* from the album 'Mozart! - Das Musical - Gesamtaufnahme Live'
@@ -231,4 +230,5 @@ tags: [生活]
 - 2025-09-09. [**Wo bleibt Mozart?**](https://open.spotify.com/track/1mGNPUURXw3EQcFMMbUq9c) - by *Sylvester LeVay, Jon Geoffrey Goldsworthy, Mark Seibert, Thomas Borchert, Oedo Kuipers* from the album 'Mozart! - Das Musical - Gesamtaufnahme Live'
 - 2025-09-09. [**Ich bin, ich bin Musik**](https://open.spotify.com/track/5pNwTZqILMr4iD3ZHCmyok) - by *Sylvester LeVay, Oedo Kuipers* from the album 'Mozart! - Das Musical - Gesamtaufnahme Live'
 - 2025-09-10. [**Goosebumps**](https://open.spotify.com/track/4rQoLdu5ZW52wcZmeffNuh) - by *ZEROBASEONE* from the album 'NEVER SAY NEVER'
+- 2025-09-12. [**過 (Should've Let Go)**](https://open.spotify.com/track/1lrafepXruMZB5qHCNqy88) - by *Jackson Wang, JJ Lin* from the album '過 (Should've Let Go)'
 
