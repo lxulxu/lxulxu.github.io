@@ -192,7 +192,6 @@ tags: [生活]
 - 2025-09-09. [**Ça marche**](https://open.spotify.com/track/2pca2tuyC7UEupxia3eZpl) - by *Christophe Maé* from the album 'Le Roi Soleil (Le spectacle original) [L'intégrale]'
 - 2025-09-09. [**Regardez-moi**](https://open.spotify.com/track/1lc4c1UEzP9OI1wknZQDra) - by *Molière l'opéra urbain, Abi Bernadoth* from the album 'Regardez-moi'
 - 2025-09-09. [**Rêver j'en ai l'habitude**](https://open.spotify.com/track/0NdMo8e9qtwhMsmrkUURHd) - by *Dove Attia, Molière l'opéra urbain, Lou, PETiTOM, Morgan, Shaïna Pronzola, Vike, Abi Bernadoth* from the album 'Rêver j'en ai l'habitude'
-- 2025-09-09. [**Lovesick Game**](https://open.spotify.com/track/4aBQa5IjLc83hGK1uXJidS) - by *ZEROBASEONE* from the album 'NEVER SAY NEVER'
 - 2025-09-09. [**Weil du so bist, wie du bist**](https://open.spotify.com/track/2TjLPf5n9oytKDimqeUnoM) - by *Sylvester LeVay, Oedo Kuipers, Franziska Schuster* from the album 'Mozart! - Das Musical - Gesamtaufnahme Live'
 - 2025-09-09. [**Ich bin extraordinär**](https://open.spotify.com/track/07YehlgW1VuE1by5hpfliq) - by *Sylvester LeVay, Oedo Kuipers, Ensemble* from the album 'Mozart! - Das Musical - Gesamtaufnahme Live'
 - 2025-09-09. [**Halten sie den Atem an!**](https://open.spotify.com/track/3hf75DjOdGVBfJgAHLocMM) - by *Sylvester LeVay, Oedo Kuipers, Jon Geoffrey Goldsworthy, Brigitte Oelke, Ensemble* from the album 'Mozart! - Das Musical - Gesamtaufnahme Live'
@@ -233,4 +232,6 @@ tags: [生活]
 - 2025-09-12. [**Papillon**](https://open.spotify.com/track/7EFmA3zysrOPJNRqhYCOVd) - by *Jackson Wang, BOYTOY* from the album 'Papillon'
 - 2025-09-12. [**過 (Should've Let Go)**](https://open.spotify.com/track/1lrafepXruMZB5qHCNqy88) - by *Jackson Wang, JJ Lin* from the album '過 (Should've Let Go)'
 - 2025-09-12. [**Spiral**](https://open.spotify.com/track/42DzOJiUtkmCBLkLv21dCb) - by *レイニ, Yura* from the album 'Spiral'
+- 2025-09-12. [**Lovesick Game**](https://open.spotify.com/track/4aBQa5IjLc83hGK1uXJidS) - by *ZEROBASEONE* from the album 'NEVER SAY NEVER'
+- 2025-09-16. [**EI EI - Pick Me**](https://open.spotify.com/track/59RJBxYH10E64EgBHq4SWD) - by *Youth With You* from the album 'SOUR'
 
