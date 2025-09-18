@@ -162,7 +162,6 @@ tags: [生活]
 - 2025-08-09. [**心動**](https://open.spotify.com/track/6c6bGcH9CWUJOHQKCGLX0j) - by *Kit Chan* from the album '重譯 陳潔儀'
 - 2025-08-09. [**我很快乐**](https://open.spotify.com/track/6UbLrgfnJYaUvY1hqlGyjj) - by *劉惜君* from the album '爱情花园'
 - 2025-08-09. [**情有獨鍾**](https://open.spotify.com/track/5Zc7LbyCHbmc1fPzz2pEg2) - by *Phil Chang* from the album '情有獨鍾'
-- 2025-08-19. [**背對背擁抱**](https://open.spotify.com/track/5OZeRuBBRpEY13BagcAOLJ) - by *JJ Lin* from the album 'JJ林俊傑100天'
 - 2025-08-19. [**一念執著 - 《步步驚心》電視劇主題曲**](https://open.spotify.com/track/2Btp6HJ39moK7pLPwsV6pY) - by *嚴藝丹* from the album '無·果'
 - 2025-08-20. [**Burn**](https://open.spotify.com/track/4B3qvzOMzLQXLeYgPsG3KA) - by *Phillipa Soo* from the album 'Hamilton (Original Broadway Cast Recording)'
 - 2025-08-25. [**もし君を許せたら**](https://open.spotify.com/track/44RS7mk1YdSSA09lkH6sN8) - by *Leo Ieiri* from the album 'DUO'
@@ -234,4 +233,5 @@ tags: [生活]
 - 2025-09-16. [**EI EI - Pick Me**](https://open.spotify.com/track/59RJBxYH10E64EgBHq4SWD) - by *Youth With You* from the album 'SOUR'
 - 2025-09-17. [**想見你想見你想見你**](https://open.spotify.com/track/7HNUZMyUPNhwdnaiVVY9Th) - by *JJ Lin* from the album 'JJ的咖啡調調, Vol.1'
 - 2025-09-17. [**愛的初體驗**](https://open.spotify.com/track/3B09wBKxbV64nVu7GtVr2C) - by *Zhang Zhen Yue* from the album '阿嶽正傳'
+- 2025-09-18. [**背對背擁抱**](https://open.spotify.com/track/5OZeRuBBRpEY13BagcAOLJ) - by *JJ Lin* from the album 'JJ林俊傑100天'
 
