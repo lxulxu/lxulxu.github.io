@@ -44,6 +44,7 @@ tags: [生活]
 - 2025-09-05. [**西尔维斯特·里维和他的朋友们 德语音乐剧明星音乐会**](https://www.douban.com/location/drama/37407925/) - rating: ★★★★☆
 - 2025-09-06. [**翻山海**](https://www.douban.com/location/drama/36929994/) - rating: ★★★★★
 - 2025-09-10. [**麦克白夫人**](https://www.douban.com/location/drama/36792738/) - rating: ★★★☆☆
+- 2025-09-18. [**莫里哀：都市歌剧**](https://www.douban.com/location/drama/36739707/) - rating: ★★★☆☆
 
 ## 🎵MUSIC
 - 2025-07-01. [**Moonlight (feat. 袁婭維)**](https://open.spotify.com/track/5noC8HGZaLiXNdvGmjemGP) - by *Will Pan, TIA RAY* from the album '節奏先生'
