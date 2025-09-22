@@ -239,4 +239,5 @@ tags: [生活]
 - 2025-09-18. [**背對背擁抱**](https://open.spotify.com/track/5OZeRuBBRpEY13BagcAOLJ) - by *JJ Lin* from the album 'JJ林俊傑100天'
 - 2025-09-19. [**T'aimer est une galère**](https://open.spotify.com/track/5y45lRBLRjNOhOUIRK4P66) - by *Molière l'opéra urbain, PETiTOM* from the album 'Molière, le spectacle musical'
 - 2025-09-21. [**胡蘿蔔須**](https://open.spotify.com/track/6YoAwPScwVozp5A7E4vjj8) - by *許嵩* from the album '夢游計'
+- 2025-09-21. [**另一個天堂 (feat. 張靚穎)**](https://open.spotify.com/track/4NI8oSMRCJdpJPFux5G92u) - by *Leehom Wang, Jane Zhang* from the album '心跳'
 
