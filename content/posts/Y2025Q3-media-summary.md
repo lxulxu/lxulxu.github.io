@@ -237,7 +237,6 @@ tags: [生活]
 - 2025-09-22. [**Speechless (Full)**](https://open.spotify.com/track/0XPsOSYzDJZJArevQNm2AR) - by *Naomi Scott* from the album 'Aladdin (Original Motion Picture Soundtrack)'
 - 2025-09-22. [**Les maudits mots d'amour**](https://open.spotify.com/track/1aYN7p7BYwjJ83a6p9arm4) - by *Le rouge et le noir* from the album 'Le rouge et le noir (L'opéra rock)'
 - 2025-09-22. [**Ding dong**](https://open.spotify.com/track/1Wy78lLTaVuDoMgUvaSCoq) - by *Le rouge et le noir* from the album 'Le rouge et le noir (L'opéra rock)'
-- 2025-09-22. [**Rewrite The Stars**](https://open.spotify.com/track/65fpYBrI8o2cfrwf2US4gq) - by *Zac Efron, Zendaya* from the album 'The Greatest Showman (Original Motion Picture Soundtrack)'
 - 2025-09-22. [**Never Enough**](https://open.spotify.com/track/0Gl5s8IhMmQE5YQwM8Qx1J) - by *Loren Allred* from the album 'The Greatest Showman (Original Motion Picture Soundtrack)'
 - 2025-09-22. [**On se moque**](https://open.spotify.com/track/0ECp3gyWVMSFlcKCoh9Dpr) - by *Molière l'opéra urbain, Lou, PETiTOM* from the album 'Molière, le spectacle musical'
 - 2025-09-22. [**Regardez-moi**](https://open.spotify.com/track/5JjAxgtop0QnIw0MAD1mVB) - by *Molière l'opéra urbain, Abi Bernadoth* from the album 'Molière, le spectacle musical'
@@ -249,4 +248,5 @@ tags: [生活]
 - 2025-09-22. [**Moi je veux**](https://open.spotify.com/track/5CtAaDxvJRnIfPyhFScXUz) - by *Molière l'opéra urbain, Shaïna Pronzola* from the album 'Molière, le spectacle musical'
 - 2025-09-23. [**T'aimer est une galère**](https://open.spotify.com/track/5y45lRBLRjNOhOUIRK4P66) - by *Molière l'opéra urbain, PETiTOM* from the album 'Molière, le spectacle musical'
 - 2025-09-23. [**Rêver j'en ai l'habitude**](https://open.spotify.com/track/3aQ9c7nokRJMg3f0htPtzs) - by *Molière l'opéra urbain, Lou, PETiTOM, Morgan, Shaïna Pronzola, Vike, Abi Bernadoth* from the album 'Molière, le spectacle musical'
+- 2025-09-24. [**Rewrite The Stars**](https://open.spotify.com/track/65fpYBrI8o2cfrwf2US4gq) - by *Zac Efron, Zendaya* from the album 'The Greatest Showman (Original Motion Picture Soundtrack)'
 
