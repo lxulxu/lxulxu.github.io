@@ -249,4 +249,6 @@ tags: [生活]
 - 2025-09-25. [**Rêver j'en ai l'habitude**](https://open.spotify.com/track/3aQ9c7nokRJMg3f0htPtzs) - by *Molière l'opéra urbain, Lou, PETiTOM, Morgan, Shaïna Pronzola, Vike, Abi Bernadoth* from the album 'Molière, le spectacle musical'
 - 2025-09-25. [**On se moque**](https://open.spotify.com/track/0ECp3gyWVMSFlcKCoh9Dpr) - by *Molière l'opéra urbain, Lou, PETiTOM* from the album 'Molière, le spectacle musical'
 - 2025-09-25. [**Regardez-moi**](https://open.spotify.com/track/5JjAxgtop0QnIw0MAD1mVB) - by *Molière l'opéra urbain, Abi Bernadoth* from the album 'Molière, le spectacle musical'
+- 2025-09-25. [**煙雨濛濛**](https://open.spotify.com/track/6KMXoQ2Fn4SiqxzH4bkoqE) - by *Leo Ku* from the album '戀戀情深'
+- 2025-09-25. [**好想好想**](https://open.spotify.com/track/3Qyhd3R6SRQfj7M3BnLX2i) - by *Leo Ku* from the album '戀戀情深'
 
