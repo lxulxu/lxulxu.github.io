@@ -34,6 +34,7 @@ tags: [生活]
 - 2025-09-13. [**轻于鸿毛**](https://movie.douban.com/subject/36782374/) - rating: ★★★☆☆
 - 2025-09-18. [**莫里哀：音乐剧**](https://movie.douban.com/subject/37442893/) - rating: ★★★☆☆
 - 2025-09-20. [**偶像：The Coup**](https://movie.douban.com/subject/35420006/) - rating: ★★★☆☆
+- 2025-09-27. [**消失的初恋**](https://movie.douban.com/subject/35563503/) - rating: ★★★★☆
 
 ## 🎮Games
 - 2025-08-02. [**多重人生 The Alters**](http://www.douban.com/game/35928518/) - rating: ★★★★★
