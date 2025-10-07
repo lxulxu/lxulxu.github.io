@@ -13,4 +13,5 @@ tags: [生活]
 
 ## 🎵MUSIC
 - 2025-10-01. [**Ubu Love**](https://open.spotify.com/track/3XW3XZ0p8Lt7eJobT3ef32) - by *なにわ男子* from the album '1st Love（Special Edition）'
+- 2025-10-07. [**Heartless**](https://open.spotify.com/track/4EWCNWgDS8707fNSZ1oaA5) - by *Kanye West* from the album '808s & Heartbreak'
 
