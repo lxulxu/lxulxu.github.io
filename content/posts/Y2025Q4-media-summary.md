@@ -15,4 +15,8 @@ tags: [生活]
 ## 🎵MUSIC
 - 2025-10-01. [**Ubu Love**](https://open.spotify.com/track/3XW3XZ0p8Lt7eJobT3ef32) - by *なにわ男子* from the album '1st Love（Special Edition）'
 - 2025-10-07. [**Heartless**](https://open.spotify.com/track/4EWCNWgDS8707fNSZ1oaA5) - by *Kanye West* from the album '808s & Heartbreak'
+- 2025-10-09. [**All Falls Down**](https://open.spotify.com/track/5SkRLpaGtvYPhw02vZhQQ9) - by *Kanye West, Syleena Johnson* from the album 'The College Dropout'
+- 2025-10-09. [**Runaway**](https://open.spotify.com/track/3DK6m7It6Pw857FcQftMds) - by *Kanye West, Pusha T* from the album 'My Beautiful Dark Twisted Fantasy'
+- 2025-10-09. [**E.T.**](https://open.spotify.com/track/36ux3YuUsGTWPT8fXclS45) - by *Katy Perry, Kanye West* from the album 'Teenage Dream: The Complete Confection'
+- 2025-10-09. [**Secret Touch**](https://open.spotify.com/track/1rRExpEJitAnqZxacYUsBY) - by *Snow Man* from the album 'THE BEST 2020 - 2025'
 
