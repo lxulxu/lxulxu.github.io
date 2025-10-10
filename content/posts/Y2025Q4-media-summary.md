@@ -11,6 +11,10 @@ tags: [生活]
 - 2025-10-01. [**风林火山**](https://movie.douban.com/subject/26351864/) - rating: ★★★☆☆
 - 2025-10-07. [**震耳欲聋**](https://movie.douban.com/subject/37107063/) - rating: ★★★★☆
 - 2025-10-08. [**丑陋的继姐**](https://movie.douban.com/subject/36471252/) - rating: ★★★★☆
+- 2025-10-10. [**迟迟未开的花**](https://movie.douban.com/subject/5056336/) - rating: ★★★☆☆
+
+## 🎭Dramas
+- 2025-10-10. [**摇滚红与黑**](https://www.douban.com/location/drama/26875868/) - rating: ★★★★★
 
 ## 🎵MUSIC
 - 2025-10-07. [**Heartless**](https://open.spotify.com/track/4EWCNWgDS8707fNSZ1oaA5) - by *Kanye West* from the album '808s & Heartbreak'
