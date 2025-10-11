@@ -47,4 +47,9 @@ tags: [生活]
 - 2025-10-10. [**Dans le noir je vois rouge**](https://open.spotify.com/track/0TK5E0P1vdmdLYMW6B7qOV) - by *Le rouge et le noir* from the album 'Le rouge et le noir (L'opéra rock)'
 - 2025-10-10. [**Ces peines perdues**](https://open.spotify.com/track/6K3bfYLIJi8dX0Ynh4yih8) - by *Le rouge et le noir* from the album 'Le rouge et le noir (L'opéra rock)'
 - 2025-10-10. [**Tout se perd**](https://open.spotify.com/track/1aTLj4CZjvzUdypbSoB1nz) - by *Le rouge et le noir* from the album 'Le rouge et le noir (L'opéra rock)'
+- 2025-10-11. [**Born Again (feat. Doja Cat & RAYE)**](https://open.spotify.com/track/4CPuDVC8jhhK6lA2DIt8Cf) - by *LISA, Doja Cat, RAYE* from the album 'Born Again (feat. Doja Cat & RAYE)'
+- 2025-10-11. [**TOO BAD**](https://open.spotify.com/track/0GOqhXyouUxqPEw9ypTOLm) - by *G-DRAGON, Anderson .Paak* from the album 'Übermensch'
+- 2025-10-11. [**COLD (feat.10CM)**](https://open.spotify.com/track/4pZUVR0l4sPl8GKPm6FXDa) - by *YOUNG POSSE, 10CM* from the album 'COLD'
+- 2025-10-11. [**Lose My Mind (feat. Doja Cat)**](https://open.spotify.com/track/34irl1fwZjGeArDmY9anKm) - by *Don Toliver, Doja Cat* from the album 'F1 The Album'
+- 2025-10-11. [**Drive**](https://open.spotify.com/track/0mLumCawWeaMSL5LAHFIo4) - by *Ed Sheeran* from the album 'F1 The Album'
 
