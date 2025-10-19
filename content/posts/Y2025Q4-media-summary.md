@@ -15,6 +15,9 @@ tags: [生活]
 - 2025-10-11. [**毕正明的证明**](https://movie.douban.com/subject/36402017/) - rating: ★★★★☆
 - 2025-10-17. [**一战再战**](https://movie.douban.com/subject/36176155/) - rating: ★★★★☆
 
+## 🎮Games
+- 2025-10-18. [**菜市场模拟器 Old Market Simulator**](http://www.douban.com/game/37069443/) - rating: ★★★★☆
+
 ## 🎭Dramas
 - 2025-10-10. [**摇滚红与黑**](https://www.douban.com/location/drama/26875868/) - rating: ★★★★★
 
