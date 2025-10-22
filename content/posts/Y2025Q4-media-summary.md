@@ -24,8 +24,6 @@ tags: [生活]
 
 ## 🎵MUSIC
 - 2025-10-07. [**Heartless**](https://open.spotify.com/track/4EWCNWgDS8707fNSZ1oaA5) - by *Kanye West* from the album '808s & Heartbreak'
-- 2025-10-09. [**Papillon**](https://open.spotify.com/track/7EFmA3zysrOPJNRqhYCOVd) - by *Jackson Wang, BOYTOY* from the album 'Papillon'
-- 2025-10-09. [**過 (Should've Let Go)**](https://open.spotify.com/track/1lrafepXruMZB5qHCNqy88) - by *Jackson Wang, JJ Lin* from the album '過 (Should've Let Go)'
 - 2025-10-09. [**All Falls Down**](https://open.spotify.com/track/5SkRLpaGtvYPhw02vZhQQ9) - by *Kanye West, Syleena Johnson* from the album 'The College Dropout'
 - 2025-10-09. [**E.T.**](https://open.spotify.com/track/36ux3YuUsGTWPT8fXclS45) - by *Katy Perry, Kanye West* from the album 'Teenage Dream: The Complete Confection'
 - 2025-10-09. [**POWER**](https://open.spotify.com/track/2gZUPNdnz5Y45eiGxpHGSc) - by *Kanye West* from the album 'My Beautiful Dark Twisted Fantasy'
@@ -51,7 +49,6 @@ tags: [生活]
 - 2025-10-11. [**Drive**](https://open.spotify.com/track/0mLumCawWeaMSL5LAHFIo4) - by *Ed Sheeran* from the album 'F1 The Album'
 - 2025-10-15. [**Spiral**](https://open.spotify.com/track/42DzOJiUtkmCBLkLv21dCb) - by *レイニ, Yura* from the album 'Spiral'
 - 2025-10-15. [**Lovesick Game**](https://open.spotify.com/track/4aBQa5IjLc83hGK1uXJidS) - by *ZEROBASEONE* from the album 'NEVER SAY NEVER'
-- 2025-10-15. [**Secret Touch**](https://open.spotify.com/track/1rRExpEJitAnqZxacYUsBY) - by *Snow Man* from the album 'THE BEST 2020 - 2025'
 - 2025-10-17. [**Le bien qui fait mal**](https://open.spotify.com/track/4l9fRnSDAn1aeNcMl5N7rE) - by *Mozart Opera Rock* from the album 'Mozart l'Opera Rock (standard)'
 - 2025-10-17. [**L'assasymphonie**](https://open.spotify.com/track/3fAOSZc5hTpnXxSO43ymwu) - by *Mozart Opera Rock* from the album 'Mozart l'Opera Rock (standard)'
 - 2025-10-17. [**Satisfied**](https://open.spotify.com/track/3dP0pLbg9OfVwssDjp9aT0) - by *Renée Elise Goldsberry, Original Broadway Cast of Hamilton* from the album 'Hamilton (Original Broadway Cast Recording)'
@@ -76,4 +73,7 @@ tags: [生活]
 - 2025-10-17. [**Regardez-moi**](https://open.spotify.com/track/5JjAxgtop0QnIw0MAD1mVB) - by *Molière l'opéra urbain, Abi Bernadoth* from the album 'Molière, le spectacle musical'
 - 2025-10-17. [**Ecouter son coeur**](https://open.spotify.com/track/7uVCIgL7yiGhcBV0d2Pjwt) - by *Le rouge et le noir* from the album 'Le rouge et le noir (L'opéra rock)'
 - 2025-10-17. [**Dans le noir je vois rouge**](https://open.spotify.com/track/0TK5E0P1vdmdLYMW6B7qOV) - by *Le rouge et le noir* from the album 'Le rouge et le noir (L'opéra rock)'
+- 2025-10-21. [**Secret Touch**](https://open.spotify.com/track/1rRExpEJitAnqZxacYUsBY) - by *Snow Man* from the album 'THE BEST 2020 - 2025'
+- 2025-10-22. [**Papillon**](https://open.spotify.com/track/7EFmA3zysrOPJNRqhYCOVd) - by *Jackson Wang, BOYTOY* from the album 'Papillon'
+- 2025-10-22. [**過 (Should've Let Go)**](https://open.spotify.com/track/1lrafepXruMZB5qHCNqy88) - by *Jackson Wang, JJ Lin* from the album '過 (Should've Let Go)'
 
