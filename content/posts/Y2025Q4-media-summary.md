@@ -15,6 +15,7 @@ tags: [生活]
 - 2025-10-11. [**毕正明的证明**](https://movie.douban.com/subject/36402017/) - rating: ★★★★☆
 - 2025-10-17. [**一战再战**](https://movie.douban.com/subject/36176155/) - rating: ★★★★☆
 - 2025-10-21. [**喜人奇妙夜2**](https://movie.douban.com/subject/37388213/) - rating: ★★★★☆
+- 2025-10-22. [**命悬一生**](https://movie.douban.com/subject/36571896/) - rating: ★★★★☆
 
 ## 🎮Games
 - 2025-10-18. [**菜市场模拟器 Old Market Simulator**](http://www.douban.com/game/37069443/) - rating: ★★★★☆
