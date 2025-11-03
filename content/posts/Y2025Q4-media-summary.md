@@ -78,7 +78,6 @@ tags: [生活]
 - 2025-10-29. [**Bye Bye Bye**](https://open.spotify.com/track/62bOmKYxYg7dhrC6gH9vFn) - by **NSYNC* from the album 'No Strings Attached'
 - 2025-10-29. [**Bring Em Out**](https://open.spotify.com/track/7oAZVxmRCVFanxK7tk16vv) - by *T.I.* from the album 'Urban Legend'
 - 2025-10-29. [**Like a Prayer**](https://open.spotify.com/track/2v7ywbUzCgcVohHaKUcacV) - by *Madonna* from the album 'Like a Prayer'
-- 2025-10-29. [**Papillon**](https://open.spotify.com/track/7EFmA3zysrOPJNRqhYCOVd) - by *Jackson Wang, BOYTOY* from the album 'Papillon'
 - 2025-10-30. [**Lovesick Game**](https://open.spotify.com/track/4aBQa5IjLc83hGK1uXJidS) - by *ZEROBASEONE* from the album 'NEVER SAY NEVER'
 - 2025-10-30. [**T'aimer est une galère**](https://open.spotify.com/track/5y45lRBLRjNOhOUIRK4P66) - by *Molière l'opéra urbain, PETiTOM* from the album 'Molière, le spectacle musical'
 - 2025-10-30. [**Secret Touch**](https://open.spotify.com/track/1rRExpEJitAnqZxacYUsBY) - by *Snow Man* from the album 'THE BEST 2020 - 2025'
@@ -104,4 +103,5 @@ tags: [生活]
 - 2025-10-31. [**Spiral**](https://open.spotify.com/track/42DzOJiUtkmCBLkLv21dCb) - by *レイニ, Yura* from the album 'Spiral'
 - 2025-10-31. [**Ubu Love**](https://open.spotify.com/track/3XW3XZ0p8Lt7eJobT3ef32) - by *なにわ男子* from the album '1st Love（Special Edition）'
 - 2025-10-31. [**Runaway**](https://open.spotify.com/track/3DK6m7It6Pw857FcQftMds) - by *Kanye West, Pusha T* from the album 'My Beautiful Dark Twisted Fantasy'
+- 2025-11-03. [**Papillon**](https://open.spotify.com/track/7EFmA3zysrOPJNRqhYCOVd) - by *Jackson Wang, BOYTOY* from the album 'Papillon'
 
