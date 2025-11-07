@@ -24,6 +24,7 @@ tags: [生活]
 ## 🎭Dramas
 - 2025-10-10. [**摇滚红与黑**](https://www.douban.com/location/drama/26875868/) - rating: ★★★★★
 - 2025-10-31. [**米歇尔·科尔哈斯**](https://www.douban.com/location/drama/36668023/) - rating: ★★★★☆
+- 2025-11-07. [**理查三世（奥斯特玛雅版）**](https://www.douban.com/location/drama/37101214/) - rating: ★★★★☆
 
 ## 🎵MUSIC
 - 2025-10-07. [**Heartless**](https://open.spotify.com/track/4EWCNWgDS8707fNSZ1oaA5) - by *Kanye West* from the album '808s & Heartbreak'
