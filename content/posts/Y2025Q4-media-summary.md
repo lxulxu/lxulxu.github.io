@@ -21,6 +21,7 @@ tags: [生活]
 
 ## 🎮Games
 - 2025-10-18. [**菜市场模拟器 Old Market Simulator**](http://www.douban.com/game/37069443/) - rating: ★★★★☆
+- 2025-11-17. [**纪元117：罗马和平 Anno 117: Pax Romana**](http://www.douban.com/game/36919864/) - rating: ★★★★☆
 
 ## 🎭Dramas
 - 2025-10-10. [**摇滚红与黑**](https://www.douban.com/location/drama/26875868/) - rating: ★★★★★
