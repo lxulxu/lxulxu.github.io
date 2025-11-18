@@ -99,7 +99,7 @@ tags: [生活]
 - 2025-11-07. [**Born Again (feat. Doja Cat & RAYE)**](https://open.spotify.com/track/4CPuDVC8jhhK6lA2DIt8Cf) - by *LISA, Doja Cat, RAYE* from the album 'Born Again (feat. Doja Cat & RAYE)'
 - 2025-11-07. [**TOO BAD**](https://open.spotify.com/track/0GOqhXyouUxqPEw9ypTOLm) - by *G-DRAGON, Anderson .Paak* from the album 'Übermensch'
 - 2025-11-07. [**COLD (feat.10CM)**](https://open.spotify.com/track/4pZUVR0l4sPl8GKPm6FXDa) - by *YOUNG POSSE, 10CM* from the album 'COLD'
-- 2025-11-07. [**Secret Touch**](https://open.spotify.com/track/1rRExpEJitAnqZxacYUsBY) - by *Snow Man* from the album 'THE BEST 2020 - 2025'
+- 2025-11-10. [**Secret Touch**](https://open.spotify.com/track/1rRExpEJitAnqZxacYUsBY) - by *Snow Man* from the album 'THE BEST 2020 - 2025'
 - 2025-11-12. [**총맞은것처럼**](https://open.spotify.com/track/1TnykJShAmwjk8y1WZSD3W) - by *Baek Z Young* from the album 'Sensibility'
 - 2025-11-12. [**Papillon**](https://open.spotify.com/track/7EFmA3zysrOPJNRqhYCOVd) - by *Jackson Wang, BOYTOY* from the album 'Papillon'
 - 2025-11-12. [**過 (Should've Let Go)**](https://open.spotify.com/track/1lrafepXruMZB5qHCNqy88) - by *Jackson Wang, JJ Lin* from the album '過 (Should've Let Go)'
