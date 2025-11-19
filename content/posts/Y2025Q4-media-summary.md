@@ -108,10 +108,11 @@ tags: [生活]
 - 2025-11-14. [**Drive**](https://open.spotify.com/track/0mLumCawWeaMSL5LAHFIo4) - by *Ed Sheeran* from the album 'F1 The Album'
 - 2025-11-14. [**(từng là) Boyfriend, Girlfriend**](https://open.spotify.com/track/7B2UpgEZe68OdfKzBb8JZq) - by *MIN* from the album 'Dear Min'
 - 2025-11-18. [**戒网 - 《黑神话：悟空》游戏插曲**](https://open.spotify.com/track/5YNQbYUzUSydun1KnB99dK) - by *张静峥, 王馨悦* from the album '戒网 (《黑神话：悟空》游戏插曲)'
-- 2025-11-18. [**FAMOUS**](https://open.spotify.com/track/40UVUuyy5RfpO0awclCttA) - by *ALLDAY PROJECT* from the album 'FAMOUS'
 - 2025-11-18. [**愛的初體驗**](https://open.spotify.com/track/3B09wBKxbV64nVu7GtVr2C) - by *Zhang Zhen Yue* from the album '阿嶽正傳'
 - 2025-11-18. [**Spiral**](https://open.spotify.com/track/42DzOJiUtkmCBLkLv21dCb) - by *レイニ, Yura* from the album 'Spiral'
 - 2025-11-18. [**明明很愛妳**](https://open.spotify.com/track/1LdvN4kUJTbERYCShHYdch) - by *Victor Wong, Fish Leong* from the album '門沒鎖'
 - 2025-11-18. [**外滩十八号**](https://open.spotify.com/track/7jSG5OWbcX55AwaPjIq6KI) - by *戚薇, 袁成杰* from the album '外滩十八号'
 - 2025-11-18. [**西界**](https://open.spotify.com/track/7mcvu4tR1y0YqPNpr0ZqD8) - by *JJ Lin* from the album '西界'
+- 2025-11-19. [**FAMOUS**](https://open.spotify.com/track/40UVUuyy5RfpO0awclCttA) - by *ALLDAY PROJECT* from the album 'FAMOUS'
+- 2025-11-19. [**ONE MORE TIME**](https://open.spotify.com/track/7FyKqLLICVzwBiAUtbVYUW) - by *ALLDAY PROJECT* from the album 'ONE MORE TIME'
 
