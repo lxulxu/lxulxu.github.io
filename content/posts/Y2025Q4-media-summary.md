@@ -18,6 +18,7 @@ tags: [生活]
 - 2025-10-22. [**命悬一生**](https://movie.douban.com/subject/36571896/) - rating: ★★★★☆
 - 2025-10-25. [**封神榜之凤鸣岐山**](https://movie.douban.com/subject/3103410/) - rating: ★★★★☆
 - 2025-11-11. [**20岁的微热**](https://movie.douban.com/subject/1401530/) - rating: ★★★★☆
+- 2025-11-20. [**他为什么依然单身**](https://movie.douban.com/subject/36544257/) - rating: ★★★★☆
 
 ## 🎮Games
 - 2025-10-18. [**菜市场模拟器 Old Market Simulator**](http://www.douban.com/game/37069443/) - rating: ★★★★☆
