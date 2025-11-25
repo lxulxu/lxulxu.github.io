@@ -118,4 +118,8 @@ tags: [生活]
 - 2025-11-22. [**像晴天像雨天（电视剧《难哄》心动曲）**](https://open.spotify.com/track/298LjjcBvuQCAlwUWb9dKb) - by *Silence Wang* from the album '电视剧《难哄》影视原声带·只喜欢你Love Moments'
 - 2025-11-22. [**明明很愛妳**](https://open.spotify.com/track/1LdvN4kUJTbERYCShHYdch) - by *Victor Wong, Fish Leong* from the album '門沒鎖'
 - 2025-11-22. [**會呼吸的痛**](https://open.spotify.com/track/5IgElbSREzVyqgf1OCuKJd) - by *Fish Leong* from the album '崇拜'
+- 2025-11-25. [**想見你想見你想見你**](https://open.spotify.com/track/7HNUZMyUPNhwdnaiVVY9Th) - by *JJ Lin* from the album 'JJ的咖啡調調, Vol.1'
+- 2025-11-25. [**落叶归根 - Live|典藏**](https://open.spotify.com/track/564OB4zXyN3ZdBP3aFpmq8) - by *單依純, Leehom Wang* from the album '歌手2025 第13期 (Live)'
+- 2025-11-25. [**戀愛達人**](https://open.spotify.com/track/7yem27EktuPjs9JqYWCiZz) - by *Show Luo* from the album '達人Show'
+- 2025-11-25. [**素颜**](https://open.spotify.com/track/65bRYkG90LpIzqLzg4firZ) - by *許嵩, 何曼婷* from the album '素顏'
 
