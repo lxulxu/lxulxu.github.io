@@ -30,6 +30,7 @@ tags: [生活]
 - 2025-10-31. [**米歇尔·科尔哈斯**](https://www.douban.com/location/drama/36668023/) - rating: ★★★★☆
 - 2025-11-07. [**理查三世（奥斯特玛雅版）**](https://www.douban.com/location/drama/37101214/) - rating: ★★★★☆
 - 2025-11-13. [**查理与巧克力工厂**](https://www.douban.com/location/drama/22224402/) - rating: ★★★★☆
+- 2025-11-27. [**德语原版音乐剧《莫扎特！》音乐剧版音乐会**](https://www.douban.com/location/drama/37537710/) - rating: ★★★★☆
 
 ## 🎵MUSIC
 - 2025-10-07. [**Heartless**](https://open.spotify.com/track/4EWCNWgDS8707fNSZ1oaA5) - by *Kanye West* from the album '808s & Heartbreak'
@@ -100,13 +101,11 @@ tags: [生活]
 - 2025-11-18. [**外滩十八号**](https://open.spotify.com/track/7jSG5OWbcX55AwaPjIq6KI) - by *戚薇, 袁成杰* from the album '外滩十八号'
 - 2025-11-18. [**西界**](https://open.spotify.com/track/7mcvu4tR1y0YqPNpr0ZqD8) - by *JJ Lin* from the album '西界'
 - 2025-11-19. [**ONE MORE TIME**](https://open.spotify.com/track/7FyKqLLICVzwBiAUtbVYUW) - by *ALLDAY PROJECT* from the album 'ONE MORE TIME'
-- 2025-11-22. [**明明很愛妳**](https://open.spotify.com/track/1LdvN4kUJTbERYCShHYdch) - by *Victor Wong, Fish Leong* from the album '門沒鎖'
 - 2025-11-22. [**會呼吸的痛**](https://open.spotify.com/track/5IgElbSREzVyqgf1OCuKJd) - by *Fish Leong* from the album '崇拜'
 - 2025-11-25. [**想見你想見你想見你**](https://open.spotify.com/track/7HNUZMyUPNhwdnaiVVY9Th) - by *JJ Lin* from the album 'JJ的咖啡調調, Vol.1'
 - 2025-11-25. [**像晴天像雨天（电视剧《难哄》心动曲）**](https://open.spotify.com/track/298LjjcBvuQCAlwUWb9dKb) - by *Silence Wang* from the album '电视剧《难哄》影视原声带·只喜欢你Love Moments'
 - 2025-11-25. [**落叶归根 - Live|典藏**](https://open.spotify.com/track/564OB4zXyN3ZdBP3aFpmq8) - by *單依純, Leehom Wang* from the album '歌手2025 第13期 (Live)'
 - 2025-11-25. [**戀愛達人**](https://open.spotify.com/track/7yem27EktuPjs9JqYWCiZz) - by *Show Luo* from the album '達人Show'
-- 2025-11-25. [**素颜**](https://open.spotify.com/track/65bRYkG90LpIzqLzg4firZ) - by *許嵩, 何曼婷* from the album '素顏'
 - 2025-11-26. [**致你**](https://open.spotify.com/track/1BH8aQSiigtTbbqms4XpwR) - by *Yihuik苡慧* from the album '致你'
 - 2025-11-26. [**Born Again (feat. Doja Cat & RAYE)**](https://open.spotify.com/track/4CPuDVC8jhhK6lA2DIt8Cf) - by *LISA, Doja Cat, RAYE* from the album 'Born Again (feat. Doja Cat & RAYE)'
 - 2025-11-26. [**TOO BAD**](https://open.spotify.com/track/0GOqhXyouUxqPEw9ypTOLm) - by *G-DRAGON, Anderson .Paak* from the album 'Übermensch'
@@ -123,4 +122,7 @@ tags: [生活]
 - 2025-11-26. [**Runaway**](https://open.spotify.com/track/3DK6m7It6Pw857FcQftMds) - by *Kanye West, Pusha T* from the album 'My Beautiful Dark Twisted Fantasy'
 - 2025-11-26. [**Secret Touch**](https://open.spotify.com/track/1rRExpEJitAnqZxacYUsBY) - by *Snow Man* from the album 'THE BEST 2020 - 2025'
 - 2025-11-26. [**POWER**](https://open.spotify.com/track/2gZUPNdnz5Y45eiGxpHGSc) - by *Kanye West* from the album 'My Beautiful Dark Twisted Fantasy'
+- 2025-11-27. [**明明很愛妳**](https://open.spotify.com/track/1LdvN4kUJTbERYCShHYdch) - by *Victor Wong, Fish Leong* from the album '門沒鎖'
+- 2025-11-27. [**素颜**](https://open.spotify.com/track/65bRYkG90LpIzqLzg4firZ) - by *許嵩, 何曼婷* from the album '素顏'
+- 2025-11-27. [**涼涼**](https://open.spotify.com/track/57afrX9MrabKpCm5LWFR0x) - by *Zhang Bichen, Aska Yang* from the album '電視劇《三生三世十裡桃花》原聲帶'
 
