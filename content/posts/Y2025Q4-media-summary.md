@@ -125,4 +125,7 @@ tags: [生活]
 - 2025-11-27. [**明明很愛妳**](https://open.spotify.com/track/1LdvN4kUJTbERYCShHYdch) - by *Victor Wong, Fish Leong* from the album '門沒鎖'
 - 2025-11-27. [**素颜**](https://open.spotify.com/track/65bRYkG90LpIzqLzg4firZ) - by *許嵩, 何曼婷* from the album '素顏'
 - 2025-11-27. [**涼涼**](https://open.spotify.com/track/57afrX9MrabKpCm5LWFR0x) - by *Zhang Bichen, Aska Yang* from the album '電視劇《三生三世十裡桃花》原聲帶'
+- 2025-11-28. [**Die Wunder sind vorüber**](https://open.spotify.com/track/0QLUIqpuJlptCHlZ716Ucn) - by *Sylvester LeVay, Oedo Kuipers, Jon Geoffrey Goldsworthy, Thomas Borchert, Ensemble* from the album 'Mozart! - Das Musical - Gesamtaufnahme Live'
+- 2025-11-28. [**Ich bin, ich bin Musik**](https://open.spotify.com/track/5pNwTZqILMr4iD3ZHCmyok) - by *Sylvester LeVay, Oedo Kuipers* from the album 'Mozart! - Das Musical - Gesamtaufnahme Live'
+- 2025-11-28. [**Wie wird man seinen Schatten los?**](https://open.spotify.com/track/50c40sN4utwDSJs8m8Mv1p) - by *Sylvester LeVay, Oedo Kuipers, Ensemble* from the album 'Mozart! - Das Musical - Gesamtaufnahme Live'
 
