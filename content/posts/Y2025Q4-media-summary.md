@@ -20,6 +20,7 @@ tags: [生活]
 - 2025-11-11. [**20岁的微热**](https://movie.douban.com/subject/1401530/) - rating: ★★★★☆
 - 2025-11-20. [**他为什么依然单身**](https://movie.douban.com/subject/36544257/) - rating: ★★★★☆
 - 2025-11-26. [**疯狂动物城2**](https://movie.douban.com/subject/26817136/) - rating: ★★★★☆
+- 2025-12-01. [**哑妻**](https://movie.douban.com/subject/2287262/) - rating: ★★★★☆
 
 ## 🎮Games
 - 2025-10-18. [**菜市场模拟器 Old Market Simulator**](http://www.douban.com/game/37069443/) - rating: ★★★★☆
