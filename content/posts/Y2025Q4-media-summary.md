@@ -35,6 +35,7 @@ tags: [生活]
 - 2025-11-13. [**查理与巧克力工厂**](https://www.douban.com/location/drama/22224402/) - rating: ★★★★☆
 - 2025-11-27. [**德语原版音乐剧《莫扎特！》音乐剧版音乐会**](https://www.douban.com/location/drama/37537710/) - rating: ★★★★☆
 - 2025-12-15. [**不眠之夜**](https://www.douban.com/location/drama/20398014/) - rating: ★★★☆☆
+- 2025-12-19. [**罗密欧与朱丽叶：维罗纳的孩子**](https://www.douban.com/location/drama/36421968/) - rating: ★★★★☆
 
 ## 🎵MUSIC
 - 2025-10-07. [**Heartless**](https://open.spotify.com/track/4EWCNWgDS8707fNSZ1oaA5) - by *Kanye West* from the album '808s & Heartbreak'
