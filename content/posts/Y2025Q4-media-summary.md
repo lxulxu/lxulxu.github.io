@@ -134,8 +134,6 @@ tags: [生活]
 - 2025-12-17. [**明明很愛妳**](https://open.spotify.com/track/1LdvN4kUJTbERYCShHYdch) - by *Victor Wong, Fish Leong* from the album '門沒鎖'
 - 2025-12-17. [**素颜**](https://open.spotify.com/track/65bRYkG90LpIzqLzg4firZ) - by *許嵩, 何曼婷* from the album '素顏'
 - 2025-12-17. [**將故事寫成我們**](https://open.spotify.com/track/3APYQVgmEDZ6sPbpLo7Hog) - by *JJ Lin* from the album '將故事寫成我們'
-- 2025-12-19. [**Spiral**](https://open.spotify.com/track/42DzOJiUtkmCBLkLv21dCb) - by *レイニ, Yura* from the album 'Spiral'
-- 2025-12-19. [**Secret Touch**](https://open.spotify.com/track/1rRExpEJitAnqZxacYUsBY) - by *Snow Man* from the album 'THE BEST 2020 - 2025'
 - 2025-12-22. [**黃昏**](https://open.spotify.com/track/4mronxcllhfyhBRqyZi8kU) - by *Steve Chou* from the album 'Transfer'
 - 2025-12-22. [**等待**](https://open.spotify.com/track/7h3Fuz0zLGuxxo9rk1bRha) - by *韩磊* from the album '时代'
 - 2025-12-23. [**Ubu Love**](https://open.spotify.com/track/3XW3XZ0p8Lt7eJobT3ef32) - by *なにわ男子* from the album '1st Love（Special Edition）'
@@ -145,5 +143,7 @@ tags: [生活]
 - 2025-12-24. [**총맞은것처럼**](https://open.spotify.com/track/1TnykJShAmwjk8y1WZSD3W) - by *Baek Z Young* from the album 'Sensibility'
 - 2025-12-24. [**Papillon**](https://open.spotify.com/track/7EFmA3zysrOPJNRqhYCOVd) - by *Jackson Wang, BOYTOY* from the album 'Papillon'
 - 2025-12-24. [**過 (Should've Let Go)**](https://open.spotify.com/track/1lrafepXruMZB5qHCNqy88) - by *Jackson Wang, JJ Lin* from the album '過 (Should've Let Go)'
+- 2025-12-24. [**Spiral**](https://open.spotify.com/track/42DzOJiUtkmCBLkLv21dCb) - by *レイニ, Yura* from the album 'Spiral'
 - 2025-12-24. [**Lovesick Game**](https://open.spotify.com/track/4aBQa5IjLc83hGK1uXJidS) - by *ZEROBASEONE* from the album 'NEVER SAY NEVER'
+- 2025-12-24. [**Secret Touch**](https://open.spotify.com/track/1rRExpEJitAnqZxacYUsBY) - by *Snow Man* from the album 'THE BEST 2020 - 2025'
 
