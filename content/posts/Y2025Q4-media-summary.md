@@ -23,6 +23,8 @@ tags: [生活]
 - 2025-12-01. [**哑妻**](https://movie.douban.com/subject/2287262/) - rating: ★★★★☆
 - 2025-12-02. [**大生意人**](https://movie.douban.com/subject/35496393/) - rating: ★★★☆☆
 - 2025-12-21. [**贴身情人**](https://movie.douban.com/subject/1298728/) - rating: ★★★☆☆
+- 2025-12-26. [**用武之地**](https://movie.douban.com/subject/35461578/) - rating: ★★★★☆
+- 2025-12-26. [**阿凡达：火与烬**](https://movie.douban.com/subject/5348089/) - rating: ★★★★☆
 
 ## 🎮Games
 - 2025-10-18. [**菜市场模拟器 Old Market Simulator**](http://www.douban.com/game/37069443/) - rating: ★★★★☆
