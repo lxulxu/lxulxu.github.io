@@ -25,6 +25,7 @@ tags: [生活]
 - 2025-12-21. [**贴身情人**](https://movie.douban.com/subject/1298728/) - rating: ★★★☆☆
 - 2025-12-26. [**用武之地**](https://movie.douban.com/subject/35461578/) - rating: ★★★★☆
 - 2025-12-26. [**阿凡达：火与烬**](https://movie.douban.com/subject/5348089/) - rating: ★★★★☆
+- 2025-12-28. [**火鸟**](https://movie.douban.com/subject/1790408/) - rating: ★★★★☆
 
 ## 🎮Games
 - 2025-10-18. [**菜市场模拟器 Old Market Simulator**](http://www.douban.com/game/37069443/) - rating: ★★★★☆
