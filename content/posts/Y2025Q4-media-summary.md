@@ -134,7 +134,6 @@ tags: [生活]
 - 2025-12-15. [**一念執著 - 《步步驚心》電視劇主題曲**](https://open.spotify.com/track/2Btp6HJ39moK7pLPwsV6pY) - by *嚴藝丹* from the album '無·果'
 - 2025-12-15. [**One Wish**](https://open.spotify.com/track/2TFsx3B0hLSSTambrudXs3) - by *Ray J* from the album 'Raydiation'
 - 2025-12-15. [**過火**](https://open.spotify.com/track/7BtnKGiYvng5BPBwLyX3Xt) - by *Jeff Chang* from the album '選哲'
-- 2025-12-17. [**明明很愛妳**](https://open.spotify.com/track/1LdvN4kUJTbERYCShHYdch) - by *Victor Wong, Fish Leong* from the album '門沒鎖'
 - 2025-12-17. [**素颜**](https://open.spotify.com/track/65bRYkG90LpIzqLzg4firZ) - by *許嵩, 何曼婷* from the album '素顏'
 - 2025-12-17. [**將故事寫成我們**](https://open.spotify.com/track/3APYQVgmEDZ6sPbpLo7Hog) - by *JJ Lin* from the album '將故事寫成我們'
 - 2025-12-22. [**黃昏**](https://open.spotify.com/track/4mronxcllhfyhBRqyZi8kU) - by *Steve Chou* from the album 'Transfer'
@@ -149,4 +148,6 @@ tags: [生活]
 - 2025-12-24. [**Spiral**](https://open.spotify.com/track/42DzOJiUtkmCBLkLv21dCb) - by *レイニ, Yura* from the album 'Spiral'
 - 2025-12-24. [**Lovesick Game**](https://open.spotify.com/track/4aBQa5IjLc83hGK1uXJidS) - by *ZEROBASEONE* from the album 'NEVER SAY NEVER'
 - 2025-12-24. [**Secret Touch**](https://open.spotify.com/track/1rRExpEJitAnqZxacYUsBY) - by *Snow Man* from the album 'THE BEST 2020 - 2025'
+- 2025-12-29. [**明明很愛妳**](https://open.spotify.com/track/1LdvN4kUJTbERYCShHYdch) - by *Victor Wong, Fish Leong* from the album '門沒鎖'
+- 2025-12-29. [**當**](https://open.spotify.com/track/43n3DcHCoDwkRHFFmRnRos) - by *Power Station* from the album '20 新歌duet精選'
 
