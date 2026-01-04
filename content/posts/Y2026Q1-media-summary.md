@@ -8,4 +8,5 @@ tags: [生活]
 ## 🎬MOVIES
 - 2026-01-01. [**中国奇谭2**](https://movie.douban.com/subject/36299879/) - rating: ★★★★☆
 - 2026-01-02. [**匿杀**](https://movie.douban.com/subject/36073533/) - rating: ★★★☆☆
+- 2026-01-04. [**人之初**](https://movie.douban.com/subject/36466382/) - rating: ★★★★☆
 
