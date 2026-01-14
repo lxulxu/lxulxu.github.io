@@ -28,4 +28,6 @@ tags: [生活]
 - 2026-01-13. [**Never Enough**](https://open.spotify.com/track/0Gl5s8IhMmQE5YQwM8Qx1J) - by *Loren Allred* from the album 'The Greatest Showman (Original Motion Picture Soundtrack)'
 - 2026-01-13. [**Heart of Stone**](https://open.spotify.com/track/3akeuMy9bqJbqDlfYevbwN) - by *SIX, Natalie Paris* from the album 'Six: The Musical (Studio Cast Recording)'
 - 2026-01-13. [**T'aimer est une galère**](https://open.spotify.com/track/5y45lRBLRjNOhOUIRK4P66) - by *Molière l'opéra urbain, PETiTOM* from the album 'Molière, le spectacle musical'
+- 2026-01-14. [**震耳欲聋 (《震耳欲聋》电影同名主题曲)**](https://open.spotify.com/track/0tjsIpU6MqfHbQKYFQMqup) - by *檀健次* from the album '震耳欲聋 (《震耳欲聋》电影同名主题曲)'
+- 2026-01-14. [**震耳欲聋 - 伴奏**](https://open.spotify.com/track/4ifY4IdGxNWnM76x10zr84) - by *檀健次* from the album '震耳欲聋 (《震耳欲聋》电影同名主题曲)'
 
