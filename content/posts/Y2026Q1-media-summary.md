@@ -13,6 +13,7 @@ tags: [生活]
 
 ## 🎭Dramas
 - 2026-01-07. [**三妇志异**](https://www.douban.com/location/drama/37770373/) - rating: ★★★★☆
+- 2026-01-16. [**德语原版音乐剧《伊丽莎白》音乐剧版音乐会**](https://www.douban.com/location/drama/37021117/) - rating: ★★★★☆
 
 ## 🎵MUSIC
 - 2026-01-12. [**FAMOUS**](https://open.spotify.com/track/40UVUuyy5RfpO0awclCttA) - by *ALLDAY PROJECT* from the album 'FAMOUS'
@@ -30,4 +31,5 @@ tags: [生活]
 - 2026-01-14. [**震耳欲聋 - 伴奏**](https://open.spotify.com/track/4ifY4IdGxNWnM76x10zr84) - by *檀健次* from the album '震耳欲聋 (《震耳欲聋》电影同名主题曲)'
 - 2026-01-15. [**震耳欲聋 (《震耳欲聋》电影同名主题曲)**](https://open.spotify.com/track/0tjsIpU6MqfHbQKYFQMqup) - by *檀健次* from the album '震耳欲聋 (《震耳欲聋》电影同名主题曲)'
 - 2026-01-16. [**Ubu Love**](https://open.spotify.com/track/3XW3XZ0p8Lt7eJobT3ef32) - by *なにわ男子* from the album '1st Love（Special Edition）'
+- 2026-01-16. [**Der letzte Tanz - Live**](https://open.spotify.com/track/7n28DCH30Y1gRVXk5byJyM) - by *Mark Seibert* from the album 'Elisabeth - Gesamtaufnahme Live - Jubiläumsfassung 2012'
 
