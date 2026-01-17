@@ -32,4 +32,6 @@ tags: [生活]
 - 2026-01-15. [**震耳欲聋 (《震耳欲聋》电影同名主题曲)**](https://open.spotify.com/track/0tjsIpU6MqfHbQKYFQMqup) - by *檀健次* from the album '震耳欲聋 (《震耳欲聋》电影同名主题曲)'
 - 2026-01-16. [**Ubu Love**](https://open.spotify.com/track/3XW3XZ0p8Lt7eJobT3ef32) - by *なにわ男子* from the album '1st Love（Special Edition）'
 - 2026-01-16. [**Der letzte Tanz - Live**](https://open.spotify.com/track/7n28DCH30Y1gRVXk5byJyM) - by *Mark Seibert* from the album 'Elisabeth - Gesamtaufnahme Live - Jubiläumsfassung 2012'
+- 2026-01-17. [**Die letzte Chance - Live**](https://open.spotify.com/track/4tOrOTHk9h65KeoLzZbWil) - by *Mark Seibert, Annemieke van Dam* from the album 'Elisabeth - Gesamtaufnahme Live - Jubiläumsfassung 2012'
+- 2026-01-17. [**Wenn ich tanzen will - Live**](https://open.spotify.com/track/1ZLkxCkW5WgJOExvfYTkN3) - by *Annemieke van Dam, Mark Seibert* from the album 'Elisabeth - Gesamtaufnahme Live - Jubiläumsfassung 2012'
 
