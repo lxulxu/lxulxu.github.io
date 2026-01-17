@@ -12,11 +12,11 @@ e本失败人士
 
 ## 📦 项目仓库
 
-- [**WatermarkRemover**](https://github.com/lxulxu/WatermarkRemover) ![Stars](https://img.shields.io/github/stars/lxulxu/WatermarkRemover?style=flat-square&logo=github&color=cb4042&labelColor=2b2b2b)
+- [**WatermarkRemover**](https://github.com/lxulxu/WatermarkRemover) <img src="https://img.shields.io/github/stars/lxulxu/WatermarkRemover?style=flat-square&logo=github&color=cb4042&labelColor=2b2b2b" style="vertical-align: middle; display: inline-block;">
   
-- [**pdf-to-markdown**](https://github.com/lxulxu/pdf-to-markdown) ![Stars](https://img.shields.io/github/stars/lxulxu/pdf-to-markdown?style=flat-square&logo=github&color=cb4042&labelColor=2b2b2b)
+- [**pdf-to-markdown**](https://github.com/lxulxu/pdf-to-markdown) <img src="https://img.shields.io/github/stars/lxulxu/pdf-to-markdown?style=flat-square&logo=github&color=cb4042&labelColor=2b2b2b" style="vertical-align: middle; display: inline-block;">
   
-- [**EpisodeClipper**](https://github.com/lxulxu/EpisodeClipper) ![Stars](https://img.shields.io/github/stars/lxulxu/EpisodeClipper?style=flat-square&logo=github&color=cb4042&labelColor=2b2b2b)
+- [**EpisodeClipper**](https://github.com/lxulxu/EpisodeClipper) <img src="https://img.shields.io/github/stars/lxulxu/EpisodeClipper?style=flat-square&logo=github&color=cb4042&labelColor=2b2b2b" style="vertical-align: middle; display: inline-block;">
 ## 📬 联系我呀
 
 lxulxu1994@163.com
