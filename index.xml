@@ -1756,11 +1756,41 @@
 &lt;li&gt;2024-06-29. &lt;a href="https://open.spotify.com/track/2nRXFF4FE6NhUo0Sy6uCBS"&gt;&lt;strong&gt;On My Scars (feat.Lil Cherry, Dbo)&lt;/strong&gt;&lt;/a&gt; - by &lt;em&gt;YOUNG POSSE, Lil Cherry, Dbo&lt;/em&gt; from the album &amp;lsquo;On My Scars (feat.Lil Cherry, Dbo)&amp;rsquo;&lt;/li&gt;
 &lt;li&gt;2024-06-29. &lt;a href="https://open.spotify.com/track/7y0jebgMdsAEofK2Ye0e6g"&gt;&lt;strong&gt;Sunflower&lt;/strong&gt;&lt;/a&gt; - by &lt;em&gt;Red Velvet&lt;/em&gt; from the album &amp;lsquo;Cosmic&amp;rsquo;&lt;/li&gt;
 &lt;li&gt;2024-06-29. &lt;a href="https://open.spotify.com/track/0kE4TRJ0pWoRKzKdtbx8To"&gt;&lt;strong&gt;Cosmic&lt;/strong&gt;&lt;/a&gt; - by &lt;em&gt;Red Velvet&lt;/em&gt; from the album &amp;lsquo;Cosmic&amp;rsquo;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title/><link>https://lxulxu.github.io/about/</link><pubDate>Sun, 28 Apr 2024 19:06:35 +0000</pubDate><guid>https://lxulxu.github.io/about/</guid><description>&lt;p&gt;迎来到我的小站呀，很高兴遇见你！&lt;/p&gt;
+&lt;/ul&gt;</description></item><item><title/><link>https://lxulxu.github.io/about/</link><pubDate>Sun, 28 Apr 2024 19:06:35 +0000</pubDate><guid>https://lxulxu.github.io/about/</guid><description>&lt;p&gt;欢迎来到我的小站呀，很高兴遇见你！&lt;/p&gt;
 &lt;h2 id="-博主是谁"&gt;👩‍💻 博主是谁&lt;/h2&gt;
 &lt;p&gt;e本失败人士&lt;/p&gt;
 &lt;h2 id="-兴趣爱好"&gt;⛹ 兴趣爱好&lt;/h2&gt;
 &lt;p&gt;&lt;del&gt;胶佬&lt;/del&gt;（素组萌新）/&lt;del&gt;剪辑&lt;/del&gt;（磕学十级铜仁铝）/RPG &amp;amp; 模拟策略游戏/音乐剧/昼伏夜出/静止&lt;/p&gt;
+&lt;h2 id="-项目仓库"&gt;📦 项目仓库&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/lxulxu/WatermarkRemover"&gt;&lt;strong&gt;WatermarkRemover&lt;/strong&gt;&lt;/a&gt; 
+&lt;figure&gt;
+ &lt;img src="https://img.shields.io/github/stars/lxulxu/WatermarkRemover?style=flat-square&amp;amp;logo=github&amp;amp;color=cb4042&amp;amp;labelColor=2b2b2b" alt="Stars" /&gt;
+&lt;/figure&gt;
+
+
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/lxulxu/pdf-to-markdown"&gt;&lt;strong&gt;pdf-to-markdown&lt;/strong&gt;&lt;/a&gt; 
+&lt;figure&gt;
+ &lt;img src="https://img.shields.io/github/stars/lxulxu/pdf-to-markdown?style=flat-square&amp;amp;logo=github&amp;amp;color=cb4042&amp;amp;labelColor=2b2b2b" alt="Stars" /&gt;
+&lt;/figure&gt;
+
+
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="https://github.com/lxulxu/EpisodeClipper"&gt;&lt;strong&gt;EpisodeClipper&lt;/strong&gt;&lt;/a&gt; 
+&lt;figure&gt;
+ &lt;img src="https://img.shields.io/github/stars/lxulxu/EpisodeClipper?style=flat-square&amp;amp;logo=github&amp;amp;color=cb4042&amp;amp;labelColor=2b2b2b" alt="Stars" /&gt;
+&lt;/figure&gt;
+
+
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="-联系我呀"&gt;📬 联系我呀&lt;/h2&gt;
 &lt;p&gt;&lt;a href="mailto:lxulxu1994@163.com"&gt;lxulxu1994@163.com&lt;/a&gt;&lt;/p&gt;</description></item><item><title>C++安全指南</title><link>https://lxulxu.github.io/posts/cplusplus_security_guide/</link><pubDate>Sun, 28 Apr 2024 08:20:35 +0000</pubDate><guid>https://lxulxu.github.io/posts/cplusplus_security_guide/</guid><description>&lt;h2 id="编程习惯"&gt;编程习惯&lt;/h2&gt;
 &lt;ul&gt;
