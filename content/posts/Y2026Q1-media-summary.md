@@ -34,4 +34,5 @@ tags: [生活]
 - 2026-01-16. [**Der letzte Tanz - Live**](https://open.spotify.com/track/7n28DCH30Y1gRVXk5byJyM) - by *Mark Seibert* from the album 'Elisabeth - Gesamtaufnahme Live - Jubiläumsfassung 2012'
 - 2026-01-17. [**Die letzte Chance - Live**](https://open.spotify.com/track/4tOrOTHk9h65KeoLzZbWil) - by *Mark Seibert, Annemieke van Dam* from the album 'Elisabeth - Gesamtaufnahme Live - Jubiläumsfassung 2012'
 - 2026-01-17. [**Wenn ich tanzen will - Live**](https://open.spotify.com/track/1ZLkxCkW5WgJOExvfYTkN3) - by *Annemieke van Dam, Mark Seibert* from the album 'Elisabeth - Gesamtaufnahme Live - Jubiläumsfassung 2012'
+- 2026-01-18. [**等待**](https://open.spotify.com/track/7h3Fuz0zLGuxxo9rk1bRha) - by *韩磊* from the album '时代'
 
