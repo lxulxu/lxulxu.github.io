@@ -41,7 +41,9 @@ tags: [生活]
 - 2026-01-21. [**Ding dong**](https://open.spotify.com/track/1Wy78lLTaVuDoMgUvaSCoq) - by *Le rouge et le noir* from the album 'Le rouge et le noir (L'opéra rock)'
 - 2026-01-21. [**背對背擁抱**](https://open.spotify.com/track/5OZeRuBBRpEY13BagcAOLJ) - by *JJ Lin* from the album 'JJ林俊傑100天'
 - 2026-01-21. [**FAMOUS**](https://open.spotify.com/track/40UVUuyy5RfpO0awclCttA) - by *ALLDAY PROJECT* from the album 'FAMOUS'
+- 2026-01-21. [**一千年以後**](https://open.spotify.com/track/1J59cbPdIwiUMtX1ee7NwM) - by *JJ Lin* from the album '林俊傑2003年-2010年作品精選集'
 - 2026-01-21. [**Runaway**](https://open.spotify.com/track/3DK6m7It6Pw857FcQftMds) - by *Kanye West, Pusha T* from the album 'My Beautiful Dark Twisted Fantasy'
 - 2026-01-21. [**POWER**](https://open.spotify.com/track/2gZUPNdnz5Y45eiGxpHGSc) - by *Kanye West* from the album 'My Beautiful Dark Twisted Fantasy'
 - 2026-01-21. [**江南**](https://open.spotify.com/track/0YgvF6fNWydNGzCY3pzK4Y) - by *JJ Lin* from the album '第二天堂'
+- 2026-01-21. [**偉大的渺小**](https://open.spotify.com/track/1P2RxojrM3KEoKgM7pbc9i) - by *JJ Lin* from the album '偉大的渺小'
 
