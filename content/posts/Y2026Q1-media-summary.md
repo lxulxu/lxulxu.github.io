@@ -16,7 +16,6 @@ tags: [生活]
 - 2026-01-16. [**德语原版音乐剧《伊丽莎白》音乐剧版音乐会**](https://www.douban.com/location/drama/37021117/) - rating: ★★★★☆
 
 ## 🎵MUSIC
-- 2026-01-12. [**FAMOUS**](https://open.spotify.com/track/40UVUuyy5RfpO0awclCttA) - by *ALLDAY PROJECT* from the album 'FAMOUS'
 - 2026-01-12. [**Secret Touch**](https://open.spotify.com/track/1rRExpEJitAnqZxacYUsBY) - by *Snow Man* from the album 'THE BEST 2020 - 2025'
 - 2026-01-13. [**Le bien qui fait mal**](https://open.spotify.com/track/4l9fRnSDAn1aeNcMl5N7rE) - by *Mozart Opera Rock* from the album 'Mozart l'Opera Rock (standard)'
 - 2026-01-13. [**L'assasymphonie**](https://open.spotify.com/track/3fAOSZc5hTpnXxSO43ymwu) - by *Mozart Opera Rock* from the album 'Mozart l'Opera Rock (standard)'
@@ -37,4 +36,5 @@ tags: [生活]
 - 2026-01-18. [**震耳欲聋 (《震耳欲聋》电影同名主题曲)**](https://open.spotify.com/track/0tjsIpU6MqfHbQKYFQMqup) - by *檀健次* from the album '震耳欲聋 (《震耳欲聋》电影同名主题曲)'
 - 2026-01-19. [**Satisfied**](https://open.spotify.com/track/3dP0pLbg9OfVwssDjp9aT0) - by *Renée Elise Goldsberry, Original Broadway Cast of Hamilton* from the album 'Hamilton (Original Broadway Cast Recording)'
 - 2026-01-20. [**愛的初體驗**](https://open.spotify.com/track/3B09wBKxbV64nVu7GtVr2C) - by *Zhang Zhen Yue* from the album '阿嶽正傳'
+- 2026-01-21. [**FAMOUS**](https://open.spotify.com/track/40UVUuyy5RfpO0awclCttA) - by *ALLDAY PROJECT* from the album 'FAMOUS'
 
