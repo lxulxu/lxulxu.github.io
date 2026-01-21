@@ -36,4 +36,5 @@ tags: [生活]
 - 2026-01-18. [**等待**](https://open.spotify.com/track/7h3Fuz0zLGuxxo9rk1bRha) - by *韩磊* from the album '时代'
 - 2026-01-18. [**震耳欲聋 (《震耳欲聋》电影同名主题曲)**](https://open.spotify.com/track/0tjsIpU6MqfHbQKYFQMqup) - by *檀健次* from the album '震耳欲聋 (《震耳欲聋》电影同名主题曲)'
 - 2026-01-19. [**Satisfied**](https://open.spotify.com/track/3dP0pLbg9OfVwssDjp9aT0) - by *Renée Elise Goldsberry, Original Broadway Cast of Hamilton* from the album 'Hamilton (Original Broadway Cast Recording)'
+- 2026-01-20. [**愛的初體驗**](https://open.spotify.com/track/3B09wBKxbV64nVu7GtVr2C) - by *Zhang Zhen Yue* from the album '阿嶽正傳'
 
