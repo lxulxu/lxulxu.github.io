@@ -33,7 +33,6 @@ tags: [生活]
 - 2026-01-18. [**等待**](https://open.spotify.com/track/7h3Fuz0zLGuxxo9rk1bRha) - by *韩磊* from the album '时代'
 - 2026-01-19. [**Satisfied**](https://open.spotify.com/track/3dP0pLbg9OfVwssDjp9aT0) - by *Renée Elise Goldsberry, Original Broadway Cast of Hamilton* from the album 'Hamilton (Original Broadway Cast Recording)'
 - 2026-01-19. [**震耳欲聋 (《震耳欲聋》电影同名主题曲)**](https://open.spotify.com/track/0tjsIpU6MqfHbQKYFQMqup) - by *檀健次* from the album '震耳欲聋 (《震耳欲聋》电影同名主题曲)'
-- 2026-01-19. [**Der letzte Tanz - Live**](https://open.spotify.com/track/7n28DCH30Y1gRVXk5byJyM) - by *Mark Seibert* from the album 'Elisabeth - Gesamtaufnahme Live - Jubiläumsfassung 2012'
 - 2026-01-19. [**Wenn ich tanzen will - Live**](https://open.spotify.com/track/1ZLkxCkW5WgJOExvfYTkN3) - by *Annemieke van Dam, Mark Seibert* from the album 'Elisabeth - Gesamtaufnahme Live - Jubiläumsfassung 2012'
 - 2026-01-20. [**愛的初體驗**](https://open.spotify.com/track/3B09wBKxbV64nVu7GtVr2C) - by *Zhang Zhen Yue* from the album '阿嶽正傳'
 - 2026-01-21. [**Speechless (Full)**](https://open.spotify.com/track/0XPsOSYzDJZJArevQNm2AR) - by *Naomi Scott* from the album 'Aladdin (Original Motion Picture Soundtrack)'
@@ -44,6 +43,7 @@ tags: [生活]
 - 2026-01-21. [**一千年以後**](https://open.spotify.com/track/1J59cbPdIwiUMtX1ee7NwM) - by *JJ Lin* from the album '林俊傑2003年-2010年作品精選集'
 - 2026-01-21. [**Runaway**](https://open.spotify.com/track/3DK6m7It6Pw857FcQftMds) - by *Kanye West, Pusha T* from the album 'My Beautiful Dark Twisted Fantasy'
 - 2026-01-21. [**POWER**](https://open.spotify.com/track/2gZUPNdnz5Y45eiGxpHGSc) - by *Kanye West* from the album 'My Beautiful Dark Twisted Fantasy'
+- 2026-01-21. [**Der letzte Tanz - Live**](https://open.spotify.com/track/7n28DCH30Y1gRVXk5byJyM) - by *Mark Seibert* from the album 'Elisabeth - Gesamtaufnahme Live - Jubiläumsfassung 2012'
 - 2026-01-21. [**江南**](https://open.spotify.com/track/0YgvF6fNWydNGzCY3pzK4Y) - by *JJ Lin* from the album '第二天堂'
 - 2026-01-21. [**偉大的渺小**](https://open.spotify.com/track/1P2RxojrM3KEoKgM7pbc9i) - by *JJ Lin* from the album '偉大的渺小'
 
