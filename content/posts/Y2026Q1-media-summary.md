@@ -10,6 +10,8 @@ tags: [生活]
 - 2026-01-02. [**匿杀**](https://movie.douban.com/subject/36073533/) - rating: ★★★☆☆
 - 2026-01-04. [**人之初**](https://movie.douban.com/subject/36466382/) - rating: ★★★★☆
 - 2026-01-13. [**反人类暴行**](https://movie.douban.com/subject/37033221/) - rating: ★★★★★
+- 2026-01-23. [**爆水管**](https://movie.douban.com/subject/37134618/) - rating: ★★★☆☆
+- 2026-01-23. [**极限审判**](https://movie.douban.com/subject/36749573/) - rating: ★★★★☆
 
 ## 🎭Dramas
 - 2026-01-07. [**三妇志异**](https://www.douban.com/location/drama/37770373/) - rating: ★★★★☆
