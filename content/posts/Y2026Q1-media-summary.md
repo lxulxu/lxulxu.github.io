@@ -14,6 +14,7 @@ tags: [生活]
 - 2026-01-23. [**极限审判**](https://movie.douban.com/subject/36749573/) - rating: ★★★★☆
 - 2026-01-25. [**白手风云**](https://movie.douban.com/subject/3542136/) - rating: ★★★★☆
 - 2026-01-25. [**我是你的人**](https://movie.douban.com/subject/35202365/) - rating: ★★★★☆
+- 2026-01-26. [**太平年**](https://movie.douban.com/subject/36317421/) - rating: ★★★★☆
 
 ## 🎭Dramas
 - 2026-01-07. [**三妇志异**](https://www.douban.com/location/drama/37770373/) - rating: ★★★★☆
