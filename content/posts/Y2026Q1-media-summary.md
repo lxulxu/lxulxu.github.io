@@ -21,7 +21,6 @@ tags: [生活]
 - 2026-01-16. [**德语原版音乐剧《伊丽莎白》音乐剧版音乐会**](https://www.douban.com/location/drama/37021117/) - rating: ★★★★☆
 
 ## 🎵MUSIC
-- 2026-01-12. [**Secret Touch**](https://open.spotify.com/track/1rRExpEJitAnqZxacYUsBY) - by *Snow Man* from the album 'THE BEST 2020 - 2025'
 - 2026-01-13. [**Le bien qui fait mal**](https://open.spotify.com/track/4l9fRnSDAn1aeNcMl5N7rE) - by *Mozart Opera Rock* from the album 'Mozart l'Opera Rock (standard)'
 - 2026-01-13. [**L'assasymphonie**](https://open.spotify.com/track/3fAOSZc5hTpnXxSO43ymwu) - by *Mozart Opera Rock* from the album 'Mozart l'Opera Rock (standard)'
 - 2026-01-13. [**Seasons of Love**](https://open.spotify.com/track/5gw8HNcrqliEw0X6pPrPvG) - by *Rosario Dawson, Taye Diggs, Idina Menzel, Jesse L. Martin, Adam Pascal, Tracie Thoms, Anthony Rapp, Wilson Jermaine Heredia* from the album 'RENT (Original Motion Picture Soundtrack)'
@@ -32,7 +31,6 @@ tags: [生活]
 - 2026-01-13. [**Never Enough**](https://open.spotify.com/track/0Gl5s8IhMmQE5YQwM8Qx1J) - by *Loren Allred* from the album 'The Greatest Showman (Original Motion Picture Soundtrack)'
 - 2026-01-13. [**Heart of Stone**](https://open.spotify.com/track/3akeuMy9bqJbqDlfYevbwN) - by *SIX, Natalie Paris* from the album 'Six: The Musical (Studio Cast Recording)'
 - 2026-01-14. [**震耳欲聋 - 伴奏**](https://open.spotify.com/track/4ifY4IdGxNWnM76x10zr84) - by *檀健次* from the album '震耳欲聋 (《震耳欲聋》电影同名主题曲)'
-- 2026-01-16. [**Ubu Love**](https://open.spotify.com/track/3XW3XZ0p8Lt7eJobT3ef32) - by *なにわ男子* from the album '1st Love（Special Edition）'
 - 2026-01-18. [**等待**](https://open.spotify.com/track/7h3Fuz0zLGuxxo9rk1bRha) - by *韩磊* from the album '时代'
 - 2026-01-21. [**Satisfied**](https://open.spotify.com/track/3dP0pLbg9OfVwssDjp9aT0) - by *Renée Elise Goldsberry, Original Broadway Cast of Hamilton* from the album 'Hamilton (Original Broadway Cast Recording)'
 - 2026-01-21. [**Speechless (Full)**](https://open.spotify.com/track/0XPsOSYzDJZJArevQNm2AR) - by *Naomi Scott* from the album 'Aladdin (Original Motion Picture Soundtrack)'
@@ -41,13 +39,11 @@ tags: [生活]
 - 2026-01-21. [**背對背擁抱**](https://open.spotify.com/track/5OZeRuBBRpEY13BagcAOLJ) - by *JJ Lin* from the album 'JJ林俊傑100天'
 - 2026-01-21. [**一千年以後**](https://open.spotify.com/track/1J59cbPdIwiUMtX1ee7NwM) - by *JJ Lin* from the album '林俊傑2003年-2010年作品精選集'
 - 2026-01-21. [**愛的初體驗**](https://open.spotify.com/track/3B09wBKxbV64nVu7GtVr2C) - by *Zhang Zhen Yue* from the album '阿嶽正傳'
-- 2026-01-21. [**Runaway**](https://open.spotify.com/track/3DK6m7It6Pw857FcQftMds) - by *Kanye West, Pusha T* from the album 'My Beautiful Dark Twisted Fantasy'
-- 2026-01-21. [**POWER**](https://open.spotify.com/track/2gZUPNdnz5Y45eiGxpHGSc) - by *Kanye West* from the album 'My Beautiful Dark Twisted Fantasy'
-- 2026-01-21. [**Wenn ich tanzen will - Live**](https://open.spotify.com/track/1ZLkxCkW5WgJOExvfYTkN3) - by *Annemieke van Dam, Mark Seibert* from the album 'Elisabeth - Gesamtaufnahme Live - Jubiläumsfassung 2012'
 - 2026-01-21. [**江南**](https://open.spotify.com/track/0YgvF6fNWydNGzCY3pzK4Y) - by *JJ Lin* from the album '第二天堂'
 - 2026-01-21. [**偉大的渺小**](https://open.spotify.com/track/1P2RxojrM3KEoKgM7pbc9i) - by *JJ Lin* from the album '偉大的渺小'
 - 2026-01-22. [**FAMOUS**](https://open.spotify.com/track/40UVUuyy5RfpO0awclCttA) - by *ALLDAY PROJECT* from the album 'FAMOUS'
 - 2026-01-22. [**震耳欲聋 (《震耳欲聋》电影同名主题曲)**](https://open.spotify.com/track/0tjsIpU6MqfHbQKYFQMqup) - by *檀健次* from the album '震耳欲聋 (《震耳欲聋》电影同名主题曲)'
+- 2026-01-22. [**Wenn ich tanzen will - Live**](https://open.spotify.com/track/1ZLkxCkW5WgJOExvfYTkN3) - by *Annemieke van Dam, Mark Seibert* from the album 'Elisabeth - Gesamtaufnahme Live - Jubiläumsfassung 2012'
 - 2026-01-22. [**Die Schatten werden länger (Reprise) - Live**](https://open.spotify.com/track/6iaojo1Bi0C6CYIek5XYOc) - by *Mark Seibert, Anton Zetterholm* from the album 'Elisabeth - Gesamtaufnahme Live - Jubiläumsfassung 2012'
 - 2026-01-23. [**T'aimer est une galère**](https://open.spotify.com/track/5y45lRBLRjNOhOUIRK4P66) - by *Molière l'opéra urbain, PETiTOM* from the album 'Molière, le spectacle musical'
 - 2026-01-23. [**Rêver j'en ai l'habitude**](https://open.spotify.com/track/3aQ9c7nokRJMg3f0htPtzs) - by *Molière l'opéra urbain, Lou, PETiTOM, Morgan, Shaïna Pronzola, Vike, Abi Bernadoth* from the album 'Molière, le spectacle musical'
@@ -56,4 +52,10 @@ tags: [生活]
 - 2026-01-23. [**Wie wird man seinen Schatten los?**](https://open.spotify.com/track/50c40sN4utwDSJs8m8Mv1p) - by *Sylvester LeVay, Oedo Kuipers, Ensemble* from the album 'Mozart! - Das Musical - Gesamtaufnahme Live'
 - 2026-01-23. [**Der letzte Tanz - Live**](https://open.spotify.com/track/7n28DCH30Y1gRVXk5byJyM) - by *Mark Seibert* from the album 'Elisabeth - Gesamtaufnahme Live - Jubiläumsfassung 2012'
 - 2026-01-23. [**Die letzte Chance - Live**](https://open.spotify.com/track/4tOrOTHk9h65KeoLzZbWil) - by *Mark Seibert, Annemieke van Dam* from the album 'Elisabeth - Gesamtaufnahme Live - Jubiläumsfassung 2012'
+- 2026-01-27. [**Spiral**](https://open.spotify.com/track/42DzOJiUtkmCBLkLv21dCb) - by *レイニ, Yura* from the album 'Spiral'
+- 2026-01-27. [**Lovesick Game**](https://open.spotify.com/track/4aBQa5IjLc83hGK1uXJidS) - by *ZEROBASEONE* from the album 'NEVER SAY NEVER'
+- 2026-01-27. [**Ubu Love**](https://open.spotify.com/track/3XW3XZ0p8Lt7eJobT3ef32) - by *なにわ男子* from the album '1st Love（Special Edition）'
+- 2026-01-27. [**Runaway**](https://open.spotify.com/track/3DK6m7It6Pw857FcQftMds) - by *Kanye West, Pusha T* from the album 'My Beautiful Dark Twisted Fantasy'
+- 2026-01-27. [**Secret Touch**](https://open.spotify.com/track/1rRExpEJitAnqZxacYUsBY) - by *Snow Man* from the album 'THE BEST 2020 - 2025'
+- 2026-01-27. [**POWER**](https://open.spotify.com/track/2gZUPNdnz5Y45eiGxpHGSc) - by *Kanye West* from the album 'My Beautiful Dark Twisted Fantasy'
 
