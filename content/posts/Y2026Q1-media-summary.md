@@ -58,4 +58,7 @@ tags: [生活]
 - 2026-01-27. [**Runaway**](https://open.spotify.com/track/3DK6m7It6Pw857FcQftMds) - by *Kanye West, Pusha T* from the album 'My Beautiful Dark Twisted Fantasy'
 - 2026-01-27. [**Secret Touch**](https://open.spotify.com/track/1rRExpEJitAnqZxacYUsBY) - by *Snow Man* from the album 'THE BEST 2020 - 2025'
 - 2026-01-27. [**POWER**](https://open.spotify.com/track/2gZUPNdnz5Y45eiGxpHGSc) - by *Kanye West* from the album 'My Beautiful Dark Twisted Fantasy'
+- 2026-01-28. [**Mono (feat. skaiwater)**](https://open.spotify.com/track/7rvmQB9tqUHWO6weobTGPO) - by *i-dle, skaiwater* from the album 'Mono (feat. skaiwater)'
+- 2026-01-28. [**Pilot3 (feat. KOONTA)**](https://open.spotify.com/track/3DLNA5bdJd3axmDtpGwixr) - by *YOUNG POSSE, KOONTA* from the album 'VISA / Pilot3'
+- 2026-01-28. [**VISA**](https://open.spotify.com/track/3rLQaj0aIBRBEsSwHGY0HP) - by *YOUNG POSSE* from the album 'VISA / Pilot3'
 
