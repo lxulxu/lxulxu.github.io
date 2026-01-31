@@ -20,6 +20,7 @@ tags: [生活]
 ## 🎭Dramas
 - 2026-01-07. [**三妇志异**](https://www.douban.com/location/drama/37770373/) - rating: ★★★★☆
 - 2026-01-16. [**德语原版音乐剧《伊丽莎白》音乐剧版音乐会**](https://www.douban.com/location/drama/37021117/) - rating: ★★★★☆
+- 2026-01-31. [**QUEENS' NIGHT—SIX 伦敦西区原卡组合「SVN」演唱会**](https://www.douban.com/location/drama/37537758/) - rating: ★★★★☆
 
 ## 🎵MUSIC
 - 2026-01-13. [**Le bien qui fait mal**](https://open.spotify.com/track/4l9fRnSDAn1aeNcMl5N7rE) - by *Mozart Opera Rock* from the album 'Mozart l'Opera Rock (standard)'
