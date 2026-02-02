@@ -63,4 +63,6 @@ tags: [生活]
 - 2026-01-30. [**Der letzte Tanz - Live**](https://open.spotify.com/track/7n28DCH30Y1gRVXk5byJyM) - by *Mark Seibert* from the album 'Elisabeth - Gesamtaufnahme Live - Jubiläumsfassung 2012'
 - 2026-01-30. [**Wenn ich tanzen will - Live**](https://open.spotify.com/track/1ZLkxCkW5WgJOExvfYTkN3) - by *Annemieke van Dam, Mark Seibert* from the album 'Elisabeth - Gesamtaufnahme Live - Jubiläumsfassung 2012'
 - 2026-01-30. [**Die Schatten werden länger (Reprise) - Live**](https://open.spotify.com/track/6iaojo1Bi0C6CYIek5XYOc) - by *Mark Seibert, Anton Zetterholm* from the album 'Elisabeth - Gesamtaufnahme Live - Jubiläumsfassung 2012'
+- 2026-02-02. [**I Hear You Knocking**](https://open.spotify.com/track/4uI0aQZvvumBNhh4cetdZw) - by *The Pretty Woman Singers 6 Orchestra* from the album 'Pretty Woman'
+- 2026-02-02. [**It Must Have Been Love**](https://open.spotify.com/track/1XuAXXzFdbg3GrRdd0FVfG) - by *The Pretty Woman Singers 6 Orchestra* from the album 'Pretty Woman'
 
