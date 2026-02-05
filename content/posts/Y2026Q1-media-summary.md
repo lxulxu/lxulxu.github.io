@@ -88,4 +88,8 @@ tags: [生活]
 - 2026-02-04. [**Runaway**](https://open.spotify.com/track/3DK6m7It6Pw857FcQftMds) - by *Kanye West, Pusha T* from the album 'My Beautiful Dark Twisted Fantasy'
 - 2026-02-04. [**POWER**](https://open.spotify.com/track/2gZUPNdnz5Y45eiGxpHGSc) - by *Kanye West* from the album 'My Beautiful Dark Twisted Fantasy'
 - 2026-02-04. [**震耳欲聋 (《震耳欲聋》电影同名主题曲)**](https://open.spotify.com/track/0tjsIpU6MqfHbQKYFQMqup) - by *檀健次* from the album '震耳欲聋 (《震耳欲聋》电影同名主题曲)'
+- 2026-02-05. [**phải viết bao nhiêu bản tình ca**](https://open.spotify.com/track/5D7MGNckkAAGAiDqUDFclP) - by *MIN* from the album 'Dear Min'
+- 2026-02-05. [**LOSER**](https://open.spotify.com/track/30iU0Hny521RxJVtDq2LH9) - by *MIN, Chillies* from the album 'Dear Min'
+- 2026-02-05. [**Quá Muộn**](https://open.spotify.com/track/1rT8AzuWBXNbB6BFrGmxYV) - by *MIN* from the album 'Dear Min'
+- 2026-02-05. [**Chế Độ Im Lặng**](https://open.spotify.com/track/44XA6tVReCIX8T1c3l9f75) - by *MIN* from the album 'Dear Min'
 
