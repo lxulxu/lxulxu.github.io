@@ -59,7 +59,6 @@ tags: [生活]
 - 2026-02-03. [**Rêver j'en ai l'habitude**](https://open.spotify.com/track/3aQ9c7nokRJMg3f0htPtzs) - by *Molière l'opéra urbain, Lou, PETiTOM, Morgan, Shaïna Pronzola, Vike, Abi Bernadoth* from the album 'Molière, le spectacle musical'
 - 2026-02-03. [**On se moque**](https://open.spotify.com/track/0ECp3gyWVMSFlcKCoh9Dpr) - by *Molière l'opéra urbain, Lou, PETiTOM* from the album 'Molière, le spectacle musical'
 - 2026-02-03. [**Wie wird man seinen Schatten los?**](https://open.spotify.com/track/50c40sN4utwDSJs8m8Mv1p) - by *Sylvester LeVay, Oedo Kuipers, Ensemble* from the album 'Mozart! - Das Musical - Gesamtaufnahme Live'
-- 2026-02-03. [**Der letzte Tanz - Live**](https://open.spotify.com/track/7n28DCH30Y1gRVXk5byJyM) - by *Mark Seibert* from the album 'Elisabeth - Gesamtaufnahme Live - Jubiläumsfassung 2012'
 - 2026-02-03. [**Die letzte Chance - Live**](https://open.spotify.com/track/4tOrOTHk9h65KeoLzZbWil) - by *Mark Seibert, Annemieke van Dam* from the album 'Elisabeth - Gesamtaufnahme Live - Jubiläumsfassung 2012'
 - 2026-02-03. [**Wenn ich tanzen will - Live**](https://open.spotify.com/track/1ZLkxCkW5WgJOExvfYTkN3) - by *Annemieke van Dam, Mark Seibert* from the album 'Elisabeth - Gesamtaufnahme Live - Jubiläumsfassung 2012'
 - 2026-02-03. [**Die Schatten werden länger (Reprise) - Live**](https://open.spotify.com/track/6iaojo1Bi0C6CYIek5XYOc) - by *Mark Seibert, Anton Zetterholm* from the album 'Elisabeth - Gesamtaufnahme Live - Jubiläumsfassung 2012'
@@ -100,4 +99,5 @@ tags: [生活]
 - 2026-02-05. [**Quá Muộn**](https://open.spotify.com/track/1rT8AzuWBXNbB6BFrGmxYV) - by *MIN* from the album 'Dear Min'
 - 2026-02-05. [**Chế Độ Im Lặng**](https://open.spotify.com/track/44XA6tVReCIX8T1c3l9f75) - by *MIN* from the album 'Dear Min'
 - 2026-02-05. [**Watching The Stars**](https://open.spotify.com/track/1BN7puKhkJAne85xCj3EON) - by *MIN* from the album '50/50'
+- 2026-02-06. [**Der letzte Tanz - Live**](https://open.spotify.com/track/7n28DCH30Y1gRVXk5byJyM) - by *Mark Seibert* from the album 'Elisabeth - Gesamtaufnahme Live - Jubiläumsfassung 2012'
 
