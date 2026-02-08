@@ -15,7 +15,7 @@ tags: [生活]
 - 2026-01-25. [**白手风云**](https://movie.douban.com/subject/3542136/) - rating: ★★★★☆
 - 2026-01-25. [**我是你的人**](https://movie.douban.com/subject/35202365/) - rating: ★★★★☆
 - 2026-01-26. [**太平年**](https://movie.douban.com/subject/36317421/) - rating: ★★★★☆
-- 2026-01-30. [**生命树**](https://movie.douban.com/subject/35424715/) - rating: ★★★★☆
+- 2026-01-30. [**生命树**](https://movie.douban.com/subject/35424715/) - rating: ★★★☆☆
 - 2026-02-05. [**玫瑰江湖**](https://movie.douban.com/subject/3017413/) - rating: ★★★☆☆
 
 ## 🎭Dramas
