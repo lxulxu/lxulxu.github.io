@@ -7,7 +7,7 @@ categories: [生活]
 
 通过 [TV Time](https://www.tvtime.com/) 订阅追踪的剧集，自动将更新时间同步到日历应用，支持欧美剧集及部分国产剧，效果如下：
 
-![](C:\Users\lxulx\Documents\我的文档\项目\MyGit\lxulxu.github.io\assets\images\Y2026Q1\1.jpg)
+![](https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2026Q1/1.jpg)
 
 
 
@@ -21,7 +21,7 @@ categories: [生活]
 
 ****
 
-![](C:\Users\lxulx\Documents\我的文档\项目\MyGit\lxulxu.github.io\assets\images\Y2026Q1\2.jpg)
+![](https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2026Q1/2.jpg)
 
 ### 构建订阅链接
 
@@ -56,5 +56,5 @@ webcal://api.tvtime.com/v1/user/12345678/calendar.ics
   4. 粘贴订阅链接，点击"添加日历"完成订阅
   
 ------
-  
+
 **注意:**订阅日历仅显示未来 30 天内的日程安排
