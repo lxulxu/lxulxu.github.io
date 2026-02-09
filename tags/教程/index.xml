@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>教程 on lxulxu's blog</title><link>https://lxulxu.github.io/tags/%E6%95%99%E7%A8%8B/</link><description>Recent content in 教程 on lxulxu's blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 09 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://lxulxu.github.io/tags/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>生成追剧日历</title><link>https://lxulxu.github.io/posts/tv_time_calendar/</link><pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/tv_time_calendar/</guid><description>&lt;p&gt;通过 &lt;a href="https://www.tvtime.com/"&gt;TV Time&lt;/a&gt; 订阅追踪的剧集，自动将更新时间同步到日历应用，支持欧美剧集及部分国产剧，效果如下：&lt;/p&gt;
+&lt;p&gt;
+&lt;figure&gt;
+ &lt;img src="C:%5cUsers%5clxulx%5cDocuments%5c%e6%88%91%e7%9a%84%e6%96%87%e6%a1%a3%5c%e9%a1%b9%e7%9b%ae%5cMyGit%5clxulxu.github.io%5cassets%5cimages%5cY2026Q1%5c1.jpg" alt="" /&gt;
+&lt;/figure&gt;
+
+
+&lt;/p&gt;
+&lt;h2 id="导入日历步骤"&gt;导入日历步骤&lt;/h2&gt;
+&lt;h3 id="获取用户-id"&gt;获取用户 ID&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;登录 TV Time 网页版或应用&lt;/li&gt;
+&lt;li&gt;进入个人主页&lt;/li&gt;
+&lt;li&gt;从网页地址栏或个人资料页面获取用户 ID（一串数字）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;
+&lt;figure&gt;
+ &lt;img src="C:%5cUsers%5clxulx%5cDocuments%5c%e6%88%91%e7%9a%84%e6%96%87%e6%a1%a3%5c%e9%a1%b9%e7%9b%ae%5cMyGit%5clxulxu.github.io%5cassets%5cimages%5cY2026Q1%5c2.jpg" alt="" /&gt;
+&lt;/figure&gt;
+
+
+&lt;/p&gt;
+&lt;h3 id="构建订阅链接"&gt;构建订阅链接&lt;/h3&gt;
+&lt;p&gt;订阅链接格式：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"&gt;1&lt;/span&gt;&lt;span&gt;webcal://api.tvtime.com/v1/user/你的UserID/calendar.ics
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;示例：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#ebdbb2;background-color:#282828;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span style="display:flex;"&gt;&lt;span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#756d59"&gt;1&lt;/span&gt;&lt;span&gt;webcal://api.tvtime.com/v1/user/12345678/calendar.ics
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="订阅日历"&gt;订阅日历&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h1 id="如何订阅日历"&gt;如何订阅日历&lt;/h1&gt;
+&lt;h2 id="方式一系统日历应用"&gt;方式一：系统日历应用&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;打开手机自带的日历应用&lt;/li&gt;
+&lt;li&gt;找到日历订阅链接功能入口(通常在设置或导入选项中)&lt;/li&gt;
+&lt;li&gt;输入订阅链接并确认&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;注:&lt;/strong&gt; 不同品牌手机的日历功能存在差异。如果手机不支持直接订阅链接,可以先添加 Google 账号,然后通过账号同步日历(参见方式二)。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="方式二google-日历"&gt;方式二：Google 日历&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;打开 Google 日历网页版(移动端暂不支持此功能)&lt;/li&gt;
+&lt;li&gt;点击左侧边栏&amp;quot;其他日历&amp;quot;旁的 &lt;strong&gt;+&lt;/strong&gt; 图标&lt;/li&gt;
+&lt;li&gt;选择&amp;quot;通过网址添加&amp;quot;&lt;/li&gt;
+&lt;li&gt;粘贴订阅链接，点击&amp;quot;添加日历&amp;quot;完成订阅&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;**注意:**订阅日历仅显示未来 30 天内的日程安排&lt;/p&gt;</description></item></channel></rss>
