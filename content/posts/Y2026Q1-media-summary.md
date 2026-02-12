@@ -101,4 +101,5 @@ tags: [生活]
 - 2026-02-06. [**Speechless (Full)**](https://open.spotify.com/track/0XPsOSYzDJZJArevQNm2AR) - by *Naomi Scott* from the album 'Aladdin (Original Motion Picture Soundtrack)'
 - 2026-02-06. [**Der letzte Tanz - Live**](https://open.spotify.com/track/7n28DCH30Y1gRVXk5byJyM) - by *Mark Seibert* from the album 'Elisabeth - Gesamtaufnahme Live - Jubiläumsfassung 2012'
 - 2026-02-06. [**Wenn ich tanzen will - Live**](https://open.spotify.com/track/1ZLkxCkW5WgJOExvfYTkN3) - by *Annemieke van Dam, Mark Seibert* from the album 'Elisabeth - Gesamtaufnahme Live - Jubiläumsfassung 2012'
+- 2026-02-12. [**新鴛鴦蝴蝶夢**](https://open.spotify.com/track/3WMry9TyfN0iNgRdrFgEYr) - by *黃安* from the album '新鴛鴦蝴蝶夢'
 
