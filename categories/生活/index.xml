@@ -13,7 +13,6 @@
 &lt;li&gt;进入个人主页&lt;/li&gt;
 &lt;li&gt;从网页地址栏或个人资料页面获取用户 ID（一串数字）&lt;/li&gt;
 &lt;/ol&gt;
-&lt;hr&gt;
 &lt;p&gt;
 &lt;figure&gt;
  &lt;img src="https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2026Q1/2.jpg" alt="" /&gt;
@@ -29,8 +28,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="订阅日历"&gt;订阅日历&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;h1 id="如何订阅日历"&gt;如何订阅日历&lt;/h1&gt;
-&lt;h2 id="方式一系统日历应用"&gt;方式一：系统日历应用&lt;/h2&gt;
+&lt;p&gt;方式一：系统日历应用&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;打开手机自带的日历应用&lt;/li&gt;
 &lt;li&gt;找到日历订阅链接功能入口(通常在设置或导入选项中)&lt;/li&gt;
@@ -39,7 +37,9 @@
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;注:&lt;/strong&gt; 不同品牌手机的日历功能存在差异。如果手机不支持直接订阅链接,可以先添加 Google 账号,然后通过账号同步日历(参见方式二)。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id="方式二google-日历"&gt;方式二：Google 日历&lt;/h2&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;方式二：Google 日历&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;打开 Google 日历网页版(移动端暂不支持此功能)&lt;/li&gt;
 &lt;li&gt;点击左侧边栏&amp;quot;其他日历&amp;quot;旁的 &lt;strong&gt;+&lt;/strong&gt; 图标&lt;/li&gt;
