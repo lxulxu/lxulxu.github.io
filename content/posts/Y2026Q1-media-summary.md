@@ -19,6 +19,8 @@ tags: [生活]
 - 2026-02-05. [**玫瑰江湖**](https://movie.douban.com/subject/3017413/) - rating: ★★★☆☆
 - 2026-02-13. [**年少有为**](https://movie.douban.com/subject/37060833/) - rating: ★★★★☆
 - 2026-02-16. [**步步惊心：丽**](https://movie.douban.com/subject/26433135/) - rating: ★★★★☆
+- 2026-02-17. [**镖人：风起大漠**](https://movie.douban.com/subject/36474027/) - rating: ★★★★☆
+- 2026-02-17. [**惊蛰无声**](https://movie.douban.com/subject/37242440/) - rating: ★★★★☆
 
 ## 🎭Dramas
 - 2026-01-07. [**三妇志异**](https://www.douban.com/location/drama/37770373/) - rating: ★★★★☆
