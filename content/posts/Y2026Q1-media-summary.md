@@ -23,7 +23,7 @@ tags: [生活]
 - 2026-02-17. [**惊蛰无声**](https://movie.douban.com/subject/37242440/) - rating: ★★★★☆
 - 2026-02-18. [**飞驰人生3**](https://movie.douban.com/subject/37311135/) - rating: ★★★★☆
 - 2026-03-03. [**夜王**](https://movie.douban.com/subject/37375594/) - rating: ★★★★☆
-- 2026-03-07. [**暗黑新娘！**](https://movie.douban.com/subject/36503073/) - rating: ★★★★☆
+- 2026-03-07. [**暗黑新娘！**](https://movie.douban.com/subject/36503073/) - rating: ★★★☆☆
 
 ## 🎭Dramas
 - 2026-01-07. [**三妇志异**](https://www.douban.com/location/drama/37770373/) - rating: ★★★★☆
