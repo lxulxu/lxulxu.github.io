@@ -31,4 +31,5 @@ tags: [生活]
 - 2026-01-31. [**QUEENS' NIGHT—SIX 伦敦西区原卡组合「SVN」演唱会**](https://www.douban.com/location/drama/37537758/) - rating: ★★★★☆
 - 2026-02-07. [**四张机**](https://www.douban.com/location/drama/33380553/) - rating: ★★★★★
 - 2026-03-05. [**音乐剧明星阿尔菲·博伊音乐会**](https://www.douban.com/location/drama/38228314/) - rating: ★★★★★
+- 2026-03-07. [**《剧强音》音乐剧明星音乐会**](https://www.douban.com/location/drama/38198519/) - rating: ★★★★☆
 
