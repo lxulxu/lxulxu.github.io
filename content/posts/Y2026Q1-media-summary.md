@@ -26,7 +26,8 @@ tags: [生活]
 - 2026-03-07. [**暗黑新娘！**](https://movie.douban.com/subject/36503073/) - rating: ★★★☆☆
 - 2026-03-08. [**变男变女变变变**](https://movie.douban.com/subject/1301801/) - rating: ★★★☆☆
 - 2026-03-12. [**斗鱼**](https://movie.douban.com/subject/2148836/) - rating: ★★★★☆
-- 2026-03-13. [**至尊马蒂**](https://movie.douban.com/subject/36691620/) - rating: ★★★★☆
+- 2026-03-13. [**至尊马蒂**](https://movie.douban.com/subject/36691620/) - rating: ★★★★★
+- 2026-03-13. [**呼啸山庄**](https://movie.douban.com/subject/36963690/) - rating: ★★★☆☆
 
 ## 🎭Dramas
 - 2026-01-07. [**三妇志异**](https://www.douban.com/location/drama/37770373/) - rating: ★★★★☆
