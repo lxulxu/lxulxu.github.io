@@ -36,4 +36,5 @@ tags: [生活]
 - 2026-02-07. [**四张机**](https://www.douban.com/location/drama/33380553/) - rating: ★★★★★
 - 2026-03-05. [**音乐剧明星阿尔菲·博伊音乐会**](https://www.douban.com/location/drama/38228314/) - rating: ★★★★★
 - 2026-03-07. [**《剧强音》音乐剧明星音乐会**](https://www.douban.com/location/drama/38198519/) - rating: ★★★★☆
+- 2026-03-14. [**洛朗·班音乐会**](https://www.douban.com/location/drama/37152541/) - rating: ★★★★☆
 
