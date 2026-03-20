@@ -29,6 +29,7 @@ tags: [生活]
 - 2026-03-13. [**至尊马蒂**](https://movie.douban.com/subject/36691620/) - rating: ★★★★★
 - 2026-03-13. [**呼啸山庄**](https://movie.douban.com/subject/36963690/) - rating: ★★★☆☆
 - 2026-03-16. [**烟花三月**](https://movie.douban.com/subject/3003230/) - rating: ★★★★☆
+- 2026-03-20. [**挽救计划**](https://movie.douban.com/subject/35010610/) - rating: ★★★★★
 
 ## 🎭Dramas
 - 2026-01-07. [**三妇志异**](https://www.douban.com/location/drama/37770373/) - rating: ★★★★☆
