@@ -31,6 +31,7 @@ tags: [生活]
 - 2026-03-16. [**烟花三月**](https://movie.douban.com/subject/3003230/) - rating: ★★★★☆
 - 2026-03-20. [**挽救计划**](https://movie.douban.com/subject/35010610/) - rating: ★★★★★
 - 2026-03-20. [**河狸变身计划**](https://movie.douban.com/subject/36999793/) - rating: ★★★★☆
+- 2026-03-21. [**挽救计划**](https://book.douban.com/subject/35494160/) - rating: ★★★★★
 
 ## 🎭Dramas
 - 2026-01-07. [**三妇志异**](https://www.douban.com/location/drama/37770373/) - rating: ★★★★☆
