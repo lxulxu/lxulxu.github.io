@@ -3,6 +3,10 @@
 &lt;li&gt;2026-04-03. &lt;a href="https://movie.douban.com/subject/36866390/"&gt;&lt;strong&gt;危险关系&lt;/strong&gt;&lt;/a&gt; - rating: ★★★★☆&lt;/li&gt;
 &lt;li&gt;2026-04-05. &lt;a href="https://movie.douban.com/subject/1867389/"&gt;&lt;strong&gt;同居牢友&lt;/strong&gt;&lt;/a&gt; - rating: ★★★★☆&lt;/li&gt;
 &lt;li&gt;2026-04-08. &lt;a href="https://book.douban.com/subject/6818705/"&gt;&lt;strong&gt;Breakneck&lt;/strong&gt;&lt;/a&gt; - rating: ★★★★☆&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="dramas"&gt;🎭Dramas&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;2026-04-10. &lt;a href="https://www.douban.com/location/drama/20254387/"&gt;&lt;strong&gt;唐璜&lt;/strong&gt;&lt;/a&gt; - rating: ★★★★☆&lt;/li&gt;
 &lt;/ul&gt;</description></item><item><title>生成追剧日历</title><link>https://lxulxu.github.io/posts/tv_time_calendar/</link><pubDate>Mon, 09 Feb 2026 00:00:00 +0000</pubDate><guid>https://lxulxu.github.io/posts/tv_time_calendar/</guid><description>&lt;p&gt;通过 &lt;a href="https://www.tvtime.com/"&gt;TV Time&lt;/a&gt; 订阅追踪的剧集，自动将更新时间同步到日历应用，支持欧美剧集及部分国产剧，效果如下：&lt;/p&gt;
 &lt;p&gt;
 &lt;figure&gt;
