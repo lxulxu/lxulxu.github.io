@@ -15,6 +15,9 @@ tags: [生活]
 ## 📚BOOKS
 - 2026-04-08. [**Breakneck**](https://book.douban.com/subject/6818705/) - rating: ★★★★☆
 
+## 🎮Games
+- 2026-04-24. [**黑暗料理王**](http://www.douban.com/game/30175869/) - rating: ★★★★☆
+
 ## 🎭Dramas
 - 2026-04-10. [**唐璜**](https://www.douban.com/location/drama/20254387/) - rating: ★★★★☆
 
