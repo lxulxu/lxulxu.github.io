@@ -25,4 +25,5 @@ tags: [生活]
 
 ## 🎭Dramas
 - 2026-04-10. [**唐璜**](https://www.douban.com/location/drama/20254387/) - rating: ★★★★☆
+- 2026-05-22. [**春逝**](https://www.douban.com/location/drama/35178460/) - rating: ★★★★★
 
