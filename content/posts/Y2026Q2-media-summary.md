@@ -16,6 +16,7 @@ tags: [生活]
 - 2026-05-02. [**狂飙**](https://movie.douban.com/subject/35465232/) - rating: ★★★★★
 - 2026-05-10. [**低智商犯罪**](https://movie.douban.com/subject/35517044/) - rating: ★★★★☆
 - 2026-05-15. [**醉红尘**](https://movie.douban.com/subject/5318640/) - rating: ★★★★☆
+- 2026-05-23. [**星球大战：曼达洛人与古古**](https://movie.douban.com/subject/36723035/) - rating: ★★★★☆
 
 ## 📚BOOKS
 - 2026-04-08. [**Breakneck**](https://book.douban.com/subject/6818705/) - rating: ★★★★☆
