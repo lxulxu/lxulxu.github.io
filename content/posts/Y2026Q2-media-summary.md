@@ -20,6 +20,7 @@ tags: [生活]
 - 2026-05-24. [**天堂旗帜下**](https://movie.douban.com/subject/6733095/) - rating: ★★★★☆
 - 2026-05-25. [**给阿嬷的情书**](https://movie.douban.com/subject/37116446/) - rating: ★★★★★
 - 2026-05-25. [**消失的人**](https://movie.douban.com/subject/36965301/) - rating: ★★★★☆
+- 2026-05-30. [**曼达洛人 第三季**](https://movie.douban.com/subject/35048728/) - rating: ★★★★★
 
 ## 📚BOOKS
 - 2026-04-08. [**Breakneck**](https://book.douban.com/subject/6818705/) - rating: ★★★★☆
