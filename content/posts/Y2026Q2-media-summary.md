@@ -23,8 +23,10 @@ tags: [生活]
 - 2026-05-30. [**曼达洛人 第三季**](https://movie.douban.com/subject/35048728/) - rating: ★★★★★
 - 2026-05-30. [**汤姆的农场旅行**](https://movie.douban.com/subject/20276230/) - rating: ★★★★☆
 - 2026-06-07. [**怪：四谷怪谈**](https://movie.douban.com/subject/2342559/) - rating: ★★★★☆
+- 2026-06-07. [**怪**](https://movie.douban.com/subject/1870116/) - rating: ★★★★☆
 - 2026-06-12. [**揭秘日**](https://movie.douban.com/subject/36860212/) - rating: ★★★☆☆
 - 2026-06-12. [**火遮眼**](https://movie.douban.com/subject/36877245/) - rating: ★★★★☆
+- 2026-06-13. [**诺曼底72小时**](https://movie.douban.com/subject/36916000/) - rating: ★★★★☆
 
 ## 📚BOOKS
 - 2026-04-08. [**Breakneck**](https://book.douban.com/subject/6818705/) - rating: ★★★★☆
