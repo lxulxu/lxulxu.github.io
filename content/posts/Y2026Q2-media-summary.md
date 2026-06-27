@@ -28,6 +28,7 @@ tags: [生活]
 - 2026-06-12. [**火遮眼**](https://movie.douban.com/subject/36877245/) - rating: ★★★★☆
 - 2026-06-13. [**诺曼底72小时**](https://movie.douban.com/subject/36916000/) - rating: ★★★★☆
 - 2026-06-25. [**抓特务**](https://movie.douban.com/subject/36812879/) - rating: ★★★★☆
+- 2026-06-27. [**格格的女儿**](https://movie.douban.com/subject/6730020/) - rating: ★★★★☆
 
 ## 📚BOOKS
 - 2026-04-08. [**Breakneck**](https://book.douban.com/subject/6818705/) - rating: ★★★★☆
