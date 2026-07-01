@@ -2311,5 +2311,13 @@
     "image_url": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2932677315.jpg",
     "rating": 0,
     "status": "wish"
+  },
+  "https://music.douban.com/subject/38386052/": {
+    "type": "music",
+    "title": "太阳之子",
+    "published": "2026-07-01",
+    "image_url": "https://img9.doubanio.com/view/subject/s/public/s35444154.jpg",
+    "rating": 3,
+    "status": "done"
   }
 }
