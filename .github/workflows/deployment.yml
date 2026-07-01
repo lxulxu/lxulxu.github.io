@@ -6,9 +6,8 @@ on:
       - master
     paths-ignore:
       - 'archive/**'
-  pull_request:
-    paths-ignore:
-      - 'archive/**'
+  schedule:
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
@@ -19,7 +18,7 @@ jobs:
       has_content_changes: ${{ steps.filter.outputs.content }}
     steps:
       - uses: actions/checkout@v4
-      
+
       - uses: dorny/paths-filter@v3
         id: filter
         with:
@@ -39,7 +38,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Compress Images
         id: calibre
         uses: calibreapp/image-actions@main
@@ -77,6 +76,23 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0
+
+      - name: Douban Sync
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        uses: lxulxu/douban-track@v1
+        with:
+          rss_url: ${{ secrets.RSS_URL }}
+          output_dir: content/posts
+          data_dir: data
+
+      - name: Commit douban changes
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add content/posts/*-media-summary.md data/douban_data.json || true
+          git diff --staged --quiet || git commit -m "Update media summary"
+          git push
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
