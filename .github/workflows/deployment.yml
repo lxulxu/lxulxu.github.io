@@ -11,63 +11,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  check-changes:
-    runs-on: ubuntu-latest
-    outputs:
-      has_image_changes: ${{ steps.filter.outputs.images }}
-      has_content_changes: ${{ steps.filter.outputs.content }}
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: dorny/paths-filter@v3
-        id: filter
-        with:
-          filters: |
-            images:
-              - '**.jpg'
-              - '**.jpeg'
-              - '**.png'
-              - '**.webp'
-            content:
-              - 'content/**'
-              - '**/*.md'
-
-  process-images:
-    needs: check-changes
-    if: needs.check-changes.outputs.has_image_changes == 'true'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Compress Images
-        id: calibre
-        uses: calibreapp/image-actions@main
-        with:
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
-          compressOnly: true
-
-      - name: Replace Image Paths in Markdown
-        run: |
-          find content -name '*.md' | while read file; do
-              sed -i 's/\(\!\[.*\]\)(\(\.\.\/\)\+assets\/images\/\(Y[0-9]*Q[0-9]*\)\/\(.*\))/\1(https:\/\/raw.githubusercontent.com\/lxulxu\/lxulxu.github.io\/master\/assets\/images\/\3\/\4?raw=true)/g' "$file"
-              sed -i 's/<img src="\(\.\.\/\)\+assets\/images\/\(Y[0-9]*Q[0-9]*\)\/\([^"]*\)"/<img src="https:\/\/raw.githubusercontent.com\/lxulxu\/lxulxu.github.io\/master\/assets\/images\/\2\/\3?raw=true"/g' "$file"
-          done
-
-      - name: Commit changes
-        run: |
-          git config --global user.email github-actions@github.com
-          git config --global user.name github-actions
-          git add .
-          git diff-index --quiet HEAD || git commit -m "Optimize images and update links"
-          git push
-
-  deploy:
-    needs: [check-changes, process-images]
-    if: |
-      always() &&
-      needs.check-changes.result == 'success' &&
-      (needs.process-images.result == 'success' || needs.process-images.result == 'skipped') &&
-      github.ref == 'refs/heads/master'
+  build-and-deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -77,6 +21,30 @@ jobs:
           submodules: true
           fetch-depth: 0
 
+      - name: Pull latest changes
+        run: git pull --rebase origin master
+
+      - name: Compress changed images
+        if: github.event_name == 'push'
+        run: |
+          sudo apt-get install -y pngquant jpegoptim webp
+          git diff --name-only HEAD~1 -- '*.png' '*.jpg' '*.jpeg' '*.webp' 2>/dev/null | while read f; do
+            [ -z "$f" ] && continue
+            case "$f" in
+              *.png) pngquant --ext .png --speed 1 --quality=65-80 --force "$f" ;;
+              *.jpg|*.jpeg) jpegoptim --strip-all --max=85 "$f" ;;
+              *.webp) cwebp -q 80 "$f" -o "$f" ;;
+            esac
+          done
+
+      - name: Replace Image Paths in Markdown
+        if: github.event_name == 'push'
+        run: |
+          find content -name '*.md' | while read file; do
+              sed -i 's/\(\!\[.*\]\)(\(\.\.\/\)\+assets\/images\/\(Y[0-9]*Q[0-9]*\)\/\(.*\))/\1(https:\/\/raw.githubusercontent.com\/lxulxu\/lxulxu.github.io\/master\/assets\/images\/\3\/\4?raw=true)/g' "$file"
+              sed -i 's/<img src="\(\.\.\/\)\+assets\/images\/\(Y[0-9]*Q[0-9]*\)\/\([^"]*\)"/<img src="https:\/\/raw.githubusercontent.com\/lxulxu\/lxulxu.github.io\/master\/assets\/images\/\2\/\3?raw=true"/g' "$file"
+          done
+
       - name: Douban Sync
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         uses: lxulxu/douban-track@v1
@@ -85,13 +53,12 @@ jobs:
           output_dir: content/posts
           data_dir: data
 
-      - name: Commit douban changes
-        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+      - name: Commit and push changes
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add content/posts/*-media-summary.md data/douban_data.json || true
-          git diff --staged --quiet || git commit -m "Update media summary"
+          git add .
+          git diff --staged --quiet || git commit -m "Update site content"
           git push
 
       - name: Setup Hugo
