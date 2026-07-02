@@ -1,0 +1,27 @@
+title: "Y{year}Q{quarter} 影视音总结"
+date_format: "%Y-%m-%d"
+categories: ["生活"]
+tags: ["生活"]
+
+file_template: |
+  ---
+  title: "{title}"
+  date: {date}
+  categories: [{categories}]
+  tags: [{tags}]
+  ---
+
+  {sections}
+
+section_template: |
+  ## {icon}{label}
+  {items}
+
+item_template: "- {published}. [**{title}**]({url}) - rating: {rating_stars}"
+
+sections:
+  movie: { icon: "🎬", label: "MOVIES" }
+  book:  { icon: "📚", label: "BOOKS" }
+  music: { icon: "🎵", label: "MUSIC" }
+  game:  { icon: "🎮", label: "GAMES" }
+  drama: { icon: "🎭", label: "DRAMA" }
