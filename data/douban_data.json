@@ -2351,5 +2351,21 @@
     "image_url": "https://img1.doubanio.com/view/subject/s/public/s33569750.jpg",
     "rating": 4,
     "status": "done"
+  },
+  "https://movie.douban.com/subject/37435796/": {
+    "type": "movie",
+    "title": "检察官室的提案",
+    "published": "2026-07-05",
+    "image_url": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2933170913.jpg",
+    "rating": 4,
+    "status": "done"
+  },
+  "https://movie.douban.com/subject/36327345/": {
+    "type": "movie",
+    "title": "盗火线2",
+    "published": "2026-07-05",
+    "image_url": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2933753232.jpg",
+    "rating": 0,
+    "status": "wish"
   }
 }
