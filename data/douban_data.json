@@ -2359,5 +2359,85 @@
     "image_url": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2933170913.jpg",
     "rating": 4,
     "status": "done"
+  },
+  "https://book.douban.com/subject/10598145/": {
+    "type": "book",
+    "title": "毕业",
+    "published": "2026-07-06",
+    "image_url": "https://img9.doubanio.com/view/subject/s/public/s10419106.jpg",
+    "rating": 4,
+    "status": "done"
+  },
+  "https://book.douban.com/subject/3926665/": {
+    "type": "book",
+    "title": "伽利略的苦恼",
+    "published": "2026-07-06",
+    "image_url": "https://img1.doubanio.com/view/subject/s/public/s6633540.jpg",
+    "rating": 4,
+    "status": "done"
+  },
+  "https://book.douban.com/subject/26387513/": {
+    "type": "book",
+    "title": "麒麟之翼",
+    "published": "2026-07-06",
+    "image_url": "https://img2.doubanio.com/view/subject/s/public/s28112461.jpg",
+    "rating": 4,
+    "status": "done"
+  },
+  "https://book.douban.com/subject/11615173/": {
+    "type": "book",
+    "title": "假面饭店",
+    "published": "2026-07-06",
+    "image_url": "https://img1.doubanio.com/view/subject/s/public/s24231568.jpg",
+    "rating": 3,
+    "status": "done"
+  },
+  "https://book.douban.com/subject/27178063/": {
+    "type": "book",
+    "title": "黎明之街",
+    "published": "2026-07-06",
+    "image_url": "https://img1.doubanio.com/view/subject/s/public/s29823039.jpg",
+    "rating": 4,
+    "status": "done"
+  },
+  "https://book.douban.com/subject/26651926/": {
+    "type": "book",
+    "title": "红手指",
+    "published": "2026-07-06",
+    "image_url": "https://img3.doubanio.com/view/subject/s/public/s28373307.jpg",
+    "rating": 3,
+    "status": "done"
+  },
+  "https://book.douban.com/subject/26118072/": {
+    "type": "book",
+    "title": "祈祷落幕时",
+    "published": "2026-07-06",
+    "image_url": "https://img1.doubanio.com/view/subject/s/public/s27753770.jpg",
+    "rating": 3,
+    "status": "done"
+  },
+  "https://book.douban.com/subject/26413027/": {
+    "type": "book",
+    "title": "虚无的十字架",
+    "published": "2026-07-06",
+    "image_url": "https://img1.doubanio.com/view/subject/s/public/s28096698.jpg",
+    "rating": 3,
+    "status": "done"
+  },
+  "https://book.douban.com/subject/26639966/": {
+    "type": "book",
+    "title": "新参者",
+    "published": "2026-07-06",
+    "image_url": "https://img1.doubanio.com/view/subject/s/public/s28363320.jpg",
+    "rating": 4,
+    "status": "done"
+  },
+  "https://book.douban.com/subject/26373943/": {
+    "type": "book",
+    "title": "她死去的那一晚",
+    "published": "2026-07-06",
+    "image_url": "https://img9.doubanio.com/view/subject/s/public/s28061026.jpg",
+    "rating": 4,
+    "status": "done"
   }
 }
