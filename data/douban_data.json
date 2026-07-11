@@ -2355,10 +2355,10 @@
   "https://movie.douban.com/subject/37435796/": {
     "type": "movie",
     "title": "检察官室的提案",
-    "published": "2026-07-05",
+    "published": "2026-07-10",
     "image_url": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2933170913.jpg",
-    "rating": 4,
-    "status": "done"
+    "rating": 0,
+    "status": "wish"
   },
   "https://book.douban.com/subject/10598145/": {
     "type": "book",

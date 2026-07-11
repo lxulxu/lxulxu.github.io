@@ -13,7 +13,7 @@ tags: [生活]
 - 2026-07-03. [**特立独行**](https://movie.douban.com/subject/36953973/) - rating: ★★★★★
 - 2026-07-03. [**魔方小姐**](https://movie.douban.com/subject/36808520/) - rating: ★★★★☆
 - 2026-07-03. [**玩具总动员5**](https://movie.douban.com/subject/36238849/) - rating: ★★★★☆
-- 2026-07-05. [**检察官室的提案**](https://movie.douban.com/subject/37435796/) - rating: ★★★★☆
+- 2026-07-10. [**检察官室的提案**](https://movie.douban.com/subject/37435796/) - rating: ☆☆☆☆☆
 
 ## 📚BOOKS
 - 2026-07-03. [**生育制度**](https://book.douban.com/subject/30258045/) - rating: ★★★★☆
