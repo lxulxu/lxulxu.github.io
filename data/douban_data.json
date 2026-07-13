@@ -2439,5 +2439,21 @@
     "image_url": "https://img9.doubanio.com/view/subject/s/public/s28061026.jpg",
     "rating": 4,
     "status": "done"
+  },
+  "https://movie.douban.com/subject/6753589/": {
+    "type": "movie",
+    "title": "理查二世",
+    "published": "2026-07-12",
+    "image_url": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2096736876.jpg",
+    "rating": 0,
+    "status": "wish"
+  },
+  "https://movie.douban.com/subject/27038857/": {
+    "type": "movie",
+    "title": "英国式丑闻",
+    "published": "2026-07-12",
+    "image_url": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2522870728.jpg",
+    "rating": 4,
+    "status": "done"
   }
 }
