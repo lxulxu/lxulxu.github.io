@@ -2455,5 +2455,13 @@
     "image_url": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2522870728.jpg",
     "rating": 4,
     "status": "done"
+  },
+  "https://movie.douban.com/subject/36882191/": {
+    "type": "movie",
+    "title": "八仙！",
+    "published": "2026-07-13",
+    "image_url": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2933169089.jpg",
+    "rating": 5,
+    "status": "done"
   }
 }
