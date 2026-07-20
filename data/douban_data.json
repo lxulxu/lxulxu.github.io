@@ -2463,5 +2463,13 @@
     "image_url": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2934074566.jpg",
     "rating": 5,
     "status": "done"
+  },
+  "https://movie.douban.com/subject/37743740/": {
+    "type": "movie",
+    "title": "铃兰：如此温柔的爱 第1季",
+    "published": "2026-07-19",
+    "image_url": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2926400975.jpg",
+    "rating": 4,
+    "status": "done"
   }
 }

@@ -17,6 +17,7 @@ tags: [生活]
 - 2026-07-12. [**理查二世**](https://movie.douban.com/subject/6753589/) - rating: ☆☆☆☆☆
 - 2026-07-12. [**英国式丑闻**](https://movie.douban.com/subject/27038857/) - rating: ★★★★☆
 - 2026-07-13. [**八仙！**](https://movie.douban.com/subject/36882191/) - rating: ★★★★★
+- 2026-07-19. [**铃兰：如此温柔的爱 第1季**](https://movie.douban.com/subject/37743740/) - rating: ★★★★☆
 
 ## 📚BOOKS
 - 2026-07-03. [**生育制度**](https://book.douban.com/subject/30258045/) - rating: ★★★★☆
