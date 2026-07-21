@@ -2471,5 +2471,13 @@
     "image_url": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2926400975.jpg",
     "rating": 4,
     "status": "done"
+  },
+  "https://movie.douban.com/subject/35875462/": {
+    "type": "movie",
+    "title": "群星闪耀时",
+    "published": "2026-07-20",
+    "image_url": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2934212123.jpg",
+    "rating": 4,
+    "status": "done"
   }
 }
