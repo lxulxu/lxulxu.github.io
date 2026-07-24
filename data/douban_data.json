@@ -2479,5 +2479,13 @@
     "image_url": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2934212123.jpg",
     "rating": 4,
     "status": "done"
+  },
+  "https://movie.douban.com/subject/20645052/": {
+    "type": "movie",
+    "title": "东方男孩",
+    "published": "2026-07-23",
+    "image_url": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2227197636.jpg",
+    "rating": 4,
+    "status": "done"
   }
 }
