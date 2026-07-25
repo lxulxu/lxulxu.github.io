@@ -20,6 +20,8 @@ tags: [生活]
 - 2026-07-19. [**铃兰：如此温柔的爱 第1季**](https://movie.douban.com/subject/37743740/) - rating: ★★★★☆
 - 2026-07-20. [**群星闪耀时**](https://movie.douban.com/subject/35875462/) - rating: ★★★★☆
 - 2026-07-23. [**东方男孩**](https://movie.douban.com/subject/20645052/) - rating: ★★★★☆
+- 2026-07-24. [**年会不能停2！**](https://movie.douban.com/subject/36850814/) - rating: ★★★★★
+- 2026-07-24. [**寒战1995**](https://movie.douban.com/subject/36857925/) - rating: ☆☆☆☆☆
 
 ## 📚BOOKS
 - 2026-07-03. [**生育制度**](https://book.douban.com/subject/30258045/) - rating: ★★★★☆
