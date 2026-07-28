@@ -2476,7 +2476,7 @@
     "type": "movie",
     "title": "群星闪耀时",
     "published": "2026-07-20",
-    "image_url": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2934212123.jpg",
+    "image_url": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2934427975.jpg",
     "rating": 4,
     "status": "done"
   },
@@ -2492,7 +2492,7 @@
     "type": "movie",
     "title": "年会不能停2！",
     "published": "2026-07-24",
-    "image_url": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2934334180.jpg",
+    "image_url": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2934399898.jpg",
     "rating": 5,
     "status": "done"
   },
@@ -2503,5 +2503,21 @@
     "image_url": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2933305108.jpg",
     "rating": 0,
     "status": "wish"
+  },
+  "https://movie.douban.com/subject/27663764/": {
+    "type": "movie",
+    "title": "致命平行",
+    "published": "2026-07-26",
+    "image_url": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2510860949.jpg",
+    "rating": 4,
+    "status": "done"
+  },
+  "https://movie.douban.com/subject/27187285/": {
+    "type": "movie",
+    "title": "致命之吻",
+    "published": "2026-07-26",
+    "image_url": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2512187979.jpg",
+    "rating": 4,
+    "status": "done"
   }
 }
