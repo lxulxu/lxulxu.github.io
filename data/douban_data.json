@@ -2519,5 +2519,21 @@
     "image_url": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2512187979.jpg",
     "rating": 4,
     "status": "done"
+  },
+  "https://movie.douban.com/subject/36246195/": {
+    "type": "movie",
+    "title": "蜘蛛侠：崭新之日",
+    "published": "2026-07-30",
+    "image_url": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2934276912.jpg",
+    "rating": 5,
+    "status": "done"
+  },
+  "https://movie.douban.com/subject/37191746/": {
+    "type": "movie",
+    "title": "四渡",
+    "published": "2026-07-30",
+    "image_url": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2931635664.jpg",
+    "rating": 4,
+    "status": "done"
   }
 }
