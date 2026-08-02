@@ -2492,7 +2492,7 @@
     "type": "movie",
     "title": "年会不能停！2",
     "published": "2026-07-24",
-    "image_url": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2934399898.jpg",
+    "image_url": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2934583425.jpg",
     "rating": 5,
     "status": "done"
   },
@@ -2534,6 +2534,14 @@
     "published": "2026-07-30",
     "image_url": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2931635664.jpg",
     "rating": 4,
+    "status": "done"
+  },
+  "https://movie.douban.com/subject/36808876/": {
+    "type": "movie",
+    "title": "奥德赛",
+    "published": "2026-08-01",
+    "image_url": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2933569626.jpg",
+    "rating": 5,
     "status": "done"
   }
 }

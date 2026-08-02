@@ -26,6 +26,7 @@ tags: [生活]
 - 2026-07-26. [**致命之吻**](https://movie.douban.com/subject/27187285/) - rating: ★★★★☆
 - 2026-07-30. [**蜘蛛侠：崭新之日**](https://movie.douban.com/subject/36246195/) - rating: ★★★★★
 - 2026-07-30. [**四渡**](https://movie.douban.com/subject/37191746/) - rating: ★★★★☆
+- 2026-08-01. [**奥德赛**](https://movie.douban.com/subject/36808876/) - rating: ★★★★★
 
 ## 📚BOOKS
 - 2026-07-03. [**生育制度**](https://book.douban.com/subject/30258045/) - rating: ★★★★☆
