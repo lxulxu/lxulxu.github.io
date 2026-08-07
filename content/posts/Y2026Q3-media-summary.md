@@ -27,6 +27,8 @@ tags: [生活]
 - 2026-07-30. [**蜘蛛侠：崭新之日**](https://movie.douban.com/subject/36246195/) - rating: ★★★★★
 - 2026-07-30. [**四渡**](https://movie.douban.com/subject/37191746/) - rating: ★★★★☆
 - 2026-08-01. [**奥德赛**](https://movie.douban.com/subject/36808876/) - rating: ★★★★★
+- 2026-08-06. [**蜘蛛侠5**](https://movie.douban.com/subject/38583673/) - rating: ☆☆☆☆☆
+- 2026-08-06. [**求救信号**](https://movie.douban.com/subject/36439868/) - rating: ☆☆☆☆☆
 
 ## 📚BOOKS
 - 2026-07-03. [**生育制度**](https://book.douban.com/subject/30258045/) - rating: ★★★★☆

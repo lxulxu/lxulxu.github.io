@@ -2543,5 +2543,21 @@
     "image_url": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2933569626.jpg",
     "rating": 5,
     "status": "done"
+  },
+  "https://movie.douban.com/subject/38583673/": {
+    "type": "movie",
+    "title": "蜘蛛侠5",
+    "published": "2026-08-06",
+    "image_url": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2934652056.jpg",
+    "rating": 0,
+    "status": "wish"
+  },
+  "https://movie.douban.com/subject/36439868/": {
+    "type": "movie",
+    "title": "求救信号",
+    "published": "2026-08-06",
+    "image_url": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2934091767.jpg",
+    "rating": 0,
+    "status": "wish"
   }
 }
