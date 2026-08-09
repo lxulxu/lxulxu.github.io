@@ -2559,5 +2559,13 @@
     "image_url": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2934091767.jpg",
     "rating": 0,
     "status": "wish"
+  },
+  "https://movie.douban.com/subject/35811064/": {
+    "type": "movie",
+    "title": "欢迎来龙餐馆",
+    "published": "2026-08-08",
+    "image_url": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2934698009.jpg",
+    "rating": 4,
+    "status": "done"
   }
 }

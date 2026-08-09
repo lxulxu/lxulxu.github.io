@@ -29,6 +29,7 @@ tags: [生活]
 - 2026-08-01. [**奥德赛**](https://movie.douban.com/subject/36808876/) - rating: ★★★★★
 - 2026-08-06. [**蜘蛛侠5**](https://movie.douban.com/subject/38583673/) - rating: ☆☆☆☆☆
 - 2026-08-06. [**求救信号**](https://movie.douban.com/subject/36439868/) - rating: ☆☆☆☆☆
+- 2026-08-08. [**欢迎来龙餐馆**](https://movie.douban.com/subject/35811064/) - rating: ★★★★☆
 
 ## 📚BOOKS
 - 2026-07-03. [**生育制度**](https://book.douban.com/subject/30258045/) - rating: ★★★★☆
