@@ -2567,5 +2567,21 @@
     "image_url": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2934698009.jpg",
     "rating": 4,
     "status": "done"
+  },
+  "https://movie.douban.com/subject/36941239/": {
+    "type": "movie",
+    "title": "千里·江山图",
+    "published": "2026-08-19",
+    "image_url": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2932370359.jpg",
+    "rating": 0,
+    "status": "wish"
+  },
+  "https://movie.douban.com/subject/37508847/": {
+    "type": "movie",
+    "title": "空枪",
+    "published": "2026-08-19",
+    "image_url": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2934946788.jpg",
+    "rating": 4,
+    "status": "done"
   }
 }
