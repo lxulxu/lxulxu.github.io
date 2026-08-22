@@ -5,7 +5,9 @@ tags: [教程]
 categories: [生活]
 ---
 
-通过 [TV Time](https://www.tvtime.com/) 订阅追踪的剧集，自动将更新时间同步到日历应用，支持欧美剧集及部分国产剧，效果如下：
+> **已失效：** [TV Time](https://www.tvtime.com/) 已于 2026 年 7 月 15 日停止服务，本文已不可用仅作存档，RIP。
+
+通过 TV Time 订阅追踪的剧集，自动将更新时间同步到日历应用，支持欧美剧集及部分国产剧，效果如下：
 
 ![](https://raw.githubusercontent.com/lxulxu/lxulxu.github.io/master/assets/images/Y2026Q1/1.jpg)
 
