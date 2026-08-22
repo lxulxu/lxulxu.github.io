@@ -2264,22 +2264,6 @@
     "rating": 5,
     "status": "done"
   },
-  "https://book.douban.com/subject/38179610/": {
-    "type": "book",
-    "title": "渴望",
-    "published": "2026-06-29",
-    "image_url": "https://img9.doubanio.com/view/subject/s/public/s35477024.jpg",
-    "rating": 0,
-    "status": "doing"
-  },
-  "https://movie.douban.com/subject/37071123/": {
-    "type": "movie",
-    "title": "铁拳教育",
-    "published": "2026-06-29",
-    "image_url": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2933103931.jpg",
-    "rating": 0,
-    "status": "doing"
-  },
   "https://movie.douban.com/subject/6730020/": {
     "type": "movie",
     "title": "格格的女儿",
@@ -2295,22 +2279,6 @@
     "image_url": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2933198755.jpg",
     "rating": 4,
     "status": "done"
-  },
-  "https://movie.douban.com/subject/26751899/": {
-    "type": "movie",
-    "title": "愚行录",
-    "published": "2026-06-15",
-    "image_url": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2373212772.jpg",
-    "rating": 0,
-    "status": "wish"
-  },
-  "https://movie.douban.com/subject/38230782/": {
-    "type": "movie",
-    "title": "绑架游戏",
-    "published": "2026-06-09",
-    "image_url": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2932677315.jpg",
-    "rating": 0,
-    "status": "wish"
   },
   "https://music.douban.com/subject/38386052/": {
     "type": "music",
@@ -2351,14 +2319,6 @@
     "image_url": "https://img1.doubanio.com/view/subject/s/public/s33569750.jpg",
     "rating": 4,
     "status": "done"
-  },
-  "https://movie.douban.com/subject/37435796/": {
-    "type": "movie",
-    "title": "检察官室的提案",
-    "published": "2026-07-10",
-    "image_url": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2933170913.jpg",
-    "rating": 0,
-    "status": "wish"
   },
   "https://book.douban.com/subject/10598145/": {
     "type": "book",
@@ -2440,14 +2400,6 @@
     "rating": 4,
     "status": "done"
   },
-  "https://movie.douban.com/subject/6753589/": {
-    "type": "movie",
-    "title": "理查二世",
-    "published": "2026-07-12",
-    "image_url": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2096736876.jpg",
-    "rating": 0,
-    "status": "wish"
-  },
   "https://movie.douban.com/subject/27038857/": {
     "type": "movie",
     "title": "英国式丑闻",
@@ -2496,14 +2448,6 @@
     "rating": 4,
     "status": "done"
   },
-  "https://movie.douban.com/subject/36857925/": {
-    "type": "movie",
-    "title": "寒战1995",
-    "published": "2026-07-24",
-    "image_url": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2933305108.jpg",
-    "rating": 0,
-    "status": "wish"
-  },
   "https://movie.douban.com/subject/27663764/": {
     "type": "movie",
     "title": "致命平行",
@@ -2544,22 +2488,6 @@
     "rating": 5,
     "status": "done"
   },
-  "https://movie.douban.com/subject/38583673/": {
-    "type": "movie",
-    "title": "蜘蛛侠5",
-    "published": "2026-08-06",
-    "image_url": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2934652056.jpg",
-    "rating": 0,
-    "status": "wish"
-  },
-  "https://movie.douban.com/subject/36439868/": {
-    "type": "movie",
-    "title": "求救信号",
-    "published": "2026-08-06",
-    "image_url": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2934091767.jpg",
-    "rating": 0,
-    "status": "wish"
-  },
   "https://movie.douban.com/subject/35811064/": {
     "type": "movie",
     "title": "欢迎来龙餐馆",
@@ -2567,14 +2495,6 @@
     "image_url": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2935109312.jpg",
     "rating": 4,
     "status": "done"
-  },
-  "https://movie.douban.com/subject/36941239/": {
-    "type": "movie",
-    "title": "千里·江山图",
-    "published": "2026-08-19",
-    "image_url": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2932370359.jpg",
-    "rating": 0,
-    "status": "wish"
   },
   "https://movie.douban.com/subject/37508847/": {
     "type": "movie",

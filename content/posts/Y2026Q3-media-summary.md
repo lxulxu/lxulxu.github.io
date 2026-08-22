@@ -13,24 +13,18 @@ tags: [生活]
 - 2026-07-03. [**特立独行**](https://movie.douban.com/subject/36953973/) - rating: ★★★★★
 - 2026-07-03. [**魔方小姐**](https://movie.douban.com/subject/36808520/) - rating: ★★★★☆
 - 2026-07-03. [**玩具总动员5**](https://movie.douban.com/subject/36238849/) - rating: ★★★★☆
-- 2026-07-10. [**检察官室的提案**](https://movie.douban.com/subject/37435796/) - rating: ☆☆☆☆☆
-- 2026-07-12. [**理查二世**](https://movie.douban.com/subject/6753589/) - rating: ☆☆☆☆☆
 - 2026-07-12. [**英国式丑闻**](https://movie.douban.com/subject/27038857/) - rating: ★★★★☆
 - 2026-07-13. [**八仙！**](https://movie.douban.com/subject/36882191/) - rating: ★★★★★
 - 2026-07-19. [**铃兰：如此温柔的爱 第1季**](https://movie.douban.com/subject/37743740/) - rating: ★★★★☆
 - 2026-07-20. [**群星闪耀时**](https://movie.douban.com/subject/35875462/) - rating: ★★★★☆
 - 2026-07-23. [**东方男孩**](https://movie.douban.com/subject/20645052/) - rating: ★★★★☆
 - 2026-07-24. [**年会不能停！2**](https://movie.douban.com/subject/36850814/) - rating: ★★★★☆
-- 2026-07-24. [**寒战1995**](https://movie.douban.com/subject/36857925/) - rating: ☆☆☆☆☆
 - 2026-07-26. [**致命平行**](https://movie.douban.com/subject/27663764/) - rating: ★★★★☆
 - 2026-07-26. [**致命之吻**](https://movie.douban.com/subject/27187285/) - rating: ★★★★☆
 - 2026-07-30. [**蜘蛛侠：崭新之日**](https://movie.douban.com/subject/36246195/) - rating: ★★★★★
 - 2026-07-30. [**四渡**](https://movie.douban.com/subject/37191746/) - rating: ★★★★☆
 - 2026-08-01. [**奥德赛**](https://movie.douban.com/subject/36808876/) - rating: ★★★★★
-- 2026-08-06. [**蜘蛛侠5**](https://movie.douban.com/subject/38583673/) - rating: ☆☆☆☆☆
-- 2026-08-06. [**求救信号**](https://movie.douban.com/subject/36439868/) - rating: ☆☆☆☆☆
 - 2026-08-08. [**欢迎来龙餐馆**](https://movie.douban.com/subject/35811064/) - rating: ★★★★☆
-- 2026-08-19. [**千里·江山图**](https://movie.douban.com/subject/36941239/) - rating: ☆☆☆☆☆
 - 2026-08-19. [**空枪**](https://movie.douban.com/subject/37508847/) - rating: ★★★★☆
 
 ## 📚BOOKS
