@@ -5,10 +5,6 @@ categories: [生活]
 tags: [生活]
 ---
 
-## 🎵MUSIC
-- 2026-07-01. [**Spiral**](https://music.douban.com/subject/37477026/) - rating: ★★★★★
-- 2026-07-01. [**太阳之子**](https://music.douban.com/subject/38386052/) - rating: ★★★☆☆
-
 ## 🎬MOVIES
 - 2026-07-03. [**特立独行**](https://movie.douban.com/subject/36953973/) - rating: ★★★★★
 - 2026-07-03. [**魔方小姐**](https://movie.douban.com/subject/36808520/) - rating: ★★★★☆
@@ -40,3 +36,6 @@ tags: [生活]
 - 2026-07-06. [**新参者**](https://book.douban.com/subject/26639966/) - rating: ★★★★☆
 - 2026-07-06. [**她死去的那一晚**](https://book.douban.com/subject/26373943/) - rating: ★★★★☆
 
+## 🎵MUSIC
+- 2026-07-01. [**Spiral**](https://music.douban.com/subject/37477026/) - rating: ★★★★★
+- 2026-07-01. [**太阳之子**](https://music.douban.com/subject/38386052/) - rating: ★★★☆☆
