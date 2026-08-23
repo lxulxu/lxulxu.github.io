@@ -22,6 +22,7 @@ tags: [生活]
 - 2026-08-01. [**奥德赛**](https://movie.douban.com/subject/36808876/) - rating: ★★★★★
 - 2026-08-08. [**欢迎来龙餐馆**](https://movie.douban.com/subject/35811064/) - rating: ★★★★☆
 - 2026-08-19. [**空枪**](https://movie.douban.com/subject/37508847/) - rating: ★★★★☆
+- 2026-08-22. [**检察官室的提案**](https://movie.douban.com/subject/37435796/) - rating: ★★★★☆
 
 ## 📚BOOKS
 - 2026-07-03. [**生育制度**](https://book.douban.com/subject/30258045/) - rating: ★★★★☆
@@ -39,3 +40,4 @@ tags: [生活]
 ## 🎵MUSIC
 - 2026-07-01. [**Spiral**](https://music.douban.com/subject/37477026/) - rating: ★★★★★
 - 2026-07-01. [**太阳之子**](https://music.douban.com/subject/38386052/) - rating: ★★★☆☆
+
