@@ -2511,5 +2511,13 @@
     "image_url": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2933170913.jpg",
     "rating": 4,
     "status": "done"
+  },
+  "https://movie.douban.com/subject/3087443/": {
+    "type": "movie",
+    "title": "无盐女",
+    "published": "2026-08-23",
+    "image_url": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2299406603.jpg",
+    "rating": 4,
+    "status": "done"
   }
 }
