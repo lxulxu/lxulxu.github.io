@@ -23,7 +23,7 @@ tags: [生活]
 - 2026-08-08. [**欢迎来龙餐馆**](https://movie.douban.com/subject/35811064/) - rating: ★★★★☆
 - 2026-08-19. [**空枪**](https://movie.douban.com/subject/37508847/) - rating: ★★★★☆
 - 2026-08-22. [**检察官室的提案**](https://movie.douban.com/subject/37435796/) - rating: ★★★★☆
-- 2026-08-23. [**无盐女**](https://movie.douban.com/subject/3087443/) - rating: ★★★★☆
+- 2026-08-23. [**无盐女**](https://movie.douban.com/subject/3087443/) - rating: ★★★★★
 
 ## 📚BOOKS
 - 2026-07-03. [**生育制度**](https://book.douban.com/subject/30258045/) - rating: ★★★★☆
@@ -37,6 +37,9 @@ tags: [生活]
 - 2026-07-06. [**虚无的十字架**](https://book.douban.com/subject/26413027/) - rating: ★★★☆☆
 - 2026-07-06. [**新参者**](https://book.douban.com/subject/26639966/) - rating: ★★★★☆
 - 2026-07-06. [**她死去的那一晚**](https://book.douban.com/subject/26373943/) - rating: ★★★★☆
+
+## 🎭DRAMA
+- 2026-08-27. [**大状王**](https://www.douban.com/location/drama/34950165/) - rating: ★★★★☆
 
 ## 🎵MUSIC
 - 2026-07-01. [**Spiral**](https://music.douban.com/subject/37477026/) - rating: ★★★★★
