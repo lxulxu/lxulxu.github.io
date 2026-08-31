@@ -2527,5 +2527,13 @@
     "image_url": "https://img1.doubanio.com/pview/drama_subject_poster/small/public/06bf499c6f81c28.jpg",
     "rating": 4,
     "status": "done"
+  },
+  "https://movie.douban.com/subject/1294496/": {
+    "type": "movie",
+    "title": "似是故人来",
+    "published": "2026-08-29",
+    "image_url": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2360651484.jpg",
+    "rating": 4,
+    "status": "done"
   }
 }
