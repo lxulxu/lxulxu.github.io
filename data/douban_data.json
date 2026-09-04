@@ -2535,5 +2535,13 @@
     "image_url": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2360651484.jpg",
     "rating": 4,
     "status": "done"
+  },
+  "https://www.douban.com/location/drama/38447901/": {
+    "type": "drama",
+    "title": "来自三伯爵的邀请",
+    "published": "2026-09-03",
+    "image_url": "https://img1.doubanio.com/pview/drama_subject_poster/small/public/5589650b626972c.jpg",
+    "rating": 4,
+    "status": "done"
   }
 }
