@@ -43,6 +43,7 @@ tags: [生活]
 - 2026-08-27. [**大状王**](https://www.douban.com/location/drama/34950165/) - rating: ★★★★☆
 - 2026-09-03. [**来自三伯爵的邀请**](https://www.douban.com/location/drama/38447901/) - rating: ★★★★☆
 - 2026-09-23. [**风声**](https://www.douban.com/location/drama/37426517/) - rating: ★★★☆☆
+- 2026-09-25. [**法语音乐剧明星集锦音乐会**](https://www.douban.com/location/drama/37185547/) - rating: ★★★★☆
 
 ## 🎵MUSIC
 - 2026-07-01. [**Spiral**](https://music.douban.com/subject/37477026/) - rating: ★★★★★

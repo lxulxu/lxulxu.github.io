@@ -2551,5 +2551,13 @@
     "image_url": "https://img9.doubanio.com/pview/drama_subject_poster/small/public/582cbac49499906.jpg",
     "rating": 3,
     "status": "done"
+  },
+  "https://www.douban.com/location/drama/37185547/": {
+    "type": "drama",
+    "title": "法语音乐剧明星集锦音乐会",
+    "published": "2026-09-25",
+    "image_url": "https://img3.doubanio.com/pview/drama_subject_poster/small/public/1c09f2a94c8708a.jpg",
+    "rating": 4,
+    "status": "done"
   }
 }
