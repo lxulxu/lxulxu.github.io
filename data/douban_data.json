@@ -2559,5 +2559,13 @@
     "image_url": "https://img3.doubanio.com/pview/drama_subject_poster/small/public/1c09f2a94c8708a.jpg",
     "rating": 4,
     "status": "done"
+  },
+  "https://movie.douban.com/subject/5360890/": {
+    "type": "movie",
+    "title": "羞耻",
+    "published": "2026-09-26",
+    "image_url": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1499701469.jpg",
+    "rating": 4,
+    "status": "done"
   }
 }

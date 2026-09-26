@@ -25,6 +25,7 @@ tags: [生活]
 - 2026-08-22. [**检察官室的提案**](https://movie.douban.com/subject/37435796/) - rating: ★★★★☆
 - 2026-08-23. [**无盐女**](https://movie.douban.com/subject/3087443/) - rating: ★★★★★
 - 2026-08-29. [**似是故人来**](https://movie.douban.com/subject/1294496/) - rating: ★★★★☆
+- 2026-09-26. [**羞耻**](https://movie.douban.com/subject/5360890/) - rating: ★★★★☆
 
 ## 📚BOOKS
 - 2026-07-03. [**生育制度**](https://book.douban.com/subject/30258045/) - rating: ★★★★☆
