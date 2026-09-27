@@ -46,6 +46,10 @@ tags: [生活]
 - 2026-09-23. [**风声**](https://www.douban.com/location/drama/37426517/) - rating: ★★★☆☆
 - 2026-09-25. [**法语音乐剧明星集锦音乐会**](https://www.douban.com/location/drama/37185547/) - rating: ★★★★☆
 
+## 🎮GAMES
+- 2026-09-26. [**深空当铺：可能是偷的 Probably Stolen**](http://www.douban.com/game/38616807/) - rating: ★★★★☆
+- 2026-09-26. [**针影裁梦 Dressmaker**](http://www.douban.com/game/38644177/) - rating: ★★★★☆
+
 ## 🎵MUSIC
 - 2026-07-01. [**Spiral**](https://music.douban.com/subject/37477026/) - rating: ★★★★★
 - 2026-07-01. [**太阳之子**](https://music.douban.com/subject/38386052/) - rating: ★★★☆☆

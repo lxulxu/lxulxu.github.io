@@ -2567,5 +2567,21 @@
     "image_url": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1499701469.jpg",
     "rating": 4,
     "status": "done"
+  },
+  "http://www.douban.com/game/38616807/": {
+    "type": "game",
+    "title": "深空当铺：可能是偷的 Probably Stolen",
+    "published": "2026-09-26",
+    "image_url": "https://img3.doubanio.com/mpic/s35604220.jpg",
+    "rating": 4,
+    "status": "done"
+  },
+  "http://www.douban.com/game/38644177/": {
+    "type": "game",
+    "title": "针影裁梦 Dressmaker",
+    "published": "2026-09-26",
+    "image_url": "https://img2.doubanio.com/mpic/s35641381.jpg",
+    "rating": 4,
+    "status": "done"
   }
 }
