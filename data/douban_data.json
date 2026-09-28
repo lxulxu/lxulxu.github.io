@@ -2583,5 +2583,13 @@
     "image_url": "https://img2.doubanio.com/mpic/s35641381.jpg",
     "rating": 4,
     "status": "done"
+  },
+  "https://movie.douban.com/subject/4888016/": {
+    "type": "movie",
+    "title": "大侦探",
+    "published": "2026-09-27",
+    "image_url": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2570301787.jpg",
+    "rating": 3,
+    "status": "done"
   }
 }
