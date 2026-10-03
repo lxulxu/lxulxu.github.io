@@ -2591,5 +2591,13 @@
     "image_url": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2570301787.jpg",
     "rating": 3,
     "status": "done"
+  },
+  "https://movie.douban.com/subject/37247814/": {
+    "type": "movie",
+    "title": "神探之痕迹‎",
+    "published": "2026-10-02",
+    "image_url": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2935867001.jpg",
+    "rating": 4,
+    "status": "done"
   }
 }
