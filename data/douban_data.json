@@ -2599,5 +2599,13 @@
     "image_url": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2935867001.jpg",
     "rating": 4,
     "status": "done"
+  },
+  "http://www.douban.com/game/35927416/": {
+    "type": "game",
+    "title": "尼瓦利斯之夜 Nivalis Nights",
+    "published": "2026-10-06",
+    "image_url": "https://img3.doubanio.com/mpic/s34799980.jpg",
+    "rating": 4,
+    "status": "done"
   }
 }
