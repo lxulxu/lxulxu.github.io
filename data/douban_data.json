@@ -2607,5 +2607,13 @@
     "image_url": "https://img3.doubanio.com/mpic/s34799980.jpg",
     "rating": 4,
     "status": "done"
+  },
+  "https://movie.douban.com/subject/4935242/": {
+    "type": "movie",
+    "title": "焦土之城",
+    "published": "2026-10-18",
+    "image_url": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p981048348.jpg",
+    "rating": 5,
+    "status": "done"
   }
 }
