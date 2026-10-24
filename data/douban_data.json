@@ -2615,5 +2615,13 @@
     "image_url": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p981048348.jpg",
     "rating": 5,
     "status": "done"
+  },
+  "https://www.douban.com/location/drama/26978765/": {
+    "type": "drama",
+    "title": "玛利亚的婚后生活",
+    "published": "2026-10-23",
+    "image_url": "https://img3.doubanio.com/pview/drama_subject_poster/small/public/220297d2893a722.jpg",
+    "rating": 4,
+    "status": "done"
   }
 }
