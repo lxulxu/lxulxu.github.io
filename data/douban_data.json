@@ -2623,5 +2623,13 @@
     "image_url": "https://img3.doubanio.com/pview/drama_subject_poster/small/public/220297d2893a722.jpg",
     "rating": 4,
     "status": "done"
+  },
+  "https://movie.douban.com/subject/35052204/": {
+    "type": "movie",
+    "title": "谁可以这样爱我",
+    "published": "2026-10-24",
+    "image_url": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2910390050.jpg",
+    "rating": 4,
+    "status": "done"
   }
 }
