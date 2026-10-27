@@ -2631,5 +2631,13 @@
     "image_url": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2910390050.jpg",
     "rating": 4,
     "status": "done"
+  },
+  "https://movie.douban.com/subject/34788061/": {
+    "type": "movie",
+    "title": "欢喜冤家",
+    "published": "2026-10-25",
+    "image_url": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2868112551.jpg",
+    "rating": 3,
+    "status": "done"
   }
 }
