@@ -2639,5 +2639,13 @@
     "image_url": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2868112551.jpg",
     "rating": 3,
     "status": "done"
+  },
+  "https://www.douban.com/location/drama/10944557/": {
+    "type": "drama",
+    "title": "剧院魅影",
+    "published": "2026-11-01",
+    "image_url": "https://img3.doubanio.com/pview/drama_subject_poster/small/public/361f0c8ced9caaf.jpg",
+    "rating": 5,
+    "status": "done"
   }
 }
