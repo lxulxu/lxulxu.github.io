@@ -2647,5 +2647,13 @@
     "image_url": "https://img3.doubanio.com/pview/drama_subject_poster/small/public/361f0c8ced9caaf.jpg",
     "rating": 5,
     "status": "done"
+  },
+  "https://music.douban.com/subject/39010898/": {
+    "type": "music",
+    "title": "Hong Kong",
+    "published": "2026-11-03",
+    "image_url": "https://img3.doubanio.com/view/subject/s/public/s35680437.jpg",
+    "rating": 4,
+    "status": "done"
   }
 }

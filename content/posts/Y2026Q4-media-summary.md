@@ -18,3 +18,6 @@ tags: [生活]
 ## 🎮GAMES
 - 2026-10-06. [**尼瓦利斯之夜 Nivalis Nights**](http://www.douban.com/game/35927416/) - rating: ★★★★☆
 
+## 🎵MUSIC
+- 2026-11-03. [**Hong Kong**](https://music.douban.com/subject/39010898/) - rating: ★★★★☆
+
