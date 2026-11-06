@@ -2663,5 +2663,13 @@
     "image_url": "https://img3.doubanio.com/pview/drama_subject_poster/small/public/a7dcf6b106a5267.jpg",
     "rating": 4,
     "status": "done"
+  },
+  "https://www.douban.com/location/drama/20471204/": {
+    "type": "drama",
+    "title": "长靴皇后",
+    "published": "2026-11-05",
+    "image_url": "https://img3.doubanio.com/pview/drama_subject_poster/small/public/6faa86397badb3c.jpg",
+    "rating": 4,
+    "status": "done"
   }
 }

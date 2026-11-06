@@ -15,6 +15,7 @@ tags: [生活]
 - 2026-10-23. [**玛利亚的婚后生活**](https://www.douban.com/location/drama/26978765/) - rating: ★★★★☆
 - 2026-11-01. [**剧院魅影**](https://www.douban.com/location/drama/10944557/) - rating: ★★★★★
 - 2026-11-04. [**太阳王**](https://www.douban.com/location/drama/11601860/) - rating: ★★★★☆
+- 2026-11-05. [**长靴皇后**](https://www.douban.com/location/drama/20471204/) - rating: ★★★★☆
 
 ## 🎮GAMES
 - 2026-10-06. [**尼瓦利斯之夜 Nivalis Nights**](http://www.douban.com/game/35927416/) - rating: ★★★★☆
