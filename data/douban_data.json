@@ -2671,5 +2671,13 @@
     "image_url": "https://img3.doubanio.com/pview/drama_subject_poster/small/public/6faa86397badb3c.jpg",
     "rating": 4,
     "status": "done"
+  },
+  "https://movie.douban.com/subject/37109676/": {
+    "type": "movie",
+    "title": "谷雨",
+    "published": "2026-11-07",
+    "image_url": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936897680.jpg",
+    "rating": 4,
+    "status": "done"
   }
 }
