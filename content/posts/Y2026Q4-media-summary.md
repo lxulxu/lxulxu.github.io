@@ -23,4 +23,5 @@ tags: [生活]
 
 ## 🎵MUSIC
 - 2026-11-03. [**Hong Kong**](https://music.douban.com/subject/39010898/) - rating: ★★★★☆
+- 2026-11-11. [**泪海**](https://music.douban.com/subject/1403347/) - rating: ★★★★☆
 

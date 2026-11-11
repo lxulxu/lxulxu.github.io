@@ -2679,5 +2679,13 @@
     "image_url": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936897680.jpg",
     "rating": 4,
     "status": "done"
+  },
+  "https://music.douban.com/subject/1403347/": {
+    "type": "music",
+    "title": "泪海",
+    "published": "2026-11-11",
+    "image_url": "https://img3.doubanio.com/view/subject/s/public/s4714313.jpg",
+    "rating": 4,
+    "status": "done"
   }
 }
