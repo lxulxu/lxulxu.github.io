@@ -65,11 +65,6 @@ DTSTART;TZID=Asia/Shanghai:20261119T230000
 DESCRIPTION:https://www.douban.com/game/26591426/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:昭和米国物语 Showa American Story
-DTSTART;TZID=Asia/Shanghai:20261231T230000
-DESCRIPTION:https://www.douban.com/game/35727548/
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:绅士行动：暗战
 DTSTART;TZID=Asia/Shanghai:20270219T230000
 DESCRIPTION:https://movie.douban.com/subject/36892436/
