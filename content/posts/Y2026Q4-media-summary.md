@@ -11,7 +11,7 @@ tags: [生活]
 - 2026-10-24. [**谁可以这样爱我**](https://movie.douban.com/subject/35052204/) - rating: ★★★★☆
 - 2026-10-25. [**欢喜冤家**](https://movie.douban.com/subject/34788061/) - rating: ★★★☆☆
 - 2026-11-07. [**谷雨**](https://movie.douban.com/subject/37109676/) - rating: ★★★★☆
-- 2026-11-26. [**两京十五日**](https://movie.douban.com/subject/35235320/) - rating: ★★★★☆
+- 2026-11-26. [**两京十五日**](https://movie.douban.com/subject/35235320/) - rating: ★★★☆☆
 
 ## 🎭DRAMA
 - 2026-10-23. [**玛利亚的婚后生活**](https://www.douban.com/location/drama/26978765/) - rating: ★★★★☆
